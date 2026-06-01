@@ -545,6 +545,98 @@
       *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
       .hero-eyebrow, .hero-word, .stat, [data-a] { opacity:1 !important; transform:none !important; }
     }
+
+    /* ─── MINI SITES ─────────────────────────────────────────── */
+    .pi-bg { overflow:hidden; position:relative; }
+    .pi-site-luma, .pi-site-vault, .pi-site-flora, .pi-site-apex {
+      pointer-events:none; user-select:none;
+      display:flex; flex-direction:column; width:100%; height:100%;
+      font-family:var(--font-b);
+    }
+
+    /* LUMA — luxury fragrance, black + gold */
+    .pi-site-luma { background:#030303; font-size:clamp(.55rem,1.3vw,.95rem); }
+    .pi:nth-child(1) .pi-bg { background:#030303; }
+    .lsite-nav { display:flex; align-items:center; justify-content:space-between; padding:.8em 1.3em; border-bottom:1px solid rgba(201,168,76,.12); }
+    .ls-logo { font-family:var(--font-d); font-weight:700; font-size:.85em; letter-spacing:.22em; color:#c9a84c; }
+    .ls-navlinks { font-size:.48em; letter-spacing:.13em; text-transform:uppercase; color:rgba(255,255,255,.28); }
+    .ls-nav-cta { font-size:.48em; letter-spacing:.13em; text-transform:uppercase; color:#c9a84c; border:1px solid rgba(201,168,76,.3); padding:.35em 1em; }
+    .lsite-hero { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.55em; padding:1.2em 1.3em; }
+    .ls-orb { width:3.8em; height:3.8em; border-radius:50%; background:radial-gradient(circle at 32% 28%, #f0d878, #c9a84c 44%, #7a5518 74%, #150600); box-shadow:0 0 3em rgba(201,168,76,.28),0 0 7em rgba(201,168,76,.08); margin-bottom:.3em; }
+    .ls-title { font-family:var(--font-d); font-size:2.8em; font-weight:900; letter-spacing:-.03em; color:#f0ede8; line-height:1; }
+    .ls-sub { font-size:.52em; letter-spacing:.3em; text-transform:uppercase; color:#c9a84c; font-style:italic; }
+    .ls-divider { width:3.5em; height:1px; background:rgba(201,168,76,.22); }
+    .ls-cta { font-size:.48em; letter-spacing:.16em; text-transform:uppercase; color:#c9a84c; }
+    .lsite-foot { display:flex; justify-content:center; gap:1.8em; padding:.7em 1.3em; border-top:1px solid rgba(201,168,76,.07); }
+    .lsite-foot span { font-size:.4em; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.18); }
+
+    /* VAULT — fintech dashboard, deep navy + cyan */
+    .pi-site-vault { background:hsl(222,46%,7%); font-size:clamp(.48rem,1.15vw,.86rem); }
+    .pi:nth-child(2) .pi-bg { background:hsl(222,46%,7%); }
+    .vs-nav { display:flex; align-items:center; justify-content:space-between; padding:.75em 1.2em; border-bottom:1px solid rgba(77,184,255,.1); }
+    .vs-logo { font-size:.72em; font-weight:700; letter-spacing:.08em; color:#fff; display:flex; align-items:center; gap:.4em; }
+    .vs-logo-icon { width:.7em; height:.7em; border:1.5px solid #4db8ff; border-radius:2px; transform:rotate(45deg); display:inline-block; }
+    .vs-nav-items { font-size:.4em; letter-spacing:.07em; color:rgba(255,255,255,.28); }
+    .vs-badge { font-size:.36em; background:#4dffb4; color:#0a1628; padding:.2em .65em; border-radius:999px; font-weight:700; letter-spacing:.05em; }
+    .vs-body { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:5%; padding:.75em 1.2em; }
+    .vs-left { display:flex; flex-direction:column; gap:.45em; }
+    .vs-label { font-size:.4em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.32); }
+    .vs-balance { font-size:1.75em; font-weight:700; color:#fff; font-family:var(--font-d); letter-spacing:-.03em; line-height:1; }
+    .vs-balance span { font-size:.5em; color:rgba(255,255,255,.45); }
+    .vs-change { font-size:.4em; color:#4dffb4; letter-spacing:.04em; }
+    .vs-chart { display:flex; align-items:flex-end; gap:3%; flex:1; margin-top:.3em; min-height:2.2em; }
+    .vs-bar { flex:1; border-radius:2px 2px 0 0; background:rgba(77,184,255,.1); position:relative; overflow:hidden; }
+    .vs-bar::after { content:''; position:absolute; bottom:0; left:0; right:0; border-radius:2px 2px 0 0; background:linear-gradient(to top,#4db8ff,rgba(77,184,255,.2)); height:100%; }
+    .vs-bar-hi::after { background:linear-gradient(to top,#4dffb4,rgba(77,255,180,.2)); }
+    .vs-right { display:flex; flex-direction:column; gap:.45em; justify-content:center; }
+    .vs-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); border-radius:.3em; padding:.55em .8em; }
+    .vs-card-accent { border-color:rgba(77,184,255,.2); background:rgba(77,184,255,.05); }
+    .vs-card-l { font-size:.36em; letter-spacing:.09em; text-transform:uppercase; color:rgba(255,255,255,.32); margin-bottom:.3em; }
+    .vs-card-v { font-size:.72em; font-weight:700; color:#fff; }
+    .vs-card-bar { height:2px; background:rgba(255,255,255,.08); border-radius:999px; margin-top:.4em; }
+    .vs-card-fill { height:100%; border-radius:999px; background:linear-gradient(to right,#4db8ff,#4dffb4); }
+
+    /* FLORA — organic skincare, warm cream + sage (LIGHT) */
+    .pi-site-flora { background:hsl(34,28%,91%); font-size:clamp(.48rem,1.15vw,.86rem); }
+    .pi:nth-child(3) .pi-bg { background:hsl(34,28%,91%); }
+    .fs-nav { display:flex; align-items:center; justify-content:space-between; padding:.75em 1.2em; border-bottom:1px solid rgba(80,70,50,.12); }
+    .fs-logo { font-family:var(--font-d); font-size:.72em; font-weight:700; letter-spacing:.2em; color:hsl(30,25%,22%); }
+    .fs-nav-items { font-size:.38em; letter-spacing:.1em; text-transform:uppercase; color:hsl(30,12%,52%); }
+    .fs-cta-sm { font-size:.4em; letter-spacing:.1em; text-transform:uppercase; color:hsl(135,24%,36%); border-bottom:1px solid hsl(135,22%,56%); padding-bottom:.2em; font-weight:600; }
+    .fs-body { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:4%; padding:.85em 1.2em; align-items:center; }
+    .fs-left { display:flex; flex-direction:column; gap:.45em; }
+    .fs-tag { font-size:.36em; letter-spacing:.2em; text-transform:uppercase; color:hsl(135,26%,40%); font-weight:700; }
+    .fs-title { font-family:var(--font-d); font-size:1.55em; font-weight:700; color:hsl(30,25%,17%); line-height:1.1; letter-spacing:-.02em; }
+    .fs-desc { font-size:.43em; color:hsl(30,10%,46%); line-height:1.65; }
+    .fs-btn { font-size:.38em; letter-spacing:.1em; color:hsl(135,24%,33%); font-weight:600; border-bottom:1px solid hsl(135,22%,54%); align-self:flex-start; padding-bottom:.2em; }
+    .fs-badges { display:flex; gap:.45em; flex-wrap:wrap; margin-top:.15em; }
+    .fs-badge { font-size:.32em; letter-spacing:.05em; background:hsl(135,20%,86%); color:hsl(135,26%,33%); padding:.3em .8em; border-radius:999px; border:1px solid hsl(135,18%,72%); }
+    .fs-right { position:relative; display:flex; align-items:center; justify-content:center; height:100%; min-height:4.5em; }
+    .fs-circle { position:absolute; width:6em; height:6em; border-radius:50%; background:hsl(135,20%,83%); }
+    .fs-product { position:relative; z-index:1; width:1.7em; height:4.8em; background:linear-gradient(155deg,hsl(135,14%,76%),hsl(135,22%,62%)); border-radius:999px 999px 38% 38%; box-shadow:0 .3em 1.2em rgba(80,120,80,.22); }
+    .fs-leaf { position:absolute; border-radius:0 50% 0 50%; }
+    .fs-leaf-1 { width:2.4em; height:1.1em; background:hsl(135,30%,68%); top:18%; left:8%; transform:rotate(-28deg); z-index:2; }
+    .fs-leaf-2 { width:1.7em; height:.85em; background:hsl(135,24%,74%); bottom:20%; right:10%; transform:rotate(32deg); z-index:2; }
+
+    /* APEX — performance sportswear, dark charcoal + orange */
+    .pi-site-apex { background:hsl(0,0%,7%); font-size:clamp(.45rem,.95vw,.75rem); }
+    .pi:nth-child(4) .pi-bg { background:hsl(0,0%,7%); }
+    .as-nav { display:flex; align-items:center; justify-content:space-between; padding:.7em 1.3em; border-bottom:1px solid rgba(255,255,255,.06); }
+    .as-logo { font-family:var(--font-d); font-size:.75em; font-weight:900; letter-spacing:.14em; color:#fff; }
+    .as-nav-items { font-size:.38em; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.32); }
+    .as-cta-sm { font-size:.4em; letter-spacing:.1em; text-transform:uppercase; background:hsl(20,100%,54%); color:#fff; padding:.38em 1em; border-radius:999px; font-weight:700; }
+    .as-body { flex:1; display:grid; grid-template-columns:1fr .04fr 1fr; align-items:center; padding:.8em 1.5em; gap:0; }
+    .as-left { display:flex; flex-direction:column; gap:.35em; }
+    .as-tag { font-size:.38em; letter-spacing:.18em; text-transform:uppercase; color:hsl(20,100%,54%); font-weight:600; }
+    .as-title { font-family:var(--font-d); font-size:2.8em; font-weight:900; color:#fff; letter-spacing:-.04em; line-height:.88; text-transform:uppercase; }
+    .as-underline { width:2.5em; height:.14em; background:hsl(20,100%,54%); margin-top:.25em; }
+    .as-sub { font-size:.38em; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.35); }
+    .as-stripe { width:1px; height:100%; background:rgba(255,255,255,.07); align-self:stretch; justify-self:center; }
+    .as-right { display:flex; align-items:center; justify-content:flex-end; gap:1.8em; }
+    .as-stat { display:flex; flex-direction:column; gap:.25em; align-items:center; }
+    .as-stat-n { font-family:var(--font-d); font-size:1.55em; font-weight:700; color:#fff; letter-spacing:-.03em; line-height:1; }
+    .as-stat-l { font-size:.32em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.28); text-align:center; line-height:1.4; }
+    .as-divider-v { width:1px; height:2.2em; background:rgba(255,255,255,.1); }
   </style>
 </head>
 <body>
@@ -575,7 +667,7 @@
     <!-- HERO -->
     <section id="hero" aria-labelledby="hero-h1">
       <div class="wrap" style="padding-bottom:0">
-        <p class="hero-eyebrow" id="eyebrow">Est. 2019 — Premium Creative Studio</p>
+        <p class="hero-eyebrow" id="eyebrow">Premium Creative Studio — London</p>
         <h1 id="hero-h1" class="hero-hed">
           <span class="hero-line"><span class="hero-word" data-d="120">brands</span></span>
           <span class="hero-line"><span class="hero-word" data-d="240" data-parallax>worth</span></span>
@@ -613,7 +705,23 @@
 
         <div class="port-grid">
           <article class="pi" data-a>
-            <div class="pi-bg" role="img" aria-label="LUMA — brand identity project"></div>
+            <div class="pi-bg pi-site-luma" role="img" aria-label="LUMA — luxury fragrance brand identity">
+              <div class="lsite-nav">
+                <span class="ls-logo">LUMA</span>
+                <span class="ls-navlinks">Collection&ensp;|&ensp;Maison&ensp;|&ensp;Contact</span>
+                <span class="ls-nav-cta">Shop</span>
+              </div>
+              <div class="lsite-hero">
+                <div class="ls-orb"></div>
+                <p class="ls-title">Essence</p>
+                <p class="ls-sub">Eau de Parfum</p>
+                <div class="ls-divider"></div>
+                <span class="ls-cta">Discover the Collection →</span>
+              </div>
+              <div class="lsite-foot">
+                <span>Instagram</span><span>Pinterest</span><span>Stockists</span>
+              </div>
+            </div>
             <div class="pi-overlay" aria-hidden="true"></div>
             <span class="pi-ghost" aria-hidden="true">01</span>
             <div class="pi-info">
@@ -626,7 +734,47 @@
           </article>
 
           <article class="pi" data-a>
-            <div class="pi-bg" role="img" aria-label="VAULT — web design project"></div>
+            <div class="pi-bg pi-site-vault" role="img" aria-label="VAULT — fintech investment app website">
+              <div class="vs-nav">
+                <span class="vs-logo"><span class="vs-logo-icon"></span>VAULT</span>
+                <span class="vs-nav-items">Dashboard&ensp;&nbsp;Portfolio&ensp;&nbsp;Markets&ensp;&nbsp;Settings</span>
+                <span class="vs-badge">Live</span>
+              </div>
+              <div class="vs-body">
+                <div class="vs-left">
+                  <span class="vs-label">Total Balance</span>
+                  <div class="vs-balance">£24,850<span>.00</span></div>
+                  <div class="vs-change">▲ 12.4% this month</div>
+                  <div class="vs-chart">
+                    <div class="vs-bar" style="height:42%"></div>
+                    <div class="vs-bar" style="height:63%"></div>
+                    <div class="vs-bar" style="height:38%"></div>
+                    <div class="vs-bar" style="height:76%"></div>
+                    <div class="vs-bar" style="height:54%"></div>
+                    <div class="vs-bar" style="height:88%"></div>
+                    <div class="vs-bar" style="height:67%"></div>
+                    <div class="vs-bar vs-bar-hi" style="height:100%"></div>
+                  </div>
+                </div>
+                <div class="vs-right">
+                  <div class="vs-card">
+                    <div class="vs-card-l">Returns (YTD)</div>
+                    <div class="vs-card-v">+£3,240</div>
+                    <div class="vs-card-bar"><div class="vs-card-fill" style="width:68%"></div></div>
+                  </div>
+                  <div class="vs-card">
+                    <div class="vs-card-l">Deposited</div>
+                    <div class="vs-card-v">£18,000</div>
+                    <div class="vs-card-bar"><div class="vs-card-fill" style="width:45%"></div></div>
+                  </div>
+                  <div class="vs-card vs-card-accent">
+                    <div class="vs-card-l">Projected (12mo)</div>
+                    <div class="vs-card-v">£31,200</div>
+                    <div class="vs-card-bar"><div class="vs-card-fill" style="width:82%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="pi-overlay" aria-hidden="true"></div>
             <span class="pi-ghost" aria-hidden="true">02</span>
             <div class="pi-info">
@@ -639,7 +787,32 @@
           </article>
 
           <article class="pi" data-a>
-            <div class="pi-bg" role="img" aria-label="FLORA — packaging project"></div>
+            <div class="pi-bg pi-site-flora" role="img" aria-label="FLORA — organic skincare brand website">
+              <div class="fs-nav">
+                <span class="fs-logo">FLORA</span>
+                <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients&ensp;&nbsp;Journal</span>
+                <span class="fs-cta-sm">Shop Now</span>
+              </div>
+              <div class="fs-body">
+                <div class="fs-left">
+                  <span class="fs-tag">Certified Organic</span>
+                  <p class="fs-title">Rooted in<br>nature.</p>
+                  <p class="fs-desc">Skincare crafted from botanicals — nothing more, nothing less.</p>
+                  <span class="fs-btn">Explore Products →</span>
+                  <div class="fs-badges">
+                    <span class="fs-badge">100% Natural</span>
+                    <span class="fs-badge">Vegan</span>
+                    <span class="fs-badge">Cruelty Free</span>
+                  </div>
+                </div>
+                <div class="fs-right">
+                  <div class="fs-circle"></div>
+                  <div class="fs-product"></div>
+                  <div class="fs-leaf fs-leaf-1"></div>
+                  <div class="fs-leaf fs-leaf-2"></div>
+                </div>
+              </div>
+            </div>
             <div class="pi-overlay" aria-hidden="true"></div>
             <span class="pi-ghost" aria-hidden="true">03</span>
             <div class="pi-info">
@@ -652,7 +825,29 @@
           </article>
 
           <article class="pi" data-a>
-            <div class="pi-bg" role="img" aria-label="APEX — full brand system"></div>
+            <div class="pi-bg pi-site-apex" role="img" aria-label="APEX — performance sportswear brand system">
+              <div class="as-nav">
+                <span class="as-logo">APEX</span>
+                <span class="as-nav-items">Men&ensp;&nbsp;Women&ensp;&nbsp;Equipment&ensp;&nbsp;Training&ensp;&nbsp;Pro</span>
+                <span class="as-cta-sm">Shop SS25</span>
+              </div>
+              <div class="as-body">
+                <div class="as-left">
+                  <span class="as-tag">Performance Wear</span>
+                  <p class="as-title">BUILT<br>FOR<br>LIMITS.</p>
+                  <div class="as-underline"></div>
+                  <span class="as-sub">New Season Collection</span>
+                </div>
+                <div class="as-stripe"></div>
+                <div class="as-right">
+                  <div class="as-stat"><span class="as-stat-n">98%</span><span class="as-stat-l">Performance<br>Rating</span></div>
+                  <div class="as-divider-v"></div>
+                  <div class="as-stat"><span class="as-stat-n">4K+</span><span class="as-stat-l">Pro<br>Athletes</span></div>
+                  <div class="as-divider-v"></div>
+                  <div class="as-stat"><span class="as-stat-n">32°</span><span class="as-stat-l">Max Temp<br>Tested</span></div>
+                </div>
+              </div>
+            </div>
             <div class="pi-overlay" aria-hidden="true"></div>
             <span class="pi-ghost" aria-hidden="true">04</span>
             <div class="pi-info">
@@ -681,42 +876,42 @@
               <h3 class="svc-name" data-wave>Brand Identity</h3>
               <p class="svc-desc">Logo, mark, color, typography — the full visual language of who you are.</p>
             </div>
-            <span class="svc-price">From $6,800</span>
+            <span class="svc-price">From £5,500</span>
           </li>
           <li class="svc-row" data-a>
             <div>
               <h3 class="svc-name" data-wave>Web Design &amp; Dev</h3>
               <p class="svc-desc">Designed and built from scratch. No templates. No compromises.</p>
             </div>
-            <span class="svc-price">From $12,000</span>
+            <span class="svc-price">From £9,500</span>
           </li>
           <li class="svc-row featured" data-a>
             <div>
               <h3 class="svc-name" data-wave>Brand + Web Bundle</h3>
               <p class="svc-desc">Our most complete offering. Identity, website, and launch strategy.</p>
             </div>
-            <span class="svc-price">From $16,500</span>
+            <span class="svc-price">From £13,500</span>
           </li>
           <li class="svc-row" data-a>
             <div>
               <h3 class="svc-name" data-wave>Strategy &amp; Positioning</h3>
               <p class="svc-desc">Competitive audit, brand story, messaging architecture, and naming.</p>
             </div>
-            <span class="svc-price">From $4,200</span>
+            <span class="svc-price">From £3,500</span>
           </li>
           <li class="svc-row" data-a>
             <div>
               <h3 class="svc-name" data-wave>Creative Direction</h3>
               <p class="svc-desc">Ongoing art direction and visual oversight for growing brands.</p>
             </div>
-            <span class="svc-price">$3,200/mo</span>
+            <span class="svc-price">£2,600/mo</span>
           </li>
           <li class="svc-row" data-a>
             <div>
               <h3 class="svc-name" data-wave>Managed Hosting</h3>
               <p class="svc-desc">Edge-deployed, monitored 24/7, updated monthly. Zero headaches.</p>
             </div>
-            <span class="svc-price">$290/mo</span>
+            <span class="svc-price">£60/mo</span>
           </li>
         </ul>
       </div>
@@ -768,11 +963,11 @@
         </div>
         <div>
           <h2 id="about-h2" class="sr">About Form &amp; Forge</h2>
-          <p class="about-body" data-a>Form &amp; Forge is an independent creative studio founded in 2019. We partner with ambitious founders, growing brands, and category leaders who believe that exceptional design is a business advantage — not a luxury.</p>
+          <p class="about-body" data-a>Form &amp; Forge is an independent creative studio based in London. We partner with ambitious founders, growing brands, and category leaders who believe that exceptional design is a business advantage — not a luxury.</p>
           <p class="about-body" data-a>We keep our team intentionally small. Every project is led by a senior creative. No account managers. No junior hand-offs. Just direct access to the people doing the work.</p>
           <div class="about-stats" data-a>
             <div class="astat"><div class="astat-n">87+</div><div class="astat-l">Projects completed</div></div>
-            <div class="astat"><div class="astat-n">$2M+</div><div class="astat-l">Revenue generated for clients</div></div>
+            <div class="astat"><div class="astat-n">£2M+</div><div class="astat-l">Revenue generated for clients</div></div>
             <div class="astat"><div class="astat-n">14</div><div class="astat-l">Awards won</div></div>
             <div class="astat"><div class="astat-n">3</div><div class="astat-l">Countries active</div></div>
           </div>
@@ -793,15 +988,15 @@
             <div class="contact-details" data-a>
               <div>
                 <p class="cd-label">Email</p>
-                <a class="cd-val" href="mailto:hello@formandforge.studio">hello@formandforge.studio</a>
+                <a class="cd-val" href="mailto:zaclester123@outlook.com">zaclester123@outlook.com</a>
               </div>
               <div>
                 <p class="cd-label">Phone</p>
-                <a class="cd-val" href="tel:+13055550192">+1 (305) 555-0192</a>
+                <a class="cd-val" href="tel:+447597626748">07597 626748</a>
               </div>
               <div>
                 <p class="cd-label">Based in</p>
-                <p class="cd-val" style="color:var(--text)">Miami, FL — Working globally</p>
+                <p class="cd-val" style="color:var(--text)">London, England — Working globally</p>
               </div>
             </div>
           </div>
@@ -819,10 +1014,10 @@
               <label for="f-budget">Project Budget</label>
               <select id="f-budget" name="budget">
                 <option value="" disabled selected>Select a range</option>
-                <option>Under $10,000</option>
-                <option>$10,000 – $20,000</option>
-                <option>$20,000 – $50,000</option>
-                <option>$50,000+</option>
+                <option>Under £5,000</option>
+                <option>£5,000 – £15,000</option>
+                <option>£15,000 – £40,000</option>
+                <option>£40,000+</option>
               </select>
             </div>
             <div class="fg">
