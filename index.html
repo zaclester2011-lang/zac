@@ -829,6 +829,84 @@
     }
     .as-strip span { font-size:.32em; letter-spacing:.07em; text-transform:uppercase; color:rgba(255,255,255,.36); white-space:nowrap; }
     .as-strip-sep { width:1px; height:.85em; background:rgba(255,255,255,.1); flex-shrink:0; }
+
+    /* ─── LUMA PREMIUM EXTRAS ──────────────────────────────── */
+    .ls-announce {
+      font-size:.35em; letter-spacing:.09em; text-transform:uppercase;
+      color:rgba(201,168,76,.75); text-align:center; padding:.38em 1em;
+      background:rgba(201,168,76,.06); border-bottom:1px solid rgba(201,168,76,.09);
+      flex-shrink:0;
+    }
+    .ls-stars-row { display:flex; align-items:center; gap:.32em; margin-bottom:.06em; }
+    .ls-stars { font-size:.37em; color:#c9a84c; letter-spacing:.04em; }
+    .ls-star-count { font-size:.28em; color:rgba(255,255,255,.27); letter-spacing:.02em; }
+    .ls-add-cta {
+      font-size:.34em; letter-spacing:.08em; text-transform:uppercase; font-weight:600;
+      background:rgba(201,168,76,.11); border:1px solid rgba(201,168,76,.3);
+      color:#c9a84c; padding:.4em 1.1em; border-radius:999px; align-self:flex-start;
+      margin-top:.15em;
+    }
+    .ls-press {
+      display:flex; justify-content:center; gap:1.3em; flex-shrink:0;
+      padding:.48em 1em; border-top:1px solid rgba(201,168,76,.07);
+    }
+    .ls-press span { font-size:.28em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.17); font-style:italic; }
+
+    /* ─── VAULT PREMIUM EXTRAS ──────────────────────────────── */
+    .hd-ok-bar {
+      display:flex; align-items:center; gap:.4em;
+      padding:.36em 1.2em; background:rgba(77,255,180,.045);
+      border-bottom:1px solid rgba(77,255,180,.09); flex-shrink:0;
+    }
+    .hd-ok-dot { width:.46em; height:.46em; border-radius:50%; background:#4dffb4; flex-shrink:0; }
+    .hd-ok-txt { font-size:.33em; color:rgba(77,255,180,.8); font-weight:500; letter-spacing:.02em; }
+    .hd-ok-right { margin-left:auto; font-size:.29em; color:rgba(255,255,255,.22); letter-spacing:.03em; }
+    .hd-two-col {
+      flex:1; display:grid; grid-template-columns:1fr 1fr;
+      gap:.5em; padding:.4em 1.2em; min-height:0;
+    }
+    .hd-col { display:flex; flex-direction:column; gap:.32em; min-height:0; }
+    .hd-mini-label { font-size:.29em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.2); }
+    .hd-plan-feats { display:flex; flex-direction:column; gap:.22em; }
+    .hd-feat-row { display:flex; align-items:center; gap:.36em; font-size:.33em; color:rgba(255,255,255,.46); }
+    .hd-feat-check { color:#4dffb4; flex-shrink:0; }
+    .hd-billing-row { display:flex; justify-content:space-between; align-items:baseline; }
+    .hd-billing-key { font-size:.29em; letter-spacing:.04em; color:rgba(255,255,255,.23); }
+    .hd-billing-val { font-size:.33em; font-weight:600; color:rgba(255,255,255,.52); }
+    .hd-sparkline { display:flex; align-items:flex-end; gap:2%; min-height:2.2em; flex:1; }
+    .hd-sp-bar { flex:1; border-radius:1px 1px 0 0; position:relative; overflow:hidden; background:rgba(77,184,255,.09); }
+    .hd-sp-bar::after { content:''; position:absolute; bottom:0; left:0; right:0; border-radius:1px 1px 0 0; background:linear-gradient(to top,#4db8ff,rgba(77,184,255,.18)); height:100%; }
+    .hd-sp-bar.hi::after { background:linear-gradient(to top,#4dffb4,rgba(77,255,180,.18)); }
+
+    /* ─── FLORA PREMIUM EXTRAS ──────────────────────────────── */
+    .fp-card { display:flex; flex-direction:column; align-items:center; gap:.18em; }
+    .fp-badge { font-size:.26em; letter-spacing:.06em; background:hsl(135,22%,82%); color:hsl(135,30%,30%); padding:.2em .62em; border-radius:999px; border:1px solid hsl(135,20%,70%); margin-bottom:.04em; }
+    .fp-star-row { display:flex; align-items:center; gap:.2em; }
+    .fp-star-count { font-size:.26em; color:hsl(30,12%,50%); }
+    .fp-review { font-size:.28em; color:hsl(30,10%,46%); line-height:1.4; text-align:center; max-width:7.5em; }
+
+    /* ─── APEX PREMIUM EXTRAS ───────────────────────────────── */
+    .as-product-center { display:flex; align-items:center; justify-content:center; }
+    .as-jersey {
+      width:3.5em; height:5em; position:relative;
+      background:linear-gradient(155deg,hsl(20,100%,56%),hsl(20,78%,36%));
+      border-radius:.55em .55em 0 0;
+    }
+    .as-jersey::before {
+      content:''; position:absolute; top:0; left:50%; transform:translateX(-50%);
+      width:1.05em; height:1.3em; background:hsl(0,0%,8%);
+      border-radius:0 0 .38em .38em;
+    }
+    .as-jersey-stripe { position:absolute; top:1.65em; left:0; right:0; height:.26em; background:rgba(255,255,255,.14); }
+    .as-jersey-stripe-2 { position:absolute; top:1.98em; left:0; right:0; height:.13em; background:rgba(255,255,255,.07); }
+    .as-specs { display:flex; flex-direction:column; gap:.24em; }
+    .as-spec-row { display:flex; align-items:center; gap:.36em; font-size:.31em; color:rgba(255,255,255,.38); }
+    .as-spec-bullet { width:.36em; height:.36em; border-radius:50%; background:hsl(20,100%,54%); flex-shrink:0; }
+    .as-size-row { display:flex; gap:.22em; margin-top:.25em; }
+    .as-size-btn { font-size:.29em; letter-spacing:.04em; padding:.26em .6em; border-radius:.2em; border:1px solid rgba(255,255,255,.13); color:rgba(255,255,255,.36); }
+    .as-size-btn.active { border-color:hsl(20,100%,54%); color:hsl(20,100%,62%); background:rgba(255,80,0,.1); }
+    .as-from { font-size:.46em; font-weight:700; color:#fff; letter-spacing:-.02em; margin-top:.22em; }
+    .as-from small { font-size:.58em; font-weight:400; color:rgba(255,255,255,.32); }
   </style>
 </head>
 <body>
@@ -905,9 +983,10 @@
         <div class="port-grid">
           <article class="pi" data-a>
             <div class="pi-bg pi-site-luma" role="img" aria-label="LUMA — luxury fragrance e-commerce website">
+              <div class="ls-announce">Free delivery on orders over £150 &ensp;·&ensp; Complimentary gift wrapping</div>
               <div class="lsite-nav">
                 <span class="ls-logo">LUMA</span>
-                <span class="ls-navlinks">Collection&ensp;|&ensp;Maison&ensp;|&ensp;Contact</span>
+                <span class="ls-navlinks">Collection&ensp;|&ensp;Maison&ensp;|&ensp;Stores&ensp;|&ensp;Gift</span>
                 <span class="ls-bag">Bag (0)</span>
               </div>
               <div class="ls-hero-body">
@@ -917,14 +996,19 @@
                   </div>
                 </div>
                 <div class="ls-text-side">
-                  <p class="ls-sub" style="margin-bottom:.05em">Eau de Parfum</p>
-                  <p class="ls-title" style="font-size:2.3em;margin-bottom:.12em">Essence</p>
-                  <p class="ls-price-line">£185 <span class="ls-price-sm">50ml</span></p>
+                  <p class="ls-sub" style="margin-bottom:.04em">Eau de Parfum</p>
+                  <p class="ls-title" style="font-size:2.2em;margin-bottom:.06em">Essence</p>
+                  <div class="ls-stars-row">
+                    <span class="ls-stars">★★★★★</span>
+                    <span class="ls-star-count">4.9 · 1,024 reviews</span>
+                  </div>
+                  <p class="ls-price-line" style="margin-top:.1em">£185 <span class="ls-price-sm">50ml</span></p>
                   <div class="ls-size-row">
                     <span class="ls-size">30ml</span>
                     <span class="ls-size active">50ml</span>
                     <span class="ls-size">100ml</span>
                   </div>
+                  <span class="ls-add-cta">Add to Collection →</span>
                   <p class="ls-coll-label">Also in the collection</p>
                   <div class="ls-coll-row">
                     <div class="ls-mini-orb-wrap">
@@ -942,8 +1026,8 @@
                   </div>
                 </div>
               </div>
-              <div class="lsite-foot">
-                <span>Instagram</span><span>Stockists</span><span>Discover →</span>
+              <div class="ls-press">
+                <span>Vogue</span><span>Harper's Bazaar</span><span>The Times</span><span>Tatler</span>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
@@ -961,12 +1045,13 @@
             <div class="pi-bg hd-wrap" role="img" aria-label="Managed website hosting dashboard — £60 per month">
               <div class="hd-nav">
                 <span class="hd-logo"><span class="hd-logo-icon"></span>Forge Host</span>
-                <span class="hd-nav-items">Overview &ensp; Analytics &ensp; Support</span>
-                <span class="hd-status">Online</span>
+                <span class="hd-nav-items">Overview &ensp; Analytics &ensp; Security &ensp; Settings</span>
+                <span class="hd-status">All systems operational</span>
               </div>
-              <div class="hd-domain-bar">
-                <span class="hd-domain-url">yourwebsite.co.uk</span>
-                <span class="hd-domain-up">99.9% uptime</span>
+              <div class="hd-ok-bar">
+                <span class="hd-ok-dot"></span>
+                <span class="hd-ok-txt">yourwebsite.co.uk is healthy — 100% uptime in the last 30 days</span>
+                <span class="hd-ok-right">Checked 2 min ago</span>
               </div>
               <div class="hd-plan-row">
                 <div>
@@ -975,25 +1060,48 @@
                 </div>
                 <span class="hd-plan-badge">Managed Hosting</span>
               </div>
-              <div class="hd-stats">
-                <div class="hd-sc">
-                  <div class="hd-sc-label">Visitors</div>
-                  <div class="hd-sc-val">1,847</div>
+              <div class="hd-two-col">
+                <div class="hd-col">
+                  <div class="hd-mini-label">Plan includes</div>
+                  <div class="hd-plan-feats">
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>SSL certificate (auto-renew)</div>
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>Daily encrypted backups</div>
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>Monthly content updates</div>
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>24/7 uptime monitoring</div>
+                  </div>
+                  <div style="margin-top:auto;display:flex;flex-direction:column;gap:.18em;padding-top:.28em">
+                    <div class="hd-billing-row"><span class="hd-billing-key">Next invoice</span><span class="hd-billing-val">28 Jun 2026</span></div>
+                    <div class="hd-billing-row"><span class="hd-billing-key">SSL expires</span><span class="hd-billing-val">Mar 2027</span></div>
+                    <div class="hd-billing-row"><span class="hd-billing-key">Storage</span><span class="hd-billing-val">2.1 / 10 GB</span></div>
+                  </div>
                 </div>
-                <div class="hd-sc">
-                  <div class="hd-sc-label">Storage</div>
-                  <div class="hd-sc-val">2.1 GB</div>
-                </div>
-                <div class="hd-sc">
-                  <div class="hd-sc-label">Load Time</div>
-                  <div class="hd-sc-val">0.8s</div>
+                <div class="hd-col">
+                  <div class="hd-mini-label">Visitors this month</div>
+                  <div class="hd-sparkline">
+                    <div class="hd-sp-bar" style="height:38%"></div>
+                    <div class="hd-sp-bar" style="height:52%"></div>
+                    <div class="hd-sp-bar" style="height:44%"></div>
+                    <div class="hd-sp-bar" style="height:61%"></div>
+                    <div class="hd-sp-bar" style="height:55%"></div>
+                    <div class="hd-sp-bar" style="height:72%"></div>
+                    <div class="hd-sp-bar" style="height:68%"></div>
+                    <div class="hd-sp-bar hi" style="height:84%"></div>
+                    <div class="hd-sp-bar hi" style="height:100%"></div>
+                  </div>
+                  <div style="font-family:var(--font-d);font-size:.7em;font-weight:700;color:#fff;letter-spacing:-.02em;margin-top:.2em">
+                    1,847 <span style="font-size:.5em;font-weight:500;color:rgba(77,255,180,.78)">▲ 14%</span>
+                  </div>
+                  <div style="margin-top:.22em;display:flex;flex-direction:column;gap:.18em">
+                    <div class="hd-billing-row"><span class="hd-billing-key">Avg. load time</span><span class="hd-billing-val">0.8s</span></div>
+                    <div class="hd-billing-row"><span class="hd-billing-key">Uptime (30 days)</span><span class="hd-billing-val">99.9%</span></div>
+                  </div>
                 </div>
               </div>
-              <div class="hd-activity">
+              <div class="hd-activity" style="flex-shrink:0">
                 <div class="hd-act-label">Recent Activity</div>
-                <div class="hd-act-row"><span class="hd-act-dot hd-act-green"></span><span>SSL certificate renewed</span><span>2d ago</span></div>
-                <div class="hd-act-row"><span class="hd-act-dot hd-act-blue"></span><span>Backup completed</span><span>5d ago</span></div>
-                <div class="hd-act-row"><span class="hd-act-dot hd-act-gold"></span><span>Speed optimised</span><span>1w ago</span></div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-green"></span><span>SSL certificate renewed automatically</span><span>2d ago</span></div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-blue"></span><span>Full site backup completed</span><span>5d ago</span></div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-gold"></span><span>Performance optimised — 0.8s load</span><span>1w ago</span></div>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
@@ -1011,28 +1119,45 @@
             <div class="pi-bg pi-site-flora" role="img" aria-label="FLORA — organic skincare product website">
               <div class="fs-nav">
                 <span class="fs-logo">FLORA</span>
-                <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients</span>
-                <span class="fs-cta-sm">Shop Now</span>
+                <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients&ensp;&nbsp;Journal</span>
+                <span class="fs-cta-sm">Bag (2)</span>
               </div>
-              <span class="fs-tag" style="display:block;padding:.55em 1.2em 0;font-size:.36em">New Collection — Spring</span>
-              <div class="fp-grid">
-                <div class="fp-product">
+              <div style="display:flex;align-items:baseline;justify-content:space-between;padding:.42em 1.2em 0;flex-shrink:0">
+                <span class="fs-tag" style="font-size:.35em">Best Sellers</span>
+                <span class="fs-btn" style="font-size:.32em">View All →</span>
+              </div>
+              <div class="fp-grid" style="gap:.52em;padding:.38em 1em .4em;align-items:start">
+                <div class="fp-card">
+                  <span class="fp-badge">Bestseller</span>
                   <div class="fp-bottle fp-bottle-a"></div>
                   <p class="fp-name">Dew Serum</p>
+                  <p class="fp-review">Lightweight hydration, all skin types</p>
+                  <div class="fp-star-row">
+                    <span class="fp-stars">★★★★★</span>
+                    <span class="fp-star-count">(412)</span>
+                  </div>
                   <p class="fp-price">£48</p>
-                  <p class="fp-stars">★★★★★</p>
                 </div>
-                <div class="fp-product">
+                <div class="fp-card">
+                  <span class="fp-badge">New</span>
                   <div class="fp-bottle fp-bottle-b"></div>
                   <p class="fp-name">Bloom Oil</p>
+                  <p class="fp-review">Nourishing rosehip facial oil</p>
+                  <div class="fp-star-row">
+                    <span class="fp-stars">★★★★★</span>
+                    <span class="fp-star-count">(287)</span>
+                  </div>
                   <p class="fp-price">£62</p>
-                  <p class="fp-stars">★★★★★</p>
                 </div>
-                <div class="fp-product">
-                  <div class="fp-bottle fp-bottle-c"></div>
+                <div class="fp-card">
+                  <div class="fp-bottle fp-bottle-c" style="margin-top:1.5em"></div>
                   <p class="fp-name">Mist Toner</p>
+                  <p class="fp-review">Refreshing floral face mist</p>
+                  <div class="fp-star-row">
+                    <span class="fp-stars">★★★★☆</span>
+                    <span class="fp-star-count">(198)</span>
+                  </div>
                   <p class="fp-price">£34</p>
-                  <p class="fp-stars">★★★★☆</p>
                 </div>
               </div>
               <div class="fp-footer">
@@ -1040,8 +1165,9 @@
                   <span class="fs-badge">100% Natural</span>
                   <span class="fs-badge">Vegan</span>
                   <span class="fs-badge">Cruelty Free</span>
+                  <span class="fs-badge">B Corp</span>
                 </div>
-                <span class="fs-btn">All Products →</span>
+                <span class="fs-btn">Free Returns →</span>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
@@ -1059,28 +1185,51 @@
             <div class="pi-bg pi-site-apex" role="img" aria-label="APEX — performance sportswear brand system">
               <div class="as-nav">
                 <span class="as-logo">APEX</span>
-                <span class="as-nav-items">Men&ensp;&nbsp;Women&ensp;&nbsp;Equipment&ensp;&nbsp;Training</span>
+                <span class="as-nav-items">Men&ensp;&nbsp;Women&ensp;&nbsp;Equipment&ensp;&nbsp;Training&ensp;&nbsp;Elite</span>
                 <span class="as-cta-sm">Shop SS25</span>
               </div>
-              <div class="as-body">
+              <div class="as-body" style="grid-template-columns:1fr .025fr auto .025fr 1fr">
                 <div class="as-left">
-                  <span class="as-tag">Performance Wear</span>
+                  <span class="as-tag">SS25 — Performance Wear</span>
                   <p class="as-title">BUILT<br>FOR<br>LIMITS.</p>
                   <div class="as-underline"></div>
                   <div class="apex-swatches">
-                    <span class="apex-swatch black active" title="Black"></span>
-                    <span class="apex-swatch slate" title="Slate"></span>
-                    <span class="apex-swatch flame" title="Flame"></span>
-                    <span class="apex-swatch stone" title="Stone"></span>
+                    <span class="apex-swatch black active"></span>
+                    <span class="apex-swatch slate"></span>
+                    <span class="apex-swatch flame"></span>
+                    <span class="apex-swatch stone"></span>
+                  </div>
+                  <div class="as-size-row">
+                    <span class="as-size-btn">XS</span>
+                    <span class="as-size-btn">S</span>
+                    <span class="as-size-btn active">M</span>
+                    <span class="as-size-btn">L</span>
+                    <span class="as-size-btn">XL</span>
+                  </div>
+                  <span class="as-from">From £89 <small>· free UK shipping</small></span>
+                </div>
+                <div class="as-stripe"></div>
+                <div class="as-product-center">
+                  <div class="as-jersey">
+                    <div class="as-jersey-stripe"></div>
+                    <div class="as-jersey-stripe-2"></div>
                   </div>
                 </div>
                 <div class="as-stripe"></div>
-                <div class="as-right">
-                  <div class="as-stat"><span class="as-stat-n">98%</span><span class="as-stat-l">Performance<br>Rating</span></div>
-                  <div class="as-divider-v"></div>
-                  <div class="as-stat"><span class="as-stat-n">4K+</span><span class="as-stat-l">Pro<br>Athletes</span></div>
-                  <div class="as-divider-v"></div>
-                  <div class="as-stat"><span class="as-stat-n">32°</span><span class="as-stat-l">Max Temp<br>Tested</span></div>
+                <div class="as-right" style="flex-direction:column;align-items:flex-start;gap:.5em;justify-content:center">
+                  <div style="display:flex;align-items:center;gap:1.1em">
+                    <div class="as-stat"><span class="as-stat-n">98%</span><span class="as-stat-l">Performance<br>Rating</span></div>
+                    <div class="as-divider-v"></div>
+                    <div class="as-stat"><span class="as-stat-n">4K+</span><span class="as-stat-l">Pro<br>Athletes</span></div>
+                    <div class="as-divider-v"></div>
+                    <div class="as-stat"><span class="as-stat-n">32°</span><span class="as-stat-l">Max Temp<br>Tested</span></div>
+                  </div>
+                  <div class="as-specs">
+                    <div class="as-spec-row"><span class="as-spec-bullet"></span>200g ultra-lightweight fabric</div>
+                    <div class="as-spec-row"><span class="as-spec-bullet"></span>DryFlex™ moisture-wicking</div>
+                    <div class="as-spec-row"><span class="as-spec-bullet"></span>4-way mechanical stretch</div>
+                    <div class="as-spec-row"><span class="as-spec-bullet"></span>UV50+ sun protection</div>
+                  </div>
                 </div>
               </div>
               <div class="as-strip">
@@ -1091,6 +1240,8 @@
                 <span>4K+ Pro Athletes</span>
                 <span class="as-strip-sep"></span>
                 <span>Lifetime Guarantee</span>
+                <span class="as-strip-sep"></span>
+                <span>Made in Portugal</span>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
