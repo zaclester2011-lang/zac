@@ -412,6 +412,18 @@
       color:var(--text-2); font-size:.97rem; line-height:1.85;
       margin-bottom:var(--sp8);
     }
+
+    /* ─── AIMS GRID ────────────────────────────────────── */
+    .aims-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp4); margin-top:var(--sp6); }
+    .aim-item {
+      display:flex; gap:var(--sp4); padding:var(--sp5) var(--sp6);
+      border:1px solid var(--border); border-radius:var(--rad-xl);
+      transition:border-color 300ms var(--ease), background 300ms var(--ease);
+    }
+    .aim-item:hover { border-color:var(--gold-border); background:var(--gold-dim); }
+    .aim-num { font-family:var(--font-d); font-size:.75rem; font-weight:700; color:var(--gold); letter-spacing:.06em; flex-shrink:0; padding-top:.1rem; }
+    .aim-name { font-size:.92rem; font-weight:600; color:var(--text); margin-bottom:.3rem; }
+    .aim-desc { font-size:.78rem; color:var(--text-2); line-height:1.65; }
     .about-stats {
       display:grid; grid-template-columns:1fr 1fr; gap:var(--sp3);
     }
@@ -1462,16 +1474,44 @@
     <section id="about" aria-labelledby="about-h2">
       <div class="wrap">
         <div>
-          <p class="sec-label">The Studio</p>
+          <p class="sec-label">Our Aims</p>
           <blockquote class="about-quote" data-a>
-            Most agencies will tell you<br>what you want to hear.<br>
-            We'll tell you what<br><strong>you do.</strong>
+            We stand out<br>so you<br><strong>stand out.</strong>
           </blockquote>
         </div>
         <div>
           <h2 id="about-h2" class="sr">About Form &amp; Forge</h2>
-          <p class="about-body" data-a>Form &amp; Forge is a premium website designer based in London. We partner with ambitious founders, growing brands, and category leaders who believe that exceptional design is a business advantage — not a luxury.</p>
-          <p class="about-body" data-a>We keep our team intentionally small. Every project is led by a senior creative. No account managers. No junior hand-offs. Just direct access to the people doing the work.</p>
+          <p class="about-body" data-a>Form &amp; Forge is a premium website designer based in London. Everything we build is guided by four principles.</p>
+          <div class="aims-grid" data-a>
+            <div class="aim-item">
+              <span class="aim-num">01</span>
+              <div>
+                <p class="aim-name">Highly Affordable</p>
+                <p class="aim-desc">World-class results at a price that makes sense for your business.</p>
+              </div>
+            </div>
+            <div class="aim-item">
+              <span class="aim-num">02</span>
+              <div>
+                <p class="aim-name">Luxury</p>
+                <p class="aim-desc">Every detail crafted to the standard of the world's finest brands.</p>
+              </div>
+            </div>
+            <div class="aim-item">
+              <span class="aim-num">03</span>
+              <div>
+                <p class="aim-name">Efficient</p>
+                <p class="aim-desc">Built and delivered in 24 hours. No delays, no excuses.</p>
+              </div>
+            </div>
+            <div class="aim-item">
+              <span class="aim-num">04</span>
+              <div>
+                <p class="aim-name">Premium &amp; World-Class</p>
+                <p class="aim-desc">Designed to compete with the best websites on the internet.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
