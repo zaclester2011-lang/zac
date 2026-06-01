@@ -647,21 +647,23 @@
     #intro.out { transform:translateY(-100%); pointer-events:none; }
     .intro-inner { text-align:center; }
     .intro-d {
-      width:9px; height:9px; background:var(--gold); border-radius:50%;
-      margin:0 auto var(--sp5); opacity:0; transform:scale(0);
+      width:14px; height:14px; background:var(--gold); border-radius:50%;
+      margin:0 auto var(--sp6); opacity:0; transform:scale(0);
+      box-shadow:0 0 24px hsl(43 60% 52%/.5);
       transition:opacity 400ms var(--ease-in), transform 500ms cubic-bezier(.34,1.56,.64,1);
     }
     .intro-d.on { opacity:1; transform:scale(1); }
     .intro-txt {
-      font-family:var(--font-d); font-size:clamp(2rem,5vw,4.5rem);
-      font-weight:700; letter-spacing:-.04em; color:var(--text);
-      opacity:0; transform:translateY(18px);
-      transition:opacity 600ms var(--ease-in), transform 600ms var(--ease-in);
+      font-family:var(--font-d); font-size:clamp(4.5rem,13vw,10rem);
+      font-weight:800; letter-spacing:-.05em; color:var(--gold);
+      line-height:.9;
+      opacity:0; transform:translateY(22px);
+      transition:opacity 700ms var(--ease-in), transform 700ms var(--ease-in);
     }
     .intro-txt.on { opacity:1; transform:none; }
     .intro-sub {
-      font-size:.6rem; font-weight:700; letter-spacing:.22em;
-      text-transform:uppercase; color:var(--gold); margin-top:var(--sp4);
+      font-size:.68rem; font-weight:600; letter-spacing:.24em;
+      text-transform:uppercase; color:hsl(43 60% 52%/.6); margin-top:var(--sp5);
       opacity:0; transform:translateY(8px);
       transition:opacity 500ms 100ms var(--ease-in), transform 500ms 100ms var(--ease-in);
     }
@@ -907,6 +909,80 @@
     .as-size-btn.active { border-color:hsl(20,100%,54%); color:hsl(20,100%,62%); background:rgba(255,80,0,.1); }
     .as-from { font-size:.46em; font-weight:700; color:#fff; letter-spacing:-.02em; margin-top:.22em; }
     .as-from small { font-size:.58em; font-weight:400; color:rgba(255,255,255,.32); }
+
+    /* ─── LUMA V2 EXTRAS ────────────────────────────────────── */
+    .ls-ring-outer {
+      width:7.8em; height:7.8em; border-radius:50%;
+      border:1px dashed rgba(201,168,76,.1);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .ls-ring-mid {
+      width:6.2em; height:6.2em; border-radius:50%;
+      border:1px solid rgba(201,168,76,.16);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .ls-ring-inner {
+      width:4.6em; height:4.6em; border-radius:50%;
+      border:1px solid rgba(201,168,76,.28);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .ls-orb-v2 {
+      width:3.4em; height:3.4em; border-radius:50%;
+      background:radial-gradient(circle at 32% 28%, #f0d878, #c9a84c 44%, #7a5518 74%, #150600);
+      box-shadow:0 0 2.2em rgba(201,168,76,.45),0 0 5em rgba(201,168,76,.12);
+    }
+    .ls-orb-num { font-size:.28em; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.4); text-align:center; margin-top:.45em; }
+    .ls-tagline { font-family:var(--font-d); font-size:.46em; font-weight:300; font-style:italic; color:rgba(255,255,255,.35); line-height:1.45; margin-bottom:.06em; }
+    .ls-stock-row { display:flex; align-items:center; gap:.3em; margin-top:.05em; }
+    .ls-stock-dot { width:.36em; height:.36em; border-radius:50%; background:#4dffb4; flex-shrink:0; }
+    .ls-stock-txt { font-size:.27em; letter-spacing:.05em; color:rgba(255,255,255,.32); }
+    .ls-divider-deco { display:flex; align-items:center; gap:.5em; padding:.28em 1.3em; flex-shrink:0; }
+    .ls-divider-line { flex:1; height:1px; background:rgba(201,168,76,.08); }
+    .ls-divider-mark { font-size:.42em; color:rgba(201,168,76,.26); }
+    .ls-scent-strip { display:grid; grid-template-columns:repeat(3,1fr); flex-shrink:0; padding:.28em 1.3em .32em; gap:.3em; }
+    .ls-scent-col { display:flex; flex-direction:column; gap:.15em; }
+    .ls-scent-label { font-size:.25em; letter-spacing:.18em; text-transform:uppercase; color:rgba(201,168,76,.48); font-weight:700; }
+    .ls-scent-notes { font-size:.27em; color:rgba(255,255,255,.27); line-height:1.5; font-style:italic; }
+
+    /* ─── VAULT V2 EXTRAS ───────────────────────────────────── */
+    .hd-breadcrumb {
+      display:flex; align-items:center; gap:.38em;
+      padding:.32em 1.2em; background:rgba(255,255,255,.02);
+      border-bottom:1px solid rgba(255,255,255,.05); flex-shrink:0;
+    }
+    .hd-bc-site  { font-size:.4em; font-weight:600; color:rgba(255,255,255,.7); }
+    .hd-bc-dot   { width:.4em; height:.4em; border-radius:50%; background:#4dffb4; margin-left:.12em; }
+    .hd-bc-live  { font-size:.3em; letter-spacing:.06em; text-transform:uppercase; color:#4dffb4; font-weight:700; }
+    .hd-bc-right { margin-left:auto; font-size:.27em; color:rgba(255,255,255,.22); }
+    .hd-ssl { display:flex; align-items:center; gap:.4em; margin-top:auto; padding-top:.22em; border-top:1px solid rgba(255,255,255,.06); }
+    .hd-ssl-grade { font-family:var(--font-d); font-size:.88em; font-weight:900; color:#4dffb4; line-height:1; }
+    .hd-ssl-label { font-size:.29em; letter-spacing:.07em; text-transform:uppercase; color:rgba(77,255,180,.55); }
+    .hd-ssl-sub   { font-size:.26em; color:rgba(255,255,255,.26); margin-top:.08em; }
+    .hd-perf-row  { display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:.22em; border-top:1px solid rgba(255,255,255,.06); }
+    .hd-perf-item { display:flex; flex-direction:column; gap:.08em; }
+    .hd-perf-val  { font-size:.5em; font-weight:700; color:#fff; line-height:1; }
+    .hd-perf-key  { font-size:.25em; letter-spacing:.07em; text-transform:uppercase; color:rgba(255,255,255,.24); }
+    .hd-perf-div  { width:1px; height:1.5em; background:rgba(255,255,255,.07); }
+
+    /* ─── FLORA V2 EXTRAS ───────────────────────────────────── */
+    .fp-filter-row { display:flex; gap:.26em; padding:.2em 1.2em 0; flex-shrink:0; }
+    .fp-filter-pill { font-size:.26em; letter-spacing:.05em; padding:.22em .7em; border-radius:999px; border:1px solid hsl(135,18%,72%); color:hsl(30,14%,52%); }
+    .fp-filter-pill.active { background:hsl(135,24%,36%); color:#fff; border-color:hsl(135,24%,36%); }
+    .fp-brand  { font-size:.24em; color:hsl(30,12%,56%); letter-spacing:.04em; }
+    .fp-stock  { font-size:.23em; letter-spacing:.04em; font-weight:600; color:hsl(135,30%,40%); margin-top:.03em; }
+    .fp-add    { font-size:.25em; letter-spacing:.05em; font-weight:600; color:hsl(135,24%,34%); border:1px solid hsl(135,20%,62%); padding:.26em .72em; border-radius:999px; margin-top:.03em; }
+
+    /* ─── APEX V2 EXTRAS ────────────────────────────────────── */
+    .as-look-section { margin-top:.35em; padding-top:.3em; border-top:1px solid rgba(255,255,255,.07); }
+    .as-look-label { font-size:.27em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.22); margin-bottom:.26em; }
+    .as-look-items { display:flex; gap:.42em; }
+    .as-look-item  { display:flex; flex-direction:column; gap:.11em; }
+    .as-look-swatch { width:2.1em; height:2.1em; border-radius:.2em; border:1px solid rgba(255,255,255,.1); }
+    .as-look-swatch.shorts { background:linear-gradient(135deg,#1a1a2e,#2a2a3e); }
+    .as-look-swatch.tights { background:linear-gradient(135deg,#111,#1e1e1e); }
+    .as-look-swatch.cap    { background:linear-gradient(135deg,hsl(20,80%,36%),hsl(20,60%,28%)); }
+    .as-look-name  { font-size:.25em; letter-spacing:.04em; color:rgba(255,255,255,.38); }
+    .as-look-price { font-size:.25em; font-weight:700; color:rgba(255,255,255,.58); }
   </style>
 </head>
 <body>
@@ -951,22 +1027,6 @@
           <span class="hero-line"><span class="hero-word italic" data-d="380">remembering.</span></span>
         </h1>
       </div>
-      <div class="wrap" style="padding-top:0;padding-bottom:0">
-        <div class="hero-stats" role="list">
-          <div class="stat" role="listitem" data-sd="0">
-            <div class="stat-n">87+</div><div class="stat-l">Projects delivered</div>
-          </div>
-          <div class="stat" role="listitem" data-sd="100">
-            <div class="stat-n">6 yrs</div><div class="stat-l">In practice</div>
-          </div>
-          <div class="stat" role="listitem" data-sd="200">
-            <div class="stat-n">100%</div><div class="stat-l">Client retention</div>
-          </div>
-          <div class="stat" role="listitem" data-sd="300">
-            <div class="stat-n">14</div><div class="stat-l">Industry awards</div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- PORTFOLIO -->
@@ -983,47 +1043,67 @@
         <div class="port-grid">
           <article class="pi" data-a>
             <div class="pi-bg pi-site-luma" role="img" aria-label="LUMA — luxury fragrance e-commerce website">
-              <div class="ls-announce">Free delivery on orders over £150 &ensp;·&ensp; Complimentary gift wrapping</div>
+              <div class="ls-announce">Complimentary engraving on orders over £200 &ensp;·&ensp; Free express delivery</div>
               <div class="lsite-nav">
-                <span class="ls-logo">LUMA</span>
+                <span class="ls-logo">MAISON LUMA</span>
                 <span class="ls-navlinks">Collection&ensp;|&ensp;Maison&ensp;|&ensp;Stores&ensp;|&ensp;Gift</span>
-                <span class="ls-bag">Bag (0)</span>
+                <span class="ls-bag">Bag (1)</span>
               </div>
               <div class="ls-hero-body">
-                <div class="ls-orb-side">
-                  <div class="ls-ring">
-                    <div class="ls-orb-lg"></div>
+                <div class="ls-orb-side" style="flex-direction:column;gap:.3em">
+                  <div class="ls-ring-outer">
+                    <div class="ls-ring-mid">
+                      <div class="ls-ring-inner">
+                        <div class="ls-orb-v2"></div>
+                      </div>
+                    </div>
                   </div>
+                  <p class="ls-orb-num">No. 01 — Essence</p>
                 </div>
                 <div class="ls-text-side">
-                  <p class="ls-sub" style="margin-bottom:.04em">Eau de Parfum</p>
-                  <p class="ls-title" style="font-size:2.2em;margin-bottom:.06em">Essence</p>
+                  <p class="ls-sub" style="margin-bottom:.03em">Eau de Parfum</p>
+                  <p class="ls-title" style="font-size:2.1em;line-height:.88;margin-bottom:.06em">Essence</p>
+                  <p class="ls-tagline">A meditation on warmth.<br>The quiet before dawn.</p>
                   <div class="ls-stars-row">
                     <span class="ls-stars">★★★★★</span>
                     <span class="ls-star-count">4.9 · 1,024 reviews</span>
                   </div>
-                  <p class="ls-price-line" style="margin-top:.1em">£185 <span class="ls-price-sm">50ml</span></p>
+                  <p class="ls-price-line" style="margin-top:.08em">£185 <span class="ls-price-sm">50ml</span></p>
                   <div class="ls-size-row">
                     <span class="ls-size">30ml</span>
                     <span class="ls-size active">50ml</span>
                     <span class="ls-size">100ml</span>
                   </div>
                   <span class="ls-add-cta">Add to Collection →</span>
-                  <p class="ls-coll-label">Also in the collection</p>
-                  <div class="ls-coll-row">
-                    <div class="ls-mini-orb-wrap">
-                      <div class="ls-mini-orb noir"></div>
-                      <span class="ls-mini-name">Noir</span>
-                    </div>
-                    <div class="ls-mini-orb-wrap">
-                      <div class="ls-mini-orb blanche"></div>
-                      <span class="ls-mini-name">Blanche</span>
-                    </div>
-                    <div class="ls-mini-orb-wrap">
-                      <div class="ls-mini-orb rose"></div>
-                      <span class="ls-mini-name">Rose</span>
-                    </div>
+                  <div class="ls-stock-row">
+                    <span class="ls-stock-dot"></span>
+                    <span class="ls-stock-txt">In stock — ships within 24 hours</span>
                   </div>
+                  <p class="ls-coll-label" style="margin-top:.2em">Also in the collection</p>
+                  <div class="ls-coll-row">
+                    <div class="ls-mini-orb-wrap"><div class="ls-mini-orb noir"></div><span class="ls-mini-name">Noir</span></div>
+                    <div class="ls-mini-orb-wrap"><div class="ls-mini-orb blanche"></div><span class="ls-mini-name">Blanche</span></div>
+                    <div class="ls-mini-orb-wrap"><div class="ls-mini-orb rose"></div><span class="ls-mini-name">Rose</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ls-divider-deco">
+                <span class="ls-divider-line"></span>
+                <span class="ls-divider-mark">◆</span>
+                <span class="ls-divider-line"></span>
+              </div>
+              <div class="ls-scent-strip">
+                <div class="ls-scent-col">
+                  <span class="ls-scent-label">Top</span>
+                  <span class="ls-scent-notes">Bergamot<br>Cardamom</span>
+                </div>
+                <div class="ls-scent-col">
+                  <span class="ls-scent-label">Heart</span>
+                  <span class="ls-scent-notes">Rose · Neroli<br>Jasmine</span>
+                </div>
+                <div class="ls-scent-col">
+                  <span class="ls-scent-label">Base</span>
+                  <span class="ls-scent-notes">Sandalwood<br>Musk · Amber</span>
                 </div>
               </div>
               <div class="ls-press">
@@ -1048,10 +1128,11 @@
                 <span class="hd-nav-items">Overview &ensp; Analytics &ensp; Security &ensp; Settings</span>
                 <span class="hd-status">All systems operational</span>
               </div>
-              <div class="hd-ok-bar">
-                <span class="hd-ok-dot"></span>
-                <span class="hd-ok-txt">yourwebsite.co.uk is healthy — 100% uptime in the last 30 days</span>
-                <span class="hd-ok-right">Checked 2 min ago</span>
+              <div class="hd-breadcrumb">
+                <span class="hd-bc-site">yourwebsite.co.uk</span>
+                <span class="hd-bc-dot"></span>
+                <span class="hd-bc-live">Live</span>
+                <span class="hd-bc-right">Checked 2 min ago</span>
               </div>
               <div class="hd-plan-row">
                 <div>
@@ -1069,10 +1150,16 @@
                     <div class="hd-feat-row"><span class="hd-feat-check">✓</span>Monthly content updates</div>
                     <div class="hd-feat-row"><span class="hd-feat-check">✓</span>24/7 uptime monitoring</div>
                   </div>
-                  <div style="margin-top:auto;display:flex;flex-direction:column;gap:.18em;padding-top:.28em">
-                    <div class="hd-billing-row"><span class="hd-billing-key">Next invoice</span><span class="hd-billing-val">28 Jun 2026</span></div>
-                    <div class="hd-billing-row"><span class="hd-billing-key">SSL expires</span><span class="hd-billing-val">Mar 2027</span></div>
-                    <div class="hd-billing-row"><span class="hd-billing-key">Storage</span><span class="hd-billing-val">2.1 / 10 GB</span></div>
+                  <div class="hd-ssl">
+                    <div style="display:flex;flex-direction:column;gap:.06em">
+                      <div class="hd-ssl-grade">A+</div>
+                      <div class="hd-ssl-label">SSL Grade</div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:.07em;margin-left:.5em">
+                      <div class="hd-ssl-sub">TLS 1.3 · 256-bit encryption</div>
+                      <div class="hd-ssl-sub">Auto-renews March 2027</div>
+                      <div class="hd-billing-row" style="margin-top:.12em"><span class="hd-billing-key">Next invoice</span><span class="hd-billing-val">28 Jun 2026</span></div>
+                    </div>
                   </div>
                 </div>
                 <div class="hd-col">
@@ -1091,9 +1178,21 @@
                   <div style="font-family:var(--font-d);font-size:.7em;font-weight:700;color:#fff;letter-spacing:-.02em;margin-top:.2em">
                     1,847 <span style="font-size:.5em;font-weight:500;color:rgba(77,255,180,.78)">▲ 14%</span>
                   </div>
-                  <div style="margin-top:.22em;display:flex;flex-direction:column;gap:.18em">
-                    <div class="hd-billing-row"><span class="hd-billing-key">Avg. load time</span><span class="hd-billing-val">0.8s</span></div>
-                    <div class="hd-billing-row"><span class="hd-billing-key">Uptime (30 days)</span><span class="hd-billing-val">99.9%</span></div>
+                  <div class="hd-perf-row">
+                    <div class="hd-perf-item">
+                      <span class="hd-perf-val">0.8s</span>
+                      <span class="hd-perf-key">Load Time</span>
+                    </div>
+                    <div class="hd-perf-div"></div>
+                    <div class="hd-perf-item">
+                      <span class="hd-perf-val">99.9%</span>
+                      <span class="hd-perf-key">Uptime</span>
+                    </div>
+                    <div class="hd-perf-div"></div>
+                    <div class="hd-perf-item">
+                      <span class="hd-perf-val">98</span>
+                      <span class="hd-perf-key">PageSpeed</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1122,14 +1221,17 @@
                 <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients&ensp;&nbsp;Journal</span>
                 <span class="fs-cta-sm">Bag (2)</span>
               </div>
-              <div style="display:flex;align-items:baseline;justify-content:space-between;padding:.42em 1.2em 0;flex-shrink:0">
-                <span class="fs-tag" style="font-size:.35em">Best Sellers</span>
-                <span class="fs-btn" style="font-size:.32em">View All →</span>
+              <div class="fp-filter-row">
+                <span class="fp-filter-pill active">All</span>
+                <span class="fp-filter-pill">Serums</span>
+                <span class="fp-filter-pill">Oils</span>
+                <span class="fp-filter-pill">Mists</span>
               </div>
               <div class="fp-grid" style="gap:.52em;padding:.38em 1em .4em;align-items:start">
                 <div class="fp-card">
                   <span class="fp-badge">Bestseller</span>
                   <div class="fp-bottle fp-bottle-a"></div>
+                  <p class="fp-brand">FLORA Skincare</p>
                   <p class="fp-name">Dew Serum</p>
                   <p class="fp-review">Lightweight hydration, all skin types</p>
                   <div class="fp-star-row">
@@ -1137,10 +1239,13 @@
                     <span class="fp-star-count">(412)</span>
                   </div>
                   <p class="fp-price">£48</p>
+                  <p class="fp-stock">● In stock</p>
+                  <span class="fp-add">Add to Bag →</span>
                 </div>
                 <div class="fp-card">
                   <span class="fp-badge">New</span>
                   <div class="fp-bottle fp-bottle-b"></div>
+                  <p class="fp-brand">FLORA Skincare</p>
                   <p class="fp-name">Bloom Oil</p>
                   <p class="fp-review">Nourishing rosehip facial oil</p>
                   <div class="fp-star-row">
@@ -1148,9 +1253,12 @@
                     <span class="fp-star-count">(287)</span>
                   </div>
                   <p class="fp-price">£62</p>
+                  <p class="fp-stock">● In stock</p>
+                  <span class="fp-add">Add to Bag →</span>
                 </div>
                 <div class="fp-card">
                   <div class="fp-bottle fp-bottle-c" style="margin-top:1.5em"></div>
+                  <p class="fp-brand">FLORA Skincare</p>
                   <p class="fp-name">Mist Toner</p>
                   <p class="fp-review">Refreshing floral face mist</p>
                   <div class="fp-star-row">
@@ -1158,6 +1266,8 @@
                     <span class="fp-star-count">(198)</span>
                   </div>
                   <p class="fp-price">£34</p>
+                  <p class="fp-stock" style="color:hsl(0,58%,52%)">● Low stock</p>
+                  <span class="fp-add">Add to Bag →</span>
                 </div>
               </div>
               <div class="fp-footer">
@@ -1229,6 +1339,26 @@
                     <div class="as-spec-row"><span class="as-spec-bullet"></span>DryFlex™ moisture-wicking</div>
                     <div class="as-spec-row"><span class="as-spec-bullet"></span>4-way mechanical stretch</div>
                     <div class="as-spec-row"><span class="as-spec-bullet"></span>UV50+ sun protection</div>
+                  </div>
+                  <div class="as-look-section">
+                    <p class="as-look-label">Complete the look</p>
+                    <div class="as-look-items">
+                      <div class="as-look-item">
+                        <div class="as-look-swatch shorts"></div>
+                        <span class="as-look-name">Pro Shorts</span>
+                        <span class="as-look-price">£54</span>
+                      </div>
+                      <div class="as-look-item">
+                        <div class="as-look-swatch tights"></div>
+                        <span class="as-look-name">Run Tights</span>
+                        <span class="as-look-price">£72</span>
+                      </div>
+                      <div class="as-look-item">
+                        <div class="as-look-swatch cap"></div>
+                        <span class="as-look-name">Race Cap</span>
+                        <span class="as-look-price">£32</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1504,9 +1634,6 @@
   setTimeout(()=>document.getElementById('eyebrow').classList.add('go'), _hd + 100);
   document.querySelectorAll('.hero-word').forEach(w=>{
     setTimeout(()=>w.classList.add('go'), _hd + +w.dataset.d);
-  });
-  document.querySelectorAll('.stat').forEach(s=>{
-    setTimeout(()=>s.classList.add('go'), _hd + 700 + +s.dataset.sd);
   });
 
   /* ── Parallax on "worth" ─────────────────────────────────── */
