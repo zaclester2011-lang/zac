@@ -983,6 +983,15 @@
     .as-look-swatch.cap    { background:linear-gradient(135deg,hsl(20,80%,36%),hsl(20,60%,28%)); }
     .as-look-name  { font-size:.25em; letter-spacing:.04em; color:rgba(255,255,255,.38); }
     .as-look-price { font-size:.25em; font-weight:700; color:rgba(255,255,255,.58); }
+
+    /* ─── TESTIMONIALS ──────────────────────────────────────── */
+    .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp6); margin-bottom:var(--sp12); }
+    .testi-card { background:var(--bg-2); border:1px solid var(--border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); }
+    .testi-stars { color:var(--gold); font-size:.95rem; letter-spacing:.06em; }
+    .testi-q { font-family:var(--font-d); font-size:clamp(.9rem,1.3vw,1.05rem); font-style:italic; line-height:1.65; color:var(--text); flex:1; }
+    .testi-by { font-size:.8rem; font-weight:600; color:var(--text-2); margin-bottom:.1rem; }
+    .testi-co { font-size:.75rem; color:var(--text-3); }
+    @media(max-width:768px) { .testi-grid { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
@@ -1035,7 +1044,7 @@
         <div class="port-header">
           <div>
             <p class="sec-label">Selected Work</p>
-            <h2 id="port-h2" class="port-title" data-a>Craft over<br>convention.</h2>
+            <h2 id="port-h2" class="port-title" data-a>Our best<br>work.</h2>
           </div>
           <p class="port-sub" data-a="r">Every project begins with deep listening — and ends with something that outlasts the brief.</p>
         </div>
@@ -1426,7 +1435,24 @@
     <section id="process" aria-labelledby="proc-h2">
       <div class="wrap">
         <p class="sec-label">How We Work</p>
-        <h2 id="proc-h2" class="proc-title" data-a>No surprises.<br>Just results.</h2>
+        <h2 id="proc-h2" class="sr">How We Work</h2>
+        <div class="testi-grid">
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"They built our website in under 24 hours and it looked better than anything we could have imagined. The hosting is completely hands-off — we've never had to think about it."</p>
+            <div><p class="testi-by">Sarah M.</p><p class="testi-co">Founder, Ember Candles</p></div>
+          </div>
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"We were sceptical about the 24-hour turnaround but they delivered something extraordinary. Our enquiries tripled in the first month."</p>
+            <div><p class="testi-by">James O.</p><p class="testi-co">Director, Orion Legal</p></div>
+          </div>
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"The £60 a month feels like a joke for what you get. Everything is taken care of and the site looks absolutely flawless."</p>
+            <div><p class="testi-by">Priya K.</p><p class="testi-co">CEO, Sage Studio</p></div>
+          </div>
+        </div>
         <div class="proc-grid">
           <div class="proc-step" data-a>
             <p class="proc-num">01 — Discovery</p>
