@@ -637,9 +637,208 @@
     .as-stat-n { font-family:var(--font-d); font-size:1.55em; font-weight:700; color:#fff; letter-spacing:-.03em; line-height:1; }
     .as-stat-l { font-size:.32em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.28); text-align:center; line-height:1.4; }
     .as-divider-v { width:1px; height:2.2em; background:rgba(255,255,255,.1); }
+
+    /* ─── INTRO ANIMATION ──────────────────────────────────── */
+    #intro {
+      position:fixed; inset:0; z-index:100000;
+      background:var(--bg); display:flex; align-items:center; justify-content:center;
+      transition:transform 900ms cubic-bezier(.76,0,.24,1);
+    }
+    #intro.out { transform:translateY(-100%); pointer-events:none; }
+    .intro-inner { text-align:center; }
+    .intro-d {
+      width:9px; height:9px; background:var(--gold); border-radius:50%;
+      margin:0 auto var(--sp5); opacity:0; transform:scale(0);
+      transition:opacity 400ms var(--ease-in), transform 500ms cubic-bezier(.34,1.56,.64,1);
+    }
+    .intro-d.on { opacity:1; transform:scale(1); }
+    .intro-txt {
+      font-family:var(--font-d); font-size:clamp(2rem,5vw,4.5rem);
+      font-weight:700; letter-spacing:-.04em; color:var(--text);
+      opacity:0; transform:translateY(18px);
+      transition:opacity 600ms var(--ease-in), transform 600ms var(--ease-in);
+    }
+    .intro-txt.on { opacity:1; transform:none; }
+    .intro-sub {
+      font-size:.6rem; font-weight:700; letter-spacing:.22em;
+      text-transform:uppercase; color:var(--gold); margin-top:var(--sp4);
+      opacity:0; transform:translateY(8px);
+      transition:opacity 500ms 100ms var(--ease-in), transform 500ms 100ms var(--ease-in);
+    }
+    .intro-sub.on { opacity:1; transform:none; }
+    @media (prefers-reduced-motion:reduce) { #intro { display:none !important; } }
+
+    /* ─── SERVICES STEPS ────────────────────────────────────── */
+    .svc-steps { list-style:none; }
+    .svc-step {
+      display:grid; grid-template-columns:auto 1fr;
+      gap:0 var(--sp8); align-items:start;
+      padding:var(--sp8) 0; border-bottom:1px solid var(--border);
+    }
+    .svc-step:first-child { border-top:1px solid var(--border); }
+    .svc-step-num {
+      font-family:var(--font-d); font-size:clamp(3rem,6vw,5.5rem);
+      font-weight:900; color:hsl(43 60% 52%/.18);
+      line-height:1; letter-spacing:-.05em; min-width:2ch;
+      transition:color 400ms var(--ease);
+    }
+    .svc-step:hover .svc-step-num { color:var(--gold); }
+    .svc-step-body { padding-top:.3em; }
+    .svc-step-name {
+      font-family:var(--font-d); font-size:clamp(1.3rem,2.2vw,2rem);
+      font-weight:700; letter-spacing:-.025em; line-height:1.1;
+      margin-bottom:var(--sp3);
+    }
+    .svc-step-desc {
+      font-size:.9rem; color:var(--text-2); line-height:1.8; max-width:440px;
+    }
+    .svc-step-desc strong { color:var(--gold); font-weight:700; }
+    @media (max-width:640px) {
+      .svc-step { gap:0 var(--sp4); }
+      .svc-step-num { font-size:clamp(2.5rem,8vw,4rem); }
+    }
+
+    /* ─── HOSTING DASHBOARD (VAULT card) ────────────────────── */
+    .hd-wrap {
+      pointer-events:none; user-select:none;
+      display:flex; flex-direction:column; width:100%; height:100%;
+      background:hsl(222,46%,7%); font-size:clamp(.48rem,1.1vw,.84rem);
+      font-family:var(--font-b);
+    }
+    .hd-nav {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.7em 1.2em; border-bottom:1px solid rgba(77,184,255,.1);
+      flex-shrink:0;
+    }
+    .hd-logo { font-size:.72em; font-weight:700; letter-spacing:.06em; color:#fff; display:flex; align-items:center; gap:.35em; }
+    .hd-logo-icon { width:.65em; height:.65em; border:1.5px solid #4db8ff; border-radius:2px; transform:rotate(45deg); display:inline-block; }
+    .hd-nav-items { font-size:.38em; letter-spacing:.07em; color:rgba(255,255,255,.28); }
+    .hd-status { font-size:.36em; font-weight:700; letter-spacing:.05em; color:#4dffb4; display:flex; align-items:center; gap:.35em; }
+    .hd-status::before { content:''; width:.55em; height:.55em; background:#4dffb4; border-radius:50%; box-shadow:0 0 .35em #4dffb4; }
+    .hd-domain-bar {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.5em 1.2em; background:rgba(255,255,255,.03);
+      border-bottom:1px solid rgba(255,255,255,.06); flex-shrink:0;
+    }
+    .hd-domain-url { font-size:.48em; font-weight:600; color:rgba(255,255,255,.75); letter-spacing:.01em; }
+    .hd-domain-up { font-size:.37em; letter-spacing:.06em; color:#4dffb4; font-weight:600; }
+    .hd-plan-row {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.8em 1.2em .6em; flex-shrink:0;
+    }
+    .hd-plan-label { font-size:.36em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.32); margin-bottom:.3em; }
+    .hd-plan-price {
+      font-family:var(--font-d); font-size:2.4em; font-weight:900;
+      color:#fff; letter-spacing:-.04em; line-height:1;
+    }
+    .hd-plan-price span { font-size:.35em; font-weight:400; color:rgba(255,255,255,.42); letter-spacing:.02em; }
+    .hd-plan-badge { font-size:.34em; background:rgba(77,184,255,.15); color:#4db8ff; border:1px solid rgba(77,184,255,.25); padding:.35em .85em; border-radius:999px; font-weight:600; letter-spacing:.04em; }
+    .hd-stats {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:.5em; padding:.15em 1.2em .6em; flex-shrink:0;
+    }
+    .hd-sc {
+      background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07);
+      border-radius:.3em; padding:.5em .65em;
+    }
+    .hd-sc-label { font-size:.33em; letter-spacing:.09em; text-transform:uppercase; color:rgba(255,255,255,.28); margin-bottom:.28em; }
+    .hd-sc-val { font-size:.7em; font-weight:700; color:#fff; }
+    .hd-activity {
+      flex:1; padding:.4em 1.2em .6em;
+      border-top:1px solid rgba(255,255,255,.06);
+      display:flex; flex-direction:column; gap:.3em; min-height:0;
+    }
+    .hd-act-label { font-size:.33em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.22); margin-bottom:.08em; }
+    .hd-act-row { display:flex; align-items:center; gap:.5em; font-size:.38em; color:rgba(255,255,255,.48); }
+    .hd-act-row span:last-child { margin-left:auto; color:rgba(255,255,255,.26); }
+    .hd-act-dot { width:.55em; height:.55em; border-radius:50%; flex-shrink:0; }
+    .hd-act-green { background:#4dffb4; }
+    .hd-act-blue  { background:#4db8ff; }
+    .hd-act-gold  { background:hsl(43,60%,52%); }
+
+    /* ─── LUMA ENHANCED ─────────────────────────────────────── */
+    .ls-hero-body {
+      flex:1; display:grid; grid-template-columns:1fr 1fr;
+      align-items:center; padding:.9em 1.3em; gap:.6em;
+    }
+    .ls-orb-side { display:flex; align-items:center; justify-content:center; }
+    .ls-ring {
+      width:6em; height:6em; border-radius:50%;
+      border:1px dashed rgba(201,168,76,.2);
+      display:flex; align-items:center; justify-content:center;
+      position:relative;
+    }
+    .ls-ring::before {
+      content:''; position:absolute; inset:.55em; border-radius:50%;
+      border:1px solid rgba(201,168,76,.1);
+    }
+    .ls-orb-lg {
+      width:3.8em; height:3.8em; border-radius:50%;
+      background:radial-gradient(circle at 32% 28%, #f0d878, #c9a84c 44%, #7a5518 74%, #150600);
+      box-shadow:0 0 2.5em rgba(201,168,76,.35),0 0 5em rgba(201,168,76,.1);
+    }
+    .ls-text-side { display:flex; flex-direction:column; gap:.28em; }
+    .ls-bag { font-size:.46em; letter-spacing:.1em; color:rgba(255,255,255,.55); }
+    .ls-price-line { font-family:var(--font-d); font-size:1.05em; font-weight:700; color:#f0ede8; letter-spacing:-.02em; }
+    .ls-price-sm { font-size:.52em; font-weight:400; color:rgba(255,255,255,.35); font-family:var(--font-b); }
+    .ls-size-row { display:flex; gap:.32em; margin-top:.05em; }
+    .ls-size { font-size:.36em; letter-spacing:.05em; padding:.32em .85em; border-radius:999px; border:1px solid rgba(201,168,76,.2); color:rgba(255,255,255,.38); }
+    .ls-size.active { background:rgba(201,168,76,.15); border-color:rgba(201,168,76,.5); color:#c9a84c; }
+    .ls-coll-label { font-size:.36em; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.24); margin-top:.35em; }
+    .ls-coll-row { display:flex; gap:.5em; align-items:center; margin-top:.18em; }
+    .ls-mini-orb-wrap { display:flex; flex-direction:column; align-items:center; gap:.18em; }
+    .ls-mini-orb { width:1.5em; height:1.5em; border-radius:50%; }
+    .ls-mini-orb.noir   { background:radial-gradient(circle at 35% 30%, #666, #111 65%); border:1px solid rgba(255,255,255,.12); }
+    .ls-mini-orb.blanche{ background:radial-gradient(circle at 35% 30%, #fff, #e0d8c8 65%); }
+    .ls-mini-orb.rose   { background:radial-gradient(circle at 35% 30%, #f9c0c0, #c47878 65%); }
+    .ls-mini-name { font-size:.3em; letter-spacing:.07em; color:rgba(255,255,255,.32); }
+
+    /* ─── FLORA ENHANCED ────────────────────────────────────── */
+    .fp-grid {
+      flex:1; display:grid; grid-template-columns:repeat(3,1fr);
+      gap:.6em; padding:.65em 1.1em; align-items:start;
+    }
+    .fp-product { display:flex; flex-direction:column; align-items:center; gap:.28em; }
+    .fp-bottle {
+      width:1.45em; height:4em; border-radius:999px 999px 38% 38%;
+      box-shadow:0 .28em 1em rgba(80,120,80,.2);
+    }
+    .fp-bottle-a { background:linear-gradient(160deg,hsl(135,20%,74%),hsl(135,28%,56%)); }
+    .fp-bottle-b { background:linear-gradient(160deg,hsl(32,42%,78%),hsl(32,38%,60%)); }
+    .fp-bottle-c { background:linear-gradient(160deg,hsl(196,24%,74%),hsl(196,32%,55%)); }
+    .fp-name  { font-size:.38em; font-weight:700; color:hsl(30,25%,20%); letter-spacing:.03em; text-align:center; }
+    .fp-price { font-size:.37em; color:hsl(135,26%,36%); font-weight:600; }
+    .fp-stars { font-size:.35em; color:hsl(43,80%,48%); letter-spacing:.04em; }
+    .fp-footer {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.5em 1.1em .6em; border-top:1px solid rgba(80,70,50,.1); flex-shrink:0;
+    }
+
+    /* ─── APEX ENHANCED ─────────────────────────────────────── */
+    .apex-swatches { display:flex; gap:.42em; margin-top:.4em; }
+    .apex-swatch { width:1.05em; height:1.05em; border-radius:50%; border:1.5px solid rgba(255,255,255,.14); }
+    .apex-swatch.active { border-color:hsl(20,100%,54%); box-shadow:0 0 0 1.5px hsl(20,100%,54%); }
+    .apex-swatch.black { background:#111; }
+    .apex-swatch.slate { background:#3a4a5a; }
+    .apex-swatch.flame { background:hsl(20,100%,54%); }
+    .apex-swatch.stone { background:#7a6858; }
+    .as-strip {
+      display:flex; align-items:center; justify-content:space-around;
+      padding:.48em 1.2em; border-top:1px solid rgba(255,255,255,.07);
+      background:rgba(255,255,255,.02); flex-shrink:0;
+    }
+    .as-strip span { font-size:.32em; letter-spacing:.07em; text-transform:uppercase; color:rgba(255,255,255,.36); white-space:nowrap; }
+    .as-strip-sep { width:1px; height:.85em; background:rgba(255,255,255,.1); flex-shrink:0; }
   </style>
 </head>
 <body>
+  <div id="intro" role="status" aria-label="Form and Forge loading">
+    <div class="intro-inner">
+      <div class="intro-d" aria-hidden="true"></div>
+      <p class="intro-txt">Form &amp; Forge</p>
+      <p class="intro-sub">Premium Creative Studio</p>
+    </div>
+  </div>
   <a class="skip" href="#main">Skip to content</a>
   <div id="cur-dot" aria-hidden="true"></div>
   <div id="cur-ring" aria-hidden="true"></div>
@@ -705,21 +904,46 @@
 
         <div class="port-grid">
           <article class="pi" data-a>
-            <div class="pi-bg pi-site-luma" role="img" aria-label="LUMA — luxury fragrance brand identity">
+            <div class="pi-bg pi-site-luma" role="img" aria-label="LUMA — luxury fragrance e-commerce website">
               <div class="lsite-nav">
                 <span class="ls-logo">LUMA</span>
                 <span class="ls-navlinks">Collection&ensp;|&ensp;Maison&ensp;|&ensp;Contact</span>
-                <span class="ls-nav-cta">Shop</span>
+                <span class="ls-bag">Bag (0)</span>
               </div>
-              <div class="lsite-hero">
-                <div class="ls-orb"></div>
-                <p class="ls-title">Essence</p>
-                <p class="ls-sub">Eau de Parfum</p>
-                <div class="ls-divider"></div>
-                <span class="ls-cta">Discover the Collection →</span>
+              <div class="ls-hero-body">
+                <div class="ls-orb-side">
+                  <div class="ls-ring">
+                    <div class="ls-orb-lg"></div>
+                  </div>
+                </div>
+                <div class="ls-text-side">
+                  <p class="ls-sub" style="margin-bottom:.05em">Eau de Parfum</p>
+                  <p class="ls-title" style="font-size:2.3em;margin-bottom:.12em">Essence</p>
+                  <p class="ls-price-line">£185 <span class="ls-price-sm">50ml</span></p>
+                  <div class="ls-size-row">
+                    <span class="ls-size">30ml</span>
+                    <span class="ls-size active">50ml</span>
+                    <span class="ls-size">100ml</span>
+                  </div>
+                  <p class="ls-coll-label">Also in the collection</p>
+                  <div class="ls-coll-row">
+                    <div class="ls-mini-orb-wrap">
+                      <div class="ls-mini-orb noir"></div>
+                      <span class="ls-mini-name">Noir</span>
+                    </div>
+                    <div class="ls-mini-orb-wrap">
+                      <div class="ls-mini-orb blanche"></div>
+                      <span class="ls-mini-name">Blanche</span>
+                    </div>
+                    <div class="ls-mini-orb-wrap">
+                      <div class="ls-mini-orb rose"></div>
+                      <span class="ls-mini-name">Rose</span>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="lsite-foot">
-                <span>Instagram</span><span>Pinterest</span><span>Stockists</span>
+                <span>Instagram</span><span>Stockists</span><span>Discover →</span>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
@@ -734,45 +958,42 @@
           </article>
 
           <article class="pi" data-a>
-            <div class="pi-bg pi-site-vault" role="img" aria-label="VAULT — fintech investment app website">
-              <div class="vs-nav">
-                <span class="vs-logo"><span class="vs-logo-icon"></span>VAULT</span>
-                <span class="vs-nav-items">Dashboard&ensp;&nbsp;Portfolio&ensp;&nbsp;Markets&ensp;&nbsp;Settings</span>
-                <span class="vs-badge">Live</span>
+            <div class="pi-bg hd-wrap" role="img" aria-label="Managed website hosting dashboard — £60 per month">
+              <div class="hd-nav">
+                <span class="hd-logo"><span class="hd-logo-icon"></span>Forge Host</span>
+                <span class="hd-nav-items">Overview &ensp; Analytics &ensp; Support</span>
+                <span class="hd-status">Online</span>
               </div>
-              <div class="vs-body">
-                <div class="vs-left">
-                  <span class="vs-label">Total Balance</span>
-                  <div class="vs-balance">£24,850<span>.00</span></div>
-                  <div class="vs-change">▲ 12.4% this month</div>
-                  <div class="vs-chart">
-                    <div class="vs-bar" style="height:42%"></div>
-                    <div class="vs-bar" style="height:63%"></div>
-                    <div class="vs-bar" style="height:38%"></div>
-                    <div class="vs-bar" style="height:76%"></div>
-                    <div class="vs-bar" style="height:54%"></div>
-                    <div class="vs-bar" style="height:88%"></div>
-                    <div class="vs-bar" style="height:67%"></div>
-                    <div class="vs-bar vs-bar-hi" style="height:100%"></div>
-                  </div>
+              <div class="hd-domain-bar">
+                <span class="hd-domain-url">yourwebsite.co.uk</span>
+                <span class="hd-domain-up">99.9% uptime</span>
+              </div>
+              <div class="hd-plan-row">
+                <div>
+                  <div class="hd-plan-label">Your Plan</div>
+                  <div class="hd-plan-price">£60<span>/mo</span></div>
                 </div>
-                <div class="vs-right">
-                  <div class="vs-card">
-                    <div class="vs-card-l">Returns (YTD)</div>
-                    <div class="vs-card-v">+£3,240</div>
-                    <div class="vs-card-bar"><div class="vs-card-fill" style="width:68%"></div></div>
-                  </div>
-                  <div class="vs-card">
-                    <div class="vs-card-l">Deposited</div>
-                    <div class="vs-card-v">£18,000</div>
-                    <div class="vs-card-bar"><div class="vs-card-fill" style="width:45%"></div></div>
-                  </div>
-                  <div class="vs-card vs-card-accent">
-                    <div class="vs-card-l">Projected (12mo)</div>
-                    <div class="vs-card-v">£31,200</div>
-                    <div class="vs-card-bar"><div class="vs-card-fill" style="width:82%"></div></div>
-                  </div>
+                <span class="hd-plan-badge">Managed Hosting</span>
+              </div>
+              <div class="hd-stats">
+                <div class="hd-sc">
+                  <div class="hd-sc-label">Visitors</div>
+                  <div class="hd-sc-val">1,847</div>
                 </div>
+                <div class="hd-sc">
+                  <div class="hd-sc-label">Storage</div>
+                  <div class="hd-sc-val">2.1 GB</div>
+                </div>
+                <div class="hd-sc">
+                  <div class="hd-sc-label">Load Time</div>
+                  <div class="hd-sc-val">0.8s</div>
+                </div>
+              </div>
+              <div class="hd-activity">
+                <div class="hd-act-label">Recent Activity</div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-green"></span><span>SSL certificate renewed</span><span>2d ago</span></div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-blue"></span><span>Backup completed</span><span>5d ago</span></div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-gold"></span><span>Speed optimised</span><span>1w ago</span></div>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
@@ -787,30 +1008,40 @@
           </article>
 
           <article class="pi" data-a>
-            <div class="pi-bg pi-site-flora" role="img" aria-label="FLORA — organic skincare brand website">
+            <div class="pi-bg pi-site-flora" role="img" aria-label="FLORA — organic skincare product website">
               <div class="fs-nav">
                 <span class="fs-logo">FLORA</span>
-                <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients&ensp;&nbsp;Journal</span>
+                <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients</span>
                 <span class="fs-cta-sm">Shop Now</span>
               </div>
-              <div class="fs-body">
-                <div class="fs-left">
-                  <span class="fs-tag">Certified Organic</span>
-                  <p class="fs-title">Rooted in<br>nature.</p>
-                  <p class="fs-desc">Skincare crafted from botanicals — nothing more, nothing less.</p>
-                  <span class="fs-btn">Explore Products →</span>
-                  <div class="fs-badges">
-                    <span class="fs-badge">100% Natural</span>
-                    <span class="fs-badge">Vegan</span>
-                    <span class="fs-badge">Cruelty Free</span>
-                  </div>
+              <span class="fs-tag" style="display:block;padding:.55em 1.2em 0;font-size:.36em">New Collection — Spring</span>
+              <div class="fp-grid">
+                <div class="fp-product">
+                  <div class="fp-bottle fp-bottle-a"></div>
+                  <p class="fp-name">Dew Serum</p>
+                  <p class="fp-price">£48</p>
+                  <p class="fp-stars">★★★★★</p>
                 </div>
-                <div class="fs-right">
-                  <div class="fs-circle"></div>
-                  <div class="fs-product"></div>
-                  <div class="fs-leaf fs-leaf-1"></div>
-                  <div class="fs-leaf fs-leaf-2"></div>
+                <div class="fp-product">
+                  <div class="fp-bottle fp-bottle-b"></div>
+                  <p class="fp-name">Bloom Oil</p>
+                  <p class="fp-price">£62</p>
+                  <p class="fp-stars">★★★★★</p>
                 </div>
+                <div class="fp-product">
+                  <div class="fp-bottle fp-bottle-c"></div>
+                  <p class="fp-name">Mist Toner</p>
+                  <p class="fp-price">£34</p>
+                  <p class="fp-stars">★★★★☆</p>
+                </div>
+              </div>
+              <div class="fp-footer">
+                <div class="fs-badges">
+                  <span class="fs-badge">100% Natural</span>
+                  <span class="fs-badge">Vegan</span>
+                  <span class="fs-badge">Cruelty Free</span>
+                </div>
+                <span class="fs-btn">All Products →</span>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
@@ -828,7 +1059,7 @@
             <div class="pi-bg pi-site-apex" role="img" aria-label="APEX — performance sportswear brand system">
               <div class="as-nav">
                 <span class="as-logo">APEX</span>
-                <span class="as-nav-items">Men&ensp;&nbsp;Women&ensp;&nbsp;Equipment&ensp;&nbsp;Training&ensp;&nbsp;Pro</span>
+                <span class="as-nav-items">Men&ensp;&nbsp;Women&ensp;&nbsp;Equipment&ensp;&nbsp;Training</span>
                 <span class="as-cta-sm">Shop SS25</span>
               </div>
               <div class="as-body">
@@ -836,7 +1067,12 @@
                   <span class="as-tag">Performance Wear</span>
                   <p class="as-title">BUILT<br>FOR<br>LIMITS.</p>
                   <div class="as-underline"></div>
-                  <span class="as-sub">New Season Collection</span>
+                  <div class="apex-swatches">
+                    <span class="apex-swatch black active" title="Black"></span>
+                    <span class="apex-swatch slate" title="Slate"></span>
+                    <span class="apex-swatch flame" title="Flame"></span>
+                    <span class="apex-swatch stone" title="Stone"></span>
+                  </div>
                 </div>
                 <div class="as-stripe"></div>
                 <div class="as-right">
@@ -846,6 +1082,15 @@
                   <div class="as-divider-v"></div>
                   <div class="as-stat"><span class="as-stat-n">32°</span><span class="as-stat-l">Max Temp<br>Tested</span></div>
                 </div>
+              </div>
+              <div class="as-strip">
+                <span>Free UK Delivery</span>
+                <span class="as-strip-sep"></span>
+                <span>30-Day Returns</span>
+                <span class="as-strip-sep"></span>
+                <span>4K+ Pro Athletes</span>
+                <span class="as-strip-sep"></span>
+                <span>Lifetime Guarantee</span>
               </div>
             </div>
             <div class="pi-overlay" aria-hidden="true"></div>
@@ -867,51 +1112,30 @@
       <div class="wrap">
         <div class="svc-left">
           <p class="sec-label">What We Do</p>
-          <h2 id="svc-h2" class="svc-heading" data-a>Capabilities<br>built to last.</h2>
-          <p class="svc-intro" data-a>We don't do everything. We do a few things with complete mastery — and the results speak across decades, not quarters.</p>
+          <h2 id="svc-h2" class="svc-heading" data-a>Simple.<br>Stress free.</h2>
+          <p class="svc-intro" data-a>Three steps to a website that works for you — delivered fast and hosted for <strong style="color:var(--gold);font-weight:700">£60 per month</strong>.</p>
         </div>
-        <ul class="svc-list">
-          <li class="svc-row" data-a>
-            <div>
-              <h3 class="svc-name" data-wave>Brand Identity</h3>
-              <p class="svc-desc">Logo, mark, color, typography — the full visual language of who you are.</p>
+        <ul class="svc-steps">
+          <li class="svc-step" data-a>
+            <span class="svc-step-num">01</span>
+            <div class="svc-step-body">
+              <h3 class="svc-step-name">Tell us what you want.</h3>
+              <p class="svc-step-desc">No briefs, no forms, no jargon. Just tell us about your project — what you're building, who it's for, and what you need. We take it from there.</p>
             </div>
-            <span class="svc-price">From £5,500</span>
           </li>
-          <li class="svc-row" data-a>
-            <div>
-              <h3 class="svc-name" data-wave>Web Design &amp; Dev</h3>
-              <p class="svc-desc">Designed and built from scratch. No templates. No compromises.</p>
+          <li class="svc-step" data-a>
+            <span class="svc-step-num">02</span>
+            <div class="svc-step-body">
+              <h3 class="svc-step-name">We build it in 24 hours.</h3>
+              <p class="svc-step-desc">Your website, designed and built to a world-class standard. Fast delivery without cutting corners — every project gets the full treatment.</p>
             </div>
-            <span class="svc-price">From £9,500</span>
           </li>
-          <li class="svc-row featured" data-a>
-            <div>
-              <h3 class="svc-name" data-wave>Brand + Web Bundle</h3>
-              <p class="svc-desc">Our most complete offering. Identity, website, and launch strategy.</p>
+          <li class="svc-step" data-a>
+            <span class="svc-step-num">03</span>
+            <div class="svc-step-body">
+              <h3 class="svc-step-name">You use it stress free.</h3>
+              <p class="svc-step-desc">We host it for you, keep it updated, and make sure it runs perfectly — forever. All for <strong>£60 per month</strong>. No surprises. No technical headaches. Just your site, always on.</p>
             </div>
-            <span class="svc-price">From £13,500</span>
-          </li>
-          <li class="svc-row" data-a>
-            <div>
-              <h3 class="svc-name" data-wave>Strategy &amp; Positioning</h3>
-              <p class="svc-desc">Competitive audit, brand story, messaging architecture, and naming.</p>
-            </div>
-            <span class="svc-price">From £3,500</span>
-          </li>
-          <li class="svc-row" data-a>
-            <div>
-              <h3 class="svc-name" data-wave>Creative Direction</h3>
-              <p class="svc-desc">Ongoing art direction and visual oversight for growing brands.</p>
-            </div>
-            <span class="svc-price">£2,600/mo</span>
-          </li>
-          <li class="svc-row" data-a>
-            <div>
-              <h3 class="svc-name" data-wave>Managed Hosting</h3>
-              <p class="svc-desc">Edge-deployed, monitored 24/7, updated monthly. Zero headaches.</p>
-            </div>
-            <span class="svc-price">£60/mo</span>
           </li>
         </ul>
       </div>
@@ -1001,9 +1225,15 @@
             </div>
           </div>
           <form class="c-form" action="#" method="post" aria-label="Project enquiry" novalidate>
-            <div class="fg">
-              <label for="f-name">Your Name</label>
-              <input type="text" id="f-name" name="name" placeholder="Alex Rivera" autocomplete="name" required />
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4)">
+              <div class="fg">
+                <label for="f-fname">First Name</label>
+                <input type="text" id="f-fname" name="first_name" placeholder="Alex" autocomplete="given-name" required />
+              </div>
+              <div class="fg">
+                <label for="f-lname">Last Name</label>
+                <input type="text" id="f-lname" name="last_name" placeholder="Rivera" autocomplete="family-name" required />
+              </div>
             </div>
             <div class="fg">
               <label for="f-email">Work Email</label>
@@ -1050,6 +1280,22 @@
 
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script>
+  /* ── Intro animation ─────────────────────────────────────── */
+  (function(){
+    const noMo = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    const intro = document.getElementById('intro');
+    if (!intro) return;
+    if (noMo) { intro.remove(); return; }
+    const d   = intro.querySelector('.intro-d');
+    const txt = intro.querySelector('.intro-txt');
+    const sub = intro.querySelector('.intro-sub');
+    setTimeout(() => d.classList.add('on'),   180);
+    setTimeout(() => txt.classList.add('on'), 400);
+    setTimeout(() => sub.classList.add('on'), 560);
+    setTimeout(() => intro.classList.add('out'), 2100);
+    setTimeout(() => intro.remove(),             3060);
+  })();
+
   /* ── Lenis ───────────────────────────────────────────────── */
   const lenis = new Lenis({
     duration: 1.2,
@@ -1109,12 +1355,13 @@
   }
 
   /* ── Hero entrance ───────────────────────────────────────── */
-  setTimeout(()=>document.getElementById('eyebrow').classList.add('go'), 100);
+  const _hd = window.matchMedia('(prefers-reduced-motion:reduce)').matches ? 0 : 2300;
+  setTimeout(()=>document.getElementById('eyebrow').classList.add('go'), _hd + 100);
   document.querySelectorAll('.hero-word').forEach(w=>{
-    setTimeout(()=>w.classList.add('go'), +w.dataset.d);
+    setTimeout(()=>w.classList.add('go'), _hd + +w.dataset.d);
   });
   document.querySelectorAll('.stat').forEach(s=>{
-    setTimeout(()=>s.classList.add('go'), 700 + +s.dataset.sd);
+    setTimeout(()=>s.classList.add('go'), _hd + 700 + +s.dataset.sd);
   });
 
   /* ── Parallax on "worth" ─────────────────────────────────── */
