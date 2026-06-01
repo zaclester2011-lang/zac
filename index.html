@@ -984,6 +984,43 @@
     .as-look-name  { font-size:.25em; letter-spacing:.04em; color:rgba(255,255,255,.38); }
     .as-look-price { font-size:.25em; font-weight:700; color:rgba(255,255,255,.58); }
 
+    /* ─── LUMA V3 EXTRAS ───────────────────────────────────── */
+    .ls-perk-row  { display:flex; flex-direction:column; gap:.13em; margin-top:.1em; }
+    .ls-perk-item { display:flex; align-items:center; gap:.32em; font-size:.28em; color:rgba(255,255,255,.36); }
+    .ls-perk-icon { color:rgba(201,168,76,.58); }
+    .ls-wish-row  { display:flex; gap:.38em; margin-top:.12em; }
+    .ls-wish-btn  { font-size:.26em; color:rgba(255,255,255,.32); border:1px solid rgba(255,255,255,.1); padding:.2em .68em; border-radius:999px; letter-spacing:.04em; }
+    .ls-pay-strip { display:flex; justify-content:center; align-items:center; gap:.5em; padding:.3em 1em; border-top:1px solid rgba(255,255,255,.05); flex-shrink:0; }
+    .ls-pay-tag   { font-size:.26em; color:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.09); padding:.12em .5em; border-radius:.18em; letter-spacing:.04em; }
+
+    /* ─── VAULT V3 EXTRAS ──────────────────────────────────── */
+    .hd-infra-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:.26em; padding:.3em 1.2em; flex-shrink:0; border-top:1px solid rgba(255,255,255,.04); }
+    .hd-infra-cell { display:flex; flex-direction:column; align-items:center; gap:.1em; padding:.26em .12em; background:rgba(255,255,255,.025); border-radius:.22em; border:1px solid rgba(255,255,255,.055); }
+    .hd-ic-dot { width:.38em; height:.38em; border-radius:50%; background:#4dffb4; }
+    .hd-ic-val { font-size:.32em; font-weight:700; color:rgba(255,255,255,.56); }
+    .hd-ic-lbl { font-size:.21em; letter-spacing:.05em; text-transform:uppercase; color:rgba(255,255,255,.2); text-align:center; line-height:1.3; }
+    .hd-bw-row  { display:flex; align-items:center; gap:.38em; padding:.22em 1.2em .26em; flex-shrink:0; }
+    .hd-bw-bar  { flex:1; height:.26em; background:rgba(255,255,255,.07); border-radius:999px; overflow:hidden; }
+    .hd-bw-fill { height:100%; width:32%; background:linear-gradient(90deg,#4db8ff,#4dffb4); border-radius:999px; }
+    .hd-bw-lbl  { font-size:.26em; color:rgba(255,255,255,.24); white-space:nowrap; }
+
+    /* ─── FLORA V3 EXTRAS ──────────────────────────────────── */
+    .fs-announce-bar { font-size:.3em; letter-spacing:.06em; text-align:center; padding:.4em 1em; background:hsl(135,22%,84%); border-bottom:1px solid hsl(135,16%,78%); flex-shrink:0; color:hsl(135,28%,30%); font-weight:500; }
+    .fp-routine-row { display:flex; align-items:center; justify-content:space-between; padding:.3em 1.2em; background:hsl(34,18%,88%); border-bottom:1px solid hsl(34,14%,82%); flex-shrink:0; }
+    .fp-routine-lbl { font-size:.27em; font-weight:600; color:hsl(135,28%,28%); letter-spacing:.03em; }
+    .fp-routine-cta { font-size:.25em; color:hsl(135,24%,34%); border:1px solid hsl(135,20%,60%); padding:.2em .6em; border-radius:999px; }
+    .fp-ingr { font-size:.24em; letter-spacing:.03em; color:hsl(135,20%,44%); text-align:center; margin-top:.03em; }
+    .fp-qty-row { display:flex; align-items:center; gap:.2em; margin-top:.04em; }
+    .fp-qty-btn { font-size:.25em; width:1.3em; height:1.3em; border-radius:50%; border:1px solid hsl(135,14%,68%); color:hsl(30,18%,36%); display:flex; align-items:center; justify-content:center; line-height:1; }
+    .fp-qty-n { font-size:.25em; color:hsl(30,14%,28%); font-weight:700; padding:0 .18em; min-width:1em; text-align:center; }
+
+    /* ─── APEX V3 EXTRAS ──────────────────────────────────── */
+    .as-announce { font-size:.29em; letter-spacing:.1em; text-transform:uppercase; color:hsl(20,82%,62%); text-align:center; padding:.32em 1em; background:rgba(255,80,0,.055); border-bottom:1px solid rgba(255,80,0,.1); flex-shrink:0; }
+    .as-tech-strip { display:grid; grid-template-columns:repeat(4,1fr); gap:.2em; padding:.28em 1.2em; flex-shrink:0; border-top:1px solid rgba(255,255,255,.05); }
+    .as-tech-cell { display:flex; flex-direction:column; align-items:center; gap:.12em; padding:.28em .12em; background:rgba(255,255,255,.025); border-radius:.22em; border:1px solid rgba(255,255,255,.06); }
+    .as-tech-orb  { width:1.2em; height:1.2em; border-radius:50%; background:rgba(255,80,0,.12); border:1px solid rgba(255,80,0,.2); }
+    .as-tech-lbl  { font-size:.24em; letter-spacing:.05em; color:rgba(255,255,255,.32); text-align:center; line-height:1.3; font-weight:500; }
+
     /* ─── TESTIMONIALS ──────────────────────────────────────── */
     .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp6); margin-bottom:var(--sp12); }
     .testi-card { background:var(--bg-2); border:1px solid var(--border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); }
@@ -1031,9 +1068,9 @@
       <div class="wrap" style="padding-bottom:0">
         <p class="hero-eyebrow" id="eyebrow">Premium Creative Studio — London</p>
         <h1 id="hero-h1" class="hero-hed">
-          <span class="hero-line"><span class="hero-word" data-d="120">brands</span></span>
-          <span class="hero-line"><span class="hero-word" data-d="240" data-parallax>worth</span></span>
-          <span class="hero-line"><span class="hero-word italic" data-d="380">remembering.</span></span>
+          <span class="hero-line"><span class="hero-word" data-d="120">fast.</span></span>
+          <span class="hero-line"><span class="hero-word" data-d="240" data-parallax>beautiful.</span></span>
+          <span class="hero-line"><span class="hero-word italic" data-d="380">yours.</span></span>
         </h1>
       </div>
     </section>
@@ -1088,6 +1125,15 @@
                     <span class="ls-stock-dot"></span>
                     <span class="ls-stock-txt">In stock — ships within 24 hours</span>
                   </div>
+                  <div class="ls-perk-row">
+                    <div class="ls-perk-item"><span class="ls-perk-icon">◉</span>Earn 185 Maison Points</div>
+                    <div class="ls-perk-item"><span class="ls-perk-icon">◌</span>Order in 2h 14m for next-day</div>
+                    <div class="ls-perk-item"><span class="ls-perk-icon">◇</span>Gift wrapping included</div>
+                  </div>
+                  <div class="ls-wish-row">
+                    <span class="ls-wish-btn">♡ Save to Wishlist</span>
+                    <span class="ls-wish-btn">◇ Gift wrap</span>
+                  </div>
                   <p class="ls-coll-label" style="margin-top:.2em">Also in the collection</p>
                   <div class="ls-coll-row">
                     <div class="ls-mini-orb-wrap"><div class="ls-mini-orb noir"></div><span class="ls-mini-name">Noir</span></div>
@@ -1114,6 +1160,13 @@
                   <span class="ls-scent-label">Base</span>
                   <span class="ls-scent-notes">Sandalwood<br>Musk · Amber</span>
                 </div>
+              </div>
+              <div class="ls-pay-strip">
+                <span class="ls-pay-tag">VISA</span>
+                <span class="ls-pay-tag">MC</span>
+                <span class="ls-pay-tag">AMEX</span>
+                <span class="ls-pay-tag">PAYPAL</span>
+                <span class="ls-pay-tag">KLARNA</span>
               </div>
               <div class="ls-press">
                 <span>Vogue</span><span>Harper's Bazaar</span><span>The Times</span><span>Tatler</span>
@@ -1205,6 +1258,17 @@
                   </div>
                 </div>
               </div>
+              <div class="hd-infra-grid">
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-val">99.2%</span><span class="hd-ic-lbl">CDN Hit<br>Rate</span></div>
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-lbl">DNS<br>Propagated</span></div>
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-val">Warm</span><span class="hd-ic-lbl">Cache<br>Status</span></div>
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-lbl">Google<br>Indexed</span></div>
+              </div>
+              <div class="hd-bw-row">
+                <span class="hd-bw-lbl">BW</span>
+                <div class="hd-bw-bar"><div class="hd-bw-fill"></div></div>
+                <span class="hd-bw-lbl">3.2 / 100 GB</span>
+              </div>
               <div class="hd-activity" style="flex-shrink:0">
                 <div class="hd-act-label">Recent Activity</div>
                 <div class="hd-act-row"><span class="hd-act-dot hd-act-green"></span><span>SSL certificate renewed automatically</span><span>2d ago</span></div>
@@ -1225,6 +1289,7 @@
 
           <article class="pi" data-a>
             <div class="pi-bg pi-site-flora" role="img" aria-label="FLORA — organic skincare product website">
+              <div class="fs-announce-bar">Earn double points this week &ensp;·&ensp; Free delivery over £60</div>
               <div class="fs-nav">
                 <span class="fs-logo">FLORA</span>
                 <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients&ensp;&nbsp;Journal</span>
@@ -1235,6 +1300,10 @@
                 <span class="fp-filter-pill">Serums</span>
                 <span class="fp-filter-pill">Oils</span>
                 <span class="fp-filter-pill">Mists</span>
+              </div>
+              <div class="fp-routine-row">
+                <span class="fp-routine-lbl">Build your morning routine →</span>
+                <span class="fp-routine-cta">From £109</span>
               </div>
               <div class="fp-grid" style="gap:.52em;padding:.38em 1em .4em;align-items:start">
                 <div class="fp-card">
