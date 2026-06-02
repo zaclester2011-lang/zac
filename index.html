@@ -1033,6 +1033,240 @@
     .as-tech-orb  { width:1.2em; height:1.2em; border-radius:50%; background:rgba(255,80,0,.12); border:1px solid rgba(255,80,0,.2); }
     .as-tech-lbl  { font-size:.24em; letter-spacing:.05em; color:rgba(255,255,255,.32); text-align:center; line-height:1.3; font-weight:500; }
 
+    /* ─── PROJECT MODALS ────────────────────────────────────── */
+    #proj-modal {
+      position:fixed; inset:0; z-index:50000; overflow-y:auto;
+      transform:translateY(100%); opacity:0;
+      transition:transform 700ms cubic-bezier(.76,0,.24,1), opacity 400ms var(--ease);
+      pointer-events:none; background:var(--bg);
+    }
+    #proj-modal.open { transform:translateY(0); opacity:1; pointer-events:auto; }
+    #proj-close {
+      position:fixed; top:1.5rem; right:1.5rem; z-index:51000;
+      width:48px; height:48px; border-radius:50%;
+      background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.14);
+      color:var(--text); font-size:1.2rem; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:background 200ms var(--ease), transform 200ms var(--ease-sp);
+      font-family:var(--font-b);
+    }
+    #proj-close:hover { background:rgba(255,255,255,.18); transform:scale(1.1); }
+    .proj-page { display:none; }
+    .proj-page.active { display:block; }
+
+    /* ── LUMA — Luxury Fragrance ───────────────────────────── */
+    .lp { background:hsl(28,14%,5%); color:#f0ede8; font-family:'DM Sans',sans-serif; min-height:100vh; }
+    .lp-nav { display:flex; align-items:center; justify-content:space-between; padding:1.6rem 3rem; border-bottom:1px solid rgba(201,168,76,.1); position:sticky; top:0; background:hsla(28,14%,5%,.9); backdrop-filter:blur(12px); z-index:100; }
+    .lp-logo { font-family:'Fraunces',Georgia,serif; font-size:.85rem; font-weight:700; letter-spacing:.32em; color:rgba(201,168,76,.85); text-transform:uppercase; }
+    .lp-navlinks { display:flex; gap:2.2rem; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:rgba(240,237,232,.3); }
+    .lp-nav-right { display:flex; gap:1.2rem; align-items:center; }
+    .lp-nav-icon { width:22px; height:22px; border-radius:50%; border:1px solid rgba(201,168,76,.25); cursor:default; display:flex; align-items:center; justify-content:center; font-size:.65rem; color:rgba(201,168,76,.5); }
+    .lp-hero { position:relative; min-height:92vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; overflow:hidden; padding:4rem 2rem; }
+    .lp-orb { width:320px; height:320px; border-radius:50%; position:absolute; top:50%; left:50%; transform:translate(-50%,-55%); background:radial-gradient(circle at 32% 28%,hsl(43,80%,70%),hsl(43,60%,46%) 44%,hsl(28,50%,22%) 72%,hsl(22,40%,8%)); box-shadow:0 0 80px rgba(201,168,76,.15),0 0 160px rgba(201,168,76,.07); animation:lp-float 7s ease-in-out infinite; z-index:0; }
+    @keyframes lp-float { 0%,100%{transform:translate(-50%,-55%) scale(1)} 50%{transform:translate(-50%,-57%) scale(1.03)} }
+    .lp-hero-content { position:relative; z-index:1; }
+    .lp-eyebrow { font-size:.65rem; letter-spacing:.28em; text-transform:uppercase; color:rgba(201,168,76,.55); margin-bottom:1.6rem; }
+    .lp-hero-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(3.5rem,8vw,7rem); font-weight:300; font-style:italic; line-height:.95; letter-spacing:-.04em; color:#f0ede8; margin-bottom:1rem; }
+    .lp-hero-sub { font-size:.82rem; color:rgba(240,237,232,.38); letter-spacing:.12em; text-transform:uppercase; margin-bottom:2.5rem; }
+    .lp-hero-cta { display:inline-flex; align-items:center; gap:.7rem; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:rgba(201,168,76,.75); border:1px solid rgba(201,168,76,.25); padding:.9rem 2.2rem; border-radius:999px; cursor:default; }
+    .lp-scent { display:flex; justify-content:center; gap:3rem; padding:2rem 3rem; border-top:1px solid rgba(201,168,76,.07); border-bottom:1px solid rgba(201,168,76,.07); background:rgba(201,168,76,.02); }
+    .lp-scent-col { text-align:center; }
+    .lp-scent-label { font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.4); margin-bottom:.5rem; }
+    .lp-scent-vals { font-size:.8rem; color:rgba(240,237,232,.55); line-height:1.8; }
+    .lp-product { display:grid; grid-template-columns:1fr 1fr; min-height:70vh; }
+    .lp-product-img { background:radial-gradient(ellipse at 30% 25%,hsl(28,16%,11%),hsl(28,12%,7%)); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .lp-bottle { width:120px; height:240px; border-radius:60px 60px 30px 30px; background:linear-gradient(160deg,rgba(201,168,76,.9) 0%,rgba(150,112,40,.7) 45%,rgba(80,55,15,.6) 80%); box-shadow:0 24px 60px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.2); position:relative; }
+    .lp-bottle::before { content:''; position:absolute; top:6px; left:50%; transform:translateX(-50%); width:32px; height:18px; border-radius:4px 4px 0 0; background:rgba(201,168,76,.5); }
+    .lp-bottle-glow { position:absolute; width:200px; height:200px; border-radius:50%; background:radial-gradient(circle,rgba(201,168,76,.12),transparent 70%); pointer-events:none; }
+    .lp-product-info { padding:4rem 3rem; display:flex; flex-direction:column; gap:1.2rem; justify-content:center; }
+    .lp-num { font-size:.6rem; letter-spacing:.2em; color:rgba(201,168,76,.4); text-transform:uppercase; }
+    .lp-prod-name { font-family:'Fraunces',Georgia,serif; font-size:clamp(2rem,4vw,3.2rem); font-weight:700; color:#f0ede8; letter-spacing:-.03em; line-height:1; }
+    .lp-prod-sub { font-size:.78rem; font-style:italic; color:rgba(240,237,232,.4); letter-spacing:.08em; }
+    .lp-stars { color:hsl(43,70%,55%); font-size:.88rem; letter-spacing:.06em; }
+    .lp-review-count { font-size:.72rem; color:rgba(255,255,255,.25); margin-left:.4rem; }
+    .lp-price { font-family:'Fraunces',Georgia,serif; font-size:2rem; font-weight:700; color:#f0ede8; letter-spacing:-.03em; }
+    .lp-price span { font-size:.85rem; font-weight:400; color:rgba(240,237,232,.35); font-family:'DM Sans',sans-serif; }
+    .lp-notes { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; padding:1.2rem 0; border-top:1px solid rgba(201,168,76,.1); border-bottom:1px solid rgba(201,168,76,.1); }
+    .lp-note-head { font-size:.58rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(201,168,76,.45); margin-bottom:.3rem; }
+    .lp-note-vals { font-size:.78rem; color:rgba(240,237,232,.55); line-height:1.7; }
+    .lp-sizes { display:flex; gap:.5rem; margin-top:.2rem; }
+    .lp-sz { font-size:.72rem; padding:.42rem 1.1rem; border-radius:999px; border:1px solid rgba(201,168,76,.2); color:rgba(255,255,255,.38); cursor:default; }
+    .lp-sz.on { background:rgba(201,168,76,.12); border-color:rgba(201,168,76,.45); color:hsl(43,60%,58%); }
+    .lp-cta-row { display:flex; gap:.8rem; align-items:center; }
+    .lp-btn-main { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600; background:rgba(201,168,76,.12); border:1px solid rgba(201,168,76,.38); color:hsl(43,60%,60%); padding:.82rem 2rem; border-radius:999px; cursor:default; }
+    .lp-btn-sec { font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.3); border:1px solid rgba(255,255,255,.1); padding:.82rem 1.4rem; border-radius:999px; cursor:default; }
+    .lp-stock { display:flex; align-items:center; gap:.45rem; font-size:.7rem; color:rgba(255,255,255,.35); }
+    .lp-stock::before { content:''; width:6px; height:6px; border-radius:50%; background:#4dffb4; box-shadow:0 0 6px #4dffb4; flex-shrink:0; }
+    .lp-coll { padding:5rem 3rem; border-top:1px solid rgba(201,168,76,.07); }
+    .lp-coll-label { font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.45); margin-bottom:.5rem; }
+    .lp-coll-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:300; font-style:italic; color:#f0ede8; margin-bottom:2.5rem; line-height:1.2; }
+    .lp-coll-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem; }
+    .lp-coll-card { border:1px solid rgba(201,168,76,.1); border-radius:1rem; padding:1.8rem 1.4rem; display:flex; flex-direction:column; align-items:center; gap:1rem; cursor:default; }
+    .lp-cc-orb { width:68px; height:68px; border-radius:50%; }
+    .lp-cc-orb.essence { background:radial-gradient(circle at 33% 28%,hsl(43,80%,68%),hsl(43,60%,46%) 45%,hsl(28,50%,22%)); box-shadow:0 0 22px rgba(201,168,76,.25); }
+    .lp-cc-orb.noir { background:radial-gradient(circle at 35% 30%,#555,#111 65%); }
+    .lp-cc-orb.blanche { background:radial-gradient(circle at 35% 30%,#fff,#e0d8c8 65%); }
+    .lp-cc-orb.rose { background:radial-gradient(circle at 35% 30%,#f9c0c0,#c47878 65%); }
+    .lp-cc-num { font-size:.58rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(201,168,76,.38); }
+    .lp-cc-name { font-family:'Fraunces',Georgia,serif; font-size:1.35rem; font-weight:700; color:#f0ede8; letter-spacing:-.02em; }
+    .lp-cc-tag { font-size:.7rem; color:rgba(240,237,232,.38); text-align:center; font-style:italic; line-height:1.5; }
+    .lp-cc-price { font-size:.88rem; font-weight:600; color:hsl(43,60%,55%); }
+    .lp-press { display:flex; justify-content:center; align-items:center; gap:3rem; padding:2.5rem 3rem; border-top:1px solid rgba(255,255,255,.04); border-bottom:1px solid rgba(255,255,255,.04); }
+    .lp-press span { font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.16); font-style:italic; }
+    .lp-editorial { display:grid; grid-template-columns:1fr 1fr; gap:4rem; padding:5rem 3rem; align-items:center; }
+    .lp-ed-num { font-family:'Fraunces',Georgia,serif; font-size:clamp(6rem,12vw,10rem); font-weight:900; color:rgba(201,168,76,.07); line-height:1; letter-spacing:-.05em; }
+    .lp-ed-sub { font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.38); margin-bottom:.8rem; }
+    .lp-ed-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.5rem,2.8vw,2.2rem); font-weight:300; font-style:italic; color:#f0ede8; line-height:1.35; margin-bottom:1.1rem; }
+    .lp-ed-p { font-size:.88rem; color:rgba(240,237,232,.45); line-height:1.9; }
+    .lp-footer { padding:2.5rem 3rem; border-top:1px solid rgba(201,168,76,.08); display:flex; align-items:center; justify-content:space-between; }
+    .lp-foot-logo { font-family:'Fraunces',Georgia,serif; font-size:.85rem; font-weight:700; letter-spacing:.22em; color:rgba(201,168,76,.45); }
+    .lp-foot-links { display:flex; gap:2rem; font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.2); }
+    .lp-foot-copy { font-size:.65rem; color:rgba(255,255,255,.16); }
+
+    /* ── VAULT — Hosting Dashboard ─────────────────────────── */
+    .vp { background:hsl(222,46%,7%); color:#fff; font-family:'DM Sans',sans-serif; min-height:100vh; display:flex; }
+    .vp-sidebar { width:218px; flex-shrink:0; border-right:1px solid rgba(77,184,255,.08); display:flex; flex-direction:column; position:sticky; top:0; height:100vh; overflow-y:auto; }
+    .vp-sb-logo { display:flex; align-items:center; gap:.65rem; padding:1.5rem 1.3rem; border-bottom:1px solid rgba(255,255,255,.06); }
+    .vp-sb-logo-icon { width:26px; height:26px; border:2px solid #4db8ff; border-radius:4px; transform:rotate(45deg); flex-shrink:0; }
+    .vp-sb-logo-txt { font-size:.88rem; font-weight:700; letter-spacing:.06em; }
+    .vp-sb-nav { padding:1rem .65rem; flex:1; display:flex; flex-direction:column; gap:.18rem; }
+    .vp-sb-item { display:flex; align-items:center; gap:.72rem; padding:.62rem .82rem; border-radius:.48rem; font-size:.78rem; color:rgba(255,255,255,.4); cursor:default; }
+    .vp-sb-item.on { background:rgba(77,184,255,.1); color:#4db8ff; }
+    .vp-sb-icon { width:15px; height:15px; border-radius:3px; border:1.5px solid currentColor; opacity:.7; flex-shrink:0; }
+    .vp-sb-icon.circle { border-radius:50%; }
+    .vp-sb-icon.shield { border-radius:50% 50% 45% 45%; }
+    .vp-sb-dot { width:6px; height:6px; border-radius:50%; background:#4dffb4; margin-left:auto; box-shadow:0 0 5px #4dffb4; }
+    .vp-sb-bottom { padding:.9rem .65rem; border-top:1px solid rgba(255,255,255,.06); display:flex; align-items:center; gap:.72rem; }
+    .vp-sb-avatar { width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,#4db8ff,#4dffb4); flex-shrink:0; }
+    .vp-sb-user { font-size:.73rem; font-weight:600; color:rgba(255,255,255,.68); }
+    .vp-sb-plan { font-size:.62rem; color:rgba(255,255,255,.28); }
+    .vp-main { flex:1; min-width:0; padding:1.8rem 2.2rem; }
+    .vp-topbar { display:flex; align-items:center; justify-content:space-between; margin-bottom:1.6rem; }
+    .vp-breadcrumb { display:flex; align-items:center; gap:.55rem; }
+    .vp-bc-site { font-size:.92rem; font-weight:700; color:#fff; }
+    .vp-bc-live { font-size:.6rem; letter-spacing:.08em; text-transform:uppercase; background:rgba(77,255,180,.1); color:#4dffb4; border:1px solid rgba(77,255,180,.2); padding:.18rem .65rem; border-radius:999px; font-weight:700; }
+    .vp-bc-check { font-size:.68rem; color:rgba(255,255,255,.26); }
+    .vp-topbar-right { display:flex; align-items:center; gap:.75rem; }
+    .vp-btn-sm { font-size:.7rem; padding:.42rem 1rem; border-radius:.38rem; border:1px solid rgba(77,184,255,.22); background:rgba(77,184,255,.08); color:#4db8ff; cursor:default; font-weight:600; }
+    .vp-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:.9rem; margin-bottom:1.5rem; }
+    .vp-kpi { background:rgba(255,255,255,.033); border:1px solid rgba(255,255,255,.065); border-radius:.72rem; padding:1.1rem 1.3rem; }
+    .vp-kpi-label { font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.28); margin-bottom:.55rem; }
+    .vp-kpi-val { font-family:'Fraunces',Georgia,serif; font-size:1.9rem; font-weight:700; color:#fff; letter-spacing:-.03em; line-height:1; }
+    .vp-kpi-val.green { color:#4dffb4; }
+    .vp-kpi-val.blue  { color:#4db8ff; }
+    .vp-kpi-val.gold  { color:hsl(43,60%,52%); }
+    .vp-kpi-sub { font-size:.65rem; margin-top:.35rem; color:rgba(255,255,255,.26); }
+    .vp-kpi-up { color:#4dffb4; }
+    .vp-panels { display:grid; grid-template-columns:1.6fr 1fr; gap:1.1rem; margin-bottom:1.1rem; }
+    .vp-panel { background:rgba(255,255,255,.028); border:1px solid rgba(255,255,255,.065); border-radius:.72rem; padding:1.3rem; }
+    .vp-panel-h { font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.28); margin-bottom:1.1rem; }
+    .vp-chart { display:flex; align-items:flex-end; gap:4px; height:110px; }
+    .vp-bar { flex:1; border-radius:3px 3px 0 0; background:rgba(77,184,255,.08); position:relative; }
+    .vp-bar::after { content:''; position:absolute; bottom:0; left:0; right:0; border-radius:3px 3px 0 0; background:linear-gradient(to top,#4db8ff,rgba(77,184,255,.14)); height:100%; }
+    .vp-bar.hi::after { background:linear-gradient(to top,#4dffb4,rgba(77,255,180,.14)); }
+    .vp-chart-labels { display:flex; gap:4px; margin-top:.45rem; }
+    .vp-chart-lbl { flex:1; text-align:center; font-size:.56rem; color:rgba(255,255,255,.2); }
+    .vp-chart-stat { display:flex; justify-content:space-between; align-items:center; margin-top:.9rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.06); }
+    .vp-cs-val { font-family:'Fraunces',Georgia,serif; font-size:1.35rem; font-weight:700; color:#fff; }
+    .vp-cs-sub { font-size:.65rem; color:rgba(255,255,255,.26); }
+    .vp-cs-badge { font-size:.65rem; color:#4dffb4; background:rgba(77,255,180,.1); border:1px solid rgba(77,255,180,.2); padding:.22rem .65rem; border-radius:999px; font-weight:600; }
+    .vp-health-list { display:flex; flex-direction:column; gap:.5rem; }
+    .vp-health-row { display:flex; align-items:center; gap:.6rem; font-size:.78rem; color:rgba(255,255,255,.5); }
+    .vp-h-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .vp-h-dot.green { background:#4dffb4; box-shadow:0 0 6px #4dffb4; }
+    .vp-h-dot.blue  { background:#4db8ff; box-shadow:0 0 6px #4db8ff; }
+    .vp-h-dot.gold  { background:hsl(43,60%,52%); }
+    .vp-h-val { margin-left:auto; font-weight:700; color:rgba(255,255,255,.78); font-size:.73rem; }
+    .vp-infra { display:grid; grid-template-columns:repeat(4,1fr); gap:.75rem; margin-bottom:1.1rem; }
+    .vp-infra-cell { background:rgba(255,255,255,.024); border:1px solid rgba(255,255,255,.055); border-radius:.58rem; padding:.88rem .95rem; display:flex; flex-direction:column; gap:.32rem; }
+    .vp-ic-top { display:flex; align-items:center; gap:.38rem; }
+    .vp-ic-dot { width:7px; height:7px; border-radius:50%; background:#4dffb4; box-shadow:0 0 5px #4dffb4; }
+    .vp-ic-name { font-size:.62rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.32); }
+    .vp-ic-val { font-size:.88rem; font-weight:700; color:#fff; }
+    .vp-ic-sub { font-size:.6rem; color:rgba(255,255,255,.2); }
+    .vp-activity { background:rgba(255,255,255,.028); border:1px solid rgba(255,255,255,.065); border-radius:.72rem; padding:1.3rem; }
+    .vp-act-row { display:flex; align-items:center; gap:.75rem; padding:.62rem 0; border-bottom:1px solid rgba(255,255,255,.04); font-size:.78rem; color:rgba(255,255,255,.48); }
+    .vp-act-row:last-child { border-bottom:none; }
+    .vp-act-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .vp-act-dot.green { background:#4dffb4; }
+    .vp-act-dot.blue  { background:#4db8ff; }
+    .vp-act-dot.gold  { background:hsl(43,60%,52%); }
+    .vp-act-time { margin-left:auto; font-size:.68rem; color:rgba(255,255,255,.24); }
+    .vp-plan-row { background:rgba(77,184,255,.055); border:1px solid rgba(77,184,255,.11); border-radius:.72rem; padding:1.1rem 1.5rem; display:flex; align-items:center; justify-content:space-between; margin-bottom:1.1rem; }
+    .vp-plan-price { font-family:'Fraunces',Georgia,serif; font-size:2.2rem; font-weight:900; color:#fff; letter-spacing:-.04em; line-height:1; }
+    .vp-plan-price span { font-size:.85rem; font-weight:400; color:rgba(255,255,255,.35); font-family:'DM Sans',sans-serif; }
+    .vp-plan-label { font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.32); margin-bottom:.18rem; }
+    .vp-plan-badge { font-size:.7rem; background:rgba(77,184,255,.14); color:#4db8ff; border:1px solid rgba(77,184,255,.22); padding:.38rem .95rem; border-radius:999px; font-weight:600; }
+    .vp-plan-next { font-size:.7rem; color:rgba(255,255,255,.3); }
+
+    /* ── FLORA — Organic Skincare ───────────────────────────── */
+    .fp2 { background:hsl(34,28%,91%); color:hsl(30,25%,17%); font-family:'DM Sans',sans-serif; min-height:100vh; }
+    .fp2-bar { font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:hsl(135,28%,30%); text-align:center; padding:.52rem 1rem; background:hsl(135,22%,84%); border-bottom:1px solid hsl(135,16%,78%); font-weight:500; }
+    .fp2-nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 3rem; border-bottom:1px solid rgba(80,70,50,.1); position:sticky; top:0; background:hsl(34,28%,91%); z-index:100; }
+    .fp2-logo { font-family:'Fraunces',Georgia,serif; font-size:1.15rem; font-weight:700; letter-spacing:.22em; color:hsl(30,25%,18%); }
+    .fp2-navlinks { display:flex; gap:2rem; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:hsl(30,12%,48%); }
+    .fp2-nav-right { display:flex; gap:1.3rem; align-items:center; font-size:.7rem; color:hsl(135,24%,34%); letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
+    .fp2-hero { display:grid; grid-template-columns:1fr 1fr; min-height:72vh; align-items:center; padding:3.5rem 3rem; gap:3rem; }
+    .fp2-hero-left { display:flex; flex-direction:column; gap:1.3rem; }
+    .fp2-tag { font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:hsl(135,26%,40%); font-weight:700; }
+    .fp2-hero-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(2.8rem,5vw,4.3rem); font-weight:700; color:hsl(30,25%,14%); line-height:1.05; letter-spacing:-.03em; }
+    .fp2-hero-p { font-size:.92rem; color:hsl(30,10%,44%); line-height:1.8; max-width:400px; }
+    .fp2-cta { display:flex; gap:.9rem; align-items:center; }
+    .fp2-btn { font-size:.78rem; letter-spacing:.08em; font-weight:600; padding:.88rem 2rem; border-radius:999px; cursor:default; }
+    .fp2-btn.pri { background:hsl(135,24%,34%); color:#fff; }
+    .fp2-btn.sec { border:1.5px solid hsl(135,20%,60%); color:hsl(135,26%,34%); background:transparent; }
+    .fp2-hero-right { display:flex; align-items:center; justify-content:center; }
+    .fp2-hero-circle { width:340px; height:340px; border-radius:50%; background:hsl(135,20%,83%); display:flex; align-items:center; justify-content:center; }
+    .fp2-bottles { display:flex; align-items:flex-end; gap:1.4rem; }
+    .fp2-bottle { border-radius:999px 999px 38% 38%; box-shadow:0 10px 36px rgba(80,120,80,.18); }
+    .fp2-bottle-a { width:50px; height:142px; background:linear-gradient(160deg,hsl(135,20%,74%),hsl(135,28%,56%)); }
+    .fp2-bottle-b { width:60px; height:168px; background:linear-gradient(160deg,hsl(32,42%,78%),hsl(32,38%,60%)); }
+    .fp2-bottle-c { width:44px; height:128px; background:linear-gradient(160deg,hsl(196,24%,74%),hsl(196,32%,55%)); }
+    .fp2-filters { display:flex; align-items:center; gap:.75rem; padding:1.6rem 3rem 1rem; }
+    .fp2-filter-label { font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; color:hsl(30,12%,52%); margin-right:.35rem; }
+    .fp2-pill { font-size:.68rem; letter-spacing:.06em; padding:.36rem .95rem; border-radius:999px; border:1px solid hsl(135,18%,70%); color:hsl(30,12%,48%); cursor:default; }
+    .fp2-pill.on { background:hsl(135,24%,34%); color:#fff; border-color:hsl(135,24%,34%); }
+    .fp2-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; padding:0 3rem 3.5rem; }
+    .fp2-card { background:hsl(34,22%,88%); border:1px solid hsl(34,16%,82%); border-radius:1rem; padding:1.5rem; display:flex; flex-direction:column; gap:.65rem; cursor:default; }
+    .fp2-card-top { display:flex; justify-content:space-between; align-items:flex-start; }
+    .fp2-badge2 { font-size:.6rem; letter-spacing:.06em; background:hsl(135,22%,82%); color:hsl(135,30%,30%); padding:.18rem .6rem; border-radius:999px; border:1px solid hsl(135,20%,70%); font-weight:600; }
+    .fp2-bottle-wrap { display:flex; justify-content:center; padding:.4rem 0; }
+    .fp2-card-info { display:flex; flex-direction:column; gap:.28rem; }
+    .fp2-card-brand { font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:hsl(30,12%,54%); }
+    .fp2-card-name { font-size:.97rem; font-weight:700; color:hsl(30,25%,18%); }
+    .fp2-card-desc { font-size:.73rem; color:hsl(30,10%,44%); line-height:1.6; }
+    .fp2-card-ingr { font-size:.66rem; color:hsl(135,22%,44%); }
+    .fp2-card-bottom { display:flex; flex-direction:column; gap:.48rem; border-top:1px solid hsl(34,14%,80%); padding-top:.65rem; margin-top:.18rem; }
+    .fp2-card-price-row { display:flex; align-items:center; justify-content:space-between; }
+    .fp2-card-price { font-size:1rem; font-weight:700; color:hsl(135,26%,34%); }
+    .fp2-card-stars { font-size:.72rem; color:hsl(43,80%,48%); letter-spacing:.04em; }
+    .fp2-card-count { font-size:.65rem; color:hsl(30,10%,50%); }
+    .fp2-card-stock-ok { font-size:.65rem; font-weight:600; color:hsl(135,30%,38%); }
+    .fp2-card-stock-low { font-size:.65rem; font-weight:600; color:hsl(0,58%,52%); }
+    .fp2-add-btn { font-size:.7rem; font-weight:600; letter-spacing:.06em; padding:.52rem 1rem; border-radius:999px; border:1.5px solid hsl(135,20%,60%); color:hsl(135,26%,32%); text-align:center; cursor:default; }
+    .fp2-promise { display:flex; justify-content:center; gap:2.4rem; padding:2.4rem 3rem; border-top:1px solid rgba(80,70,50,.1); border-bottom:1px solid rgba(80,70,50,.1); flex-wrap:wrap; }
+    .fp2-promise-item { display:flex; align-items:center; gap:.55rem; font-size:.78rem; font-weight:500; color:hsl(135,26%,34%); }
+    .fp2-promise-dot { width:7px; height:7px; border-radius:50%; background:hsl(135,24%,50%); }
+    .fp2-ingr { padding:3.5rem 3rem; }
+    .fp2-ingr-label { font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:hsl(135,22%,44%); margin-bottom:.5rem; }
+    .fp2-ingr-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.7rem,3vw,2.4rem); font-weight:700; color:hsl(30,25%,16%); margin-bottom:1.8rem; line-height:1.2; }
+    .fp2-ingr-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:.9rem; }
+    .fp2-ingr-card { background:hsl(135,16%,86%); border:1px solid hsl(135,14%,78%); border-radius:.72rem; padding:1.3rem; }
+    .fp2-ingr-name { font-size:.85rem; font-weight:700; color:hsl(30,25%,18%); margin-bottom:.35rem; }
+    .fp2-ingr-desc { font-size:.72rem; color:hsl(30,10%,44%); line-height:1.6; }
+    .fp2-reviews { padding:3.5rem 3rem; background:hsl(34,24%,88%); }
+    .fp2-rev-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.5rem,2.8vw,2.1rem); font-weight:700; color:hsl(30,25%,16%); margin-bottom:1.8rem; }
+    .fp2-rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; }
+    .fp2-rev-card { background:hsl(34,28%,91%); border:1px solid hsl(34,16%,82%); border-radius:.72rem; padding:1.4rem; }
+    .fp2-rev-stars { color:hsl(43,80%,48%); font-size:.88rem; margin-bottom:.65rem; }
+    .fp2-rev-q { font-size:.82rem; color:hsl(30,18%,28%); line-height:1.7; margin-bottom:.9rem; font-style:italic; }
+    .fp2-rev-by { font-size:.7rem; font-weight:600; color:hsl(30,18%,40%); }
+    .fp2-rev-prod { font-size:.65rem; color:hsl(135,20%,44%); }
+    .fp2-footer { display:flex; align-items:center; justify-content:space-between; padding:1.8rem 3rem; border-top:1px solid rgba(80,70,50,.1); }
+    .fp2-foot-logo { font-family:'Fraunces',Georgia,serif; font-size:.92rem; font-weight:700; letter-spacing:.18em; color:hsl(30,20%,30%); }
+    .fp2-foot-links { display:flex; gap:1.7rem; font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; color:hsl(30,10%,50%); }
+    .fp2-foot-copy { font-size:.65rem; color:hsl(30,10%,55%); }
+
     /* ─── TESTIMONIALS ──────────────────────────────────────── */
     .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp6); margin-bottom:var(--sp12); }
     .testi-card { background:var(--bg-2); border:1px solid var(--border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); }
@@ -1052,6 +1286,280 @@
     </div>
   </div>
   <a class="skip" href="#main">Skip to content</a>
+  <!-- ── Project Modals ─────────────────────────────────── -->
+  <div id="proj-modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <button id="proj-close" aria-label="Close project">✕</button>
+
+    <!-- LUMA -->
+    <div id="proj-luma" class="proj-page">
+      <div class="lp">
+        <nav class="lp-nav">
+          <span class="lp-logo">Luma</span>
+          <div class="lp-navlinks"><span>Collection</span><span>Ingredients</span><span>About</span><span>Journal</span></div>
+          <div class="lp-nav-right">
+            <div class="lp-nav-icon">♡</div>
+            <div class="lp-nav-icon">⊕</div>
+          </div>
+        </nav>
+        <div class="lp-hero">
+          <div class="lp-orb"></div>
+          <div class="lp-hero-content">
+            <p class="lp-eyebrow">No. 01 — Parfum Concentré</p>
+            <h2 class="lp-hero-h">Lumière<br>Dorée</h2>
+            <p class="lp-hero-sub">A fragrance of pure intention</p>
+            <span class="lp-hero-cta">Discover the collection →</span>
+          </div>
+        </div>
+        <div class="lp-scent">
+          <div class="lp-scent-col"><p class="lp-scent-label">Top Notes</p><p class="lp-scent-vals">Bergamot<br>Neroli<br>Yuzu</p></div>
+          <div class="lp-scent-col"><p class="lp-scent-label">Heart Notes</p><p class="lp-scent-vals">Iris<br>Jasmine Sambac<br>Orris Root</p></div>
+          <div class="lp-scent-col"><p class="lp-scent-label">Base Notes</p><p class="lp-scent-vals">Sandalwood<br>Ambergris<br>White Musk</p></div>
+        </div>
+        <div class="lp-product">
+          <div class="lp-product-img">
+            <div class="lp-bottle-glow"></div>
+            <div class="lp-bottle"></div>
+          </div>
+          <div class="lp-product-info">
+            <p class="lp-num">01 / 04</p>
+            <h3 class="lp-prod-name">Lumière<br>Dorée</h3>
+            <p class="lp-prod-sub">Eau de Parfum Concentré</p>
+            <p class="lp-stars">★★★★★ <span class="lp-review-count">(247 reviews)</span></p>
+            <p class="lp-price">£195 <span>/ 50ml</span></p>
+            <div class="lp-notes">
+              <div><p class="lp-note-head">Longevity</p><p class="lp-note-vals">12+ hours<br>projection</p></div>
+              <div><p class="lp-note-head">Sillage</p><p class="lp-note-vals">Moderate<br>to heavy</p></div>
+              <div><p class="lp-note-head">Season</p><p class="lp-note-vals">Autumn<br>Winter</p></div>
+            </div>
+            <div class="lp-sizes"><span class="lp-sz">30ml</span><span class="lp-sz on">50ml</span><span class="lp-sz">100ml</span></div>
+            <div class="lp-cta-row">
+              <span class="lp-btn-main">Add to bag</span>
+              <span class="lp-btn-sec">Wishlist</span>
+            </div>
+            <span class="lp-stock">In stock — ships within 48 hours</span>
+          </div>
+        </div>
+        <div class="lp-coll">
+          <p class="lp-coll-label">The Collection</p>
+          <h3 class="lp-coll-h">Four scents.<br>One philosophy.</h3>
+          <div class="lp-coll-grid">
+            <div class="lp-coll-card"><div class="lp-cc-orb essence"></div><p class="lp-cc-num">01</p><p class="lp-cc-name">Dorée</p><p class="lp-cc-tag">Golden citrus &amp; warm amber</p><p class="lp-cc-price">£195</p></div>
+            <div class="lp-coll-card"><div class="lp-cc-orb noir"></div><p class="lp-cc-num">02</p><p class="lp-cc-name">Noir</p><p class="lp-cc-tag">Dark woods &amp; smoky vetiver</p><p class="lp-cc-price">£210</p></div>
+            <div class="lp-coll-card"><div class="lp-cc-orb blanche"></div><p class="lp-cc-num">03</p><p class="lp-cc-name">Blanche</p><p class="lp-cc-tag">White florals &amp; clean musk</p><p class="lp-cc-price">£185</p></div>
+            <div class="lp-coll-card"><div class="lp-cc-orb rose"></div><p class="lp-cc-num">04</p><p class="lp-cc-name">Rose</p><p class="lp-cc-tag">Damascena rose &amp; oud</p><p class="lp-cc-price">£225</p></div>
+          </div>
+        </div>
+        <div class="lp-press">
+          <span>The Sunday Times</span><span>Vogue</span><span>Harper's Bazaar</span><span>Wallpaper*</span><span>Financial Times</span>
+        </div>
+        <div class="lp-editorial">
+          <div><p class="lp-ed-num">93</p></div>
+          <div>
+            <p class="lp-ed-sub">Perfumer's note</p>
+            <h3 class="lp-ed-h">"Scent is the most honest thing a person can wear."</h3>
+            <p class="lp-ed-p">Every Luma fragrance begins not with ingredients, but with a question: what feeling does this evoke? We spent fourteen months perfecting Dorée alone — adjusting the bergamot to neroli ratio until it felt less like a fragrance and more like a memory.</p>
+          </div>
+        </div>
+        <footer class="lp-footer">
+          <span class="lp-foot-logo">Luma</span>
+          <div class="lp-foot-links"><span>Collection</span><span>About</span><span>Stockists</span><span>Contact</span></div>
+          <span class="lp-foot-copy">© 2026 Luma Parfums. London.</span>
+        </footer>
+      </div>
+    </div>
+
+    <!-- VAULT -->
+    <div id="proj-vault" class="proj-page">
+      <div class="vp">
+        <aside class="vp-sidebar">
+          <div class="vp-sb-logo"><div class="vp-sb-logo-icon"></div><span class="vp-sb-logo-txt">VAULT</span></div>
+          <nav class="vp-sb-nav">
+            <div class="vp-sb-item on"><div class="vp-sb-icon circle"></div>Dashboard<div class="vp-sb-dot"></div></div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Sites</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon shield"></div>Security</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Domains</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Analytics</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Backups</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Billing</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Settings</div>
+          </nav>
+          <div class="vp-sb-bottom">
+            <div class="vp-sb-avatar"></div>
+            <div><div class="vp-sb-user">Alex Carter</div><div class="vp-sb-plan">Pro Plan</div></div>
+          </div>
+        </aside>
+        <main class="vp-main">
+          <div class="vp-topbar">
+            <div class="vp-breadcrumb">
+              <span class="vp-bc-site">formandforge.co.uk</span>
+              <span class="vp-bc-live">● Live</span>
+              <span class="vp-bc-check">Checked 2 min ago</span>
+            </div>
+            <div class="vp-topbar-right">
+              <span class="vp-btn-sm">Deploy</span>
+              <span class="vp-btn-sm">Open site ↗</span>
+            </div>
+          </div>
+          <div class="vp-plan-row">
+            <div><div class="vp-plan-label">Current plan</div><div class="vp-plan-price">£60<span>/mo</span></div></div>
+            <div><div class="vp-plan-next">Next billing: 1 Jul 2026</div></div>
+            <span class="vp-plan-badge">Pro Hosting</span>
+          </div>
+          <div class="vp-kpis">
+            <div class="vp-kpi"><div class="vp-kpi-label">Uptime (30d)</div><div class="vp-kpi-val green">99.98%</div><div class="vp-kpi-sub"><span class="vp-kpi-up">↑</span> 0.02% vs last month</div></div>
+            <div class="vp-kpi"><div class="vp-kpi-label">Avg load time</div><div class="vp-kpi-val blue">0.82s</div><div class="vp-kpi-sub">Global CDN — 34 nodes</div></div>
+            <div class="vp-kpi"><div class="vp-kpi-label">Bandwidth (Jun)</div><div class="vp-kpi-val">148 GB</div><div class="vp-kpi-sub">500 GB included</div></div>
+            <div class="vp-kpi"><div class="vp-kpi-label">SSL cert</div><div class="vp-kpi-val gold">Valid</div><div class="vp-kpi-sub">Expires: Dec 2026</div></div>
+          </div>
+          <div class="vp-panels">
+            <div class="vp-panel">
+              <div class="vp-panel-h">Traffic — last 14 days</div>
+              <div class="vp-chart">
+                <div class="vp-bar" style="height:35%"></div><div class="vp-bar" style="height:52%"></div><div class="vp-bar" style="height:44%"></div><div class="vp-bar" style="height:68%"></div><div class="vp-bar" style="height:55%"></div><div class="vp-bar" style="height:72%"></div><div class="vp-bar hi" style="height:88%"></div><div class="vp-bar" style="height:60%"></div><div class="vp-bar" style="height:76%"></div><div class="vp-bar hi" style="height:91%"></div><div class="vp-bar" style="height:66%"></div><div class="vp-bar" style="height:78%"></div><div class="vp-bar hi" style="height:94%"></div><div class="vp-bar" style="height:83%"></div>
+              </div>
+              <div class="vp-chart-labels">
+                <span class="vp-chart-lbl">19</span><span class="vp-chart-lbl">20</span><span class="vp-chart-lbl">21</span><span class="vp-chart-lbl">22</span><span class="vp-chart-lbl">23</span><span class="vp-chart-lbl">24</span><span class="vp-chart-lbl">25</span><span class="vp-chart-lbl">26</span><span class="vp-chart-lbl">27</span><span class="vp-chart-lbl">28</span><span class="vp-chart-lbl">29</span><span class="vp-chart-lbl">30</span><span class="vp-chart-lbl">1</span><span class="vp-chart-lbl">2</span>
+              </div>
+              <div class="vp-chart-stat">
+                <div><div class="vp-cs-val">12,847</div><div class="vp-cs-sub">Unique visitors this period</div></div>
+                <span class="vp-cs-badge">↑ 23.4%</span>
+              </div>
+            </div>
+            <div class="vp-panel">
+              <div class="vp-panel-h">Site health</div>
+              <div class="vp-health-list">
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>Performance<span class="vp-h-val">98</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>Accessibility<span class="vp-h-val">100</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>Best practices<span class="vp-h-val">96</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot blue"></div>SEO<span class="vp-h-val">94</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot gold"></div>CLS score<span class="vp-h-val">0.02</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>LCP<span class="vp-h-val">0.9s</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>FID<span class="vp-h-val">12ms</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="vp-infra">
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Region</div></div><div class="vp-ic-val">EU-West</div><div class="vp-ic-sub">London, GB</div></div>
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Node version</div></div><div class="vp-ic-val">v22.4</div><div class="vp-ic-sub">LTS stable</div></div>
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Build time</div></div><div class="vp-ic-val">8.3s</div><div class="vp-ic-sub">Last deploy: 4h ago</div></div>
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Storage</div></div><div class="vp-ic-val">2.1 GB</div><div class="vp-ic-sub">of 50 GB used</div></div>
+          </div>
+          <div class="vp-activity">
+            <div class="vp-panel-h">Recent activity</div>
+            <div class="vp-act-row"><div class="vp-act-dot green"></div>Deployment successful — v2.4.1<div class="vp-act-time">4h ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot blue"></div>SSL certificate auto-renewed<div class="vp-act-time">2d ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot green"></div>Backup completed — 142 MB<div class="vp-act-time">3d ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot gold"></div>DNS propagation complete<div class="vp-act-time">5d ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot green"></div>CDN cache purged globally<div class="vp-act-time">6d ago</div></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- FLORA -->
+    <div id="proj-flora" class="proj-page">
+      <div class="fp2">
+        <div class="fp2-bar">Free UK delivery on orders over £50 · Certified organic · Cruelty-free</div>
+        <nav class="fp2-nav">
+          <span class="fp2-logo">FLORA</span>
+          <div class="fp2-navlinks"><span>Shop</span><span>Ingredients</span><span>About</span><span>Journal</span></div>
+          <div class="fp2-nav-right"><span>✦ Bag (2)</span></div>
+        </nav>
+        <div class="fp2-hero">
+          <div class="fp2-hero-left">
+            <span class="fp2-tag">Certified Organic Skincare</span>
+            <h2 class="fp2-hero-h">Honest<br>beauty,<br>pure results.</h2>
+            <p class="fp2-hero-p">Formulated with botanicals grown in the English countryside. No fillers, no fragrances, no shortcuts — just ingredients your skin can trust.</p>
+            <div class="fp2-cta">
+              <span class="fp2-btn pri">Shop the range</span>
+              <span class="fp2-btn sec">Our story</span>
+            </div>
+          </div>
+          <div class="fp2-hero-right">
+            <div class="fp2-hero-circle">
+              <div class="fp2-bottles">
+                <div class="fp2-bottle fp2-bottle-a"></div>
+                <div class="fp2-bottle fp2-bottle-b"></div>
+                <div class="fp2-bottle fp2-bottle-c"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fp2-promise">
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>COSMOS Certified Organic</div>
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>Vegan &amp; Cruelty-Free</div>
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>Recyclable packaging</div>
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>Made in England</div>
+        </div>
+        <div class="fp2-filters">
+          <span class="fp2-filter-label">Filter:</span>
+          <span class="fp2-pill on">All</span><span class="fp2-pill">Face</span><span class="fp2-pill">Body</span><span class="fp2-pill">Hair</span><span class="fp2-pill">Serums</span>
+        </div>
+        <div class="fp2-grid">
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Bestseller</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-b" style="width:44px;height:120px"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Dew Drop Serum</span><span class="fp2-card-desc">Hyaluronic acid &amp; rosehip oil blend for intense 72-hour hydration</span><span class="fp2-card-ingr">Rosa canina · Sodium hyaluronate · Aloe vera</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£34.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(312)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">New</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-a" style="width:40px;height:110px"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Calm &amp; Restore Balm</span><span class="fp2-card-desc">Rich shea &amp; calendula balm for dry, sensitive, or reactive skin types</span><span class="fp2-card-ingr">Calendula officinalis · Butyrospermum parkii · Chamomile</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£28.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(98)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Editor's pick</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-c" style="width:40px;height:110px"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Clarity Cleansing Oil</span><span class="fp2-card-desc">Dissolves makeup &amp; impurities while preserving your skin's moisture barrier</span><span class="fp2-card-ingr">Jojoba oil · Lavandula angustifolia · Marula oil</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£26.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(201)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Organic</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-b" style="width:38px;height:104px;background:linear-gradient(160deg,hsl(135,22%,72%),hsl(135,30%,54%))"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Forest Toning Mist</span><span class="fp2-card-desc">Witch hazel &amp; green tea mist that tightens pores and refreshes skin</span><span class="fp2-card-ingr">Hamamelis virginiana · Camellia sinensis · Aloe vera</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£22.00</span><span><span class="fp2-card-stars">★★★★☆</span> <span class="fp2-card-count">(176)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Limited</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-a" style="width:44px;height:118px;background:linear-gradient(160deg,hsl(32,50%,80%),hsl(32,44%,62%))"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Golden Hour Face Oil</span><span class="fp2-card-desc">Bakuchiol &amp; sea buckthorn — retinol-free glow for all skin types</span><span class="fp2-card-ingr">Hippophae rhamnoides · Bakuchiol · Argan oil</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£42.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(88)</span></span></div><span class="fp2-card-stock-low">⚠ Only 14 left</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Vegan</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-c" style="width:42px;height:115px;background:linear-gradient(160deg,hsl(196,28%,76%),hsl(196,36%,57%))"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Sleep &amp; Repair Night Cream</span><span class="fp2-card-desc">Supports overnight skin renewal with adaptogenic herbs &amp; bakuchiol</span><span class="fp2-card-ingr">Ashwagandha · Bakuchiol · Evening primrose oil</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£38.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(143)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+        </div>
+        <div class="fp2-ingr">
+          <p class="fp2-ingr-label">What's inside</p>
+          <h3 class="fp2-ingr-h">Ingredients you can<br>actually pronounce.</h3>
+          <div class="fp2-ingr-grid">
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Rosehip Oil</p><p class="fp2-ingr-desc">Rich in vitamin A &amp; C. Fades scars, brightens, and boosts collagen production naturally.</p></div>
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Hyaluronic Acid</p><p class="fp2-ingr-desc">Holds up to 1000× its weight in water. Plumps fine lines &amp; maintains skin moisture balance.</p></div>
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Calendula</p><p class="fp2-ingr-desc">Anti-inflammatory &amp; antiseptic. Soothes irritation, heals minor skin damage, improves texture.</p></div>
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Bakuchiol</p><p class="fp2-ingr-desc">Plant-based retinol alternative. All the firming benefits with none of the sensitivity.</p></div>
+          </div>
+        </div>
+        <div class="fp2-reviews">
+          <h3 class="fp2-rev-h">What our customers say</h3>
+          <div class="fp2-rev-grid">
+            <div class="fp2-rev-card"><div class="fp2-rev-stars">★★★★★</div><p class="fp2-rev-q">"I've been using the Dew Drop Serum every morning for three months. My skin has never looked better — genuinely visible results within two weeks."</p><div class="fp2-rev-by">Charlotte B.</div><div class="fp2-rev-prod">Dew Drop Serum</div></div>
+            <div class="fp2-rev-card"><div class="fp2-rev-stars">★★★★★</div><p class="fp2-rev-q">"Finally found a cleansing oil that doesn't break me out. The Clarity formula is lightweight, removes everything, and my skin feels genuinely clean."</p><div class="fp2-rev-by">Priya M.</div><div class="fp2-rev-prod">Clarity Cleansing Oil</div></div>
+            <div class="fp2-rev-card"><div class="fp2-rev-stars">★★★★★</div><p class="fp2-rev-q">"The Night Cream has completely transformed my skin overnight. I wake up glowing. Worth every penny — nothing else comes close at this price point."</p><div class="fp2-rev-by">Harriet T.</div><div class="fp2-rev-prod">Sleep &amp; Repair Night Cream</div></div>
+          </div>
+        </div>
+        <footer class="fp2-footer">
+          <span class="fp2-foot-logo">FLORA</span>
+          <div class="fp2-foot-links"><span>Shop</span><span>About</span><span>Ingredients</span><span>Contact</span></div>
+          <span class="fp2-foot-copy">© 2026 Flora Organics. Made in England.</span>
+        </footer>
+      </div>
+    </div>
+  </div>
+
   <div id="cur-dot" aria-hidden="true"></div>
   <div id="cur-ring" aria-hidden="true"></div>
 
@@ -1189,7 +1697,7 @@
             <div class="pi-info">
               <p class="pi-cat">Brand Identity</p>
               <h3 class="pi-name">LUMA</h3>
-              <a class="pi-link" href="#" aria-label="View LUMA project">View Project
+              <a class="pi-link" href="#" data-project="luma" aria-label="View LUMA project">View Project
                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -1293,7 +1801,7 @@
             <div class="pi-info">
               <p class="pi-cat">Web Design &amp; Dev</p>
               <h3 class="pi-name">VAULT</h3>
-              <a class="pi-link" href="#" aria-label="View VAULT project">View Project
+              <a class="pi-link" href="#" data-project="vault" aria-label="View VAULT project">View Project
                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -1381,7 +1889,7 @@
             <div class="pi-info">
               <p class="pi-cat">Packaging &amp; Strategy</p>
               <h3 class="pi-name">FLORA</h3>
-              <a class="pi-link" href="#" aria-label="View FLORA project">View Project
+              <a class="pi-link" href="#" data-project="flora" aria-label="View FLORA project">View Project
                 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
@@ -1597,6 +2105,31 @@
 
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script>
+  /* ── Project modals ──────────────────────────────────────── */
+  (function(){
+    const modal    = document.getElementById('proj-modal');
+    const closeBtn = document.getElementById('proj-close');
+    if (!modal) return;
+    function openModal(id) {
+      document.querySelectorAll('.proj-page').forEach(p => p.classList.remove('active'));
+      const page = document.getElementById('proj-' + id);
+      if (page) page.classList.add('active');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      modal.scrollTop = 0;
+      closeBtn.focus();
+    }
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.pi-link[data-project]').forEach(link => {
+      link.addEventListener('click', e => { e.preventDefault(); openModal(link.dataset.project); });
+    });
+    closeBtn.addEventListener('click', closeModal);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  })();
+
   /* ── Intro animation ─────────────────────────────────────── */
   (function(){
     const noMo = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
