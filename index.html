@@ -687,7 +687,7 @@
     #intro-top, #intro-bot {
       position:fixed; left:0; right:0; z-index:100000;
       background:var(--bg);
-      transition:transform 900ms cubic-bezier(.76,0,.24,1);
+      transition:transform 1500ms cubic-bezier(.76,0,.24,1);
     }
     #intro-top { top:0; height:50vh; transform:translateY(0); }
     #intro-bot { bottom:0; height:51vh; transform:translateY(0); }
@@ -2175,15 +2175,15 @@
     const line = inner.querySelector('.intro-line');
     const txt  = inner.querySelector('.intro-txt');
     const sub  = inner.querySelector('.intro-sub');
-    setTimeout(() => line.classList.add('on'), 200);
-    setTimeout(() => txt.classList.add('on'),  500);
-    setTimeout(() => sub.classList.add('on'),  700);
+    setTimeout(() => line.classList.add('on'), 300);
+    setTimeout(() => txt.classList.add('on'),  700);
+    setTimeout(() => sub.classList.add('on'),  1000);
+    setTimeout(() => inner.classList.add('out'), 3000);
     setTimeout(() => {
-      inner.classList.add('out');
       top.classList.add('out');
       bot.classList.add('out');
-    }, 2200);
-    setTimeout(() => { top.remove(); bot.remove(); inner.remove(); }, 3200);
+    }, 3100);
+    setTimeout(() => { top.remove(); bot.remove(); inner.remove(); }, 4800);
   })();
 
   /* ── Lenis ───────────────────────────────────────────────── */
@@ -2245,7 +2245,7 @@
   }
 
   /* ── Hero entrance ───────────────────────────────────────── */
-  const _hd = window.matchMedia('(prefers-reduced-motion:reduce)').matches ? 0 : 2300;
+  const _hd = window.matchMedia('(prefers-reduced-motion:reduce)').matches ? 0 : 3100;
   setTimeout(()=>document.getElementById('eyebrow').classList.add('go'), _hd + 100);
   document.querySelectorAll('.hero-word').forEach(w=>{
     setTimeout(()=>w.classList.add('go'), _hd + +w.dataset.d);
