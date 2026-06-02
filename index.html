@@ -239,7 +239,8 @@
     .port-title {
       font-family:var(--font-d); font-size:clamp(2.2rem,5vw,4.5rem);
       font-weight:700; letter-spacing:-.03em; line-height:1;
-      color:var(--text);
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
     }
     .port-sub {
       max-width:380px; color:var(--gold); font-size:clamp(1.1rem,2vw,1.5rem);
@@ -326,6 +327,8 @@
       font-family:var(--font-d); font-size:clamp(2.2rem,4vw,3.75rem);
       font-weight:700; letter-spacing:-.03em; line-height:1.05;
       margin-bottom:var(--sp6);
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
     }
     .svc-intro { color:var(--gold); font-size:.95rem; line-height:1.75; max-width:360px; }
 
@@ -411,9 +414,10 @@
     .about-quote {
       font-family:var(--font-d); font-size:clamp(1.6rem,2.8vw,2.6rem);
       font-weight:300; letter-spacing:-.02em; line-height:1.35; font-style:italic;
-      color:var(--gold);
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
     }
-    .about-quote strong { font-weight:900; font-style:normal; color:var(--gold); }
+    .about-quote strong { font-weight:900; font-style:normal; }
 
     .about-body {
       color:var(--gold); font-size:.97rem; line-height:1.85;
@@ -465,10 +469,12 @@
     #contact { background:var(--bg-2); overflow:hidden; }
     .contact-mega {
       font-family:var(--font-d); font-weight:900; letter-spacing:-.05em;
-      line-height:.85; color:var(--text); margin-bottom:var(--sp16);
+      line-height:.85; margin-bottom:var(--sp16);
       font-size:clamp(3rem,9.5vw,13.5rem);
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
     }
-    .contact-mega em { font-style:italic; font-weight:300; color:var(--gold); }
+    .contact-mega em { font-style:italic; font-weight:300; }
 
     .contact-body {
       display:grid; grid-template-columns:1fr 1fr;
@@ -1623,7 +1629,7 @@
         <div class="port-header">
           <div>
             <p class="sec-label">Example Builds</p>
-            <h2 id="port-h2" class="port-title" data-a>An <em style="color:var(--gold);font-style:italic">endless</em> canvas<br>for design variety.</h2>
+            <h2 id="port-h2" class="port-title" data-a>An endless canvas<br>for design variety.</h2>
           </div>
           <p class="port-sub" data-a="r">Concept builds —<br>the sky is your limit.</p>
         </div>
