@@ -427,6 +427,21 @@
     .aim-num { font-family:var(--font-d); font-size:.75rem; font-weight:700; color:var(--gold); letter-spacing:.06em; flex-shrink:0; padding-top:.1rem; }
     .aim-name { font-size:.92rem; font-weight:600; color:var(--text); margin-bottom:.3rem; }
     .aim-desc { font-size:.78rem; color:var(--text-2); line-height:1.65; }
+    .aim-item--featured {
+      grid-column:1/-1; display:flex; align-items:center; gap:var(--sp6);
+      padding:var(--sp8) var(--sp8); border-color:var(--gold-border);
+      background:linear-gradient(135deg, hsl(43,60%,52%,.12) 0%, transparent 60%);
+      position:relative; overflow:hidden;
+    }
+    .aim-item--featured::before {
+      content:''; position:absolute; inset:0; border-radius:inherit;
+      background:linear-gradient(135deg, hsl(43,60%,52%,.06), transparent);
+      pointer-events:none;
+    }
+    .aim-item--featured .aim-num { font-size:1.5rem; }
+    .aim-item--featured .aim-name { font-size:clamp(1.4rem,3vw,2.2rem); font-family:var(--font-d); font-weight:700; color:var(--gold-light); letter-spacing:-.02em; line-height:1; margin-bottom:.5rem; }
+    .aim-item--featured .aim-desc { font-size:clamp(.9rem,1.5vw,1.1rem); color:var(--text-2); max-width:520px; }
+    .aim-item--featured .aim-ghost { position:absolute; right:var(--sp6); bottom:-1rem; font-family:var(--font-d); font-size:8rem; font-weight:900; color:hsl(43,60%,52%,.06); line-height:1; pointer-events:none; user-select:none; }
     .about-stats {
       display:grid; grid-template-columns:1fr 1fr; gap:var(--sp3);
     }
@@ -1941,23 +1956,6 @@
       <div class="wrap">
         <p class="sec-label">How We Work</p>
         <h2 id="proc-h2" class="sr">How We Work</h2>
-        <div class="testi-grid">
-          <div class="testi-card" data-a>
-            <span class="testi-stars">★★★★★</span>
-            <p class="testi-q">"They built our website in under 24 hours and it looked better than anything we could have imagined. The hosting is completely hands-off — we've never had to think about it."</p>
-            <div><p class="testi-by">Sarah M.</p><p class="testi-co">Founder, Ember Candles</p></div>
-          </div>
-          <div class="testi-card" data-a>
-            <span class="testi-stars">★★★★★</span>
-            <p class="testi-q">"We were sceptical about the 24-hour turnaround but they delivered something extraordinary. Our enquiries tripled in the first month."</p>
-            <div><p class="testi-by">James O.</p><p class="testi-co">Director, Orion Legal</p></div>
-          </div>
-          <div class="testi-card" data-a>
-            <span class="testi-stars">★★★★★</span>
-            <p class="testi-q">"The £60 a month feels like a joke for what you get. Everything is taken care of and the site looks absolutely flawless."</p>
-            <div><p class="testi-by">Priya K.</p><p class="testi-co">CEO, Sage Studio</p></div>
-          </div>
-        </div>
         <div class="proc-grid">
           <div class="proc-step" data-a>
             <p class="proc-num">01 — Discovery</p>
@@ -1975,7 +1973,24 @@
             <p class="proc-num">03 — Launch</p>
             <h3 class="proc-name">Ship. Support. Sustain.</h3>
             <p class="proc-desc">Launch support, handoff documentation, and optional retainer to keep momentum.</p>
-            <span class="proc-ghost" aria-hidden="true">04</span>
+            <span class="proc-ghost" aria-hidden="true">03</span>
+          </div>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"They built our website in under 24 hours and it looked better than anything we could have imagined. The hosting is completely hands-off — we've never had to think about it."</p>
+            <div><p class="testi-by">Sarah M.</p><p class="testi-co">Founder, Ember Candles</p></div>
+          </div>
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"We were sceptical about the 24-hour turnaround but they delivered something extraordinary. Our enquiries tripled in the first month."</p>
+            <div><p class="testi-by">James O.</p><p class="testi-co">Director, Orion Legal</p></div>
+          </div>
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"The £60 a month feels like a joke for what you get. Everything is taken care of and the site looks absolutely flawless."</p>
+            <div><p class="testi-by">Priya K.</p><p class="testi-co">CEO, Sage Studio</p></div>
           </div>
         </div>
       </div>
@@ -2015,12 +2030,13 @@
                 <p class="aim-desc">Built and delivered in 24 hours. No delays, no excuses.</p>
               </div>
             </div>
-            <div class="aim-item">
+            <div class="aim-item aim-item--featured">
               <span class="aim-num">04</span>
               <div>
                 <p class="aim-name">Premium &amp; World-Class</p>
                 <p class="aim-desc">Designed to compete with the best websites on the internet.</p>
               </div>
+              <span class="aim-ghost" aria-hidden="true">04</span>
             </div>
           </div>
         </div>
@@ -2036,7 +2052,6 @@
         </h2>
         <div class="contact-body">
           <div>
-            <p class="contact-tag" data-a>We take on 3–4 new clients each quarter. If you're building something worth believing in, let's talk.</p>
             <div class="contact-details" data-a>
               <div>
                 <p class="cd-label">Email</p>
