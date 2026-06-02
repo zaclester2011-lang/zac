@@ -375,26 +375,32 @@
       font-weight:700; letter-spacing:-.03em; margin-bottom:var(--sp12);
     }
     .proc-grid {
-      display:grid; grid-template-columns:repeat(4,1fr);
-      border:1px solid var(--border); border-radius:var(--rad-lg); overflow:hidden;
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:var(--sp4); margin-bottom:var(--sp4);
     }
     .proc-step {
-      padding:var(--sp8) var(--sp6) var(--sp8) var(--sp7);
-      border-right:1px solid var(--border);
-      border-left:3px solid transparent;
+      padding:var(--sp8) var(--sp7);
+      border:1px solid var(--border);
+      border-top:2px solid var(--gold-border);
+      border-radius:var(--rad-lg);
+      background:var(--bg-2);
       position:relative; overflow:hidden;
-      transition:background 300ms var(--ease), border-left-color 300ms var(--ease);
+      transition:border-color 300ms var(--ease), background 300ms var(--ease), transform 300ms var(--ease);
     }
-    .proc-step:last-child { border-right:none; }
-    .proc-step:hover { background:hsl(43 60% 52%/.05); border-left-color:var(--gold); }
+    .proc-step:hover {
+      background:var(--bg-3);
+      border-color:var(--gold-border);
+      border-top-color:var(--gold);
+      transform:translateY(-3px);
+    }
     .proc-ghost {
       position:absolute; bottom:-.1em; right:-.02em;
       font-family:var(--font-d); font-size:clamp(6rem,11vw,10rem);
-      font-weight:900; color:hsl(0 0% 100%/.04); line-height:1;
+      font-weight:900; color:hsl(0 0% 100%/.05); line-height:1;
       pointer-events:none; letter-spacing:-.05em;
       transition:color 400ms, transform 400ms var(--ease);
     }
-    .proc-step:hover .proc-ghost { color:hsl(43 60% 52%/.12); transform:scale(1.05); }
+    .proc-step:hover .proc-ghost { color:hsl(43 60% 52%/.14); transform:scale(1.06); }
     .proc-num {
       font-size:.6rem; font-weight:700; letter-spacing:.14em;
       text-transform:uppercase; color:var(--gold); margin-bottom:var(--sp5);
@@ -563,16 +569,13 @@
       #services .wrap { grid-template-columns:1fr; gap:var(--sp10); }
       .svc-left { position:static; }
       .proc-grid { grid-template-columns:repeat(2,1fr); }
-      .proc-step:nth-child(2) { border-right:none; }
-      .proc-step:nth-child(1), .proc-step:nth-child(2) { border-bottom:1px solid var(--border); }
       #about .wrap { grid-template-columns:1fr; gap:var(--sp10); }
       .contact-body { grid-template-columns:1fr; gap:var(--sp10); }
       .nav-links { display:none; }
     }
     @media (max-width:640px) {
       .proc-grid { grid-template-columns:1fr; }
-      .proc-step { border-right:none !important; border-bottom:1px solid var(--border); }
-      .proc-step:last-child { border-bottom:none; }
+      .proc-step { transform:none !important; }
       .port-header { flex-direction:column; align-items:flex-start; }
       .port-sub { text-align:left; }
       .hero-stats { flex-wrap:wrap; }
