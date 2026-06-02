@@ -183,14 +183,13 @@
       opacity:0; transform:translateY(110%);
       transition:opacity 900ms var(--ease-in), transform 900ms var(--ease-in);
     }
-    .hero-word.outlined {
-      -webkit-text-stroke:2px var(--text);
-      color:transparent;
+    .hero-word.gradient {
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
     }
     .hero-word.italic {
       font-style:italic; font-weight:300;
       color:var(--gold); font-size:clamp(2.5rem,7.5vw,9rem);
-      text-shadow:0 0 60px hsl(43,60%,52%,.45), 0 0 120px hsl(43,60%,52%,.2);
     }
     .hero-word.go { opacity:1; transform:translateY(0); }
 
@@ -1612,7 +1611,7 @@
         <p class="hero-eyebrow" id="eyebrow">Premium Website Designer — London</p>
         <h1 id="hero-h1" class="hero-hed">
           <span class="hero-line"><span class="hero-word" data-d="120">create your own</span></span>
-          <span class="hero-line"><span class="hero-word outlined" data-d="240" data-parallax>premium</span></span>
+          <span class="hero-line"><span class="hero-word gradient" data-d="240" data-parallax>premium</span></span>
           <span class="hero-line"><span class="hero-word italic" data-d="380">website.</span></span>
         </h1>
       </div>
