@@ -165,8 +165,10 @@
     }
 
     .hero-eyebrow {
-      font-size:.7rem; font-weight:600; letter-spacing:.16em;
-      text-transform:uppercase; color:var(--gold); margin-bottom:var(--sp8);
+      font-family:var(--font-d); font-size:.7rem; font-weight:700; letter-spacing:.2em;
+      text-transform:uppercase; margin-bottom:var(--sp8);
+      background:linear-gradient(90deg, var(--gold) 0%, hsl(43,90%,75%) 50%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
       opacity:0; transform:translateY(12px);
       transition:opacity 500ms var(--ease-in), transform 500ms var(--ease-in);
     }
@@ -180,8 +182,10 @@
     .hero-word {
       display:inline-block;
       font-size:clamp(3rem, 9.5vw, 11rem);
-      opacity:0; transform:translateY(110%);
-      transition:opacity 900ms var(--ease-in), transform 900ms var(--ease-in);
+      opacity:0; filter:blur(20px); transform:translateY(6px) scale(0.99);
+      transition:opacity 1100ms cubic-bezier(0,0,0.2,1),
+                 filter 1100ms cubic-bezier(0,0,0.2,1),
+                 transform 1100ms cubic-bezier(0,0,0.2,1);
     }
     .hero-word.gradient {
       background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
@@ -191,7 +195,7 @@
       font-style:italic; font-weight:300;
       color:var(--gold); font-size:clamp(2.5rem,7.5vw,9rem);
     }
-    .hero-word.go { opacity:1; transform:translateY(0); }
+    .hero-word.go { opacity:1; filter:blur(0); transform:none; }
 
     /* stat strip */
     .hero-stats {
@@ -1627,9 +1631,9 @@
       <div class="wrap" style="padding-bottom:0">
         <p class="hero-eyebrow" id="eyebrow">Premium Website Designer — London</p>
         <h1 id="hero-h1" class="hero-hed">
-          <span class="hero-line"><span class="hero-word gradient" data-d="120">we bring your</span></span>
-          <span class="hero-line"><span class="hero-word gradient" data-d="240" data-parallax>vision to life.</span></span>
-          <span class="hero-line"><span class="hero-word gradient" data-d="380">without the hassle.</span></span>
+          <span class="hero-line"><span class="hero-word gradient" data-d="0">we bring your</span></span>
+          <span class="hero-line"><span class="hero-word gradient" data-d="220" data-parallax>vision to life.</span></span>
+          <span class="hero-line"><span class="hero-word gradient" data-d="440">without the hassle.</span></span>
         </h1>
       </div>
     </section>
