@@ -1645,7 +1645,7 @@
         <p class="hero-eyebrow" id="eyebrow">Premium Website Designer — London</p>
         <h1 id="hero-h1" class="hero-hed">
           <span class="hero-line"><span class="hero-word gradient" data-d="0">designed to</span></span>
-          <span class="hero-line"><span class="hero-word gradient hero-word--static" data-parallax>stand out.</span></span>
+          <span class="hero-line"><span class="hero-word gradient hero-word--static">stand out.</span></span>
           <span class="hero-line"><span class="hero-word gradient" data-d="440">delivered.</span></span>
         </h1>
       </div>
@@ -2268,10 +2268,6 @@
 
   /* ── Parallax on "worth" ─────────────────────────────────── */
   if (!noMo) {
-    const pw = document.querySelector('[data-parallax]');
-    if (pw) lenis.on('scroll', ({ scroll }) => {
-      pw.style.transform = `translateY(${scroll * 0.28}px)`;
-    });
   }
 
   /* ── Scroll reveal ───────────────────────────────────────── */
