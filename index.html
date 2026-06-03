@@ -512,10 +512,18 @@
     .contact-details { display:flex; flex-direction:column; gap:var(--sp4); }
     .cd-label {
       font-family:var(--font-d); font-size:.6rem; font-weight:700; letter-spacing:.14em;
-      text-transform:uppercase; color:var(--gold-light); margin-bottom:2px;
+      text-transform:uppercase; margin-bottom:2px;
+      background:linear-gradient(90deg, var(--gold) 0%, hsl(43,80%,62%) 30%, hsl(43,100%,88%) 48%, hsl(0,0%,100%) 50%, hsl(43,100%,88%) 52%, hsl(43,80%,62%) 70%, var(--gold) 100%);
+      background-size:200% auto; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      animation:eyebrow-shimmer 4s linear infinite;
     }
-    .cd-val { font-family:var(--font-d); font-size:.97rem; font-weight:500; color:var(--gold-light); transition:color 300ms; }
-    .cd-val:hover { color:#fff; }
+    .cd-val {
+      font-family:var(--font-d); font-size:.97rem; font-weight:500;
+      background:linear-gradient(90deg, var(--gold) 0%, hsl(43,80%,62%) 30%, hsl(43,100%,88%) 48%, hsl(0,0%,100%) 50%, hsl(43,100%,88%) 52%, hsl(43,80%,62%) 70%, var(--gold) 100%);
+      background-size:200% auto; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      animation:eyebrow-shimmer 5s linear infinite;
+    }
+    .cd-val:hover { animation-play-state:paused; }
 
     .c-form { display:flex; flex-direction:column; gap:var(--sp4); }
     .fg { display:flex; flex-direction:column; gap:var(--sp2); }
