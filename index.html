@@ -205,7 +205,9 @@
       font-size:clamp(4.5rem, 13vw, 13rem);
       font-weight:800; font-style:italic;
       letter-spacing:-.05em; line-height:.9;
-      color:var(--cream);
+      padding-bottom:.18em;
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
     }
 
     /* stat strip */
@@ -734,6 +736,7 @@
     .intro-txt {
       font-family:var(--font-d); font-size:clamp(4.5rem,13vw,10rem);
       font-weight:800; letter-spacing:-.05em; line-height:.9;
+      padding-bottom:.2em;
       background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
       -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
       opacity:0; transform:translateY(28px);
