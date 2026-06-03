@@ -195,9 +195,8 @@
     .hero-word {
       display:inline-block;
       font-size:clamp(3rem, 9.5vw, 11rem);
-      opacity:0; transform:translateY(6px) scale(0.99);
-      transition:opacity 1100ms cubic-bezier(0,0,0.2,1),
-                 transform 1100ms cubic-bezier(0,0,0.2,1);
+      transform:translateY(105%);
+      transition:transform 1000ms cubic-bezier(0.16,1,0.3,1);
     }
     .hero-word.gradient {
       background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
@@ -207,8 +206,8 @@
       font-style:italic; font-weight:300;
       color:var(--gold); font-size:clamp(2.5rem,7.5vw,9rem);
     }
-    .hero-word.go { opacity:1; transform:none; }
-    .hero-word--static { opacity:1; transform:none; transition:none; }
+    .hero-word.go { transform:translateY(0); }
+    .hero-word--static { transform:none; transition:none; }
 
     /* stat strip */
     .hero-stats {
@@ -1646,7 +1645,7 @@
         <h1 id="hero-h1" class="hero-hed">
           <span class="hero-line"><span class="hero-word gradient" data-d="0">designed to</span></span>
           <span class="hero-line"><span class="hero-word gradient hero-word--static">stand out.</span></span>
-          <span class="hero-line"><span class="hero-word gradient" data-d="440">delivered.</span></span>
+          <span class="hero-line"><span class="hero-word gradient" data-d="160">delivered.</span></span>
         </h1>
       </div>
     </section>
