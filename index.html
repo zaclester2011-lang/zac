@@ -199,20 +199,14 @@
     .hero-word.go { transform:translateY(0); }
     .hero-word--static { transform:none; transition:none; }
 
-    /* support lines — "designed to" / "delivered." */
-    .hero-word--support {
-      font-size:clamp(5.5rem, 13.5vw, 15.5rem);
-      font-weight:300; font-style:italic;
-      letter-spacing:-.03em; line-height:.86;
-      color:hsl(43, 88%, 68%);
-    }
-
-    /* focal line — "stand out." */
+    /* all hero lines — match Form & Forge logo treatment */
+    .hero-word--support,
     .hero-word--focal {
-      font-size:clamp(5.5rem, 13.5vw, 15.5rem);
-      font-weight:300; font-style:italic;
-      letter-spacing:-.03em; line-height:.86;
-      color:hsl(43, 88%, 68%);
+      font-size:clamp(4.5rem, 13vw, 13rem);
+      font-weight:800; font-style:italic;
+      letter-spacing:-.05em; line-height:.9;
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
     }
 
     /* stat strip */
