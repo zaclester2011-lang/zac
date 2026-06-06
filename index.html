@@ -1349,8 +1349,8 @@
     @media(max-width:768px) { .testi-grid { grid-template-columns:1fr; } }
 
     /* ── PRICING ─────────────────────────────────────────────── */
-    .pricing-hed { font-family:var(--font-d); font-size:clamp(3rem,7vw,6rem); font-weight:800; letter-spacing:-.04em; line-height:1; margin-bottom:var(--sp16); color:var(--gold); }
-    .pricing-hed em { font-style:italic; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.08em; display:inline-block; }
+    .pricing-hed { font-family:var(--font-d); font-size:clamp(2.4rem,4.5vw,4.5rem); font-weight:300; letter-spacing:.01em; line-height:1.1; font-style:italic; margin-bottom:var(--sp16); color:hsl(0,0%,96%); }
+    .pricing-hed em { font-style:normal; font-weight:600; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.08em; display:inline-block; }
 
     .pricing-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp6); align-items:start; }
     @media(max-width:700px){ .pricing-grid { grid-template-columns:1fr; } }
@@ -1374,14 +1374,15 @@
     .pkg-features { list-style:none; display:flex; flex-direction:column; gap:var(--sp4); }
     .pkg-features li { display:flex; align-items:center; gap:var(--sp4); font-family:var(--font-b); font-size:.95rem; color:var(--gold); line-height:1.5; transition:color 300ms; }
     .pkg-features li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; transition:background 300ms; }
-    .pkg-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp10); position:relative; overflow:hidden; transition:border-color 300ms,box-shadow 300ms; cursor:default; }
+    .pkg-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp10); position:relative; overflow:hidden; transition:background 350ms var(--ease-standard),border-color 300ms,box-shadow 300ms; cursor:default; }
     .pkg-card::before { content:''; position:absolute; inset:0; border-radius:inherit; background:linear-gradient(135deg,hsl(43,60%,52%,.07) 0%,transparent 60%); pointer-events:none; transition:opacity 300ms; }
-    .pkg-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 40px hsl(43,60%,52%,.15); }
+    .pkg-card:hover { background:hsl(0,0%,0%); border-color:var(--gold); box-shadow:0 0 0 1px var(--gold); }
     .pkg-card:hover .pkg-free,
     .pkg-card:hover .pkg-period,
-    .pkg-card:hover .pkg-features li { color:var(--gold-light); }
-    .pkg-card:hover .pkg-features li::before { background:var(--gold-light); }
-    .pkg-card:hover .pkg-divider { background:linear-gradient(to right,transparent,var(--gold),transparent); }
+    .pkg-card:hover .pkg-features li { color:hsl(0,0%,96%); }
+    .pkg-card:hover .pkg-badge { color:hsl(0,0%,96%); border-color:hsl(0,0%,40%); }
+    .pkg-card:hover .pkg-features li::before { background:hsl(0,0%,96%); }
+    .pkg-card:hover .pkg-divider { background:linear-gradient(to right,transparent,hsl(0,0%,30%),transparent); }
 
     .addons-wrap { display:flex; flex-direction:column; gap:var(--sp4); }
     .addons-label { font-family:var(--font-b); font-size:.65rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin-bottom:var(--sp2); }
@@ -2101,7 +2102,7 @@
     <!-- PRICING -->
     <section id="pricing" aria-labelledby="pricing-h2">
       <div class="wrap">
-        <p class="sec-label" data-a>Pricing</p>
+        <p class="sec-label" data-a>Our Prices</p>
         <h2 id="pricing-h2" class="pricing-hed" data-a>Clear pricing.<br><em>No surprises.</em></h2>
         <div class="pricing-grid">
 
