@@ -2126,7 +2126,8 @@
               </div>
             </div>
           </div>
-          <form class="c-form" action="#" method="post" aria-label="Project enquiry" novalidate>
+          <form class="c-form" id="enquiry-form" name="enquiry" method="post" data-netlify="true" aria-label="Project enquiry" novalidate>
+            <input type="hidden" name="form-name" value="enquiry" />
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4)">
               <div class="fg">
                 <label for="f-fname">First Name</label>
@@ -2316,6 +2317,36 @@
     row.addEventListener('mouseleave', () =>
       spans.forEach(s => { s.style.transform=''; s.style.color=''; }));
   });
+
+  /* ── Enquiry form ───────────────────────────────────────── */
+  const enquiryForm = document.getElementById('enquiry-form');
+  if (enquiryForm) {
+    enquiryForm.addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = enquiryForm.querySelector('[type=submit]');
+      const fields = enquiryForm.querySelectorAll('[required]');
+      let valid = true;
+      fields.forEach(f => { if (!f.value.trim()) { f.style.borderColor='var(--gold)'; valid=false; } else { f.style.borderColor=''; } });
+      if (!valid) return;
+      btn.disabled = true;
+      btn.innerHTML = 'Sending&hellip;';
+      try {
+        const body = new URLSearchParams(new FormData(enquiryForm)).toString();
+        const res = await fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body });
+        if (res.ok) {
+          enquiryForm.innerHTML = `<div style="text-align:center;padding:var(--sp16) var(--sp8)"><p style="font-family:var(--font-d);font-size:clamp(1.8rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;background:linear-gradient(100deg,var(--gold-light) 0%,var(--text) 55%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.1em;margin-bottom:var(--sp4)">Enquiry received.</p><p style="color:var(--text-2);font-size:var(--step--1);line-height:1.6">We'll be in touch within 24 hours.</p></div>`;
+        } else { throw new Error(); }
+      } catch {
+        btn.disabled = false;
+        btn.innerHTML = 'Send enquiry <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        const err = document.createElement('p');
+        err.style.cssText = 'color:var(--gold);font-size:.85rem;margin-top:var(--sp3);text-align:center';
+        err.textContent = 'Something went wrong — please email us directly at zac@formandforge.co.uk';
+        enquiryForm.appendChild(err);
+        setTimeout(() => err.remove(), 6000);
+      }
+    });
+  }
 
   /* ── Magnetic button ─────────────────────────────────────── */
   document.querySelectorAll('[data-magnetic]').forEach(btn => {
