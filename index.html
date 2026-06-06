@@ -1384,14 +1384,18 @@
     .pkg-card:hover .pkg-divider { background:linear-gradient(to right,transparent,var(--gold),transparent); }
     .pkg-card:hover .pkg-badge { background:var(--gold); color:var(--bg); border-color:var(--gold); }
 
-    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp16); }
+    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp10); }
     .addons-label { font-family:var(--font-d); font-size:clamp(2.2rem,4vw,3.8rem); font-weight:800; letter-spacing:-.04em; line-height:1; color:var(--gold-light); margin-bottom:var(--sp8); display:inline-block; cursor:default; }
     .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp10) var(--sp10); display:flex; align-items:center; justify-content:space-between; gap:var(--sp8); transition:border-color 300ms,box-shadow 300ms; cursor:default; }
     .addon-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 30px hsl(43,60%,52%,.12); }
     .addon-name { font-family:var(--font-d); font-size:clamp(1.6rem,2.5vw,2.2rem); font-weight:700; letter-spacing:-.02em; color:var(--gold); margin-bottom:var(--sp3); transition:color 300ms; }
     .addon-desc { font-family:var(--font-b); font-size:1rem; color:var(--gold); line-height:1.7; max-width:300px; transition:color 300ms; opacity:.75; }
+    .addon-list { list-style:none; display:flex; flex-direction:column; gap:var(--sp3); margin-top:var(--sp3); }
+    .addon-list li { display:flex; align-items:flex-start; gap:var(--sp3); font-family:var(--font-b); font-size:1rem; color:var(--gold); line-height:1.6; opacity:.75; transition:color 250ms,opacity 250ms; }
+    .addon-list li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; margin-top:.55em; transition:background 250ms; }
     .addon-card:hover .addon-name,
-    .addon-card:hover .addon-desc { color:var(--gold-light); opacity:1; }
+    .addon-card:hover .addon-list li { color:var(--gold-light); opacity:1; }
+    .addon-card:hover .addon-list li::before { background:var(--gold-light); }
     .addon-price { font-family:var(--font-d); font-size:clamp(2.2rem,3.5vw,3rem); font-weight:800; letter-spacing:-.04em; white-space:nowrap; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; flex-shrink:0; }
     .addon-price span { font-size:.38em; color:var(--gold); -webkit-text-fill-color:var(--gold); letter-spacing:.04em; }
 
@@ -2131,7 +2135,10 @@
             <div class="addon-card">
               <div>
                 <p class="addon-name" data-addon-wave>Professional Email</p>
-                <p class="addon-desc">Your own domain email address — e.g. you@yourbusiness.co.uk.<br>Professional, trusted, memorable.</p>
+                <ul class="addon-list">
+                  <li>Your own domain email address — e.g. you@yourbusiness.co.uk.</li>
+                  <li style="margin-top:var(--sp4)">Professional, trusted, memorable.</li>
+                </ul>
               </div>
               <p class="addon-price">£9<span>/mo</span></p>
             </div>
@@ -2139,7 +2146,10 @@
             <div class="addon-card">
               <div>
                 <p class="addon-name" data-addon-wave>Additional Updates</p>
-                <p class="addon-desc">Two updates free each year.<br>Any extras are a flat fee — no hourly rates.</p>
+                <ul class="addon-list">
+                  <li>Two updates free each year.</li>
+                  <li>Any extras are a flat fee — no hourly rates.</li>
+                </ul>
               </div>
               <p class="addon-price">£99<span>/change</span></p>
             </div>
