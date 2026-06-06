@@ -1385,7 +1385,7 @@
     .pkg-card:hover .pkg-badge { background:var(--gold); color:var(--bg); border-color:var(--gold); }
 
     .addons-wrap { display:flex; flex-direction:column; gap:var(--sp10); }
-    .addons-label { font-family:var(--font-d); font-size:clamp(2.2rem,4vw,3.8rem); font-weight:800; letter-spacing:-.04em; line-height:1; color:var(--gold-light); margin-bottom:var(--sp8); display:inline-block; cursor:default; }
+    .addons-label { font-family:var(--font-d); font-size:clamp(1.5rem,2.5vw,2.4rem); font-weight:800; letter-spacing:-.03em; line-height:1; color:var(--gold-light); display:inline-block; cursor:default; }
     .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp10) var(--sp10); display:flex; align-items:center; justify-content:space-between; gap:var(--sp8); transition:border-color 300ms,box-shadow 300ms; cursor:default; }
     .addon-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 30px hsl(43,60%,52%,.12); }
     .addon-name { font-family:var(--font-d); font-size:clamp(1.6rem,2.5vw,2.2rem); font-weight:700; letter-spacing:-.02em; color:var(--gold); margin-bottom:var(--sp3); transition:color 300ms; }
@@ -2108,6 +2108,10 @@
       <div class="wrap">
         <p class="sec-label" data-a>Our Prices</p>
         <h2 id="pricing-h2" class="pricing-hed" data-a>Clear pricing.<br><em>No surprises.</em></h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp6);margin-bottom:var(--sp6);align-items:end">
+          <div></div>
+          <p class="addons-label" data-heading-wave>Optional Upgrades</p>
+        </div>
         <div class="pricing-grid">
 
           <!-- Standard Package -->
@@ -2130,7 +2134,6 @@
 
           <!-- Add-ons -->
           <div class="addons-wrap" data-a>
-            <p class="addons-label" data-heading-wave>Optional Add-ons</p>
 
             <div class="addon-card">
               <div>
@@ -2233,7 +2236,7 @@
                 <p class="cd-val">London, England — Working globally</p>
               </div>
             </div>
-            <div style="margin-top:var(--sp16);padding-top:var(--sp12);border-top:1px solid var(--gold-border);">
+            <div style="margin-top:var(--sp16);">
               <p style="font-family:var(--font-d);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:700;letter-spacing:-.02em;color:var(--gold-light);margin-bottom:var(--sp4);">Explore our work on Instagram</p>
               <a class="cd-val" href="https://www.instagram.com/form.andforge/" target="_blank" rel="noopener noreferrer">@form.andforge</a>
             </div>
