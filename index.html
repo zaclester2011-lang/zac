@@ -2126,8 +2126,7 @@
               </div>
             </div>
           </div>
-          <form class="c-form" id="enquiry-form" name="enquiry" method="post" data-netlify="true" aria-label="Project enquiry" novalidate>
-            <input type="hidden" name="form-name" value="enquiry" />
+          <form class="c-form" id="enquiry-form" action="https://formspree.io/f/xykakqay" method="post" aria-label="Project enquiry" novalidate>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4)">
               <div class="fg">
                 <label for="f-fname">First Name</label>
@@ -2331,8 +2330,7 @@
       btn.disabled = true;
       btn.innerHTML = 'Sending&hellip;';
       try {
-        const body = new URLSearchParams(new FormData(enquiryForm)).toString();
-        const res = await fetch('/', { method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body });
+        const res = await fetch('https://formspree.io/f/xykakqay', { method:'POST', headers:{'Accept':'application/json'}, body: new FormData(enquiryForm) });
         if (res.ok) {
           enquiryForm.innerHTML = `<div style="text-align:center;padding:var(--sp16) var(--sp8)"><p style="font-family:var(--font-d);font-size:clamp(1.8rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;background:linear-gradient(100deg,var(--gold-light) 0%,var(--text) 55%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.1em;margin-bottom:var(--sp4)">Enquiry received.</p><p style="color:var(--text-2);font-size:var(--step--1);line-height:1.6">We'll be in touch within 24 hours.</p></div>`;
         } else { throw new Error(); }
