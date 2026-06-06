@@ -1384,7 +1384,7 @@
     .pkg-card:hover .pkg-divider { background:linear-gradient(to right,transparent,var(--gold),transparent); }
     .pkg-card:hover .pkg-badge { background:var(--gold); color:var(--bg); border-color:var(--gold); }
 
-    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp8); }
+    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp16); }
     .addons-label { font-family:var(--font-d); font-size:clamp(2.2rem,4vw,3.8rem); font-weight:800; letter-spacing:-.04em; line-height:1; color:var(--gold-light); margin-bottom:var(--sp8); display:inline-block; cursor:default; }
     .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp10) var(--sp10); display:flex; align-items:center; justify-content:space-between; gap:var(--sp8); transition:border-color 300ms,box-shadow 300ms; cursor:default; }
     .addon-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 30px hsl(43,60%,52%,.12); }
@@ -2222,6 +2222,10 @@
                 <p class="cd-label">Based in</p>
                 <p class="cd-val">London, England — Working globally</p>
               </div>
+              <div>
+                <p class="cd-label">Instagram</p>
+                <a class="cd-val" href="https://www.instagram.com/form.andforge/" target="_blank" rel="noopener noreferrer">@form.andforge</a>
+              </div>
             </div>
           </div>
           <form class="c-form" id="enquiry-form" action="https://formspree.io/f/xykakqay" method="post" aria-label="Project enquiry" novalidate>
@@ -2246,7 +2250,7 @@
             </div>
             <div class="fg">
               <label for="f-msg">Tell us about your project</label>
-              <textarea id="f-msg" name="message" style="min-height:180px" placeholder="Give us as much detail as you can — colours, fonts, target audience, examples of similar websites you like the look of. Any key words or phrases you would like included. An online shop? Tell us your aims and objectives, e.g. more sales, more enquiries." required></textarea>
+              <textarea id="f-msg" name="message" style="min-height:180px" placeholder="Give us as much detail as you can — colours, fonts, target audience, examples of similar websites you like the look of. Any key words or phrases you would like included. Any add-ons? An online shop? Tell us your aims and objectives, e.g. more sales, more enquiries." required></textarea>
             </div>
             <button type="submit" class="c-btn" data-magnetic>
               Send enquiry
@@ -2444,29 +2448,29 @@
     });
   }
 
-  /* ── Wave on addon section heading ─────────────────────── */
+  /* ── Lift on addon section heading ─────────────────────── */
   document.querySelectorAll('[data-heading-wave]').forEach(el => {
-    el.innerHTML = [...el.textContent].map((ch, i) =>
+    el.innerHTML = [...el.textContent].map(ch =>
       ch === ' ' ? ' ' :
-      `<span style="display:inline-block;transition:transform 300ms cubic-bezier(.34,1.56,.64,1) ${i*22}ms,color 280ms ease ${i*18}ms">${ch}</span>`
+      `<span style="display:inline-block;transition:transform 280ms cubic-bezier(.34,1.56,.64,1),color 250ms ease">${ch}</span>`
     ).join('');
     const spans = el.querySelectorAll('span');
     el.addEventListener('mouseenter', () =>
-      spans.forEach(s => { s.style.transform='translateY(-4px)'; s.style.color='var(--text)'; }));
+      spans.forEach(s => { s.style.transform='translateY(-5px)'; s.style.color='var(--text)'; }));
     el.addEventListener('mouseleave', () =>
       spans.forEach(s => { s.style.transform=''; s.style.color=''; }));
   });
 
-  /* ── Wave on addon titles ───────────────────────────────── */
+  /* ── Lift on addon titles ───────────────────────────────── */
   document.querySelectorAll('[data-addon-wave]').forEach(el => {
-    el.innerHTML = [...el.textContent].map((ch, i) =>
+    el.innerHTML = [...el.textContent].map(ch =>
       ch === ' ' ? ' ' :
-      `<span style="display:inline-block;transition:transform 300ms cubic-bezier(.34,1.56,.64,1) ${i*22}ms,color 280ms ease ${i*18}ms">${ch}</span>`
+      `<span style="display:inline-block;transition:transform 280ms cubic-bezier(.34,1.56,.64,1),color 250ms ease">${ch}</span>`
     ).join('');
     const spans = el.querySelectorAll('span');
     const card = el.closest('.addon-card');
     card.addEventListener('mouseenter', () =>
-      spans.forEach(s => { s.style.transform='translateY(-3px)'; s.style.color='var(--gold-light)'; }));
+      spans.forEach(s => { s.style.transform='translateY(-4px)'; s.style.color='var(--gold-light)'; }));
     card.addEventListener('mouseleave', () =>
       spans.forEach(s => { s.style.transform=''; s.style.color=''; }));
   });
