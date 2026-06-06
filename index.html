@@ -1347,6 +1347,43 @@
     .testi-by { font-size:.8rem; font-weight:600; color:var(--text-2); margin-bottom:.1rem; }
     .testi-co { font-size:.75rem; color:var(--text-3); }
     @media(max-width:768px) { .testi-grid { grid-template-columns:1fr; } }
+
+    /* ── PRICING ─────────────────────────────────────────────── */
+    .pricing-hed { font-family:var(--font-d); font-size:clamp(3rem,7vw,6rem); font-weight:800; letter-spacing:-.04em; line-height:1; margin-bottom:var(--sp16); }
+    .pricing-hed em { font-style:italic; background:linear-gradient(100deg,var(--gold-light) 0%,var(--text) 55%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.08em; display:inline-block; }
+
+    .pricing-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp6); align-items:start; }
+    @media(max-width:700px){ .pricing-grid { grid-template-columns:1fr; } }
+
+    .pkg-card {
+      background:var(--bg-2); border:1px solid var(--gold-border);
+      border-radius:var(--rad-xl); padding:var(--sp10) var(--sp10);
+      position:relative; overflow:hidden;
+    }
+    .pkg-card::before {
+      content:''; position:absolute; inset:0; border-radius:inherit;
+      background:linear-gradient(135deg,hsl(43,60%,52%,.07) 0%,transparent 60%);
+      pointer-events:none;
+    }
+    .pkg-badge { display:inline-block; font-family:var(--font-b); font-size:.65rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); border:1px solid var(--gold-border); border-radius:var(--rad-full); padding:.3em 1em; margin-bottom:var(--sp8); }
+    .pkg-free { display:block; font-family:var(--font-d); font-size:clamp(1.4rem,2.5vw,2rem); font-weight:700; letter-spacing:-.02em; color:var(--text); margin-bottom:var(--sp2); }
+    .pkg-free span { background:linear-gradient(100deg,var(--gold-light) 0%,var(--text) 60%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+    .pkg-price-row { display:flex; align-items:baseline; gap:.3rem; margin-bottom:var(--sp8); margin-top:var(--sp6); }
+    .pkg-amount { font-family:var(--font-d); font-size:clamp(4rem,8vw,6rem); font-weight:800; letter-spacing:-.05em; line-height:1; background:linear-gradient(100deg,var(--gold-light) 0%,var(--text) 55%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; }
+    .pkg-period { font-family:var(--font-b); font-size:.95rem; color:var(--text-2); letter-spacing:.02em; }
+    .pkg-divider { width:100%; height:1px; background:linear-gradient(to right,transparent,var(--gold-border),transparent); margin-bottom:var(--sp8); }
+    .pkg-features { list-style:none; display:flex; flex-direction:column; gap:var(--sp4); }
+    .pkg-features li { display:flex; align-items:center; gap:var(--sp4); font-family:var(--font-b); font-size:.95rem; color:var(--text-2); line-height:1.5; }
+    .pkg-features li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; }
+
+    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp4); }
+    .addons-label { font-family:var(--font-b); font-size:.65rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--text-2); margin-bottom:var(--sp2); }
+    .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp7) var(--sp8); display:flex; align-items:center; justify-content:space-between; gap:var(--sp6); }
+    .addon-name { font-family:var(--font-d); font-size:clamp(1.2rem,2vw,1.6rem); font-weight:700; letter-spacing:-.02em; color:var(--text); margin-bottom:var(--sp2); }
+    .addon-desc { font-family:var(--font-b); font-size:.82rem; color:var(--text-2); line-height:1.6; max-width:260px; }
+    .addon-price { font-family:var(--font-d); font-size:clamp(1.8rem,3vw,2.6rem); font-weight:800; letter-spacing:-.04em; white-space:nowrap; background:linear-gradient(100deg,var(--gold-light) 0%,var(--text) 55%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; flex-shrink:0; }
+    .addon-price span { font-size:.4em; color:var(--text-2); -webkit-text-fill-color:var(--text-2); letter-spacing:.04em; }
+
   </style>
 </head>
 <body>
@@ -2047,6 +2084,56 @@
             <p class="testi-q">"The £49 a month feels like a joke for what you get. Everything is taken care of and the site looks absolutely flawless."</p>
             <div><p class="testi-by">Priya K.</p><p class="testi-co">CEO, Sage Studio</p></div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" aria-labelledby="pricing-h2">
+      <div class="wrap">
+        <p class="sec-label" data-a>Pricing</p>
+        <h2 id="pricing-h2" class="pricing-hed" data-a>Clear pricing.<br><em>No surprises.</em></h2>
+        <div class="pricing-grid">
+
+          <!-- Standard Package -->
+          <div class="pkg-card" data-a>
+            <p class="pkg-badge">Standard Package</p>
+            <p class="pkg-free">Website — <span>Built Free</span></p>
+            <div class="pkg-price-row">
+              <span class="pkg-amount">£49</span>
+              <span class="pkg-period">/ month hosting</span>
+            </div>
+            <div class="pkg-divider"></div>
+            <ul class="pkg-features">
+              <li>Bespoke website, designed and built for you</li>
+              <li>Fully managed professional hosting</li>
+              <li>SSL certificate — always secure</li>
+              <li>2 free updates included every year</li>
+              <li>No hidden fees. Ever.</li>
+            </ul>
+          </div>
+
+          <!-- Add-ons -->
+          <div class="addons-wrap" data-a>
+            <p class="addons-label">Optional Add-ons</p>
+
+            <div class="addon-card">
+              <div>
+                <p class="addon-name">Professional Email</p>
+                <p class="addon-desc">A business email address using your own domain — e.g. you@yourbusiness.co.uk. Looks professional, builds trust instantly.</p>
+              </div>
+              <p class="addon-price">£9<span>/mo</span></p>
+            </div>
+
+            <div class="addon-card">
+              <div>
+                <p class="addon-name">Additional Updates</p>
+                <p class="addon-desc">Two website updates are included free every year. Need more? Each additional change is a flat fee — no hourly rates, no surprises.</p>
+              </div>
+              <p class="addon-price">£99<span>/change</span></p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
