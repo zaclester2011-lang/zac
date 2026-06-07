@@ -1,0 +1,2331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Form & Forge — A premium premium website designer building brands worth remembering." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Form & Forge — Brands Worth Remembering" />
+  <meta property="og:description" content="A premium premium website designer building brands worth remembering." />
+  <meta property="og:image" content="/og-image.webp" />
+  <meta property="og:url" content="https://formandforge.studio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Form & Forge" />
+  <meta name="twitter:description" content="A premium premium website designer building brands worth remembering." />
+  <meta name="twitter:image" content="/og-image.webp" />
+  <link rel="canonical" href="https://formandforge.studio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <title>Form & Forge — Brands Worth Remembering</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "name": "Form & Forge", "url": "https://formandforge.studio" },
+      { "@type": "WebPage", "name": "Form & Forge — Brands Worth Remembering", "url": "https://formandforge.studio" }
+    ]
+  }
+  </script>
+  <style>
+    /* ─── TOKENS ─────────────────────────────────────────────── */
+    :root {
+      --gold:          hsl(43, 60%, 52%);
+      --gold-light:    hsl(43, 72%, 65%);
+      --gold-dim:      hsl(43, 60%, 52%, 0.10);
+      --gold-border:   hsl(43, 60%, 52%, 0.22);
+
+      --bg:            hsl(0, 0%, 4%);
+      --bg-2:          hsl(0, 0%, 7%);
+      --bg-3:          hsl(0, 0%, 10%);
+
+      --text:          hsl(0, 0%, 93%);
+      --text-2:        hsl(0, 0%, 58%);
+      --text-3:        hsl(0, 0%, 36%);
+
+      --border:        hsl(0, 0%, 100%, 0.07);
+      --border-2:      hsl(0, 0%, 100%, 0.13);
+
+      --font-d:        'Cormorant Garamond', Georgia, serif;
+      --cream:         hsl(40, 50%, 95%);
+      --gold-antique:  hsl(43, 72%, 54%);
+      --font-b:        'DM Sans', system-ui, sans-serif;
+
+      --sp1:.25rem; --sp2:.5rem; --sp3:.75rem; --sp4:1rem;
+      --sp5:1.25rem; --sp6:1.5rem; --sp8:2rem; --sp10:2.5rem;
+      --sp12:3rem; --sp16:4rem; --sp20:5rem; --sp24:6rem;
+
+      --rad-sm:.25rem; --rad-md:.5rem; --rad-lg:.75rem;
+      --rad-xl:1rem; --rad-2xl:1.5rem; --rad-full:9999px;
+
+      --sh-gold: 0 0 0 3px hsl(43 60% 52%/.18), 0 0 24px hsl(43 60% 52%/.08);
+
+      --ease:    cubic-bezier(.4,0,.2,1);
+      --ease-in: cubic-bezier(0,0,.2,1);
+      --ease-sp: cubic-bezier(.34,1.56,.64,1);
+
+      --nav-h: 72px;
+    }
+
+    /* ─── RESET ──────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { font-size:16px; -webkit-font-smoothing:antialiased; scroll-behavior:auto; }
+    body {
+      background:var(--bg); color:var(--text);
+      font-family:var(--font-b); font-weight:400;
+      line-height:1.65; overflow-x:hidden; cursor:none;
+    }
+    a { color:inherit; text-decoration:none; }
+    img, svg { display:block; }
+    button { cursor:none; border:none; background:none; font:inherit; }
+    input, textarea, select { font:inherit; }
+
+    /* skip link */
+    .skip { position:absolute; top:-100%; left:var(--sp4); background:var(--gold);
+      color:var(--bg); padding:var(--sp2) var(--sp4); border-radius:var(--rad-md);
+      font-weight:600; z-index:10000; transition:top 150ms; }
+    .skip:focus { top:var(--sp4); }
+
+    /* sr-only */
+    .sr { position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+      overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    /* ─── CURSOR ─────────────────────────────────────────────── */
+    #cur-dot {
+      position:fixed; width:8px; height:8px; background:var(--gold);
+      border-radius:50%; pointer-events:none; z-index:99999;
+      transform:translate(-50%,-50%); mix-blend-mode:multiply;
+      transition:width 300ms var(--ease), height 300ms var(--ease);
+    }
+    #cur-ring {
+      position:fixed; width:36px; height:36px;
+      border:1.5px solid hsl(43 60% 52%/.45);
+      border-radius:50%; pointer-events:none; z-index:99998;
+      transform:translate(-50%,-50%);
+      transition:width 300ms var(--ease), height 300ms var(--ease), opacity 300ms;
+    }
+
+    /* ─── LAYOUT ─────────────────────────────────────────────── */
+    .wrap {
+      width:100%; max-width:1440px; margin:0 auto;
+      padding:0 clamp(var(--sp6),4vw,var(--sp16));
+    }
+
+    /* ─── NAV ────────────────────────────────────────────────── */
+    header {
+      position:fixed; top:0; left:0; right:0; height:var(--nav-h); z-index:1000;
+      transition:background 300ms var(--ease), border-color 300ms, transform 300ms var(--ease);
+      border-bottom:1px solid transparent;
+    }
+    header.scrolled {
+      background:hsl(0 0% 4%/.88); backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px); border-color:var(--border);
+    }
+    header.hidden { transform:translateY(-100%); }
+
+    nav { height:var(--nav-h); display:flex; align-items:center; justify-content:space-between; }
+
+    .logo {
+      display:flex; align-items:center; gap:var(--sp2);
+      font-family:var(--font-d); font-weight:700; font-size:1.05rem;
+      letter-spacing:-.01em;
+    }
+    .logo-dot {
+      width:7px; height:7px; background:var(--gold); border-radius:50%;
+      transition:transform 300ms var(--ease-sp);
+    }
+    .logo:hover .logo-dot { transform:scale(1.7); }
+
+    .nav-links { display:flex; align-items:center; gap:var(--sp8); list-style:none; }
+    .nav-links a {
+      font-size:.8rem; font-weight:500; letter-spacing:.06em;
+      text-transform:uppercase; color:var(--text-2);
+      position:relative; transition:color 300ms var(--ease);
+    }
+    .nav-links a::after {
+      content:''; position:absolute; bottom:-3px; left:0; right:0;
+      height:1px; background:var(--gold);
+      transform-origin:right; transform:scaleX(0);
+      transition:transform 300ms var(--ease);
+    }
+    .nav-links a:hover { color:var(--text); }
+    .nav-links a:hover::after { transform-origin:left; transform:scaleX(1); }
+
+    .nav-cta {
+      font-size:.72rem !important; font-weight:600 !important;
+      color:var(--gold) !important; border:1px solid var(--gold-border);
+      padding:var(--sp2) var(--sp5); border-radius:var(--rad-full);
+      transition:background 300ms, color 300ms, border-color 300ms !important;
+    }
+    .nav-cta:hover { background:var(--gold); color:var(--bg) !important; border-color:var(--gold) !important; }
+    .nav-cta::after { display:none !important; }
+
+    /* ─── HERO ───────────────────────────────────────────────── */
+    #hero {
+      min-height:100svh; display:flex; flex-direction:column;
+      justify-content:flex-end; padding-top:var(--nav-h); position:relative;
+    }
+
+    @keyframes eyebrow-shimmer {
+      0%   { background-position:200% center; }
+      100% { background-position:-200% center; }
+    }
+    .hero-eyebrow {
+      font-family:var(--font-d); font-size:.7rem; font-weight:700; letter-spacing:.2em;
+      text-transform:uppercase; margin-bottom:var(--sp8);
+      background:linear-gradient(90deg,
+        var(--gold) 0%,
+        hsl(43,80%,62%) 30%,
+        hsl(43,100%,88%) 48%,
+        hsl(0,0%,100%) 50%,
+        hsl(43,100%,88%) 52%,
+        hsl(43,80%,62%) 70%,
+        var(--gold) 100%);
+      background-size:200% auto;
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      animation:eyebrow-shimmer 4s linear infinite;
+      opacity:0; transform:translateY(12px);
+      transition:opacity 500ms var(--ease-in), transform 500ms var(--ease-in);
+    }
+    .hero-eyebrow.go { opacity:1; transform:none; }
+
+    .hero-hed { font-family:var(--font-d); }
+    .hero-line { display:block; overflow:hidden; padding-bottom:.18em; padding-right:.4em; }
+    .hero-word {
+      display:inline-block;
+      transform:translateY(105%);
+      transition:transform 1100ms cubic-bezier(0.16,1,0.3,1);
+    }
+    .hero-word.go { transform:translateY(0); }
+    .hero-word--static { transform:none; transition:none; }
+
+    /* all hero lines */
+    .hero-word--support,
+    .hero-word--focal {
+      font-size:clamp(2.2rem, 9vw, 10rem);
+      font-weight:800; font-style:italic;
+      letter-spacing:-.05em; line-height:.9;
+      padding-bottom:.18em; padding-right:.2em; white-space:nowrap;
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+    }
+
+    /* stat strip */
+    .hero-stats {
+      display:flex; border-top:1px solid var(--border);
+      padding:var(--sp6) 0 0; margin-top:var(--sp8);
+    }
+    .stat {
+      flex:1; padding:var(--sp5) var(--sp6);
+      border-right:1px solid var(--border);
+      opacity:0; transform:translateY(14px);
+      transition:opacity 500ms var(--ease-in), transform 500ms var(--ease-in);
+    }
+    .stat:last-child { border-right:none; }
+    .stat.go { opacity:1; transform:none; }
+    .stat-n {
+      font-family:var(--font-d); font-size:clamp(1.6rem,2.8vw,2.4rem);
+      font-weight:700; color:var(--gold); line-height:1; margin-bottom:var(--sp1);
+    }
+    .stat-l {
+      font-size:.7rem; font-weight:500; letter-spacing:.08em;
+      text-transform:uppercase; color:var(--text-3);
+    }
+
+    /* ─── SECTION BASE ───────────────────────────────────────── */
+    section { padding:clamp(5rem,10vw,9rem) 0; }
+
+    .sec-label {
+      font-family:var(--font-d); font-size:.65rem; font-weight:700; letter-spacing:.22em;
+      text-transform:uppercase;
+      background:linear-gradient(90deg, var(--gold) 0%, hsl(43,80%,62%) 30%, hsl(43,100%,88%) 48%, hsl(0,0%,100%) 50%, hsl(43,100%,88%) 52%, hsl(43,80%,62%) 70%, var(--gold) 100%);
+      background-size:200% auto;
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      animation:eyebrow-shimmer 4s linear infinite;
+      display:flex; align-items:center; gap:var(--sp3);
+      margin-bottom:var(--sp6);
+    }
+    .sec-label::before {
+      content:''; display:block; width:20px; height:1px;
+      background:var(--gold); flex-shrink:0;
+    }
+
+    /* ─── PORTFOLIO ──────────────────────────────────────────── */
+    #portfolio { background:var(--bg-2); }
+
+    .port-header {
+      display:flex; align-items:flex-end; justify-content:space-between;
+      margin-bottom:var(--sp12); gap:var(--sp8);
+    }
+    .port-title {
+      font-family:var(--font-d); font-size:clamp(2.4rem,5.5vw,5rem);
+      font-weight:300; letter-spacing:.01em; line-height:1.1; font-style:italic;
+      color:var(--cream);
+    }
+    .port-title em { font-weight:600; font-style:normal; }
+    .port-sub {
+      max-width:380px; color:var(--text); -webkit-text-stroke:.4px var(--gold);
+      font-size:clamp(1.1rem,2vw,1.5rem); font-family:var(--font-d); font-weight:600;
+      line-height:1.3; letter-spacing:-.01em; text-align:right;
+    }
+
+    .port-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      grid-template-rows:auto auto;
+      gap:var(--sp3);
+    }
+    .pi { position:relative; overflow:hidden; background:var(--bg-3);
+      border-radius:var(--rad-lg); cursor:none; }
+    .pi:nth-child(1) { grid-column:1; grid-row:1/3; }
+    .pi:nth-child(2) { grid-column:2; grid-row:1; }
+    .pi:nth-child(3) { grid-column:2; grid-row:2; }
+    .pi:nth-child(4) { grid-column:1/-1; }
+
+    .pi-bg {
+      width:100%; transition:transform 700ms var(--ease);
+    }
+    .pi:nth-child(1) .pi-bg { aspect-ratio:4/5; }
+    .pi:nth-child(2) .pi-bg { aspect-ratio:16/10; }
+    .pi:nth-child(3) .pi-bg { aspect-ratio:16/10; }
+    .pi:nth-child(4) .pi-bg { aspect-ratio:21/9; }
+    .pi:hover .pi-bg { transform:scale(1.04); }
+
+    /* gradient fills */
+    .pi:nth-child(1) .pi-bg { background:linear-gradient(155deg,hsl(220,12%,10%),hsl(265,10%,16%)); }
+    .pi:nth-child(2) .pi-bg { background:linear-gradient(135deg,hsl(30,12%,10%),hsl(45,8%,16%)); }
+    .pi:nth-child(3) .pi-bg { background:linear-gradient(135deg,hsl(145,8%,9%),hsl(160,6%,14%)); }
+    .pi:nth-child(4) .pi-bg { background:linear-gradient(135deg,hsl(5,8%,10%),hsl(20,6%,16%)); }
+
+    .pi-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(to top, hsl(0 0% 4%/.92) 0%, transparent 52%);
+      z-index:1;
+    }
+    .pi-ghost {
+      position:absolute; top:var(--sp4); right:var(--sp6);
+      font-family:var(--font-d); font-size:clamp(3.5rem,7vw,6.5rem);
+      font-weight:900; color:hsl(0 0% 100%/.04); line-height:1;
+      z-index:2; pointer-events:none; letter-spacing:-.05em;
+      transition:color 300ms;
+    }
+    .pi:hover .pi-ghost { color:hsl(43 60% 52%/.10); }
+
+    .pi-info {
+      position:absolute; bottom:0; left:0; right:0;
+      padding:var(--sp6); z-index:3;
+    }
+    .pi-cat {
+      font-size:.6rem; font-weight:700; letter-spacing:.15em;
+      text-transform:uppercase; color:var(--gold);
+      margin-bottom:var(--sp2); opacity:0; transform:translateY(8px);
+      transition:opacity 300ms var(--ease-in), transform 300ms var(--ease-in);
+    }
+    .pi-name {
+      font-family:var(--font-d); font-size:clamp(1.4rem,3vw,2.5rem);
+      font-weight:700; letter-spacing:-.02em; line-height:1;
+      opacity:0; transform:translateY(12px);
+      transition:opacity 300ms 50ms var(--ease-in), transform 300ms 50ms var(--ease-in);
+    }
+    .pi-link {
+      display:inline-flex; align-items:center; gap:var(--sp2);
+      margin-top:var(--sp3); font-size:.75rem; font-weight:600;
+      letter-spacing:.04em; color:var(--gold);
+      opacity:0; transform:translateY(12px);
+      transition:opacity 300ms 100ms var(--ease-in), transform 300ms 100ms var(--ease-in);
+    }
+    .pi-link svg { width:13px; height:13px; transition:transform 300ms var(--ease-sp); }
+    .pi:hover .pi-cat, .pi:hover .pi-name, .pi:hover .pi-link { opacity:1; transform:none; }
+    .pi:hover .pi-link svg { transform:translateX(4px); }
+
+    /* ─── SERVICES ───────────────────────────────────────────── */
+    #services .wrap {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:var(--sp16); align-items:start;
+    }
+    .svc-left { position:sticky; top:calc(var(--nav-h) + var(--sp8)); }
+    .svc-heading {
+      font-family:var(--font-d); font-size:clamp(2.4rem,4.5vw,4.5rem);
+      font-weight:300; letter-spacing:.01em; line-height:1.1; font-style:italic;
+      margin-bottom:var(--sp6);
+      color:var(--cream);
+    }
+    .svc-heading em { font-weight:600; font-style:normal; }
+    .svc-intro { color:var(--text); font-size:.95rem; line-height:1.75; max-width:360px; display:inline-block; border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:.9rem 1.2rem; background:var(--gold-dim); }
+
+    .svc-list { list-style:none; }
+    .svc-row {
+      display:grid; grid-template-columns:1fr auto;
+      align-items:baseline; gap:var(--sp8);
+      padding:var(--sp6) var(--sp5);
+      border-bottom:1px solid var(--border);
+      border-left:2px solid transparent;
+      margin-left:calc(-1 * var(--sp5));
+      position:relative;
+      transition:border-color 300ms var(--ease), background 300ms var(--ease);
+    }
+    .svc-row:first-child { border-top:1px solid var(--border); }
+    .svc-row:hover { border-left-color:var(--gold); background:hsl(43 60% 52%/.03); }
+    .svc-row.featured {
+      background:hsl(43 60% 52%/.055); border-left-color:var(--gold);
+    }
+    .svc-row.featured::after {
+      content:'Popular'; position:absolute; top:var(--sp6);
+      right:calc(var(--sp5) + 4.5rem);
+      font-size:.55rem; font-weight:700; letter-spacing:.12em;
+      text-transform:uppercase; color:var(--gold);
+      background:var(--gold-dim); padding:2px var(--sp2); border-radius:var(--rad-full);
+    }
+    .svc-name {
+      font-family:var(--font-d); font-size:clamp(1rem,1.8vw,1.35rem);
+      font-weight:600; letter-spacing:-.01em; grid-column:1;
+    }
+    .svc-price {
+      font-size:.88rem; font-weight:600; color:var(--text-2);
+      white-space:nowrap; grid-column:2; grid-row:1;
+      transition:color 300ms;
+    }
+    .svc-row:hover .svc-price, .svc-row.featured .svc-price { color:var(--gold); }
+    .svc-desc {
+      grid-column:1; font-size:.82rem; color:var(--text-3);
+      margin-top:var(--sp1); line-height:1.65;
+    }
+
+    /* ─── PROCESS ────────────────────────────────────────────── */
+    #process { background:var(--bg-2); }
+    .proc-title {
+      font-family:var(--font-d); font-size:clamp(2.2rem,5vw,4.5rem);
+      font-weight:700; letter-spacing:-.03em; margin-bottom:var(--sp12);
+    }
+    .proc-grid {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:var(--sp4); margin-bottom:var(--sp4);
+    }
+    .proc-step {
+      padding:var(--sp8) var(--sp7);
+      border:1px solid var(--border);
+      border-top:2px solid var(--gold-border);
+      border-radius:var(--rad-lg);
+      background:var(--bg-2);
+      position:relative; overflow:hidden;
+      transition:border-color 300ms var(--ease), background 300ms var(--ease), transform 300ms var(--ease);
+    }
+    .proc-step:hover {
+      background:var(--bg-3);
+      border-color:var(--gold-border);
+      border-top-color:var(--gold);
+      transform:translateY(-3px);
+    }
+    .proc-ghost {
+      position:absolute; bottom:-.1em; right:-.02em;
+      font-family:var(--font-d); font-size:clamp(6rem,11vw,10rem);
+      font-weight:900; color:hsl(0 0% 100%/.05); line-height:1;
+      pointer-events:none; letter-spacing:-.05em;
+      transition:color 400ms, transform 400ms var(--ease);
+    }
+    .proc-step:hover .proc-ghost { color:hsl(43 60% 52%/.14); transform:scale(1.06); }
+    .proc-num {
+      font-size:.6rem; font-weight:700; letter-spacing:.14em;
+      text-transform:uppercase; color:var(--gold); margin-bottom:var(--sp5);
+    }
+    .proc-name {
+      font-family:var(--font-d); font-size:clamp(1.2rem,2vw,1.75rem);
+      font-weight:700; letter-spacing:-.03em; line-height:1.1;
+      color:var(--text); margin-bottom:var(--sp3);
+    }
+    .proc-desc { font-size:.85rem; color:var(--text-2); line-height:1.75; }
+
+    /* ─── ABOUT ──────────────────────────────────────────────── */
+    #about .wrap {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:var(--sp24); align-items:center;
+    }
+    .about-quote {
+      font-family:var(--font-d); font-size:clamp(2.4rem,4.5vw,4.5rem);
+      font-weight:300; letter-spacing:.01em; line-height:1.1; font-style:italic;
+      color:var(--cream);
+    }
+    .about-quote em { font-weight:600; font-style:normal; }
+
+    .about-body {
+      color:var(--text); -webkit-text-stroke:.4px var(--gold);
+      font-size:.97rem; line-height:1.85; margin-bottom:var(--sp8);
+    }
+
+    /* ─── AIMS GRID ────────────────────────────────────── */
+    .aims-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp4); margin-top:var(--sp6); }
+    .aim-item {
+      display:flex; gap:var(--sp4); padding:var(--sp5) var(--sp6);
+      border:1px solid var(--border); border-radius:var(--rad-xl);
+      transition:border-color 300ms var(--ease), background 300ms var(--ease);
+    }
+    .aim-item:hover { border-color:var(--gold-border); background:var(--gold-dim); }
+    .aim-num { font-family:var(--font-d); font-size:.75rem; font-weight:700; color:var(--gold); letter-spacing:.06em; flex-shrink:0; padding-top:.1rem; }
+    .aim-name { font-size:.92rem; font-weight:600; color:var(--text); margin-bottom:.3rem; }
+    .aim-desc { font-size:.78rem; color:var(--text-2); line-height:1.65; }
+    .aim-item--featured {
+      grid-column:1/-1; display:flex; align-items:center; gap:var(--sp6);
+      padding:var(--sp8) var(--sp8); border-color:var(--gold-border);
+      background:linear-gradient(135deg, hsl(43,60%,52%,.12) 0%, transparent 60%);
+      position:relative; overflow:hidden;
+    }
+    .aim-item--featured::before {
+      content:''; position:absolute; inset:0; border-radius:inherit;
+      background:linear-gradient(135deg, hsl(43,60%,52%,.06), transparent);
+      pointer-events:none;
+    }
+    .aim-item--featured .aim-num { font-size:1.5rem; }
+    .aim-item--featured .aim-name { font-size:clamp(1.4rem,3vw,2.2rem); font-family:var(--font-d); font-weight:700; color:var(--gold-light); letter-spacing:-.02em; line-height:1; margin-bottom:.5rem; }
+    .aim-item--featured .aim-desc { font-size:clamp(.9rem,1.5vw,1.1rem); color:var(--text-2); max-width:520px; }
+    .aim-item--featured .aim-ghost { position:absolute; right:var(--sp6); bottom:-1rem; font-family:var(--font-d); font-size:8rem; font-weight:900; color:hsl(43,60%,52%,.06); line-height:1; pointer-events:none; user-select:none; }
+    .about-stats {
+      display:grid; grid-template-columns:1fr 1fr; gap:var(--sp3);
+    }
+    .astat {
+      padding:var(--sp5); border:1px solid var(--border);
+      border-radius:var(--rad-lg);
+      transition:border-color 300ms, background 300ms;
+    }
+    .astat:hover { border-color:var(--gold-border); background:var(--gold-dim); }
+    .astat-n {
+      font-family:var(--font-d); font-size:1.9rem; font-weight:800;
+      color:var(--gold); line-height:1; margin-bottom:var(--sp1);
+    }
+    .astat-l { font-size:.72rem; font-weight:500; color:var(--text-3); letter-spacing:.04em; }
+
+    /* ─── CONTACT ────────────────────────────────────────────── */
+    #contact { background:var(--bg-2); overflow:hidden; }
+    .contact-mega {
+      font-family:var(--font-d); font-weight:900; letter-spacing:-.05em;
+      line-height:.85; color:var(--text); margin-bottom:var(--sp16);
+      font-size:clamp(3rem,9.5vw,13.5rem);
+      text-shadow:0 0 40px hsl(43,60%,52%,.55), 0 0 80px hsl(43,60%,52%,.3), 0 0 160px hsl(43,60%,52%,.15);
+    }
+    .contact-mega em { font-style:italic; font-weight:300; color:var(--gold-light); }
+
+    .contact-body {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:var(--sp16); align-items:start;
+    }
+    .contact-tag { color:var(--gold); font-size:.97rem; line-height:1.75; margin-bottom:var(--sp8); }
+    .contact-details { display:flex; flex-direction:column; gap:var(--sp4); }
+    .cd-label {
+      font-family:var(--font-d); font-size:.75rem; font-weight:700; letter-spacing:.14em;
+      text-transform:uppercase; margin-bottom:2px;
+      background:linear-gradient(90deg, var(--gold) 0%, hsl(43,80%,62%) 30%, hsl(43,100%,88%) 48%, hsl(0,0%,100%) 50%, hsl(43,100%,88%) 52%, hsl(43,80%,62%) 70%, var(--gold) 100%);
+      background-size:200% auto; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      animation:eyebrow-shimmer 4s linear infinite;
+    }
+    .cd-val {
+      font-family:var(--font-d); font-size:1.2rem; font-weight:500;
+      background:linear-gradient(90deg, var(--gold) 0%, hsl(43,80%,62%) 30%, hsl(43,100%,88%) 48%, hsl(0,0%,100%) 50%, hsl(43,100%,88%) 52%, hsl(43,80%,62%) 70%, var(--gold) 100%);
+      background-size:200% auto; -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      animation:eyebrow-shimmer 5s linear infinite;
+    }
+    .cd-val:hover { animation-play-state:paused; }
+
+    .c-form { display:flex; flex-direction:column; gap:var(--sp4); }
+    .fg { display:flex; flex-direction:column; gap:var(--sp2); }
+    .fg label {
+      font-family:var(--font-d); font-size:.65rem; font-weight:700; letter-spacing:.1em;
+      text-transform:uppercase; color:var(--gold-light);
+    }
+    .fg input, .fg textarea, .fg select {
+      background:var(--bg-3); border:1px solid var(--border);
+      border-radius:var(--rad-md); padding:var(--sp4) var(--sp5);
+      color:var(--text); outline:none;
+      transition:border-color 300ms, box-shadow 300ms;
+      appearance:none; -webkit-appearance:none;
+    }
+    .fg textarea { resize:vertical; min-height:110px; }
+    .fg input:focus, .fg textarea:focus, .fg select:focus {
+      border-color:var(--gold); box-shadow:var(--sh-gold);
+    }
+    .fg-hint { font-size:.72rem; color:var(--text-3); margin-top:calc(-1 * var(--sp2)); }
+
+    .c-btn {
+      align-self:flex-start; display:inline-flex; align-items:center;
+      gap:var(--sp3); background:var(--gold); color:var(--bg);
+      font-size:.78rem; font-weight:700; letter-spacing:.07em;
+      text-transform:uppercase; padding:var(--sp4) var(--sp8);
+      border-radius:var(--rad-full); margin-top:var(--sp2);
+      transition:background 300ms, transform 300ms var(--ease-sp);
+    }
+    .c-btn:hover { background:var(--gold-light); transform:translateY(-2px); }
+    .c-btn svg { width:15px; height:15px; transition:transform 300ms var(--ease-sp); }
+    .c-btn:hover svg { transform:translateX(4px); }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    footer {
+      padding:var(--sp10) 0; border-top:1px solid var(--border);
+    }
+    .foot-inner {
+      display:flex; align-items:center; justify-content:space-between;
+      gap:var(--sp8); flex-wrap:wrap;
+    }
+    .foot-logo {
+      display:flex; align-items:center; gap:var(--sp2);
+      font-family:var(--font-d); font-weight:700; font-size:.95rem;
+    }
+    .foot-dot { width:6px; height:6px; background:var(--gold); border-radius:50%; }
+    .foot-copy { font-size:.76rem; color:var(--text-3); }
+    .foot-links { display:flex; gap:var(--sp5); list-style:none; }
+    .foot-links a { font-size:.76rem; color:var(--text-3); transition:color 300ms; }
+    .foot-links a:hover { color:var(--gold); }
+
+    /* ─── SCROLL ANIMATIONS ──────────────────────────────────── */
+    [data-a] {
+      opacity:0; transform:translateY(28px);
+      transition:opacity 550ms var(--ease-in), transform 550ms var(--ease-in);
+    }
+    [data-a="l"] { transform:translateX(-28px); }
+    [data-a="r"] { transform:translateX(28px); }
+    [data-a="s"] { transform:scale(.95); }
+    [data-a].on  { opacity:1; transform:none; }
+
+    /* ─── NOISE ──────────────────────────────────────────────── */
+    body::after {
+      content:''; position:fixed; inset:0; pointer-events:none; z-index:9997;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity:.022;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width:1024px) {
+      .port-grid { grid-template-columns:1fr; }
+      .pi:nth-child(1), .pi:nth-child(2), .pi:nth-child(3), .pi:nth-child(4) {
+        grid-column:1; grid-row:auto;
+      }
+      .pi:nth-child(1) .pi-bg { aspect-ratio:16/9; }
+      #services .wrap { grid-template-columns:1fr; gap:var(--sp10); }
+      .svc-left { position:static; }
+      .proc-grid { grid-template-columns:repeat(2,1fr); }
+      #about .wrap { grid-template-columns:1fr; gap:var(--sp10); }
+      .contact-body { grid-template-columns:1fr; gap:var(--sp10); }
+      .nav-links { display:none; }
+    }
+    @media (max-width:640px) {
+      .proc-grid { grid-template-columns:1fr; }
+      .proc-step { transform:none !important; }
+      .port-header { flex-direction:column; align-items:flex-start; }
+      .port-sub { text-align:left; }
+      .hero-stats { flex-wrap:wrap; }
+      .stat { flex:1 1 45%; border-right:none; border-bottom:1px solid var(--border); }
+      .about-stats { grid-template-columns:1fr 1fr; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important; }
+      .hero-eyebrow, .hero-word, .stat, [data-a] { opacity:1 !important; transform:none !important; }
+    }
+
+    /* ─── MINI SITES ─────────────────────────────────────────── */
+    .pi-bg { overflow:hidden; position:relative; }
+    .pi-site-luma, .pi-site-vault, .pi-site-flora, .pi-site-apex {
+      pointer-events:none; user-select:none;
+      display:flex; flex-direction:column; width:100%; height:100%;
+      font-family:var(--font-b);
+    }
+
+    /* LUMA — luxury fragrance, black + gold */
+    .pi-site-luma { background:#030303; font-size:clamp(.55rem,1.3vw,.95rem); }
+    .pi:nth-child(1) .pi-bg { background:#030303; }
+    .lsite-nav { display:flex; align-items:center; justify-content:space-between; padding:.8em 1.3em; border-bottom:1px solid rgba(201,168,76,.12); }
+    .ls-logo { font-family:var(--font-d); font-weight:700; font-size:.85em; letter-spacing:.22em; color:#c9a84c; }
+    .ls-navlinks { font-size:.48em; letter-spacing:.13em; text-transform:uppercase; color:rgba(255,255,255,.28); }
+    .ls-nav-cta { font-size:.48em; letter-spacing:.13em; text-transform:uppercase; color:#c9a84c; border:1px solid rgba(201,168,76,.3); padding:.35em 1em; }
+    .lsite-hero { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.55em; padding:1.2em 1.3em; }
+    .ls-orb { width:3.8em; height:3.8em; border-radius:50%; background:radial-gradient(circle at 32% 28%, #f0d878, #c9a84c 44%, #7a5518 74%, #150600); box-shadow:0 0 3em rgba(201,168,76,.28),0 0 7em rgba(201,168,76,.08); margin-bottom:.3em; }
+    .ls-title { font-family:var(--font-d); font-size:2.8em; font-weight:900; letter-spacing:-.03em; color:#f0ede8; line-height:1; }
+    .ls-sub { font-size:.52em; letter-spacing:.3em; text-transform:uppercase; color:#c9a84c; font-style:italic; }
+    .ls-divider { width:3.5em; height:1px; background:rgba(201,168,76,.22); }
+    .ls-cta { font-size:.48em; letter-spacing:.16em; text-transform:uppercase; color:#c9a84c; }
+    .lsite-foot { display:flex; justify-content:center; gap:1.8em; padding:.7em 1.3em; border-top:1px solid rgba(201,168,76,.07); }
+    .lsite-foot span { font-size:.4em; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.18); }
+
+    /* VAULT — fintech dashboard, deep navy + cyan */
+    .pi-site-vault { background:hsl(222,46%,7%); font-size:clamp(.48rem,1.15vw,.86rem); }
+    .pi:nth-child(2) .pi-bg { background:hsl(222,46%,7%); }
+    .vs-nav { display:flex; align-items:center; justify-content:space-between; padding:.75em 1.2em; border-bottom:1px solid rgba(77,184,255,.1); }
+    .vs-logo { font-size:.72em; font-weight:700; letter-spacing:.08em; color:#fff; display:flex; align-items:center; gap:.4em; }
+    .vs-logo-icon { width:.7em; height:.7em; border:1.5px solid #4db8ff; border-radius:2px; transform:rotate(45deg); display:inline-block; }
+    .vs-nav-items { font-size:.4em; letter-spacing:.07em; color:rgba(255,255,255,.28); }
+    .vs-badge { font-size:.36em; background:#4dffb4; color:#0a1628; padding:.2em .65em; border-radius:999px; font-weight:700; letter-spacing:.05em; }
+    .vs-body { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:5%; padding:.75em 1.2em; }
+    .vs-left { display:flex; flex-direction:column; gap:.45em; }
+    .vs-label { font-size:.4em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.32); }
+    .vs-balance { font-size:1.75em; font-weight:700; color:#fff; font-family:var(--font-d); letter-spacing:-.03em; line-height:1; }
+    .vs-balance span { font-size:.5em; color:rgba(255,255,255,.45); }
+    .vs-change { font-size:.4em; color:#4dffb4; letter-spacing:.04em; }
+    .vs-chart { display:flex; align-items:flex-end; gap:3%; flex:1; margin-top:.3em; min-height:2.2em; }
+    .vs-bar { flex:1; border-radius:2px 2px 0 0; background:rgba(77,184,255,.1); position:relative; overflow:hidden; }
+    .vs-bar::after { content:''; position:absolute; bottom:0; left:0; right:0; border-radius:2px 2px 0 0; background:linear-gradient(to top,#4db8ff,rgba(77,184,255,.2)); height:100%; }
+    .vs-bar-hi::after { background:linear-gradient(to top,#4dffb4,rgba(77,255,180,.2)); }
+    .vs-right { display:flex; flex-direction:column; gap:.45em; justify-content:center; }
+    .vs-card { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07); border-radius:.3em; padding:.55em .8em; }
+    .vs-card-accent { border-color:rgba(77,184,255,.2); background:rgba(77,184,255,.05); }
+    .vs-card-l { font-size:.36em; letter-spacing:.09em; text-transform:uppercase; color:rgba(255,255,255,.32); margin-bottom:.3em; }
+    .vs-card-v { font-size:.72em; font-weight:700; color:#fff; }
+    .vs-card-bar { height:2px; background:rgba(255,255,255,.08); border-radius:999px; margin-top:.4em; }
+    .vs-card-fill { height:100%; border-radius:999px; background:linear-gradient(to right,#4db8ff,#4dffb4); }
+
+    /* FLORA — organic skincare, warm cream + sage (LIGHT) */
+    .pi-site-flora { background:hsl(34,28%,91%); font-size:clamp(.48rem,1.15vw,.86rem); }
+    .pi:nth-child(3) .pi-bg { background:hsl(34,28%,91%); }
+    .fs-nav { display:flex; align-items:center; justify-content:space-between; padding:.75em 1.2em; border-bottom:1px solid rgba(80,70,50,.12); }
+    .fs-logo { font-family:var(--font-d); font-size:.72em; font-weight:700; letter-spacing:.2em; color:hsl(30,25%,22%); }
+    .fs-nav-items { font-size:.38em; letter-spacing:.1em; text-transform:uppercase; color:hsl(30,12%,52%); }
+    .fs-cta-sm { font-size:.4em; letter-spacing:.1em; text-transform:uppercase; color:hsl(135,24%,36%); border-bottom:1px solid hsl(135,22%,56%); padding-bottom:.2em; font-weight:600; }
+    .fs-body { flex:1; display:grid; grid-template-columns:1fr 1fr; gap:4%; padding:.85em 1.2em; align-items:center; }
+    .fs-left { display:flex; flex-direction:column; gap:.45em; }
+    .fs-tag { font-size:.36em; letter-spacing:.2em; text-transform:uppercase; color:hsl(135,26%,40%); font-weight:700; }
+    .fs-title { font-family:var(--font-d); font-size:1.55em; font-weight:700; color:hsl(30,25%,17%); line-height:1.1; letter-spacing:-.02em; }
+    .fs-desc { font-size:.43em; color:hsl(30,10%,46%); line-height:1.65; }
+    .fs-btn { font-size:.38em; letter-spacing:.1em; color:hsl(135,24%,33%); font-weight:600; border-bottom:1px solid hsl(135,22%,54%); align-self:flex-start; padding-bottom:.2em; }
+    .fs-badges { display:flex; gap:.45em; flex-wrap:wrap; margin-top:.15em; }
+    .fs-badge { font-size:.32em; letter-spacing:.05em; background:hsl(135,20%,86%); color:hsl(135,26%,33%); padding:.3em .8em; border-radius:999px; border:1px solid hsl(135,18%,72%); }
+    .fs-right { position:relative; display:flex; align-items:center; justify-content:center; height:100%; min-height:4.5em; }
+    .fs-circle { position:absolute; width:6em; height:6em; border-radius:50%; background:hsl(135,20%,83%); }
+    .fs-product { position:relative; z-index:1; width:1.7em; height:4.8em; background:linear-gradient(155deg,hsl(135,14%,76%),hsl(135,22%,62%)); border-radius:999px 999px 38% 38%; box-shadow:0 .3em 1.2em rgba(80,120,80,.22); }
+    .fs-leaf { position:absolute; border-radius:0 50% 0 50%; }
+    .fs-leaf-1 { width:2.4em; height:1.1em; background:hsl(135,30%,68%); top:18%; left:8%; transform:rotate(-28deg); z-index:2; }
+    .fs-leaf-2 { width:1.7em; height:.85em; background:hsl(135,24%,74%); bottom:20%; right:10%; transform:rotate(32deg); z-index:2; }
+
+    /* APEX — performance sportswear, dark charcoal + orange */
+    .pi-site-apex { background:hsl(0,0%,7%); font-size:clamp(.45rem,.95vw,.75rem); }
+    .pi:nth-child(4) .pi-bg { background:hsl(0,0%,7%); }
+    .as-nav { display:flex; align-items:center; justify-content:space-between; padding:.7em 1.3em; border-bottom:1px solid rgba(255,255,255,.06); }
+    .as-logo { font-family:var(--font-d); font-size:.75em; font-weight:900; letter-spacing:.14em; color:#fff; }
+    .as-nav-items { font-size:.38em; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.32); }
+    .as-cta-sm { font-size:.4em; letter-spacing:.1em; text-transform:uppercase; background:hsl(20,100%,54%); color:#fff; padding:.38em 1em; border-radius:999px; font-weight:700; }
+    .as-body { flex:1; display:grid; grid-template-columns:1fr .04fr 1fr; align-items:center; padding:.8em 1.5em; gap:0; }
+    .as-left { display:flex; flex-direction:column; gap:.35em; }
+    .as-tag { font-size:.38em; letter-spacing:.18em; text-transform:uppercase; color:hsl(20,100%,54%); font-weight:600; }
+    .as-title { font-family:var(--font-d); font-size:2.8em; font-weight:900; color:#fff; letter-spacing:-.04em; line-height:.88; text-transform:uppercase; }
+    .as-underline { width:2.5em; height:.14em; background:hsl(20,100%,54%); margin-top:.25em; }
+    .as-sub { font-size:.38em; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.35); }
+    .as-stripe { width:1px; height:100%; background:rgba(255,255,255,.07); align-self:stretch; justify-self:center; }
+    .as-right { display:flex; align-items:center; justify-content:flex-end; gap:1.8em; }
+    .as-stat { display:flex; flex-direction:column; gap:.25em; align-items:center; }
+    .as-stat-n { font-family:var(--font-d); font-size:1.55em; font-weight:700; color:#fff; letter-spacing:-.03em; line-height:1; }
+    .as-stat-l { font-size:.32em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.28); text-align:center; line-height:1.4; }
+    .as-divider-v { width:1px; height:2.2em; background:rgba(255,255,255,.1); }
+
+    /* ─── INTRO ANIMATION ──────────────────────────────────── */
+    #intro {
+      position:fixed; inset:0; z-index:100000;
+      background:var(--bg); display:flex; align-items:center; justify-content:center;
+    }
+    #intro-top, #intro-bot {
+      position:fixed; left:0; right:0; z-index:100000;
+      background:var(--bg);
+      transition:transform 1500ms cubic-bezier(.76,0,.24,1);
+    }
+    #intro-top { top:0; height:50vh; transform:translateY(0); }
+    #intro-bot { bottom:0; height:51vh; transform:translateY(0); }
+    #intro-top.out { transform:translateY(-100%); }
+    #intro-bot.out { transform:translateY(100%); }
+    .intro-inner { position:fixed; inset:0; z-index:100001; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; pointer-events:none; transition:opacity 300ms; }
+    .intro-inner.out { opacity:0; }
+    .intro-line {
+      width:0; height:1px;
+      background:linear-gradient(to right, transparent, var(--gold), transparent);
+      margin:0 auto var(--sp8);
+      transition:width 600ms cubic-bezier(0,.55,.45,1);
+    }
+    .intro-line.on { width:min(320px, 60vw); }
+    .intro-txt {
+      font-family:var(--font-d); font-size:clamp(4.5rem,13vw,10rem);
+      font-weight:800; letter-spacing:-.05em; line-height:.9;
+      padding-bottom:.2em;
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      opacity:0; transform:translateY(28px);
+      transition:opacity 700ms var(--ease-in), transform 700ms var(--ease-in);
+    }
+    .intro-txt.on { opacity:1; transform:none; }
+    .intro-sub {
+      font-size:.68rem; font-weight:600; letter-spacing:.24em;
+      text-transform:uppercase; margin-top:var(--sp5);
+      background:linear-gradient(100deg, var(--gold-light) 0%, var(--text) 55%, var(--gold) 100%);
+      -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+      opacity:0; transform:translateY(8px);
+      transition:opacity 500ms var(--ease-in), transform 500ms var(--ease-in);
+    }
+    .intro-sub.on { opacity:1; transform:none; }
+    @media (prefers-reduced-motion:reduce) { #intro,#intro-top,#intro-bot,.intro-inner { display:none !important; } }
+
+    /* ─── SERVICES STEPS ────────────────────────────────────── */
+    .svc-steps { list-style:none; }
+    .svc-step {
+      display:grid; grid-template-columns:auto 1fr;
+      gap:0 var(--sp8); align-items:start;
+      padding:var(--sp8) 0; border-bottom:1px solid var(--border);
+    }
+    .svc-step:first-child { border-top:1px solid var(--border); }
+    .svc-step-num {
+      font-family:var(--font-d); font-size:clamp(3rem,6vw,5.5rem);
+      font-weight:900; color:hsl(43 60% 52%/.18);
+      line-height:1; letter-spacing:-.05em; min-width:2ch;
+      transition:color 400ms var(--ease);
+    }
+    .svc-step:hover .svc-step-num { color:var(--gold); }
+    .svc-step-body { padding-top:.3em; }
+    .svc-step-name {
+      font-family:var(--font-d); font-size:clamp(1.3rem,2.2vw,2rem);
+      font-weight:700; letter-spacing:-.025em; line-height:1.1;
+      margin-bottom:var(--sp3); color:var(--gold);
+    }
+    .svc-step-desc {
+      font-size:.9rem; color:var(--text-2); line-height:1.8; max-width:440px;
+    }
+    .svc-step-desc strong { color:var(--gold); font-weight:700; }
+    @media (max-width:640px) {
+      .svc-step { gap:0 var(--sp4); }
+      .svc-step-num { font-size:clamp(2.5rem,8vw,4rem); }
+    }
+
+    /* ─── HOSTING DASHBOARD (VAULT card) ────────────────────── */
+    .hd-wrap {
+      pointer-events:none; user-select:none;
+      display:flex; flex-direction:column; width:100%; height:100%;
+      background:hsl(222,46%,7%); font-size:clamp(.48rem,1.1vw,.84rem);
+      font-family:var(--font-b);
+    }
+    .hd-nav {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.7em 1.2em; border-bottom:1px solid rgba(77,184,255,.1);
+      flex-shrink:0;
+    }
+    .hd-logo { font-size:.72em; font-weight:700; letter-spacing:.06em; color:#fff; display:flex; align-items:center; gap:.35em; }
+    .hd-logo-icon { width:.65em; height:.65em; border:1.5px solid #4db8ff; border-radius:2px; transform:rotate(45deg); display:inline-block; }
+    .hd-nav-items { font-size:.38em; letter-spacing:.07em; color:rgba(255,255,255,.28); }
+    .hd-status { font-size:.36em; font-weight:700; letter-spacing:.05em; color:#4dffb4; display:flex; align-items:center; gap:.35em; }
+    .hd-status::before { content:''; width:.55em; height:.55em; background:#4dffb4; border-radius:50%; box-shadow:0 0 .35em #4dffb4; }
+    .hd-domain-bar {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.5em 1.2em; background:rgba(255,255,255,.03);
+      border-bottom:1px solid rgba(255,255,255,.06); flex-shrink:0;
+    }
+    .hd-domain-url { font-size:.48em; font-weight:600; color:rgba(255,255,255,.75); letter-spacing:.01em; }
+    .hd-domain-up { font-size:.37em; letter-spacing:.06em; color:#4dffb4; font-weight:600; }
+    .hd-plan-row {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.8em 1.2em .6em; flex-shrink:0;
+    }
+    .hd-plan-label { font-size:.36em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.32); margin-bottom:.3em; }
+    .hd-plan-price {
+      font-family:var(--font-d); font-size:2.4em; font-weight:900;
+      color:#fff; letter-spacing:-.04em; line-height:1;
+    }
+    .hd-plan-price span { font-size:.35em; font-weight:400; color:rgba(255,255,255,.42); letter-spacing:.02em; }
+    .hd-plan-badge { font-size:.34em; background:rgba(77,184,255,.15); color:#4db8ff; border:1px solid rgba(77,184,255,.25); padding:.35em .85em; border-radius:999px; font-weight:600; letter-spacing:.04em; }
+    .hd-stats {
+      display:grid; grid-template-columns:repeat(3,1fr);
+      gap:.5em; padding:.15em 1.2em .6em; flex-shrink:0;
+    }
+    .hd-sc {
+      background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.07);
+      border-radius:.3em; padding:.5em .65em;
+    }
+    .hd-sc-label { font-size:.33em; letter-spacing:.09em; text-transform:uppercase; color:rgba(255,255,255,.28); margin-bottom:.28em; }
+    .hd-sc-val { font-size:.7em; font-weight:700; color:#fff; }
+    .hd-activity {
+      flex:1; padding:.4em 1.2em .6em;
+      border-top:1px solid rgba(255,255,255,.06);
+      display:flex; flex-direction:column; gap:.3em; min-height:0;
+    }
+    .hd-act-label { font-size:.33em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.22); margin-bottom:.08em; }
+    .hd-act-row { display:flex; align-items:center; gap:.5em; font-size:.38em; color:rgba(255,255,255,.48); }
+    .hd-act-row span:last-child { margin-left:auto; color:rgba(255,255,255,.26); }
+    .hd-act-dot { width:.55em; height:.55em; border-radius:50%; flex-shrink:0; }
+    .hd-act-green { background:#4dffb4; }
+    .hd-act-blue  { background:#4db8ff; }
+    .hd-act-gold  { background:hsl(43,60%,52%); }
+
+    /* ─── LUMA ENHANCED ─────────────────────────────────────── */
+    .ls-hero-body {
+      flex:1; display:grid; grid-template-columns:1fr 1fr;
+      align-items:center; padding:.9em 1.3em; gap:.6em;
+    }
+    .ls-orb-side { display:flex; align-items:center; justify-content:center; }
+    .ls-ring {
+      width:6em; height:6em; border-radius:50%;
+      border:1px dashed rgba(201,168,76,.2);
+      display:flex; align-items:center; justify-content:center;
+      position:relative;
+    }
+    .ls-ring::before {
+      content:''; position:absolute; inset:.55em; border-radius:50%;
+      border:1px solid rgba(201,168,76,.1);
+    }
+    .ls-orb-lg {
+      width:3.8em; height:3.8em; border-radius:50%;
+      background:radial-gradient(circle at 32% 28%, #f0d878, #c9a84c 44%, #7a5518 74%, #150600);
+      box-shadow:0 0 2.5em rgba(201,168,76,.35),0 0 5em rgba(201,168,76,.1);
+    }
+    .ls-text-side { display:flex; flex-direction:column; gap:.28em; }
+    .ls-bag { font-size:.46em; letter-spacing:.1em; color:rgba(255,255,255,.55); }
+    .ls-price-line { font-family:var(--font-d); font-size:1.05em; font-weight:700; color:#f0ede8; letter-spacing:-.02em; }
+    .ls-price-sm { font-size:.52em; font-weight:400; color:rgba(255,255,255,.35); font-family:var(--font-b); }
+    .ls-size-row { display:flex; gap:.32em; margin-top:.05em; }
+    .ls-size { font-size:.36em; letter-spacing:.05em; padding:.32em .85em; border-radius:999px; border:1px solid rgba(201,168,76,.2); color:rgba(255,255,255,.38); }
+    .ls-size.active { background:rgba(201,168,76,.15); border-color:rgba(201,168,76,.5); color:#c9a84c; }
+    .ls-coll-label { font-size:.36em; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.24); margin-top:.35em; }
+    .ls-coll-row { display:flex; gap:.5em; align-items:center; margin-top:.18em; }
+    .ls-mini-orb-wrap { display:flex; flex-direction:column; align-items:center; gap:.18em; }
+    .ls-mini-orb { width:1.5em; height:1.5em; border-radius:50%; }
+    .ls-mini-orb.noir   { background:radial-gradient(circle at 35% 30%, #666, #111 65%); border:1px solid rgba(255,255,255,.12); }
+    .ls-mini-orb.blanche{ background:radial-gradient(circle at 35% 30%, #fff, #e0d8c8 65%); }
+    .ls-mini-orb.rose   { background:radial-gradient(circle at 35% 30%, #f9c0c0, #c47878 65%); }
+    .ls-mini-name { font-size:.3em; letter-spacing:.07em; color:rgba(255,255,255,.32); }
+
+    /* ─── FLORA ENHANCED ────────────────────────────────────── */
+    .fp-grid {
+      flex:1; display:grid; grid-template-columns:repeat(3,1fr);
+      gap:.6em; padding:.65em 1.1em; align-items:start;
+    }
+    .fp-product { display:flex; flex-direction:column; align-items:center; gap:.28em; }
+    .fp-bottle {
+      width:1.45em; height:4em; border-radius:999px 999px 38% 38%;
+      box-shadow:0 .28em 1em rgba(80,120,80,.2);
+    }
+    .fp-bottle-a { background:linear-gradient(160deg,hsl(135,20%,74%),hsl(135,28%,56%)); }
+    .fp-bottle-b { background:linear-gradient(160deg,hsl(32,42%,78%),hsl(32,38%,60%)); }
+    .fp-bottle-c { background:linear-gradient(160deg,hsl(196,24%,74%),hsl(196,32%,55%)); }
+    .fp-name  { font-size:.38em; font-weight:700; color:hsl(30,25%,20%); letter-spacing:.03em; text-align:center; }
+    .fp-price { font-size:.37em; color:hsl(135,26%,36%); font-weight:600; }
+    .fp-stars { font-size:.35em; color:hsl(43,80%,48%); letter-spacing:.04em; }
+    .fp-footer {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:.5em 1.1em .6em; border-top:1px solid rgba(80,70,50,.1); flex-shrink:0;
+    }
+
+    /* ─── APEX ENHANCED ─────────────────────────────────────── */
+    .apex-swatches { display:flex; gap:.42em; margin-top:.4em; }
+    .apex-swatch { width:1.05em; height:1.05em; border-radius:50%; border:1.5px solid rgba(255,255,255,.14); }
+    .apex-swatch.active { border-color:hsl(20,100%,54%); box-shadow:0 0 0 1.5px hsl(20,100%,54%); }
+    .apex-swatch.black { background:#111; }
+    .apex-swatch.slate { background:#3a4a5a; }
+    .apex-swatch.flame { background:hsl(20,100%,54%); }
+    .apex-swatch.stone { background:#7a6858; }
+    .as-strip {
+      display:flex; align-items:center; justify-content:space-around;
+      padding:.48em 1.2em; border-top:1px solid rgba(255,255,255,.07);
+      background:rgba(255,255,255,.02); flex-shrink:0;
+    }
+    .as-strip span { font-size:.32em; letter-spacing:.07em; text-transform:uppercase; color:rgba(255,255,255,.36); white-space:nowrap; }
+    .as-strip-sep { width:1px; height:.85em; background:rgba(255,255,255,.1); flex-shrink:0; }
+
+    /* ─── LUMA PREMIUM EXTRAS ──────────────────────────────── */
+    .ls-announce {
+      font-size:.35em; letter-spacing:.09em; text-transform:uppercase;
+      color:rgba(201,168,76,.75); text-align:center; padding:.38em 1em;
+      background:rgba(201,168,76,.06); border-bottom:1px solid rgba(201,168,76,.09);
+      flex-shrink:0;
+    }
+    .ls-stars-row { display:flex; align-items:center; gap:.32em; margin-bottom:.06em; }
+    .ls-stars { font-size:.37em; color:#c9a84c; letter-spacing:.04em; }
+    .ls-star-count { font-size:.28em; color:rgba(255,255,255,.27); letter-spacing:.02em; }
+    .ls-add-cta {
+      font-size:.34em; letter-spacing:.08em; text-transform:uppercase; font-weight:600;
+      background:rgba(201,168,76,.11); border:1px solid rgba(201,168,76,.3);
+      color:#c9a84c; padding:.4em 1.1em; border-radius:999px; align-self:flex-start;
+      margin-top:.15em;
+    }
+    .ls-press {
+      display:flex; justify-content:center; gap:1.3em; flex-shrink:0;
+      padding:.48em 1em; border-top:1px solid rgba(201,168,76,.07);
+    }
+    .ls-press span { font-size:.28em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.17); font-style:italic; }
+
+    /* ─── VAULT PREMIUM EXTRAS ──────────────────────────────── */
+    .hd-ok-bar {
+      display:flex; align-items:center; gap:.4em;
+      padding:.36em 1.2em; background:rgba(77,255,180,.045);
+      border-bottom:1px solid rgba(77,255,180,.09); flex-shrink:0;
+    }
+    .hd-ok-dot { width:.46em; height:.46em; border-radius:50%; background:#4dffb4; flex-shrink:0; }
+    .hd-ok-txt { font-size:.33em; color:rgba(77,255,180,.8); font-weight:500; letter-spacing:.02em; }
+    .hd-ok-right { margin-left:auto; font-size:.29em; color:rgba(255,255,255,.22); letter-spacing:.03em; }
+    .hd-two-col {
+      flex:1; display:grid; grid-template-columns:1fr 1fr;
+      gap:.5em; padding:.4em 1.2em; min-height:0;
+    }
+    .hd-col { display:flex; flex-direction:column; gap:.32em; min-height:0; }
+    .hd-mini-label { font-size:.29em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.2); }
+    .hd-plan-feats { display:flex; flex-direction:column; gap:.22em; }
+    .hd-feat-row { display:flex; align-items:center; gap:.36em; font-size:.33em; color:rgba(255,255,255,.46); }
+    .hd-feat-check { color:#4dffb4; flex-shrink:0; }
+    .hd-billing-row { display:flex; justify-content:space-between; align-items:baseline; }
+    .hd-billing-key { font-size:.29em; letter-spacing:.04em; color:rgba(255,255,255,.23); }
+    .hd-billing-val { font-size:.33em; font-weight:600; color:rgba(255,255,255,.52); }
+    .hd-sparkline { display:flex; align-items:flex-end; gap:2%; min-height:2.2em; flex:1; }
+    .hd-sp-bar { flex:1; border-radius:1px 1px 0 0; position:relative; overflow:hidden; background:rgba(77,184,255,.09); }
+    .hd-sp-bar::after { content:''; position:absolute; bottom:0; left:0; right:0; border-radius:1px 1px 0 0; background:linear-gradient(to top,#4db8ff,rgba(77,184,255,.18)); height:100%; }
+    .hd-sp-bar.hi::after { background:linear-gradient(to top,#4dffb4,rgba(77,255,180,.18)); }
+
+    /* ─── FLORA PREMIUM EXTRAS ──────────────────────────────── */
+    .fp-card { display:flex; flex-direction:column; align-items:center; gap:.18em; }
+    .fp-badge { font-size:.26em; letter-spacing:.06em; background:hsl(135,22%,82%); color:hsl(135,30%,30%); padding:.2em .62em; border-radius:999px; border:1px solid hsl(135,20%,70%); margin-bottom:.04em; }
+    .fp-star-row { display:flex; align-items:center; gap:.2em; }
+    .fp-star-count { font-size:.26em; color:hsl(30,12%,50%); }
+    .fp-review { font-size:.28em; color:hsl(30,10%,46%); line-height:1.4; text-align:center; max-width:7.5em; }
+
+    /* ─── APEX PREMIUM EXTRAS ───────────────────────────────── */
+    .as-product-center { display:flex; align-items:center; justify-content:center; }
+    .as-jersey {
+      width:3.5em; height:5em; position:relative;
+      background:linear-gradient(155deg,hsl(20,100%,56%),hsl(20,78%,36%));
+      border-radius:.55em .55em 0 0;
+    }
+    .as-jersey::before {
+      content:''; position:absolute; top:0; left:50%; transform:translateX(-50%);
+      width:1.05em; height:1.3em; background:hsl(0,0%,8%);
+      border-radius:0 0 .38em .38em;
+    }
+    .as-jersey-stripe { position:absolute; top:1.65em; left:0; right:0; height:.26em; background:rgba(255,255,255,.14); }
+    .as-jersey-stripe-2 { position:absolute; top:1.98em; left:0; right:0; height:.13em; background:rgba(255,255,255,.07); }
+    .as-specs { display:flex; flex-direction:column; gap:.24em; }
+    .as-spec-row { display:flex; align-items:center; gap:.36em; font-size:.31em; color:rgba(255,255,255,.38); }
+    .as-spec-bullet { width:.36em; height:.36em; border-radius:50%; background:hsl(20,100%,54%); flex-shrink:0; }
+    .as-size-row { display:flex; gap:.22em; margin-top:.25em; }
+    .as-size-btn { font-size:.29em; letter-spacing:.04em; padding:.26em .6em; border-radius:.2em; border:1px solid rgba(255,255,255,.13); color:rgba(255,255,255,.36); }
+    .as-size-btn.active { border-color:hsl(20,100%,54%); color:hsl(20,100%,62%); background:rgba(255,80,0,.1); }
+    .as-from { font-size:.46em; font-weight:700; color:#fff; letter-spacing:-.02em; margin-top:.22em; }
+    .as-from small { font-size:.58em; font-weight:400; color:rgba(255,255,255,.32); }
+
+    /* ─── LUMA V2 EXTRAS ────────────────────────────────────── */
+    .ls-ring-outer {
+      width:7.8em; height:7.8em; border-radius:50%;
+      border:1px dashed rgba(201,168,76,.1);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .ls-ring-mid {
+      width:6.2em; height:6.2em; border-radius:50%;
+      border:1px solid rgba(201,168,76,.16);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .ls-ring-inner {
+      width:4.6em; height:4.6em; border-radius:50%;
+      border:1px solid rgba(201,168,76,.28);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .ls-orb-v2 {
+      width:3.4em; height:3.4em; border-radius:50%;
+      background:radial-gradient(circle at 32% 28%, #f0d878, #c9a84c 44%, #7a5518 74%, #150600);
+      box-shadow:0 0 2.2em rgba(201,168,76,.45),0 0 5em rgba(201,168,76,.12);
+    }
+    .ls-orb-num { font-size:.28em; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.4); text-align:center; margin-top:.45em; }
+    .ls-tagline { font-family:var(--font-d); font-size:.46em; font-weight:300; font-style:italic; color:rgba(255,255,255,.35); line-height:1.45; margin-bottom:.06em; }
+    .ls-stock-row { display:flex; align-items:center; gap:.3em; margin-top:.05em; }
+    .ls-stock-dot { width:.36em; height:.36em; border-radius:50%; background:#4dffb4; flex-shrink:0; }
+    .ls-stock-txt { font-size:.27em; letter-spacing:.05em; color:rgba(255,255,255,.32); }
+    .ls-divider-deco { display:flex; align-items:center; gap:.5em; padding:.28em 1.3em; flex-shrink:0; }
+    .ls-divider-line { flex:1; height:1px; background:rgba(201,168,76,.08); }
+    .ls-divider-mark { font-size:.42em; color:rgba(201,168,76,.26); }
+    .ls-scent-strip { display:grid; grid-template-columns:repeat(3,1fr); flex-shrink:0; padding:.28em 1.3em .32em; gap:.3em; }
+    .ls-scent-col { display:flex; flex-direction:column; gap:.15em; }
+    .ls-scent-label { font-size:.25em; letter-spacing:.18em; text-transform:uppercase; color:rgba(201,168,76,.48); font-weight:700; }
+    .ls-scent-notes { font-size:.27em; color:rgba(255,255,255,.27); line-height:1.5; font-style:italic; }
+
+    /* ─── VAULT V2 EXTRAS ───────────────────────────────────── */
+    .hd-breadcrumb {
+      display:flex; align-items:center; gap:.38em;
+      padding:.32em 1.2em; background:rgba(255,255,255,.02);
+      border-bottom:1px solid rgba(255,255,255,.05); flex-shrink:0;
+    }
+    .hd-bc-site  { font-size:.4em; font-weight:600; color:rgba(255,255,255,.7); }
+    .hd-bc-dot   { width:.4em; height:.4em; border-radius:50%; background:#4dffb4; margin-left:.12em; }
+    .hd-bc-live  { font-size:.3em; letter-spacing:.06em; text-transform:uppercase; color:#4dffb4; font-weight:700; }
+    .hd-bc-right { margin-left:auto; font-size:.27em; color:rgba(255,255,255,.22); }
+    .hd-ssl { display:flex; align-items:center; gap:.4em; margin-top:auto; padding-top:.22em; border-top:1px solid rgba(255,255,255,.06); }
+    .hd-ssl-grade { font-family:var(--font-d); font-size:.88em; font-weight:900; color:#4dffb4; line-height:1; }
+    .hd-ssl-label { font-size:.29em; letter-spacing:.07em; text-transform:uppercase; color:rgba(77,255,180,.55); }
+    .hd-ssl-sub   { font-size:.26em; color:rgba(255,255,255,.26); margin-top:.08em; }
+    .hd-perf-row  { display:flex; align-items:center; justify-content:space-between; margin-top:auto; padding-top:.22em; border-top:1px solid rgba(255,255,255,.06); }
+    .hd-perf-item { display:flex; flex-direction:column; gap:.08em; }
+    .hd-perf-val  { font-size:.5em; font-weight:700; color:#fff; line-height:1; }
+    .hd-perf-key  { font-size:.25em; letter-spacing:.07em; text-transform:uppercase; color:rgba(255,255,255,.24); }
+    .hd-perf-div  { width:1px; height:1.5em; background:rgba(255,255,255,.07); }
+
+    /* ─── FLORA V2 EXTRAS ───────────────────────────────────── */
+    .fp-filter-row { display:flex; gap:.26em; padding:.2em 1.2em 0; flex-shrink:0; }
+    .fp-filter-pill { font-size:.26em; letter-spacing:.05em; padding:.22em .7em; border-radius:999px; border:1px solid hsl(135,18%,72%); color:hsl(30,14%,52%); }
+    .fp-filter-pill.active { background:hsl(135,24%,36%); color:#fff; border-color:hsl(135,24%,36%); }
+    .fp-brand  { font-size:.24em; color:hsl(30,12%,56%); letter-spacing:.04em; }
+    .fp-stock  { font-size:.23em; letter-spacing:.04em; font-weight:600; color:hsl(135,30%,40%); margin-top:.03em; }
+    .fp-add    { font-size:.25em; letter-spacing:.05em; font-weight:600; color:hsl(135,24%,34%); border:1px solid hsl(135,20%,62%); padding:.26em .72em; border-radius:999px; margin-top:.03em; }
+
+    /* ─── APEX V2 EXTRAS ────────────────────────────────────── */
+    .as-look-section { margin-top:.35em; padding-top:.3em; border-top:1px solid rgba(255,255,255,.07); }
+    .as-look-label { font-size:.27em; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.22); margin-bottom:.26em; }
+    .as-look-items { display:flex; gap:.42em; }
+    .as-look-item  { display:flex; flex-direction:column; gap:.11em; }
+    .as-look-swatch { width:2.1em; height:2.1em; border-radius:.2em; border:1px solid rgba(255,255,255,.1); }
+    .as-look-swatch.shorts { background:linear-gradient(135deg,#1a1a2e,#2a2a3e); }
+    .as-look-swatch.tights { background:linear-gradient(135deg,#111,#1e1e1e); }
+    .as-look-swatch.cap    { background:linear-gradient(135deg,hsl(20,80%,36%),hsl(20,60%,28%)); }
+    .as-look-name  { font-size:.25em; letter-spacing:.04em; color:rgba(255,255,255,.38); }
+    .as-look-price { font-size:.25em; font-weight:700; color:rgba(255,255,255,.58); }
+
+    /* ─── LUMA V3 EXTRAS ───────────────────────────────────── */
+    .ls-perk-row  { display:flex; flex-direction:column; gap:.13em; margin-top:.1em; }
+    .ls-perk-item { display:flex; align-items:center; gap:.32em; font-size:.28em; color:rgba(255,255,255,.36); }
+    .ls-perk-icon { color:rgba(201,168,76,.58); }
+    .ls-wish-row  { display:flex; gap:.38em; margin-top:.12em; }
+    .ls-wish-btn  { font-size:.26em; color:rgba(255,255,255,.32); border:1px solid rgba(255,255,255,.1); padding:.2em .68em; border-radius:999px; letter-spacing:.04em; }
+    .ls-pay-strip { display:flex; justify-content:center; align-items:center; gap:.5em; padding:.3em 1em; border-top:1px solid rgba(255,255,255,.05); flex-shrink:0; }
+    .ls-pay-tag   { font-size:.26em; color:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.09); padding:.12em .5em; border-radius:.18em; letter-spacing:.04em; }
+
+    /* ─── VAULT V3 EXTRAS ──────────────────────────────────── */
+    .hd-infra-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:.26em; padding:.3em 1.2em; flex-shrink:0; border-top:1px solid rgba(255,255,255,.04); }
+    .hd-infra-cell { display:flex; flex-direction:column; align-items:center; gap:.1em; padding:.26em .12em; background:rgba(255,255,255,.025); border-radius:.22em; border:1px solid rgba(255,255,255,.055); }
+    .hd-ic-dot { width:.38em; height:.38em; border-radius:50%; background:#4dffb4; }
+    .hd-ic-val { font-size:.32em; font-weight:700; color:rgba(255,255,255,.56); }
+    .hd-ic-lbl { font-size:.21em; letter-spacing:.05em; text-transform:uppercase; color:rgba(255,255,255,.2); text-align:center; line-height:1.3; }
+    .hd-bw-row  { display:flex; align-items:center; gap:.38em; padding:.22em 1.2em .26em; flex-shrink:0; }
+    .hd-bw-bar  { flex:1; height:.26em; background:rgba(255,255,255,.07); border-radius:999px; overflow:hidden; }
+    .hd-bw-fill { height:100%; width:32%; background:linear-gradient(90deg,#4db8ff,#4dffb4); border-radius:999px; }
+    .hd-bw-lbl  { font-size:.26em; color:rgba(255,255,255,.24); white-space:nowrap; }
+
+    /* ─── FLORA V3 EXTRAS ──────────────────────────────────── */
+    .fs-announce-bar { font-size:.3em; letter-spacing:.06em; text-align:center; padding:.4em 1em; background:hsl(135,22%,84%); border-bottom:1px solid hsl(135,16%,78%); flex-shrink:0; color:hsl(135,28%,30%); font-weight:500; }
+    .fp-routine-row { display:flex; align-items:center; justify-content:space-between; padding:.3em 1.2em; background:hsl(34,18%,88%); border-bottom:1px solid hsl(34,14%,82%); flex-shrink:0; }
+    .fp-routine-lbl { font-size:.27em; font-weight:600; color:hsl(135,28%,28%); letter-spacing:.03em; }
+    .fp-routine-cta { font-size:.25em; color:hsl(135,24%,34%); border:1px solid hsl(135,20%,60%); padding:.2em .6em; border-radius:999px; }
+    .fp-ingr { font-size:.24em; letter-spacing:.03em; color:hsl(135,20%,44%); text-align:center; margin-top:.03em; }
+    .fp-qty-row { display:flex; align-items:center; gap:.2em; margin-top:.04em; }
+    .fp-qty-btn { font-size:.25em; width:1.3em; height:1.3em; border-radius:50%; border:1px solid hsl(135,14%,68%); color:hsl(30,18%,36%); display:flex; align-items:center; justify-content:center; line-height:1; }
+    .fp-qty-n { font-size:.25em; color:hsl(30,14%,28%); font-weight:700; padding:0 .18em; min-width:1em; text-align:center; }
+
+    /* ─── APEX V3 EXTRAS ──────────────────────────────────── */
+    .as-announce { font-size:.29em; letter-spacing:.1em; text-transform:uppercase; color:hsl(20,82%,62%); text-align:center; padding:.32em 1em; background:rgba(255,80,0,.055); border-bottom:1px solid rgba(255,80,0,.1); flex-shrink:0; }
+    .as-tech-strip { display:grid; grid-template-columns:repeat(4,1fr); gap:.2em; padding:.28em 1.2em; flex-shrink:0; border-top:1px solid rgba(255,255,255,.05); }
+    .as-tech-cell { display:flex; flex-direction:column; align-items:center; gap:.12em; padding:.28em .12em; background:rgba(255,255,255,.025); border-radius:.22em; border:1px solid rgba(255,255,255,.06); }
+    .as-tech-orb  { width:1.2em; height:1.2em; border-radius:50%; background:rgba(255,80,0,.12); border:1px solid rgba(255,80,0,.2); }
+    .as-tech-lbl  { font-size:.24em; letter-spacing:.05em; color:rgba(255,255,255,.32); text-align:center; line-height:1.3; font-weight:500; }
+
+    /* ─── PROJECT MODALS ────────────────────────────────────── */
+    #proj-modal {
+      position:fixed; inset:0; z-index:50000; overflow-y:auto;
+      transform:translateY(100%); opacity:0;
+      transition:transform 700ms cubic-bezier(.76,0,.24,1), opacity 400ms var(--ease);
+      pointer-events:none; background:var(--bg);
+    }
+    #proj-modal.open { transform:translateY(0); opacity:1; pointer-events:auto; }
+    #proj-close {
+      position:fixed; top:1.5rem; right:1.5rem; z-index:51000;
+      width:48px; height:48px; border-radius:50%;
+      background:hsl(0,0%,10%); border:1px solid rgba(255,255,255,.18);
+      color:#fff; font-size:1.2rem; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:background 200ms var(--ease), transform 200ms var(--ease-sp);
+      font-family:var(--font-b); box-shadow:0 4px 16px rgba(0,0,0,.4);
+    }
+    #proj-close:hover { background:hsl(0,0%,20%); transform:scale(1.1); }
+    .proj-page { display:none; }
+    .proj-page.active { display:block; }
+
+    /* ── LUMA — Luxury Fragrance ───────────────────────────── */
+    .lp { background:hsl(28,14%,5%); color:#f0ede8; font-family:'DM Sans',sans-serif; min-height:100vh; }
+    .lp-nav { display:flex; align-items:center; justify-content:space-between; padding:1.6rem 3rem; border-bottom:1px solid rgba(201,168,76,.1); position:sticky; top:0; background:hsla(28,14%,5%,.9); backdrop-filter:blur(12px); z-index:100; }
+    .lp-logo { font-family:'Fraunces',Georgia,serif; font-size:.85rem; font-weight:700; letter-spacing:.32em; color:rgba(201,168,76,.85); text-transform:uppercase; }
+    .lp-navlinks { display:flex; gap:2.2rem; font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:rgba(240,237,232,.3); }
+    .lp-nav-right { display:flex; gap:1.2rem; align-items:center; }
+    .lp-nav-icon { width:22px; height:22px; border-radius:50%; border:1px solid rgba(201,168,76,.25); cursor:default; display:flex; align-items:center; justify-content:center; font-size:.65rem; color:rgba(201,168,76,.5); }
+    .lp-hero { position:relative; min-height:92vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; overflow:hidden; padding:4rem 2rem; }
+    .lp-orb { width:320px; height:320px; border-radius:50%; position:absolute; top:50%; left:50%; transform:translate(-50%,-55%); background:radial-gradient(circle at 32% 28%,hsl(43,80%,70%),hsl(43,60%,46%) 44%,hsl(28,50%,22%) 72%,hsl(22,40%,8%)); box-shadow:0 0 80px rgba(201,168,76,.15),0 0 160px rgba(201,168,76,.07); animation:lp-float 7s ease-in-out infinite; z-index:0; }
+    @keyframes lp-float { 0%,100%{transform:translate(-50%,-55%) scale(1)} 50%{transform:translate(-50%,-57%) scale(1.03)} }
+    .lp-hero-content { position:relative; z-index:1; }
+    .lp-eyebrow { font-size:.65rem; letter-spacing:.28em; text-transform:uppercase; color:rgba(201,168,76,.55); margin-bottom:1.6rem; }
+    .lp-hero-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(3.5rem,8vw,7rem); font-weight:300; font-style:italic; line-height:.95; letter-spacing:-.04em; color:#f0ede8; margin-bottom:1rem; }
+    .lp-hero-sub { font-size:.82rem; color:rgba(240,237,232,.38); letter-spacing:.12em; text-transform:uppercase; margin-bottom:2.5rem; }
+    .lp-hero-cta { display:inline-flex; align-items:center; gap:.7rem; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; font-weight:600; color:rgba(201,168,76,.75); border:1px solid rgba(201,168,76,.25); padding:.9rem 2.2rem; border-radius:999px; cursor:default; }
+    .lp-scent { display:flex; justify-content:center; gap:3rem; padding:2rem 3rem; border-top:1px solid rgba(201,168,76,.07); border-bottom:1px solid rgba(201,168,76,.07); background:rgba(201,168,76,.02); }
+    .lp-scent-col { text-align:center; }
+    .lp-scent-label { font-size:.6rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.4); margin-bottom:.5rem; }
+    .lp-scent-vals { font-size:.8rem; color:rgba(240,237,232,.55); line-height:1.8; }
+    .lp-product { display:grid; grid-template-columns:1fr 1fr; min-height:70vh; }
+    .lp-product-img { background:radial-gradient(ellipse at 30% 25%,hsl(28,16%,11%),hsl(28,12%,7%)); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .lp-bottle { width:120px; height:240px; border-radius:60px 60px 30px 30px; background:linear-gradient(160deg,rgba(201,168,76,.9) 0%,rgba(150,112,40,.7) 45%,rgba(80,55,15,.6) 80%); box-shadow:0 24px 60px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.2); position:relative; }
+    .lp-bottle::before { content:''; position:absolute; top:6px; left:50%; transform:translateX(-50%); width:32px; height:18px; border-radius:4px 4px 0 0; background:rgba(201,168,76,.5); }
+    .lp-bottle-glow { position:absolute; width:200px; height:200px; border-radius:50%; background:radial-gradient(circle,rgba(201,168,76,.12),transparent 70%); pointer-events:none; }
+    .lp-product-info { padding:4rem 3rem; display:flex; flex-direction:column; gap:1.2rem; justify-content:center; }
+    .lp-num { font-size:.6rem; letter-spacing:.2em; color:rgba(201,168,76,.4); text-transform:uppercase; }
+    .lp-prod-name { font-family:'Fraunces',Georgia,serif; font-size:clamp(2rem,4vw,3.2rem); font-weight:700; color:#f0ede8; letter-spacing:-.03em; line-height:1; }
+    .lp-prod-sub { font-size:.78rem; font-style:italic; color:rgba(240,237,232,.4); letter-spacing:.08em; }
+    .lp-stars { color:hsl(43,70%,55%); font-size:.88rem; letter-spacing:.06em; }
+    .lp-review-count { font-size:.72rem; color:rgba(255,255,255,.25); margin-left:.4rem; }
+    .lp-price { font-family:'Fraunces',Georgia,serif; font-size:2rem; font-weight:700; color:#f0ede8; letter-spacing:-.03em; }
+    .lp-price span { font-size:.85rem; font-weight:400; color:rgba(240,237,232,.35); font-family:'DM Sans',sans-serif; }
+    .lp-notes { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; padding:1.2rem 0; border-top:1px solid rgba(201,168,76,.1); border-bottom:1px solid rgba(201,168,76,.1); }
+    .lp-note-head { font-size:.58rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(201,168,76,.45); margin-bottom:.3rem; }
+    .lp-note-vals { font-size:.78rem; color:rgba(240,237,232,.55); line-height:1.7; }
+    .lp-sizes { display:flex; gap:.5rem; margin-top:.2rem; }
+    .lp-sz { font-size:.72rem; padding:.42rem 1.1rem; border-radius:999px; border:1px solid rgba(201,168,76,.2); color:rgba(255,255,255,.38); cursor:default; }
+    .lp-sz.on { background:rgba(201,168,76,.12); border-color:rgba(201,168,76,.45); color:hsl(43,60%,58%); }
+    .lp-cta-row { display:flex; gap:.8rem; align-items:center; }
+    .lp-btn-main { font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600; background:rgba(201,168,76,.12); border:1px solid rgba(201,168,76,.38); color:hsl(43,60%,60%); padding:.82rem 2rem; border-radius:999px; cursor:default; }
+    .lp-btn-sec { font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.3); border:1px solid rgba(255,255,255,.1); padding:.82rem 1.4rem; border-radius:999px; cursor:default; }
+    .lp-stock { display:flex; align-items:center; gap:.45rem; font-size:.7rem; color:rgba(255,255,255,.35); }
+    .lp-stock::before { content:''; width:6px; height:6px; border-radius:50%; background:#4dffb4; box-shadow:0 0 6px #4dffb4; flex-shrink:0; }
+    .lp-coll { padding:5rem 3rem; border-top:1px solid rgba(201,168,76,.07); }
+    .lp-coll-label { font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.45); margin-bottom:.5rem; }
+    .lp-coll-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.8rem,3.5vw,2.8rem); font-weight:300; font-style:italic; color:#f0ede8; margin-bottom:2.5rem; line-height:1.2; }
+    .lp-coll-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem; }
+    .lp-coll-card { border:1px solid rgba(201,168,76,.1); border-radius:1rem; padding:1.8rem 1.4rem; display:flex; flex-direction:column; align-items:center; gap:1rem; cursor:default; }
+    .lp-cc-orb { width:68px; height:68px; border-radius:50%; }
+    .lp-cc-orb.essence { background:radial-gradient(circle at 33% 28%,hsl(43,80%,68%),hsl(43,60%,46%) 45%,hsl(28,50%,22%)); box-shadow:0 0 22px rgba(201,168,76,.25); }
+    .lp-cc-orb.noir { background:radial-gradient(circle at 35% 30%,#555,#111 65%); }
+    .lp-cc-orb.blanche { background:radial-gradient(circle at 35% 30%,#fff,#e0d8c8 65%); }
+    .lp-cc-orb.rose { background:radial-gradient(circle at 35% 30%,#f9c0c0,#c47878 65%); }
+    .lp-cc-num { font-size:.58rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(201,168,76,.38); }
+    .lp-cc-name { font-family:'Fraunces',Georgia,serif; font-size:1.35rem; font-weight:700; color:#f0ede8; letter-spacing:-.02em; }
+    .lp-cc-tag { font-size:.7rem; color:rgba(240,237,232,.38); text-align:center; font-style:italic; line-height:1.5; }
+    .lp-cc-price { font-size:.88rem; font-weight:600; color:hsl(43,60%,55%); }
+    .lp-press { display:flex; justify-content:center; align-items:center; gap:3rem; padding:2.5rem 3rem; border-top:1px solid rgba(255,255,255,.04); border-bottom:1px solid rgba(255,255,255,.04); }
+    .lp-press span { font-size:.7rem; letter-spacing:.18em; text-transform:uppercase; color:rgba(255,255,255,.16); font-style:italic; }
+    .lp-editorial { display:grid; grid-template-columns:1fr 1fr; gap:4rem; padding:5rem 3rem; align-items:center; }
+    .lp-ed-num { font-family:'Fraunces',Georgia,serif; font-size:clamp(6rem,12vw,10rem); font-weight:900; color:rgba(201,168,76,.07); line-height:1; letter-spacing:-.05em; }
+    .lp-ed-sub { font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:rgba(201,168,76,.38); margin-bottom:.8rem; }
+    .lp-ed-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.5rem,2.8vw,2.2rem); font-weight:300; font-style:italic; color:#f0ede8; line-height:1.35; margin-bottom:1.1rem; }
+    .lp-ed-p { font-size:.88rem; color:rgba(240,237,232,.45); line-height:1.9; }
+    .lp-footer { padding:2.5rem 3rem; border-top:1px solid rgba(201,168,76,.08); display:flex; align-items:center; justify-content:space-between; }
+    .lp-foot-logo { font-family:'Fraunces',Georgia,serif; font-size:.85rem; font-weight:700; letter-spacing:.22em; color:rgba(201,168,76,.45); }
+    .lp-foot-links { display:flex; gap:2rem; font-size:.65rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.2); }
+    .lp-foot-copy { font-size:.65rem; color:rgba(255,255,255,.16); }
+
+    /* ── VAULT — Hosting Dashboard ─────────────────────────── */
+    .vp { background:hsl(222,46%,7%); color:#fff; font-family:'DM Sans',sans-serif; min-height:100vh; display:flex; }
+    .vp-sidebar { width:218px; flex-shrink:0; border-right:1px solid rgba(77,184,255,.08); display:flex; flex-direction:column; position:sticky; top:0; height:100vh; overflow-y:auto; }
+    .vp-sb-logo { display:flex; align-items:center; gap:.65rem; padding:1.5rem 1.3rem; border-bottom:1px solid rgba(255,255,255,.06); }
+    .vp-sb-logo-icon { width:26px; height:26px; border:2px solid #4db8ff; border-radius:4px; transform:rotate(45deg); flex-shrink:0; }
+    .vp-sb-logo-txt { font-size:.88rem; font-weight:700; letter-spacing:.06em; }
+    .vp-sb-nav { padding:1rem .65rem; flex:1; display:flex; flex-direction:column; gap:.18rem; }
+    .vp-sb-item { display:flex; align-items:center; gap:.72rem; padding:.62rem .82rem; border-radius:.48rem; font-size:.78rem; color:rgba(255,255,255,.4); cursor:default; }
+    .vp-sb-item.on { background:rgba(77,184,255,.1); color:#4db8ff; }
+    .vp-sb-icon { width:15px; height:15px; border-radius:3px; border:1.5px solid currentColor; opacity:.7; flex-shrink:0; }
+    .vp-sb-icon.circle { border-radius:50%; }
+    .vp-sb-icon.shield { border-radius:50% 50% 45% 45%; }
+    .vp-sb-dot { width:6px; height:6px; border-radius:50%; background:#4dffb4; margin-left:auto; box-shadow:0 0 5px #4dffb4; }
+    .vp-sb-bottom { padding:.9rem .65rem; border-top:1px solid rgba(255,255,255,.06); display:flex; align-items:center; gap:.72rem; }
+    .vp-sb-avatar { width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,#4db8ff,#4dffb4); flex-shrink:0; }
+    .vp-sb-user { font-size:.73rem; font-weight:600; color:rgba(255,255,255,.68); }
+    .vp-sb-plan { font-size:.62rem; color:rgba(255,255,255,.28); }
+    .vp-main { flex:1; min-width:0; padding:1.8rem 2.2rem; }
+    .vp-topbar { display:flex; align-items:center; justify-content:space-between; margin-bottom:1.6rem; }
+    .vp-breadcrumb { display:flex; align-items:center; gap:.55rem; }
+    .vp-bc-site { font-size:.92rem; font-weight:700; color:#fff; }
+    .vp-bc-live { font-size:.6rem; letter-spacing:.08em; text-transform:uppercase; background:rgba(77,255,180,.1); color:#4dffb4; border:1px solid rgba(77,255,180,.2); padding:.18rem .65rem; border-radius:999px; font-weight:700; }
+    .vp-bc-check { font-size:.68rem; color:rgba(255,255,255,.26); }
+    .vp-topbar-right { display:flex; align-items:center; gap:.75rem; }
+    .vp-btn-sm { font-size:.7rem; padding:.42rem 1rem; border-radius:.38rem; border:1px solid rgba(77,184,255,.22); background:rgba(77,184,255,.08); color:#4db8ff; cursor:default; font-weight:600; }
+    .vp-kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:.9rem; margin-bottom:1.5rem; }
+    .vp-kpi { background:rgba(255,255,255,.033); border:1px solid rgba(255,255,255,.065); border-radius:.72rem; padding:1.1rem 1.3rem; }
+    .vp-kpi-label { font-size:.62rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.28); margin-bottom:.55rem; }
+    .vp-kpi-val { font-family:'Fraunces',Georgia,serif; font-size:1.9rem; font-weight:700; color:#fff; letter-spacing:-.03em; line-height:1; }
+    .vp-kpi-val.green { color:#4dffb4; }
+    .vp-kpi-val.blue  { color:#4db8ff; }
+    .vp-kpi-val.gold  { color:hsl(43,60%,52%); }
+    .vp-kpi-sub { font-size:.65rem; margin-top:.35rem; color:rgba(255,255,255,.26); }
+    .vp-kpi-up { color:#4dffb4; }
+    .vp-panels { display:grid; grid-template-columns:1.6fr 1fr; gap:1.1rem; margin-bottom:1.1rem; }
+    .vp-panel { background:rgba(255,255,255,.028); border:1px solid rgba(255,255,255,.065); border-radius:.72rem; padding:1.3rem; }
+    .vp-panel-h { font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.28); margin-bottom:1.1rem; }
+    .vp-chart { display:flex; align-items:flex-end; gap:4px; height:110px; }
+    .vp-bar { flex:1; border-radius:3px 3px 0 0; background:rgba(77,184,255,.08); position:relative; }
+    .vp-bar::after { content:''; position:absolute; bottom:0; left:0; right:0; border-radius:3px 3px 0 0; background:linear-gradient(to top,#4db8ff,rgba(77,184,255,.14)); height:100%; }
+    .vp-bar.hi::after { background:linear-gradient(to top,#4dffb4,rgba(77,255,180,.14)); }
+    .vp-chart-labels { display:flex; gap:4px; margin-top:.45rem; }
+    .vp-chart-lbl { flex:1; text-align:center; font-size:.56rem; color:rgba(255,255,255,.2); }
+    .vp-chart-stat { display:flex; justify-content:space-between; align-items:center; margin-top:.9rem; padding-top:.9rem; border-top:1px solid rgba(255,255,255,.06); }
+    .vp-cs-val { font-family:'Fraunces',Georgia,serif; font-size:1.35rem; font-weight:700; color:#fff; }
+    .vp-cs-sub { font-size:.65rem; color:rgba(255,255,255,.26); }
+    .vp-cs-badge { font-size:.65rem; color:#4dffb4; background:rgba(77,255,180,.1); border:1px solid rgba(77,255,180,.2); padding:.22rem .65rem; border-radius:999px; font-weight:600; }
+    .vp-health-list { display:flex; flex-direction:column; gap:.5rem; }
+    .vp-health-row { display:flex; align-items:center; gap:.6rem; font-size:.78rem; color:rgba(255,255,255,.5); }
+    .vp-h-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .vp-h-dot.green { background:#4dffb4; box-shadow:0 0 6px #4dffb4; }
+    .vp-h-dot.blue  { background:#4db8ff; box-shadow:0 0 6px #4db8ff; }
+    .vp-h-dot.gold  { background:hsl(43,60%,52%); }
+    .vp-h-val { margin-left:auto; font-weight:700; color:rgba(255,255,255,.78); font-size:.73rem; }
+    .vp-infra { display:grid; grid-template-columns:repeat(4,1fr); gap:.75rem; margin-bottom:1.1rem; }
+    .vp-infra-cell { background:rgba(255,255,255,.024); border:1px solid rgba(255,255,255,.055); border-radius:.58rem; padding:.88rem .95rem; display:flex; flex-direction:column; gap:.32rem; }
+    .vp-ic-top { display:flex; align-items:center; gap:.38rem; }
+    .vp-ic-dot { width:7px; height:7px; border-radius:50%; background:#4dffb4; box-shadow:0 0 5px #4dffb4; }
+    .vp-ic-name { font-size:.62rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.32); }
+    .vp-ic-val { font-size:.88rem; font-weight:700; color:#fff; }
+    .vp-ic-sub { font-size:.6rem; color:rgba(255,255,255,.2); }
+    .vp-activity { background:rgba(255,255,255,.028); border:1px solid rgba(255,255,255,.065); border-radius:.72rem; padding:1.3rem; }
+    .vp-act-row { display:flex; align-items:center; gap:.75rem; padding:.62rem 0; border-bottom:1px solid rgba(255,255,255,.04); font-size:.78rem; color:rgba(255,255,255,.48); }
+    .vp-act-row:last-child { border-bottom:none; }
+    .vp-act-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .vp-act-dot.green { background:#4dffb4; }
+    .vp-act-dot.blue  { background:#4db8ff; }
+    .vp-act-dot.gold  { background:hsl(43,60%,52%); }
+    .vp-act-time { margin-left:auto; font-size:.68rem; color:rgba(255,255,255,.24); }
+    .vp-plan-row { background:rgba(77,184,255,.055); border:1px solid rgba(77,184,255,.11); border-radius:.72rem; padding:1.1rem 1.5rem; display:flex; align-items:center; justify-content:space-between; margin-bottom:1.1rem; }
+    .vp-plan-price { font-family:'Fraunces',Georgia,serif; font-size:2.2rem; font-weight:900; color:#fff; letter-spacing:-.04em; line-height:1; }
+    .vp-plan-price span { font-size:.85rem; font-weight:400; color:rgba(255,255,255,.35); font-family:'DM Sans',sans-serif; }
+    .vp-plan-label { font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.32); margin-bottom:.18rem; }
+    .vp-plan-badge { font-size:.7rem; background:rgba(77,184,255,.14); color:#4db8ff; border:1px solid rgba(77,184,255,.22); padding:.38rem .95rem; border-radius:999px; font-weight:600; }
+    .vp-plan-next { font-size:.7rem; color:rgba(255,255,255,.3); }
+
+    /* ── FLORA — Organic Skincare ───────────────────────────── */
+    .fp2 { background:hsl(34,28%,91%); color:hsl(30,25%,17%); font-family:'DM Sans',sans-serif; min-height:100vh; }
+    .fp2-bar { font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:hsl(135,28%,30%); text-align:center; padding:.52rem 1rem; background:hsl(135,22%,84%); border-bottom:1px solid hsl(135,16%,78%); font-weight:500; }
+    .fp2-nav { display:flex; align-items:center; justify-content:space-between; padding:1.2rem 3rem; border-bottom:1px solid rgba(80,70,50,.1); position:sticky; top:0; background:hsl(34,28%,91%); z-index:100; }
+    .fp2-logo { font-family:'Fraunces',Georgia,serif; font-size:1.15rem; font-weight:700; letter-spacing:.22em; color:hsl(30,25%,18%); }
+    .fp2-navlinks { display:flex; gap:2rem; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:hsl(30,12%,48%); }
+    .fp2-nav-right { display:flex; gap:1.3rem; align-items:center; font-size:.7rem; color:hsl(135,24%,34%); letter-spacing:.08em; text-transform:uppercase; font-weight:600; }
+    .fp2-hero { display:grid; grid-template-columns:1fr 1fr; min-height:72vh; align-items:center; padding:3.5rem 3rem; gap:3rem; }
+    .fp2-hero-left { display:flex; flex-direction:column; gap:1.3rem; }
+    .fp2-tag { font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:hsl(135,26%,40%); font-weight:700; }
+    .fp2-hero-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(2.8rem,5vw,4.3rem); font-weight:700; color:hsl(30,25%,14%); line-height:1.05; letter-spacing:-.03em; }
+    .fp2-hero-p { font-size:.92rem; color:hsl(30,10%,44%); line-height:1.8; max-width:400px; }
+    .fp2-cta { display:flex; gap:.9rem; align-items:center; }
+    .fp2-btn { font-size:.78rem; letter-spacing:.08em; font-weight:600; padding:.88rem 2rem; border-radius:999px; cursor:default; }
+    .fp2-btn.pri { background:hsl(135,24%,34%); color:#fff; }
+    .fp2-btn.sec { border:1.5px solid hsl(135,20%,60%); color:hsl(135,26%,34%); background:transparent; }
+    .fp2-hero-right { display:flex; align-items:center; justify-content:center; }
+    .fp2-hero-circle { width:340px; height:340px; border-radius:50%; background:hsl(135,20%,83%); display:flex; align-items:center; justify-content:center; }
+    .fp2-bottles { display:flex; align-items:flex-end; gap:1.4rem; }
+    .fp2-bottle { border-radius:999px 999px 38% 38%; box-shadow:0 10px 36px rgba(80,120,80,.18); }
+    .fp2-bottle-a { width:50px; height:142px; background:linear-gradient(160deg,hsl(135,20%,74%),hsl(135,28%,56%)); }
+    .fp2-bottle-b { width:60px; height:168px; background:linear-gradient(160deg,hsl(32,42%,78%),hsl(32,38%,60%)); }
+    .fp2-bottle-c { width:44px; height:128px; background:linear-gradient(160deg,hsl(196,24%,74%),hsl(196,32%,55%)); }
+    .fp2-filters { display:flex; align-items:center; gap:.75rem; padding:1.6rem 3rem 1rem; }
+    .fp2-filter-label { font-size:.68rem; letter-spacing:.12em; text-transform:uppercase; color:hsl(30,12%,52%); margin-right:.35rem; }
+    .fp2-pill { font-size:.68rem; letter-spacing:.06em; padding:.36rem .95rem; border-radius:999px; border:1px solid hsl(135,18%,70%); color:hsl(30,12%,48%); cursor:default; }
+    .fp2-pill.on { background:hsl(135,24%,34%); color:#fff; border-color:hsl(135,24%,34%); }
+    .fp2-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; padding:0 3rem 3.5rem; }
+    .fp2-card { background:hsl(34,22%,88%); border:1px solid hsl(34,16%,82%); border-radius:1rem; padding:1.5rem; display:flex; flex-direction:column; gap:.65rem; cursor:default; }
+    .fp2-card-top { display:flex; justify-content:space-between; align-items:flex-start; }
+    .fp2-badge2 { font-size:.6rem; letter-spacing:.06em; background:hsl(135,22%,82%); color:hsl(135,30%,30%); padding:.18rem .6rem; border-radius:999px; border:1px solid hsl(135,20%,70%); font-weight:600; }
+    .fp2-bottle-wrap { display:flex; justify-content:center; padding:.4rem 0; }
+    .fp2-card-info { display:flex; flex-direction:column; gap:.28rem; }
+    .fp2-card-brand { font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:hsl(30,12%,54%); }
+    .fp2-card-name { font-size:.97rem; font-weight:700; color:hsl(30,25%,18%); }
+    .fp2-card-desc { font-size:.73rem; color:hsl(30,10%,44%); line-height:1.6; }
+    .fp2-card-ingr { font-size:.66rem; color:hsl(135,22%,44%); }
+    .fp2-card-bottom { display:flex; flex-direction:column; gap:.48rem; border-top:1px solid hsl(34,14%,80%); padding-top:.65rem; margin-top:.18rem; }
+    .fp2-card-price-row { display:flex; align-items:center; justify-content:space-between; }
+    .fp2-card-price { font-size:1rem; font-weight:700; color:hsl(135,26%,34%); }
+    .fp2-card-stars { font-size:.72rem; color:hsl(43,80%,48%); letter-spacing:.04em; }
+    .fp2-card-count { font-size:.65rem; color:hsl(30,10%,50%); }
+    .fp2-card-stock-ok { font-size:.65rem; font-weight:600; color:hsl(135,30%,38%); }
+    .fp2-card-stock-low { font-size:.65rem; font-weight:600; color:hsl(0,58%,52%); }
+    .fp2-add-btn { font-size:.7rem; font-weight:600; letter-spacing:.06em; padding:.52rem 1rem; border-radius:999px; border:1.5px solid hsl(135,20%,60%); color:hsl(135,26%,32%); text-align:center; cursor:default; }
+    .fp2-promise { display:flex; justify-content:center; gap:2.4rem; padding:2.4rem 3rem; border-top:1px solid rgba(80,70,50,.1); border-bottom:1px solid rgba(80,70,50,.1); flex-wrap:wrap; }
+    .fp2-promise-item { display:flex; align-items:center; gap:.55rem; font-size:.78rem; font-weight:500; color:hsl(135,26%,34%); }
+    .fp2-promise-dot { width:7px; height:7px; border-radius:50%; background:hsl(135,24%,50%); }
+    .fp2-ingr { padding:3.5rem 3rem; }
+    .fp2-ingr-label { font-size:.66rem; letter-spacing:.2em; text-transform:uppercase; color:hsl(135,22%,44%); margin-bottom:.5rem; }
+    .fp2-ingr-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.7rem,3vw,2.4rem); font-weight:700; color:hsl(30,25%,16%); margin-bottom:1.8rem; line-height:1.2; }
+    .fp2-ingr-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:.9rem; }
+    .fp2-ingr-card { background:hsl(135,16%,86%); border:1px solid hsl(135,14%,78%); border-radius:.72rem; padding:1.3rem; }
+    .fp2-ingr-name { font-size:.85rem; font-weight:700; color:hsl(30,25%,18%); margin-bottom:.35rem; }
+    .fp2-ingr-desc { font-size:.72rem; color:hsl(30,10%,44%); line-height:1.6; }
+    .fp2-reviews { padding:3.5rem 3rem; background:hsl(34,24%,88%); }
+    .fp2-rev-h { font-family:'Fraunces',Georgia,serif; font-size:clamp(1.5rem,2.8vw,2.1rem); font-weight:700; color:hsl(30,25%,16%); margin-bottom:1.8rem; }
+    .fp2-rev-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.1rem; }
+    .fp2-rev-card { background:hsl(34,28%,91%); border:1px solid hsl(34,16%,82%); border-radius:.72rem; padding:1.4rem; }
+    .fp2-rev-stars { color:hsl(43,80%,48%); font-size:.88rem; margin-bottom:.65rem; }
+    .fp2-rev-q { font-size:.82rem; color:hsl(30,18%,28%); line-height:1.7; margin-bottom:.9rem; font-style:italic; }
+    .fp2-rev-by { font-size:.7rem; font-weight:600; color:hsl(30,18%,40%); }
+    .fp2-rev-prod { font-size:.65rem; color:hsl(135,20%,44%); }
+    .fp2-footer { display:flex; align-items:center; justify-content:space-between; padding:1.8rem 3rem; border-top:1px solid rgba(80,70,50,.1); }
+    .fp2-foot-logo { font-family:'Fraunces',Georgia,serif; font-size:.92rem; font-weight:700; letter-spacing:.18em; color:hsl(30,20%,30%); }
+    .fp2-foot-links { display:flex; gap:1.7rem; font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; color:hsl(30,10%,50%); }
+    .fp2-foot-copy { font-size:.65rem; color:hsl(30,10%,55%); }
+
+    /* ─── TESTIMONIALS ──────────────────────────────────────── */
+    .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp6); margin-bottom:var(--sp12); }
+    .testi-card { background:var(--bg-2); border:1px solid var(--border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); }
+    .testi-stars { color:var(--gold); font-size:.95rem; letter-spacing:.06em; }
+    .testi-q { font-family:var(--font-d); font-size:clamp(.9rem,1.3vw,1.05rem); font-style:italic; line-height:1.65; color:var(--text); flex:1; }
+    .testi-by { font-size:.8rem; font-weight:600; color:var(--text-2); margin-bottom:.1rem; }
+    .testi-co { font-size:.75rem; color:var(--text-3); }
+    @media(max-width:768px) { .testi-grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div id="intro-top" aria-hidden="true"></div>
+  <div id="intro-bot" aria-hidden="true"></div>
+  <div class="intro-inner" role="status" aria-label="Form and Forge loading">
+    <div class="intro-line" aria-hidden="true"></div>
+    <p class="intro-txt">Form &amp; Forge</p>
+    <p class="intro-sub">Built to Impress</p>
+  </div>
+  <a class="skip" href="#main">Skip to content</a>
+  <!-- ── Project Modals ─────────────────────────────────── -->
+  <div id="proj-modal" role="dialog" aria-modal="true" aria-label="Project details">
+    <button id="proj-close" aria-label="Close project">✕</button>
+
+    <!-- LUMA -->
+    <div id="proj-luma" class="proj-page">
+      <div class="lp">
+        <nav class="lp-nav">
+          <span class="lp-logo">Luma</span>
+          <div class="lp-navlinks"><span>Collection</span><span>Ingredients</span><span>About</span><span>Journal</span></div>
+          <div class="lp-nav-right">
+            <div class="lp-nav-icon">♡</div>
+            <div class="lp-nav-icon">⊕</div>
+          </div>
+        </nav>
+        <div class="lp-hero">
+          <div class="lp-orb"></div>
+          <div class="lp-hero-content">
+            <p class="lp-eyebrow">No. 01 — Parfum Concentré</p>
+            <h2 class="lp-hero-h">Lumière<br>Dorée</h2>
+            <p class="lp-hero-sub">A fragrance of pure intention</p>
+
+          </div>
+        </div>
+        <div class="lp-scent">
+          <div class="lp-scent-col"><p class="lp-scent-label">Top Notes</p><p class="lp-scent-vals">Bergamot<br>Neroli<br>Yuzu</p></div>
+          <div class="lp-scent-col"><p class="lp-scent-label">Heart Notes</p><p class="lp-scent-vals">Iris<br>Jasmine Sambac<br>Orris Root</p></div>
+          <div class="lp-scent-col"><p class="lp-scent-label">Base Notes</p><p class="lp-scent-vals">Sandalwood<br>Ambergris<br>White Musk</p></div>
+        </div>
+        <div class="lp-product">
+          <div class="lp-product-img">
+            <div class="lp-bottle-glow"></div>
+            <div class="lp-bottle"></div>
+          </div>
+          <div class="lp-product-info">
+            <p class="lp-num">01 / 04</p>
+            <h3 class="lp-prod-name">Lumière<br>Dorée</h3>
+            <p class="lp-prod-sub">Eau de Parfum Concentré</p>
+            <p class="lp-stars">★★★★★ <span class="lp-review-count">(247 reviews)</span></p>
+            <p class="lp-price">£195 <span>/ 50ml</span></p>
+            <div class="lp-notes">
+              <div><p class="lp-note-head">Longevity</p><p class="lp-note-vals">12+ hours<br>projection</p></div>
+              <div><p class="lp-note-head">Sillage</p><p class="lp-note-vals">Moderate<br>to heavy</p></div>
+              <div><p class="lp-note-head">Season</p><p class="lp-note-vals">Autumn<br>Winter</p></div>
+            </div>
+            <div class="lp-sizes"><span class="lp-sz">30ml</span><span class="lp-sz on">50ml</span><span class="lp-sz">100ml</span></div>
+            <div class="lp-cta-row">
+              <span class="lp-btn-main">Add to bag</span>
+              <span class="lp-btn-sec">Wishlist</span>
+            </div>
+            <span class="lp-stock">In stock — ships within 48 hours</span>
+          </div>
+        </div>
+        <div class="lp-coll">
+          <p class="lp-coll-label">The Collection</p>
+          <h3 class="lp-coll-h">Four scents.<br>One philosophy.</h3>
+          <div class="lp-coll-grid">
+            <div class="lp-coll-card"><div class="lp-cc-orb essence"></div><p class="lp-cc-num">01</p><p class="lp-cc-name">Dorée</p><p class="lp-cc-tag">Golden citrus &amp; warm amber</p><p class="lp-cc-price">£195</p></div>
+            <div class="lp-coll-card"><div class="lp-cc-orb noir"></div><p class="lp-cc-num">02</p><p class="lp-cc-name">Noir</p><p class="lp-cc-tag">Dark woods &amp; smoky vetiver</p><p class="lp-cc-price">£210</p></div>
+            <div class="lp-coll-card"><div class="lp-cc-orb blanche"></div><p class="lp-cc-num">03</p><p class="lp-cc-name">Blanche</p><p class="lp-cc-tag">White florals &amp; clean musk</p><p class="lp-cc-price">£185</p></div>
+            <div class="lp-coll-card"><div class="lp-cc-orb rose"></div><p class="lp-cc-num">04</p><p class="lp-cc-name">Rose</p><p class="lp-cc-tag">Damascena rose &amp; oud</p><p class="lp-cc-price">£225</p></div>
+          </div>
+        </div>
+        <div class="lp-press">
+          <span>The Sunday Times</span><span>Vogue</span><span>Harper's Bazaar</span><span>Wallpaper*</span><span>Financial Times</span>
+        </div>
+        <div class="lp-editorial">
+          <div><p class="lp-ed-num">93</p></div>
+          <div>
+            <p class="lp-ed-sub">Perfumer's note</p>
+            <h3 class="lp-ed-h">"Scent is the most honest thing a person can wear."</h3>
+            <p class="lp-ed-p">Every Luma fragrance begins not with ingredients, but with a question: what feeling does this evoke? We spent fourteen months perfecting Dorée alone — adjusting the bergamot to neroli ratio until it felt less like a fragrance and more like a memory.</p>
+          </div>
+        </div>
+        <footer class="lp-footer">
+          <span class="lp-foot-logo">Luma</span>
+          <div class="lp-foot-links"><span>Collection</span><span>About</span><span>Stockists</span><span>Contact</span></div>
+          <span class="lp-foot-copy">© 2026 Luma Parfums. London.</span>
+        </footer>
+      </div>
+    </div>
+
+    <!-- VAULT -->
+    <div id="proj-vault" class="proj-page">
+      <div class="vp">
+        <aside class="vp-sidebar">
+          <div class="vp-sb-logo"><div class="vp-sb-logo-icon"></div><span class="vp-sb-logo-txt">VAULT</span></div>
+          <nav class="vp-sb-nav">
+            <div class="vp-sb-item on"><div class="vp-sb-icon circle"></div>Dashboard<div class="vp-sb-dot"></div></div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Sites</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon shield"></div>Security</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Domains</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Analytics</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Backups</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Billing</div>
+            <div class="vp-sb-item"><div class="vp-sb-icon"></div>Settings</div>
+          </nav>
+          <div class="vp-sb-bottom">
+            <div class="vp-sb-avatar"></div>
+            <div><div class="vp-sb-user">Alex Carter</div><div class="vp-sb-plan">Pro Plan</div></div>
+          </div>
+        </aside>
+        <main class="vp-main">
+          <div class="vp-topbar">
+            <div class="vp-breadcrumb">
+              <span class="vp-bc-site">formandforge.co.uk</span>
+              <span class="vp-bc-live">● Live</span>
+              <span class="vp-bc-check">Checked 2 min ago</span>
+            </div>
+            <div class="vp-topbar-right">
+              <span class="vp-btn-sm">Deploy</span>
+              <span class="vp-btn-sm">Open site ↗</span>
+            </div>
+          </div>
+          <div class="vp-plan-row">
+            <div><div class="vp-plan-label">Current plan</div><div class="vp-plan-price">£60<span>/mo</span></div></div>
+            <div><div class="vp-plan-next">Next billing: 1 Jul 2026</div></div>
+            <span class="vp-plan-badge">Pro Hosting</span>
+          </div>
+          <div class="vp-kpis">
+            <div class="vp-kpi"><div class="vp-kpi-label">Uptime (30d)</div><div class="vp-kpi-val green">99.98%</div><div class="vp-kpi-sub"><span class="vp-kpi-up">↑</span> 0.02% vs last month</div></div>
+            <div class="vp-kpi"><div class="vp-kpi-label">Avg load time</div><div class="vp-kpi-val blue">0.82s</div><div class="vp-kpi-sub">Global CDN — 34 nodes</div></div>
+            <div class="vp-kpi"><div class="vp-kpi-label">Bandwidth (Jun)</div><div class="vp-kpi-val">148 GB</div><div class="vp-kpi-sub">500 GB included</div></div>
+            <div class="vp-kpi"><div class="vp-kpi-label">SSL cert</div><div class="vp-kpi-val gold">Valid</div><div class="vp-kpi-sub">Expires: Dec 2026</div></div>
+          </div>
+          <div class="vp-panels">
+            <div class="vp-panel">
+              <div class="vp-panel-h">Traffic — last 14 days</div>
+              <div class="vp-chart">
+                <div class="vp-bar" style="height:35%"></div><div class="vp-bar" style="height:52%"></div><div class="vp-bar" style="height:44%"></div><div class="vp-bar" style="height:68%"></div><div class="vp-bar" style="height:55%"></div><div class="vp-bar" style="height:72%"></div><div class="vp-bar hi" style="height:88%"></div><div class="vp-bar" style="height:60%"></div><div class="vp-bar" style="height:76%"></div><div class="vp-bar hi" style="height:91%"></div><div class="vp-bar" style="height:66%"></div><div class="vp-bar" style="height:78%"></div><div class="vp-bar hi" style="height:94%"></div><div class="vp-bar" style="height:83%"></div>
+              </div>
+              <div class="vp-chart-labels">
+                <span class="vp-chart-lbl">19</span><span class="vp-chart-lbl">20</span><span class="vp-chart-lbl">21</span><span class="vp-chart-lbl">22</span><span class="vp-chart-lbl">23</span><span class="vp-chart-lbl">24</span><span class="vp-chart-lbl">25</span><span class="vp-chart-lbl">26</span><span class="vp-chart-lbl">27</span><span class="vp-chart-lbl">28</span><span class="vp-chart-lbl">29</span><span class="vp-chart-lbl">30</span><span class="vp-chart-lbl">1</span><span class="vp-chart-lbl">2</span>
+              </div>
+              <div class="vp-chart-stat">
+                <div><div class="vp-cs-val">12,847</div><div class="vp-cs-sub">Unique visitors this period</div></div>
+                <span class="vp-cs-badge">↑ 23.4%</span>
+              </div>
+            </div>
+            <div class="vp-panel">
+              <div class="vp-panel-h">Site health</div>
+              <div class="vp-health-list">
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>Performance<span class="vp-h-val">98</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>Accessibility<span class="vp-h-val">100</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>Best practices<span class="vp-h-val">96</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot blue"></div>SEO<span class="vp-h-val">94</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot gold"></div>CLS score<span class="vp-h-val">0.02</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>LCP<span class="vp-h-val">0.9s</span></div>
+                <div class="vp-health-row"><div class="vp-h-dot green"></div>FID<span class="vp-h-val">12ms</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="vp-infra">
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Region</div></div><div class="vp-ic-val">EU-West</div><div class="vp-ic-sub">London, GB</div></div>
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Node version</div></div><div class="vp-ic-val">v22.4</div><div class="vp-ic-sub">LTS stable</div></div>
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Build time</div></div><div class="vp-ic-val">8.3s</div><div class="vp-ic-sub">Last deploy: 4h ago</div></div>
+            <div class="vp-infra-cell"><div class="vp-ic-top"><div class="vp-ic-dot"></div><div class="vp-ic-name">Storage</div></div><div class="vp-ic-val">2.1 GB</div><div class="vp-ic-sub">of 50 GB used</div></div>
+          </div>
+          <div class="vp-activity">
+            <div class="vp-panel-h">Recent activity</div>
+            <div class="vp-act-row"><div class="vp-act-dot green"></div>Deployment successful — v2.4.1<div class="vp-act-time">4h ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot blue"></div>SSL certificate auto-renewed<div class="vp-act-time">2d ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot green"></div>Backup completed — 142 MB<div class="vp-act-time">3d ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot gold"></div>DNS propagation complete<div class="vp-act-time">5d ago</div></div>
+            <div class="vp-act-row"><div class="vp-act-dot green"></div>CDN cache purged globally<div class="vp-act-time">6d ago</div></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- FLORA -->
+    <div id="proj-flora" class="proj-page">
+      <div class="fp2">
+        <div class="fp2-bar">Free UK delivery on orders over £50 · Certified organic · Cruelty-free</div>
+        <nav class="fp2-nav">
+          <span class="fp2-logo">FLORA</span>
+          <div class="fp2-navlinks"><span>Shop</span><span>Ingredients</span><span>About</span><span>Journal</span></div>
+          <div class="fp2-nav-right"><span>✦ Bag (2)</span></div>
+        </nav>
+        <div class="fp2-hero">
+          <div class="fp2-hero-left">
+            <span class="fp2-tag">Certified Organic Skincare</span>
+            <h2 class="fp2-hero-h">Honest<br>beauty,<br>pure results.</h2>
+            <p class="fp2-hero-p">Formulated with botanicals grown in the English countryside. No fillers, no fragrances, no shortcuts — just ingredients your skin can trust.</p>
+            <div class="fp2-cta">
+              <span class="fp2-btn pri">Shop the range</span>
+              <span class="fp2-btn sec">Our story</span>
+            </div>
+          </div>
+          <div class="fp2-hero-right">
+            <div class="fp2-hero-circle">
+              <div class="fp2-bottles">
+                <div class="fp2-bottle fp2-bottle-a"></div>
+                <div class="fp2-bottle fp2-bottle-b"></div>
+                <div class="fp2-bottle fp2-bottle-c"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fp2-promise">
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>COSMOS Certified Organic</div>
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>Vegan &amp; Cruelty-Free</div>
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>Recyclable packaging</div>
+          <div class="fp2-promise-item"><div class="fp2-promise-dot"></div>Made in England</div>
+        </div>
+        <div class="fp2-filters">
+          <span class="fp2-filter-label">Filter:</span>
+          <span class="fp2-pill on">All</span><span class="fp2-pill">Face</span><span class="fp2-pill">Body</span><span class="fp2-pill">Hair</span><span class="fp2-pill">Serums</span>
+        </div>
+        <div class="fp2-grid">
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Bestseller</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-b" style="width:44px;height:120px"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Dew Drop Serum</span><span class="fp2-card-desc">Hyaluronic acid &amp; rosehip oil blend for intense 72-hour hydration</span><span class="fp2-card-ingr">Rosa canina · Sodium hyaluronate · Aloe vera</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£34.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(312)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">New</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-a" style="width:40px;height:110px"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Calm &amp; Restore Balm</span><span class="fp2-card-desc">Rich shea &amp; calendula balm for dry, sensitive, or reactive skin types</span><span class="fp2-card-ingr">Calendula officinalis · Butyrospermum parkii · Chamomile</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£28.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(98)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Editor's pick</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-c" style="width:40px;height:110px"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Clarity Cleansing Oil</span><span class="fp2-card-desc">Dissolves makeup &amp; impurities while preserving your skin's moisture barrier</span><span class="fp2-card-ingr">Jojoba oil · Lavandula angustifolia · Marula oil</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£26.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(201)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Organic</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-b" style="width:38px;height:104px;background:linear-gradient(160deg,hsl(135,22%,72%),hsl(135,30%,54%))"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Forest Toning Mist</span><span class="fp2-card-desc">Witch hazel &amp; green tea mist that tightens pores and refreshes skin</span><span class="fp2-card-ingr">Hamamelis virginiana · Camellia sinensis · Aloe vera</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£22.00</span><span><span class="fp2-card-stars">★★★★☆</span> <span class="fp2-card-count">(176)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Limited</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-a" style="width:44px;height:118px;background:linear-gradient(160deg,hsl(32,50%,80%),hsl(32,44%,62%))"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Golden Hour Face Oil</span><span class="fp2-card-desc">Bakuchiol &amp; sea buckthorn — retinol-free glow for all skin types</span><span class="fp2-card-ingr">Hippophae rhamnoides · Bakuchiol · Argan oil</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£42.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(88)</span></span></div><span class="fp2-card-stock-low">⚠ Only 14 left</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+          <div class="fp2-card">
+            <div class="fp2-card-top"><span class="fp2-badge2">Vegan</span></div>
+            <div class="fp2-bottle-wrap"><div class="fp2-bottle fp2-bottle-c" style="width:42px;height:115px;background:linear-gradient(160deg,hsl(196,28%,76%),hsl(196,36%,57%))"></div></div>
+            <div class="fp2-card-info"><span class="fp2-card-brand">Flora</span><span class="fp2-card-name">Sleep &amp; Repair Night Cream</span><span class="fp2-card-desc">Supports overnight skin renewal with adaptogenic herbs &amp; bakuchiol</span><span class="fp2-card-ingr">Ashwagandha · Bakuchiol · Evening primrose oil</span></div>
+            <div class="fp2-card-bottom"><div class="fp2-card-price-row"><span class="fp2-card-price">£38.00</span><span><span class="fp2-card-stars">★★★★★</span> <span class="fp2-card-count">(143)</span></span></div><span class="fp2-card-stock-ok">● In stock</span><span class="fp2-add-btn">Add to bag</span></div>
+          </div>
+        </div>
+        <div class="fp2-ingr">
+          <p class="fp2-ingr-label">What's inside</p>
+          <h3 class="fp2-ingr-h">Ingredients you can<br>actually pronounce.</h3>
+          <div class="fp2-ingr-grid">
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Rosehip Oil</p><p class="fp2-ingr-desc">Rich in vitamin A &amp; C. Fades scars, brightens, and boosts collagen production naturally.</p></div>
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Hyaluronic Acid</p><p class="fp2-ingr-desc">Holds up to 1000× its weight in water. Plumps fine lines &amp; maintains skin moisture balance.</p></div>
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Calendula</p><p class="fp2-ingr-desc">Anti-inflammatory &amp; antiseptic. Soothes irritation, heals minor skin damage, improves texture.</p></div>
+            <div class="fp2-ingr-card"><p class="fp2-ingr-name">Bakuchiol</p><p class="fp2-ingr-desc">Plant-based retinol alternative. All the firming benefits with none of the sensitivity.</p></div>
+          </div>
+        </div>
+        <div class="fp2-reviews">
+          <h3 class="fp2-rev-h">What our customers say</h3>
+          <div class="fp2-rev-grid">
+            <div class="fp2-rev-card"><div class="fp2-rev-stars">★★★★★</div><p class="fp2-rev-q">"I've been using the Dew Drop Serum every morning for three months. My skin has never looked better — genuinely visible results within two weeks."</p><div class="fp2-rev-by">Charlotte B.</div><div class="fp2-rev-prod">Dew Drop Serum</div></div>
+            <div class="fp2-rev-card"><div class="fp2-rev-stars">★★★★★</div><p class="fp2-rev-q">"Finally found a cleansing oil that doesn't break me out. The Clarity formula is lightweight, removes everything, and my skin feels genuinely clean."</p><div class="fp2-rev-by">Priya M.</div><div class="fp2-rev-prod">Clarity Cleansing Oil</div></div>
+            <div class="fp2-rev-card"><div class="fp2-rev-stars">★★★★★</div><p class="fp2-rev-q">"The Night Cream has completely transformed my skin overnight. I wake up glowing. Worth every penny — nothing else comes close at this price point."</p><div class="fp2-rev-by">Harriet T.</div><div class="fp2-rev-prod">Sleep &amp; Repair Night Cream</div></div>
+          </div>
+        </div>
+        <footer class="fp2-footer">
+          <span class="fp2-foot-logo">FLORA</span>
+          <div class="fp2-foot-links"><span>Shop</span><span>About</span><span>Ingredients</span><span>Contact</span></div>
+          <span class="fp2-foot-copy">© 2026 Flora Organics. Made in England.</span>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div id="cur-dot" aria-hidden="true"></div>
+  <div id="cur-ring" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header id="hdr">
+    <div class="wrap">
+      <nav aria-label="Main">
+        <a class="logo" href="#hero" aria-label="Form & Forge home">
+          <span class="logo-dot" aria-hidden="true"></span>Form&nbsp;&amp;&nbsp;Forge
+        </a>
+        <ul class="nav-links">
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="nav-cta" href="#contact">Start a project</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="hero-h1">
+      <div class="wrap" style="padding-bottom:0">
+        <p class="hero-eyebrow" id="eyebrow">Premium Website Designer — London</p>
+        <h1 id="hero-h1" class="hero-hed">
+          <span class="hero-line"><span class="hero-word hero-word--support" data-d="0">Designed to</span></span>
+          <span class="hero-line"><span class="hero-word hero-word--focal hero-word--static">stand out.</span></span>
+          <span class="hero-line"><span class="hero-word hero-word--support" data-d="160">Delivered.</span></span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" aria-labelledby="port-h2">
+      <div class="wrap">
+        <div class="port-header">
+          <div>
+            <p class="sec-label">Example Builds</p>
+            <h2 id="port-h2" class="port-title" data-a>An endless canvas<br>for <em style="color:var(--gold-antique);font-style:normal">creative variety.</em></h2>
+          </div>
+          <p class="port-sub" data-a="r">Concept builds —<br>the sky is your limit.</p>
+        </div>
+
+        <div class="port-grid">
+          <article class="pi" data-a>
+            <div class="pi-bg pi-site-luma" role="img" aria-label="LUMA — luxury fragrance e-commerce website">
+              <div class="ls-announce">Complimentary engraving on orders over £200 &ensp;·&ensp; Free express delivery</div>
+              <div class="lsite-nav">
+                <span class="ls-logo">MAISON LUMA</span>
+                <span class="ls-navlinks">Collection&ensp;|&ensp;Maison&ensp;|&ensp;Stores&ensp;|&ensp;Gift</span>
+                <span class="ls-bag">Bag (1)</span>
+              </div>
+              <div class="ls-hero-body">
+                <div class="ls-orb-side" style="flex-direction:column;gap:.3em">
+                  <div class="ls-ring-outer">
+                    <div class="ls-ring-mid">
+                      <div class="ls-ring-inner">
+                        <div class="ls-orb-v2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="ls-orb-num">No. 01 — Essence</p>
+                </div>
+                <div class="ls-text-side">
+                  <p class="ls-sub" style="margin-bottom:.03em">Eau de Parfum</p>
+                  <p class="ls-title" style="font-size:2.1em;line-height:.88;margin-bottom:.06em">Essence</p>
+                  <p class="ls-tagline">A meditation on warmth.<br>The quiet before dawn.</p>
+                  <div class="ls-stars-row">
+                    <span class="ls-stars">★★★★★</span>
+                    <span class="ls-star-count">4.9 · 1,024 reviews</span>
+                  </div>
+                  <p class="ls-price-line" style="margin-top:.08em">£185 <span class="ls-price-sm">50ml</span></p>
+                  <div class="ls-size-row">
+                    <span class="ls-size">30ml</span>
+                    <span class="ls-size active">50ml</span>
+                    <span class="ls-size">100ml</span>
+                  </div>
+                  <span class="ls-add-cta">Add to Collection →</span>
+                  <div class="ls-stock-row">
+                    <span class="ls-stock-dot"></span>
+                    <span class="ls-stock-txt">In stock — ships within 24 hours</span>
+                  </div>
+                  <div class="ls-perk-row">
+                    <div class="ls-perk-item"><span class="ls-perk-icon">◉</span>Earn 185 Maison Points</div>
+                    <div class="ls-perk-item"><span class="ls-perk-icon">◌</span>Order in 2h 14m for next-day</div>
+                    <div class="ls-perk-item"><span class="ls-perk-icon">◇</span>Gift wrapping included</div>
+                  </div>
+                  <div class="ls-wish-row">
+                    <span class="ls-wish-btn">♡ Save to Wishlist</span>
+                    <span class="ls-wish-btn">◇ Gift wrap</span>
+                  </div>
+                  <p class="ls-coll-label" style="margin-top:.2em">Also in the collection</p>
+                  <div class="ls-coll-row">
+                    <div class="ls-mini-orb-wrap"><div class="ls-mini-orb noir"></div><span class="ls-mini-name">Noir</span></div>
+                    <div class="ls-mini-orb-wrap"><div class="ls-mini-orb blanche"></div><span class="ls-mini-name">Blanche</span></div>
+                    <div class="ls-mini-orb-wrap"><div class="ls-mini-orb rose"></div><span class="ls-mini-name">Rose</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ls-divider-deco">
+                <span class="ls-divider-line"></span>
+                <span class="ls-divider-mark">◆</span>
+                <span class="ls-divider-line"></span>
+              </div>
+              <div class="ls-scent-strip">
+                <div class="ls-scent-col">
+                  <span class="ls-scent-label">Top</span>
+                  <span class="ls-scent-notes">Bergamot<br>Cardamom</span>
+                </div>
+                <div class="ls-scent-col">
+                  <span class="ls-scent-label">Heart</span>
+                  <span class="ls-scent-notes">Rose · Neroli<br>Jasmine</span>
+                </div>
+                <div class="ls-scent-col">
+                  <span class="ls-scent-label">Base</span>
+                  <span class="ls-scent-notes">Sandalwood<br>Musk · Amber</span>
+                </div>
+              </div>
+              <div class="ls-pay-strip">
+                <span class="ls-pay-tag">VISA</span>
+                <span class="ls-pay-tag">MC</span>
+                <span class="ls-pay-tag">AMEX</span>
+                <span class="ls-pay-tag">PAYPAL</span>
+                <span class="ls-pay-tag">KLARNA</span>
+              </div>
+              <div class="ls-press">
+                <span>Vogue</span><span>Harper's Bazaar</span><span>The Times</span><span>Tatler</span>
+              </div>
+            </div>
+            <div class="pi-overlay" aria-hidden="true"></div>
+            <span class="pi-ghost" aria-hidden="true">01</span>
+            <div class="pi-info">
+              <p class="pi-cat">Brand Identity</p>
+              <h3 class="pi-name">LUMA</h3>
+              <a class="pi-link" href="#" data-project="luma" aria-label="View LUMA project">View Project
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="pi" data-a>
+            <div class="pi-bg hd-wrap" role="img" aria-label="Managed website hosting dashboard — £60 per month">
+              <div class="hd-nav">
+                <span class="hd-logo"><span class="hd-logo-icon"></span>Forge Host</span>
+                <span class="hd-nav-items">Overview &ensp; Analytics &ensp; Security &ensp; Settings</span>
+                <span class="hd-status">All systems operational</span>
+              </div>
+              <div class="hd-breadcrumb">
+                <span class="hd-bc-site">yourwebsite.co.uk</span>
+                <span class="hd-bc-dot"></span>
+                <span class="hd-bc-live">Live</span>
+                <span class="hd-bc-right">Checked 2 min ago</span>
+              </div>
+              <div class="hd-plan-row">
+                <div>
+                  <div class="hd-plan-label">Your Plan</div>
+                  <div class="hd-plan-price">£60<span>/mo</span></div>
+                </div>
+                <span class="hd-plan-badge">Managed Hosting</span>
+              </div>
+              <div class="hd-two-col">
+                <div class="hd-col">
+                  <div class="hd-mini-label">Plan includes</div>
+                  <div class="hd-plan-feats">
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>SSL certificate (auto-renew)</div>
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>Daily encrypted backups</div>
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>Monthly content updates</div>
+                    <div class="hd-feat-row"><span class="hd-feat-check">✓</span>24/7 uptime monitoring</div>
+                  </div>
+                  <div class="hd-ssl">
+                    <div style="display:flex;flex-direction:column;gap:.06em">
+                      <div class="hd-ssl-grade">A+</div>
+                      <div class="hd-ssl-label">SSL Grade</div>
+                    </div>
+                    <div style="display:flex;flex-direction:column;gap:.07em;margin-left:.5em">
+                      <div class="hd-ssl-sub">TLS 1.3 · 256-bit encryption</div>
+                      <div class="hd-ssl-sub">Auto-renews March 2027</div>
+                      <div class="hd-billing-row" style="margin-top:.12em"><span class="hd-billing-key">Next invoice</span><span class="hd-billing-val">28 Jun 2026</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hd-col">
+                  <div class="hd-mini-label">Visitors this month</div>
+                  <div class="hd-sparkline">
+                    <div class="hd-sp-bar" style="height:38%"></div>
+                    <div class="hd-sp-bar" style="height:52%"></div>
+                    <div class="hd-sp-bar" style="height:44%"></div>
+                    <div class="hd-sp-bar" style="height:61%"></div>
+                    <div class="hd-sp-bar" style="height:55%"></div>
+                    <div class="hd-sp-bar" style="height:72%"></div>
+                    <div class="hd-sp-bar" style="height:68%"></div>
+                    <div class="hd-sp-bar hi" style="height:84%"></div>
+                    <div class="hd-sp-bar hi" style="height:100%"></div>
+                  </div>
+                  <div style="font-family:var(--font-d);font-size:.7em;font-weight:700;color:#fff;letter-spacing:-.02em;margin-top:.2em">
+                    1,847 <span style="font-size:.5em;font-weight:500;color:rgba(77,255,180,.78)">▲ 14%</span>
+                  </div>
+                  <div class="hd-perf-row">
+                    <div class="hd-perf-item">
+                      <span class="hd-perf-val">0.8s</span>
+                      <span class="hd-perf-key">Load Time</span>
+                    </div>
+                    <div class="hd-perf-div"></div>
+                    <div class="hd-perf-item">
+                      <span class="hd-perf-val">99.9%</span>
+                      <span class="hd-perf-key">Uptime</span>
+                    </div>
+                    <div class="hd-perf-div"></div>
+                    <div class="hd-perf-item">
+                      <span class="hd-perf-val">98</span>
+                      <span class="hd-perf-key">PageSpeed</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hd-infra-grid">
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-val">99.2%</span><span class="hd-ic-lbl">CDN Hit<br>Rate</span></div>
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-lbl">DNS<br>Propagated</span></div>
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-val">Warm</span><span class="hd-ic-lbl">Cache<br>Status</span></div>
+                <div class="hd-infra-cell"><span class="hd-ic-dot"></span><span class="hd-ic-lbl">Google<br>Indexed</span></div>
+              </div>
+              <div class="hd-bw-row">
+                <span class="hd-bw-lbl">BW</span>
+                <div class="hd-bw-bar"><div class="hd-bw-fill"></div></div>
+                <span class="hd-bw-lbl">3.2 / 100 GB</span>
+              </div>
+              <div class="hd-activity" style="flex-shrink:0">
+                <div class="hd-act-label">Recent Activity</div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-green"></span><span>SSL certificate renewed automatically</span><span>2d ago</span></div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-blue"></span><span>Full site backup completed</span><span>5d ago</span></div>
+                <div class="hd-act-row"><span class="hd-act-dot hd-act-gold"></span><span>Performance optimised — 0.8s load</span><span>1w ago</span></div>
+              </div>
+            </div>
+            <div class="pi-overlay" aria-hidden="true"></div>
+            <span class="pi-ghost" aria-hidden="true">02</span>
+            <div class="pi-info">
+              <p class="pi-cat">Web Design &amp; Dev</p>
+              <h3 class="pi-name">VAULT</h3>
+              <a class="pi-link" href="#" data-project="vault" aria-label="View VAULT project">View Project
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="pi" data-a>
+            <div class="pi-bg pi-site-flora" role="img" aria-label="FLORA — organic skincare product website">
+              <div class="fs-announce-bar">Earn double points this week &ensp;·&ensp; Free delivery over £60</div>
+              <div class="fs-nav">
+                <span class="fs-logo">FLORA</span>
+                <span class="fs-nav-items">Products&ensp;&nbsp;Our Story&ensp;&nbsp;Ingredients&ensp;&nbsp;Journal</span>
+                <span class="fs-cta-sm">Bag (2)</span>
+              </div>
+              <div class="fp-filter-row">
+                <span class="fp-filter-pill active">All</span>
+                <span class="fp-filter-pill">Serums</span>
+                <span class="fp-filter-pill">Oils</span>
+                <span class="fp-filter-pill">Mists</span>
+              </div>
+              <div class="fp-routine-row">
+                <span class="fp-routine-lbl">Build your morning routine →</span>
+                <span class="fp-routine-cta">From £109</span>
+              </div>
+              <div class="fp-grid" style="gap:.52em;padding:.38em 1em .4em;align-items:start">
+                <div class="fp-card">
+                  <span class="fp-badge">Bestseller</span>
+                  <div class="fp-bottle fp-bottle-a"></div>
+                  <p class="fp-brand">FLORA Skincare</p>
+                  <p class="fp-name">Dew Serum</p>
+                  <p class="fp-review">Lightweight hydration, all skin types</p>
+                  <p class="fp-ingr">Key: Hyaluronic Acid · Niacinamide</p>
+                  <div class="fp-star-row">
+                    <span class="fp-stars">★★★★★</span>
+                    <span class="fp-star-count">(412)</span>
+                  </div>
+                  <p class="fp-price">£48</p>
+                  <p class="fp-stock">● In stock</p>
+                  <div class="fp-qty-row"><span class="fp-qty-btn">−</span><span class="fp-qty-n">1</span><span class="fp-qty-btn">+</span></div>
+                  <span class="fp-add">Add to Bag →</span>
+                </div>
+                <div class="fp-card">
+                  <span class="fp-badge">New</span>
+                  <div class="fp-bottle fp-bottle-b"></div>
+                  <p class="fp-brand">FLORA Skincare</p>
+                  <p class="fp-name">Bloom Oil</p>
+                  <p class="fp-review">Nourishing rosehip facial oil</p>
+                  <p class="fp-ingr">Key: Rosehip Oil · Vitamin E</p>
+                  <div class="fp-star-row">
+                    <span class="fp-stars">★★★★★</span>
+                    <span class="fp-star-count">(287)</span>
+                  </div>
+                  <p class="fp-price">£62</p>
+                  <p class="fp-stock">● In stock</p>
+                  <div class="fp-qty-row"><span class="fp-qty-btn">−</span><span class="fp-qty-n">1</span><span class="fp-qty-btn">+</span></div>
+                  <span class="fp-add">Add to Bag →</span>
+                </div>
+                <div class="fp-card">
+                  <div class="fp-bottle fp-bottle-c" style="margin-top:1.5em"></div>
+                  <p class="fp-brand">FLORA Skincare</p>
+                  <p class="fp-name">Mist Toner</p>
+                  <p class="fp-review">Refreshing floral face mist</p>
+                  <p class="fp-ingr">Key: Rose Water · Aloe Vera</p>
+                  <div class="fp-star-row">
+                    <span class="fp-stars">★★★★☆</span>
+                    <span class="fp-star-count">(198)</span>
+                  </div>
+                  <p class="fp-price">£34</p>
+                  <p class="fp-stock" style="color:hsl(0,58%,52%)">● Low stock</p>
+                  <div class="fp-qty-row"><span class="fp-qty-btn">−</span><span class="fp-qty-n">1</span><span class="fp-qty-btn">+</span></div>
+                  <span class="fp-add">Add to Bag →</span>
+                </div>
+              </div>
+              <div class="fp-footer">
+                <div class="fs-badges">
+                  <span class="fs-badge">100% Natural</span>
+                  <span class="fs-badge">Vegan</span>
+                  <span class="fs-badge">Cruelty Free</span>
+                  <span class="fs-badge">B Corp</span>
+                </div>
+                <span class="fs-btn">Free Returns →</span>
+              </div>
+            </div>
+            <div class="pi-overlay" aria-hidden="true"></div>
+            <span class="pi-ghost" aria-hidden="true">03</span>
+            <div class="pi-info">
+              <p class="pi-cat">Packaging &amp; Strategy</p>
+              <h3 class="pi-name">FLORA</h3>
+              <a class="pi-link" href="#" data-project="flora" aria-label="View FLORA project">View Project
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-labelledby="svc-h2">
+      <div class="wrap">
+        <div class="svc-left">
+          <p class="sec-label">What We Do</p>
+          <h2 id="svc-h2" class="svc-heading" data-a>Top designers,<br><em style="color:var(--gold-antique);font-style:normal">excellent and affordable.</em></h2>
+          <p class="svc-intro" data-a>Three steps to a website that works for you — delivered fast and hosted for <strong style="color:var(--gold-light);font-weight:700">£60 per month</strong>.</p>
+        </div>
+        <ul class="svc-steps">
+          <li class="svc-step" data-a>
+            <span class="svc-step-num">01</span>
+            <div class="svc-step-body">
+              <h3 class="svc-step-name">Tell us what you want.</h3>
+              <p class="svc-step-desc">No briefs, no forms, no jargon. Just tell us about your project — what you're building, who it's for, and what you need. We take it from there.</p>
+            </div>
+          </li>
+          <li class="svc-step" data-a>
+            <span class="svc-step-num">02</span>
+            <div class="svc-step-body">
+              <h3 class="svc-step-name">We bring your vision to life.</h3>
+              <p class="svc-step-desc">Your website, designed and built to a world-class standard. Fast delivery without cutting corners — every project gets the full treatment.</p>
+            </div>
+          </li>
+          <li class="svc-step" data-a>
+            <span class="svc-step-num">03</span>
+            <div class="svc-step-body">
+              <h3 class="svc-step-name">You use it stress free.</h3>
+              <p class="svc-step-desc">We host it for you, keep it updated, and make sure it runs perfectly — forever. All for <strong>£60 per month</strong>. No surprises. No technical headaches. Just your site, always on.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" aria-labelledby="proc-h2">
+      <div class="wrap">
+        <p class="sec-label">How We Work</p>
+        <h2 id="proc-h2" class="sr">How We Work</h2>
+        <div class="proc-grid">
+          <div class="proc-step" data-a>
+            <p class="proc-num">01 — Discovery</p>
+            <h3 class="proc-name">We listen before we look.</h3>
+            <p class="proc-desc">Deep-dive workshop to understand your business, audience, competitors, and ambitions.</p>
+            <span class="proc-ghost" aria-hidden="true">01</span>
+          </div>
+          <div class="proc-step" data-a>
+            <p class="proc-num">02 — Strategy</p>
+            <h3 class="proc-name">Position before design.</h3>
+            <p class="proc-desc">Messaging, naming, brand story, and visual direction agreed before a pixel is placed.</p>
+            <span class="proc-ghost" aria-hidden="true">02</span>
+          </div>
+          <div class="proc-step" data-a>
+            <p class="proc-num">03 — Launch</p>
+            <h3 class="proc-name">Ship. Support. Sustain.</h3>
+            <p class="proc-desc">Launch support, handoff documentation, and optional retainer to keep momentum.</p>
+            <span class="proc-ghost" aria-hidden="true">03</span>
+          </div>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"They delivered our website with remarkable speed — and it exceeded every expectation. The hosting is completely hands-off — we've never had to think about it."</p>
+            <div><p class="testi-by">Sarah M.</p><p class="testi-co">Founder, Ember Candles</p></div>
+          </div>
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"We had reservations about how swiftly they could deliver — but the result was truly extraordinary. Our enquiries tripled in the first month."</p>
+            <div><p class="testi-by">James O.</p><p class="testi-co">Director, Orion Legal</p></div>
+          </div>
+          <div class="testi-card" data-a>
+            <span class="testi-stars">★★★★★</span>
+            <p class="testi-q">"The £60 a month feels like a joke for what you get. Everything is taken care of and the site looks absolutely flawless."</p>
+            <div><p class="testi-by">Priya K.</p><p class="testi-co">CEO, Sage Studio</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-h2">
+      <div class="wrap">
+        <div>
+          <p class="sec-label">Our Aims</p>
+          <blockquote class="about-quote" data-a>
+            Built around<br>your brand.<br><em style="color:var(--gold-antique);font-style:normal">always.</em>
+          </blockquote>
+        </div>
+        <div>
+          <h2 id="about-h2" class="sr">About Form &amp; Forge</h2>
+          <p class="about-body" data-a>Form &amp; Forge is a premium website designer based in London. Everything we build is guided by four principles.</p>
+          <div class="aims-grid" data-a>
+            <div class="aim-item aim-item--featured">
+              <span class="aim-num">01</span>
+              <div>
+                <p class="aim-name">Affordable</p>
+                <p class="aim-desc">World-class results at a price that makes sense for your business.</p>
+              </div>
+              <span class="aim-ghost" aria-hidden="true">01</span>
+            </div>
+            <div class="aim-item aim-item--featured">
+              <span class="aim-num">02</span>
+              <div>
+                <p class="aim-name">Luxury</p>
+                <p class="aim-desc">Every detail crafted to the standard of the world's finest brands.</p>
+              </div>
+              <span class="aim-ghost" aria-hidden="true">02</span>
+            </div>
+            <div class="aim-item aim-item--featured">
+              <span class="aim-num">03</span>
+              <div>
+                <p class="aim-name">Efficient</p>
+                <p class="aim-desc">Built and delivered on time, every time. No delays, no excuses.</p>
+              </div>
+              <span class="aim-ghost" aria-hidden="true">03</span>
+            </div>
+            <div class="aim-item aim-item--featured">
+              <span class="aim-num">04</span>
+              <div>
+                <p class="aim-name">Premium &amp; World-Class</p>
+                <p class="aim-desc">Designed to compete with the best websites on the internet.</p>
+              </div>
+              <span class="aim-ghost" aria-hidden="true">04</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-h2">
+      <div class="wrap">
+        <p class="sec-label">Get in Touch</p>
+        <h2 id="contact-h2" class="contact-mega" aria-label="Let's build something.">
+          Let's build<br><em>something.</em>
+        </h2>
+        <div class="contact-body">
+          <div>
+            <p class="cd-label" style="font-size:.9rem;letter-spacing:.18em;margin-bottom:var(--sp6)">Contact Us</p>
+            <div class="contact-details" data-a>
+              <div>
+                <p class="cd-label">Email</p>
+                <a class="cd-val" href="mailto:zac@formandforge.co.uk">zac@formandforge.co.uk</a>
+              </div>
+              <div>
+                <p class="cd-label">Phone</p>
+                <p class="cd-val">Available on request</p>
+              </div>
+              <div>
+                <p class="cd-label">Based in</p>
+                <p class="cd-val">London, England — Working globally</p>
+              </div>
+            </div>
+          </div>
+          <form class="c-form" action="#" method="post" aria-label="Project enquiry" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4)">
+              <div class="fg">
+                <label for="f-fname">First Name</label>
+                <input type="text" id="f-fname" name="first_name" placeholder="Alex" autocomplete="given-name" required />
+              </div>
+              <div class="fg">
+                <label for="f-lname">Last Name</label>
+                <input type="text" id="f-lname" name="last_name" placeholder="Rivera" autocomplete="family-name" required />
+              </div>
+            </div>
+            <div class="fg">
+              <label for="f-email">Work Email</label>
+              <input type="email" id="f-email" name="email" placeholder="alex@company.com" autocomplete="email" required />
+              <span class="fg-hint">We'll never share this. Ever.</span>
+            </div>
+            <div class="fg">
+              <label for="f-msg">Tell us about your project</label>
+              <textarea id="f-msg" name="message" placeholder="Give us as much detail as you can — colours, fonts, target audience, examples of similar websites you like the look of. An online shop? Tell us your aims and objectives, e.g. more sales, more enquiries." required></textarea>
+            </div>
+            <button type="submit" class="c-btn" data-magnetic>
+              Send enquiry
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-inner">
+        <div class="foot-logo"><span class="foot-dot" aria-hidden="true"></span>Form &amp; Forge</div>
+        <p class="foot-copy">© 2026 Form &amp; Forge Studio. All rights reserved.</p>
+        <ul class="foot-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script>
+  /* ── Project modals ──────────────────────────────────────── */
+  (function(){
+    const modal    = document.getElementById('proj-modal');
+    const closeBtn = document.getElementById('proj-close');
+    if (!modal) return;
+    function openModal(id) {
+      document.querySelectorAll('.proj-page').forEach(p => p.classList.remove('active'));
+      const page = document.getElementById('proj-' + id);
+      if (page) page.classList.add('active');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      modal.scrollTop = 0;
+      closeBtn.focus();
+    }
+    function closeModal() {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    document.querySelectorAll('.pi-link[data-project]').forEach(link => {
+      link.addEventListener('click', e => { e.preventDefault(); openModal(link.dataset.project); });
+    });
+    closeBtn.addEventListener('click', closeModal);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  })();
+
+  /* ── Intro animation ─────────────────────────────────────── */
+  (function(){
+    const noMo = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+    const top   = document.getElementById('intro-top');
+    const bot   = document.getElementById('intro-bot');
+    const inner = document.querySelector('.intro-inner');
+    if (!top || !bot || !inner) return;
+    if (noMo) { top.remove(); bot.remove(); inner.remove(); return; }
+    const line = inner.querySelector('.intro-line');
+    const txt  = inner.querySelector('.intro-txt');
+    const sub  = inner.querySelector('.intro-sub');
+    setTimeout(() => line.classList.add('on'), 300);
+    setTimeout(() => txt.classList.add('on'),  700);
+    setTimeout(() => sub.classList.add('on'),  1000);
+    setTimeout(() => inner.classList.add('out'), 3000);
+    setTimeout(() => {
+      top.classList.add('out');
+      bot.classList.add('out');
+    }, 3100);
+    setTimeout(() => { top.remove(); bot.remove(); inner.remove(); }, 4800);
+  })();
+
+  /* ── Lenis ───────────────────────────────────────────────── */
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  });
+  (function raf(t){ lenis.raf(t); requestAnimationFrame(raf); })(0);
+
+  /* ── Anchor scroll ───────────────────────────────────────── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (!t) return;
+      e.preventDefault();
+      lenis.scrollTo(t, { offset:-72, duration:1.4 });
+      history.pushState(null, '', a.getAttribute('href'));
+    });
+  });
+
+  /* ── Sticky header ───────────────────────────────────────── */
+  const hdr = document.getElementById('hdr');
+  let lastY = 0;
+  lenis.on('scroll', ({ scroll }) => {
+    hdr.classList.toggle('scrolled', scroll > 60);
+    hdr.classList.toggle('hidden', scroll > lastY && scroll > 300);
+    lastY = Math.max(scroll, 0);
+  });
+
+  /* ── Custom cursor ───────────────────────────────────────── */
+  const noHover = window.matchMedia('(hover:none)').matches;
+  const noMo    = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const dot  = document.getElementById('cur-dot');
+  const ring = document.getElementById('cur-ring');
+  if (noHover) { dot.style.display = ring.style.display = 'none'; }
+  else {
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove', e => {
+      mx=e.clientX; my=e.clientY;
+      dot.style.left=mx+'px'; dot.style.top=my+'px';
+    });
+    (function ani(){
+      rx+=(mx-rx)*.1; ry+=(my-ry)*.1;
+      ring.style.left=rx+'px'; ring.style.top=ry+'px';
+      requestAnimationFrame(ani);
+    })();
+    document.querySelectorAll('a,button').forEach(el=>{
+      el.addEventListener('mouseenter',()=>{
+        dot.style.width=dot.style.height='14px';
+        ring.style.width=ring.style.height='58px';
+      });
+      el.addEventListener('mouseleave',()=>{
+        dot.style.width=dot.style.height='8px';
+        ring.style.width=ring.style.height='36px';
+      });
+    });
+    document.documentElement.style.cursor='none';
+    document.querySelectorAll('a,button').forEach(el=>el.style.cursor='none');
+  }
+
+  /* ── Hero entrance ───────────────────────────────────────── */
+  const _hd = window.matchMedia('(prefers-reduced-motion:reduce)').matches ? 0 : 3100;
+  setTimeout(()=>document.getElementById('eyebrow').classList.add('go'), _hd + 100);
+  document.querySelectorAll('.hero-word').forEach(w=>{
+    setTimeout(()=>w.classList.add('go'), _hd + +w.dataset.d);
+  });
+
+  /* ── Parallax on "worth" ─────────────────────────────────── */
+  if (!noMo) {
+  }
+
+  /* ── Scroll reveal ───────────────────────────────────────── */
+  const ro = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('on'), i * 75);
+        ro.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('[data-a]').forEach(el => ro.observe(el));
+
+  /* ── Wave on service titles ──────────────────────────────── */
+  document.querySelectorAll('[data-wave]').forEach(el => {
+    el.innerHTML = [...el.textContent].map((ch, i) =>
+      ch === ' ' ? ' ' :
+      `<span style="display:inline-block;transition:transform 300ms cubic-bezier(.34,1.56,.64,1) ${i*22}ms,color 280ms ease ${i*18}ms">${ch}</span>`
+    ).join('');
+    const spans = el.querySelectorAll('span');
+    const row   = el.closest('.svc-row');
+    row.addEventListener('mouseenter', () =>
+      spans.forEach(s => { s.style.transform='translateY(-3px)'; s.style.color='var(--gold)'; }));
+    row.addEventListener('mouseleave', () =>
+      spans.forEach(s => { s.style.transform=''; s.style.color=''; }));
+  });
+
+  /* ── Magnetic button ─────────────────────────────────────── */
+  document.querySelectorAll('[data-magnetic]').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width/2) * .25;
+      const y = (e.clientY - r.top  - r.height/2) * .25;
+      btn.style.transition = 'transform .1s ease';
+      btn.style.transform  = `translate(${x}px,${y}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transition = 'transform .5s cubic-bezier(.34,1.56,.64,1)';
+      btn.style.transform  = '';
+    });
+  });
+  </script>
+</body>
+</html>
