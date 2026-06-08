@@ -402,7 +402,7 @@
       gap:var(--sp4); margin-bottom:var(--sp4);
     }
     .proc-step {
-      padding:var(--sp8) var(--sp7);
+      padding:var(--sp12) var(--sp10);
       border:1px solid var(--gold-border);
       border-radius:var(--rad-lg);
       background:var(--bg-2);
@@ -410,11 +410,14 @@
       transition:border-color 300ms var(--ease), background 300ms var(--ease), transform 300ms var(--ease);
     }
     .proc-step:hover {
-      background:var(--bg-3);
-      border-color:var(--gold-border);
-      border-top-color:var(--gold);
+      background:var(--gold);
+      border-color:var(--gold);
       transform:translateY(-3px);
     }
+    .proc-step:hover .proc-num { color:var(--bg); }
+    .proc-step:hover .proc-name { color:var(--bg); }
+    .proc-step:hover .proc-desc { color:var(--bg); opacity:.85; }
+    .proc-step:hover .proc-ghost { color:hsl(0 0% 0%/.12); transform:scale(1.06); }
     .proc-ghost {
       position:absolute; bottom:-.1em; right:-.02em;
       font-family:var(--font-d); font-size:clamp(6rem,11vw,10rem);
@@ -422,7 +425,6 @@
       pointer-events:none; letter-spacing:-.05em;
       transition:color 400ms, transform 400ms var(--ease);
     }
-    .proc-step:hover .proc-ghost { color:hsl(43 60% 52%/.14); transform:scale(1.06); }
     .proc-num {
       font-size:.6rem; font-weight:700; letter-spacing:.14em;
       text-transform:uppercase; color:var(--gold); margin-bottom:var(--sp5);
