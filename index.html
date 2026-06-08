@@ -1340,7 +1340,8 @@
 
     /* ─── TESTIMONIALS ──────────────────────────────────────── */
     .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp6); margin-bottom:var(--sp12); }
-    .testi-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); }
+    .testi-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); transition:background 300ms var(--ease),border-color 300ms var(--ease),transform 300ms var(--ease); }
+    .testi-card:hover { background:hsl(43,45%,10%); border-color:hsl(43,60%,52%,.5); transform:translateY(-3px); }
     .testi-stars { color:var(--gold); font-size:.95rem; letter-spacing:.06em; }
     .testi-q { font-family:var(--font-d); font-size:clamp(.9rem,1.3vw,1.05rem); font-style:italic; line-height:1.65; color:var(--text); flex:1; }
     .testi-by { font-size:.8rem; font-weight:600; color:var(--text-2); margin-bottom:.1rem; }
