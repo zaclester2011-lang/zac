@@ -1397,7 +1397,12 @@
     .pricing-hed em { font-style:normal; font-weight:600; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.08em; display:inline-block; }
 
     .pricing-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp6); align-items:stretch; }
-    @media(max-width:700px){ .pricing-grid { grid-template-columns:1fr; } }
+    @media(max-width:700px){
+      .pricing-grid { grid-template-columns:1fr; }
+      .pricing-hdr { display:none !important; }
+      .addons-wrap { margin-top:var(--sp12); padding-top:var(--sp10); border-top:1px solid var(--gold-border); position:relative; }
+      .addons-wrap::before { content:'Optional Upgrades'; display:block; font-family:var(--font-d); font-size:clamp(1.5rem,6vw,2rem); font-weight:800; letter-spacing:-.03em; color:var(--gold-light); margin-bottom:var(--sp8); }
+    }
 
     .pkg-card {
       background:var(--bg-2); border:1px solid var(--gold-border);
@@ -2150,7 +2155,7 @@
       <div class="wrap">
         <p class="sec-label" data-a>Our Prices</p>
         <h2 id="pricing-h2" class="pricing-hed" data-a>Clear pricing.<br><em>No surprises.</em></h2>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp6);margin-bottom:var(--sp6);align-items:end">
+        <div class="pricing-hdr" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp6);margin-bottom:var(--sp6);align-items:end">
           <div></div>
           <p class="addons-label">Optional Upgrades</p>
         </div>
