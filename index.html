@@ -444,8 +444,9 @@
       transition:border-color 300ms var(--ease), background 300ms var(--ease), transform 300ms var(--ease);
     }
     .proc-step:hover {
-      background:hsl(43,45%,10%);
-      border-color:hsl(43,60%,52%,.5);
+      background:hsl(43,40%,9%);
+      border-color:hsl(43,72%,60%/.5);
+      border-top-color:hsl(43,80%,65%);
       transform:translateY(-3px);
     }
     .proc-step:hover .proc-ghost { color:hsl(43 60% 52%/.12); transform:scale(1.06); }
@@ -492,7 +493,7 @@
       border:1px solid var(--border); border-radius:var(--rad-xl);
       transition:border-color 300ms var(--ease), background 300ms var(--ease);
     }
-    .aim-item:hover { border-color:var(--gold-border); background:var(--gold-dim); }
+    .aim-item:hover { border-color:hsl(43,72%,60%/.5); background:hsl(43,40%,9%); }
     .aim-num { font-family:var(--font-d); font-size:.75rem; font-weight:700; color:var(--gold); letter-spacing:.06em; flex-shrink:0; padding-top:.1rem; }
     .aim-name { font-size:.92rem; font-weight:600; color:var(--text); margin-bottom:.3rem; }
     .aim-desc { font-size:.78rem; color:var(--text-2); line-height:1.65; }
@@ -2182,6 +2183,17 @@
 
             <div class="addon-card">
               <div>
+                <p class="addon-name" data-addon-wave>Online Shop</p>
+                <ul class="addon-list">
+                  <li>A fully integrated online shop built into your website.</li>
+                  <li>Sell products. Look premium. No separate platform needed.</li>
+                </ul>
+              </div>
+              <p class="addon-price">£19<span>/mo</span></p>
+            </div>
+
+            <div class="addon-card">
+              <div>
                 <p class="addon-name" data-addon-wave>Additional Updates</p>
                 <ul class="addon-list">
                   <li>Two free updates included every year on top of your original website.</li>
@@ -2262,13 +2274,26 @@
                 <a class="cd-val" href="mailto:zac@formandforge.co.uk">zac@formandforge.co.uk</a>
               </div>
               <div>
+                <p class="cd-label">Phone</p>
+                <a class="cd-val" href="tel:+447597626748" style="white-space:nowrap">+44 7597 626 748</a>
+              </div>
+              <div>
                 <p class="cd-label">Based in</p>
                 <p class="cd-val">London, England — Working globally</p>
               </div>
             </div>
-            <div style="margin-top:var(--sp16);">
-              <p class="cd-label" style="font-size:.95rem;letter-spacing:.18em;margin-bottom:var(--sp2)">Explore our work on Instagram</p>
-              <a class="cd-val" href="https://www.instagram.com/form.andforge/" target="_blank" rel="noopener noreferrer">@form.andforge</a>
+            <div style="margin-top:var(--sp10)">
+              <p class="cd-label" style="font-size:.9rem;letter-spacing:.18em;margin-bottom:var(--sp6)">Follow Our Work on Social Media</p>
+              <div class="contact-details">
+                <div>
+                  <p class="cd-label">Instagram</p>
+                  <a class="cd-val" href="https://www.instagram.com/form.andforge/" target="_blank" rel="noopener noreferrer">@form.andforge</a>
+                </div>
+                <div>
+                  <p class="cd-label">LinkedIn</p>
+                  <a class="cd-val" href="https://www.linkedin.com/in/form-forge-5b32a7415/" target="_blank" rel="noopener noreferrer">Form &amp; Forge</a>
+                </div>
+              </div>
             </div>
           </div>
           <form class="c-form" id="enquiry-form" action="https://formspree.io/f/xykakqay" method="post" aria-label="Project enquiry" novalidate>
@@ -2312,8 +2337,8 @@
         <p class="foot-copy">© 2026 Form &amp; Forge Studio. All rights reserved.</p>
         <ul class="foot-links">
           <li><a href="#">Privacy</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/form.andforge/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/form-forge-5b32a7415/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
       </div>
     </div>
@@ -2408,7 +2433,7 @@
       dot.style.left=mx+'px'; dot.style.top=my+'px';
     });
     (function ani(){
-      rx+=(mx-rx)*.1; ry+=(my-ry)*.1;
+      rx+=(mx-rx)*.2; ry+=(my-ry)*.2;
       ring.style.left=rx+'px'; ring.style.top=ry+'px';
       requestAnimationFrame(ani);
     })();
