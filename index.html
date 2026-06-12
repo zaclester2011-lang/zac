@@ -127,11 +127,11 @@
     /* ─── CURSOR ─────────────────────────────────────────────── */
     #cur-dot {
       position:fixed; width:10px; height:10px;
-      background:hsl(0,0%,100%);
+      background:var(--gold-light);
       border-radius:50%; pointer-events:none; z-index:99999;
       transform:translate(-50%,-50%);
       transition:width 250ms var(--ease), height 250ms var(--ease), background 250ms;
-      box-shadow:0 0 6px hsl(43,72%,65%/.6);
+      box-shadow:0 0 8px hsl(43,72%,65%/.7);
     }
     #cur-ring {
       position:fixed; width:38px; height:38px;
@@ -388,7 +388,7 @@
     }
     .svc-heading em { font-weight:600; font-style:normal; }
     .svc-intro { color:var(--text); font-size:.95rem; line-height:1.75; max-width:360px; display:inline-block; border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:.9rem 1.2rem; background:var(--gold-dim); transition:border-color 300ms var(--ease),background 300ms var(--ease),color 300ms var(--ease); }
-    .svc-intro:hover { border-color:hsl(43,72%,60%/.6); background:hsl(43,60%,52%,.16); color:var(--gold-light); }
+    .svc-intro:hover { border-color:hsl(43,80%,65%); background:hsl(43,60%,52%,.25); color:var(--gold-light); box-shadow:0 0 24px hsl(43,60%,52%/.15); }
 
     .svc-list { list-style:none; }
     .svc-row {
@@ -1390,7 +1390,7 @@
     .pricing-hed { font-family:var(--font-d); font-size:clamp(2.4rem,4.5vw,4.5rem); font-weight:300; letter-spacing:.01em; line-height:1.1; font-style:italic; margin-bottom:var(--sp16); color:hsl(0,0%,96%); }
     .pricing-hed em { font-style:normal; font-weight:600; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.08em; display:inline-block; }
 
-    .pricing-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp6); align-items:start; }
+    .pricing-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp6); align-items:stretch; }
     @media(max-width:700px){ .pricing-grid { grid-template-columns:1fr; } }
 
     .pkg-card {
@@ -1409,10 +1409,10 @@
     .pkg-amount { font-family:var(--font-d); font-size:clamp(4rem,8vw,6rem); font-weight:800; letter-spacing:-.05em; line-height:1; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; }
     .pkg-period { font-family:var(--font-b); font-size:.95rem; color:var(--gold); letter-spacing:.02em; transition:color 300ms; }
     .pkg-divider { width:100%; height:1px; background:linear-gradient(to right,transparent,var(--gold-border),transparent); margin-bottom:var(--sp8); transition:background 300ms; }
-    .pkg-features { list-style:none; display:flex; flex-direction:column; gap:var(--sp4); }
+    .pkg-features { list-style:none; display:flex; flex-direction:column; gap:var(--sp4); flex:1; justify-content:flex-end; }
     .pkg-features li { display:flex; align-items:center; gap:var(--sp4); font-family:var(--font-b); font-size:.95rem; color:var(--gold); line-height:1.5; transition:color 300ms; }
     .pkg-features li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; transition:background 300ms; }
-    .pkg-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp10); position:relative; overflow:hidden; transition:border-color 300ms,box-shadow 300ms; cursor:default; }
+    .pkg-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp10); position:relative; overflow:hidden; transition:border-color 300ms,box-shadow 300ms; cursor:default; display:flex; flex-direction:column; }
     .pkg-card::before { content:''; position:absolute; inset:0; border-radius:inherit; background:linear-gradient(135deg,hsl(43,60%,52%,.07) 0%,transparent 60%); pointer-events:none; }
     .pkg-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 40px hsl(43,60%,52%,.15); }
     .pkg-card:hover .pkg-free,
