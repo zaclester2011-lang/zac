@@ -126,17 +126,19 @@
 
     /* ─── CURSOR ─────────────────────────────────────────────── */
     #cur-dot {
-      position:fixed; width:8px; height:8px; background:var(--gold);
+      position:fixed; width:10px; height:10px;
+      background:hsl(0,0%,100%);
       border-radius:50%; pointer-events:none; z-index:99999;
-      transform:translate(-50%,-50%); mix-blend-mode:multiply;
-      transition:width 300ms var(--ease), height 300ms var(--ease);
+      transform:translate(-50%,-50%);
+      transition:width 250ms var(--ease), height 250ms var(--ease), background 250ms;
+      box-shadow:0 0 6px hsl(43,72%,65%/.6);
     }
     #cur-ring {
-      position:fixed; width:36px; height:36px;
-      border:1.5px solid hsl(43 60% 52%/.45);
+      position:fixed; width:38px; height:38px;
+      border:1.5px solid hsl(43,72%,65%/.7);
       border-radius:50%; pointer-events:none; z-index:99998;
       transform:translate(-50%,-50%);
-      transition:width 300ms var(--ease), height 300ms var(--ease), opacity 300ms;
+      transition:width 300ms var(--ease), height 300ms var(--ease), opacity 300ms, border-color 300ms;
     }
 
     /* ─── LAYOUT ─────────────────────────────────────────────── */
@@ -385,7 +387,8 @@
       color:var(--cream);
     }
     .svc-heading em { font-weight:600; font-style:normal; }
-    .svc-intro { color:var(--text); font-size:.95rem; line-height:1.75; max-width:360px; display:inline-block; border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:.9rem 1.2rem; background:var(--gold-dim); }
+    .svc-intro { color:var(--text); font-size:.95rem; line-height:1.75; max-width:360px; display:inline-block; border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:.9rem 1.2rem; background:var(--gold-dim); transition:border-color 300ms var(--ease),background 300ms var(--ease),color 300ms var(--ease); }
+    .svc-intro:hover { border-color:hsl(43,72%,60%/.6); background:hsl(43,60%,52%,.16); color:var(--gold-light); }
 
     .svc-list { list-style:none; }
     .svc-row {
@@ -1419,20 +1422,18 @@
     .pkg-card:hover .pkg-divider { background:linear-gradient(to right,transparent,var(--gold),transparent); }
     .pkg-card:hover .pkg-badge { background:var(--gold); color:var(--bg); border-color:var(--gold); }
 
-    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp10); }
+    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp5); }
     .addons-label { font-family:var(--font-d); font-size:clamp(1.5rem,2.5vw,2.4rem); font-weight:800; letter-spacing:-.03em; line-height:1; color:var(--gold-light); display:inline-block; cursor:default; }
-    .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp10) var(--sp10); display:flex; align-items:center; justify-content:space-between; gap:var(--sp8); transition:border-color 300ms,box-shadow 300ms; cursor:default; }
-    .addon-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 30px hsl(43,60%,52%,.12); }
-    .addon-name { font-family:var(--font-d); font-size:clamp(1.6rem,2.5vw,2.2rem); font-weight:700; letter-spacing:-.02em; color:var(--gold); margin-bottom:var(--sp3); transition:color 300ms; }
-    .addon-desc { font-family:var(--font-b); font-size:1rem; color:var(--gold); line-height:1.7; max-width:300px; transition:color 300ms; opacity:.75; }
-    .addon-list { list-style:none; display:flex; flex-direction:column; gap:var(--sp3); margin-top:var(--sp3); }
-    .addon-list li { display:flex; align-items:flex-start; gap:var(--sp3); font-family:var(--font-b); font-size:1rem; color:var(--gold); line-height:1.6; opacity:.75; transition:color 250ms,opacity 250ms; }
-    .addon-list li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; margin-top:.55em; transition:background 250ms; }
-    .addon-card:hover .addon-name,
-    .addon-card:hover .addon-list li { color:var(--gold-light); opacity:1; }
-    .addon-card:hover .addon-list li::before { background:var(--gold-light); }
-    .addon-price { font-family:var(--font-d); font-size:clamp(2.2rem,3.5vw,3rem); font-weight:800; letter-spacing:-.04em; white-space:nowrap; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; flex-shrink:0; }
-    .addon-price span { font-size:.38em; color:var(--gold); -webkit-text-fill-color:var(--gold); letter-spacing:.04em; }
+    .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp7) var(--sp8); display:flex; align-items:center; justify-content:space-between; gap:var(--sp6); transition:border-color 300ms,box-shadow 300ms,background 300ms; cursor:default; }
+    .addon-card:hover { border-color:hsl(43,80%,65%); box-shadow:0 0 0 1px hsl(43,80%,65%),0 0 30px hsl(43,72%,58%/.18); background:hsl(43,40%,9%); }
+    .addon-name { font-family:var(--font-d); font-size:clamp(1.2rem,1.8vw,1.6rem); font-weight:700; letter-spacing:-.02em; color:var(--gold-light); margin-bottom:var(--sp2); transition:color 300ms; }
+    .addon-list { list-style:none; display:flex; flex-direction:column; gap:var(--sp2); margin-top:var(--sp2); }
+    .addon-list li { display:flex; align-items:flex-start; gap:var(--sp3); font-family:var(--font-b); font-size:.85rem; color:var(--text-2); line-height:1.6; transition:color 250ms; }
+    .addon-list li::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0; margin-top:.58em; }
+    .addon-card:hover .addon-name { color:hsl(43,85%,72%); }
+    .addon-card:hover .addon-list li { color:var(--text); }
+    .addon-price { font-family:var(--font-d); font-size:clamp(1.8rem,2.8vw,2.4rem); font-weight:800; letter-spacing:-.04em; white-space:nowrap; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; flex-shrink:0; }
+    .addon-price span { font-size:.42em; color:var(--gold); -webkit-text-fill-color:var(--gold); letter-spacing:.04em; }
 
   </style>
 </head>
@@ -2200,7 +2201,7 @@
                   <li>Need more? Any extra changes are just £99 flat — no hourly rates.</li>
                 </ul>
               </div>
-              <p class="addon-price" style="font-size:clamp(2.8rem,4.5vw,3.8rem)">2<span> free/yr</span></p>
+              <p class="addon-price">2<span> free/yr</span></p>
             </div>
           </div>
 
