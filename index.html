@@ -388,7 +388,7 @@
     }
     .svc-heading em { font-weight:600; font-style:normal; }
     .svc-intro { color:var(--text); font-size:.95rem; line-height:1.75; max-width:360px; display:inline-block; border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:.9rem 1.2rem; background:var(--gold-dim); transition:border-color 300ms var(--ease),background 300ms var(--ease),color 300ms var(--ease); }
-    .svc-intro:hover { border-color:hsl(43,80%,65%); background:hsl(43,60%,52%,.25); color:var(--gold-light); box-shadow:0 0 24px hsl(43,60%,52%/.15); }
+    .svc-intro:hover { border-color:hsl(43,72%,60%/.6); background:hsl(43,60%,52%,.18); color:var(--text); box-shadow:0 0 20px hsl(43,60%,52%/.12); }
 
     .svc-list { list-style:none; }
     .svc-row {
@@ -1409,10 +1409,10 @@
     .pkg-amount { font-family:var(--font-d); font-size:clamp(4rem,8vw,6rem); font-weight:800; letter-spacing:-.05em; line-height:1; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; }
     .pkg-period { font-family:var(--font-b); font-size:.95rem; color:var(--gold); letter-spacing:.02em; transition:color 300ms; }
     .pkg-divider { width:100%; height:1px; background:linear-gradient(to right,transparent,var(--gold-border),transparent); margin-bottom:var(--sp8); transition:background 300ms; }
-    .pkg-features { list-style:none; display:flex; flex-direction:column; gap:var(--sp4); flex:1; justify-content:flex-end; }
+    .pkg-features { list-style:none; display:flex; flex-direction:column; gap:var(--sp4); }
     .pkg-features li { display:flex; align-items:center; gap:var(--sp4); font-family:var(--font-b); font-size:.95rem; color:var(--gold); line-height:1.5; transition:color 300ms; }
     .pkg-features li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; transition:background 300ms; }
-    .pkg-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp10); position:relative; overflow:hidden; transition:border-color 300ms,box-shadow 300ms; cursor:default; display:flex; flex-direction:column; }
+    .pkg-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp10); position:relative; overflow:hidden; transition:border-color 300ms,box-shadow 300ms; cursor:default; }
     .pkg-card::before { content:''; position:absolute; inset:0; border-radius:inherit; background:linear-gradient(135deg,hsl(43,60%,52%,.07) 0%,transparent 60%); pointer-events:none; }
     .pkg-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 40px hsl(43,60%,52%,.15); }
     .pkg-card:hover .pkg-free,
@@ -1422,17 +1422,17 @@
     .pkg-card:hover .pkg-divider { background:linear-gradient(to right,transparent,var(--gold),transparent); }
     .pkg-card:hover .pkg-badge { background:var(--gold); color:var(--bg); border-color:var(--gold); }
 
-    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp5); }
+    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp6); }
     .addons-label { font-family:var(--font-d); font-size:clamp(1.5rem,2.5vw,2.4rem); font-weight:800; letter-spacing:-.03em; line-height:1; color:var(--gold-light); display:inline-block; cursor:default; }
-    .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp7) var(--sp8); display:flex; align-items:center; justify-content:space-between; gap:var(--sp6); transition:border-color 300ms,box-shadow 300ms,background 300ms; cursor:default; }
+    .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp9) var(--sp9); display:flex; align-items:center; justify-content:space-between; gap:var(--sp8); transition:border-color 300ms,box-shadow 300ms,background 300ms; cursor:default; }
     .addon-card:hover { border-color:hsl(43,80%,65%); box-shadow:0 0 0 1px hsl(43,80%,65%),0 0 30px hsl(43,72%,58%/.18); background:hsl(43,40%,9%); }
-    .addon-name { font-family:var(--font-d); font-size:clamp(1.2rem,1.8vw,1.6rem); font-weight:700; letter-spacing:-.02em; color:var(--gold-light); margin-bottom:var(--sp2); transition:color 300ms; }
-    .addon-list { list-style:none; display:flex; flex-direction:column; gap:var(--sp2); margin-top:var(--sp2); }
-    .addon-list li { display:flex; align-items:flex-start; gap:var(--sp3); font-family:var(--font-b); font-size:.85rem; color:var(--text-2); line-height:1.6; transition:color 250ms; }
+    .addon-name { font-family:var(--font-d); font-size:clamp(1.4rem,2.2vw,2rem); font-weight:700; letter-spacing:-.02em; color:var(--gold-light); margin-bottom:var(--sp3); transition:color 300ms; }
+    .addon-list { list-style:none; display:flex; flex-direction:column; gap:var(--sp2); margin-top:var(--sp3); }
+    .addon-list li { display:flex; align-items:flex-start; gap:var(--sp3); font-family:var(--font-b); font-size:.9rem; color:var(--text-2); line-height:1.6; transition:color 250ms; }
     .addon-list li::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0; margin-top:.58em; }
     .addon-card:hover .addon-name { color:hsl(43,85%,72%); }
     .addon-card:hover .addon-list li { color:var(--text); }
-    .addon-price { font-family:var(--font-d); font-size:clamp(1.8rem,2.8vw,2.4rem); font-weight:800; letter-spacing:-.04em; white-space:nowrap; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; flex-shrink:0; }
+    .addon-price { font-family:var(--font-d); font-size:clamp(2rem,3.2vw,2.8rem); font-weight:800; letter-spacing:-.04em; white-space:nowrap; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; flex-shrink:0; }
     .addon-price span { font-size:.42em; color:var(--gold); -webkit-text-fill-color:var(--gold); letter-spacing:.04em; }
 
   </style>
