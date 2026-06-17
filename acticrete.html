@@ -187,17 +187,19 @@
     /* ─── ABOUT SPLIT ─────────────────────────────────────────── */
     #about{background:var(--light-2);}
     .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp16);align-items:center;}
-    .about-img-wrap{position:relative;border-radius:var(--rad-xl);overflow:hidden;}
-    .about-img{width:100%;height:500px;object-fit:cover;display:block;}
-    .about-badge{position:absolute;bottom:var(--sp6);left:var(--sp6);background:var(--orange);color:white;padding:var(--sp4) var(--sp6);border-radius:var(--rad-md);font-family:var(--font-h);}
-    .about-badge-num{font-size:2rem;font-weight:700;line-height:1;}
-    .about-badge-label{font-size:.78rem;opacity:.9;}
+    .about-panel{border-radius:var(--rad-xl);overflow:hidden;display:flex;flex-direction:column;height:500px;}
+    .about-panel-half{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:var(--sp10);}
+    .about-panel-half:first-child{background:var(--orange);}
+    .about-panel-half:last-child{background:var(--dark);}
+    .about-panel-label{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;opacity:.65;color:white;margin-bottom:var(--sp3);}
+    .about-panel-heading{font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;color:white;letter-spacing:-.02em;line-height:1.1;margin-bottom:var(--sp3);}
+    .about-panel-sub{font-size:.875rem;color:hsl(0,0%,100%/.65);line-height:1.6;}
     .about-h2{font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;color:var(--text);margin-bottom:var(--sp5);}
     .about-p{color:var(--text-2);line-height:1.75;margin-bottom:var(--sp4);font-size:.95rem;}
     .about-points{display:flex;flex-direction:column;gap:var(--sp3);margin:var(--sp6) 0;}
     .about-point{display:flex;align-items:center;gap:var(--sp3);font-size:.9rem;color:var(--text);font-weight:500;}
     .about-check{width:22px;height:22px;background:var(--orange);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:.7rem;font-weight:700;flex-shrink:0;}
-    @media(max-width:768px){.about-inner{grid-template-columns:1fr;}.about-img{height:300px;}}
+    @media(max-width:768px){.about-inner{grid-template-columns:1fr;}.about-panel{height:320px;flex-direction:row;}}
 
     /* ─── PORTFOLIO ───────────────────────────────────────────── */
     #portfolio{background:var(--dark);}
@@ -411,7 +413,7 @@
         </div>
       </div>
       <div class="svc-card" data-a>
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Epoxy resin garage floor coating" class="svc-img" loading="lazy" width="800" height="600" />
+        <img src="https://images.unsplash.com/photo-1558618048-c03c97651bde?w=800&q=80&fit=crop" alt="Epoxy resin garage floor coating" class="svc-img" loading="lazy" width="800" height="600" />
         <div class="svc-body">
           <p class="svc-name">Garage Floors</p>
           <p class="svc-desc">Transform your garage with a seamless resin floor. Durable, stain-resistant, oil-proof, and available in a wide range of finishes.</p>
@@ -442,11 +444,16 @@
 <section id="about" aria-labelledby="about-h2">
   <div class="wrap">
     <div class="about-inner">
-      <div class="about-img-wrap" data-a>
-        <img src="https://acticrete.co.uk/wp-content/uploads/2022/11/car-1024x363.png" alt="ActiCrete resin flooring installation team" class="about-img" loading="lazy" width="1024" height="363" />
-        <div class="about-badge">
-          <p class="about-badge-num">UK-Wide</p>
-          <p class="about-badge-label">Coverage</p>
+      <div class="about-panel" data-a>
+        <div class="about-panel-half">
+          <p class="about-panel-label">Service Area</p>
+          <p class="about-panel-heading">UK-Wide Coverage</p>
+          <p class="about-panel-sub">Based in Loughton, Essex — we travel to every corner of the UK. No project too far.</p>
+        </div>
+        <div class="about-panel-half">
+          <p class="about-panel-label">Getting Started</p>
+          <p class="about-panel-heading">Free Site Survey</p>
+          <p class="about-panel-sub">We visit, assess, and recommend — at no charge and no obligation. Just honest advice.</p>
         </div>
       </div>
       <div data-a>
