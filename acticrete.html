@@ -220,21 +220,27 @@
     #process{background:var(--light);}
     .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp6);margin-top:var(--sp12);position:relative;}
     .process-grid::before{content:'';position:absolute;top:32px;left:16.66%;right:16.66%;height:2px;background:linear-gradient(90deg,var(--orange-border),var(--orange),var(--orange-border));}
-    .proc-card{text-align:center;padding:var(--sp8) var(--sp6);background:var(--light-2);border:1px solid var(--light-border);border-radius:var(--rad-lg);transition:border-color 300ms,box-shadow 300ms;}
-    .proc-card:hover{border-color:var(--orange-border);box-shadow:0 8px 30px hsl(25,90%,52%/.1);}
-    .proc-num{width:56px;height:56px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:white;margin:0 auto var(--sp5);position:relative;z-index:1;}
-    .proc-title{font-family:var(--font-h);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:var(--sp3);}
-    .proc-desc{font-size:.875rem;color:var(--text-2);line-height:1.65;}
+    .proc-card{text-align:center;padding:var(--sp8) var(--sp6);background:var(--light-2);border:1px solid var(--light-border);border-radius:var(--rad-lg);transition:border-color 300ms,box-shadow 300ms,background 300ms,transform 300ms var(--ease-spring);}
+    .proc-card:hover{border-color:var(--orange);box-shadow:0 12px 40px hsl(25,90%,52%/.25);background:var(--orange);transform:translateY(-4px);}
+    .proc-card:hover .proc-num{background:white;color:var(--orange);}
+    .proc-card:hover .proc-title{color:white;}
+    .proc-card:hover .proc-desc{color:hsl(25,90%,90%);}
+    .proc-num{width:56px;height:56px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:white;margin:0 auto var(--sp5);position:relative;z-index:1;transition:background 300ms,color 300ms;}
+    .proc-title{font-family:var(--font-h);font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:var(--sp3);transition:color 300ms;}
+    .proc-desc{font-size:.875rem;color:var(--text-2);line-height:1.65;transition:color 300ms;}
     @media(max-width:600px){.process-grid{grid-template-columns:1fr;}.process-grid::before{display:none;}}
 
     /* ─── TESTIMONIALS ────────────────────────────────────────── */
     #testimonials{background:var(--light-2);}
     .testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp6);margin-top:var(--sp12);}
-    .testi-card{background:white;border:1px solid var(--light-border);border-radius:var(--rad-lg);padding:var(--sp8);transition:border-color 300ms,box-shadow 300ms;}
-    .testi-card:hover{border-color:var(--orange-border);box-shadow:0 8px 30px hsl(25,90%,52%/.08);}
-    .testi-stars{color:var(--orange);font-size:1rem;margin-bottom:var(--sp4);letter-spacing:3px;}
-    .testi-quote{font-family:var(--font-h);font-size:clamp(1rem,1.8vw,1.25rem);font-weight:600;color:var(--text);line-height:1.5;margin-bottom:var(--sp5);}
-    .testi-author{font-size:.85rem;color:var(--text-2);font-weight:500;}
+    .testi-card{background:white;border:1px solid var(--light-border);border-radius:var(--rad-lg);padding:var(--sp8);transition:border-color 300ms,box-shadow 300ms,background 300ms,transform 300ms var(--ease-spring);}
+    .testi-card:hover{border-color:var(--orange);box-shadow:0 12px 40px hsl(25,90%,52%/.25);background:var(--orange);transform:translateY(-4px);}
+    .testi-card:hover .testi-stars{color:white;}
+    .testi-card:hover .testi-quote{color:white;}
+    .testi-card:hover .testi-author{color:hsl(25,90%,90%);}
+    .testi-stars{color:var(--orange);font-size:1rem;margin-bottom:var(--sp4);letter-spacing:3px;transition:color 300ms;}
+    .testi-quote{font-family:var(--font-h);font-size:clamp(1rem,1.8vw,1.25rem);font-weight:600;color:var(--text);line-height:1.5;margin-bottom:var(--sp5);transition:color 300ms;}
+    .testi-author{font-size:.85rem;color:var(--text-2);font-weight:500;transition:color 300ms;}
     @media(max-width:640px){.testi-grid{grid-template-columns:1fr;}}
 
     /* ─── CTA BANNER ──────────────────────────────────────────── */
@@ -253,12 +259,15 @@
     #contact{background:var(--light);}
     .contact-inner{display:grid;grid-template-columns:1fr 1.4fr;gap:var(--sp16);align-items:start;}
     .contact-info{display:flex;flex-direction:column;gap:var(--sp5);}
-    .contact-item{display:flex;gap:var(--sp4);align-items:flex-start;padding:var(--sp5) var(--sp6);background:var(--light-2);border:1px solid var(--light-border);border-radius:var(--rad-md);transition:border-color 300ms;}
-    .contact-item:hover{border-color:var(--orange-border);}
-    .contact-icon{width:40px;height:40px;background:var(--orange);border-radius:var(--rad-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;}
-    .contact-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);margin-bottom:.25rem;}
-    .contact-val{color:var(--text);font-weight:500;text-decoration:none;font-size:.95rem;}
-    a.contact-val:hover{color:var(--orange);}
+    .contact-item{display:flex;gap:var(--sp4);align-items:flex-start;padding:var(--sp5) var(--sp6);background:var(--light-2);border:1px solid var(--light-border);border-radius:var(--rad-md);transition:border-color 300ms,background 300ms,box-shadow 300ms,transform 300ms var(--ease-spring);cursor:default;}
+    .contact-item:hover{border-color:var(--orange);background:var(--orange);box-shadow:0 8px 28px hsl(25,90%,52%/.25);transform:translateY(-3px);}
+    .contact-item:hover .contact-icon{background:white;color:var(--orange);}
+    .contact-item:hover .contact-label{color:hsl(25,90%,88%);}
+    .contact-item:hover .contact-val{color:white;}
+    .contact-icon{width:40px;height:40px;background:var(--orange);border-radius:var(--rad-sm);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;transition:background 300ms,color 300ms;}
+    .contact-label{font-size:.75rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);margin-bottom:.25rem;transition:color 300ms;}
+    .contact-val{color:var(--text);font-weight:500;text-decoration:none;font-size:.95rem;transition:color 300ms;}
+    a.contact-val:hover{color:white;}
     .quote-form{display:flex;flex-direction:column;gap:var(--sp4);background:var(--light-2);border:1px solid var(--light-border);border-radius:var(--rad-xl);padding:var(--sp10);}
     .form-title{font-family:var(--font-h);font-size:1.3rem;font-weight:700;color:var(--text);margin-bottom:var(--sp2);}
     .form-row{display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4);}
@@ -402,7 +411,7 @@
         </div>
       </div>
       <div class="svc-card" data-a>
-        <div class="svc-img-placeholder">🏠</div>
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Epoxy resin garage floor coating" class="svc-img" loading="lazy" width="800" height="600" />
         <div class="svc-body">
           <p class="svc-name">Garage Floors</p>
           <p class="svc-desc">Transform your garage with a seamless resin floor. Durable, stain-resistant, oil-proof, and available in a wide range of finishes.</p>
