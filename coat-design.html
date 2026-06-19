@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form & Forge — Coat Embroidery Brief</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f5f3ef;
+      font-family: 'DM Sans', sans-serif;
+      padding: 3rem 2rem;
+      color: #111;
+    }
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      color: #111;
+      margin-bottom: .4rem;
+    }
+    .header p {
+      font-size: .8rem;
+      color: #666;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .coats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .coat-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .coat-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #666;
+    }
+
+    .coat-wrap {
+      position: relative;
+      width: 100%;
+    }
+
+    svg.coat {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 8px 32px rgba(0,0,0,.18));
+    }
+
+    .notes {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .note-block h3 {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: .6rem;
+    }
+    .note-block ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+    }
+    .note-block li {
+      font-size: .82rem;
+      color: #333;
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .note-block li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #b8965a;
+    }
+
+    .footer-note {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: .75rem;
+      color: #999;
+      letter-spacing: .06em;
+    }
+
+    @media print {
+      body { background: white; padding: 1rem; }
+      .coats { gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Form & Forge — Embroidery Design Brief</h1>
+    <p>Jacket / Coat — Black base · Gold metallic thread</p>
+  </div>
+
+  <div class="coats">
+
+    <!-- FRONT -->
+    <div class="coat-panel">
+      <span class="coat-label">Front</span>
+      <div class="coat-wrap">
+        <svg class="coat" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+          <!-- Coat body -->
+          <path d="M120,60 L60,110 L30,200 L20,480 L380,480 L370,200 L340,110 L280,60
+                   L260,90 L240,100 L200,105 L160,100 L140,90 Z"
+                fill="#0a0a0a" stroke="#333" stroke-width="1.5"/>
+          <!-- Left lapel -->
+          <path d="M120,60 L140,90 L160,100 L200,105 L200,200 L155,180 L100,160 L60,110 Z"
+                fill="#111" stroke="#333" stroke-width="1"/>
+          <!-- Right lapel -->
+          <path d="M280,60 L260,90 L240,100 L200,105 L200,200 L245,180 L300,160 L340,110 Z"
+                fill="#111" stroke="#333" stroke-width="1"/>
+          <!-- Left sleeve -->
+          <path d="M30,200 L20,480 L60,480 L80,280 L60,110 Z"
+                fill="#0d0d0d" stroke="#333" stroke-width="1"/>
+          <!-- Right sleeve -->
+          <path d="M370,200 L380,480 L340,480 L320,280 L340,110 Z"
+                fill="#0d0d0d" stroke="#333" stroke-width="1"/>
+          <!-- Centre zip/seam line -->
+          <line x1="200" y1="105" x2="200" y2="480" stroke="#222" stroke-width="2" stroke-dasharray="6,4"/>
+          <!-- Button row -->
+          <circle cx="200" cy="220" r="4" fill="#222"/>
+          <circle cx="200" cy="270" r="4" fill="#222"/>
+          <circle cx="200" cy="320" r="4" fill="#222"/>
+          <circle cx="200" cy="370" r="4" fill="#222"/>
+
+          <!-- LEFT CHEST LOGO -->
+          <!-- Gold thin rule above -->
+          <line x1="78" y1="183" x2="158" y2="183" stroke="#C9A84C" stroke-width="0.8" opacity="0.7"/>
+          <!-- Form & Forge small -->
+          <text x="118" y="202" text-anchor="middle"
+                font-family="'Cormorant Garamond',Georgia,serif"
+                font-size="16" font-weight="500" fill="#C9A84C" letter-spacing="1">Form &amp; Forge</text>
+          <!-- Tagline tiny -->
+          <text x="118" y="215" text-anchor="middle"
+                font-family="'DM Sans',sans-serif"
+                font-size="5.5" font-weight="500" fill="#9a7a3a" letter-spacing="2.5">PREMIUM WEBSITE DESIGNER</text>
+
+          <!-- Placement indicator -->
+          <rect x="72" y="178" width="92" height="42" rx="3"
+                fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.4"/>
+          <text x="118" y="232" text-anchor="middle"
+                font-family="'DM Sans',sans-serif" font-size="7" fill="#666" letter-spacing="1">LEFT CHEST</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- BACK -->
+    <div class="coat-panel">
+      <span class="coat-label">Back</span>
+      <div class="coat-wrap">
+        <svg class="coat" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+          <!-- Coat back body -->
+          <path d="M120,60 L60,110 L30,200 L20,480 L380,480 L370,200 L340,110 L280,60
+                   L260,90 L240,100 L200,105 L160,100 L140,90 Z"
+                fill="#0a0a0a" stroke="#333" stroke-width="1.5"/>
+          <!-- Left sleeve back -->
+          <path d="M30,200 L20,480 L60,480 L80,280 L60,110 Z"
+                fill="#0d0d0d" stroke="#333" stroke-width="1"/>
+          <!-- Right sleeve back -->
+          <path d="M370,200 L380,480 L340,480 L320,280 L340,110 Z"
+                fill="#0d0d0d" stroke="#333" stroke-width="1"/>
+          <!-- Centre back seam -->
+          <line x1="200" y1="105" x2="200" y2="480" stroke="#1a1a1a" stroke-width="1"/>
+
+          <!-- BACK LOGO — centred -->
+          <!-- Gold thin rule above -->
+          <line x1="90" y1="168" x2="310" y2="168" stroke="#C9A84C" stroke-width="1" opacity="0.8"/>
+
+          <!-- Form & Forge large -->
+          <text x="200" y="220" text-anchor="middle"
+                font-family="'Cormorant Garamond',Georgia,serif"
+                font-size="46" font-weight="500" fill="#C9A84C" letter-spacing="2">Form &amp; Forge</text>
+
+          <!-- Tagline -->
+          <text x="200" y="244" text-anchor="middle"
+                font-family="'DM Sans',sans-serif"
+                font-size="9" font-weight="500" fill="#9a7a3a" letter-spacing="4">PREMIUM WEBSITE DESIGNER — LONDON</text>
+
+          <!-- Spacer rule -->
+          <line x1="130" y1="258" x2="270" y2="258" stroke="#4a3a20" stroke-width="0.8" opacity="0.6"/>
+
+          <!-- Website URL at bottom of logo block -->
+          <text x="200" y="280" text-anchor="middle"
+                font-family="'DM Sans',sans-serif"
+                font-size="13" font-weight="600" fill="#C9A84C" letter-spacing="3">FORMANDFORGE.CO.UK</text>
+
+          <!-- Placement indicator -->
+          <rect x="82" y="163" width="236" height="124" rx="4"
+                fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.35"/>
+          <text x="200" y="302" text-anchor="middle"
+                font-family="'DM Sans',sans-serif" font-size="7" fill="#666" letter-spacing="1">CENTRE BACK</text>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="note-block">
+      <h3>Embroidery Spec</h3>
+      <ul>
+        <li>Base jacket: black</li>
+        <li>Thread colour: metallic gold (closest match: Madeira Metallic No.40 — Gold 9803)</li>
+        <li>All text and lines in gold thread</li>
+        <li>No background fill — text only</li>
+      </ul>
+    </div>
+    <div class="note-block">
+      <h3>Placement Notes</h3>
+      <ul>
+        <li>Front: left chest, approx 9cm wide, centred on chest pocket area</li>
+        <li>Back: centre back, approx 22cm wide, upper back</li>
+        <li>Website URL sits directly below the logo block on back</li>
+        <li>Dashed boxes show stitch area only — not part of design</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer-note">Form & Forge · zac@formandforge.co.uk · +44 7597 626 748</p>
+
+</div>
+</body>
+</html>
