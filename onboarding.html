@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23b8965a'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='700' font-size='13' fill='white'>F&F</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet" />
+  <title>New Client Brief — Form & Forge</title>
+  <style>
+    :root {
+      --gold:       hsl(43,60%,52%);
+      --gold-light: hsl(43,60%,62%);
+      --gold-dim:   hsl(43,60%,52%/.12);
+      --dark:       hsl(220,20%,8%);
+      --dark-2:     hsl(220,18%,12%);
+      --border:     hsl(220,15%,20%);
+      --text:       hsl(220,20%,92%);
+      --text-2:     hsl(220,12%,60%);
+      --font-h: 'Cormorant Garamond',Georgia,serif;
+      --font-b: 'DM Sans',system-ui,sans-serif;
+      --ease: cubic-bezier(.4,0,.2,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:var(--font-b);background:var(--dark);color:var(--text);min-height:100vh;padding:clamp(2rem,6vw,5rem) clamp(1.25rem,4vw,2rem);-webkit-font-smoothing:antialiased;}
+    .wrap{max-width:720px;margin:0 auto;}
+
+    /* Header */
+    .logo{font-family:var(--font-h);font-size:1.3rem;font-weight:500;letter-spacing:.08em;color:var(--gold);margin-bottom:clamp(2.5rem,6vw,4rem);display:block;}
+    .form-title{font-family:var(--font-h);font-size:clamp(2rem,5vw,3.2rem);font-weight:500;color:var(--text);line-height:1.15;margin-bottom:.75rem;}
+    .form-subtitle{font-size:.9rem;color:var(--text-2);line-height:1.7;margin-bottom:clamp(2.5rem,5vw,4rem);max-width:480px;}
+
+    /* Progress */
+    .progress-bar{height:2px;background:var(--border);border-radius:2px;margin-bottom:2.5rem;overflow:hidden;}
+    .progress-fill{height:100%;background:var(--gold);border-radius:2px;transition:width 400ms var(--ease);}
+    .progress-label{font-size:.72rem;color:var(--text-2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:1rem;}
+
+    /* Steps */
+    .step{display:none;}
+    .step.active{display:block;}
+
+    /* Section headings */
+    .step-heading{font-family:var(--font-h);font-size:1.5rem;font-weight:500;color:var(--gold);margin-bottom:1.75rem;padding-bottom:1rem;border-bottom:1px solid var(--border);}
+
+    /* Form elements */
+    .fields{display:flex;flex-direction:column;gap:1.25rem;}
+    .field-row{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;}
+    .field{display:flex;flex-direction:column;gap:.5rem;}
+    .field label{font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2);}
+    .field input,.field select,.field textarea{background:var(--dark-2);border:1.5px solid var(--border);border-radius:6px;padding:.85rem 1rem;color:var(--text);font-family:var(--font-b);font-size:.9rem;outline:none;transition:border-color 200ms,box-shadow 200ms;width:100%;}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px hsl(43,60%,52%/.1);}
+    .field input::placeholder,.field textarea::placeholder{color:hsl(220,12%,40%);}
+    .field textarea{min-height:100px;resize:vertical;line-height:1.6;}
+    .field select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;}
+    .field-note{font-size:.75rem;color:hsl(220,12%,40%);margin-top:.25rem;}
+
+    /* Checkbox group */
+    .check-group{display:flex;flex-direction:column;gap:.6rem;}
+    .check-item{display:flex;align-items:center;gap:.75rem;cursor:pointer;}
+    .check-item input[type="checkbox"]{width:18px;height:18px;accent-color:var(--gold);cursor:pointer;flex-shrink:0;}
+    .check-item span{font-size:.88rem;color:var(--text-2);}
+
+    /* Navigation */
+    .step-nav{display:flex;justify-content:space-between;align-items:center;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border);}
+    .btn-next{background:var(--gold);color:var(--dark);border:none;padding:.9rem 2.2rem;border-radius:6px;font-family:var(--font-b);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background 200ms,transform 300ms cubic-bezier(.34,1.56,.64,1);}
+    .btn-next:hover{background:var(--gold-light);transform:translateY(-2px);}
+    .btn-prev{background:transparent;color:var(--text-2);border:1.5px solid var(--border);padding:.9rem 2rem;border-radius:6px;font-family:var(--font-b);font-size:.82rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:border-color 200ms,color 200ms;}
+    .btn-prev:hover{border-color:var(--text-2);color:var(--text);}
+    .btn-submit{background:var(--gold);color:var(--dark);border:none;padding:.9rem 2.5rem;border-radius:6px;font-family:var(--font-b);font-size:.82rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background 200ms,transform 300ms cubic-bezier(.34,1.56,.64,1);}
+    .btn-submit:hover{background:var(--gold-light);transform:translateY(-2px);}
+
+    /* Success */
+    .success{display:none;text-align:center;padding:4rem 2rem;}
+    .success-icon{font-size:3rem;margin-bottom:1.5rem;}
+    .success h2{font-family:var(--font-h);font-size:2.5rem;font-weight:500;color:var(--text);margin-bottom:1rem;}
+    .success p{color:var(--text-2);line-height:1.7;max-width:400px;margin:0 auto;}
+
+    @media(max-width:560px){.field-row{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <span class="logo">Form & Forge</span>
+
+  <h1 class="form-title">New Client Brief</h1>
+  <p class="form-subtitle">Fill this in and we'll have everything we need to get started. Takes about 3 minutes.</p>
+
+  <div class="progress-bar"><div class="progress-fill" id="progress" style="width:25%"></div></div>
+  <p class="progress-label" id="progress-label">Step 1 of 4 — About You</p>
+
+  <form id="brief-form" action="https://formspree.io/f/xykakqay" method="POST">
+
+    <!-- STEP 1: About You -->
+    <div class="step active" id="step-1">
+      <p class="step-heading">About You</p>
+      <div class="fields">
+        <div class="field-row">
+          <div class="field">
+            <label for="first">First name</label>
+            <input type="text" id="first" name="first_name" placeholder="Alex" required />
+          </div>
+          <div class="field">
+            <label for="last">Last name</label>
+            <input type="text" id="last" name="last_name" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="alex@yourbrand.com" required />
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="07700 000000" />
+        </div>
+        <div class="field">
+          <label for="business">Business name</label>
+          <input type="text" id="business" name="business_name" placeholder="Your Brand" required />
+        </div>
+        <div class="field">
+          <label for="industry">Industry</label>
+          <select id="industry" name="industry" required>
+            <option value="" disabled selected>Select your industry</option>
+            <option>Clothing / Fashion</option>
+            <option>Construction / Trades</option>
+            <option>Food & Hospitality</option>
+            <option>Health & Beauty</option>
+            <option>Retail / E-commerce</option>
+            <option>Professional Services</option>
+            <option>Creative / Agency</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="step-nav">
+        <span></span>
+        <button type="button" class="btn-next" onclick="nextStep(1)">Next →</button>
+      </div>
+    </div>
+
+    <!-- STEP 2: Your Website -->
+    <div class="step" id="step-2">
+      <p class="step-heading">Your Website</p>
+      <div class="fields">
+        <div class="field">
+          <label for="existing">Existing website (if any)</label>
+          <input type="url" id="existing" name="existing_website" placeholder="https://yoursite.com" />
+          <span class="field-note">Leave blank if you don't have one yet</span>
+        </div>
+        <div class="field">
+          <label for="goal">What's the main goal of your website?</label>
+          <select id="goal" name="main_goal" required>
+            <option value="" disabled selected>Select a goal</option>
+            <option>Get more enquiries / leads</option>
+            <option>Sell products online</option>
+            <option>Showcase my work / portfolio</option>
+            <option>Build brand awareness</option>
+            <option>Replace an outdated site</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>What sections do you need?</label>
+          <div class="check-group">
+            <label class="check-item"><input type="checkbox" name="sections" value="Hero / Homepage" checked /><span>Hero / Homepage</span></label>
+            <label class="check-item"><input type="checkbox" name="sections" value="Services" /><span>Services</span></label>
+            <label class="check-item"><input type="checkbox" name="sections" value="Product Shop" /><span>Product Shop</span></label>
+            <label class="check-item"><input type="checkbox" name="sections" value="Portfolio / Work" /><span>Portfolio / Work</span></label>
+            <label class="check-item"><input type="checkbox" name="sections" value="About" /><span>About</span></label>
+            <label class="check-item"><input type="checkbox" name="sections" value="Testimonials" /><span>Testimonials</span></label>
+            <label class="check-item"><input type="checkbox" name="sections" value="Blog" /><span>Blog</span></label>
+            <label class="check-item"><input type="checkbox" name="sections" value="Contact Form" checked /><span>Contact Form</span></label>
+          </div>
+        </div>
+        <div class="field">
+          <label for="domain">Do you have a domain name?</label>
+          <select id="domain" name="has_domain">
+            <option value="" disabled selected>Select one</option>
+            <option>Yes — I already have one</option>
+            <option>No — I need one</option>
+            <option>Not sure</option>
+          </select>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button type="button" class="btn-prev" onclick="prevStep(2)">← Back</button>
+        <button type="button" class="btn-next" onclick="nextStep(2)">Next →</button>
+      </div>
+    </div>
+
+    <!-- STEP 3: Look & Feel -->
+    <div class="step" id="step-3">
+      <p class="step-heading">Look & Feel</p>
+      <div class="fields">
+        <div class="field">
+          <label for="vibe">Describe your brand in 2–3 words</label>
+          <input type="text" id="vibe" name="brand_vibe" placeholder="e.g. dark, minimal, bold" required />
+        </div>
+        <div class="field">
+          <label for="colours">Brand colours (if you have them)</label>
+          <input type="text" id="colours" name="brand_colours" placeholder="e.g. black, white, gold — or none yet" />
+        </div>
+        <div class="field">
+          <label for="inspo">Any websites you love the look of?</label>
+          <input type="text" id="inspo" name="inspiration" placeholder="URLs or brand names" />
+          <span class="field-note">Helps us nail the aesthetic</span>
+        </div>
+        <div class="field">
+          <label for="logo">Do you have a logo?</label>
+          <select id="logo" name="has_logo">
+            <option value="" disabled selected>Select one</option>
+            <option>Yes — I'll send it over</option>
+            <option>No — I need one designed</option>
+            <option>I have something but it needs updating</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="photos">Do you have photos / images to use?</label>
+          <select id="photos" name="has_photos">
+            <option value="" disabled selected>Select one</option>
+            <option>Yes — plenty of photos</option>
+            <option>Yes — a few photos</option>
+            <option>No — I need placeholder images for now</option>
+            <option>No — I'll get a photoshoot done</option>
+          </select>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button type="button" class="btn-prev" onclick="prevStep(3)">← Back</button>
+        <button type="button" class="btn-next" onclick="nextStep(3)">Next →</button>
+      </div>
+    </div>
+
+    <!-- STEP 4: Final Details -->
+    <div class="step" id="step-4">
+      <p class="step-heading">Final Details</p>
+      <div class="fields">
+        <div class="field">
+          <label for="budget">Budget</label>
+          <select id="budget" name="budget">
+            <option value="" disabled selected>Select a range</option>
+            <option>Under £300</option>
+            <option>£300 – £500</option>
+            <option>£500 – £1,000</option>
+            <option>£1,000 – £2,000</option>
+            <option>£2,000+</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="timeline">When do you need it?</label>
+          <select id="timeline" name="timeline">
+            <option value="" disabled selected>Select a timeline</option>
+            <option>ASAP</option>
+            <option>Within 2 weeks</option>
+            <option>Within a month</option>
+            <option>1–3 months</option>
+            <option>No rush</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="social">Social media handles</label>
+          <input type="text" id="social" name="social_media" placeholder="@yourbrand on Instagram, TikTok etc." />
+        </div>
+        <div class="field">
+          <label for="hosting">Monthly hosting (£49/mo — includes updates, security & support)</label>
+          <select id="hosting" name="hosting">
+            <option value="" disabled selected>Select one</option>
+            <option>Yes — I want hosting included</option>
+            <option>No — just the website build</option>
+            <option>Tell me more first</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="anything">Anything else we should know?</label>
+          <textarea id="anything" name="anything_else" placeholder="Any specific features, competitors, or details that will help us..."></textarea>
+        </div>
+      </div>
+      <div class="step-nav">
+        <button type="button" class="btn-prev" onclick="prevStep(4)">← Back</button>
+        <button type="submit" class="btn-submit">Send Brief</button>
+      </div>
+    </div>
+
+  </form>
+
+  <!-- Success -->
+  <div class="success" id="success">
+    <div class="success-icon">✓</div>
+    <h2>Brief received.</h2>
+    <p>We'll review everything and come back to you within 24 hours with next steps.</p>
+  </div>
+
+</div>
+<script>
+const totalSteps = 4;
+const labels = ['About You','Your Website','Look & Feel','Final Details'];
+
+function updateProgress(step) {
+  const pct = (step / totalSteps) * 100;
+  document.getElementById('progress').style.width = pct + '%';
+  document.getElementById('progress-label').textContent = `Step ${step} of ${totalSteps} — ${labels[step-1]}`;
+}
+
+function nextStep(current) {
+  const currentEl = document.getElementById('step-' + current);
+  const inputs = currentEl.querySelectorAll('input[required], select[required]');
+  let valid = true;
+  inputs.forEach(inp => { if (!inp.value) { inp.style.borderColor = 'hsl(0,70%,55%)'; valid = false; } else { inp.style.borderColor = ''; } });
+  if (!valid) return;
+  currentEl.classList.remove('active');
+  const next = document.getElementById('step-' + (current + 1));
+  next.classList.add('active');
+  updateProgress(current + 1);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function prevStep(current) {
+  document.getElementById('step-' + current).classList.remove('active');
+  document.getElementById('step-' + (current - 1)).classList.add('active');
+  updateProgress(current - 1);
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.getElementById('brief-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = e.target.querySelector('.btn-submit');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(e.target.action, {
+      method: 'POST',
+      body: new FormData(e.target),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      document.getElementById('brief-form').style.display = 'none';
+      document.getElementById('success').style.display = 'block';
+      document.getElementById('progress').style.width = '100%';
+      document.getElementById('progress-label').textContent = 'Complete';
+    } else {
+      btn.textContent = 'Try again';
+      btn.disabled = false;
+    }
+  } catch {
+    btn.textContent = 'Try again';
+    btn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
