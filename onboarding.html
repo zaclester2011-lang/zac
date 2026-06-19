@@ -119,6 +119,10 @@
           <input type="text" id="business" name="business_name" placeholder="Your Brand" required />
         </div>
         <div class="field">
+          <label for="social">Social media handles</label>
+          <input type="text" id="social" name="social_media" placeholder="@yourbrand on Instagram, TikTok etc." />
+        </div>
+        <div class="field">
           <label for="industry">Industry</label>
           <select id="industry" name="industry" required>
             <option value="" disabled selected>Select your industry</option>
@@ -232,49 +236,13 @@
       </div>
     </div>
 
-    <!-- STEP 4: Final Details -->
+    <!-- STEP 4: Anything Else -->
     <div class="step" id="step-4">
-      <p class="step-heading">Final Details</p>
+      <p class="step-heading">Anything else?</p>
       <div class="fields">
         <div class="field">
-          <label for="budget">Budget</label>
-          <select id="budget" name="budget">
-            <option value="" disabled selected>Select a range</option>
-            <option>Under £300</option>
-            <option>£300 – £500</option>
-            <option>£500 – £1,000</option>
-            <option>£1,000 – £2,000</option>
-            <option>£2,000+</option>
-            <option>Not sure yet</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="timeline">When do you need it?</label>
-          <select id="timeline" name="timeline">
-            <option value="" disabled selected>Select a timeline</option>
-            <option>ASAP</option>
-            <option>Within 2 weeks</option>
-            <option>Within a month</option>
-            <option>1–3 months</option>
-            <option>No rush</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="social">Social media handles</label>
-          <input type="text" id="social" name="social_media" placeholder="@yourbrand on Instagram, TikTok etc." />
-        </div>
-        <div class="field">
-          <label for="hosting">Monthly hosting (£49/mo — includes updates, security & support)</label>
-          <select id="hosting" name="hosting">
-            <option value="" disabled selected>Select one</option>
-            <option>Yes — I want hosting included</option>
-            <option>No — just the website build</option>
-            <option>Tell me more first</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="anything">Anything else we should know?</label>
-          <textarea id="anything" name="anything_else" placeholder="Any specific features, competitors, or details that will help us..."></textarea>
+          <label for="anything">Any specific features, competitors, or details that will help us?</label>
+          <textarea id="anything" name="anything_else" placeholder="Tell us anything else we should know..." style="min-height:180px;"></textarea>
         </div>
       </div>
       <div class="step-nav">
@@ -295,7 +263,7 @@
 </div>
 <script>
 const totalSteps = 4;
-const labels = ['About You','Your Website','Look & Feel','Final Details'];
+const labels = ['About You','Your Website','Look & Feel','Anything Else?'];
 
 function updateProgress(step) {
   const pct = (step / totalSteps) * 100;
