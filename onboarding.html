@@ -90,7 +90,7 @@
   <div class="progress-bar"><div class="progress-fill" id="progress" style="width:25%"></div></div>
   <p class="progress-label" id="progress-label">Step 1 of 4 — About You</p>
 
-  <form id="brief-form" action="https://formspree.io/f/xykakqay" method="POST">
+  <form id="brief-form" action="https://formspree.io/f/xykakqay" method="POST" enctype="multipart/form-data">
 
     <!-- STEP 1: About You -->
     <div class="step active" id="step-1">
@@ -135,6 +135,10 @@
             <option>Creative / Agency</option>
             <option>Other</option>
           </select>
+        </div>
+        <div class="field" id="industry-other-wrap" style="display:none;">
+          <label for="industry-other">Please describe your industry</label>
+          <input type="text" id="industry-other" name="industry_other" placeholder="e.g. Photography, Event planning, Music..." />
         </div>
       </div>
       <div class="step-nav">
@@ -220,14 +224,13 @@
           </select>
         </div>
         <div class="field">
-          <label for="photos">Do you have photos / images to use?</label>
-          <select id="photos" name="has_photos">
-            <option value="" disabled selected>Select one</option>
-            <option>Yes — plenty of photos</option>
-            <option>Yes — a few photos</option>
-            <option>No — I need placeholder images for now</option>
-            <option>No — I'll get a photoshoot done</option>
-          </select>
+          <label for="photos">Upload your photos</label>
+          <input type="file" id="photos" name="photos" multiple accept="image/*" style="padding:.75rem 1rem;cursor:pointer;" />
+          <span class="field-note">Select as many as you like — JPG, PNG, WebP all fine</span>
+        </div>
+        <div class="field">
+          <label for="prices">Products & prices</label>
+          <textarea id="prices" name="products_prices" placeholder="e.g. Black Tee — £45, Cargo Shorts — £65, Hoodie — £95&#10;Leave blank if not a shop." style="min-height:110px;"></textarea>
         </div>
       </div>
       <div class="step-nav">
@@ -290,6 +293,11 @@ function prevStep(current) {
   updateProgress(current - 1);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+document.getElementById('industry').addEventListener('change', function() {
+  const wrap = document.getElementById('industry-other-wrap');
+  wrap.style.display = this.value === 'Other' ? 'block' : 'none';
+});
 
 document.getElementById('brief-form').addEventListener('submit', async (e) => {
   e.preventDefault();
