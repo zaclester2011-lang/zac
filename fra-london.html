@@ -77,7 +77,7 @@
     @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
     h1{font-family:var(--font-h);font-size:clamp(3rem,6vw,5.5rem);font-weight:900;line-height:1.0;letter-spacing:-.03em;margin-bottom:1.5rem;max-width:800px;}
     h1 em{font-style:normal;color:var(--red);}
-    .hero-sub{font-size:clamp(1rem,1.5vw,1.15rem);color:var(--text-2);line-height:1.7;max-width:540px;margin-bottom:2.5rem;}
+    .hero-sub{font-size:clamp(1rem,1.5vw,1.15rem);color:#fff;line-height:1.7;max-width:540px;margin-bottom:2.5rem;}
     .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3.5rem;}
     .btn-primary{background:var(--red);color:#fff;font-family:var(--font-h);font-size:.85rem;font-weight:700;padding:.85rem 2rem;border-radius:var(--rad);border:none;cursor:none;transition:background 200ms,transform 300ms var(--spring);letter-spacing:.02em;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
     .btn-primary:hover{background:var(--red-h);transform:translateY(-3px);}
@@ -103,13 +103,14 @@
     .sec-label{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem;}
     .sec-title{font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem;}
     .sec-sub{font-size:.95rem;color:var(--text-2);line-height:1.7;max-width:500px;margin-bottom:3rem;}
+    #services .sec-sub{color:#fff;}
     .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
     .svc-card{background:var(--dark-2);border:1.5px solid var(--border);border-radius:var(--rad-lg);padding:1.75rem;cursor:none;transition:border-color 300ms,background 300ms,transform 300ms var(--spring),box-shadow 300ms;}
     .svc-card:hover{border-color:var(--red);background:var(--red-dim2);transform:translateY(-5px);box-shadow:0 16px 40px hsl(5,85%,52%/.15);}
     .svc-icon{width:44px;height:44px;background:var(--red-dim);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;transition:background 300ms;color:var(--red);}
     .svc-card:hover .svc-icon{background:var(--red);color:#fff;}
     .svc-name{font-family:var(--font-h);font-size:1.05rem;font-weight:700;margin-bottom:.6rem;transition:color 300ms;}
-    .svc-card:hover .svc-name{color:#fff;}
+    .svc-card:hover .svc-name{color:var(--red);}
     .svc-desc{font-size:.83rem;color:var(--text-2);line-height:1.65;transition:color 300ms;}
     .svc-card:hover .svc-desc{color:#fff;}
     .svc-arrow{display:inline-flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--text-3);margin-top:1rem;letter-spacing:.04em;transition:color 300ms,gap 300ms;text-decoration:none;cursor:pointer;}
