@@ -121,11 +121,11 @@
     .proc-step{background:var(--dark-3);border:1.5px solid var(--border);border-radius:var(--rad-lg);padding:1.5rem;position:relative;cursor:none;transition:border-color 300ms,background 300ms,transform 300ms var(--spring),box-shadow 300ms;counter-increment:proc;}
     .proc-step:hover{border-color:var(--red);background:var(--red);transform:translateY(-5px);box-shadow:0 16px 40px hsl(5,85%,52%/.25);}
     .proc-num{font-family:var(--font-h);font-size:.65rem;font-weight:700;letter-spacing:.14em;color:var(--red);margin-bottom:.9rem;transition:color 300ms;}
-    .proc-step:hover .proc-num{color:hsl(5,85%,85%);}
+    .proc-step:hover .proc-num{color:#fff;}
     .proc-name{font-family:var(--font-h);font-size:.95rem;font-weight:700;line-height:1.3;margin-bottom:.5rem;transition:color 300ms;}
     .proc-step:hover .proc-name{color:#fff;}
     .proc-desc{font-size:.75rem;color:var(--text-2);line-height:1.6;transition:color 300ms;}
-    .proc-step:hover .proc-desc{color:hsl(5,10%,85%);}
+    .proc-step:hover .proc-desc{color:#fff;}
 
     /* ── PRICING ────────────────────────────────────── */
     #pricing{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);}
@@ -149,11 +149,14 @@
     #testimonials{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);background:var(--dark-2);}
     .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem;}
     .testi-card{background:var(--dark-3);border:1.5px solid var(--border);border-radius:var(--rad-lg);padding:1.75rem;cursor:none;transition:border-color 300ms,transform 300ms var(--spring),box-shadow 300ms;}
-    .testi-card:hover{border-color:var(--red);transform:translateY(-4px);box-shadow:0 16px 40px hsl(5,85%,52%/.12);}
+    .testi-card:hover{border-color:var(--red);transform:translateY(-4px);box-shadow:0 16px 40px hsl(5,85%,52%/.25);}
     .testi-stars{color:var(--red);font-size:.9rem;margin-bottom:1rem;letter-spacing:.1em;}
-    .testi-text{font-size:.88rem;color:var(--text-2);line-height:1.75;margin-bottom:1.25rem;font-style:italic;}
-    .testi-author{font-size:.78rem;font-weight:700;color:var(--text);letter-spacing:.03em;}
-    .testi-role{font-size:.72rem;color:var(--text-3);margin-top:.2rem;}
+    .testi-text{font-size:.88rem;color:var(--text-2);line-height:1.75;margin-bottom:1.25rem;font-style:italic;transition:color 300ms;}
+    .testi-card:hover .testi-text{color:#fff;}
+    .testi-author{font-size:.78rem;font-weight:700;color:var(--text);letter-spacing:.03em;transition:color 300ms;}
+    .testi-card:hover .testi-author{color:#fff;}
+    .testi-role{font-size:.72rem;color:var(--text-3);margin-top:.2rem;transition:color 300ms;}
+    .testi-card:hover .testi-role{color:#fff;}
 
     /* ── FAQ ─────────────────────────────────────────── */
     #faq{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);}
