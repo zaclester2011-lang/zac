@@ -105,8 +105,8 @@
     .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
     .svc-card{background:var(--dark-2);border:1.5px solid var(--border);border-radius:var(--rad-lg);padding:1.75rem;cursor:none;transition:border-color 300ms,background 300ms,transform 300ms var(--spring),box-shadow 300ms;}
     .svc-card:hover{border-color:var(--red);background:var(--red-dim2);transform:translateY(-5px);box-shadow:0 16px 40px hsl(5,85%,52%/.15);}
-    .svc-icon{width:44px;height:44px;background:var(--red-dim);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;margin-bottom:1.25rem;transition:background 300ms;}
-    .svc-card:hover .svc-icon{background:var(--red);}
+    .svc-icon{width:44px;height:44px;background:var(--red-dim);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;transition:background 300ms;color:var(--red);}
+    .svc-card:hover .svc-icon{background:var(--red);color:#fff;}
     .svc-name{font-family:var(--font-h);font-size:1.05rem;font-weight:700;margin-bottom:.6rem;transition:color 300ms;}
     .svc-card:hover .svc-name{color:var(--red);}
     .svc-desc{font-size:.83rem;color:var(--text-2);line-height:1.65;transition:color 300ms;}
@@ -172,10 +172,10 @@
     .faq-item.open .faq-num{color:var(--red);}
     .faq-q-text{font-family:var(--font-h);font-size:.92rem;font-weight:700;color:var(--text);transition:color 300ms;line-height:1.35;}
     .faq-item.open .faq-q-text{color:var(--red);}
-    .faq-icon{width:28px;height:28px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color 300ms,background 300ms,transform 300ms var(--spring);}
-    .faq-icon svg{width:10px;height:10px;stroke:var(--text-3);transition:stroke 300ms;}
-    .faq-item.open .faq-icon{border-color:var(--red);background:var(--red);transform:rotate(45deg);}
-    .faq-item.open .faq-icon svg{stroke:#fff;}
+    .faq-icon{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color 300ms,background 300ms;}
+    .faq-icon svg{width:16px;height:16px;stroke:var(--text-3);transition:stroke 300ms,transform 400ms var(--spring);transform:rotate(0deg);}
+    .faq-item.open .faq-icon{border-color:var(--red);}
+    .faq-item.open .faq-icon svg{stroke:var(--red);transform:rotate(180deg);}
     .faq-a{max-height:0;overflow:hidden;transition:max-height 400ms var(--ease);}
     .faq-item.open .faq-a{max-height:300px;}
     .faq-a-inner{padding:.1rem 1.4rem 1.4rem calc(1.4rem + 1rem + 1.8rem);}
@@ -305,37 +305,37 @@
     <p class="sec-sub" data-a>Every service you need to stay compliant, protect your people, and avoid costly penalties.</p>
     <div class="svc-grid">
       <div class="svc-card" data-a>
-        <div class="svc-icon" aria-hidden="true">🔥</div>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 4-4 6-4 10a4 4 0 0 0 8 0c0-4-4-6-4-10z"/><path d="M12 12c0 2-2 3-2 5a2 2 0 0 0 4 0c0-2-2-3-2-5z" fill="currentColor" opacity=".3"/></svg></div>
         <h3 class="svc-name">Fire Risk Assessment</h3>
         <p class="svc-desc">Comprehensive assessment of your premises identifying hazards, risks, and recommended remedial actions to ensure full legal compliance.</p>
         <span class="svc-arrow">Learn more →</span>
       </div>
       <div class="svc-card" data-a>
-        <div class="svc-icon" aria-hidden="true">🚪</div>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="9" y1="2" x2="9" y2="22"/><circle cx="7" cy="12" r="1" fill="currentColor"/></svg></div>
         <h3 class="svc-name">Fire Door Inspection</h3>
         <p class="svc-desc">Full inspection and certification of fire doors to ensure they meet BS 9999 standards and provide the protection your building requires.</p>
         <span class="svc-arrow">Learn more →</span>
       </div>
       <div class="svc-card" data-a>
-        <div class="svc-icon" aria-hidden="true">🔔</div>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
         <h3 class="svc-name">Fire Alarm Systems</h3>
         <p class="svc-desc">Installation, testing, and maintenance of fire detection and alarm systems to BS 5839 standard across all property types.</p>
         <span class="svc-arrow">Learn more →</span>
       </div>
       <div class="svc-card" data-a>
-        <div class="svc-icon" aria-hidden="true">🧯</div>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h4v3h-4z"/><path d="M12 6v2"/><rect x="7" y="8" width="10" height="13" rx="2"/><path d="M7 12h10"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg></div>
         <h3 class="svc-name">Fire Extinguishers</h3>
         <p class="svc-desc">Supply, installation, and annual servicing of all extinguisher types — powder, CO₂, foam, and water — for any environment.</p>
         <span class="svc-arrow">Learn more →</span>
       </div>
       <div class="svc-card" data-a>
-        <div class="svc-icon" aria-hidden="true">🔥</div>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 1 4 12.7V17H8v-2.3A7 7 0 0 1 12 2z"/></svg></div>
         <h3 class="svc-name">Emergency Lighting</h3>
         <p class="svc-desc">Design, installation and testing of emergency escape lighting to BS 5266 — ensuring safe evacuation in every scenario.</p>
         <span class="svc-arrow">Learn more →</span>
       </div>
       <div class="svc-card" data-a>
-        <div class="svc-icon" aria-hidden="true">📋</div>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7z"/><polyline points="9 12 11 14 15 10"/></svg></div>
         <h3 class="svc-name">Health & Safety</h3>
         <p class="svc-desc">Broader health and safety assessments and documentation to keep your business fully compliant with UK regulations.</p>
         <span class="svc-arrow">Learn more →</span>
@@ -504,7 +504,7 @@
               <span class="faq-q-text">Is a fire risk assessment a legal requirement?</span>
             </span>
             <span class="faq-icon" aria-hidden="true">
-              <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </button>
           <div class="faq-a" data-accordion-panel>
@@ -519,7 +519,7 @@
               <span class="faq-q-text">How often do I need a fire risk assessment?</span>
             </span>
             <span class="faq-icon" aria-hidden="true">
-              <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </button>
           <div class="faq-a" data-accordion-panel>
@@ -534,7 +534,7 @@
               <span class="faq-q-text">How long does an assessment take?</span>
             </span>
             <span class="faq-icon" aria-hidden="true">
-              <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </button>
           <div class="faq-a" data-accordion-panel>
@@ -549,7 +549,7 @@
               <span class="faq-q-text">Do you cover areas outside London?</span>
             </span>
             <span class="faq-icon" aria-hidden="true">
-              <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </button>
           <div class="faq-a" data-accordion-panel>
@@ -564,7 +564,7 @@
               <span class="faq-q-text">What happens after the assessment?</span>
             </span>
             <span class="faq-icon" aria-hidden="true">
-              <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="1" x2="5" y2="9" stroke-width="1.5" stroke-linecap="round"/><line x1="1" y1="5" x2="9" y2="5" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </span>
           </button>
           <div class="faq-a" data-accordion-panel>
