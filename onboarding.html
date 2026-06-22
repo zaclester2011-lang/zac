@@ -99,16 +99,16 @@
         <div class="field-row">
           <div class="field">
             <label for="first">First name</label>
-            <input type="text" id="first" name="first_name" placeholder="Alex" required />
+            <input type="text" id="first" name="first_name" placeholder="Alex" />
           </div>
           <div class="field">
             <label for="last">Last name</label>
-            <input type="text" id="last" name="last_name" placeholder="Smith" required />
+            <input type="text" id="last" name="last_name" placeholder="Smith" />
           </div>
         </div>
         <div class="field">
           <label for="email">Email address</label>
-          <input type="email" id="email" name="email" placeholder="alex@yourbrand.com" required />
+          <input type="email" id="email" name="email" placeholder="alex@yourbrand.com" />
         </div>
         <div class="field">
           <label for="phone">Phone number</label>
@@ -116,7 +116,7 @@
         </div>
         <div class="field">
           <label for="business">Business name</label>
-          <input type="text" id="business" name="business_name" placeholder="Your Brand" required />
+          <input type="text" id="business" name="business_name" placeholder="Your Brand" />
         </div>
         <div class="field">
           <label for="social">Social media handles</label>
@@ -124,7 +124,7 @@
         </div>
         <div class="field">
           <label for="industry">Industry</label>
-          <select id="industry" name="industry" required>
+          <select id="industry" name="industry">
             <option value="" disabled selected>Select your industry</option>
             <option>Clothing / Fashion</option>
             <option>Construction / Trades</option>
@@ -158,7 +158,7 @@
         </div>
         <div class="field">
           <label for="goal">What's the main goal of your website?</label>
-          <select id="goal" name="main_goal" required>
+          <select id="goal" name="main_goal">
             <option value="" disabled selected>Select a goal</option>
             <option>Get more enquiries / leads</option>
             <option>Sell products online</option>
@@ -203,7 +203,7 @@
       <div class="fields">
         <div class="field">
           <label for="vibe">Describe your brand in 2–3 words</label>
-          <input type="text" id="vibe" name="brand_vibe" placeholder="e.g. dark, minimal, bold" required />
+          <input type="text" id="vibe" name="brand_vibe" placeholder="e.g. dark, minimal, bold" />
         </div>
         <div class="field">
           <label for="colours">Brand colours (if you have them)</label>
@@ -275,14 +275,8 @@ function updateProgress(step) {
 }
 
 function nextStep(current) {
-  const currentEl = document.getElementById('step-' + current);
-  const inputs = currentEl.querySelectorAll('input[required], select[required]');
-  let valid = true;
-  inputs.forEach(inp => { if (!inp.value) { inp.style.borderColor = 'hsl(0,70%,55%)'; valid = false; } else { inp.style.borderColor = ''; } });
-  if (!valid) return;
-  currentEl.classList.remove('active');
-  const next = document.getElementById('step-' + (current + 1));
-  next.classList.add('active');
+  document.getElementById('step-' + current).classList.remove('active');
+  document.getElementById('step-' + (current + 1)).classList.add('active');
   updateProgress(current + 1);
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
