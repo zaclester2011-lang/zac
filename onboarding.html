@@ -168,6 +168,10 @@
             <option>Other</option>
           </select>
         </div>
+        <div class="field" id="goal-other-wrap" style="display:none;">
+          <label for="goal-other">Tell us more about your goal</label>
+          <input type="text" id="goal-other" name="goal_other" placeholder="e.g. Sell tickets to events, build a members area..." />
+        </div>
         <div class="field">
           <label>What sections do you need?</label>
           <div class="check-group">
@@ -189,6 +193,14 @@
             <option>No — I need one</option>
             <option>Not sure</option>
           </select>
+        </div>
+        <div class="field" id="domain-yes-wrap" style="display:none;">
+          <label for="domain-name">What's your domain name?</label>
+          <input type="text" id="domain-name" name="domain_name" placeholder="e.g. yourbrand.co.uk" />
+        </div>
+        <div class="field" id="domain-no-wrap" style="display:none;">
+          <label for="domain-idea">Any ideas for your domain name?</label>
+          <input type="text" id="domain-idea" name="domain_idea" placeholder="e.g. yourbrand.co.uk — or leave blank if unsure" />
         </div>
       </div>
       <div class="step-nav">
@@ -222,6 +234,19 @@
             <option>No — I need one designed</option>
             <option>I have something but it needs updating</option>
           </select>
+        </div>
+        <div class="field" id="logo-send-wrap" style="display:none;">
+          <label for="logo-file">Upload your logo here</label>
+          <input type="file" id="logo-file" name="logo_file" accept="image/*,.svg,.pdf,.ai,.eps" style="padding:.75rem 1rem;cursor:pointer;" />
+          <span class="field-note">PNG, SVG or PDF preferred</span>
+        </div>
+        <div class="field" id="logo-design-wrap" style="display:none;">
+          <label for="logo-style">Describe the style you're after</label>
+          <input type="text" id="logo-style" name="logo_style" placeholder="e.g. clean wordmark, bold icon, minimal, luxury..." />
+        </div>
+        <div class="field" id="logo-update-wrap" style="display:none;">
+          <label for="logo-changes">What needs changing?</label>
+          <input type="text" id="logo-changes" name="logo_changes" placeholder="e.g. modernise the font, change the colour, simplify it..." />
         </div>
         <div class="field">
           <label for="photos">Upload your photos</label>
@@ -289,8 +314,22 @@ function prevStep(current) {
 }
 
 document.getElementById('industry').addEventListener('change', function() {
-  const wrap = document.getElementById('industry-other-wrap');
-  wrap.style.display = this.value === 'Other' ? 'block' : 'none';
+  document.getElementById('industry-other-wrap').style.display = this.value === 'Other' ? 'block' : 'none';
+});
+
+document.getElementById('goal').addEventListener('change', function() {
+  document.getElementById('goal-other-wrap').style.display = this.value === 'Other' ? 'block' : 'none';
+});
+
+document.getElementById('domain').addEventListener('change', function() {
+  document.getElementById('domain-yes-wrap').style.display = this.value === 'Yes — I already have one' ? 'block' : 'none';
+  document.getElementById('domain-no-wrap').style.display = this.value === 'No — I need one' ? 'block' : 'none';
+});
+
+document.getElementById('logo').addEventListener('change', function() {
+  document.getElementById('logo-send-wrap').style.display = this.value === 'Yes — I\'ll send it over' ? 'block' : 'none';
+  document.getElementById('logo-design-wrap').style.display = this.value === 'No — I need one designed' ? 'block' : 'none';
+  document.getElementById('logo-update-wrap').style.display = this.value === 'I have something but it needs updating' ? 'block' : 'none';
 });
 
 document.getElementById('brief-form').addEventListener('submit', async (e) => {
