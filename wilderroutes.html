@@ -45,8 +45,15 @@
     /* ── HERO ── */
     .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 72px; position: relative; overflow: hidden; }
     .hero-video-bg { position: absolute; inset: 0; overflow: hidden; z-index: 0; background: var(--bg); }
-    .hero-video-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,20,9,.4) 0%, rgba(15,20,9,.75) 100%); z-index: 1; pointer-events: none; }
-    #yt-player { position: absolute; top: 50%; left: 50%; width: 177.78vh; height: 100vh; min-width: 100%; min-height: 56.25vw; transform: translate(-50%, -50%); pointer-events: none; border: none; }
+    .hero-video-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,20,9,.45) 0%, rgba(15,20,9,.78) 100%); z-index: 2; pointer-events: none; }
+    .hero-slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; animation: kf-slide 30s infinite; z-index: 1; }
+    .s1 { background-image: url('https://images.unsplash.com/photo-HYHYGLs-Rp8?auto=format&w=1920&q=80'); animation-delay: 0s; }
+    .s2 { background-image: url('https://images.unsplash.com/photo-7AmBaTymwJg?auto=format&w=1920&q=80'); animation-delay: 5s; }
+    .s3 { background-image: url('https://images.unsplash.com/photo-54N-beymp-E?auto=format&w=1920&q=80'); animation-delay: 10s; }
+    .s4 { background-image: url('https://images.unsplash.com/photo-NNmomR7Ppm4?auto=format&w=1920&q=80'); animation-delay: 15s; }
+    .s5 { background-image: url('https://images.unsplash.com/photo-bKAJqLwO7n0?auto=format&w=1920&q=80'); animation-delay: 20s; }
+    .s6 { background-image: url('https://images.unsplash.com/photo-ISgHG8nLIWc?auto=format&w=1920&q=80'); animation-delay: 25s; }
+    @keyframes kf-slide { 0%,3%{opacity:0;} 6%,14%{opacity:1;} 17%,100%{opacity:0;} }
     .hero-bg { position: absolute; inset: 0; opacity: .06; pointer-events: none; z-index: 2; }
     .hero-coords { position: absolute; top: 80px; right: 40px; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); text-align: right; line-height: 2.2; z-index: 3; }
     .hero-content { position: relative; z-index: 3; }
@@ -183,7 +190,6 @@
       footer { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
     }
   </style>
-  <script src="https://www.youtube.com/iframe_api"><\/script>
 </head>
 <body>
 
@@ -202,7 +208,14 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-video-bg"><div id="yt-player"></div></div>
+  <div class="hero-video-bg">
+    <div class="hero-slide s1"></div>
+    <div class="hero-slide s2"></div>
+    <div class="hero-slide s3"></div>
+    <div class="hero-slide s4"></div>
+    <div class="hero-slide s5"></div>
+    <div class="hero-slide s6"></div>
+  </div>
   <svg class="hero-bg" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
     <g fill="none" stroke="var(--orange)" stroke-width="1">
       <ellipse cx="700" cy="450" rx="620" ry="340"/><ellipse cx="700" cy="450" rx="520" ry="270"/>
@@ -417,33 +430,6 @@
 </footer>
 
 <script>
-  // ── BACKGROUND VIDEO ──
-  // Landscapes: Sea of Cortez islands, Baja desert-meets-sea, Mulege river oasis, PONANT cinematic
-  const BAJA_VIDEOS = ['rao-tAE3UhQ', '_DlcriSXT7Q', 'm1PfiDJfjKs', 'jYlCl32d0kY'];
-  let vidIdx = 0, ytPlayer, vidTimer;
-
-  window.onYouTubeIframeAPIReady = function() {
-    ytPlayer = new YT.Player('yt-player', {
-      videoId: BAJA_VIDEOS[0],
-      playerVars: { autoplay: 1, mute: 1, controls: 0, rel: 0, showinfo: 0,
-                    modestbranding: 1, playsinline: 1, loop: 0, disablekb: 1 },
-      events: {
-        onReady: e => { e.target.playVideo(); scheduleNext(); },
-        onStateChange: e => { if (e.data === YT.PlayerState.ENDED) nextVideo(); }
-      }
-    });
-  };
-
-  function nextVideo() {
-    clearTimeout(vidTimer);
-    vidIdx = (vidIdx + 1) % BAJA_VIDEOS.length;
-    if (ytPlayer && ytPlayer.loadVideoById) {
-      ytPlayer.loadVideoById(BAJA_VIDEOS[vidIdx]);
-      scheduleNext();
-    }
-  }
-  function scheduleNext() { vidTimer = setTimeout(nextVideo, 35000); }
-
   // Scroll bar
   window.addEventListener('scroll', () => {
     const s = document.documentElement;
