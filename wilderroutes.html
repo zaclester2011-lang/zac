@@ -14,13 +14,13 @@
       --orange:  #E86200;
       --khaki:   #A89060;
       --text:    #D8D2BC;
-      --muted:   #8A8E96;
+      --muted:   #B4B0A4;
       --bright:  #EDEAE0;
       --spring:  cubic-bezier(.34,1.56,.64,1);
     }
     :root[data-theme="light"] {
       --bg:#F0EDE4;--s2:#E8E3D8;--s3:#DDD6C8;--border:#C4BAA8;
-      --orange:#C45200;--khaki:#7A6030;--text:#1C1C0E;--muted:#6C6C78;--bright:#0F1409;
+      --orange:#C45200;--khaki:#7A6030;--text:#1C1C0E;--muted:#707068;--bright:#0F1409;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -44,8 +44,13 @@
 
     /* ── HERO ── */
     .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 72px; position: relative; overflow: hidden; }
-    .hero-bg { position: absolute; inset: 0; opacity: .1; pointer-events: none; }
-    .hero-coords { position: absolute; top: 80px; right: 40px; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); text-align: right; line-height: 2.2; }
+    .hero-video-bg { position: absolute; inset: 0; overflow: hidden; z-index: 0; background: var(--bg); }
+    .hero-video-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,20,9,.4) 0%, rgba(15,20,9,.75) 100%); z-index: 1; pointer-events: none; }
+    #yt-player { position: absolute; top: 50%; left: 50%; width: 177.78vh; height: 100vh; min-width: 100%; min-height: 56.25vw; transform: translate(-50%, -50%); pointer-events: none; border: none; }
+    .hero-bg { position: absolute; inset: 0; opacity: .06; pointer-events: none; z-index: 2; }
+    .hero-coords { position: absolute; top: 80px; right: 40px; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); text-align: right; line-height: 2.2; z-index: 3; }
+    .hero-content { position: relative; z-index: 3; }
+    .hero-scroll { position: absolute; z-index: 3; }
     .hero-eyebrow { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; opacity: 0; transform: translateY(16px); transition: opacity 600ms, transform 600ms; }
     .hero-eyebrow.vis { opacity: 1; transform: none; }
     .hero-title { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: clamp(64px, 11vw, 148px); font-weight: 900; line-height: .88; letter-spacing: -.02em; text-transform: uppercase; color: var(--bright); margin-bottom: 32px; opacity: 0; transform: translateY(24px); transition: opacity 700ms 100ms, transform 700ms 100ms; }
@@ -178,6 +183,7 @@
       footer { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
     }
   </style>
+  <script src="https://www.youtube.com/iframe_api"><\/script>
 </head>
 <body>
 
@@ -196,6 +202,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-video-bg"><div id="yt-player"></div></div>
   <svg class="hero-bg" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
     <g fill="none" stroke="var(--orange)" stroke-width="1">
       <ellipse cx="700" cy="450" rx="620" ry="340"/><ellipse cx="700" cy="450" rx="520" ry="270"/>
@@ -210,7 +217,7 @@
     <circle cx="700" cy="450" r="16" fill="none" stroke="var(--orange)" stroke-width="0.7" opacity="0.3"/>
   </svg>
   <div class="hero-coords">24°09′N 109°42′W<br>Baja California Sur<br>Sea of Cortez<br>Oct – Nov 2026</div>
-  <div>
+  <div class="hero-content">
     <div class="hero-eyebrow">Bespoke Adventure Travel Design</div>
     <h1 class="hero-title">Wilder<br><em>Routes</em></h1>
     <p class="hero-tagline"><strong>We find the flights, the hidden canyons, the uninhabited islands.</strong><br>You get a complete day-by-day plan for an extraordinary trip. We do the thinking so you don't have to.</p>
@@ -219,7 +226,7 @@
       <a href="#baja" class="btn btn-outline">See the Work</a>
     </div>
   </div>
-  <div class="scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
+  <div class="scroll-hint hero-scroll"><div class="scroll-line"></div><span>Scroll</span></div>
 </section>
 
 <hr class="divider">
@@ -410,6 +417,32 @@
 </footer>
 
 <script>
+  // ── BACKGROUND VIDEO ──
+  // Landscapes: Sea of Cortez islands, Baja desert-meets-sea, Mulege river oasis, PONANT cinematic
+  const BAJA_VIDEOS = ['rao-tAE3UhQ', '_DlcriSXT7Q', 'm1PfiDJfjKs', 'jYlCl32d0kY'];
+  let vidIdx = 0, ytPlayer, vidTimer;
+
+  window.onYouTubeIframeAPIReady = function() {
+    ytPlayer = new YT.Player('yt-player', {
+      videoId: BAJA_VIDEOS[0],
+      playerVars: { autoplay: 1, mute: 1, controls: 0, rel: 0, showinfo: 0,
+                    modestbranding: 1, playsinline: 1, loop: 0, disablekb: 1 },
+      events: {
+        onReady: e => { e.target.playVideo(); scheduleNext(); },
+        onStateChange: e => { if (e.data === YT.PlayerState.ENDED) nextVideo(); }
+      }
+    });
+  };
+
+  function nextVideo() {
+    clearTimeout(vidTimer);
+    vidIdx = (vidIdx + 1) % BAJA_VIDEOS.length;
+    if (ytPlayer && ytPlayer.loadVideoById) {
+      ytPlayer.loadVideoById(BAJA_VIDEOS[vidIdx]);
+      scheduleNext();
+    }
+  }
+  function scheduleNext() { vidTimer = setTimeout(nextVideo, 35000); }
 
   // Scroll bar
   window.addEventListener('scroll', () => {
