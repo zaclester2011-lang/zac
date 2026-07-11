@@ -1,1 +1,463 @@
-see file on disk
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wilder Routes — Bespoke Adventure Travel Design</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23E86200'/><text x='16' y='22' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='13' fill='%230F1409'>WR</text></svg>" />
+  <style>
+    :root {
+      --bg:      #0F1409;
+      --s2:      #171E0C;
+      --s3:      #1E2810;
+      --border:  #2A3818;
+      --orange:  #E86200;
+      --khaki:   #A89060;
+      --text:    #D8D2BC;
+      --muted:   #5A6640;
+      --bright:  #EDEAE0;
+      --spring:  cubic-bezier(.34,1.56,.64,1);
+    }
+    :root[data-theme="light"] {
+      --bg:#F0EDE4;--s2:#E8E3D8;--s3:#DDD6C8;--border:#C4BAA8;
+      --orange:#C45200;--khaki:#7A6030;--text:#1C1C0E;--muted:#5C5830;--bright:#0F1409;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── SCROLL BAR ── */
+    .scroll-bar { position: fixed; top: 0; left: 0; right: 0; height: 2px; background: var(--orange); transform-origin: left; transform: scaleX(0); z-index: 1000; }
+
+
+    /* ── NAV ── */
+    nav { position: fixed; top: 0; left: 0; right: 0; height: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; z-index: 500; transition: background 300ms, border-color 300ms; border-bottom: 1px solid transparent; }
+    nav.scrolled { background: hsl(78,40%,6%/.96); backdrop-filter: blur(12px); border-bottom-color: var(--border); }
+    nav.hidden { transform: translateY(-100%); transition: transform 400ms cubic-bezier(.4,0,.2,1), background 300ms; }
+    .nav-logo { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--orange); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); transition: color 200ms; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-cta { background: var(--orange); color: var(--bg); padding: .45rem 1.2rem; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; transition: background 200ms, transform 200ms; }
+    .nav-cta:hover { background: var(--khaki); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 72px; position: relative; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; opacity: .1; pointer-events: none; }
+    .hero-coords { position: absolute; top: 80px; right: 40px; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); text-align: right; line-height: 2.2; }
+    .hero-eyebrow { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; opacity: 0; transform: translateY(16px); transition: opacity 600ms, transform 600ms; }
+    .hero-eyebrow.vis { opacity: 1; transform: none; }
+    .hero-title { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: clamp(64px, 11vw, 148px); font-weight: 900; line-height: .88; letter-spacing: -.02em; text-transform: uppercase; color: var(--bright); margin-bottom: 32px; opacity: 0; transform: translateY(24px); transition: opacity 700ms 100ms, transform 700ms 100ms; }
+    .hero-title.vis { opacity: 1; transform: none; }
+    .hero-title em { font-style: normal; color: var(--orange); display: block; }
+    .hero-tagline { max-width: 500px; font-size: 17px; color: var(--text); line-height: 1.65; margin-bottom: 40px; opacity: 0; transform: translateY(16px); transition: opacity 700ms 200ms, transform 700ms 200ms; }
+    .hero-tagline.vis { opacity: 1; transform: none; }
+    .hero-tagline strong { color: var(--bright); font-weight: 600; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; opacity: 0; transform: translateY(16px); transition: opacity 700ms 300ms, transform 700ms 300ms; }
+    .hero-btns.vis { opacity: 1; transform: none; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; letter-spacing: .18em; text-transform: uppercase; font-weight: 700; padding: 14px 28px; background: var(--orange); color: var(--bg); transition: background 200ms, transform 200ms; border: none; }
+    .btn:hover { background: var(--khaki); transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--orange); border: 1px solid var(--orange); }
+    .btn-outline:hover { background: var(--orange); color: var(--bg); }
+    .scroll-hint { position: absolute; bottom: 2.5rem; right: 40px; display: flex; flex-direction: column; align-items: center; gap: .75rem; opacity: .4; }
+    .scroll-line { width: 1px; height: 60px; background: linear-gradient(to bottom, transparent, var(--orange)); animation: pulse 2s ease-in-out infinite; }
+    .scroll-hint span { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); writing-mode: vertical-rl; }
+    @keyframes pulse { 0%,100%{opacity:.3;transform:scaleY(.8);}50%{opacity:1;transform:scaleY(1);} }
+
+    /* ── SECTIONS ── */
+    .section { padding: 96px 40px; }
+    .section-inner { max-width: 1080px; margin: 0 auto; }
+    .eyebrow { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: var(--orange); margin-bottom: 20px; }
+    .section-title { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: clamp(32px, 4.5vw, 56px); font-weight: 900; text-transform: uppercase; letter-spacing: -.01em; color: var(--bright); line-height: 1; margin-bottom: 48px; }
+    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+    /* ── SERVICES ── */
+    .services { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 48px; }
+    .service { background: var(--bg); padding: 36px 32px 44px; border-left: 3px solid transparent; transition: background 250ms, border-color 200ms; }
+    .service:hover { background: var(--s3); border-left-color: var(--orange); }
+    .service-icon { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; transition: color 200ms; }
+    .service:hover .service-icon { color: var(--orange); }
+    .service-head { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 24px; font-weight: 900; text-transform: uppercase; color: var(--bright); line-height: 1; margin-bottom: 14px; transition: color 200ms; }
+    .service:hover .service-head { color: var(--orange); }
+    .service p { font-size: 14px; color: var(--muted); line-height: 1.7; transition: color 200ms; }
+    .service:hover p { color: var(--text); }
+
+    /* ── STEPS ── */
+    .steps { border: 1px solid var(--border); margin-top: 48px; }
+    .step { display: flex; border-bottom: 1px solid var(--border); padding: 28px 32px; align-items: flex-start; border-left: 3px solid transparent; transition: background 200ms, border-color 200ms; }
+    .step:last-child { border-bottom: none; }
+    .step:hover { background: var(--s3); border-left-color: var(--orange); }
+    .step-num { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); width: 80px; flex-shrink: 0; padding-top: 3px; transition: color 200ms; }
+    .step:hover .step-num { color: var(--orange); }
+    .step-body { flex: 1; }
+    .step-head { font-size: 15px; font-weight: 700; color: var(--bright); margin-bottom: 6px; transition: color 200ms; }
+    .step:hover .step-head { color: var(--orange); }
+    .step-desc { font-size: 14px; color: var(--muted); line-height: 1.6; max-width: 520px; transition: color 200ms; }
+    .step:hover .step-desc { color: var(--text); }
+
+    /* ── CASE STUDY ── */
+    .case-section { background: var(--s2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .case-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; margin-bottom: 48px; }
+    .case-stats { display: flex; flex-direction: column; gap: 10px; text-align: right; }
+    .case-stat { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    .case-stat strong { color: var(--text); font-weight: 600; }
+
+    /* Itinerary */
+    .itinerary { border: 1px solid var(--border); }
+    .itin-row { display: grid; grid-template-columns: 120px 1fr; border-bottom: 1px solid var(--border); transition: background 200ms; }
+    .itin-row:last-child { border-bottom: none; }
+    .itin-row:not(.itin-travel):hover { background: hsl(78,35%,12%/.5); }
+    .itin-left { padding: 18px 16px; border-right: 1px solid var(--border); display: flex; flex-direction: column; gap: 4px; background: var(--bg); }
+    .itin-date { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    .itin-day { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 22px; font-weight: 900; color: var(--bright); line-height: 1; letter-spacing: -.01em; }
+    .itin-right { padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; }
+    .itin-name { font-size: 14px; font-weight: 700; color: var(--bright); }
+    .itin-desc { font-size: 12px; color: var(--muted); line-height: 1.5; max-width: 520px; }
+    .itin-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+    .tag { font-size: 9px; letter-spacing: .14em; text-transform: uppercase; padding: 3px 8px; font-weight: 700; }
+    .tag-teal { background: hsl(25,100%,46%/.15); color: var(--orange); }
+    .tag-sand { background: hsl(38,40%,50%/.15); color: var(--khaki); }
+    .itin-travel { background: hsl(195,30%,10%/.6); }
+    .itin-travel .itin-right { opacity: .7; }
+
+    /* Saving block */
+    .saving-block { background: var(--s2); border: 1px solid var(--border); padding: 48px 40px; margin-top: 56px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
+    .saving-label { font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: var(--orange); margin-bottom: 10px; }
+    .saving-num { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: clamp(48px, 7vw, 80px); font-weight: 900; color: var(--bright); line-height: 1; letter-spacing: -.02em; }
+    .saving-sub { font-size: 14px; color: var(--muted); margin-top: 8px; max-width: 300px; line-height: 1.6; }
+    .saving-pill { display: inline-block; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; font-weight: 700; padding: 6px 14px; border: 1px solid var(--khaki); color: var(--khaki); background: hsl(30,50%,50%/.1); margin-bottom: 10px; }
+
+    /* ── CONTACT ── */
+    .contact-section { padding: 96px 40px; border-top: 1px solid var(--border); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; margin-top: 48px; max-width: 1080px; margin-left: auto; margin-right: auto; }
+    .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+    .contact-intro { font-size: 15px; color: var(--muted); line-height: 1.75; max-width: 400px; }
+    .contact-line { display: flex; flex-direction: column; gap: .3rem; }
+    .contact-line-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+    .contact-line-val { font-size: .9rem; color: var(--text); }
+    .contact-line-val a { color: var(--orange); transition: color 200ms; }
+    .contact-line-val a:hover { color: var(--khaki); }
+    form { display: flex; flex-direction: column; gap: 1.1rem; }
+    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
+    .f-field { display: flex; flex-direction: column; gap: .4rem; }
+    .f-field label { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+    .f-field input, .f-field textarea, .f-field select { background: var(--s2); border: 1px solid var(--border); padding: .8rem 1rem; color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: .88rem; outline: none; width: 100%; transition: border-color 200ms, box-shadow 200ms; }
+    .f-field input:focus, .f-field textarea:focus { border-color: var(--orange); box-shadow: 0 0 0 3px hsl(187,40%,50%/.1); }
+    .f-field input::placeholder, .f-field textarea::placeholder { color: var(--muted); }
+    .f-field textarea { min-height: 120px; resize: vertical; line-height: 1.6; }
+    .btn-form { background: var(--orange); color: var(--bg); border: none; padding: .9rem 2rem; font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; transition: background 200ms, transform 200ms; align-self: flex-start; }
+    .btn-form:hover { background: var(--khaki); transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer { border-top: 1px solid var(--border); padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-logo { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    .site-by { font-size: 11px; color: var(--muted); }
+    .site-by a { color: var(--orange); transition: color 200ms; }
+    .site-by a:hover { color: var(--khaki); }
+
+    /* ── ANIMATIONS ── */
+    [data-a] { opacity: 0; transform: translateY(24px); transition: opacity 650ms cubic-bezier(.4,0,.2,1), transform 650ms cubic-bezier(.4,0,.2,1); }
+    [data-a].vis { opacity: 1; transform: none; }
+
+    /* ── RESPONSIVE ── */
+    @media(max-width:760px) {
+      nav { padding: 0 20px; }
+      .nav-links { display: none; }
+      .hero { padding: 0 20px 56px; }
+      .hero-coords { display: none; }
+      .section { padding: 64px 20px; }
+      .contact-section { padding: 64px 20px; }
+      .services { grid-template-columns: 1fr; }
+      .itin-row { grid-template-columns: 80px 1fr; }
+      .case-header { flex-direction: column; }
+      .case-stats { text-align: left; }
+      .saving-block { flex-direction: column; padding: 32px 24px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .f-row { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="scroll-bar" id="scroll-bar"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">Wilder Routes</div>
+  <ul class="nav-links">
+    <li><a href="#what-we-do">What We Do</a></li>
+    <li><a href="#baja">Case Study</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Start Planning</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-bg" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <g fill="none" stroke="var(--orange)" stroke-width="1">
+      <ellipse cx="700" cy="450" rx="620" ry="340"/><ellipse cx="700" cy="450" rx="520" ry="270"/>
+      <ellipse cx="700" cy="450" rx="420" ry="200"/><ellipse cx="700" cy="450" rx="320" ry="135"/>
+      <ellipse cx="700" cy="450" rx="220" ry="80"/><ellipse cx="700" cy="450" rx="120" ry="40"/>
+      <ellipse cx="180" cy="180" rx="240" ry="160"/><ellipse cx="180" cy="180" rx="170" ry="110"/><ellipse cx="180" cy="180" rx="100" ry="65"/>
+      <ellipse cx="1220" cy="720" rx="260" ry="170"/><ellipse cx="1220" cy="720" rx="180" ry="110"/><ellipse cx="1220" cy="720" rx="100" ry="60"/>
+    </g>
+    <line x1="700" y1="0" x2="700" y2="900" stroke="var(--orange)" stroke-width="0.4" opacity="0.35"/>
+    <line x1="0" y1="450" x2="1400" y2="450" stroke="var(--orange)" stroke-width="0.4" opacity="0.35"/>
+    <circle cx="700" cy="450" r="5" fill="var(--orange)" opacity="0.5"/>
+    <circle cx="700" cy="450" r="16" fill="none" stroke="var(--orange)" stroke-width="0.7" opacity="0.3"/>
+  </svg>
+  <div class="hero-coords">24°09′N 109°42′W<br>Baja California Sur<br>Sea of Cortez<br>Oct – Nov 2026</div>
+  <div>
+    <div class="hero-eyebrow">Bespoke Adventure Travel Design</div>
+    <h1 class="hero-title">Wilder<br><em>Routes</em></h1>
+    <p class="hero-tagline"><strong>We find the flights, the hidden canyons, the uninhabited islands.</strong><br>You get a complete day-by-day plan for an extraordinary trip. We do the thinking so you don't have to.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn">Start Planning</a>
+      <a href="#baja" class="btn btn-outline">See the Work</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div><span>Scroll</span></div>
+</section>
+
+<hr class="divider">
+
+<!-- WHAT WE DO -->
+<section class="section" id="what-we-do">
+  <div class="section-inner">
+    <div class="eyebrow" data-a>What We Do</div>
+    <h2 class="section-title" data-a>We build the plan.<br>You live it.</h2>
+    <p style="max-width:540px; color:var(--muted); font-size:15px; line-height:1.75;" data-a>
+      Most people book a package holiday and accept what they're given. Wilder Routes is different. We research every option — flights, hotels, activities — stress-test the logistics, and hand you an itinerary with no filler days, no tourist traps, and nothing you could have found yourself in five minutes on Google.
+    </p>
+    <div class="services" data-a>
+      <div class="service">
+        <div class="service-icon">Flights</div>
+        <div class="service-head">Best Route, Best Price</div>
+        <p>We research multiple routings, airlines and layover combinations to find the best value for your travel dates, group size and requirements. We don't book — we find.</p>
+      </div>
+      <div class="service">
+        <div class="service-icon">Hotels</div>
+        <div class="service-head">Right Hotel, Right Location</div>
+        <p>We compare every hotel against your activities, drive times, scores and price — building a shortlist with full data so you can make the final call with confidence.</p>
+      </div>
+      <div class="service">
+        <div class="service-icon">Activities</div>
+        <div class="service-head">Hidden, Earned, Extraordinary</div>
+        <p>We find the slot canyons, the uninhabited islands, the empty reefs that don't appear on standard travel sites. Every activity earns its place in the itinerary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="eyebrow" data-a>How It Works</div>
+    <h2 class="section-title" data-a>Four steps to the best<br>holiday you've ever had.</h2>
+    <div class="steps" data-a>
+      <div class="step">
+        <div class="step-num">Step 1</div>
+        <div class="step-body">
+          <div class="step-head">Tell us what you want to feel</div>
+          <div class="step-desc">Not where you want to go — what kind of experience you're after. Hidden places. Empty coastlines. Something your family talks about for years. That brief is where we start.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">Step 2</div>
+        <div class="step-body">
+          <div class="step-head">We research everything</div>
+          <div class="step-desc">Flights, hotels, activities, drive times, restaurants, guide requirements, weather windows, fitness levels. Every option tested against your group before it goes in the plan.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">Step 3</div>
+        <div class="step-body">
+          <div class="step-head">You get a complete itinerary</div>
+          <div class="step-desc">Day-by-day, hour-by-hour. Flight options, hotel shortlists, guide contacts, restaurant bookings, fuel costs. Everything you need to say yes and go.</div>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">Pricing</div>
+        <div class="step-body">
+          <div class="step-head">Fixed fee. No commission. No kickbacks.</div>
+          <div class="step-desc">We charge a flat fee per expedition based on complexity and length. Every recommendation is made because it's the best option for you — not because someone paid us to send you there.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CASE STUDY: BAJA BOYS -->
+<section class="section case-section" id="baja">
+  <div class="section-inner">
+    <div class="eyebrow" data-a>Case Study — Oct 2026</div>
+    <div class="case-header" data-a>
+      <h2 class="section-title" style="margin-bottom:0">The Baja Boys</h2>
+      <div class="case-stats">
+        <div class="case-stat"><strong>13</strong> activity days</div>
+        <div class="case-stat"><strong>3</strong> travellers · Three generations</div>
+        <div class="case-stat"><strong>Route</strong> · SJD → East Cape → Loreto</div>
+        <div class="case-stat"><strong>39</strong> activities evaluated · 8 selected</div>
+        <div class="case-stat"><strong>Zero</strong> filler days · Zero repetition</div>
+      </div>
+    </div>
+    <p style="max-width:580px; color:var(--muted); font-size:15px; line-height:1.75; margin-bottom:40px;" data-a>
+      Three generations of adventurers — a 14-year-old, a 47-year-old lifelong fisherman, and a 12-year-old performer. Fifteen nights covering every landscape type in Baja California Sur. Slot canyon swims, uninhabited island camping, world-class reef snorkelling, wilderness canyons, and Sea of Cortez fishing. No resort days. No tourist traps.
+    </p>
+    <div class="itinerary" data-a>
+      <div class="itin-row itin-travel">
+        <div class="itin-left"><div class="itin-date">19–20 Oct</div><div class="itin-day">Travel</div></div>
+        <div class="itin-right"><div class="itin-name">Chigwell → Heathrow → Dallas → Mexico City → SJD</div><div class="itin-desc">23-hour travel day. Dinner at Cousin's Bar-B-Q (DFW Terminal D) and El Bajío (MEX Terminal 2).</div></div>
+      </div>
+      <div class="itin-row">
+        <div class="itin-left"><div class="itin-date">Wed 21 Oct</div><div class="itin-day">Day 1</div></div>
+        <div class="itin-right"><div class="itin-name">Cabo Pulmo National Marine Park</div><div class="itin-desc">Mexico's most protected reef. Oldest living coral in the Eastern Pacific. Snorkel with rays, turtles and enormous fish schools. No boat needed — walk straight in. East Cape.</div><div class="itin-tags"><span class="tag tag-teal">Snorkel</span><span class="tag tag-teal">Marine Reserve</span></div></div>
+      </div>
+      <div class="itin-row">
+        <div class="itin-left"><div class="itin-date">Thu 22 Oct</div><div class="itin-day">Day 2</div></div>
+        <div class="itin-right"><div class="itin-name">Zorra &amp; El Chorro Waterfalls</div><div class="itin-desc">Twin waterfalls hidden in Sierra la Laguna — both on the same dirt road 1.8 miles from Santiago town square. Enter via Rancho Ecológico Sol de Mayo. Natural swimming pools, total isolation.</div><div class="itin-tags"><span class="tag tag-teal">Waterfall</span><span class="tag tag-teal">Sierra la Laguna</span></div></div>
+      </div>
+      <div class="itin-row itin-travel">
+        <div class="itin-left"><div class="itin-date">Fri 23 Oct</div><div class="itin-day">Day 3</div></div>
+        <div class="itin-right"><div class="itin-name">Drive North — SJD to Loreto with Hidden Stops</div><div class="itin-desc">6-hour drive broken by El Pilar viewpoint and Agua Verde — a turquoise cove at the bottom of a dramatic dirt road with fishermen on the beach and goats on the road. Arrive Loreto evening.</div><div class="itin-tags"><span class="tag tag-sand">Drive Day</span><span class="tag tag-teal">Agua Verde</span></div></div>
+      </div>
+      <div class="itin-row">
+        <div class="itin-left"><div class="itin-date">Sat 24 Oct</div><div class="itin-day">Day 4</div></div>
+        <div class="itin-right"><div class="itin-name">Isla Carmen — Private Boat Charter</div><div class="itin-desc">45 minutes from Loreto harbour to a large uninhabited island. Remote salt lagoon, sea lion colonies basking on the rocks, crystal clear turquoise water. No other boats.</div><div class="itin-tags"><span class="tag tag-teal">Boat Charter</span><span class="tag tag-teal">Sea Lions</span><span class="tag tag-teal">Sea of Cortez</span></div></div>
+      </div>
+      <div class="itin-row">
+        <div class="itin-left"><div class="itin-date">Sun 25 Oct</div><div class="itin-day">Day 5</div></div>
+        <div class="itin-right"><div class="itin-name">Cañón de Mezquite</div><div class="itin-desc">One of the most extraordinary canyons in Baja — almost nobody goes there. Mandatory deep-water swimming through slot canyon narrows. Elusive trailhead. Total isolation. The place you remember for the rest of your life.</div><div class="itin-tags"><span class="tag tag-teal">Slot Canyon</span><span class="tag tag-sand">Guide Required</span></div></div>
+      </div>
+      <div class="itin-row">
+        <div class="itin-left"><div class="itin-date">Mon 26 Oct</div><div class="itin-day">Day 6</div></div>
+        <div class="itin-right"><div class="itin-name">Cañón del San Carlos</div><div class="itin-desc">Full-day wilderness endurance canyon. No markers, no other visitors, genuine backcountry terrain. River-bed route deep into the Sierra la Laguna. The hardest day — and the most earned.</div><div class="itin-tags"><span class="tag tag-teal">Wilderness Canyon</span><span class="tag tag-sand">Guide Required</span></div></div>
+      </div>
+      <div class="itin-row">
+        <div class="itin-left"><div class="itin-date">27–30 Oct</div><div class="itin-day">Days 7–10</div></div>
+        <div class="itin-right"><div class="itin-name">Isla Monserrate — 4-Night Island Camp</div><div class="itin-desc">Boat drop onto an uninhabited volcanic island in the Sea of Cortez. Four nights camping under the stars. Sit-on-top kayaks for coastal exploration. Satellite communicator for safety. No other people. No facilities. No noise. The centrepiece of the expedition.</div><div class="itin-tags"><span class="tag tag-teal">Island Camp</span><span class="tag tag-teal">Kayak</span><span class="tag tag-teal">Fishing</span><span class="tag tag-sand">Off-Grid</span></div></div>
+      </div>
+      <div class="itin-row itin-travel">
+        <div class="itin-left"><div class="itin-date">Sat 31 Oct</div><div class="itin-day">Day 11</div></div>
+        <div class="itin-right"><div class="itin-name">Boat Collection — Return to Loreto</div><div class="itin-desc">Boat collects from Monserrate. Last night in Mexico.</div></div>
+      </div>
+      <div class="itin-row itin-travel">
+        <div class="itin-left"><div class="itin-date">Sun 1 Nov</div><div class="itin-day">Home</div></div>
+        <div class="itin-right"><div class="itin-name">Loreto → Home</div><div class="itin-desc">Leave hotel 09:00. LTO departs 12:01. Arrive UK next day.</div></div>
+      </div>
+    </div>
+
+    <div class="saving-block" data-a>
+      <div>
+        <div class="saving-label">Also included — Flight Research</div>
+        <div class="saving-num">£12,500</div>
+        <div class="saving-sub">Saved on a family member's London–Bangkok business class flights. Initial quote: £25,000. After researching 12 routings: £12,500. Same flights, same class, same dates.</div>
+      </div>
+      <div>
+        <div class="saving-pill">50% saved</div>
+        <p style="font-size:13px; color:var(--muted); max-width:260px; line-height:1.6;">12 routing options tested. Winning option matched every travel requirement. Found in an evening.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info" data-a>
+      <div class="eyebrow">Get in Touch</div>
+      <h2 class="section-title" style="margin-bottom:0">Ready to plan something extraordinary?</h2>
+      <p class="contact-intro">Tell us where you want to go — or what you want to feel. We'll take it from there.</p>
+      <div class="contact-line">
+        <span class="contact-line-label">Email</span>
+        <span class="contact-line-val"><a href="mailto:zac@formandforge.co.uk">zac@formandforge.co.uk</a></span>
+      </div>
+      <div class="contact-line">
+        <span class="contact-line-label">Phone</span>
+        <span class="contact-line-val"><a href="tel:+447597626748">+44 7597 626 748</a></span>
+      </div>
+      <div class="contact-line">
+        <span class="contact-line-label">Based in</span>
+        <span class="contact-line-val">London, England</span>
+      </div>
+    </div>
+    <form data-a action="https://formspree.io/f/xykakqay" method="POST">
+      <div class="f-row">
+        <div class="f-field"><label for="name">Your name</label><input type="text" id="name" name="name" placeholder="Alex" /></div>
+        <div class="f-field"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="alex@email.com" /></div>
+      </div>
+      <div class="f-field"><label for="destination">Where do you want to go?</label><input type="text" id="destination" name="destination" placeholder="e.g. Baja California, Patagonia, Sri Lanka…" /></div>
+      <div class="f-field"><label for="travellers">Who's travelling?</label><input type="text" id="travellers" name="travellers" placeholder="e.g. Family of 4, three generations…" /></div>
+      <div class="f-field"><label for="message">Tell us more</label><textarea id="message" name="message" placeholder="Rough dates, what kind of experience you're after, any constraints…"></textarea></div>
+      <button type="submit" class="btn-form">Send →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Wilder Routes · Bespoke Adventure Travel Design · London</div>
+  <p class="site-by">Site by <a href="https://formandforge.co.uk" target="_blank" rel="noopener noreferrer">Form &amp; Forge</a></p>
+</footer>
+
+<script>
+
+  // Scroll bar
+  window.addEventListener('scroll', () => {
+    const s = document.documentElement;
+    document.getElementById('scroll-bar').style.transform = `scaleX(${s.scrollTop/(s.scrollHeight-s.clientHeight)})`;
+  }, { passive: true });
+
+  // Sticky nav
+  let lastY = 0;
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 48);
+    nav.classList.toggle('hidden', y > lastY && y > 200);
+    lastY = y;
+  }, { passive: true });
+
+  // Hero entrance
+  requestAnimationFrame(() => {
+    setTimeout(() => document.querySelector('.hero-eyebrow').classList.add('vis'), 100);
+    setTimeout(() => document.querySelector('.hero-title').classList.add('vis'), 200);
+    setTimeout(() => document.querySelector('.hero-tagline').classList.add('vis'), 350);
+    setTimeout(() => document.querySelector('.hero-btns').classList.add('vis'), 500);
+  });
+
+  // Scroll animations
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: .1 });
+  document.querySelectorAll('[data-a]').forEach((el, i) => {
+    el.style.transitionDelay = `${(i % 4) * 80}ms`;
+    obs.observe(el);
+  });
+
+  // Contact form
+  const form = document.querySelector('form');
+  if (form) {
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const btn = form.querySelector('.btn-form');
+      btn.textContent = 'Sending…'; btn.disabled = true;
+      try {
+        const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+        btn.textContent = res.ok ? 'Sent ✓' : 'Try again';
+        if (!res.ok) btn.disabled = false;
+      } catch { btn.textContent = 'Try again'; btn.disabled = false; }
+    });
+  }
+</script>
+</body>
+</html>
