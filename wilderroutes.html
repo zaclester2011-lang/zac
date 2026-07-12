@@ -37,8 +37,8 @@
     nav.hidden { transform: translateY(-100%); transition: transform 400ms cubic-bezier(.4,0,.2,1), background 300ms; }
     .nav-logo { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--green); }
     .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); transition: color 200ms; }
-    .nav-links a:hover { color: var(--text); }
+    .nav-links a { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
+    .nav-links a:hover { color: #fff; }
     .nav-cta { background: var(--green); color: var(--bg); padding: .45rem 1.2rem; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; transition: background 200ms, transform 200ms; }
     .nav-cta:hover { background: var(--sage); transform: translateY(-1px); }
 
@@ -55,7 +55,6 @@
     .s6 { background-image: url('https://images.unsplash.com/photo-1505521377774-103a8cc2f735?auto=format&w=1920&q=80'); animation-delay: 19s; }
     @keyframes kf-slide { 0%{opacity:0;} 4%{opacity:1;} 21%{opacity:1;} 25%{opacity:0;} 100%{opacity:0;} }
     .hero-bg { position: absolute; inset: 0; opacity: .06; pointer-events: none; z-index: 2; }
-    .hero-coords { position: absolute; top: 80px; right: 40px; font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); text-align: right; line-height: 2.2; z-index: 3; }
     .hero-content { position: relative; z-index: 3; }
     .hero-scroll { position: absolute; z-index: 3; }
     .hero-eyebrow { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: var(--green); margin-bottom: 16px; opacity: 0; transform: translateY(16px); transition: opacity 600ms, transform 600ms; }
@@ -74,7 +73,7 @@
     .btn-outline:hover { background: var(--green); color: var(--bg); }
     .scroll-hint { position: absolute; bottom: 2.5rem; right: 40px; display: flex; flex-direction: column; align-items: center; gap: .75rem; opacity: .4; }
     .scroll-line { width: 1px; height: 60px; background: linear-gradient(to bottom, transparent, var(--green)); animation: pulse 2s ease-in-out infinite; }
-    .scroll-hint span { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); writing-mode: vertical-rl; }
+    .scroll-hint span { font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: var(--green); writing-mode: vertical-rl; }
     @keyframes pulse { 0%,100%{opacity:.3;transform:scaleY(.8);}50%{opacity:1;transform:scaleY(1);} }
 
     /* ── SECTIONS ── */
@@ -88,8 +87,8 @@
     .services { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 48px; }
     .service { background: var(--bg); padding: 36px 32px 44px; border-left: 3px solid transparent; transition: background 250ms, border-color 200ms; }
     .service:hover { background: var(--s3); border-left-color: var(--green); }
-    .service-icon { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 20px; transition: color 200ms; }
-    .service:hover .service-icon { color: var(--green); }
+    .service-icon { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--green); margin-bottom: 20px; transition: color 200ms; }
+    .service:hover .service-icon { color: #fff; }
     .service-head { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 24px; font-weight: 900; text-transform: uppercase; color: var(--bright); line-height: 1; margin-bottom: 14px; transition: color 200ms; }
     .service:hover .service-head { color: var(--green); }
     .service p { font-size: 14px; color: var(--muted); line-height: 1.7; transition: color 200ms; }
@@ -100,8 +99,8 @@
     .step { display: flex; border-bottom: 1px solid var(--border); padding: 28px 32px; align-items: flex-start; border-left: 3px solid transparent; transition: background 200ms, border-color 200ms; }
     .step:last-child { border-bottom: none; }
     .step:hover { background: var(--s3); border-left-color: var(--green); }
-    .step-num { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); width: 80px; flex-shrink: 0; padding-top: 3px; transition: color 200ms; }
-    .step:hover .step-num { color: var(--green); }
+    .step-num { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--green); width: 80px; flex-shrink: 0; padding-top: 3px; transition: color 200ms; }
+    .step:hover .step-num { color: #fff; }
     .step-body { flex: 1; }
     .step-head { font-size: 15px; font-weight: 700; color: var(--bright); margin-bottom: 6px; transition: color 200ms; }
     .step:hover .step-head { color: var(--green); }
@@ -112,7 +111,8 @@
     .case-section { background: var(--s2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .case-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; margin-bottom: 48px; }
     .case-stats { display: flex; flex-direction: column; gap: 10px; text-align: right; }
-    .case-stat { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+    .case-stat { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
+    .case-stat:hover { color: #fff; }
     .case-stat strong { color: var(--text); font-weight: 600; }
 
     /* Itinerary */
@@ -121,7 +121,8 @@
     .itin-row:last-child { border-bottom: none; }
     .itin-row:not(.itin-travel):hover { background: hsl(150,30%,12%/.5); }
     .itin-left { padding: 18px 16px; border-right: 1px solid var(--border); display: flex; flex-direction: column; gap: 4px; background: var(--bg); }
-    .itin-date { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+    .itin-date { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
+    .itin-row:hover .itin-date { color: #fff; }
     .itin-day { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 22px; font-weight: 900; color: var(--bright); line-height: 1; letter-spacing: -.01em; }
     .itin-right { padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; }
     .itin-name { font-size: 14px; font-weight: 700; color: var(--bright); }
@@ -146,14 +147,16 @@
     .contact-info { display: flex; flex-direction: column; gap: 2rem; }
     .contact-intro { font-size: 15px; color: var(--muted); line-height: 1.75; max-width: 400px; }
     .contact-line { display: flex; flex-direction: column; gap: .3rem; }
-    .contact-line-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+    .contact-line-label { font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
+    .contact-line:hover .contact-line-label { color: #fff; }
     .contact-line-val { font-size: .9rem; color: var(--text); }
     .contact-line-val a { color: var(--green); transition: color 200ms; }
     .contact-line-val a:hover { color: var(--sage); }
     form { display: flex; flex-direction: column; gap: 1.1rem; }
     .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
     .f-field { display: flex; flex-direction: column; gap: .4rem; }
-    .f-field label { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+    .f-field label { font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
+    .f-field:hover label { color: #fff; }
     .f-field input, .f-field textarea, .f-field select { background: var(--s2); border: 1px solid var(--border); padding: .8rem 1rem; color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: .88rem; outline: none; width: 100%; transition: border-color 200ms, box-shadow 200ms; }
     .f-field input:focus, .f-field textarea:focus { border-color: var(--green); box-shadow: 0 0 0 3px hsl(187,40%,50%/.1); }
     .f-field input::placeholder, .f-field textarea::placeholder { color: var(--muted); }
@@ -163,7 +166,8 @@
 
     /* ── FOOTER ── */
     footer { border-top: 1px solid var(--border); padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-    .footer-logo { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--muted); }
+    .footer-logo { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--green); transition: color 200ms; }
+    .footer-logo:hover { color: #fff; }
     .site-by { font-size: 11px; color: var(--muted); }
     .site-by a { color: var(--green); transition: color 200ms; }
     .site-by a:hover { color: var(--sage); }
@@ -177,7 +181,6 @@
       nav { padding: 0 20px; }
       .nav-links { display: none; }
       .hero { padding: 0 20px 56px; }
-      .hero-coords { display: none; }
       .section { padding: 64px 20px; }
       .contact-section { padding: 64px 20px; }
       .services { grid-template-columns: 1fr; }
@@ -229,7 +232,6 @@
     <circle cx="700" cy="450" r="5" fill="var(--green)" opacity="0.5"/>
     <circle cx="700" cy="450" r="16" fill="none" stroke="var(--green)" stroke-width="0.7" opacity="0.3"/>
   </svg>
-  <div class="hero-coords">24°09′N 109°42′W<br>Baja California Sur<br>Sea of Cortez<br>Oct – Nov 2026</div>
   <div class="hero-content">
     <div class="hero-eyebrow">Bespoke Adventure Travel Design</div>
     <h1 class="hero-title">Wilder<br><em>Routes</em></h1>
