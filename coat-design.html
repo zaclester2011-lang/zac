@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form & Forge — Puffer Coat Embroidery Brief</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f5f3ef;
+      font-family: 'DM Sans', sans-serif;
+      padding: 3rem 2rem;
+      color: #111;
+    }
+    .page { max-width: 960px; margin: 0 auto; }
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      color: #111;
+      margin-bottom: .4rem;
+    }
+    .header p {
+      font-size: .8rem;
+      color: #666;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .coats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .coat-panel {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .coat-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #666;
+    }
+    .coat-wrap { position: relative; width: 100%; }
+    svg.coat {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 8px 32px rgba(0,0,0,.2));
+    }
+    .notes {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+    .note-block h3 {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: #999;
+      margin-bottom: .6rem;
+    }
+    .note-block ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .35rem;
+    }
+    .note-block li {
+      font-size: .82rem;
+      color: #333;
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.5;
+    }
+    .note-block li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #b8965a;
+    }
+    .footer-note {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: .75rem;
+      color: #999;
+      letter-spacing: .06em;
+    }
+    @media print {
+      body { background: white; padding: 1rem; }
+      .coats { gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <h1>Form & Forge — Embroidery Design Brief</h1>
+    <p>Puffer Coat — Black base · Gold metallic thread</p>
+  </div>
+
+  <div class="coats">
+
+    <!-- FRONT -->
+    <div class="coat-panel">
+      <span class="coat-label">Front</span>
+      <div class="coat-wrap">
+        <svg class="coat" viewBox="0 0 400 540" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="body-front-clip">
+              <path d="M130,52 C130,52 108,58 85,80 L55,120 L35,210 L28,510 L372,510 L365,210 L345,120 L315,80 C292,58 270,52 270,52 L250,75 L230,84 L200,88 L170,84 L150,75 Z"/>
+            </clipPath>
+            <clipPath id="sleeve-left-clip">
+              <path d="M55,120 L35,210 L28,510 L72,510 L88,300 Z"/>
+            </clipPath>
+            <clipPath id="sleeve-right-clip">
+              <path d="M345,120 L365,210 L372,510 L328,510 L312,300 Z"/>
+            </clipPath>
+          </defs>
+
+          <!-- Body -->
+          <path d="M130,52 C130,52 108,58 85,80 L55,120 L35,210 L28,510 L372,510 L365,210 L345,120 L315,80 C292,58 270,52 270,52 L250,75 L230,84 L200,88 L170,84 L150,75 Z"
+                fill="#0a0a0a" stroke="#2a2a2a" stroke-width="1.5"/>
+
+          <!-- Puffer quilt lines on body — horizontal channels -->
+          <g clip-path="url(#body-front-clip)" stroke="#1e1e1e" stroke-width="1.2" fill="none">
+            <path d="M35,155 Q200,148 365,155"/>
+            <path d="M33,195 Q200,188 367,195"/>
+            <path d="M31,235 Q200,228 369,235"/>
+            <path d="M30,275 Q200,268 370,275"/>
+            <path d="M29,315 Q200,308 371,315"/>
+            <path d="M28,355 Q200,348 372,355"/>
+            <path d="M28,395 Q200,388 372,395"/>
+            <path d="M28,435 Q200,428 372,435"/>
+            <path d="M28,475 Q200,468 372,475"/>
+          </g>
+
+          <!-- Left sleeve -->
+          <path d="M55,120 L35,210 L28,510 L72,510 L88,300 Z"
+                fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1"/>
+          <!-- Sleeve quilt lines left -->
+          <g clip-path="url(#sleeve-left-clip)" stroke="#1a1a1a" stroke-width="1" fill="none">
+            <line x1="28" y1="155" x2="80" y2="155"/>
+            <line x1="28" y1="195" x2="82" y2="195"/>
+            <line x1="28" y1="235" x2="84" y2="235"/>
+            <line x1="28" y1="275" x2="86" y2="275"/>
+            <line x1="28" y1="315" x2="87" y2="315"/>
+            <line x1="28" y1="355" x2="88" y2="355"/>
+            <line x1="28" y1="395" x2="88" y2="395"/>
+            <line x1="28" y1="435" x2="72" y2="435"/>
+          </g>
+
+          <!-- Right sleeve -->
+          <path d="M345,120 L365,210 L372,510 L328,510 L312,300 Z"
+                fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1"/>
+          <!-- Sleeve quilt lines right -->
+          <g clip-path="url(#sleeve-right-clip)" stroke="#1a1a1a" stroke-width="1" fill="none">
+            <line x1="320" y1="155" x2="372" y2="155"/>
+            <line x1="318" y1="195" x2="372" y2="195"/>
+            <line x1="316" y1="235" x2="372" y2="235"/>
+            <line x1="314" y1="275" x2="372" y2="275"/>
+            <line x1="313" y1="315" x2="372" y2="315"/>
+            <line x1="312" y1="355" x2="372" y2="355"/>
+            <line x1="312" y1="395" x2="372" y2="395"/>
+            <line x1="328" y1="435" x2="372" y2="435"/>
+          </g>
+
+          <!-- Stand collar -->
+          <path d="M150,75 L170,84 L200,88 L230,84 L250,75 L245,52 L200,46 L155,52 Z"
+                fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+
+          <!-- Centre zip -->
+          <rect x="197" y="88" width="6" height="422" fill="#1a1a1a"/>
+          <!-- Zip teeth -->
+          <g fill="#252525">
+            <rect x="197" y="100" width="6" height="3" rx="1"/>
+            <rect x="197" y="108" width="6" height="3" rx="1"/>
+            <rect x="197" y="116" width="6" height="3" rx="1"/>
+            <rect x="197" y="124" width="6" height="3" rx="1"/>
+            <rect x="197" y="132" width="6" height="3" rx="1"/>
+            <rect x="197" y="140" width="6" height="3" rx="1"/>
+          </g>
+          <!-- Zip pull -->
+          <rect x="195" y="92" width="10" height="6" rx="2" fill="#333"/>
+
+          <!-- LEFT CHEST LOGO -->
+          <line x1="80" y1="208" x2="170" y2="208" stroke="#C9A84C" stroke-width="0.8" opacity="0.7"/>
+          <text x="125" y="225" text-anchor="middle"
+                font-family="'Cormorant Garamond',Georgia,serif"
+                font-size="15" font-weight="500" fill="#C9A84C" letter-spacing="1">Form &amp; Forge</text>
+          <text x="125" y="237" text-anchor="middle"
+                font-family="'DM Sans',sans-serif"
+                font-size="5" font-weight="500" fill="#9a7a3a" letter-spacing="2.2">PREMIUM WEBSITE DESIGNER</text>
+
+          <!-- Placement box -->
+          <rect x="74" y="203" width="102" height="39" rx="3"
+                fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.4"/>
+          <text x="125" y="253" text-anchor="middle"
+                font-family="'DM Sans',sans-serif" font-size="7" fill="#666" letter-spacing="1">LEFT CHEST</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- BACK -->
+    <div class="coat-panel">
+      <span class="coat-label">Back</span>
+      <div class="coat-wrap">
+        <svg class="coat" viewBox="0 0 400 540" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="body-back-clip">
+              <path d="M130,52 C130,52 108,58 85,80 L55,120 L35,210 L28,510 L372,510 L365,210 L345,120 L315,80 C292,58 270,52 270,52 L250,75 L230,84 L200,88 L170,84 L150,75 Z"/>
+            </clipPath>
+            <clipPath id="sleeve-bl-clip">
+              <path d="M55,120 L35,210 L28,510 L72,510 L88,300 Z"/>
+            </clipPath>
+            <clipPath id="sleeve-br-clip">
+              <path d="M345,120 L365,210 L372,510 L328,510 L312,300 Z"/>
+            </clipPath>
+          </defs>
+
+          <!-- Body back -->
+          <path d="M130,52 C130,52 108,58 85,80 L55,120 L35,210 L28,510 L372,510 L365,210 L345,120 L315,80 C292,58 270,52 270,52 L250,75 L230,84 L200,88 L170,84 L150,75 Z"
+                fill="#0a0a0a" stroke="#2a2a2a" stroke-width="1.5"/>
+
+          <!-- Puffer quilt lines back -->
+          <g clip-path="url(#body-back-clip)" stroke="#1e1e1e" stroke-width="1.2" fill="none">
+            <path d="M35,155 Q200,148 365,155"/>
+            <path d="M33,195 Q200,188 367,195"/>
+            <path d="M31,235 Q200,228 369,235"/>
+            <path d="M30,275 Q200,268 370,275"/>
+            <path d="M29,315 Q200,308 371,315"/>
+            <path d="M28,355 Q200,348 372,355"/>
+            <path d="M28,395 Q200,388 372,395"/>
+            <path d="M28,435 Q200,428 372,435"/>
+            <path d="M28,475 Q200,468 372,475"/>
+          </g>
+
+          <!-- Left sleeve back -->
+          <path d="M55,120 L35,210 L28,510 L72,510 L88,300 Z"
+                fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1"/>
+          <g clip-path="url(#sleeve-bl-clip)" stroke="#1a1a1a" stroke-width="1" fill="none">
+            <line x1="28" y1="155" x2="80" y2="155"/>
+            <line x1="28" y1="195" x2="82" y2="195"/>
+            <line x1="28" y1="235" x2="84" y2="235"/>
+            <line x1="28" y1="275" x2="86" y2="275"/>
+            <line x1="28" y1="315" x2="87" y2="315"/>
+            <line x1="28" y1="355" x2="88" y2="355"/>
+            <line x1="28" y1="395" x2="88" y2="395"/>
+            <line x1="28" y1="435" x2="72" y2="435"/>
+          </g>
+
+          <!-- Right sleeve back -->
+          <path d="M345,120 L365,210 L372,510 L328,510 L312,300 Z"
+                fill="#0d0d0d" stroke="#2a2a2a" stroke-width="1"/>
+          <g clip-path="url(#sleeve-br-clip)" stroke="#1a1a1a" stroke-width="1" fill="none">
+            <line x1="320" y1="155" x2="372" y2="155"/>
+            <line x1="318" y1="195" x2="372" y2="195"/>
+            <line x1="316" y1="235" x2="372" y2="235"/>
+            <line x1="314" y1="275" x2="372" y2="275"/>
+            <line x1="313" y1="315" x2="372" y2="315"/>
+            <line x1="312" y1="355" x2="372" y2="355"/>
+            <line x1="312" y1="395" x2="372" y2="395"/>
+            <line x1="328" y1="435" x2="372" y2="435"/>
+          </g>
+
+          <!-- Stand collar back -->
+          <path d="M150,75 L170,84 L200,88 L230,84 L250,75 L245,52 L200,46 L155,52 Z"
+                fill="#111" stroke="#2a2a2a" stroke-width="1"/>
+
+          <!-- Centre back seam -->
+          <line x1="200" y1="88" x2="200" y2="510" stroke="#161616" stroke-width="1.5"/>
+
+          <!-- BACK LOGO — upper centre -->
+          <line x1="95" y1="155" x2="305" y2="155" stroke="#C9A84C" stroke-width="0.9" opacity="0.75"/>
+          <text x="200" y="200" text-anchor="middle"
+                font-family="'Cormorant Garamond',Georgia,serif"
+                font-size="44" font-weight="500" fill="#C9A84C" letter-spacing="2">Form &amp; Forge</text>
+          <text x="200" y="222" text-anchor="middle"
+                font-family="'DM Sans',sans-serif"
+                font-size="8.5" font-weight="500" fill="#9a7a3a" letter-spacing="4">PREMIUM WEBSITE DESIGNER — LONDON</text>
+
+          <!-- Logo placement box -->
+          <rect x="86" y="150" width="228" height="80" rx="4"
+                fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.3"/>
+          <text x="200" y="242" text-anchor="middle"
+                font-family="'DM Sans',sans-serif" font-size="7" fill="#666" letter-spacing="1">UPPER CENTRE BACK</text>
+
+          <!-- WEBSITE — bottom of coat -->
+          <text x="200" y="482" text-anchor="middle"
+                font-family="'DM Sans',sans-serif"
+                font-size="12" font-weight="600" fill="#C9A84C" letter-spacing="3.5">FORMANDFORGE.CO.UK</text>
+
+          <!-- Website placement box -->
+          <rect x="96" y="470" width="208" height="22" rx="3"
+                fill="none" stroke="#C9A84C" stroke-width="0.8" stroke-dasharray="4,3" opacity="0.3"/>
+          <text x="200" y="502" text-anchor="middle"
+                font-family="'DM Sans',sans-serif" font-size="7" fill="#666" letter-spacing="1">BOTTOM HEM</text>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Notes -->
+  <div class="notes">
+    <div class="note-block">
+      <h3>Embroidery Spec</h3>
+      <ul>
+        <li>Base jacket: black puffer coat</li>
+        <li>Thread colour: metallic gold (Madeira Metallic No.40 — Gold 9803)</li>
+        <li>All text and lines in gold thread</li>
+        <li>No background fill — text only</li>
+      </ul>
+    </div>
+    <div class="note-block">
+      <h3>Placement Notes</h3>
+      <ul>
+        <li>Front: left chest, approx 9cm wide</li>
+        <li>Back logo: centre upper back, approx 22cm wide</li>
+        <li>Website URL: centre bottom hem, approx 18cm wide</li>
+        <li>Dashed boxes show stitch area only — not part of design</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="footer-note">Form & Forge · zac@formandforge.co.uk · +44 7597 626 748</p>
+
+</div>
+</body>
+</html>

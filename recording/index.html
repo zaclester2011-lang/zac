@@ -3,65 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="LDZxxNWotItjLm3mNX6Qt9CRYd4c-eVLpugae11Hc8Q" />
-  <meta name="description" content="Form & Forge is a premium website designer based in London. We build custom websites for free — just £49/month hosting. Professional, fast, and built to stand out." />
-  <meta name="keywords" content="website designer London, web designer London, affordable website design London, professional website design, small business website London, custom website London" />
+  <meta name="description" content="Form & Forge — A premium premium website designer building brands worth remembering." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Form & Forge | Premium Website Designer London" />
-  <meta property="og:description" content="Premium website design based in London. Custom websites built free — just £49/month hosting. Designed to stand out, delivered fast." />
-  <meta property="og:image" content="https://formandforge.co.uk/og-image.webp" />
-  <meta property="og:url" content="https://formandforge.co.uk" />
+  <meta property="og:title" content="Form & Forge — Brands Worth Remembering" />
+  <meta property="og:description" content="A premium premium website designer building brands worth remembering." />
+  <meta property="og:image" content="/og-image.webp" />
+  <meta property="og:url" content="https://formandforge.studio" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Form & Forge | Premium Website Designer London" />
-  <meta name="twitter:description" content="Premium website design based in London. Custom websites built free — just £49/month hosting." />
-  <meta name="twitter:image" content="https://formandforge.co.uk/og-image.webp" />
-  <link rel="canonical" href="https://formandforge.co.uk" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <meta name="twitter:title" content="Form & Forge" />
+  <meta name="twitter:description" content="A premium premium website designer building brands worth remembering." />
+  <meta name="twitter:image" content="/og-image.webp" />
+  <link rel="canonical" href="https://formandforge.studio" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <title>Form & Forge | Premium Website Designer London</title>
+  <title>Form & Forge — Brands Worth Remembering</title>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "LocalBusiness",
-        "name": "Form & Forge",
-        "url": "https://formandforge.co.uk",
-        "email": "zac@formandforge.co.uk",
-        "description": "Premium website designer based in London. Custom websites built free — just £49/month hosting.",
-        "areaServed": ["London", "United Kingdom"],
-        "priceRange": "££",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "London",
-          "addressCountry": "GB"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Website Design Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "name": "Standard Website Package",
-              "description": "Custom website built free, hosted for £49/month",
-              "price": "49",
-              "priceCurrency": "GBP",
-              "priceSpecification": { "@type": "RecurringChargeSpecification", "billingPeriod": "Month" }
-            }
-          ]
-        }
-      },
-      {
-        "@type": "WebPage",
-        "name": "Form & Forge | Premium Website Designer London",
-        "url": "https://formandforge.co.uk",
-        "description": "Premium website design based in London. Custom websites built free — just £49/month hosting."
-      }
+      { "@type": "Organization", "name": "Form & Forge", "url": "https://formandforge.studio" },
+      { "@type": "WebPage", "name": "Form & Forge — Brands Worth Remembering", "url": "https://formandforge.studio" }
     ]
   }
   </script>
@@ -130,19 +92,17 @@
 
     /* ─── CURSOR ─────────────────────────────────────────────── */
     #cur-dot {
-      position:fixed; width:10px; height:10px;
-      background:var(--gold-light);
+      position:fixed; width:8px; height:8px; background:var(--gold);
       border-radius:50%; pointer-events:none; z-index:99999;
-      transform:translate(-50%,-50%);
-      transition:width 250ms var(--ease), height 250ms var(--ease), background 250ms;
-      box-shadow:0 0 8px hsl(43,72%,65%/.7);
+      transform:translate(-50%,-50%); mix-blend-mode:multiply;
+      transition:width 300ms var(--ease), height 300ms var(--ease);
     }
     #cur-ring {
-      position:fixed; width:38px; height:38px;
-      border:1.5px solid hsl(43,72%,65%/.7);
+      position:fixed; width:36px; height:36px;
+      border:1.5px solid hsl(43 60% 52%/.45);
       border-radius:50%; pointer-events:none; z-index:99998;
       transform:translate(-50%,-50%);
-      transition:width 300ms var(--ease), height 300ms var(--ease), opacity 300ms, border-color 300ms;
+      transition:width 300ms var(--ease), height 300ms var(--ease), opacity 300ms;
     }
 
     /* ─── LAYOUT ─────────────────────────────────────────────── */
@@ -305,8 +265,8 @@
     .port-title em { font-weight:600; font-style:normal; }
     .port-sub {
       max-width:380px; color:var(--text); -webkit-text-stroke:.4px var(--gold);
-      font-size:clamp(1.6rem,3vw,2.6rem); font-family:var(--font-d); font-weight:600;
-      line-height:1.25; letter-spacing:-.01em; text-align:right;
+      font-size:clamp(1.1rem,2vw,1.5rem); font-family:var(--font-d); font-weight:600;
+      line-height:1.3; letter-spacing:-.01em; text-align:right;
     }
 
     .port-grid {
@@ -391,8 +351,7 @@
       color:var(--cream);
     }
     .svc-heading em { font-weight:600; font-style:normal; }
-    .svc-intro { color:var(--text); font-size:.95rem; line-height:1.75; max-width:360px; display:inline-block; border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:.9rem 1.2rem; background:var(--gold-dim); transition:border-color 300ms var(--ease),background 300ms var(--ease),color 300ms var(--ease); }
-    .svc-intro:hover { border-color:hsl(43,72%,60%/.6); background:hsl(43,60%,52%,.18); color:var(--text); box-shadow:0 0 20px hsl(43,60%,52%/.12); }
+    .svc-intro { color:var(--text); font-size:.95rem; line-height:1.75; max-width:360px; display:inline-block; border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:.9rem 1.2rem; background:var(--gold-dim); }
 
     .svc-list { list-style:none; }
     .svc-row {
@@ -443,20 +402,20 @@
       gap:var(--sp4); margin-bottom:var(--sp4);
     }
     .proc-step {
-      padding:var(--sp12) var(--sp10);
-      border:1px solid var(--gold-border);
+      padding:var(--sp8) var(--sp7);
+      border:1px solid var(--border);
+      border-top:2px solid var(--gold-border);
       border-radius:var(--rad-lg);
       background:var(--bg-2);
       position:relative; overflow:hidden;
       transition:border-color 300ms var(--ease), background 300ms var(--ease), transform 300ms var(--ease);
     }
     .proc-step:hover {
-      background:hsl(43,40%,9%);
-      border-color:hsl(43,72%,60%/.5);
-      border-top-color:hsl(43,80%,65%);
+      background:var(--bg-3);
+      border-color:var(--gold-border);
+      border-top-color:var(--gold);
       transform:translateY(-3px);
     }
-    .proc-step:hover .proc-ghost { color:hsl(43 60% 52%/.12); transform:scale(1.06); }
     .proc-ghost {
       position:absolute; bottom:-.1em; right:-.02em;
       font-family:var(--font-d); font-size:clamp(6rem,11vw,10rem);
@@ -464,18 +423,17 @@
       pointer-events:none; letter-spacing:-.05em;
       transition:color 400ms, transform 400ms var(--ease);
     }
+    .proc-step:hover .proc-ghost { color:hsl(43 60% 52%/.14); transform:scale(1.06); }
     .proc-num {
       font-size:.6rem; font-weight:700; letter-spacing:.14em;
       text-transform:uppercase; color:var(--gold); margin-bottom:var(--sp5);
     }
-    .proc-step:hover .proc-name { color:var(--gold-light); }
-    .proc-step:hover .proc-desc { color:var(--gold); opacity:.85; }
     .proc-name {
       font-family:var(--font-d); font-size:clamp(1.2rem,2vw,1.75rem);
       font-weight:700; letter-spacing:-.03em; line-height:1.1;
       color:var(--text); margin-bottom:var(--sp3);
     }
-    .proc-desc { font-size:.85rem; color:var(--text-2); line-height:1.75; transition:color 300ms,opacity 300ms; }
+    .proc-desc { font-size:.85rem; color:var(--text-2); line-height:1.75; }
 
     /* ─── ABOUT ──────────────────────────────────────────────── */
     #about .wrap {
@@ -491,8 +449,7 @@
 
     .about-body {
       color:var(--text); -webkit-text-stroke:.4px var(--gold);
-      font-size:clamp(1.6rem,3vw,2.6rem); font-family:var(--font-d); font-weight:600;
-      line-height:1.25; letter-spacing:-.01em; margin-bottom:var(--sp8);
+      font-size:.97rem; line-height:1.85; margin-bottom:var(--sp8);
     }
 
     /* ─── AIMS GRID ────────────────────────────────────── */
@@ -502,12 +459,10 @@
       border:1px solid var(--border); border-radius:var(--rad-xl);
       transition:border-color 300ms var(--ease), background 300ms var(--ease);
     }
-    .aim-item:hover { border-color:hsl(43,72%,60%/.5); background:hsl(43,40%,9%); }
-    .aim-item:hover .aim-name { color:var(--gold-light); }
-    .aim-item:hover .aim-desc { color:var(--gold); }
+    .aim-item:hover { border-color:var(--gold-border); background:var(--gold-dim); }
     .aim-num { font-family:var(--font-d); font-size:.75rem; font-weight:700; color:var(--gold); letter-spacing:.06em; flex-shrink:0; padding-top:.1rem; }
-    .aim-name { font-size:.92rem; font-weight:600; color:var(--text); margin-bottom:.3rem; transition:color 300ms; }
-    .aim-desc { font-size:.78rem; color:var(--text-2); line-height:1.65; transition:color 300ms; }
+    .aim-name { font-size:.92rem; font-weight:600; color:var(--text); margin-bottom:.3rem; }
+    .aim-desc { font-size:.78rem; color:var(--text-2); line-height:1.65; }
     .aim-item--featured {
       grid-column:1/-1; display:flex; align-items:center; gap:var(--sp6);
       padding:var(--sp8) var(--sp8); border-color:var(--gold-border);
@@ -582,7 +537,7 @@
       transition:border-color 300ms, box-shadow 300ms;
       appearance:none; -webkit-appearance:none;
     }
-    .fg textarea { resize:vertical; min-height:180px; }
+    .fg textarea { resize:vertical; min-height:110px; }
     .fg input:focus, .fg textarea:focus, .fg select:focus {
       border-color:var(--gold); box-shadow:var(--sh-gold);
     }
@@ -1386,70 +1341,12 @@
 
     /* ─── TESTIMONIALS ──────────────────────────────────────── */
     .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp6); margin-bottom:var(--sp12); }
-    .testi-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); transition:background 300ms var(--ease),border-color 300ms var(--ease),transform 300ms var(--ease); }
-    .testi-card:hover { background:hsl(43,45%,10%); border-color:hsl(43,72%,60%/.5); transform:translateY(-3px); }
-    .testi-card:hover .testi-q { color:var(--gold-light); }
-    .testi-q { transition:color 300ms; }
+    .testi-card { background:var(--bg-2); border:1px solid var(--border); border-radius:var(--rad-xl); padding:var(--sp8); display:flex; flex-direction:column; gap:var(--sp4); }
     .testi-stars { color:var(--gold); font-size:.95rem; letter-spacing:.06em; }
     .testi-q { font-family:var(--font-d); font-size:clamp(.9rem,1.3vw,1.05rem); font-style:italic; line-height:1.65; color:var(--text); flex:1; }
     .testi-by { font-size:.8rem; font-weight:600; color:var(--text-2); margin-bottom:.1rem; }
     .testi-co { font-size:.75rem; color:var(--text-3); }
     @media(max-width:768px) { .testi-grid { grid-template-columns:1fr; } }
-
-    /* ── PRICING ─────────────────────────────────────────────── */
-    .pricing-hed { font-family:var(--font-d); font-size:clamp(2.4rem,4.5vw,4.5rem); font-weight:300; letter-spacing:.01em; line-height:1.1; font-style:italic; margin-bottom:var(--sp16); color:hsl(0,0%,96%); }
-    .pricing-hed em { font-style:normal; font-weight:600; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.08em; display:inline-block; }
-
-    .pricing-grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp6); align-items:stretch; }
-    @media(max-width:700px){
-      .pricing-grid { grid-template-columns:1fr; }
-      .pricing-hdr { display:none !important; }
-      .addons-wrap { margin-top:var(--sp12); padding-top:var(--sp10); border-top:1px solid var(--gold-border); position:relative; }
-      .addons-wrap::before { content:'Optional Upgrades'; display:block; font-family:var(--font-d); font-size:clamp(1.5rem,6vw,2rem); font-weight:800; letter-spacing:-.03em; color:var(--gold-light); margin-bottom:var(--sp8); }
-    }
-
-    .pkg-card {
-      background:var(--bg-2); border:1px solid var(--gold-border);
-      border-radius:var(--rad-xl); padding:var(--sp10) var(--sp10);
-      position:relative; overflow:hidden;
-    }
-    .pkg-card::before {
-      content:''; position:absolute; inset:0; border-radius:inherit;
-      background:linear-gradient(135deg,hsl(43,60%,52%,.07) 0%,transparent 60%);
-      pointer-events:none;
-    }
-    .pkg-badge { display:inline-block; font-family:var(--font-b); font-size:.65rem; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-light); border:1px solid var(--gold-border); border-radius:var(--rad-full); padding:.3em 1em; margin-bottom:var(--sp8); transition:background 300ms,color 300ms,border-color 300ms; }
-    .pkg-free { display:block; font-family:var(--font-d); font-size:clamp(1.4rem,2.5vw,2rem); font-weight:700; letter-spacing:-.02em; color:var(--gold); margin-bottom:var(--sp2); transition:color 300ms; }
-    .pkg-price-row { display:flex; align-items:baseline; gap:.3rem; margin-bottom:var(--sp8); margin-top:var(--sp6); }
-    .pkg-amount { font-family:var(--font-d); font-size:clamp(4rem,8vw,6rem); font-weight:800; letter-spacing:-.05em; line-height:1; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; }
-    .pkg-period { font-family:var(--font-b); font-size:.95rem; color:var(--gold); letter-spacing:.02em; transition:color 300ms; }
-    .pkg-divider { width:100%; height:1px; background:linear-gradient(to right,transparent,var(--gold-border),transparent); margin-bottom:var(--sp8); transition:background 300ms; }
-    .pkg-features { list-style:none; display:flex; flex-direction:column; gap:var(--sp4); }
-    .pkg-features li { display:flex; align-items:center; gap:var(--sp4); font-family:var(--font-b); font-size:.95rem; color:var(--gold); line-height:1.5; transition:color 300ms; }
-    .pkg-features li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--gold); flex-shrink:0; transition:background 300ms; }
-    .pkg-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-xl); padding:var(--sp10); position:relative; overflow:hidden; transition:border-color 300ms,box-shadow 300ms; cursor:default; }
-    .pkg-card::before { content:''; position:absolute; inset:0; border-radius:inherit; background:linear-gradient(135deg,hsl(43,60%,52%,.07) 0%,transparent 60%); pointer-events:none; }
-    .pkg-card:hover { border-color:var(--gold); box-shadow:0 0 0 1px var(--gold),0 0 40px hsl(43,60%,52%,.15); }
-    .pkg-card:hover .pkg-free,
-    .pkg-card:hover .pkg-period,
-    .pkg-card:hover .pkg-features li { color:var(--gold-light); }
-    .pkg-card:hover .pkg-features li::before { background:var(--gold-light); }
-    .pkg-card:hover .pkg-divider { background:linear-gradient(to right,transparent,var(--gold),transparent); }
-    .pkg-card:hover .pkg-badge { background:var(--gold); color:var(--bg); border-color:var(--gold); }
-
-    .addons-wrap { display:flex; flex-direction:column; gap:var(--sp8); }
-    .addons-label { font-family:var(--font-d); font-size:clamp(1.5rem,2.5vw,2.4rem); font-weight:800; letter-spacing:-.03em; line-height:1; color:var(--gold-light); display:inline-block; cursor:default; }
-    .addon-card { background:var(--bg-2); border:1px solid var(--gold-border); border-radius:var(--rad-lg); padding:var(--sp10) var(--sp10); display:flex; align-items:center; justify-content:space-between; gap:var(--sp8); transition:border-color 300ms,box-shadow 300ms,background 300ms; cursor:default; }
-    .addon-card:hover { border-color:hsl(43,80%,65%); box-shadow:0 0 0 1px hsl(43,80%,65%),0 0 30px hsl(43,72%,58%/.18); background:hsl(43,40%,9%); }
-    .addon-name { font-family:var(--font-d); font-size:clamp(1.6rem,2.5vw,2.4rem); font-weight:700; letter-spacing:-.02em; color:var(--gold-light); margin-bottom:var(--sp3); transition:color 300ms; }
-    .addon-list { list-style:none; display:flex; flex-direction:column; gap:var(--sp3); margin-top:var(--sp3); }
-    .addon-list li { display:flex; align-items:flex-start; gap:var(--sp3); font-family:var(--font-b); font-size:1rem; color:var(--text-2); line-height:1.6; transition:color 250ms; }
-    .addon-list li::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0; margin-top:.6em; }
-    .addon-card:hover .addon-name { color:hsl(43,85%,72%); }
-    .addon-card:hover .addon-list li { color:var(--text); }
-    .addon-price { font-family:var(--font-d); font-size:clamp(2.4rem,3.8vw,3.2rem); font-weight:800; letter-spacing:-.04em; white-space:nowrap; background:linear-gradient(100deg,var(--gold-light) 0%,var(--gold) 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; padding-bottom:.05em; flex-shrink:0; }
-    .addon-price span { font-size:.4em; color:var(--gold); -webkit-text-fill-color:var(--gold); letter-spacing:.04em; }
-
   </style>
 </head>
 <body>
@@ -1458,7 +1355,7 @@
   <div class="intro-inner" role="status" aria-label="Form and Forge loading">
     <div class="intro-line" aria-hidden="true"></div>
     <p class="intro-txt">Form &amp; Forge</p>
-    <p class="intro-sub">Premium Website Designer &mdash; London</p>
+    <p class="intro-sub">Built to Impress</p>
   </div>
   <a class="skip" href="#main">Skip to content</a>
   <!-- ── Project Modals ─────────────────────────────────── -->
@@ -1576,7 +1473,7 @@
             </div>
           </div>
           <div class="vp-plan-row">
-            <div><div class="vp-plan-label">Current plan</div><div class="vp-plan-price">£49<span>/mo</span></div></div>
+            <div><div class="vp-plan-label">Current plan</div><div class="vp-plan-price">£60<span>/mo</span></div></div>
             <div><div class="vp-plan-next">Next billing: 1 Jul 2026</div></div>
             <span class="vp-plan-badge">Pro Hosting</span>
           </div>
@@ -1879,7 +1776,7 @@
           </article>
 
           <article class="pi" data-a>
-            <div class="pi-bg hd-wrap" role="img" aria-label="Managed website hosting dashboard — £49 per month">
+            <div class="pi-bg hd-wrap" role="img" aria-label="Managed website hosting dashboard — £60 per month">
               <div class="hd-nav">
                 <span class="hd-logo"><span class="hd-logo-icon"></span>Forge Host</span>
                 <span class="hd-nav-items">Overview &ensp; Analytics &ensp; Security &ensp; Settings</span>
@@ -1894,7 +1791,7 @@
               <div class="hd-plan-row">
                 <div>
                   <div class="hd-plan-label">Your Plan</div>
-                  <div class="hd-plan-price">£49<span>/mo</span></div>
+                  <div class="hd-plan-price">£60<span>/mo</span></div>
                 </div>
                 <span class="hd-plan-badge">Managed Hosting</span>
               </div>
@@ -2080,7 +1977,7 @@
         <div class="svc-left">
           <p class="sec-label">What We Do</p>
           <h2 id="svc-h2" class="svc-heading" data-a>Top designers,<br><em style="color:var(--gold-antique);font-style:normal">excellent and affordable.</em></h2>
-          <p class="svc-intro" data-a>Three steps to a website that works for you — delivered fast and hosted for <strong style="color:var(--gold-light);font-weight:700">£49 per month</strong>.</p>
+          <p class="svc-intro" data-a>Three steps to a website that works for you — delivered fast and hosted for <strong style="color:var(--gold-light);font-weight:700">£60 per month</strong>.</p>
         </div>
         <ul class="svc-steps">
           <li class="svc-step" data-a>
@@ -2101,7 +1998,7 @@
             <span class="svc-step-num">03</span>
             <div class="svc-step-body">
               <h3 class="svc-step-name">You use it stress free.</h3>
-              <p class="svc-step-desc">We host it for you, keep it updated, and make sure it runs perfectly — forever. All for <strong>£49 per month</strong>. No surprises. No technical headaches. Just your site, always on.</p>
+              <p class="svc-step-desc">We host it for you, keep it updated, and make sure it runs perfectly — forever. All for <strong>£60 per month</strong>. No surprises. No technical headaches. Just your site, always on.</p>
             </div>
           </li>
         </ul>
@@ -2133,7 +2030,6 @@
             <span class="proc-ghost" aria-hidden="true">03</span>
           </div>
         </div>
-        <p class="sec-label" style="margin-top:var(--sp24);margin-bottom:var(--sp6)">Don't just take our word for it.</p>
         <div class="testi-grid">
           <div class="testi-card" data-a>
             <span class="testi-stars">★★★★★</span>
@@ -2147,79 +2043,9 @@
           </div>
           <div class="testi-card" data-a>
             <span class="testi-stars">★★★★★</span>
-            <p class="testi-q">"The £49 a month feels like a joke for what you get. Everything is taken care of and the site looks absolutely flawless."</p>
+            <p class="testi-q">"The £60 a month feels like a joke for what you get. Everything is taken care of and the site looks absolutely flawless."</p>
             <div><p class="testi-by">Priya K.</p><p class="testi-co">CEO, Sage Studio</p></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" aria-labelledby="pricing-h2">
-      <div class="wrap">
-        <p class="sec-label" data-a>Our Prices</p>
-        <h2 id="pricing-h2" class="pricing-hed" data-a>Clear pricing.<br><em>No surprises.</em></h2>
-        <div class="pricing-hdr" style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp6);margin-bottom:var(--sp6);align-items:end">
-          <div></div>
-          <p class="addons-label">Optional Upgrades</p>
-        </div>
-        <div class="pricing-grid">
-
-          <!-- Standard Package -->
-          <div class="pkg-card" data-a>
-            <p class="pkg-badge">Standard Package</p>
-            <p class="pkg-free">Website — <span>Built Free</span></p>
-            <div class="pkg-price-row">
-              <span class="pkg-amount">£49</span>
-              <span class="pkg-period">/ month hosting</span>
-            </div>
-            <div class="pkg-divider"></div>
-            <ul class="pkg-features">
-              <li>Bespoke website, designed and built for you</li>
-              <li>Fully managed professional hosting</li>
-              <li>SSL certificate — always secure</li>
-              <li>2 free updates included every year</li>
-              <li>No hidden fees. Ever.</li>
-            </ul>
-          </div>
-
-          <!-- Add-ons -->
-          <div class="addons-wrap" data-a>
-
-            <div class="addon-card">
-              <div>
-                <p class="addon-name" data-addon-wave>Professional Email</p>
-                <ul class="addon-list">
-                  <li>Your own domain email address — e.g. you@yourbusiness.co.uk.</li>
-                  <li style="margin-top:var(--sp4)">Professional, trusted, memorable.</li>
-                </ul>
-              </div>
-              <p class="addon-price">£19<span>/mo</span></p>
-            </div>
-
-            <div class="addon-card">
-              <div>
-                <p class="addon-name" data-addon-wave>Online Shop</p>
-                <ul class="addon-list">
-                  <li>A fully integrated online shop built into your website.</li>
-                  <li>Sell products. Look premium. No separate platform needed.</li>
-                </ul>
-              </div>
-              <p class="addon-price">£19<span>/mo</span></p>
-            </div>
-
-            <div class="addon-card">
-              <div>
-                <p class="addon-name" data-addon-wave>Additional Updates</p>
-                <ul class="addon-list">
-                  <li>Two free updates included every year on top of your original website.</li>
-                  <li>Need more? Any extra changes are just £99 flat — no hourly rates.</li>
-                </ul>
-              </div>
-              <p class="addon-price">2<span> free/yr</span></p>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -2235,7 +2061,7 @@
         </div>
         <div>
           <h2 id="about-h2" class="sr">About Form &amp; Forge</h2>
-          <p class="about-body" data-a style="font-size:clamp(1.3rem,2.4vw,2.1rem)">Every project we take on delivers all four of our aims. Without exception.</p>
+          <p class="about-body" data-a>Form &amp; Forge is a premium website designer based in London. Everything we build is guided by four principles.</p>
           <div class="aims-grid" data-a>
             <div class="aim-item aim-item--featured">
               <span class="aim-num">01</span>
@@ -2283,36 +2109,19 @@
         </h2>
         <div class="contact-body">
           <div>
-            <p class="cd-label" style="font-size:1.1rem;letter-spacing:.18em;margin-bottom:var(--sp6)">Contact Us</p>
+            <p class="cd-label" style="font-size:.9rem;letter-spacing:.18em;margin-bottom:var(--sp6)">Contact Us</p>
             <div class="contact-details" data-a>
               <div>
                 <p class="cd-label">Email</p>
                 <a class="cd-val" href="mailto:zac@formandforge.co.uk">zac@formandforge.co.uk</a>
               </div>
               <div>
-                <p class="cd-label">Phone</p>
-                <a class="cd-val" href="tel:+447597626748" style="white-space:nowrap">+44 7597 626 748</a>
-              </div>
-              <div>
                 <p class="cd-label">Based in</p>
                 <p class="cd-val">London, England — Working globally</p>
               </div>
             </div>
-            <div style="margin-top:var(--sp10)">
-              <p class="cd-label" style="font-size:.9rem;letter-spacing:.18em;margin-bottom:var(--sp6)">Follow Our Work on Social Media</p>
-              <div class="contact-details">
-                <div>
-                  <p class="cd-label">Instagram</p>
-                  <a class="cd-val" href="https://www.instagram.com/form.andforge/" target="_blank" rel="noopener noreferrer">@form.andforge</a>
-                </div>
-                <div>
-                  <p class="cd-label">Linked In</p>
-                  <a class="cd-val" href="https://www.linkedin.com/in/form-forge-5b32a7415/" target="_blank" rel="noopener noreferrer">Form &amp; Forge</a>
-                </div>
-              </div>
-            </div>
           </div>
-          <form class="c-form" id="enquiry-form" action="https://formspree.io/f/xykakqay" method="post" aria-label="Project enquiry" novalidate>
+          <form class="c-form" action="#" method="post" aria-label="Project enquiry" novalidate>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--sp4)">
               <div class="fg">
                 <label for="f-fname">First Name</label>
@@ -2329,12 +2138,8 @@
               <span class="fg-hint">We'll never share this. Ever.</span>
             </div>
             <div class="fg">
-              <label for="f-company">Company Name</label>
-              <input type="text" id="f-company" name="company" placeholder="Acme Ltd" autocomplete="organization" />
-            </div>
-            <div class="fg">
               <label for="f-msg">Tell us about your project</label>
-              <textarea id="f-msg" name="message" style="min-height:180px" placeholder="Give us as much detail as you can — colours, fonts, target audience, examples of similar websites you like the look of. Any key words or phrases you would like included. Any add-ons? An online shop? Tell us your aims and objectives, e.g. more sales, more enquiries." required></textarea>
+              <textarea id="f-msg" name="message" placeholder="Give us as much detail as you can — colours, fonts, target audience, examples of similar websites you like the look of. An online shop? Tell us your aims and objectives, e.g. more sales, more enquiries." required></textarea>
             </div>
             <button type="submit" class="c-btn" data-magnetic>
               Send enquiry
@@ -2353,8 +2158,8 @@
         <p class="foot-copy">© 2026 Form &amp; Forge Studio. All rights reserved.</p>
         <ul class="foot-links">
           <li><a href="#">Privacy</a></li>
-          <li><a href="https://www.instagram.com/form.andforge/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="https://www.linkedin.com/in/form-forge-5b32a7415/" target="_blank" rel="noopener noreferrer">Linked In</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
         </ul>
       </div>
     </div>
@@ -2449,7 +2254,7 @@
       dot.style.left=mx+'px'; dot.style.top=my+'px';
     });
     (function ani(){
-      rx+=(mx-rx)*.2; ry+=(my-ry)*.2;
+      rx+=(mx-rx)*.1; ry+=(my-ry)*.1;
       ring.style.left=rx+'px'; ring.style.top=ry+'px';
       requestAnimationFrame(ani);
     })();
@@ -2500,62 +2305,6 @@
     row.addEventListener('mouseenter', () =>
       spans.forEach(s => { s.style.transform='translateY(-3px)'; s.style.color='var(--gold)'; }));
     row.addEventListener('mouseleave', () =>
-      spans.forEach(s => { s.style.transform=''; s.style.color=''; }));
-  });
-
-  /* ── Enquiry form ───────────────────────────────────────── */
-  const enquiryForm = document.getElementById('enquiry-form');
-  if (enquiryForm) {
-    enquiryForm.addEventListener('submit', async e => {
-      e.preventDefault();
-      const btn = enquiryForm.querySelector('[type=submit]');
-      const fields = enquiryForm.querySelectorAll('[required]');
-      let valid = true;
-      fields.forEach(f => { if (!f.value.trim()) { f.style.borderColor='var(--gold)'; valid=false; } else { f.style.borderColor=''; } });
-      if (!valid) return;
-      btn.disabled = true;
-      btn.innerHTML = 'Sending&hellip;';
-      try {
-        const res = await fetch('https://formspree.io/f/xykakqay', { method:'POST', headers:{'Accept':'application/json'}, body: new FormData(enquiryForm) });
-        if (res.ok) {
-          enquiryForm.innerHTML = `<div style="text-align:center;padding:var(--sp16) var(--sp8)"><p style="font-family:var(--font-d);font-size:clamp(1.8rem,4vw,3rem);font-weight:800;letter-spacing:-.03em;background:linear-gradient(100deg,var(--gold-light) 0%,var(--text) 55%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.1em;margin-bottom:var(--sp4)">Enquiry received.</p><p style="color:var(--text-2);font-size:var(--step--1);line-height:1.6">We'll be in touch within 24 hours.</p></div>`;
-        } else { throw new Error(); }
-      } catch {
-        btn.disabled = false;
-        btn.innerHTML = 'Send enquiry <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-        const err = document.createElement('p');
-        err.style.cssText = 'color:var(--gold);font-size:.85rem;margin-top:var(--sp3);text-align:center';
-        err.textContent = 'Something went wrong — please email us directly at zac@formandforge.co.uk';
-        enquiryForm.appendChild(err);
-        setTimeout(() => err.remove(), 6000);
-      }
-    });
-  }
-
-  /* ── Lift on addon section heading ─────────────────────── */
-  document.querySelectorAll('[data-heading-wave]').forEach(el => {
-    el.innerHTML = [...el.textContent].map(ch =>
-      ch === ' ' ? ' ' :
-      `<span style="display:inline-block;transition:transform 280ms cubic-bezier(.34,1.56,.64,1),color 250ms ease">${ch}</span>`
-    ).join('');
-    const spans = el.querySelectorAll('span');
-    el.addEventListener('mouseenter', () =>
-      spans.forEach(s => { s.style.transform='translateY(-5px)'; s.style.color='var(--text)'; }));
-    el.addEventListener('mouseleave', () =>
-      spans.forEach(s => { s.style.transform=''; s.style.color=''; }));
-  });
-
-  /* ── Lift on addon titles ───────────────────────────────── */
-  document.querySelectorAll('[data-addon-wave]').forEach(el => {
-    el.innerHTML = [...el.textContent].map(ch =>
-      ch === ' ' ? ' ' :
-      `<span style="display:inline-block;transition:transform 280ms cubic-bezier(.34,1.56,.64,1),color 250ms ease">${ch}</span>`
-    ).join('');
-    const spans = el.querySelectorAll('span');
-    const card = el.closest('.addon-card');
-    card.addEventListener('mouseenter', () =>
-      spans.forEach(s => { s.style.transform='translateY(-4px)'; s.style.color='var(--gold-light)'; }));
-    card.addEventListener('mouseleave', () =>
       spans.forEach(s => { s.style.transform=''; s.style.color=''; }));
   });
 

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tales from the Shed — inclusive performing arts for every child, at Chickenshed Theatre. Drama, music, movement and storytelling for children of all backgrounds." />
+  <meta property="og:title" content="Tales from the Shed | Inclusive Performing Arts" />
+  <meta property="og:description" content="Joyful, inclusive performing arts for every child at Chickenshed Theatre." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>🎭</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Tales from the Shed | Inclusive Performing Arts for Every Child</title>
+  <style>
+    :root {
+      --red:       hsl(0,82%,62%);
+      --yellow:    hsl(45,96%,56%);
+      --pink:      hsl(330,82%,65%);
+      --green:     hsl(145,65%,45%);
+      --orange:    hsl(24,92%,58%);
+      --purple:    hsl(268,68%,62%);
+      --turq:      hsl(176,72%,42%);
+      --dark:      hsl(240,20%,16%);
+      --text:      hsl(240,15%,20%);
+      --text-2:    hsl(240,10%,45%);
+      --light:     hsl(48,40%,97%);
+      --light-2:   hsl(48,30%,94%);
+      --border:    hsl(240,10%,88%);
+      --font-h: 'Fredoka',sans-serif;
+      --font-b: 'Nunito',sans-serif;
+      --ease:   cubic-bezier(.4,0,.2,1);
+      --spring: cubic-bezier(.34,1.56,.64,1);
+      --rad:    16px;
+      --rad-xl: 28px;
+      --rad-full: 999px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--font-b);background:var(--light);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+
+    /* ── REVEAL ─────────────────────────────────────── */
+    [data-a]{opacity:0;transform:translateY(24px);transition:opacity 500ms var(--ease),transform 500ms var(--ease);}
+    [data-a="l"]{transform:translateX(-24px);}
+    [data-a="r"]{transform:translateX(24px);}
+    [data-a="scale"]{transform:scale(.94);}
+    [data-a].vis{opacity:1;transform:none;}
+    @media(prefers-reduced-motion:reduce){[data-a]{opacity:1;transform:none;}}
+
+    /* ── NAV ─────────────────────────────────────────── */
+    header{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 clamp(1.25rem,4vw,2.5rem);transition:all 300ms var(--ease);}
+    header.scrolled{background:hsl(48,40%,97%/.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 2px 24px hsl(240,20%,16%/.08);border-bottom:1px solid var(--border);}
+    nav{display:flex;align-items:center;justify-content:space-between;height:70px;max-width:1180px;margin:0 auto;}
+    .nav-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;}
+    .nav-logo-icon{width:38px;height:38px;background:linear-gradient(135deg,var(--red),var(--orange));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+    .nav-logo-text{font-family:var(--font-h);font-size:1.15rem;font-weight:600;color:var(--dark);letter-spacing:.01em;line-height:1.1;}
+    .nav-logo-text span{display:block;font-size:.6rem;font-weight:400;color:var(--text-2);letter-spacing:.04em;font-family:var(--font-b);}
+    .nav-links{display:flex;align-items:center;gap:1.75rem;}
+    .nav-links a{font-size:.85rem;font-weight:600;color:var(--text-2);text-decoration:none;transition:color 200ms;}
+    .nav-links a:hover{color:var(--dark);}
+    .nav-cta{background:var(--red);color:#fff;font-family:var(--font-b);font-size:.82rem;font-weight:700;padding:.6rem 1.4rem;border-radius:var(--rad-full);border:none;cursor:pointer;transition:background 200ms,transform 300ms var(--spring);text-decoration:none;}
+    .nav-cta:hover{background:hsl(0,82%,55%);transform:translateY(-2px);}
+
+    /* ── HERO ─────────────────────────────────────────── */
+    #hero{min-height:100vh;display:flex;align-items:center;padding:clamp(7rem,12vw,9rem) clamp(1.25rem,4vw,2.5rem) clamp(4rem,7vw,6rem);position:relative;overflow:hidden;background:var(--light);}
+
+    /* floating blobs */
+    .blob{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none;opacity:.35;}
+    .blob-1{width:400px;height:400px;background:var(--red);top:-80px;right:-60px;}
+    .blob-2{width:300px;height:300px;background:var(--yellow);top:50%;left:-80px;}
+    .blob-3{width:250px;height:250px;background:var(--pink);bottom:-60px;right:20%;}
+    .blob-4{width:200px;height:200px;background:var(--turq);top:20%;right:30%;}
+
+    /* floating shapes */
+    .shape{position:absolute;pointer-events:none;opacity:.7;}
+    .shape-star{font-size:2rem;animation:float 4s ease-in-out infinite;}
+    .shape-circle{width:18px;height:18px;border-radius:50%;animation:float2 5s ease-in-out infinite;}
+    .shape-sq{width:14px;height:14px;border-radius:4px;animation:float 3.5s ease-in-out infinite;}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-18px) rotate(8deg)}}
+    @keyframes float2{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-14px) scale(1.1)}}
+
+    .hero-inner{max-width:1180px;margin:0 auto;width:100%;position:relative;z-index:2;display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center;}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:hsl(145,65%,45%/.12);border:1.5px solid hsl(145,65%,45%/.3);color:var(--green);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.4rem .9rem;border-radius:var(--rad-full);margin-bottom:1.5rem;}
+    h1{font-family:var(--font-h);font-size:clamp(2.8rem,5.5vw,4.5rem);font-weight:700;line-height:1.1;color:var(--dark);margin-bottom:1.25rem;}
+    h1 .word-1{color:var(--red);}
+    h1 .word-2{color:var(--purple);}
+    h1 .word-3{color:var(--turq);}
+    .hero-sub{font-size:clamp(.95rem,1.2vw,1.05rem);color:var(--text-2);line-height:1.75;margin-bottom:2rem;max-width:480px;}
+    .hero-btns{display:flex;gap:.85rem;flex-wrap:wrap;margin-bottom:2.5rem;}
+    .btn-primary{background:var(--red);color:#fff;font-family:var(--font-b);font-size:.85rem;font-weight:700;padding:.85rem 1.9rem;border-radius:var(--rad-full);border:none;cursor:pointer;transition:background 200ms,transform 300ms var(--spring);text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
+    .btn-primary:hover{background:hsl(0,82%,55%);transform:translateY(-3px);}
+    .btn-outline{background:transparent;color:var(--dark);font-family:var(--font-b);font-size:.85rem;font-weight:700;padding:.85rem 1.9rem;border-radius:var(--rad-full);border:2px solid var(--border);cursor:pointer;transition:border-color 200ms,transform 300ms var(--spring);text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
+    .btn-outline:hover{border-color:var(--dark);transform:translateY(-3px);}
+    .hero-note{font-size:.78rem;color:var(--text-2);display:flex;align-items:center;gap:.5rem;}
+    .hero-note::before{content:'✓';color:var(--green);font-weight:700;}
+
+    /* Hero visual */
+    .hero-visual{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;}
+    .hero-card{border-radius:var(--rad-xl);overflow:hidden;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:3.5rem;transition:transform 300ms var(--spring);}
+    .hero-card:hover{transform:scale(1.05) rotate(-2deg);}
+    .hc-1{background:linear-gradient(135deg,hsl(0,82%,62%/.2),hsl(0,82%,62%/.1));border:2px solid hsl(0,82%,62%/.2);grid-row:1/3;font-size:5rem;}
+    .hc-2{background:linear-gradient(135deg,hsl(45,96%,56%/.2),hsl(45,96%,56%/.1));border:2px solid hsl(45,96%,56%/.2);}
+    .hc-3{background:linear-gradient(135deg,hsl(268,68%,62%/.2),hsl(268,68%,62%/.1));border:2px solid hsl(268,68%,62%/.2);}
+
+    /* ── SECTION SHARED ──────────────────────────────── */
+    .sec-wrap{max-width:1180px;margin:0 auto;}
+    .sec-label{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.6rem;}
+    .sec-title{font-family:var(--font-h);font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:700;line-height:1.2;margin-bottom:.9rem;color:var(--dark);}
+    .sec-sub{font-size:.92rem;color:var(--text-2);line-height:1.75;max-width:520px;margin-bottom:2.75rem;}
+
+    /* ── ABOUT ───────────────────────────────────────── */
+    #about{padding:clamp(4rem,8vw,7rem) clamp(1.25rem,4vw,2.5rem);background:var(--light-2);}
+    .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+    .about-visual{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;}
+    .about-tile{border-radius:var(--rad-xl);padding:2rem;display:flex;flex-direction:column;gap:.5rem;transition:transform 300ms var(--spring);}
+    .about-tile:hover{transform:translateY(-5px);}
+    .about-tile-icon{font-size:2rem;margin-bottom:.25rem;}
+    .about-tile-title{font-family:var(--font-h);font-size:1rem;font-weight:600;color:var(--dark);}
+    .about-tile-sub{font-size:.78rem;color:var(--text-2);line-height:1.6;}
+    .at-1{background:hsl(0,82%,62%/.1);border:1.5px solid hsl(0,82%,62%/.2);}
+    .at-2{background:hsl(45,96%,56%/.12);border:1.5px solid hsl(45,96%,56%/.25);}
+    .at-3{background:hsl(268,68%,62%/.1);border:1.5px solid hsl(268,68%,62%/.2);}
+    .at-4{background:hsl(145,65%,45%/.1);border:1.5px solid hsl(145,65%,45%/.2);}
+    .chickenshed-badge{display:inline-flex;align-items:center;gap:.6rem;background:hsl(176,72%,42%/.1);border:1.5px solid hsl(176,72%,42%/.25);color:var(--turq);font-size:.78rem;font-weight:700;padding:.5rem 1rem;border-radius:var(--rad-full);margin-top:1.5rem;}
+
+    /* ── WHAT WE DO ──────────────────────────────────── */
+    #services{padding:clamp(4rem,8vw,7rem) clamp(1.25rem,4vw,2.5rem);}
+    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;}
+    .svc-card{border-radius:var(--rad-xl);padding:2rem;border:2px solid transparent;cursor:pointer;transition:transform 300ms var(--spring),box-shadow 300ms,border-color 300ms;}
+    .svc-card:hover{transform:translateY(-6px);box-shadow:0 16px 40px hsl(240,20%,16%/.1);}
+    .sc-1{background:hsl(0,82%,62%/.08);border-color:hsl(0,82%,62%/.15);}
+    .sc-1:hover{border-color:var(--red);box-shadow:0 16px 40px hsl(0,82%,62%/.15);}
+    .sc-2{background:hsl(45,96%,56%/.1);border-color:hsl(45,96%,56%/.2);}
+    .sc-2:hover{border-color:var(--yellow);box-shadow:0 16px 40px hsl(45,96%,56%/.15);}
+    .sc-3{background:hsl(330,82%,65%/.08);border-color:hsl(330,82%,65%/.15);}
+    .sc-3:hover{border-color:var(--pink);box-shadow:0 16px 40px hsl(330,82%,65%/.15);}
+    .sc-4{background:hsl(145,65%,45%/.08);border-color:hsl(145,65%,45%/.15);}
+    .sc-4:hover{border-color:var(--green);box-shadow:0 16px 40px hsl(145,65%,45%/.15);}
+    .sc-5{background:hsl(268,68%,62%/.08);border-color:hsl(268,68%,62%/.15);}
+    .sc-5:hover{border-color:var(--purple);box-shadow:0 16px 40px hsl(268,68%,62%/.15);}
+    .sc-6{background:hsl(176,72%,42%/.08);border-color:hsl(176,72%,42%/.15);}
+    .sc-6:hover{border-color:var(--turq);box-shadow:0 16px 40px hsl(176,72%,42%/.15);}
+    .svc-icon{font-size:2.2rem;margin-bottom:1rem;}
+    .svc-name{font-family:var(--font-h);font-size:1.15rem;font-weight:600;color:var(--dark);margin-bottom:.5rem;}
+    .svc-desc{font-size:.82rem;color:var(--text-2);line-height:1.7;}
+
+    /* ── PORTFOLIO ───────────────────────────────────── */
+    #portfolio{padding:clamp(4rem,8vw,7rem) clamp(1.25rem,4vw,2.5rem);background:var(--light-2);}
+    .port-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2.75rem;}
+    .port-card{border-radius:var(--rad-xl);overflow:hidden;cursor:pointer;transition:transform 300ms var(--spring),box-shadow 300ms;}
+    .port-card:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:0 20px 50px hsl(240,20%,16%/.12);}
+    .port-img{aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;}
+    .pc-1 .port-img{background:linear-gradient(135deg,hsl(0,82%,62%/.25),hsl(45,96%,56%/.25));}
+    .pc-2 .port-img{background:linear-gradient(135deg,hsl(268,68%,62%/.25),hsl(330,82%,65%/.25));}
+    .pc-3 .port-img{background:linear-gradient(135deg,hsl(176,72%,42%/.25),hsl(145,65%,45%/.25));}
+    .port-body{background:white;padding:1.25rem;}
+    .port-title{font-family:var(--font-h);font-size:1rem;font-weight:600;color:var(--dark);margin-bottom:.3rem;}
+    .port-type{font-size:.72rem;color:var(--text-2);}
+
+    /* ── TESTIMONIALS ────────────────────────────────── */
+    #testimonials{padding:clamp(4rem,8vw,7rem) clamp(1.25rem,4vw,2.5rem);}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:2.75rem;}
+    .testi-card{background:white;border:2px solid var(--border);border-radius:var(--rad-xl);padding:1.75rem;transition:transform 300ms var(--spring),border-color 300ms,box-shadow 300ms;}
+    .testi-card:nth-child(1):hover{border-color:var(--red);box-shadow:0 12px 30px hsl(0,82%,62%/.12);transform:translateY(-4px);}
+    .testi-card:nth-child(2):hover{border-color:var(--yellow);box-shadow:0 12px 30px hsl(45,96%,56%/.15);transform:translateY(-4px);}
+    .testi-card:nth-child(3):hover{border-color:var(--purple);box-shadow:0 12px 30px hsl(268,68%,62%/.12);transform:translateY(-4px);}
+    .testi-stars{font-size:1rem;margin-bottom:.85rem;letter-spacing:.05em;}
+    .t1 .testi-stars{color:var(--red);}
+    .t2 .testi-stars{color:var(--yellow);}
+    .t3 .testi-stars{color:var(--purple);}
+    .testi-text{font-size:.88rem;color:var(--text-2);line-height:1.75;margin-bottom:1.25rem;font-style:italic;}
+    .testi-author{font-size:.8rem;font-weight:700;color:var(--dark);}
+    .testi-role{font-size:.72rem;color:var(--text-2);margin-top:.2rem;}
+
+    /* ── CONTACT ─────────────────────────────────────── */
+    #contact{padding:clamp(4rem,8vw,7rem) clamp(1.25rem,4vw,2.5rem);background:var(--light-2);}
+    .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start;}
+    .contact-info{display:flex;flex-direction:column;gap:1rem;margin-top:1.5rem;}
+    .ci-item{display:flex;align-items:center;gap:.85rem;font-size:.87rem;color:var(--text-2);}
+    .ci-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0;}
+    .ci-1{background:hsl(0,82%,62%/.12);}
+    .ci-2{background:hsl(45,96%,56%/.15);}
+    .ci-3{background:hsl(268,68%,62%/.12);}
+    .contact-form{background:white;border:2px solid var(--border);border-radius:var(--rad-xl);padding:2.25rem;}
+    .form-title{font-family:var(--font-h);font-size:1.4rem;font-weight:600;color:var(--dark);margin-bottom:1.5rem;}
+    .fg{display:flex;flex-direction:column;gap:.45rem;margin-bottom:1rem;}
+    .fg label{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-2);}
+    .fg input,.fg textarea,.fg select{background:var(--light);border:1.5px solid var(--border);border-radius:var(--rad);padding:.8rem 1rem;color:var(--text);font-family:var(--font-b);font-size:.88rem;outline:none;transition:border-color 200ms,box-shadow 200ms;width:100%;}
+    .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--red);box-shadow:0 0 0 3px hsl(0,82%,62%/.1);}
+    .fg input::placeholder,.fg textarea::placeholder{color:hsl(240,8%,70%);}
+    .fg textarea{min-height:110px;resize:vertical;line-height:1.6;}
+    .fg-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+
+    /* ── RAINBOW STRIP ───────────────────────────────── */
+    .rainbow-strip{height:5px;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow),var(--green),var(--turq),var(--purple),var(--pink),var(--red));}
+
+    /* ── FOOTER ──────────────────────────────────────── */
+    footer{padding:clamp(2rem,4vw,3rem) clamp(1.25rem,4vw,2.5rem);background:var(--dark);color:hsl(240,10%,80%);}
+    .footer-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.25rem;}
+    .footer-logo{font-family:var(--font-h);font-size:1rem;font-weight:600;color:white;display:flex;align-items:center;gap:.5rem;}
+    .footer-links{display:flex;gap:1.75rem;}
+    .footer-links a{font-size:.78rem;color:hsl(240,10%,60%);text-decoration:none;transition:color 200ms;}
+    .footer-links a:hover{color:var(--yellow);}
+    .footer-copy{font-size:.72rem;color:hsl(240,10%,45%);}
+    .site-by{font-size:.72rem;color:hsl(240,10%,45%);}
+    .site-by a{color:hsl(240,10%,60%);text-decoration:none;transition:color 200ms;}
+    .site-by a:hover{color:var(--yellow);}
+
+    /* ── RESPONSIVE ──────────────────────────────────── */
+    @media(max-width:1024px){
+      .hero-inner{grid-template-columns:1fr;gap:3rem;}
+      .hero-visual{max-width:360px;}
+      .about-inner{grid-template-columns:1fr;gap:3rem;}
+      .svc-grid{grid-template-columns:1fr 1fr;}
+      .contact-inner{grid-template-columns:1fr;gap:3rem;}
+    }
+    @media(max-width:768px){
+      .nav-links{display:none;}
+      .svc-grid{grid-template-columns:1fr;}
+      .port-grid{grid-template-columns:1fr;}
+      .testi-grid{grid-template-columns:1fr;}
+      .footer-inner{flex-direction:column;text-align:center;}
+      .footer-links{flex-wrap:wrap;justify-content:center;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Rainbow top bar -->
+<div class="rainbow-strip"></div>
+
+<a href="#main" style="position:absolute;left:-9999px;top:0;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+<!-- NAV -->
+<header id="header">
+  <nav>
+    <a class="nav-logo" href="#" aria-label="Tales from the Shed home">
+      <span class="nav-logo-icon">🎭</span>
+      <span class="nav-logo-text">Tales from the Shed
+        <span>Inclusive Performing Arts</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">What We Do</a>
+      <a href="#portfolio">Shows</a>
+      <a href="#testimonials">Stories</a>
+      <a href="#contact">Get in Touch</a>
+    </div>
+    <a href="#contact" class="nav-cta">Join Us 🎉</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<main id="main">
+<section id="hero" aria-label="Hero">
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
+  <div class="blob blob-4" aria-hidden="true"></div>
+
+  <!-- Floating shapes -->
+  <span class="shape shape-star" style="top:18%;left:8%;animation-delay:.5s">⭐</span>
+  <span class="shape shape-star" style="top:70%;right:10%;animation-delay:1s">🌟</span>
+  <span class="shape shape-circle" style="top:30%;right:22%;background:var(--yellow);animation-delay:.3s"></span>
+  <span class="shape shape-circle" style="bottom:25%;left:15%;background:var(--pink);animation-delay:.8s"></span>
+  <span class="shape shape-sq" style="top:55%;left:40%;background:var(--turq);animation-delay:.2s"></span>
+  <span class="shape shape-sq" style="top:20%;right:40%;background:var(--purple);animation-delay:1.2s"></span>
+
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge" data-a>🌈 Open to every child, every background</div>
+      <h1 data-a>Every child<br>belongs on<br><span class="word-1">the</span> <span class="word-2">stage.</span></h1>
+      <p class="hero-sub" data-a>Tales from the Shed is a joyful, inclusive performing arts programme for children of all backgrounds — bringing stories to life through drama, music, and movement at Chickenshed Theatre.</p>
+      <div class="hero-btns" data-a>
+        <a href="#contact" class="btn-primary">Get involved 🎭</a>
+        <a href="#services" class="btn-outline">What we do →</a>
+      </div>
+      <p class="hero-note" data-a>No experience needed. All abilities welcome.</p>
+    </div>
+    <div class="hero-visual" data-a="scale">
+      <div class="hero-card hc-1">🎭</div>
+      <div class="hero-card hc-2">🎵</div>
+      <div class="hero-card hc-3">🌈</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-title">
+  <div class="sec-wrap">
+    <div class="about-inner">
+      <div data-a="l">
+        <p class="sec-label" style="color:var(--purple)">Who we are</p>
+        <h2 id="about-title" class="sec-title">A space where every<br>child's story matters.</h2>
+        <p style="font-size:.9rem;color:var(--text-2);line-height:1.8;margin-bottom:1rem;">Tales from the Shed believes that performing arts should be for <strong style="color:var(--dark)">every single child</strong> — regardless of ability, background, or experience. We create a safe, joyful, and silly space where children can express themselves, build confidence, and discover their voice.</p>
+        <p style="font-size:.9rem;color:var(--text-2);line-height:1.8;">Whether your child has never set foot on a stage or has been performing since they could walk, they'll find a home here.</p>
+        <div class="chickenshed-badge">🏠 Based at Chickenshed Theatre, London</div>
+      </div>
+      <div class="about-visual" data-a="r">
+        <div class="about-tile at-1">
+          <span class="about-tile-icon">🤸</span>
+          <span class="about-tile-title">Fully Inclusive</span>
+          <span class="about-tile-sub">Every ability, every background, every child.</span>
+        </div>
+        <div class="about-tile at-2">
+          <span class="about-tile-icon">😄</span>
+          <span class="about-tile-title">Joyful & Fun</span>
+          <span class="about-tile-sub">We take the arts seriously. Not ourselves.</span>
+        </div>
+        <div class="about-tile at-3">
+          <span class="about-tile-icon">💪</span>
+          <span class="about-tile-title">Builds Confidence</span>
+          <span class="about-tile-sub">Skills that go far beyond the stage.</span>
+        </div>
+        <div class="about-tile at-4">
+          <span class="about-tile-icon">🎭</span>
+          <span class="about-tile-title">Real Performances</span>
+          <span class="about-tile-sub">Every child gets their moment in the spotlight.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section id="services" aria-labelledby="svc-title">
+  <div class="sec-wrap">
+    <p class="sec-label" style="color:var(--orange)" data-a>What we do</p>
+    <h2 id="svc-title" class="sec-title" data-a>Six ways we bring<br>stories to life.</h2>
+    <p class="sec-sub" data-a>From drama workshops to full productions — there's something for every child at every level.</p>
+    <div class="svc-grid">
+      <div class="svc-card sc-1" data-a>
+        <div class="svc-icon">🎭</div>
+        <h3 class="svc-name">Drama Workshops</h3>
+        <p class="svc-desc">Weekly sessions exploring storytelling, character, and improvisation in a fun, pressure-free environment. No experience needed.</p>
+      </div>
+      <div class="svc-card sc-2" data-a>
+        <div class="svc-icon">🎵</div>
+        <h3 class="svc-name">Musical Theatre</h3>
+        <p class="svc-desc">Singing, dancing, and acting combined — learning songs and routines from beloved musicals and original productions.</p>
+      </div>
+      <div class="svc-card sc-3" data-a>
+        <div class="svc-icon">💃</div>
+        <h3 class="svc-name">Movement & Dance</h3>
+        <p class="svc-desc">Expressive movement sessions that build body confidence, coordination, and the joy of performing through dance.</p>
+      </div>
+      <div class="svc-card sc-4" data-a>
+        <div class="svc-icon">📖</div>
+        <h3 class="svc-name">Storytelling</h3>
+        <p class="svc-desc">Children become the authors of their own stories — developing imagination, language, and the courage to share their ideas.</p>
+      </div>
+      <div class="svc-card sc-5" data-a>
+        <div class="svc-icon">🌟</div>
+        <h3 class="svc-name">Performance Shows</h3>
+        <p class="svc-desc">Every term culminates in a real performance — at Chickenshed Theatre. Every child gets a role, every family gets to cheer.</p>
+      </div>
+      <div class="svc-card sc-6" data-a>
+        <div class="svc-icon">🏕️</div>
+        <h3 class="svc-name">Holiday Workshops</h3>
+        <p class="svc-desc">Intensive creative workshops during school holidays — a week of stories, songs, and silliness that children talk about for months.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" aria-labelledby="port-title">
+  <div class="sec-wrap">
+    <p class="sec-label" style="color:var(--turq)" data-a>Our shows</p>
+    <h2 id="port-title" class="sec-title" data-a>Stories we've told.</h2>
+    <p class="sec-sub" data-a>Every production is created with and for our children — their ideas, their energy, their magic.</p>
+    <div class="port-grid">
+      <div class="port-card pc-1" data-a>
+        <div class="port-img">🏠</div>
+        <div class="port-body">
+          <p class="port-title">Tales from the Shed: The Beginning</p>
+          <p class="port-type">Full production · Chickenshed Theatre</p>
+        </div>
+      </div>
+      <div class="port-card pc-2" data-a>
+        <div class="port-img">🌙</div>
+        <div class="port-body">
+          <p class="port-title">Midnight Stories</p>
+          <p class="port-type">Devised performance · Spring showcase</p>
+        </div>
+      </div>
+      <div class="port-card pc-3" data-a>
+        <div class="port-img">🌈</div>
+        <div class="port-body">
+          <p class="port-title">Every Colour of the Rainbow</p>
+          <p class="port-type">Summer production · All abilities cast</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" aria-labelledby="testi-title">
+  <div class="sec-wrap">
+    <p class="sec-label" style="color:var(--pink)" data-a>What families say</p>
+    <h2 id="testi-title" class="sec-title" data-a>Real stories from<br>real families.</h2>
+    <div class="testi-grid">
+      <div class="testi-card t1" data-a>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"My daughter came home from her first session beaming. She'd never done anything like this before and was so nervous — but she absolutely loved it. The inclusivity is real, not just a word."</p>
+        <p class="testi-author">Sarah M.</p>
+        <p class="testi-role">Parent, North London</p>
+      </div>
+      <div class="testi-card t2" data-a>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"My son has additional needs and has struggled to find activities where he truly belongs. Tales from the Shed is the first place he's genuinely excited to go to every week."</p>
+        <p class="testi-author">David K.</p>
+        <p class="testi-role">Parent, Essex</p>
+      </div>
+      <div class="testi-card t3" data-a>
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Watching the end of term show, I cried. Every single child had their moment. The confidence they've all gained is extraordinary. Couldn't recommend it more."</p>
+        <p class="testi-author">Michelle T.</p>
+        <p class="testi-role">Parent, Enfield</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="sec-wrap">
+    <div class="contact-inner">
+      <div data-a="l">
+        <p class="sec-label" style="color:var(--green)">Get involved</p>
+        <h2 id="contact-title" class="sec-title" style="margin-bottom:1rem;">Your child's<br>adventure starts here.</h2>
+        <p style="font-size:.9rem;color:var(--text-2);line-height:1.75;margin-bottom:.5rem;">Whether you want to join a workshop, ask a question, or find out about our next production — get in touch and we'll come back to you quickly.</p>
+        <div class="contact-info">
+          <div class="ci-item">
+            <span class="ci-icon ci-1">📧</span>
+            <a href="mailto:zaclester123@outlook.com" style="color:var(--text-2);text-decoration:none;">zaclester123@outlook.com</a>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon ci-2">📸</span>
+            <a href="https://www.instagram.com/talesfromtheshed_uk" target="_blank" rel="noopener" style="color:var(--text-2);text-decoration:none;">@talesfromtheshed_uk</a>
+          </div>
+          <div class="ci-item">
+            <span class="ci-icon ci-3">📍</span>
+            <span>Chickenshed Theatre, London</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form" data-a="r">
+        <p class="form-title">Say hello 👋</p>
+        <form action="https://formspree.io/f/xykakqay" method="POST" id="contact-form">
+          <div class="fg-row">
+            <div class="fg">
+              <label for="c-first">First name</label>
+              <input type="text" id="c-first" name="first_name" placeholder="Your name" required />
+            </div>
+            <div class="fg">
+              <label for="c-last">Last name</label>
+              <input type="text" id="c-last" name="last_name" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="fg">
+            <label for="c-email">Email address</label>
+            <input type="email" id="c-email" name="email" placeholder="hello@email.com" required />
+          </div>
+          <div class="fg">
+            <label for="c-child">Child's age (optional)</label>
+            <input type="text" id="c-child" name="child_age" placeholder="e.g. 8 years old" />
+          </div>
+          <div class="fg">
+            <label for="c-msg">Your message</label>
+            <textarea id="c-msg" name="message" placeholder="Tell us about your child, what they enjoy, any questions you have..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;" id="submit-btn">Send message 🎉</button>
+        </form>
+        <div id="form-success" style="display:none;text-align:center;padding:2rem 0;">
+          <p style="font-size:2rem;margin-bottom:.75rem;">🎭</p>
+          <p style="font-family:var(--font-h);font-size:1.2rem;font-weight:600;color:var(--dark);margin-bottom:.5rem;">Message received!</p>
+          <p style="font-size:.85rem;color:var(--text-2);">We'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Rainbow divider -->
+<div class="rainbow-strip"></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">🎭 Tales from the Shed</span>
+    <div class="footer-links">
+      <a href="#about">About</a>
+      <a href="#services">What We Do</a>
+      <a href="#portfolio">Shows</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© 2026 Tales from the Shed. Chickenshed Theatre, London.</p>
+    <p class="site-by">Site by <a href="https://formandforge.co.uk">Form & Forge</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Organization","name":"Tales from the Shed","url":"https://talesfromtheshed.co.uk","description":"Inclusive performing arts for children of all backgrounds at Chickenshed Theatre, London"},
+    {"@type":"WebPage","name":"Tales from the Shed","description":"Joyful inclusive performing arts for every child"}
+  ]
+}
+</script>
+
+<script>
+// Sticky nav
+const hdr=document.getElementById('header');
+let last=0;
+window.addEventListener('scroll',()=>{const y=window.scrollY;hdr.classList.toggle('scrolled',y>60);last=Math.max(y,0);},{passive:true});
+
+// Reveal
+const obs=new IntersectionObserver((entries)=>{entries.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add('vis'),i*80);});},{threshold:.1});
+document.querySelectorAll('[data-a]').forEach(el=>obs.observe(el));
+
+// Form submit
+document.getElementById('contact-form').addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  const btn=document.getElementById('submit-btn');
+  btn.textContent='Sending...';btn.disabled=true;
+  try{
+    const res=await fetch(e.target.action,{method:'POST',body:new FormData(e.target),headers:{'Accept':'application/json'}});
+    if(res.ok){
+      e.target.style.display='none';
+      document.getElementById('form-success').style.display='block';
+    }else{btn.textContent='Try again';btn.disabled=false;}
+  }catch{btn.textContent='Try again';btn.disabled=false;}
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',(e)=>{
+    const href=a.getAttribute('href');
+    if(href==='#')return;
+    e.preventDefault();
+    const t=document.querySelector(href);
+    if(t)window.scrollTo({top:t.getBoundingClientRect().top+window.scrollY-75,behavior:'smooth'});
+  });
+});
+</script>
+</body>
+</html>
