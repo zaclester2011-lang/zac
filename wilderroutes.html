@@ -24,7 +24,8 @@
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    body { background: transparent; color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    body::before { content: ''; position: fixed; inset: 0; background: rgba(13,22,18,.74); z-index: -1; pointer-events: none; }
     a { color: inherit; text-decoration: none; }
 
     /* ── SCROLL BAR ── */
@@ -37,15 +38,14 @@
     nav.hidden { transform: translateY(-100%); transition: transform 400ms cubic-bezier(.4,0,.2,1), background 300ms; }
     .nav-logo { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--green); }
     .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
+    .nav-links a { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--green); transition: color 200ms; font-weight: 500; }
     .nav-links a:hover { color: #fff; }
-    .nav-cta { background: var(--green); color: var(--bg); padding: .45rem 1.2rem; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; transition: background 200ms, transform 200ms; }
+    .nav-cta { background: var(--green); color: var(--bg); padding: .5rem 1.4rem; font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; transition: background 200ms, transform 200ms; }
     .nav-cta:hover { background: var(--sage); transform: translateY(-1px); }
 
     /* ── HERO ── */
-    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 72px; position: relative; overflow: hidden; }
-    .hero-video-bg { position: absolute; inset: 0; overflow: hidden; z-index: 0; background: var(--bg); }
-    .hero-video-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(15,20,9,.15) 0%, rgba(15,20,9,.52) 100%); z-index: 2; pointer-events: none; }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 72px; position: relative; }
+    .hero-video-bg { position: fixed; inset: 0; overflow: hidden; z-index: -2; pointer-events: none; }
     .hero-slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; animation: kf-slide 24s infinite; z-index: 1; }
     .s1 { background-image: url('https://images.unsplash.com/photo-1708649290066-5f617003b93f?auto=format&w=1920&q=80'); animation-delay: -1s; }
     .s2 { background-image: url('https://images.unsplash.com/photo-1773221937975-940c37f092d0?auto=format&w=1920&q=80'); animation-delay: 3s; }
@@ -55,7 +55,7 @@
     .s6 { background-image: url('https://images.unsplash.com/photo-1505521377774-103a8cc2f735?auto=format&w=1920&q=80'); animation-delay: 19s; }
     @keyframes kf-slide { 0%{opacity:0;} 4%{opacity:1;} 21%{opacity:1;} 25%{opacity:0;} 100%{opacity:0;} }
     .hero-bg { position: absolute; inset: 0; opacity: .06; pointer-events: none; z-index: 2; }
-    .hero-content { position: relative; z-index: 3; }
+.hero-content { position: relative; z-index: 3; }
     .hero-scroll { position: absolute; z-index: 3; }
     .hero-eyebrow { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: var(--green); margin-bottom: 16px; opacity: 0; transform: translateY(16px); transition: opacity 600ms, transform 600ms; }
     .hero-eyebrow.vis { opacity: 1; transform: none; }
@@ -85,8 +85,8 @@
 
     /* ── SERVICES ── */
     .services { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 48px; }
-    .service { background: var(--bg); padding: 36px 32px 44px; border-left: 3px solid transparent; transition: background 250ms, border-color 200ms; }
-    .service:hover { background: var(--s3); border-left-color: var(--green); }
+    .service { background: rgba(13,22,18,.82); padding: 36px 32px 44px; border-left: 3px solid transparent; transition: background 250ms, border-color 200ms; }
+    .service:hover { background: rgba(26,40,32,.88); border-left-color: var(--green); }
     .service-icon { font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--green); margin-bottom: 20px; transition: color 200ms; }
     .service:hover .service-icon { color: #fff; }
     .service-head { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 24px; font-weight: 900; text-transform: uppercase; color: var(--bright); line-height: 1; margin-bottom: 14px; transition: color 200ms; }
@@ -98,7 +98,7 @@
     .steps { border: 1px solid var(--border); margin-top: 48px; }
     .step { display: flex; border-bottom: 1px solid var(--border); padding: 28px 32px; align-items: flex-start; border-left: 3px solid transparent; transition: background 200ms, border-color 200ms; }
     .step:last-child { border-bottom: none; }
-    .step:hover { background: var(--s3); border-left-color: var(--green); }
+    .step:hover { background: rgba(26,40,32,.82); border-left-color: var(--green); }
     .step-num { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: var(--green); width: 80px; flex-shrink: 0; padding-top: 3px; transition: color 200ms; }
     .step:hover .step-num { color: #fff; }
     .step-body { flex: 1; }
@@ -108,7 +108,8 @@
     .step:hover .step-desc { color: var(--text); }
 
     /* ── CASE STUDY ── */
-    .case-section { background: var(--s2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .case-section { background: rgba(19,30,24,.82); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .case-section .eyebrow { font-size: 14px; font-weight: 700; letter-spacing: .22em; }
     .case-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 32px; flex-wrap: wrap; margin-bottom: 48px; }
     .case-stats { display: flex; flex-direction: column; gap: 10px; text-align: right; }
     .case-stat { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
@@ -120,7 +121,7 @@
     .itin-row { display: grid; grid-template-columns: 120px 1fr; border-bottom: 1px solid var(--border); transition: background 200ms; }
     .itin-row:last-child { border-bottom: none; }
     .itin-row:not(.itin-travel):hover { background: hsl(150,30%,12%/.5); }
-    .itin-left { padding: 18px 16px; border-right: 1px solid var(--border); display: flex; flex-direction: column; gap: 4px; background: var(--bg); }
+    .itin-left { padding: 18px 16px; border-right: 1px solid var(--border); display: flex; flex-direction: column; gap: 4px; background: rgba(13,22,18,.85); }
     .itin-date { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--green); transition: color 200ms; }
     .itin-row:hover .itin-date { color: #fff; }
     .itin-day { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 22px; font-weight: 900; color: var(--bright); line-height: 1; letter-spacing: -.01em; }
@@ -135,7 +136,7 @@
     .itin-travel .itin-right { opacity: .7; }
 
     /* Saving block */
-    .saving-block { background: var(--s2); border: 1px solid var(--border); padding: 48px 40px; margin-top: 56px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
+    .saving-block { background: rgba(19,30,24,.84); border: 1px solid var(--border); padding: 48px 40px; margin-top: 56px; display: flex; justify-content: space-between; align-items: center; gap: 40px; flex-wrap: wrap; }
     .saving-label { font-size: 10px; letter-spacing: .24em; text-transform: uppercase; color: var(--green); margin-bottom: 10px; }
     .saving-num { font-family: 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: clamp(48px, 7vw, 80px); font-weight: 900; color: var(--bright); line-height: 1; letter-spacing: -.02em; }
     .saving-sub { font-size: 14px; color: var(--muted); margin-top: 8px; max-width: 300px; line-height: 1.6; }
@@ -165,7 +166,7 @@
     .btn-form:hover { background: var(--sage); transform: translateY(-2px); }
 
     /* ── FOOTER ── */
-    footer { border-top: 1px solid var(--border); padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    footer { border-top: 1px solid var(--border); padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; background: rgba(13,22,18,.94); }
     .footer-logo { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; font-weight: 700; color: var(--green); transition: color 200ms; }
     .footer-logo:hover { color: #fff; }
     .site-by { font-size: 11px; color: var(--muted); }
@@ -196,6 +197,14 @@
 </head>
 <body>
 
+<div class="hero-video-bg">
+  <div class="hero-slide s1"></div>
+  <div class="hero-slide s2"></div>
+  <div class="hero-slide s3"></div>
+  <div class="hero-slide s4"></div>
+  <div class="hero-slide s5"></div>
+  <div class="hero-slide s6"></div>
+</div>
 <div class="scroll-bar" id="scroll-bar"></div>
 
 <!-- NAV -->
@@ -211,14 +220,6 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-video-bg">
-    <div class="hero-slide s1"></div>
-    <div class="hero-slide s2"></div>
-    <div class="hero-slide s3"></div>
-    <div class="hero-slide s4"></div>
-    <div class="hero-slide s5"></div>
-    <div class="hero-slide s6"></div>
-  </div>
   <svg class="hero-bg" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
     <g fill="none" stroke="var(--green)" stroke-width="1">
       <ellipse cx="700" cy="450" rx="620" ry="340"/><ellipse cx="700" cy="450" rx="520" ry="270"/>
@@ -232,7 +233,7 @@
     <circle cx="700" cy="450" r="5" fill="var(--green)" opacity="0.5"/>
     <circle cx="700" cy="450" r="16" fill="none" stroke="var(--green)" stroke-width="0.7" opacity="0.3"/>
   </svg>
-  <div class="hero-content">
+<div class="hero-content">
     <div class="hero-eyebrow">Bespoke Adventure Travel Design</div>
     <h1 class="hero-title">Wilder<br><em>Routes</em></h1>
     <p class="hero-tagline"><strong>We find the flights, the hidden canyons, the uninhabited islands.</strong><br>You get a complete day-by-day plan for an extraordinary trip. We do the thinking so you don't have to.</p>
@@ -319,7 +320,7 @@
 <!-- CASE STUDY: BAJA BOYS -->
 <section class="section case-section" id="baja">
   <div class="section-inner">
-    <div class="eyebrow" data-a>Case Study — Oct 2026</div>
+    <div class="eyebrow" data-a>Case Study: Oct 2026</div>
     <div class="case-header" data-a>
       <h2 class="section-title" style="margin-bottom:0">The Baja Boys</h2>
       <div class="case-stats">
