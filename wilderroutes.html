@@ -24,8 +24,7 @@
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { background: transparent; color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
-    body::before { content: ''; position: fixed; inset: 0; background: rgba(13,22,18,.74); z-index: -1; pointer-events: none; }
+    body { background: #0D1612; color: var(--text); font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
     a { color: inherit; text-decoration: none; }
 
     /* ── SCROLL BAR ── */
@@ -44,8 +43,9 @@
     .nav-cta:hover { background: var(--sage); transform: translateY(-1px); }
 
     /* ── HERO ── */
-    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 72px; position: relative; }
-    .hero-video-bg { position: fixed; inset: 0; overflow: hidden; z-index: -2; pointer-events: none; }
+    .hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 72px; position: relative; overflow: hidden; }
+    .hero-video-bg { position: absolute; inset: 0; overflow: hidden; z-index: 0; pointer-events: none; }
+    .hero-overlay { position: absolute; inset: 0; background: rgba(13,22,18,.72); z-index: 1; pointer-events: none; }
     .hero-slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; animation: kf-slide 24s infinite; z-index: 1; }
     .s1 { background-image: url('https://images.unsplash.com/photo-1708649290066-5f617003b93f?auto=format&w=1920&q=80'); animation-delay: -1s; }
     .s2 { background-image: url('https://images.unsplash.com/photo-1773221937975-940c37f092d0?auto=format&w=1920&q=80'); animation-delay: 3s; }
@@ -55,7 +55,7 @@
     .s6 { background-image: url('https://images.unsplash.com/photo-1505521377774-103a8cc2f735?auto=format&w=1920&q=80'); animation-delay: 19s; }
     @keyframes kf-slide { 0%{opacity:0;} 4%{opacity:1;} 21%{opacity:1;} 25%{opacity:0;} 100%{opacity:0;} }
     .hero-bg { position: absolute; inset: 0; opacity: .06; pointer-events: none; z-index: 2; }
-.hero-content { position: relative; z-index: 3; }
+    .hero-content { position: relative; z-index: 3; }
     .hero-scroll { position: absolute; z-index: 3; }
     .hero-eyebrow { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: var(--green); margin-bottom: 16px; opacity: 0; transform: translateY(16px); transition: opacity 600ms, transform 600ms; }
     .hero-eyebrow.vis { opacity: 1; transform: none; }
@@ -197,14 +197,6 @@
 </head>
 <body>
 
-<div class="hero-video-bg">
-  <div class="hero-slide s1"></div>
-  <div class="hero-slide s2"></div>
-  <div class="hero-slide s3"></div>
-  <div class="hero-slide s4"></div>
-  <div class="hero-slide s5"></div>
-  <div class="hero-slide s6"></div>
-</div>
 <div class="scroll-bar" id="scroll-bar"></div>
 
 <!-- NAV -->
@@ -220,6 +212,15 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="hero-video-bg">
+    <div class="hero-slide s1"></div>
+    <div class="hero-slide s2"></div>
+    <div class="hero-slide s3"></div>
+    <div class="hero-slide s4"></div>
+    <div class="hero-slide s5"></div>
+    <div class="hero-slide s6"></div>
+  </div>
+  <div class="hero-overlay"></div>
   <svg class="hero-bg" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
     <g fill="none" stroke="var(--green)" stroke-width="1">
       <ellipse cx="700" cy="450" rx="620" ry="340"/><ellipse cx="700" cy="450" rx="520" ry="270"/>
@@ -233,7 +234,7 @@
     <circle cx="700" cy="450" r="5" fill="var(--green)" opacity="0.5"/>
     <circle cx="700" cy="450" r="16" fill="none" stroke="var(--green)" stroke-width="0.7" opacity="0.3"/>
   </svg>
-<div class="hero-content">
+  <div class="hero-content">
     <div class="hero-eyebrow">Bespoke Adventure Travel Design</div>
     <h1 class="hero-title">Wilder<br><em>Routes</em></h1>
     <p class="hero-tagline"><strong>We find the flights, the hidden canyons, the uninhabited islands.</strong><br>You get a complete day-by-day plan for an extraordinary trip. We do the thinking so you don't have to.</p>
