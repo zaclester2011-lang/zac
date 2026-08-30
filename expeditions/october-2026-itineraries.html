@@ -1,0 +1,1044 @@
+<title>Five Octobers</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ink:        #14202B;
+    --ink-2:      #33475A;
+    --mid:        #64798B;
+    --faint:      #93A5B4;
+    --rule:       #DCE3EA;
+    --rule-soft:  #EBF0F4;
+    --paper:      #F7F8FA;
+    --card:       #FFFFFF;
+    --teal:       #0E7C86;
+    --teal-wash:  #E4F1F2;
+    --ochre:      #9A6B1E;
+    --ochre-wash: #F6EFE0;
+    --rust:       #A3452B;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink:        #E8EDF2;
+      --ink-2:      #C3CED8;
+      --mid:        #8FA1B1;
+      --faint:      #647585;
+      --rule:       #29394A;
+      --rule-soft:  #1E2C3A;
+      --paper:      #101923;
+      --card:       #17222E;
+      --teal:       #4FB3BB;
+      --teal-wash:  #122C2E;
+      --ochre:      #D2A24E;
+      --ochre-wash: #2A2213;
+      --rust:       #D9755A;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ink:        #E8EDF2;
+    --ink-2:      #C3CED8;
+    --mid:        #8FA1B1;
+    --faint:      #647585;
+    --rule:       #29394A;
+    --rule-soft:  #1E2C3A;
+    --paper:      #101923;
+    --card:       #17222E;
+    --teal:       #4FB3BB;
+    --teal-wash:  #122C2E;
+    --ochre:      #D2A24E;
+    --ochre-wash: #2A2213;
+    --rust:       #D9755A;
+  }
+
+  :root[data-theme="light"] {
+    --ink:        #14202B;
+    --ink-2:      #33475A;
+    --mid:        #64798B;
+    --faint:      #93A5B4;
+    --rule:       #DCE3EA;
+    --rule-soft:  #EBF0F4;
+    --paper:      #F7F8FA;
+    --card:       #FFFFFF;
+    --teal:       #0E7C86;
+    --teal-wash:  #E4F1F2;
+    --ochre:      #9A6B1E;
+    --ochre-wash: #F6EFE0;
+    --rust:       #A3452B;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Public Sans', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 56px 28px 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ---------- MASTHEAD ---------- */
+
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 32px;
+    border-bottom: 1.5px solid var(--ink);
+  }
+
+  .kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    font-size: clamp(38px, 7vw, 62px);
+    font-weight: 600;
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  .standfirst {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--mid);
+    max-width: 46ch;
+    line-height: 1.45;
+    margin-top: 2px;
+  }
+
+  .params {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 22px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    background: var(--card);
+  }
+
+  .param {
+    flex: 1 1 130px;
+    padding: 12px 16px;
+    border-right: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .param:last-child { border-right: none; }
+
+  .param-k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .param-v {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- SECTION SCAFFOLD ---------- */
+
+  section { padding-top: 52px; }
+
+  .sec-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--faint);
+    margin-bottom: 14px;
+  }
+
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin: 30px 0 12px;
+  }
+
+  p {
+    color: var(--ink-2);
+    max-width: 66ch;
+    margin-bottom: 12px;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* ---------- RANKING TABLE ---------- */
+
+  .scroll { overflow-x: auto; margin: 18px 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    font-variant-numeric: tabular-nums;
+    min-width: 520px;
+  }
+
+  thead tr { border-bottom: 1.5px solid var(--ink); }
+
+  th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    font-weight: 500;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--faint);
+    text-align: left;
+    padding: 0 14px 9px 0;
+    white-space: nowrap;
+  }
+
+  th.num, td.num { text-align: right; padding-right: 14px; }
+
+  td {
+    padding: 11px 14px 11px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    color: var(--ink-2);
+    vertical-align: top;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  td.name { color: var(--ink); font-weight: 500; }
+
+  .score {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    color: var(--teal);
+    white-space: nowrap;
+  }
+
+  .money {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12.5px;
+    white-space: nowrap;
+  }
+
+  .money-total { font-weight: 600; color: var(--ink); }
+
+  .rank {
+    font-family: 'Fraunces', serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--faint);
+  }
+
+  /* ---------- DESTINATION HEADER ---------- */
+
+  .dest-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding-bottom: 14px;
+    border-bottom: 1.5px solid var(--ink);
+    margin-bottom: 22px;
+  }
+
+  .dest-rank {
+    font-family: 'Fraunces', serif;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 0.8;
+    color: var(--teal);
+    letter-spacing: -0.03em;
+  }
+
+  .dest-title { display: flex; flex-direction: column; gap: 1px; }
+
+  .dest-name {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+  }
+
+  .dest-sub {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+
+  .dest-score {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--teal);
+  }
+
+  /* ---------- FACT STRIP ---------- */
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    margin-bottom: 8px;
+  }
+
+  .fact {
+    background: var(--card);
+    padding: 11px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .fact-k {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .fact-v {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--ink);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- DAY LIST ---------- */
+
+  .days {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--rule);
+    margin: 16px 0 8px;
+  }
+
+  .day {
+    display: grid;
+    grid-template-columns: 58px 1fr auto;
+    gap: 16px;
+    align-items: baseline;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  .day-n {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--faint);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    padding-top: 2px;
+  }
+
+  .day-body { display: flex; flex-direction: column; gap: 2px; }
+
+  .day-act { font-weight: 600; color: var(--ink); font-size: 14.5px; }
+
+  .day-note { font-size: 12.5px; color: var(--mid); line-height: 1.5; }
+
+  .day-score {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--teal);
+    white-space: nowrap;
+    padding-top: 2px;
+  }
+
+  .day.travel .day-act { color: var(--mid); font-weight: 500; }
+
+  /* ---------- CALLOUTS ---------- */
+
+  .note {
+    border-left: 2px solid var(--teal);
+    background: var(--teal-wash);
+    padding: 14px 18px;
+    margin: 18px 0;
+    border-radius: 0 2px 2px 0;
+  }
+
+  .note.warn {
+    border-left-color: var(--rust);
+    background: var(--ochre-wash);
+  }
+
+  .note-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 5px;
+  }
+
+  .note.warn .note-title { color: var(--rust); }
+
+  .note p { font-size: 13.5px; margin-bottom: 8px; max-width: 62ch; }
+  .note p:last-child { margin-bottom: 0; }
+
+  ul { padding-left: 18px; color: var(--ink-2); font-size: 13.5px; max-width: 66ch; margin: 10px 0; }
+  li { margin-bottom: 5px; line-height: 1.6; }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0;
+  }
+
+  .verdict {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--ink);
+    font-style: italic;
+    max-width: 60ch;
+    padding: 4px 0 0;
+  }
+
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1.5px solid var(--ink);
+  }
+
+  @media (max-width: 620px) {
+    .wrap { padding: 36px 18px 64px; }
+    .day { grid-template-columns: 48px 1fr; }
+    .day-score { grid-column: 2; padding-top: 0; }
+    .dest-score { margin-left: 0; width: 100%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="kicker">Expedition Planning · Lester</div>
+    <h1>Five Octobers</h1>
+    <div class="standfirst">Five hot-water expeditions for the same eleven days, each planned to the same standard, so the choice is made on the trips and not on the research.</div>
+    <div class="params">
+      <div class="param"><span class="param-k">Out</span><span class="param-v">Thu 22 Oct</span></div>
+      <div class="param"><span class="param-k">Home</span><span class="param-v">Mon 2 Nov</span></div>
+      <div class="param"><span class="param-k">Nights</span><span class="param-v">11</span></div>
+      <div class="param"><span class="param-k">Activity days</span><span class="param-v">10</span></div>
+      <div class="param"><span class="param-k">Travelling</span><span class="param-v">3</span></div>
+    </div>
+  </header>
+
+  <!-- ============ COMPARISON ============ -->
+  <section>
+    <div class="sec-label">The five, ranked</div>
+    <h2>Every one is genuinely hot. That was the filter.</h2>
+    <p>Sardinia and Corsica came off the table because late October is their weak month — 19°C air, 21°C sea, and freshwater at 12–15°C. Every option below runs 30–32°C air and 27–29°C sea for your exact dates.</p>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Region</th><th class="num">Score</th>
+            <th class="num">Air / sea</th><th class="num">Total (3)</th><th>Freshwater</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="rank">1</td>
+            <td class="name">Yucatán</td>
+            <td class="num score">45/48</td>
+            <td class="num money">31° / 28°</td>
+            <td class="num money money-total">£4,440–5,420</td>
+            <td>Cenotes, 24°C</td>
+          </tr>
+          <tr>
+            <td class="rank">2</td>
+            <td class="name">Zanzibar + Pemba</td>
+            <td class="num score">43/48</td>
+            <td class="num money">31° / 27°</td>
+            <td class="num money money-total">£4,600–5,900</td>
+            <td>Kuza cave pool only</td>
+          </tr>
+          <tr>
+            <td class="rank">3</td>
+            <td class="name">St Vincent &amp; Grenadines</td>
+            <td class="num score">43/48</td>
+            <td class="num money">30° / 29°</td>
+            <td class="num money money-total">£5,900–7,800</td>
+            <td>Dark View Falls</td>
+          </tr>
+          <tr>
+            <td class="rank">4</td>
+            <td class="name">Belize</td>
+            <td class="num score">44/48</td>
+            <td class="num money">30° / 29°</td>
+            <td class="num money money-total">£6,400–8,400</td>
+            <td>Jungle cave rivers</td>
+          </tr>
+          <tr>
+            <td class="rank">5</td>
+            <td class="name">Northern Madagascar</td>
+            <td class="num score">43/48</td>
+            <td class="num money">32° / 28°</td>
+            <td class="num money money-total">£6,720–8,580</td>
+            <td>Crater lakes, waterfalls</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note">
+      <div class="note-title">Why Yucatán leads on both axes</div>
+      <p>It is the only one of the five with a direct flight from London, and the only one where you drive to activities rather than chartering a boat to reach them. Those two facts account for almost the entire cost gap — roughly £2,000 against Belize and Madagascar.</p>
+    </div>
+  </section>
+
+  <hr style="margin-top:52px">
+
+  <!-- ============ 1 · YUCATÁN ============ -->
+  <section>
+    <div class="dest-head">
+      <div class="dest-rank">1</div>
+      <div class="dest-title">
+        <div class="dest-name">Yucatán Peninsula</div>
+        <div class="dest-sub">Mexico · Cancún CUN</div>
+      </div>
+      <div class="dest-score">45/48</div>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><span class="fact-k">Flight</span><span class="fact-v">Direct, 10h</span></div>
+      <div class="fact"><span class="fact-k">Air / sea</span><span class="fact-v">31° / 28°C</span></div>
+      <div class="fact"><span class="fact-k">Cenotes</span><span class="fact-v">24°C</span></div>
+      <div class="fact"><span class="fact-k">Getting round</span><span class="fact-v">Hire car</span></div>
+      <div class="fact"><span class="fact-k">Total</span><span class="fact-v">£4,440–5,420</span></div>
+    </div>
+
+    <p>The only shortlisted region that solves the freshwater problem outright. Cenotes hold 24°C all year, so unlike a Corsican gorge in late October you can actually swim in them. They are also the purest turquoise water on the list, jungle-surrounded, and the remote ones need a car and a track to reach.</p>
+
+    <h3>Bases</h3>
+    <p>Tulum, 5 nights → Bacalar, 4 nights → Puerto Morelos, 2 nights. One direction, no backtracking, drop the car at Cancún.</p>
+
+    <h3>Day by day</h3>
+    <div class="days">
+      <div class="day travel">
+        <div class="day-n">Thu 22</div>
+        <div class="day-body"><span class="day-act">Fly LGW → Cancún, collect car, drive to Tulum</span><span class="day-note">2h drive. Direct flight lands early evening.</span></div>
+        <div class="day-score">—</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 23</div>
+        <div class="day-body"><span class="day-act">Cenote Calavera + Gran Cenote</span><span class="day-note">Calavera is three holes in the ground you jump through. Both within 10 min of Tulum, so an easy opener.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 24</div>
+        <div class="day-body"><span class="day-act">Sac Actun cave system</span><span class="day-note">Guided. The longest underwater cave system on earth — swim through cathedral chambers of stalactites. Weekend slot deliberately taken by a guided day.</span></div>
+        <div class="day-score">46/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 25</div>
+        <div class="day-body"><span class="day-act">Sian Ka'an &amp; Punta Allen</span><span class="day-note">Guided. UNESCO biosphere — float the Mayan canals, dolphins and manatees. Second weekend day absorbed by a guide.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Mon 26</div>
+        <div class="day-body"><span class="day-act">Cenote Taak Bi Ha + Dos Ojos</span><span class="day-note">Taak Bi Ha is fully underground and hung with stalactites. Self-directed, 11:15 start.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Tue 27</div>
+        <div class="day-body"><span class="day-act">Cenote Noh-Mozon + Laguna Kaan Luum</span><span class="day-note">Noh-Mozon needs the hire car and a track — semi-open, almost nobody there. The most earned cenote on the list.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Wed 28</div>
+        <div class="day-body"><span class="day-act">Drive to Bacalar · Cenote Azul + Cocalitos</span><span class="day-note">2.5h drive. Cenote Azul is 90m deep with no boat traffic — the best swimming cenote in Bacalar.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Thu 29</div>
+        <div class="day-body"><span class="day-act">Bacalar lagoon · south end &amp; Canal de los Piratas</span><span class="day-note">Seven shades of blue. Go south — the north end is where everyone else is.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 30</div>
+        <div class="day-body"><span class="day-act">Kayak Bacalar + Cenote Esmeralda &amp; Negro</span><span class="day-note">Early paddle before the wind gets up, then the two quieter cenotes.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 31</div>
+        <div class="day-body"><span class="day-act">Banco Chinchorro, from Mahahual</span><span class="day-note">Guided. A genuine atoll 2h offshore — the largest in the northern hemisphere and almost nobody visits. Weekend slot, guided.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 1 Nov</div>
+        <div class="day-body"><span class="day-act">Drive north · Puerto Morelos reef</span><span class="day-note">Long drive broken by a snorkel on the second-largest barrier reef in the world.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day travel">
+        <div class="day-n">Mon 2</div>
+        <div class="day-body"><span class="day-act">Drop car at Cancún, fly home</span></div>
+        <div class="day-score">—</div>
+      </div>
+    </div>
+
+    <div class="note warn">
+      <div class="note-title">Check before booking</div>
+      <p>Cenote entry fees rose 18% in January 2026 — currently £14–26pp. Driving between towns after dark is not advised. Quintana Roo is <strong>not</strong> on the FCDO advise-against list, but hire-car insurance in Mexico is mandatory and routinely doubles the quoted daily rate.</p>
+    </div>
+
+    <p class="verdict">Highest score, lowest cost, direct flight, and the only itinerary here where half the water is fresh. It wins on the criteria as written.</p>
+  </section>
+
+  <hr style="margin-top:52px">
+
+  <!-- ============ 2 · ZANZIBAR + PEMBA ============ -->
+  <section>
+    <div class="dest-head">
+      <div class="dest-rank">2</div>
+      <div class="dest-title">
+        <div class="dest-name">Zanzibar &amp; Pemba</div>
+        <div class="dest-sub">Tanzania · Zanzibar ZNZ</div>
+      </div>
+      <div class="dest-score">43/48</div>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><span class="fact-k">Flight</span><span class="fact-v">1 stop, 12h</span></div>
+      <div class="fact"><span class="fact-k">Air / sea</span><span class="fact-v">31° / 27°C</span></div>
+      <div class="fact"><span class="fact-k">Season</span><span class="fact-v">Dry, ideal</span></div>
+      <div class="fact"><span class="fact-k">Risk</span><span class="fact-v">None</span></div>
+      <div class="fact"><span class="fact-k">Total</span><span class="fact-v">£4,600–5,900</span></div>
+    </div>
+
+    <p>Pemba is the reason to do this. It sits 50km north of Zanzibar, is covered in forest, and receives a tiny fraction of the visitors — most people have never heard of it. Misali is an uninhabited islet 10km offshore with a turquoise lagoon and reef you snorkel straight off the beach. The itinerary front-loads Pemba and treats Zanzibar as the softer second half.</p>
+
+    <h3>Bases</h3>
+    <p>Pemba, 6 nights → Zanzibar north-east, 5 nights. Short flight between the two.</p>
+
+    <h3>Day by day</h3>
+    <div class="days">
+      <div class="day travel">
+        <div class="day-n">Thu 22</div>
+        <div class="day-body"><span class="day-act">Fly LGW → Zanzibar, connect to Pemba</span><span class="day-note">Via Doha, Istanbul or Addis. Overnight Pemba.</span></div>
+        <div class="day-score">—</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 23</div>
+        <div class="day-body"><span class="day-act">Vumawimbi Beach</span><span class="day-note">3km of untouched white sand backed by forest, on the north-east coast. Frequently completely deserted.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 24</div>
+        <div class="day-body"><span class="day-act">Misali Island</span><span class="day-note">Guided boat. Uninhabited, 10km offshore, marine conservation area. Powder sand and a turquoise lagoon. The best thing in the archipelago.</span></div>
+        <div class="day-score">45/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 25</div>
+        <div class="day-body"><span class="day-act">Njao Gap &amp; Kigomasha Peninsula</span><span class="day-note">Guided. Among the best snorkelling in East Africa. Second weekend day taken by an operator.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Mon 26</div>
+        <div class="day-body"><span class="day-act">Ngezi Forest + flying foxes</span><span class="day-note">Protected rainforest. The endemic Pemba flying fox comes out at dusk — worth staying for.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Tue 27</div>
+        <div class="day-body"><span class="day-act">Fundu Lagoon mangrove kayak</span><span class="day-note">Paddle the mangrove channels on the south-west coast. Calm water, nobody around.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Wed 28</div>
+        <div class="day-body"><span class="day-act">Fly to Zanzibar · Nakupenda sandbank</span><span class="day-note">A sandbar that appears at low tide and vanishes at high. Timed to the tide, not to 11:15.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Thu 29</div>
+        <div class="day-body"><span class="day-act">Mnemba Atoll</span><span class="day-note">Turquoise, boat access only, protected reef.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 30</div>
+        <div class="day-body"><span class="day-act">Jozani Forest + Kuza Cave</span><span class="day-note">The one freshwater on this itinerary — a turquoise cave pool you swim in. Red colobus monkeys in the forest.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 31</div>
+        <div class="day-body"><span class="day-act">Chumbe Island coral park</span><span class="day-note">Guided. Numbers are strictly capped, which is exactly why it scores. One of the best-protected reefs in the Indian Ocean.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 1 Nov</div>
+        <div class="day-body"><span class="day-act">Safari Blue, Menai Bay</span><span class="day-note">Dhow day — sandbanks, snorkelling, mangrove lagoon.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day travel">
+        <div class="day-n">Mon 2</div>
+        <div class="day-body"><span class="day-act">Fly Zanzibar → home</span></div>
+        <div class="day-score">—</div>
+      </div>
+    </div>
+
+    <div class="note">
+      <div class="note-title">The value case</div>
+      <p>Two-week five-star all-inclusive Zanzibar packages advertise from under £1,500pp including flights, transfers and every meal. If a version of that can be split across Pemba and Zanzibar, this becomes the cheapest trip on the list in real terms — the £4,600 figure does not include food, and an all-inclusive would.</p>
+    </div>
+
+    <p class="verdict">No hurricane season, no safety caveat, genuinely dry and hot, and Pemba is the most under-visited place on the whole shortlist.</p>
+  </section>
+
+  <hr style="margin-top:52px">
+
+  <!-- ============ 3 · GRENADINES ============ -->
+  <section>
+    <div class="dest-head">
+      <div class="dest-rank">3</div>
+      <div class="dest-title">
+        <div class="dest-name">St Vincent &amp; the Grenadines</div>
+        <div class="dest-sub">Caribbean · Union Island UNI</div>
+      </div>
+      <div class="dest-score">43/48</div>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><span class="fact-k">Flight</span><span class="fact-v">1–2 stops</span></div>
+      <div class="fact"><span class="fact-k">Air / sea</span><span class="fact-v">30° / 29°C</span></div>
+      <div class="fact"><span class="fact-k">Best site</span><span class="fact-v">Tobago Cays 45</span></div>
+      <div class="fact"><span class="fact-k">Risk</span><span class="fact-v">Hurricane tail</span></div>
+      <div class="fact"><span class="fact-k">Total</span><span class="fact-v">£5,900–7,800</span></div>
+    </div>
+
+    <p>Tobago Cays is the single best site on the entire shortlist — five uninhabited islands inside a horseshoe reef, where you anchor with no land between you and the Atlantic. The whole trip is built around staying in the southern Grenadines rather than wasting days on the St Vincent mainland, which scores markedly lower.</p>
+
+    <h3>Bases</h3>
+    <p>Union Island, 6 nights → Bequia, 5 nights. Ferries and charters between.</p>
+
+    <h3>Day by day</h3>
+    <div class="days">
+      <div class="day travel">
+        <div class="day-n">Thu 22</div>
+        <div class="day-body"><span class="day-act">Fly LGW → Barbados → Union Island</span><span class="day-note">Long day. Overnight Union.</span></div>
+        <div class="day-score">—</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 23</div>
+        <div class="day-body"><span class="day-act">Chatham Bay, Union Island</span><span class="day-note">Reached by boat or a hot hike over the ridge. Almost empty, and a genuine earned arrival to open with.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 24</div>
+        <div class="day-body"><span class="day-act">Tobago Cays + Baradal Turtle Sanctuary</span><span class="day-note">Full-day charter, meals included. Green and hawksbill turtles foraging in the shallows. Weekend absorbed by the charter.</span></div>
+        <div class="day-score">45/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 25</div>
+        <div class="day-body"><span class="day-act">Petit Tabac + Mayreau Gardens</span><span class="day-note">Charter. Petit Tabac is an isolated sandbar island with a handful of palms. Mayreau Gardens is the region's best snorkel site.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Mon 26</div>
+        <div class="day-body"><span class="day-act">Salt Whistle Bay + Mayreau perimeter walk</span><span class="day-note">The full island walk takes 2–3h and reaches coves most visitors never see. Tamarind Hill for the view over both bays.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Tue 27</div>
+        <div class="day-body"><span class="day-act">Petit St Vincent + Mopion sandbar</span><span class="day-note">Mopion is a sandbar with one thatched umbrella and nothing else. As hidden as the Caribbean gets.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Wed 28</div>
+        <div class="day-body"><span class="day-act">Ferry to Bequia · Princess Margaret &amp; Lower Bay</span><span class="day-note">Travel day absorbed — the ferry lands early enough for an afternoon swim.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Thu 29</div>
+        <div class="day-body"><span class="day-act">Isle à Quatre + Moonhole</span><span class="day-note">Boat to an uninhabited island, then the abandoned stone houses built into the rock arch at Bequia's western tip.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 30</div>
+        <div class="day-body"><span class="day-act">Canouan north coast by boat</span><span class="day-note">Quiet, turquoise, and the north end is undeveloped.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 31</div>
+        <div class="day-body"><span class="day-act">Return charter to Tobago Cays</span><span class="day-note">The best site on the trip, done twice deliberately. Weekend, chartered.</span></div>
+        <div class="day-score">45/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 1 Nov</div>
+        <div class="day-body"><span class="day-act">Bequia headland walk + Friendship Bay</span><span class="day-note">Quiet last day before a long flight.</span></div>
+        <div class="day-score">40/48</div>
+      </div>
+      <div class="day travel">
+        <div class="day-n">Mon 2</div>
+        <div class="day-body"><span class="day-act">Bequia → Barbados → home</span></div>
+        <div class="day-score">—</div>
+      </div>
+    </div>
+
+    <div class="note warn">
+      <div class="note-title">Hurricane season</div>
+      <p>Atlantic season runs to 30 November. Late October is past the peak but not clear — roughly a one in ten chance of a storm affecting your dates in the eastern Caribbean. Most likely that means one or two days of cancelled boats rather than a cancelled trip, but the whole itinerary is boat-dependent, which makes it more exposed than the others.</p>
+    </div>
+
+    <p class="verdict">The best individual site on the shortlist, wrapped in the most weather-exposed itinerary. Everything here depends on boats running.</p>
+  </section>
+
+  <hr style="margin-top:52px">
+
+  <!-- ============ 4 · BELIZE ============ -->
+  <section>
+    <div class="dest-head">
+      <div class="dest-rank">4</div>
+      <div class="dest-title">
+        <div class="dest-name">Belize</div>
+        <div class="dest-sub">Central America · Belize City BZE</div>
+      </div>
+      <div class="dest-score">44/48</div>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><span class="fact-k">Flight</span><span class="fact-v">1–2 stops</span></div>
+      <div class="fact"><span class="fact-k">Air / sea</span><span class="fact-v">30° / 29°C</span></div>
+      <div class="fact"><span class="fact-k">Mix</span><span class="fact-v">Jungle + atoll</span></div>
+      <div class="fact"><span class="fact-k">Packages</span><span class="fact-v">None exist</span></div>
+      <div class="fact"><span class="fact-k">Total</span><span class="fact-v">£6,400–8,400</span></div>
+    </div>
+
+    <p>The best jungle-and-reef combination available. Actun Tunichil Muknal is a river cave you swim into and then wade upstream through for an hour — genuinely unlike anything else on this list. Glover's Reef is a true atoll 45km offshore. The itinerary runs jungle first, then out to the atoll, then the cayes.</p>
+
+    <h3>Bases</h3>
+    <p>San Ignacio (Cayo), 4 nights → Glover's Reef, 3 nights → Caye Caulker, 4 nights.</p>
+
+    <h3>Day by day</h3>
+    <div class="days">
+      <div class="day travel">
+        <div class="day-n">Thu 22</div>
+        <div class="day-body"><span class="day-act">Fly LGW → Belize City via US · drive to San Ignacio</span><span class="day-note">2h transfer inland.</span></div>
+        <div class="day-score">—</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 23</div>
+        <div class="day-body"><span class="day-act">Barton Creek Cave by canoe</span><span class="day-note">Paddle a kilometre into a limestone cave system on an underground river.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 24</div>
+        <div class="day-body"><span class="day-act">Actun Tunichil Muknal</span><span class="day-note">Guided, mandatory. Swim into the cave mouth, then wade upstream for an hour through chambers. The best single activity in Belize.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 25</div>
+        <div class="day-body"><span class="day-act">Rio On Pools + Rio Frio Cave</span><span class="day-note">Granite pools and natural slides in the Mountain Pine Ridge. Self-directed but a rough track in.</span></div>
+        <div class="day-score">40/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Mon 26</div>
+        <div class="day-body"><span class="day-act">Cockscomb Basin · Ben's Bluff &amp; falls</span><span class="day-note">Jaguar reserve. Hike to the bluff, swim in the river pools below.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Tue 27</div>
+        <div class="day-body"><span class="day-act">Boat to Glover's Reef · afternoon reef</span><span class="day-note">Transfer from Dangriga, roughly 3h. Snorkel straight off the caye on arrival.</span></div>
+        <div class="day-score">45/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Wed 28</div>
+        <div class="day-body"><span class="day-act">Glover's Reef atoll</span><span class="day-note">A full day inside the atoll lagoon. Nothing around you but reef.</span></div>
+        <div class="day-score">45/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Thu 29</div>
+        <div class="day-body"><span class="day-act">Glover's Reef · outer wall, then return</span><span class="day-note">Morning on the drop-off, boat back in the afternoon.</span></div>
+        <div class="day-score">45/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 30</div>
+        <div class="day-body"><span class="day-act">Water taxi to Caye Caulker · Hol Chan &amp; Shark Ray Alley</span><span class="day-note">Reserve channel through the barrier reef.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 31</div>
+        <div class="day-body"><span class="day-act">Blue Hole + Half Moon Caye</span><span class="day-note">Guided full day, leaves early. Lighthouse Reef atoll and the frigatebird colony on Half Moon.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 1 Nov</div>
+        <div class="day-body"><span class="day-act">Caye Caulker north side &amp; the Split</span><span class="day-note">Kayak the mangrove side away from the village.</span></div>
+        <div class="day-score">40/48</div>
+      </div>
+      <div class="day travel">
+        <div class="day-n">Mon 2</div>
+        <div class="day-body"><span class="day-act">Water taxi to Belize City, fly home</span><span class="day-note">Transit only — FCDO advises against the south side of Belize City.</span></div>
+        <div class="day-score">—</div>
+      </div>
+    </div>
+
+    <div class="note warn">
+      <div class="note-title">The Glover's Reef problem</div>
+      <p>Atoll resorts sell mostly as week-long packages. Short stays do exist — listings show rooms from around $604, and Isla Marisol includes three meals daily plus the return boat from Dangriga — but many atoll lodges run <strong>fixed weekly transfer days</strong>, often Saturday only. A Tuesday-to-Thursday stay may simply not be bookable. This needs confirming directly with the resort before anything else in the itinerary is fixed, because three days depend on it.</p>
+    </div>
+
+    <p class="verdict">The strongest jungle-and-reef mix on the list, and the most likely to break on a logistics detail nobody publishes.</p>
+  </section>
+
+  <hr style="margin-top:52px">
+
+  <!-- ============ 5 · MADAGASCAR ============ -->
+  <section>
+    <div class="dest-head">
+      <div class="dest-rank">5</div>
+      <div class="dest-title">
+        <div class="dest-name">Northern Madagascar</div>
+        <div class="dest-sub">Diego Suarez DIE · Nosy Be NOS</div>
+      </div>
+      <div class="dest-score">43/48</div>
+    </div>
+
+    <div class="facts">
+      <div class="fact"><span class="fact-k">Flight</span><span class="fact-v">2 stops, 20h</span></div>
+      <div class="fact"><span class="fact-k">Air / sea</span><span class="fact-v">32° / 28°C</span></div>
+      <div class="fact"><span class="fact-k">Best site</span><span class="fact-v">Nosy Hara 46</span></div>
+      <div class="fact"><span class="fact-k">Packages</span><span class="fact-v">None exist</span></div>
+      <div class="fact"><span class="fact-k">Total</span><span class="fact-v">£6,720–8,580</span></div>
+    </div>
+
+    <p>Nosy Hara scores 46/48 — the highest single site on the whole shortlist. Limestone tsingy pinnacles rising straight out of turquoise water, inside a marine protected area, reached by dhow from Diego Suarez. Almost nobody goes. The rest of the north backs it up with tsingy, crater lakes and rainforest waterfalls.</p>
+
+    <h3>Bases</h3>
+    <p>Diego Suarez, 6 nights → Nosy Be, 5 nights.</p>
+
+    <h3>Day by day</h3>
+    <div class="days">
+      <div class="day travel">
+        <div class="day-n">Thu 22</div>
+        <div class="day-body"><span class="day-act">Fly LGW → Antananarivo → Diego Suarez</span><span class="day-note">Via Addis or Paris. The longest travel day of any option here.</span></div>
+        <div class="day-score">—</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 23</div>
+        <div class="day-body"><span class="day-act">Three Bays — Sakalava, Dunes, Pigeons</span><span class="day-note">Walk between three empty bays along the coast. Sakalava is a shallow turquoise lagoon.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 24</div>
+        <div class="day-body"><span class="day-act">Emerald Sea by dhow</span><span class="day-note">Traditional Malagasy dhow from the pier. Shallow turquoise water over white sand, out towards the archipelago.</span></div>
+        <div class="day-score">44/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 25</div>
+        <div class="day-body"><span class="day-act">Nosy Hara archipelago</span><span class="day-note">Full-day guided boat. Tsingy pinnacles out of turquoise sea, white sand, coral. The best site on the shortlist.</span></div>
+        <div class="day-score">46/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Mon 26</div>
+        <div class="day-body"><span class="day-act">Montagne d'Ambre waterfalls</span><span class="day-note">Rainforest national park. Cascade Sacrée and the crater lake. Genuine freshwater.</span></div>
+        <div class="day-score">42/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Tue 27</div>
+        <div class="day-body"><span class="day-act">Ankarana tsingy &amp; underground rivers</span><span class="day-note">Limestone maze with caves and rivers running underneath it.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Wed 28</div>
+        <div class="day-body"><span class="day-act">Transfer to Nosy Be · Tsingy Rouge en route</span><span class="day-note">Red sandstone formations on the way. Long transfer day.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Thu 29</div>
+        <div class="day-body"><span class="day-act">Nosy Tanikely marine reserve</span><span class="day-note">Protected island reserve — turtles, reef, clear water.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Fri 30</div>
+        <div class="day-body"><span class="day-act">Nosy Iranja</span><span class="day-note">Two islands joined by a sandbar you walk across at low tide.</span></div>
+        <div class="day-score">43/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sat 31</div>
+        <div class="day-body"><span class="day-act">Nosy Sakatia</span><span class="day-note">Quiet island off Nosy Be. Swim with green turtles over the seagrass.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day">
+        <div class="day-n">Sun 1 Nov</div>
+        <div class="day-body"><span class="day-act">Mont Passot crater lakes + Lokobe reserve</span><span class="day-note">Volcanic crater lakes and the last patch of primary forest on Nosy Be.</span></div>
+        <div class="day-score">41/48</div>
+      </div>
+      <div class="day travel">
+        <div class="day-n">Mon 2</div>
+        <div class="day-body"><span class="day-act">Nosy Be → home</span></div>
+        <div class="day-score">—</div>
+      </div>
+    </div>
+
+    <div class="note warn">
+      <div class="note-title">The honest downsides</div>
+      <p>Flights are the most expensive on the list at £1,150–1,277 typical, there is no UK package market at all, and infrastructure is poor — internal transfers are slow and roads are bad. Crime risk is moderate and poverty-driven. You are paying the most for the highest single site on the list, surrounded by the most friction.</p>
+    </div>
+
+    <p class="verdict">Nosy Hara is the best thing on any of these five itineraries. Everything around it is harder and more expensive than it is anywhere else.</p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="sec-label">On the numbers</div>
+    <h2>What is verified and what is not</h2>
+    <p><strong>Verified from live sources, August 2026:</strong> cenote entry fees £14–26pp, up 18% since January 2026; ATM Cave $110–150pp; Tobago Cays day charter EC$410pp with meals; Zanzibar two-week all-inclusive from under £1,500pp; Glover's Reef listings from $604 with meals and Dangriga boat transfer included; Belize and Madagascar have no UK package market.</p>
+    <p><strong>Estimates, not quotes:</strong> every flight and hotel total is built from typical-route pricing and market averages, not live availability for 22 October to 2 November. They are sound for ranking these five against each other. They are not a quote, and at eight weeks out real availability is what will actually decide this.</p>
+    <p><strong>On the scores:</strong> they are a consistent framework, not a measurement. A 45 is not verifiably better than a 44 — differences of one or two points sit inside the noise. Use them to sort, not to split hairs.</p>
+  </footer>
+
+</div>
