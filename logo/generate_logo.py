@@ -15,7 +15,7 @@ W, H = 1600, 1000
 
 # --- wordmark metrics -------------------------------------------------------
 TOP, BOT = 380.0, 640.0          # cap band
-BALL_CX, BALL_CY, BALL_R = 1045.0, 504.0, 160.0
+BALL_CX, BALL_CY, BALL_R = 1049.0, 510.0, 160.0
 
 # --- the one spotlight ------------------------------------------------------
 # The source sits above the top edge and out of frame; only its light is drawn.
@@ -59,39 +59,38 @@ def cone(apex_y, spread, length, x=LAMP_X):
 
 
 # --- letters ----------------------------------------------------------------
-# Party lettering: fat rounded strokes, each glyph tilted and bounced off the
-# baseline so the word dances. Every glyph is drawn as a skeleton stroked with
-# round caps and joins, in a local box (0,0)-(w,260); the skeleton is inset by
-# half the stroke weight so the caps land exactly on the cap band.
-STROKE = 58.0
+# A geometric display face, set upright and on one baseline. Each glyph is a
+# skeleton stroked with flat terminals and mitred joins inside a local box
+# (0,0)-(w,260); the skeleton is inset by half the stroke weight, so the visual
+# edges land exactly on the cap band. STROKE sets the whole weight of the face.
+STROKE = 54.0
 
 GLYPHS = [
-    # J
-    {"w": 150, "x": 145, "dy": 9, "rot": -6,
-     "d": "M121,29 V150 C121,236 55,254 29,196"},
-    # A
-    {"w": 230, "x": 335, "dy": -11, "rot": 4,
-     "d": "M29,231 L115,29 L201,231 M47,188 L183,188"},
-    # C
-    {"w": 240, "x": 605, "dy": 6, "rot": -3,
-     "d": "M176,50.4 A91,101 0 1 0 176,209.6"},
-    # B
-    {"w": 210, "x": 1245, "dy": -13, "rot": 5,
-     "d": "M29,29 V231 M29,29 H115.5 A50.5,50.5 0 0 1 115.5,130 H29 "
-          "M29,130 H130.5 A50.5,50.5 0 0 1 130.5,231 H29"},
+    # J : stem into a hook
+    {"w": 147, "x": 138,
+     "d": "M120,0 V187.5 A46.5,46.5 0 0 1 27,187.5 V165"},
+    # A : splayed legs, flat apex, low crossbar
+    {"w": 250, "x": 323,
+     "d": "M27,260 L100,27 H150 L223,260 M46,200 H204"},
+    # C : open ring, terminals cut on the diagonal
+    {"w": 240, "x": 611,
+     "d": "M193.3,66.6 A93,103 0 1 0 193.3,193.4"},
+    # B : stem with a small upper bowl and a wider lower one
+    {"w": 215, "x": 1247,
+     "d": "M27,0 V260 M27,0 H108 A65,65 0 0 1 108,130 H27 "
+          "M27,130 H123 A65,65 0 0 1 123,260 H27"},
 ]
 
 
 def letters_svg():
     out = []
+    common = ('fill="none" stroke-linecap="butt" stroke-linejoin="miter" '
+              'stroke-miterlimit="2"')
     for g in GLYPHS:
-        t = (f'translate({fmt(g["x"])},{fmt(TOP + g["dy"])}) '
-             f'rotate({g["rot"]},{fmt(g["w"] / 2)},130)')
-        common = 'fill="none" stroke-linecap="round" stroke-linejoin="round"'
         out.append(
-            f'<g transform="{t}">'
-            f'<path d="{g["d"]}" {common} stroke="#070b16" stroke-opacity="0.5" '
-            f'stroke-width="{fmt(STROKE + 13)}"/>'
+            f'<g transform="translate({fmt(g["x"])},{fmt(TOP)})">'
+            f'<path d="{g["d"]}" {common} stroke="#070b16" stroke-opacity="0.45" '
+            f'stroke-width="{fmt(STROKE + 11)}"/>'
             f'<path d="{g["d"]}" {common} stroke="url(#silver)" stroke-width="{fmt(STROKE)}"/>'
             f'</g>'
         )
