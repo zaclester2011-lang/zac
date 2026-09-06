@@ -1,7 +1,8 @@
 # Jacob — bar mitzvah logo
 
 The wordmark reads **JACOB**, with the **O** replaced by a mirrored disco ball, under one
-massive silver spotlight whose beam washes over the whole logo.
+massive spotlight beam that washes over the whole logo. The light is thrown from a source
+above and outside the frame — the beam is drawn, the fixture is not.
 
 ## Files
 
@@ -26,7 +27,8 @@ massive silver spotlight whose beam washes over the whole logo.
   slightly, because no hand-glued mirror ball has perfectly aligned tiles. That is what
   produces the scattered high-contrast sparkle instead of a smooth gradient.
 - The beam is drawn as three nested cones of decreasing spread plus airborne haze, so it
-  has a hot core and soft edges.
+  has a hot core and soft edges. Its apex sits above the top of the frame, so the light
+  enters the picture already spread and no lamp is visible.
 
 ## Rebuilding
 
@@ -38,6 +40,6 @@ node render.js jacob-bar-mitzvah-logo.svg jacob-bar-mitzvah-logo@3x.png 3
 ```
 
 `render.js` needs Playwright (`npm i playwright`). Easy things to change in
-`generate_logo.py`: `LAMP_X` / `LAMP_Y` (where the spotlight hangs), `SPREAD` (how wide
-the beam opens), `KEY` (light direction on the ball), `BALL_R` (ball size), and the `bg` /
+`generate_logo.py`: `LAMP_X` / `LAMP_Y` (where the off-frame source sits), `SPREAD` (how
+wide the beam opens), `KEY` (light direction on the ball), `BALL_R` (ball size), and the `bg` /
 `silver` gradients (background and metal colours).

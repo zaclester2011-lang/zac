@@ -2,7 +2,8 @@
 """
 Generates the "JACOB" bar mitzvah logo:
   - the O of JACOB is a mirrored disco ball
-  - one massive silver spotlight above, its beam washing over the whole logo
+  - one massive spotlight beam washing over the whole logo, thrown from a source
+    above and outside the frame (the light only, no fixture)
 
 Letterforms are drawn as vector paths (no font dependency), so the SVG renders
 identically everywhere. Run:  python3 generate_logo.py
@@ -17,8 +18,9 @@ TOP, BOT = 380.0, 640.0          # cap band
 BALL_CX, BALL_CY, BALL_R = 1049.0, 510.0, 160.0
 
 # --- the one spotlight ------------------------------------------------------
-LAMP_X, LAMP_Y = 800.0, 96.0     # fixture sits top-centre, aimed straight down
-SPREAD = 48.0                    # half-angle, wide enough to swallow the logo
+# The source sits above the top edge and out of frame; only its light is drawn.
+LAMP_X, LAMP_Y = 800.0, -120.0
+SPREAD = 47.0                    # half-angle, wide enough to swallow the logo
 
 random.seed(11)
 
@@ -185,7 +187,7 @@ def build():
     # haze inside the beam, and the specks the ball throws around the room
     haze = []
     for _ in range(150):
-        y = random.uniform(LAMP_Y + 60, H)
+        y = random.uniform(0, H)
         hw = (y - LAMP_Y) * math.tan(math.radians(SPREAD)) * 0.97
         x = LAMP_X + random.uniform(-hw, hw)
         if not (6 < x < W - 6):
@@ -215,9 +217,9 @@ def build():
         for d in LETTERS
     )
 
-    beam_outer = pts(cone(LAMP_Y + 34, SPREAD, H - LAMP_Y))
-    beam_mid = pts(cone(LAMP_Y + 34, SPREAD * 0.66, H - LAMP_Y))
-    beam_core = pts(cone(LAMP_Y + 34, SPREAD * 0.3, H - LAMP_Y))
+    beam_outer = pts(cone(LAMP_Y, SPREAD, H - LAMP_Y))
+    beam_mid = pts(cone(LAMP_Y, SPREAD * 0.66, H - LAMP_Y))
+    beam_core = pts(cone(LAMP_Y, SPREAD * 0.3, H - LAMP_Y))
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Jacob — bar mitzvah logo, the O is a disco ball under one large silver spotlight">
   <title>JACOB</title>
@@ -337,16 +339,9 @@ def build():
   <circle cx="{fmt(BALL_CX)}" cy="{fmt(BALL_CY)}" r="{fmt(BALL_R)}" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2.5"/>
   <g>{glints}</g>
 
-  <!-- fixture -->
-  <g transform="translate({fmt(LAMP_X)},{fmt(LAMP_Y)})">
-    <ellipse cx="0" cy="44" rx="130" ry="54" fill="url(#flare)"/>
-    <rect x="-13" y="-96" width="26" height="34" rx="8" fill="url(#steel)"/>
-    <rect x="-52" y="-70" width="104" height="16" rx="8" fill="url(#steel)"/>
-    <path d="M-40,-58 L40,-58 L74,34 L-74,34 Z" fill="url(#steel)" stroke="#e9eef7" stroke-opacity="0.5" stroke-width="2.5"/>
-    <path d="M-40,-58 L40,-58 L46,-42 L-46,-42 Z" fill="#ffffff" opacity="0.32"/>
-    <ellipse cx="0" cy="34" rx="74" ry="15" fill="url(#lens)"/>
-    <ellipse cx="0" cy="34" rx="56" ry="10" fill="#ffffff" opacity="0.9"/>
-  </g>
+  <!-- where the beam enters the frame -->
+  <ellipse cx="{fmt(LAMP_X)}" cy="0" rx="330" ry="140" fill="url(#flare)"/>
+
 </svg>
 '''
 
