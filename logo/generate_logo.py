@@ -110,7 +110,7 @@ def environment(r):
     """Rough radiance seen along reflected ray r: dark room, bright key light."""
     up = max(0.0, -r[1])                                   # y is down on screen
     v = 0.17 + 0.30 * up ** 1.3                            # lit ceiling / haze
-    v += 1.90 * max(0.0, dot(r, KEY)) ** 22                # the spotlight itself
+    v += 2.15 * max(0.0, dot(r, KEY)) ** 20                # the spotlight itself
     v += 0.52 * max(0.0, dot(r, KEY)) ** 3                 # its broad falloff
     v += 0.42 * max(0.0, dot(r, FILL_L)) ** 5
     v += 0.36 * max(0.0, dot(r, FILL_R)) ** 5
@@ -168,30 +168,10 @@ def facets():
     return out
 
 
-def sparkle(x, y, s, o):
-    """Four-point glint."""
-    d = s * 0.2
-    return (
-        f'<path d="M{fmt(x)},{fmt(y - s)} Q{fmt(x + d)},{fmt(y - d)} {fmt(x + s)},{fmt(y)} '
-        f'Q{fmt(x + d)},{fmt(y + d)} {fmt(x)},{fmt(y + s)} Q{fmt(x - d)},{fmt(y + d)} '
-        f'{fmt(x - s)},{fmt(y)} Q{fmt(x - d)},{fmt(y - d)} {fmt(x)},{fmt(y - s)} Z" '
-        f'fill="url(#glint)" opacity="{o}"/>'
-    )
-
-
 # --- assemble ---------------------------------------------------------------
 def build():
     tiles = facets()
     tile_svg = "".join(f'<polygon points="{pts(p)}" fill="{c}"/>' for p, c, _ in tiles)
-
-    # star glints on the handful of tiles that blew out
-    brightest = sorted(tiles, key=lambda t: -t[2])[:26]
-    random.shuffle(brightest)
-    glints = "".join(
-        sparkle(sum(p[0] for p in q) / 4.0, sum(p[1] for p in q) / 4.0,
-                random.uniform(18, 40), round(random.uniform(0.45, 0.95), 2))
-        for q, _, _ in brightest[:7]
-    )
 
     # haze inside the beam, and the specks the ball throws around the room
     haze = []
@@ -278,14 +258,9 @@ def build():
       <stop offset="0.55" stop-color="#8fa8e0" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#6a80c0" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glint" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.45" stop-color="#eaf1ff" stop-opacity="0.7"/>
-      <stop offset="1" stop-color="#c9d9ff" stop-opacity="0"/>
-    </radialGradient>
     <radialGradient id="bloom" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
-      <stop offset="0.5" stop-color="#e8f0ff" stop-opacity="0.15"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.58"/>
+      <stop offset="0.5" stop-color="#e8f0ff" stop-opacity="0.18"/>
       <stop offset="1" stop-color="#dce8ff" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="ballShade" cx="0.34" cy="0.28" r="0.82">
@@ -336,7 +311,6 @@ def build():
     <circle cx="{fmt(BALL_CX)}" cy="{fmt(BALL_CY)}" r="{fmt(BALL_R)}" fill="url(#ballShade)"/>
   </g>
   <circle cx="{fmt(BALL_CX)}" cy="{fmt(BALL_CY)}" r="{fmt(BALL_R)}" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="2.5"/>
-  <g>{glints}</g>
 
   <!-- where the beam enters the frame -->
   <ellipse cx="{fmt(LAMP_X)}" cy="0" rx="330" ry="140" fill="url(#flare)"/>

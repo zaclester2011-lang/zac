@@ -27,7 +27,8 @@ above and outside the frame — the beam is drawn, the fixture is not.
   each facet and that reflected ray samples the room (dark surroundings, a lit ceiling,
   two cool bounce lights, and the spotlight itself). Each facet's normal is jittered
   slightly, because no hand-glued mirror ball has perfectly aligned tiles. That is what
-  produces the scattered high-contrast sparkle instead of a smooth gradient.
+  produces the scattered high-contrast shine instead of a smooth gradient — the ball has
+  no drawn-on star glints, every highlight on it is a mirror doing its job.
 - The beam is drawn as three nested cones of decreasing spread plus airborne haze, so it
   has a hot core and soft edges. Its apex sits above the top of the frame, so the light
   enters the picture already spread and no lamp is visible.
