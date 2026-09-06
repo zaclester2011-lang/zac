@@ -83,645 +83,533 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  .wrap {
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 48px 26px 96px;
-  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 48px 26px 96px; }
 
-  /* ---------- MASTHEAD ---------- */
-
-  header.top {
-    padding-bottom: 30px;
-    border-bottom: 2px solid var(--ink);
-    margin-bottom: 8px;
-  }
+  header.top { padding-bottom: 30px; border-bottom: 2px solid var(--ink); }
 
   .eyebrow {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--turq);
-    margin-bottom: 12px;
+    font-size: 10.5px; font-weight: 500;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--turq); margin-bottom: 14px;
   }
 
   h1 {
     font-family: 'Newsreader', Georgia, serif;
     font-size: clamp(36px, 6.5vw, 58px);
-    font-weight: 500;
-    line-height: 1.02;
-    letter-spacing: -0.015em;
-    text-wrap: balance;
+    font-weight: 500; line-height: 1.02;
+    letter-spacing: -0.015em; text-wrap: balance;
   }
 
   .standfirst {
     font-family: 'Newsreader', Georgia, serif;
-    font-style: italic;
-    font-size: 19px;
-    color: var(--mid);
-    max-width: 44ch;
-    margin-top: 10px;
-    line-height: 1.45;
+    font-size: clamp(17px, 2.2vw, 20px);
+    font-weight: 400; font-style: italic;
+    color: var(--ink-2); margin-top: 16px;
+    max-width: 60ch; text-wrap: balance;
   }
 
   .facts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
-    margin-top: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+    gap: 1px; background: var(--rule);
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    margin: 34px 0 52px;
   }
-
-  .fact {
-    background: var(--card);
-    padding: 11px 14px;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-  }
-
-  .fact-k {
+  .fact { background: var(--paper); padding: 15px 4px 15px 0; }
+  .fact dt {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--faint);
+    font-size: 9.5px; letter-spacing: 0.13em;
+    text-transform: uppercase; color: var(--mid); margin-bottom: 5px;
   }
-
-  .fact-v {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--ink);
-    font-variant-numeric: tabular-nums;
+  .fact dd {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 21px; font-weight: 500; line-height: 1.15;
   }
-
-  /* ---------- SECTIONS ---------- */
-
-  section { padding-top: 54px; }
-
-  .sec-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10.5px;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--faint);
-    margin-bottom: 12px;
-  }
+  .fact dd span { font-size: 12px; color: var(--mid); font-family: 'Karla', sans-serif; }
 
   h2 {
     font-family: 'Newsreader', Georgia, serif;
-    font-size: 31px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: -0.01em;
-    text-wrap: balance;
-    margin-bottom: 16px;
+    font-size: clamp(25px, 3.4vw, 32px);
+    font-weight: 500; letter-spacing: -0.01em;
+    margin-bottom: 8px; text-wrap: balance;
   }
+  .section-note {
+    color: var(--mid); font-size: 14px;
+    max-width: 62ch; margin-bottom: 26px;
+  }
+  section { margin-top: 64px; }
 
-  p { color: var(--ink-2); max-width: 66ch; margin-bottom: 12px; }
-  p:last-child { margin-bottom: 0; }
-  strong { font-weight: 600; color: var(--ink); }
-
-  /* ---------- DAY ---------- */
-
-  .days { display: flex; flex-direction: column; margin-top: 20px; }
+  /* ---------- DAYS ---------- */
 
   .day {
     display: grid;
     grid-template-columns: 92px 1fr;
-    gap: 22px;
-    padding: 22px 0;
-    border-top: 1px solid var(--rule);
+    gap: 0 22px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule-soft);
   }
+  .day:first-of-type { border-top: 1px solid var(--rule); }
 
-  .day:last-child { border-bottom: 1px solid var(--rule); }
-
-  .day.travel .day-title { color: var(--mid); font-weight: 500; }
-  .day.rest   .day-title { color: var(--mid); font-weight: 500; }
-
-  .date {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    padding-top: 3px;
-  }
-
-  .date-d {
-    font-family: 'Newsreader', serif;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 1;
-    color: var(--ink);
-    letter-spacing: -0.01em;
-  }
-
-  .date-m {
+  .daymark { padding-top: 3px; }
+  .dow {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 9.5px;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    color: var(--faint);
+    font-size: 10px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--mid);
   }
-
-  .body-col { display: flex; flex-direction: column; gap: 9px; min-width: 0; }
-
-  .day-head {
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .day-title {
+  .dnum {
     font-family: 'Newsreader', Georgia, serif;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 1.15;
+    font-size: 34px; font-weight: 500; line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+  .dmon {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--faint);
+  }
+
+  .dayhead {
+    display: flex; align-items: baseline;
+    justify-content: space-between; gap: 16px;
+    flex-wrap: wrap; margin-bottom: 3px;
+  }
+  h3 {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 22px; font-weight: 500; line-height: 1.2;
     letter-spacing: -0.01em;
   }
-
   .score {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--turq);
-    margin-left: auto;
+    font-size: 19px; font-weight: 600;
+    color: var(--turq); font-variant-numeric: tabular-nums;
     white-space: nowrap;
   }
-
-  .tag {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 2px 7px;
-    border: 1px solid;
-    white-space: nowrap;
+  .score small {
+    font-size: 10px; font-weight: 400;
+    color: var(--faint); letter-spacing: 0.06em;
   }
 
-  .t-island  { color: var(--turq);     border-color: var(--turq); }
-  .t-hop     { color: var(--indigo);   border-color: var(--indigo); }
-  .t-land    { color: var(--mangrove); border-color: var(--mangrove); }
-
-  .times {
+  .meta {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11.5px;
-    color: var(--mid);
+    font-size: 10.5px; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--mid);
+    margin-bottom: 14px;
+  }
+  .meta b { color: var(--indigo); font-weight: 600; }
+
+  ul.stops { list-style: none; display: grid; gap: 9px; }
+  ul.stops li {
+    display: grid; grid-template-columns: 62px 1fr auto;
+    gap: 14px; align-items: baseline;
+    font-size: 14.5px; color: var(--ink-2);
+  }
+  ul.stops li .t {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px; color: var(--mid);
+    font-variant-numeric: tabular-nums; padding-top: 1px;
+  }
+  ul.stops li .s {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; font-weight: 500; color: var(--turq);
     font-variant-numeric: tabular-nums;
-    letter-spacing: 0.01em;
   }
-
-  .detail { color: var(--ink-2); font-size: 14.5px; max-width: 62ch; }
-
-  .stops { display: flex; flex-direction: column; gap: 5px; margin-top: 3px; }
-
-  .stop {
-    display: grid;
-    grid-template-columns: 62px 1fr;
-    gap: 12px;
-    font-size: 13.5px;
-    align-items: baseline;
+  ul.stops li strong { color: var(--ink); font-weight: 600; }
+  ul.stops li em {
+    font-style: normal; color: var(--mid);
+    font-size: 13px; display: block;
   }
-
-  .stop-t {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--turq);
-    font-weight: 500;
-    white-space: nowrap;
-  }
-
-  .stop-d { color: var(--ink-2); }
-  .stop-d b { font-weight: 600; color: var(--ink); }
 
   .flag {
-    display: flex;
-    gap: 8px;
-    align-items: flex-start;
+    margin-top: 14px; padding: 11px 14px;
+    border-left: 3px solid var(--rust);
     background: var(--rust-wash);
-    border-left: 2px solid var(--rust);
-    padding: 9px 12px;
-    font-size: 13px;
-    color: var(--ink-2);
-    margin-top: 4px;
+    font-size: 13.5px; color: var(--ink-2);
   }
-
   .flag b {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 9.5px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--rust);
-    white-space: nowrap;
-    padding-top: 2px;
+    font-size: 10px; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--rust);
+    display: block; margin-bottom: 3px;
   }
+  .flag.calm { border-left-color: var(--mangrove); background: var(--turq-wash); }
+  .flag.calm b { color: var(--mangrove); }
 
-  .flag.sun { background: var(--turq-wash); border-left-color: var(--turq); }
-  .flag.sun b { color: var(--turq); }
+  .day.rest { opacity: 0.72; }
+  .day.rest h3 { font-style: italic; color: var(--ink-2); }
 
-  /* ---------- TABLE ---------- */
+  /* ---------- TABLES ---------- */
 
-  .scroll { overflow-x: auto; margin: 16px 0; }
-
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13.5px;
-    font-variant-numeric: tabular-nums;
-    min-width: 480px;
-  }
-
-  thead tr { border-bottom: 1.5px solid var(--ink); }
-
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 460px; }
   th {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    color: var(--faint);
-    text-align: left;
-    padding: 0 14px 8px 0;
-    white-space: nowrap;
+    font-size: 9.5px; font-weight: 500;
+    letter-spacing: 0.13em; text-transform: uppercase;
+    color: var(--mid); text-align: left;
+    padding: 0 12px 9px 0; border-bottom: 1px solid var(--ink);
   }
-
-  th.n, td.n { text-align: right; padding-right: 14px; }
-
   td {
-    padding: 10px 14px 10px 0;
+    padding: 10px 12px 10px 0;
     border-bottom: 1px solid var(--rule-soft);
-    color: var(--ink-2);
-    vertical-align: top;
+    vertical-align: top; color: var(--ink-2);
   }
-
-  tbody tr:last-child td { border-bottom: none; }
-  td.name { color: var(--ink); font-weight: 500; }
-
-  .num {
+  td:first-child { color: var(--ink); font-weight: 500; }
+  th.n, td.n {
+    text-align: right; padding-right: 0;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 600;
-    color: var(--turq);
-    white-space: nowrap;
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+  td.n { font-weight: 600; color: var(--turq); }
+  td.cut { color: var(--faint); }
+  td.cut b { color: var(--rust); font-weight: 600; }
+
+  .tier {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.13em;
+    text-transform: uppercase; color: var(--indigo);
+    margin: 30px 0 10px; font-weight: 600;
   }
 
-  .num.off { color: var(--faint); font-weight: 500; }
-
-  ul { padding-left: 17px; color: var(--ink-2); font-size: 14px; max-width: 64ch; margin: 10px 0; }
-  li { margin-bottom: 6px; line-height: 1.55; }
-  li b { color: var(--ink); font-weight: 600; }
+  ol.book { list-style: none; counter-reset: b; display: grid; gap: 12px; }
+  ol.book li {
+    counter-increment: b; position: relative;
+    padding-left: 34px; font-size: 14.5px; color: var(--ink-2);
+  }
+  ol.book li::before {
+    content: counter(b, decimal-leading-zero);
+    position: absolute; left: 0; top: 1px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 600; color: var(--turq);
+  }
+  ol.book li strong { color: var(--ink); }
 
   footer {
-    margin-top: 62px;
-    padding-top: 22px;
+    margin-top: 72px; padding-top: 26px;
     border-top: 2px solid var(--ink);
+    font-size: 13.5px; color: var(--mid);
+    max-width: 66ch;
   }
-
-  .foot-note {
-    font-size: 13.5px;
-    color: var(--mid);
-    max-width: 64ch;
-    margin-bottom: 10px;
-  }
+  footer p + p { margin-top: 12px; }
+  footer b { color: var(--ink-2); }
 
   @media (max-width: 620px) {
-    .wrap { padding: 34px 17px 64px; }
     .day { grid-template-columns: 1fr; gap: 10px; }
-    .date { flex-direction: row; align-items: baseline; gap: 8px; padding-top: 0; }
-    .score { margin-left: 0; }
-    .stop { grid-template-columns: 56px 1fr; gap: 10px; }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    * { animation: none !important; transition: none !important; }
+    .daymark { display: flex; align-items: baseline; gap: 9px; }
+    ul.stops li { grid-template-columns: 56px 1fr; }
+    ul.stops li .s { grid-column: 2; }
   }
 </style>
 
 <div class="wrap">
 
   <header class="top">
-    <div class="eyebrow">Zanzibar &amp; Pemba · October 2026</div>
+    <div class="eyebrow">Unguja · Pemba · 21 Oct – 2 Nov 2026</div>
     <h1>Eleven Nights in the Archipelago</h1>
-    <div class="standfirst">Eight days out on the water, two rainforests, one turquoise pool inside a limestone cave, and a sandbank that only exists at low tide.</div>
-    <div class="facts">
-      <div class="fact"><span class="fact-k">Out</span><span class="fact-v">Wed 21 Oct</span></div>
-      <div class="fact"><span class="fact-k">Home</span><span class="fact-v">Mon 2 Nov</span></div>
-      <div class="fact"><span class="fact-k">Activity days</span><span class="fact-v">8</span></div>
-      <div class="fact"><span class="fact-k">Water bodies</span><span class="fact-v">17</span></div>
-      <div class="fact"><span class="fact-k">Travelling</span><span class="fact-v">3</span></div>
-      <div class="fact"><span class="fact-k">Budget</span><span class="fact-v">£4,200</span></div>
-    </div>
+    <p class="standfirst">Eight days of water, scored on three things only — whether it feels found, whether the colour is real, and whether you can actually swim in it.</p>
   </header>
 
-  <!-- ================= THE DAYS ================= -->
-  <section>
-    <div class="sec-label">The itinerary</div>
-    <h2>Sunset is 18:25 and barely moves. Three days are set by the tide, not by us.</h2>
+  <dl class="facts">
+    <div class="fact"><dt>Travellers</dt><dd>3 <span>Zac 14 · James 47 · Jacob 12</span></dd></div>
+    <div class="fact"><dt>Activity days</dt><dd>8</dd></div>
+    <div class="fact"><dt>Water bodies</dt><dd>13</dd></div>
+    <div class="fact"><dt>Average day</dt><dd>27.06 <span>/ 30</span></dd></div>
+    <div class="fact"><dt>Sunset</dt><dd>18:25 <span>barely varies at 6°S</span></dd></div>
+    <div class="fact"><dt>Cost, all in</dt><dd>£4,250 <span>for three</span></dd></div>
+  </dl>
 
-    <div class="days">
+  <section style="margin-top:0">
+    <h2>The days</h2>
+    <p class="section-note">A day takes its best water body's score where one genuinely carries it, and the average where none does. Self-directed days start at 11:15; guide-led days run to the operator's clock. Everyone is back by 19:15 for dinner at 20:00.</p>
 
-      <!-- 21 -->
-      <div class="day travel">
-        <div class="date"><span class="date-d">21</span><span class="date-m">Wed Oct</span></div>
-        <div class="body-col">
-          <div class="day-head"><span class="day-title">Luton to Amsterdam</span></div>
-          <div class="times">EZY7832 · 19:50 → 22:00 · night in Amsterdam</div>
-        </div>
+    <div class="day rest">
+      <div class="daymark"><div class="dow">Wed</div><div class="dnum">21</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Luton to Amsterdam</h3></div>
+        <div class="meta">easyJet EZY7832 · 19:50 → 22:00</div>
+        <ul class="stops"><li><span class="t">22:00</span><span>Land Schiphol, train into the city. Hotel in Amsterdam, not at the airport.</span></li></ul>
       </div>
+    </div>
 
-      <!-- 22 -->
-      <div class="day travel">
-        <div class="date"><span class="date-d">22</span><span class="date-m">Thu Oct</span></div>
-        <div class="body-col">
-          <div class="day-head"><span class="day-title">Amsterdam, then overnight south</span></div>
-          <div class="times">Full day in Amsterdam · OR191 · 21:00 → 07:50 +1</div>
-          <div class="flag"><b>Book</b><span>Stone Town room from the night of the 22nd, so it's yours when you land at 07:50.</span></div>
-        </div>
+    <div class="day rest">
+      <div class="daymark"><div class="dow">Thu</div><div class="dnum">22</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>A day in Amsterdam</h3></div>
+        <div class="meta">TUI OR191 · 21:00 → 07:50 <b>+1</b></div>
+        <ul class="stops">
+          <li><span class="t">10:00</span><span>Canal cruise. Do it first, before the weather decides otherwise.</span></li>
+          <li><span class="t">11:15</span><span><strong>Jewish Cultural Quarter</strong> — Portuguese Synagogue and the Jewish Historical Museum, one ticket, five minutes apart.</span></li>
+          <li><span class="t">14:30</span><span><strong>NEMO</strong> — hands-on, and the rooftop terrace is free with the best harbour view in the city.</span></li>
+          <li><span class="t">17:00</span><span>Train to Schiphol, 15 minutes. At the airport by 18:00.</span></li>
+        </ul>
+        <div class="flag"><b>Book six weeks ahead</b>Anne Frank House tickets release online exactly six weeks before and sell out in hours. There is no door queue. Reminder for 10 September 2026.</div>
       </div>
+    </div>
 
-      <!-- 23 -->
-      <div class="day rest">
-        <div class="date"><span class="date-d">23</span><span class="date-m">Fri Oct</span></div>
-        <div class="body-col">
-          <div class="day-head"><span class="day-title">Land 07:50 — rest</span></div>
-          <div class="times">Stone Town · sleep until early afternoon</div>
-          <div class="detail">You'll have been awake around twenty-four hours. Sleep, then walk Stone Town in the evening. Monday's Misali is the best day of the trip and it needs you functioning.</div>
-        </div>
+    <div class="day rest">
+      <div class="daymark"><div class="dow">Fri</div><div class="dnum">23</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Land, and stop</h3></div>
+        <div class="meta">Zanzibar 07:50 · Stone Town</div>
+        <ul class="stops">
+          <li><span class="t">07:50</span><span>Roughly 24 hours awake with no real sleep on the plane. The room is booked from the night before so it is yours on arrival.</span></li>
+          <li><span class="t">17:30</span><span>Stone Town in the evening. Forodhani Gardens face west.</span></li>
+        </ul>
       </div>
+    </div>
 
-      <!-- 24 -->
-      <div class="day">
-        <div class="date"><span class="date-d">24</span><span class="date-m">Sat Oct</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Tumbatu</span>
-            <span class="tag t-island">Island</span>
-            <span class="score">28 / 30</span>
-          </div>
-          <div class="times">Up 10:25 · out 11:15 · Kendwa by 18:00</div>
-          <div class="detail">An hour up to Mkokotoni, then a thirty-minute crossing to the third-largest island in the archipelago — and one almost nobody visits. The Watumbatu keep to themselves, so you go with a local guide.</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">5h</span><span class="stop-d">Secluded beaches, the overgrown ruins of <b>Jongowe</b> — a medieval Swahili town — and the island lighthouse</span></div>
-            <div class="stop"><span class="stop-t">18:00</span><span class="stop-d">Thirty minutes to <b>Kendwa</b> · full moon party, all night</span></div>
-          </div>
-          <div class="flag"><b>Arrange</b><span>Local guide and permission for Tumbatu. Base at Kendwa that night rather than driving back.</span></div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Sat</div><div class="dnum">24</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Tumbatu, then Kendwa</h3><div class="score">28<small> / 30</small></div></div>
+        <div class="meta">Island · departs <b>Mkokotoni</b> · guide-led</div>
+        <ul class="stops">
+          <li><span class="t">11:15</span><span>Mkokotoni fish market and the dhow yard before boarding.</span><span class="s"></span></li>
+          <li><span class="t">12:00</span><span><strong>Tumbatu Island</strong>, 5 hours <em>Closed to almost all visitors. Entry needs the blessing of the village elders, sought in advance by an approved guide. Cover up — long trousers and sleeves — and ask before photographing anything.</em></span><span class="s">28</span></li>
+          <li><span class="t"></span><span>Lagoon stop on the way — fish traps, women collecting octopus. Then snorkelling on the reef: turtles, octopus, moray, leaf fish.</span><span class="s"></span></li>
+          <li><span class="t">18:00</span><span><strong>Kendwa full moon party</strong>, 30 minutes' drive. Change first — arrive at Tumbatu as guests of a religious village and leave it that way.</span><span class="s"></span></li>
+        </ul>
+        <div class="flag"><b>Confirm the date</b>The astronomical full moon is <b>Monday 26 October</b>, not the 24th. Kendwa Rocks schedules on the nearest Saturday, so the 24th is plausible — but check with the venue, because Sat 31 is the other candidate and the whole trip is built around this night.</div>
       </div>
+    </div>
 
-      <!-- 25 -->
-      <div class="day rest">
-        <div class="date"><span class="date-d">25</span><span class="date-m">Sun Oct</span></div>
-        <div class="body-col">
-          <div class="day-head"><span class="day-title">Fly to Pemba — rest</span></div>
-          <div class="times">Up 11:00 · leave Kendwa 12:00 · CSV147 14:40 → 15:05</div>
-          <div class="detail">The 14:40 departure is what makes the party work — three more hours than the morning flight would have given you. Land, get to the hotel, do nothing.</div>
-        </div>
+    <div class="day rest">
+      <div class="daymark"><div class="dow">Sun</div><div class="dnum">25</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>North to Pemba</h3></div>
+        <div class="meta">Coastal CSV147 · 14:40 → 15:05</div>
+        <ul class="stops"><li><span class="t">12:00</span><span>Leave Kendwa. Twenty-five minutes in the air. Rest on arrival.</span></li></ul>
       </div>
+    </div>
 
-      <!-- 26 -->
-      <div class="day">
-        <div class="date"><span class="date-d">26</span><span class="date-m">Mon Oct</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Misali Island</span>
-            <span class="tag t-island">Island</span>
-            <span class="score">29 / 30</span>
-          </div>
-          <div class="times">Up 07:25 · out 08:15 · back 17:30</div>
-          <div class="detail">Twenty minutes to Wesha, then forty-five by boat to an uninhabited islet inside a marine conservation area. The best day of the trip.</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">6h</span><span class="stop-d">The reef starts at the beach, so you <b>snorkel straight off the sand</b> — over 300 coral and marine species, hawksbill turtles, eagle rays, barracuda</span></div>
-            <div class="stop"><span class="stop-t">—</span><span class="stop-d">Shallows sit at <b>5m in clear turquoise</b> and the wall drops to <b>40m and goes indigo</b>. You can see the shelf end from the surface</span></div>
-            <div class="stop"><span class="stop-t">—</span><span class="stop-d">Walk the island, eat on the sand, swim again</span></div>
-          </div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Mon</div><div class="dnum">26</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Misali Island</h3><div class="score">29<small> / 30</small></div></div>
+        <div class="meta">Island · departs <b>Wesha</b>, Pemba · guide-led</div>
+        <ul class="stops">
+          <li><span class="t">08:15</span><span>Out early. This is the best day of the trip and it deserves the whole of it.</span><span class="s"></span></li>
+          <li><span class="t">09:30</span><span><strong>Misali Island</strong>, 6 hours ashore <em>Uninhabited, 0.9 km², protected since the 1990s. Over 350 fish species and 40 corals. Visibility regularly beyond 30 metres — the clearest water you will see on this trip.</em></span><span class="s">29</span></li>
+          <li><span class="t"></span><span>Snorkel the coral gardens, then walk the west beach. Conservation fee is normally folded into the boat price.</span><span class="s"></span></li>
+          <li><span class="t">17:30</span><span>Back to Chake Chake.</span><span class="s"></span></li>
+        </ul>
       </div>
+    </div>
 
-      <!-- 27 -->
-      <div class="day">
-        <div class="date"><span class="date-d">27</span><span class="date-m">Tue Oct</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Vumawimbi, Ngezi &amp; Ras Kigomasha</span>
-            <span class="tag t-land">Land</span>
-            <span class="score">28 / 30</span>
-          </div>
-          <div class="times">Up 10:25 · out 11:15 · back 19:00</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">4h</span><span class="stop-d"><b>Vumawimbi</b> — three kilometres of untouched white sand with rainforest coming down to the waterline. Frequently not another person on it</span></div>
-            <div class="stop"><span class="stop-t">1h</span><span class="stop-d"><b>Ngezi Forest</b> — 1,440 hectares, one of the last patches of indigenous rainforest in East Africa</span></div>
-            <div class="stop"><span class="stop-t">1h</span><span class="stop-d"><b>Ras Kigomasha</b> — Pemba's northern tip. A British lighthouse from 1900, the 2,000-metre-deep Pemba Channel on one side, open ocean ahead</span></div>
-          </div>
-          <div class="flag sun"><b>Sunset</b><span>The headland faces west — the best sunset of the trip. Staying for 18:25 means driving the unsealed Kigomasha tracks after dark. Ask the driver before the day.</span></div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Tue</div><div class="dnum">27</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>The Kigomasha Peninsula</h3><div class="score">29<small> / 30</small></div></div>
+        <div class="meta">Beach on land · by road · <b>sunset day</b></div>
+        <ul class="stops">
+          <li><span class="t">11:15</span><span>North through Konde on rough track, past farmland and villages.</span><span class="s"></span></li>
+          <li><span class="t">12:30</span><span><strong>Vumawimbi Beach</strong>, 4 hours <em>White sand on the peninsula's eastern side, crystal-clear turquoise, and nothing built on it — no hotel, no restaurant, no shop. A village and fishermen. Bring all food and water.</em></span><span class="s">29</span></li>
+          <li><span class="t">16:45</span><span><strong>Ngezi Forest</strong>, 1 hour — 1,476 hectares of the primary forest that once covered western Pemba. Pemba flying fox, scops owl, green pigeon.</span><span class="s">—</span></li>
+          <li><span class="t">18:00</span><span><strong>Ras Kigomasha lighthouse</strong> — cast iron, built 1904, 95 steps. The north-<em style="display:inline">western</em> tip, so it faces the sunset squarely.</span><span class="s">23</span></li>
+          <li><span class="t">18:25</span><span>Sunset from the headland. Back by 19:00.</span><span class="s"></span></li>
+        </ul>
+        <div class="flag"><b>Ask the driver first</b>Whether he will drive the Kigomasha tracks after dark. If not, the sunset comes off and you leave by 17:30. Do not let this be discovered at 18:20.</div>
       </div>
+    </div>
 
-      <!-- 28 -->
-      <div class="day">
-        <div class="date"><span class="date-d">28</span><span class="date-m">Wed Oct</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Menai Bay</span>
-            <span class="tag t-hop">Island hop</span>
-            <span class="score">25 / 30</span>
-          </div>
-          <div class="times">CSV146 10:05 → 10:35 · out 11:45 · back 18:00</div>
-          <div class="detail">Land from Pemba, drop bags, and thirty minutes south-west to Fumba. A private dhow, three stops only — not the eight-hour Safari Blue route.</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">1h30</span><span class="stop-d">Reef snorkel in Zanzibar's largest marine protected area — 470 km², resident bottlenose and humpback dolphins</span></div>
-            <div class="stop"><span class="stop-t">1h30</span><span class="stop-d"><b>Kwale Island</b> — seafood BBQ under the tamarind trees</span></div>
-            <div class="stop"><span class="stop-t">1h</span><span class="stop-d"><b>The hidden mangrove lagoon</b>, inside Kwale. The dhow takes you in through the forest to a natural swimming pool — turquoise, perfectly still, enclosed by mangroves. There is nothing else like it in the trip</span></div>
-          </div>
-          <div class="flag"><b>High tide</b><span>The lagoon is best at high water. Book a private dhow rather than joining the scheduled tour, so you can time it.</span></div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Wed</div><div class="dnum">28</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Kwale and the mangrove lagoon</h3><div class="score">25<small> / 30</small></div></div>
+        <div class="meta">Island hop · departs <b>Fumba</b> · <b>needs high water</b></div>
+        <ul class="stops">
+          <li><span class="t">10:35</span><span>Land at Zanzibar. Fumba is 25 minutes from the airport — go straight there, bags later.</span><span class="s"></span></li>
+          <li><span class="t">12:00</span><span><strong>Kwale Island</strong> — beach and a seafood lunch, 3 hours.</span><span class="s">25</span></li>
+          <li><span class="t">15:30</span><span><strong>The mangrove lagoon</strong>, 1 hour <em>Hidden inside Kwale, enclosed by mangrove, with two natural doorways. Turquoise water in a forest — the reason this day beat Michamvi. At low tide it is bare sand and nothing else.</em></span><span class="s">25</span></li>
+          <li><span class="t">18:00</span><span>Back at the hotel. Forodhani for the sunset.</span><span class="s"></span></li>
+        </ul>
+        <div class="flag"><b>The most fragile stop on the trip</b>The lagoon only exists at high water. Pull the <b>Fumba tide table for 28 and 30 October</b> before booking either dhow — high water needs to fall between roughly 13:00 and 17:00. If Wednesday's doesn't and Sunday's does, swap this day with Pungume, which needs no tide at all.</div>
       </div>
+    </div>
 
-      <!-- 29 -->
-      <div class="day">
-        <div class="date"><span class="date-d">29</span><span class="date-m">Thu Oct</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Chumbe Island</span>
-            <span class="tag t-island">Island</span>
-            <span class="score">27 / 30</span>
-          </div>
-          <div class="times">Out 09:15 · sails 10:00 · returns 16:00 · back 16:30</div>
-          <div class="detail">Six kilometres south of Stone Town. Tanzania's first Marine National Park, protected since 1994, with visitor numbers strictly capped — which is exactly why the reef is in the condition it is.</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">—</span><span class="stop-d">Snorkel a reef that's had thirty years of protection</span></div>
-            <div class="stop"><span class="stop-t">—</span><span class="stop-d">The forest trail across the island, and the intertidal pools</span></div>
-            <div class="stop"><span class="stop-t">18:25</span><span class="stop-d">Back by 16:30 — <b>sunset from Forodhani</b>, on the Stone Town waterfront</span></div>
-          </div>
-          <div class="flag"><b>Book first</b><span>Fixed 10:00 sailing and a hard cap on numbers. This is the one to book before anything else, and the least certain price at £210–285.</span></div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Thu</div><div class="dnum">29</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Chumbe Island</h3><div class="score">27<small> / 30</small></div></div>
+        <div class="meta">Island · departs <b>Mbweni</b> · <b>sails 10:00 sharp</b></div>
+        <ul class="stops">
+          <li><span class="t">09:15</span><span>Bolt to Mbweni — 15 minutes, and inside the only area Bolt actually covers.</span><span class="s"></span></li>
+          <li><span class="t">10:00</span><span><strong>Chumbe Island Coral Park</strong> <em>A marine protected area since 1994, capped at 14 day guests. $90 each covers the boat, lunch, drinks, the guided snorkel and the walks.</em></span><span class="s">27</span></li>
+          <li><span class="t"></span><span>Guided reef snorkel — intact, protected coral that divers rank against anywhere in the world. Then coral rag forest, coconut crabs, and the 1904 lighthouse.</span><span class="s"></span></li>
+          <li><span class="t">16:30</span><span>Back early. Two hours spare before the Forodhani sunset.</span><span class="s"></span></li>
+        </ul>
+        <div class="flag calm"><b>Book this one first</b>Fourteen places, one sailing, fixed at 10:00. It is the least flexible thing on the itinerary and the most expensive single day.</div>
       </div>
+    </div>
 
-      <!-- 30 -->
-      <div class="day">
-        <div class="date"><span class="date-d">30</span><span class="date-m">Fri Oct</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Fumba island hop</span>
-            <span class="tag t-hop">Island hop</span>
-            <span class="score">27 / 30</span>
-          </div>
-          <div class="times">Up 08:55 · out 09:45 · back 19:00</div>
-          <div class="detail">Back into Menai Bay, but south this time. Pungume is forty-five minutes down at the far end of the bay, which is why this day can't hold more than three islands.</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">3h</span><span class="stop-d"><b>Pungume</b> — undeveloped, and reputedly the best fishing in the archipelago</span></div>
-            <div class="stop"><span class="stop-t">2h</span><span class="stop-d"><b>Vundwe</b> — 1.4 km², sitting three hundred metres off Uzi</span></div>
-            <div class="stop"><span class="stop-t">45m</span><span class="stop-d">One more islet — <b>ask the skipper</b> which has the best water that week. Miwi, Niamembe, Pamunda and Sume are all in the bay</span></div>
-          </div>
-          <div class="flag"><b>Private</b><span>Scheduled boats go to Kwale, not Pungume. This one has to be chartered.</span></div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Fri</div><div class="dnum">30</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Nakupenda and Bawe</h3><div class="score">26.5<small> / 30</small></div></div>
+        <div class="meta">Island hop · departs <b>Stone Town harbour</b> · <b>needs low water</b></div>
+        <ul class="stops">
+          <li><span class="t">09:00</span><span>Walk to the harbour. Operator-run, so the 11:15 rule doesn't apply — and going early is the entire point.</span><span class="s"></span></li>
+          <li><span class="t">09:40</span><span><strong>Nakupenda sandbank</strong>, 2 hours <em>A kilometre of sand that only exists at low tide, and sinks again by evening. Arrive early: visitors describe it as near-empty in the morning and holding hundreds of people by the afternoon.</em></span><span class="s">26</span></li>
+          <li><span class="t">12:30</span><span><strong>Bawe Island</strong>, 3 hours <em>Uninhabited — no village, no resort. Far less visited than Prison Island, with excellent visibility, moray, lionfish, turtles.</em></span><span class="s">27</span></li>
+          <li><span class="t">17:45</span><span>Back on foot. Forodhani for the sunset.</span><span class="s"></span></li>
+        </ul>
+        <div class="flag calm"><b>Your cheapest day</b>No driver, no transfer, no car. Walk both ways.</div>
       </div>
+    </div>
 
-      <!-- 31 -->
-      <div class="day">
-        <div class="date"><span class="date-d">31</span><span class="date-m">Sat Oct</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Jozani, Kuza &amp; Mtende</span>
-            <span class="tag t-land">Inland</span>
-            <span class="score">26 / 30</span>
-          </div>
-          <div class="times">Up 08:40 · out 09:30 · back 19:00</div>
-          <div class="detail">The only day with no boat. South-east across the island, three stops, three hours of driving.</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">2h</span><span class="stop-d"><b>Jozani Forest</b> — the Zanzibar red colobus, found nowhere else on earth, and the mangrove boardwalk</span></div>
-            <div class="stop"><span class="stop-t">2h</span><span class="stop-d"><b>Kuza Cave</b> at Kibigija. Down steps through dense jungle into a chamber holding a <b>fifty-metre round pool of turquoise freshwater</b>, three metres deep, carved by rainwater over roughly 250,000 years. Sacred, community-run</span></div>
-            <div class="stop"><span class="stop-t">2h30</span><span class="stop-d"><b>Mtende</b> — a cove set between two rock formations with ancient trees above it. White sand, emerald water, virtually no development nearby</span></div>
-          </div>
-          <div class="flag"><b>Low tide</b><span>Mtende's lagoon is there at low water. At high tide the currents strengthen and swimming isn't advised. Check the Jambiani station.</span></div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Sat</div><div class="dnum">31</div><div class="dmon">Oct</div></div>
+      <div>
+        <div class="dayhead"><h3>Forest, cave, cove</h3><div class="score">26<small> / 30</small></div></div>
+        <div class="meta">Inland · by road · <b>tide-sensitive</b></div>
+        <ul class="stops">
+          <li><span class="t">09:30</span><span><strong>Jozani Forest</strong>, 2 hours — Zanzibar red colobus, found nowhere else on earth, plus the mangrove boardwalk over Chwaka Bay.</span><span class="s">—</span></li>
+          <li><span class="t">12:30</span><span><strong>Kuza Cave</strong>, Jambiani <em>A 50-metre limestone sinkhole, spring-fed, about three metres deep, turquoise under an open roof. Sacred to the village, who call it Panga na Maji — the cave with water. The only freshwater on the whole trip, and the one thing here that isn't sea over coral.</em></span><span class="s">27</span></li>
+          <li><span class="t">15:30</span><span><strong>Mtende Beach</strong> — a cove cut into limestone cliffs on the south-east corner, well off the tourist strip.</span><span class="s">25</span></li>
+          <li><span class="t">19:00</span><span>Back.</span><span class="s"></span></li>
+        </ul>
+        <div class="flag"><b>Mtende's tide is genuinely unresolved</b>Sources contradict each other outright — one says the sheltered lagoon forms at <b>low</b> water and swimming is unsafe at high, another says the cove is calm and swimmable at <b>high</b> and the sea retreats hundreds of metres at low. Ask in Jambiani that morning and be ready to swap Kuza and Mtende around. Reef shoes either way — coral and sea urchins.</div>
       </div>
+    </div>
 
-      <!-- 1 -->
-      <div class="day">
-        <div class="date"><span class="date-d">1</span><span class="date-m">Sun Nov</span></div>
-        <div class="body-col">
-          <div class="day-head">
-            <span class="day-title">Stone Town island hop</span>
-            <span class="tag t-hop">Island hop</span>
-            <span class="score">27 / 30</span>
-          </div>
-          <div class="times">Out 11:15 · back 17:45 · no driving</div>
-          <div class="detail">The gentlest day, deliberately last. You walk to the harbour, one boat does three islands, and you're back with the evening to pack.</div>
-          <div class="stops">
-            <div class="stop"><span class="stop-t">3h</span><span class="stop-d"><b>Bawe</b> — forty-five minutes west, far enough out that most people don't bother. A 550-metre beach with reef right off the sand</span></div>
-            <div class="stop"><span class="stop-t">2h</span><span class="stop-d"><b>Nakupenda</b> — a sandbank that rises out of open sea. Water in every direction, no land</span></div>
-            <div class="stop"><span class="stop-t">1h30</span><span class="stop-d"><b>Chapwani</b> — a short hop back in</span></div>
-            <div class="stop"><span class="stop-t">18:25</span><span class="stop-d">Sunset from Forodhani</span></div>
-          </div>
-          <div class="flag"><b>Low tide</b><span>Nakupenda only exists at low water. Check the Stone Town station — if low tide is late morning, run Nakupenda first and Bawe after.</span></div>
-        </div>
+    <div class="day">
+      <div class="daymark"><div class="dow">Sun</div><div class="dnum">1</div><div class="dmon">Nov</div></div>
+      <div>
+        <div class="dayhead"><h3>Pungume</h3><div class="score">26<small> / 30</small></div></div>
+        <div class="meta">Island · departs <b>Fumba</b> · <b>no tide constraint</b></div>
+        <ul class="stops">
+          <li><span class="t">09:45</span><span>Out to Fumba, then 45 minutes south — the far end of Menai Bay, well beyond where scheduled boats turn around.</span><span class="s"></span></li>
+          <li><span class="t">11:15</span><span><strong>Pungume sandbank</strong>, 4 hours <em>Roughly 15 km offshore. White sand, coral, and the snorkelling most operators quietly rate as the best in southern Zanzibar. Fruit and a seafood BBQ on the sand.</em></span><span class="s">26</span></li>
+          <li><span class="t">15:30</span><span>One islet on the way back <em>only if the skipper says the timing genuinely works</em> — his choice from Miwi, Niamembe, Pamunda, Tele or Ukombe.</span><span class="s">~24</span></li>
+          <li><span class="t">17:40</span><span>Back deliberately early. Eat at 19:00, pack, sleep.</span><span class="s"></span></li>
+        </ul>
+        <div class="flag"><b>Short day on purpose</b>The taxi comes at 03:50 tomorrow. A full-length Pungume day would put you in bed around midnight before a twenty-hour journey — so this one ends early and the islet is optional, not planned.</div>
       </div>
+    </div>
 
-      <!-- 2 -->
-      <div class="day travel">
-        <div class="date"><span class="date-d">2</span><span class="date-m">Mon Nov</span></div>
-        <div class="body-col">
-          <div class="day-head"><span class="day-title">Home</span></div>
-          <div class="times">Up 03:50 · MS820 06:20 → Cairo · MS779 → Heathrow 21:00</div>
-          <div class="flag"><b>Pre-book</b><span>The 03:50 airport run. Bolt covers Stone Town but cars are rare and there'll be nothing at that hour.</span></div>
-        </div>
+    <div class="day rest">
+      <div class="daymark"><div class="dow">Mon</div><div class="dnum">2</div><div class="dmon">Nov</div></div>
+      <div>
+        <div class="dayhead"><h3>Home</h3></div>
+        <div class="meta">EgyptAir MS820 / MS779 · 06:20 → Cairo → 21:00 LHR</div>
+        <ul class="stops"><li><span class="t">03:50</span><span>Pre-booked taxi. Bolt will have nothing at that hour — arrange it the day before.</span></li></ul>
       </div>
-
     </div>
   </section>
 
-  <!-- ================= RUNNERS-UP ================= -->
   <section>
-    <div class="sec-label">Runners-up</div>
-    <h2>What didn't make it, and why</h2>
-    <p>Twenty-six water bodies qualified across Unguja and Pemba. Seventeen are in. These are the ones that came closest.</p>
-
+    <h2>What it's built on</h2>
+    <p class="section-note">Every water body scored out of ten on three things, for thirty. Anything below seven in any single column is cut, whatever its total.</p>
     <div class="scroll">
       <table>
-        <thead>
-          <tr><th>Water body</th><th>Where</th><th class="n">Score</th><th>Why it's out</th></tr>
-        </thead>
+        <thead><tr><th>Water body</th><th>Island</th><th class="n">Disc.</th><th class="n">Colour</th><th class="n">Water</th><th class="n">/30</th></tr></thead>
         <tbody>
-          <tr>
-            <td class="name">Bwejuu Island</td><td>Mafia</td><td class="n num">28</td>
-            <td><strong>The one real loss.</strong> One of only three water bodies scoring 9 or 10 in every category. Mafia meant two flights and £1,500–2,000</td>
-          </tr>
-          <tr>
-            <td class="name">Blue Lagoon, Juani</td><td>Mafia</td><td class="n num">26</td>
-            <td>A tidal infinity pool reached by a thirty-minute channel through mangroves, beside the overgrown 16th-century ruins of Kua</td>
-          </tr>
-          <tr>
-            <td class="name">Njao Gap</td><td>Pemba</td><td class="n num off">25</td>
-            <td>Pemba only gets two full days — the full moon party caps it. Also discovery 6: reef from a boat, not a place you arrive at</td>
-          </tr>
-          <tr>
-            <td class="name">Latham Island</td><td>60km offshore</td><td class="n num off">25</td>
-            <td>Best season is June–September. Three hundred metres of bare coral with no shade, no vegetation and no fresh water. Charter only</td>
-          </tr>
-          <tr>
-            <td class="name">Michamvi Kae</td><td>Unguja east</td><td class="n num off">23</td>
-            <td>Would have been a third land day and a better sunset. Lost to the mangrove lagoon, which is the more distinctive water body</td>
-          </tr>
-          <tr>
-            <td class="name">Mnemba Atoll</td><td>Unguja north-east</td><td class="n num off">24</td>
-            <td>Colour 10, water 10, <strong>discovery 4</strong> — you can't land, and the boats queue on the same reef</td>
-          </tr>
-          <tr>
-            <td class="name">Kwale, Miwi, Uzi</td><td>Menai Bay</td><td class="n num off">19–25</td>
-            <td>The Fumba day fits three islands, not six. Pungume's distance is what caps it</td>
-          </tr>
-          <tr>
-            <td class="name">Whale sharks</td><td>Mafia</td><td class="n num off">18</td>
-            <td>Season opens in October and sightings are reliable — but whale sharks feed where the plankton is, and plankton water is grey-green. Discovery 4, colour 4</td>
-          </tr>
-          <tr>
-            <td class="name">Pongwe</td><td>Unguja east</td><td class="n num off">17</td>
-            <td>Rocky seabed, seaweed farms, and unswimmable at low tide</td>
-          </tr>
-          <tr>
-            <td class="name">Nungwi, Kendwa</td><td>Unguja north</td><td class="n num off">19</td>
-            <td>Discovery 1. Kendwa is on the itinerary for the party, not the water</td>
-          </tr>
-          <tr>
-            <td class="name">Matemwe, Jambiani, Paje</td><td>Unguja east</td><td class="n num off">14–16</td>
-            <td>Water 4. The tidal range strands the sea hundreds of metres out for half of every day</td>
-          </tr>
+          <tr><td>Misali Island</td><td>Pemba</td><td class="n">9</td><td class="n">10</td><td class="n">10</td><td class="n">29</td></tr>
+          <tr><td>Vumawimbi Beach</td><td>Pemba</td><td class="n">10</td><td class="n">9</td><td class="n">10</td><td class="n">29</td></tr>
+          <tr><td>Tumbatu Island</td><td>Unguja</td><td class="n">10</td><td class="n">8</td><td class="n">10</td><td class="n">28</td></tr>
+          <tr><td>Kuza Cave</td><td>Unguja</td><td class="n">10</td><td class="n">10</td><td class="n">7</td><td class="n">27</td></tr>
+          <tr><td>Chumbe Island</td><td>Unguja</td><td class="n">8</td><td class="n">9</td><td class="n">10</td><td class="n">27</td></tr>
+          <tr><td>Bawe Island</td><td>Unguja</td><td class="n">8</td><td class="n">9</td><td class="n">10</td><td class="n">27</td></tr>
+          <tr><td>Pungume sandbank</td><td>Unguja</td><td class="n">8</td><td class="n">8</td><td class="n">10</td><td class="n">26</td></tr>
+          <tr><td>Nakupenda sandbank</td><td>Unguja</td><td class="n">6</td><td class="n">10</td><td class="n">10</td><td class="n">26</td></tr>
+          <tr><td>Mangrove lagoon, Kwale</td><td>Unguja</td><td class="n">7</td><td class="n">10</td><td class="n">8</td><td class="n">25</td></tr>
+          <tr><td>Kwale Island</td><td>Unguja</td><td class="n">6</td><td class="n">9</td><td class="n">10</td><td class="n">25</td></tr>
+          <tr><td>Mtende Beach</td><td>Unguja</td><td class="n">9</td><td class="n">9</td><td class="n">7</td><td class="n">25</td></tr>
+          <tr><td>One Menai islet <em style="font-style:normal;color:var(--faint)">provisional</em></td><td>Unguja</td><td class="n">9</td><td class="n">8</td><td class="n">7</td><td class="n">~24</td></tr>
+          <tr><td>Ras Kigomasha</td><td>Pemba</td><td class="n">7</td><td class="n">8</td><td class="n">8</td><td class="n">23</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="section-note" style="margin-top:20px">Plus two rainforests that score nothing and earn their place anyway — <b>Ngezi</b> on Pemba and <b>Jozani</b> on Unguja.</p>
+  </section>
+
+  <section>
+    <h2>The runners-up</h2>
+    <p class="section-note">Twenty-one water bodies were considered and cut. Four of these were on the itinerary until the research came back.</p>
+
+    <div class="tier">Reserves — could still slot in</div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Water body</th><th class="n">/30</th><th>Why it's not in</th></tr></thead>
+        <tbody>
+          <tr><td>Njao Gap, Pemba</td><td class="n">25</td><td>No room — the full moon caps Pemba at two days. It's also a 5–40 m dive channel, not a place you land</td></tr>
+          <tr><td>Menai Bay reef</td><td class="n">24</td><td><b>Cut from Wed 28.</b> The weakest stop on a tide-locked day — dropping it bought 90 minutes for Kwale and the lagoon</td></tr>
+          <tr><td>Miwi Island</td><td class="n">24</td><td>Lead candidate for Sunday's optional islet</td></tr>
+          <tr><td>Niamembe · Pamunda · Tele · Ukombe</td><td class="n">~24</td><td>The rawest, least disturbed corner of the archipelago. Seabird islets, no settlement, no reviews either</td></tr>
+          <tr><td>Michamvi Kae</td><td class="n">23</td><td>Lost to Menai Bay. A third land day and a better sunset, but the lagoon is the more distinctive water</td></tr>
+          <tr><td>Chapwani Island</td><td class="n">22</td><td><b>Cut from Fri 30.</b> A ten-room private hotel — day access for non-guests isn't advertised anywhere. Dropping it raised the day from 25 to 26.5</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tier">Out on cost or season</div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Water body</th><th class="n">/30</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Bwejuu, Mafia</td><td class="n">28</td><td>The most painful cut on the list — one of only three flawless water bodies found. £1,500–2,000 and two extra flights for the Mafia group</td></tr>
+          <tr><td>Blue Lagoon, Mafia</td><td class="n">26</td><td>Same</td></tr>
+          <tr><td>Jibondo, Mafia</td><td class="n">25</td><td>Same</td></tr>
+          <tr><td>Chole Bay · Kinasi Pass, Mafia</td><td class="n">24</td><td>Same</td></tr>
+          <tr><td>Latham Island</td><td class="n">25</td><td>Season is June–September. Charter only, no shade, no fresh water, 300 m of bare coral</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tier">Cut on the weak-link rule</div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Water body</th><th class="n">/30</th><th>Failed on</th></tr></thead>
+        <tbody>
+          <tr><td>Vundwe Island</td><td class="n">20</td><td class="cut"><b>Colour 5 · Water 5.</b> Was on the itinerary at 27. Research showed coral rag forest and mangrove, joined to Uzi at low tide, used for seasonal fishing camps. No swimmable turquoise water anywhere on it</td></tr>
+          <tr><td>Maalum Cave</td><td class="n">20</td><td class="cut"><b>Discovery 3.</b> Beautiful water, but towels, goggles, a restaurant and a spa doing foot treatments. The commercial twin of Kuza, six kilometres away</td></tr>
+          <tr><td>Mnemba Atoll</td><td class="n">24</td><td class="cut"><b>Discovery 4.</b> You can't land, and the boats queue</td></tr>
+          <tr><td>Uzi Island</td><td class="n">19</td><td class="cut"><b>Colour.</b> Mangroves and seaweed farming</td></tr>
+          <tr><td>Whale sharks, Mafia</td><td class="n">18</td><td class="cut"><b>Discovery 4 · Colour 4.</b> Plankton-rich water is grey-green by definition</td></tr>
+          <tr><td>Salaam Cave</td><td class="n">17</td><td class="cut"><b>Water 3.</b> A cave you eat dinner in, not one you swim in</td></tr>
+          <tr><td>Pongwe</td><td class="n">17</td><td class="cut"><b>Water 4.</b> Rocky seabed, seaweed farms, unswimmable at low tide</td></tr>
+          <tr><td>Paje</td><td class="n">17</td><td class="cut"><b>Discovery 2 · Water 4.</b> The most developed strip on the east coast, and the sea retreats a kilometre. Wrong season for kiting too — the winds are December–March and June–September</td></tr>
+          <tr><td>Nungwi · Kendwa · Changuu · Matemwe · Jambiani</td><td class="n">14–20</td><td class="cut">Crowds, or tidal exposure, or both</td></tr>
         </tbody>
       </table>
     </div>
   </section>
 
-  <!-- ================= HOW IT WAS JUDGED ================= -->
   <section>
-    <div class="sec-label">The scoring</div>
-    <h2>Three things out of ten each, and a rule that cuts the weak link</h2>
-    <p><strong>Discovery</strong> — does it feel like you found it. <strong>Colour</strong> — turquoise or emerald, vivid either way. <strong>Water</strong> — how much of it, and how swimmable. A puddle is 1; a proper swim is 10.</p>
-    <p>Anything scoring below 7 in any category is cut regardless of its total. That's what removed Mnemba on discovery, the whale sharks on discovery and colour, and every tidal east-coast beach on water.</p>
-    <p><strong>Confidence isn't even.</strong> Misali, Vumawimbi, Kuza, Chumbe, Bawe, Nakupenda, Tumbatu, Mtende and the Kwale lagoon were researched properly. Pungume, Vundwe and the Menai islets weren't — those rest on very little, and Pungume and Vundwe carry Friday between them.</p>
+    <h2>Before you book anything</h2>
+    <ol class="book">
+      <li><strong>Confirm the Kendwa full moon party runs Saturday 24.</strong> The moon is full on Monday 26. If the party is on the 31st instead, the trip restructures.</li>
+      <li><strong>Chumbe.</strong> Fourteen places, one 10:00 sailing, Thursday 29. Book first, book early.</li>
+      <li><strong>Fumba tide tables, 28 October and 1 November.</strong> High water between 13:00 and 17:00 decides which day gets the mangrove lagoon; Pungume takes the other.</li>
+      <li><strong>Both Fumba dhows from one skipper, negotiated together.</strong> Direct at the jetty is £80–140 against £150–250 through a hotel — and two days is real leverage. He'll also know the tide better than any website, and which islet is worth stopping at that week.</li>
+      <li><strong>Confirm the Sunday charter actually reaches Pungume</strong> — 45 minutes beyond where scheduled boats stop. They will offer Kwale instead.</li>
+      <li><strong>Tumbatu.</strong> A local guide, and permission sought from the elders in advance.</li>
+      <li><strong>Ask the Pemba driver</strong> whether he'll do the Kigomasha tracks after sunset.</li>
+      <li><strong>Airport taxi for Monday 2 November, 03:50</strong> — pre-booked, not hoped for.</li>
+    </ol>
   </section>
 
-  <!-- ================= PRACTICAL ================= -->
   <section>
-    <div class="sec-label">Before you go</div>
-    <h2>Eight things to sort</h2>
-    <ul>
-      <li><b>Chumbe</b> — book first. Fixed sailing, capped numbers, and the least predictable price</li>
-      <li><b>Tide tables</b> for 28 October (high), 31 October and 1 November (both low). Jambiani station for Mtende, Stone Town station for Nakupenda</li>
-      <li><b>Private dhow at Fumba</b> for both Wednesday and Friday — booked at the jetty, not through the hotel. Hotel bookings carry 40–50% markups, and that gap is worth £300–400 across the trip</li>
-      <li><b>Tumbatu guide</b> and permission</li>
-      <li><b>Stone Town room from 22 October</b> so it's ready at 07:50</li>
-      <li><b>A driver, not a hire car</b> — six days. On six of eight days a car would sit at a jetty, and he's the one who knows which boat owner to talk to</li>
-      <li><b>Airport taxi for 03:50 on 2 November</b>, pre-booked</li>
-      <li><b>Snorkel gear from home</b> — six snorkelling days, and rental is £5–10 a head a day</li>
-    </ul>
+    <h2>What it costs</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Item</th><th>Detail</th><th class="n">£</th></tr></thead>
+        <tbody>
+          <tr><td>Flights, hotels, internal flights</td><td>Booked, all-inclusive</td><td class="n">3,000</td></tr>
+          <tr><td>Driver</td><td>Six days, not eight — Friday walks, Thursday takes Bolt</td><td class="n">330–420</td></tr>
+          <tr><td>Activities</td><td>Boats booked direct at the jetty, not through the hotel</td><td class="n">650–1,000</td></tr>
+          <tr><td>Food</td><td>Seven local nights, four out, one free at Chabad</td><td class="n">450–700</td></tr>
+          <tr><td>Visas</td><td>Tanzania e-visa, ~$50 each</td><td class="n">120</td></tr>
+          <tr><td>Kendwa</td><td>Entry and drinks</td><td class="n">50–100</td></tr>
+          <tr><td><strong>Total</strong></td><td>Own masks and snorkels brought from home</td><td class="n">4,000–4,500</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <footer>
-    <div class="sec-label">A note on the numbers</div>
-    <p class="foot-note">£4,200 is the working figure — £3,000 of it already booked for flights, hotels and the two Pemba hops. The rest is boats, a driver for six days, visas and the party. Booking the dhows directly at the jetty rather than through a hotel is the single biggest lever on what's left.</p>
-    <p class="foot-note">Sunset is 18:25 every day and barely shifts — Zanzibar sits six degrees south. Stone Town faces west, so Forodhani works on any evening you're back in time.</p>
+    <p><b>On the numbers.</b> Ten of the thirteen water bodies here were researched against multiple independent sources. One — the optional Menai islet — rests on a Wikipedia stub and a single sentence about the southern islets being undisturbed. It is marked provisional and it is optional for that reason.</p>
+    <p><b>Research moved four scores.</b> Vundwe fell from 27 to 20 and left the itinerary entirely. Pungume dropped a point once it turned out to be a published $55 excursion from Kizimkazi. Nakupenda dropped one on afternoon crowds — which is why it now goes first. Vumawimbi rose to carry Tuesday outright. Two more stops, the Menai reef and Chapwani, were cut to give better water more time.</p>
+    <p><b>Six of eight days involve a boat.</b> Ten of thirteen water bodies are salt water over a coral platform. The alternation is as good as the fixed points allow — island, land, hop, island, hop, inland, island, with no two hops consecutive — but this is a boat-heavy trip by design. Kuza Cave and the mangrove lagoon are what stop it being a single idea repeated eight times, and both sit in the back half deliberately.</p>
   </footer>
 
 </div>
