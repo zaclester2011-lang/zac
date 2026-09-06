@@ -59,42 +59,35 @@ def cone(apex_y, spread, length, x=LAMP_X):
 
 
 # --- letters ----------------------------------------------------------------
-# A geometric display face, set upright and on one baseline. Each glyph is a
-# skeleton stroked with flat terminals and mitred joins inside a local box
-# (0,0)-(w,260); the skeleton is inset by half the stroke weight, so the visual
-# edges land exactly on the cap band. STROKE sets the whole weight of the face.
-STROKE = 54.0
+# Filled geometric letterforms, drawn as vector paths rather than set in a font.
+# J : stem + hook.  x 137..317
+LETTER_J = "M257,380 H317 V550 A90,90 0 0 1 137,550 H197 A30,30 0 0 0 257,550 Z"
 
-GLYPHS = [
-    # J : stem into a hook
-    {"w": 147, "x": 138,
-     "d": "M120,0 V187.5 A46.5,46.5 0 0 1 27,187.5 V165"},
-    # A : splayed legs, flat apex, low crossbar
-    {"w": 250, "x": 323,
-     "d": "M27,260 L100,27 H150 L223,260 M46,200 H204"},
-    # C : open ring, terminals cut on the diagonal
-    {"w": 240, "x": 611,
-     "d": "M193.3,66.6 A93,103 0 1 0 193.3,193.4"},
-    # B : stem with a small upper bowl and a wider lower one
-    {"w": 215, "x": 1247,
-     "d": "M27,0 V260 M27,0 H108 A65,65 0 0 1 108,130 H27 "
-          "M27,130 H123 A65,65 0 0 1 123,260 H27"},
-]
+# A : two legs, crossbar, triangular counter.  x 351..581
+LETTER_A = (
+    "M351,640 L436,380 L496,380 L581,640 L521,640 L508,600 L424,600 L411,640 Z "
+    "M442,545 L490,545 L466,472 Z"
+)
+
+# C : open ring with angled terminals.  x 615..855
+LETTER_C = "M826.9,426.4 A120,130 0 1 0 826.9,593.6 L781,555 A60,70 0 1 1 781,465 Z"
+
+# B : stem + two bowls.  x 1243..1463
+LETTER_B = (
+    "M1243,380 H1373 A62,65 0 0 1 1373,510 H1398 A65,65 0 0 1 1398,640 H1243 Z "
+    "M1305,425 H1357.5 A32.5,32.5 0 0 1 1357.5,490 H1305 Z "
+    "M1305,530 H1385.5 A32.5,32.5 0 0 1 1385.5,595 H1305 Z"
+)
+
+LETTERS = [LETTER_J, LETTER_A, LETTER_C, LETTER_B]
 
 
 def letters_svg():
-    out = []
-    common = ('fill="none" stroke-linecap="butt" stroke-linejoin="miter" '
-              'stroke-miterlimit="2"')
-    for g in GLYPHS:
-        out.append(
-            f'<g transform="translate({fmt(g["x"])},{fmt(TOP)})">'
-            f'<path d="{g["d"]}" {common} stroke="#070b16" stroke-opacity="0.45" '
-            f'stroke-width="{fmt(STROKE + 11)}"/>'
-            f'<path d="{g["d"]}" {common} stroke="url(#silver)" stroke-width="{fmt(STROKE)}"/>'
-            f'</g>'
-        )
-    return "".join(out)
+    return "".join(
+        f'<path d="{d}" fill="url(#silver)" fill-rule="evenodd" stroke="url(#edge)" '
+        f'stroke-width="2.5" stroke-linejoin="round"/>'
+        for d in LETTERS
+    )
 
 
 # =============================================================================
@@ -241,25 +234,28 @@ def build():
       <stop offset="0.55" stop-color="#0f1630"/>
       <stop offset="1" stop-color="#04060d"/>
     </radialGradient>
-    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="silver" x1="0" y1="{TOP}" x2="0" y2="{BOT}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.16" stop-color="#e4ebf6"/>
-      <stop offset="0.38" stop-color="#93a0b6"/>
-      <stop offset="0.47" stop-color="#5f6b80"/>
-      <stop offset="0.54" stop-color="#eef3fa"/>
-      <stop offset="0.72" stop-color="#ffffff"/>
-      <stop offset="0.88" stop-color="#aab5c8"/>
-      <stop offset="1" stop-color="#7c8798"/>
+      <stop offset="0.18" stop-color="#e8eef8"/>
+      <stop offset="0.42" stop-color="#9aa5b8"/>
+      <stop offset="0.5" stop-color="#727d92"/>
+      <stop offset="0.58" stop-color="#f4f7fc"/>
+      <stop offset="0.82" stop-color="#c3cddd"/>
+      <stop offset="1" stop-color="#7a8598"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="{TOP}" x2="0" y2="{BOT}" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.25"/>
     </linearGradient>
     <linearGradient id="beamGrad" gradientUnits="userSpaceOnUse" x1="0" y1="{LAMP_Y}" x2="0" y2="{H}">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.58"/>
-      <stop offset="0.35" stop-color="#e6eeff" stop-opacity="0.28"/>
-      <stop offset="0.75" stop-color="#cfdcff" stop-opacity="0.15"/>
-      <stop offset="1" stop-color="#bccfff" stop-opacity="0.06"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.48"/>
+      <stop offset="0.35" stop-color="#e6eeff" stop-opacity="0.22"/>
+      <stop offset="0.75" stop-color="#cfdcff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#bccfff" stop-opacity="0.045"/>
     </linearGradient>
     <linearGradient id="beamCoreGrad" gradientUnits="userSpaceOnUse" x1="0" y1="{LAMP_Y}" x2="0" y2="{H}">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.6"/>
-      <stop offset="0.5" stop-color="#f0f5ff" stop-opacity="0.2"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#f0f5ff" stop-opacity="0.16"/>
       <stop offset="1" stop-color="#dfe9ff" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="lens" cx="0.5" cy="0.42" r="0.6">
@@ -268,13 +264,13 @@ def build():
       <stop offset="1" stop-color="#9db0d4"/>
     </radialGradient>
     <radialGradient id="flare" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
-      <stop offset="0.4" stop-color="#dfeaff" stop-opacity="0.35"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.8"/>
+      <stop offset="0.4" stop-color="#dfeaff" stop-opacity="0.28"/>
       <stop offset="1" stop-color="#b9cdff" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="pool" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#e9f1ff" stop-opacity="0.3"/>
-      <stop offset="0.6" stop-color="#c3d4ff" stop-opacity="0.09"/>
+      <stop offset="0" stop-color="#e9f1ff" stop-opacity="0.24"/>
+      <stop offset="0.6" stop-color="#c3d4ff" stop-opacity="0.07"/>
       <stop offset="1" stop-color="#a8bdf5" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">

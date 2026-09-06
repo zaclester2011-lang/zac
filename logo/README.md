@@ -16,13 +16,10 @@ above and outside the frame — the beam is drawn, the fixture is not.
 
 ## Notes on the artwork
 
-- The lettering is a geometric display face set upright on one baseline, with flat
-  terminals, a flat apex on the A and diagonal cuts on the C. Each glyph is a skeleton
-  stroked at a single weight, so `STROKE` alone makes the whole face heavier or lighter.
-  The glyphs are vector paths rather than type set in a font, so the SVG looks identical
-  everywhere and needs no font files installed.
-- The chrome gradient is applied per glyph (bounding-box units), so every letter gets its
-  own full highlight-to-shadow sweep across its height.
+- The lettering is a bold geometric face drawn as filled vector paths rather than set in
+  a font, so the SVG looks identical everywhere and needs no font files installed.
+- The chrome gradient runs across the cap band in page coordinates, so the highlight and
+  shadow bands line up across all four letters.
 - The disco ball is a real orthographic sphere. Tiles are laid out in rows whose count
   follows the circumference at that latitude, so every mirror comes out roughly square
   the way a real ball is built, and back faces are culled.
@@ -47,5 +44,5 @@ node render.js jacob-bar-mitzvah-logo.svg jacob-bar-mitzvah-logo@3x.png 3
 `render.js` needs Playwright (`npm i playwright`). Easy things to change in
 `generate_logo.py`: `LAMP_X` / `LAMP_Y` (where the off-frame source sits), `SPREAD` (how
 wide the beam opens), `KEY` (light direction on the ball), `BALL_R` (ball size), and the `bg` /
-`silver` gradients (background and metal colours). Letter weight is `STROKE`; the glyph
-skeletons and their spacing live in the `GLYPHS` table.
+`silver` gradients (background and metal colours). The letterforms are the `LETTER_*` path
+constants.
