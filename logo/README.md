@@ -1,7 +1,7 @@
 # Jacob — bar mitzvah logo
 
-The wordmark reads **JACOB**, with the **O** replaced by a mirrored disco ball and a
-silver spotlight in each of the four corners, all four beams converging on the ball.
+The wordmark reads **JACOB**, with the **O** replaced by a mirrored disco ball, under one
+massive silver spotlight whose beam washes over the whole logo.
 
 ## Files
 
@@ -17,11 +17,16 @@ silver spotlight in each of the four corners, all four beams converging on the b
 
 - The letters are drawn as vector paths, not set in a font, so the SVG looks identical
   everywhere and needs no font files installed.
-- The disco ball is a real orthographic sphere: each mirror tile is projected from a
-  lat/lon grid, back faces are culled, and every tile is shaded from a single key light
-  in the upper left, with a cool rim light around the edge so the ball separates from
-  the background.
-- The spotlight beams are aimed at the ball, so if the ball moves the beams follow.
+- The disco ball is a real orthographic sphere. Tiles are laid out in rows whose count
+  follows the circumference at that latitude, so every mirror comes out roughly square
+  the way a real ball is built, and back faces are culled.
+- Tiles are shaded as mirrors, not as matte surfaces: the camera ray is reflected off
+  each facet and that reflected ray samples the room (dark surroundings, a lit ceiling,
+  two cool bounce lights, and the spotlight itself). Each facet's normal is jittered
+  slightly, because no hand-glued mirror ball has perfectly aligned tiles. That is what
+  produces the scattered high-contrast sparkle instead of a smooth gradient.
+- The beam is drawn as three nested cones of decreasing spread plus airborne haze, so it
+  has a hot core and soft edges.
 
 ## Rebuilding
 
@@ -33,5 +38,6 @@ node render.js jacob-bar-mitzvah-logo.svg jacob-bar-mitzvah-logo@3x.png 3
 ```
 
 `render.js` needs Playwright (`npm i playwright`). Easy things to change in
-`generate_logo.py`: `LIGHT` (light direction), `LAMPS` (spotlight positions),
-`BALL_R` (ball size), and the `bg` / `silver` gradients (background and metal colours).
+`generate_logo.py`: `LAMP_X` / `LAMP_Y` (where the spotlight hangs), `SPREAD` (how wide
+the beam opens), `KEY` (light direction on the ball), `BALL_R` (ball size), and the `bg` /
+`silver` gradients (background and metal colours).
