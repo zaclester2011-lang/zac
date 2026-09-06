@@ -15,7 +15,7 @@ W, H = 1600, 1000
 
 # --- wordmark metrics -------------------------------------------------------
 TOP, BOT = 380.0, 640.0          # cap band
-BALL_CX, BALL_CY, BALL_R = 1049.0, 510.0, 160.0
+BALL_CX, BALL_CY, BALL_R = 1045.0, 504.0, 160.0
 
 # --- the one spotlight ------------------------------------------------------
 # The source sits above the top edge and out of frame; only its light is drawn.
@@ -59,26 +59,43 @@ def cone(apex_y, spread, length, x=LAMP_X):
 
 
 # --- letters ----------------------------------------------------------------
-# J : stem + hook.  x 137..317
-LETTER_J = "M257,380 H317 V550 A90,90 0 0 1 137,550 H197 A30,30 0 0 0 257,550 Z"
+# Party lettering: fat rounded strokes, each glyph tilted and bounced off the
+# baseline so the word dances. Every glyph is drawn as a skeleton stroked with
+# round caps and joins, in a local box (0,0)-(w,260); the skeleton is inset by
+# half the stroke weight so the caps land exactly on the cap band.
+STROKE = 58.0
 
-# A : two legs, crossbar, triangular counter.  x 351..581
-LETTER_A = (
-    "M351,640 L436,380 L496,380 L581,640 L521,640 L508,600 L424,600 L411,640 Z "
-    "M442,545 L490,545 L466,472 Z"
-)
+GLYPHS = [
+    # J
+    {"w": 150, "x": 145, "dy": 9, "rot": -6,
+     "d": "M121,29 V150 C121,236 55,254 29,196"},
+    # A
+    {"w": 230, "x": 335, "dy": -11, "rot": 4,
+     "d": "M29,231 L115,29 L201,231 M47,188 L183,188"},
+    # C
+    {"w": 240, "x": 605, "dy": 6, "rot": -3,
+     "d": "M176,50.4 A91,101 0 1 0 176,209.6"},
+    # B
+    {"w": 210, "x": 1245, "dy": -13, "rot": 5,
+     "d": "M29,29 V231 M29,29 H115.5 A50.5,50.5 0 0 1 115.5,130 H29 "
+          "M29,130 H130.5 A50.5,50.5 0 0 1 130.5,231 H29"},
+]
 
-# C : open ring with angled terminals.  x 615..855
-LETTER_C = "M826.9,426.4 A120,130 0 1 0 826.9,593.6 L781,555 A60,70 0 1 1 781,465 Z"
 
-# B : stem + two bowls.  x 1243..1463
-LETTER_B = (
-    "M1243,380 H1373 A62,65 0 0 1 1373,510 H1398 A65,65 0 0 1 1398,640 H1243 Z "
-    "M1305,425 H1357.5 A32.5,32.5 0 0 1 1357.5,490 H1305 Z "
-    "M1305,530 H1385.5 A32.5,32.5 0 0 1 1385.5,595 H1305 Z"
-)
-
-LETTERS = [LETTER_J, LETTER_A, LETTER_C, LETTER_B]
+def letters_svg():
+    out = []
+    for g in GLYPHS:
+        t = (f'translate({fmt(g["x"])},{fmt(TOP + g["dy"])}) '
+             f'rotate({g["rot"]},{fmt(g["w"] / 2)},130)')
+        common = 'fill="none" stroke-linecap="round" stroke-linejoin="round"'
+        out.append(
+            f'<g transform="{t}">'
+            f'<path d="{g["d"]}" {common} stroke="#070b16" stroke-opacity="0.5" '
+            f'stroke-width="{fmt(STROKE + 13)}"/>'
+            f'<path d="{g["d"]}" {common} stroke="url(#silver)" stroke-width="{fmt(STROKE)}"/>'
+            f'</g>'
+        )
+    return "".join(out)
 
 
 # =============================================================================
@@ -211,11 +228,7 @@ def build():
             f'fill="#dce6ff" opacity="{random.uniform(0.10, 0.45):.2f}"/>'
         )
 
-    letters = "".join(
-        f'<path d="{d}" fill="url(#silver)" fill-rule="evenodd" stroke="url(#edge)" '
-        f'stroke-width="2.5" stroke-linejoin="round"/>'
-        for d in LETTERS
-    )
+    letters = letters_svg()
 
     beam_outer = pts(cone(LAMP_Y, SPREAD, H - LAMP_Y))
     beam_mid = pts(cone(LAMP_Y, SPREAD * 0.66, H - LAMP_Y))
@@ -229,24 +242,15 @@ def build():
       <stop offset="0.55" stop-color="#0f1630"/>
       <stop offset="1" stop-color="#04060d"/>
     </radialGradient>
-    <linearGradient id="silver" x1="0" y1="{TOP}" x2="0" y2="{BOT}" gradientUnits="userSpaceOnUse">
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="0.18" stop-color="#e8eef8"/>
-      <stop offset="0.42" stop-color="#9aa5b8"/>
-      <stop offset="0.5" stop-color="#727d92"/>
-      <stop offset="0.58" stop-color="#f4f7fc"/>
-      <stop offset="0.82" stop-color="#c3cddd"/>
-      <stop offset="1" stop-color="#7a8598"/>
-    </linearGradient>
-    <linearGradient id="edge" x1="0" y1="{TOP}" x2="0" y2="{BOT}" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.25"/>
-    </linearGradient>
-    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f7faff"/>
-      <stop offset="0.3" stop-color="#c9d2e2"/>
-      <stop offset="0.62" stop-color="#697588"/>
-      <stop offset="1" stop-color="#aeb8ca"/>
+      <stop offset="0.16" stop-color="#e4ebf6"/>
+      <stop offset="0.38" stop-color="#93a0b6"/>
+      <stop offset="0.47" stop-color="#5f6b80"/>
+      <stop offset="0.54" stop-color="#eef3fa"/>
+      <stop offset="0.72" stop-color="#ffffff"/>
+      <stop offset="0.88" stop-color="#aab5c8"/>
+      <stop offset="1" stop-color="#7c8798"/>
     </linearGradient>
     <linearGradient id="beamGrad" gradientUnits="userSpaceOnUse" x1="0" y1="{LAMP_Y}" x2="0" y2="{H}">
       <stop offset="0" stop-color="#ffffff" stop-opacity="0.58"/>
