@@ -4,14 +4,24 @@ The wordmark reads **JACOB**, with the **O** replaced by a mirrored disco ball, 
 massive spotlight beam that washes over the whole logo. The light is thrown from a source
 above and outside the frame — the beam is drawn, the fixture is not.
 
+It comes in two colourways, built from the same artwork:
+
+- **silver** — chrome letters, the ball lit white
+- **rainbow** — the letters filled with the spectrum, the ball catching coloured stage
+  lights (magenta from the left, cyan from the right, gold and green from below) and
+  scattering coloured specks around the room
+
 ## Files
 
 | File | Use |
 | --- | --- |
-| `jacob-bar-mitzvah-logo.svg` | Master artwork. Vector — scales to any size, best for print (invitations, signage, banners). |
-| `jacob-bar-mitzvah-logo.png` | 1600 × 1000 — screens, social, email. |
-| `jacob-bar-mitzvah-logo@3x.png` | 4800 × 3000 — large print / anything that needs real resolution. |
-| `generate_logo.py` | Rebuilds the SVG. |
+| `jacob-bar-mitzvah-logo.svg` | Master artwork, silver. Vector — scales to any size, best for print (invitations, signage, banners). |
+| `jacob-bar-mitzvah-logo.png` | Silver, 1600 × 1000 — screens, social, email. |
+| `jacob-bar-mitzvah-logo@3x.png` | Silver, 4800 × 3000 — large print / anything that needs real resolution. |
+| `jacob-bar-mitzvah-logo-rainbow.svg` | Master artwork, rainbow. |
+| `jacob-bar-mitzvah-logo-rainbow.png` | Rainbow, 1600 × 1000. |
+| `jacob-bar-mitzvah-logo-rainbow@3x.png` | Rainbow, 4800 × 3000. |
+| `generate_logo.py` | Rebuilds both SVGs. |
 | `render.js` | Renders the SVG to PNG at a given scale. |
 
 ## Notes on the artwork
@@ -37,13 +47,17 @@ above and outside the frame — the beam is drawn, the fixture is not.
 
 ```bash
 cd logo
-python3 generate_logo.py
-node render.js jacob-bar-mitzvah-logo.svg jacob-bar-mitzvah-logo.png 1
-node render.js jacob-bar-mitzvah-logo.svg jacob-bar-mitzvah-logo@3x.png 3
+python3 generate_logo.py                     # writes both SVGs
+for v in "" "-rainbow"; do
+  node render.js "jacob-bar-mitzvah-logo$v.svg" "jacob-bar-mitzvah-logo$v.png" 1
+  node render.js "jacob-bar-mitzvah-logo$v.svg" "jacob-bar-mitzvah-logo$v@3x.png" 3
+done
 ```
 
 `render.js` needs Playwright (`npm i playwright`). Easy things to change in
 `generate_logo.py`: `LAMP_X` / `LAMP_Y` (where the off-frame source sits), `SPREAD` (how
 wide the beam opens), `KEY` (light direction on the ball), `BALL_R` (ball size), and the `bg` /
 `silver` gradients (background and metal colours). The letterforms are the `LETTER_*` path
-constants.
+constants. For the rainbow colourway, `DISCO_LIGHTS` sets the stage lamps the mirrors
+reflect, `SPECK_COLOURS` the colours thrown around the room, and the `spectrum` gradient
+the sweep across the letters.

@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-Generates the "JACOB" bar mitzvah logo:
+Generates the "JACOB" bar mitzvah logo in two colourways:
+  - silver: chrome letters, mirror ball lit white
+  - rainbow: spectrum letters, mirror ball catching coloured stage lights
   - the O of JACOB is a mirrored disco ball
   - one massive spotlight beam washing over the whole logo, thrown from a source
     above and outside the frame (the light only, no fixture)
@@ -22,7 +24,11 @@ BALL_CX, BALL_CY, BALL_R = 1049.0, 510.0, 160.0
 LAMP_X, LAMP_Y = 800.0, -120.0
 SPREAD = 47.0                    # half-angle, wide enough to swallow the logo
 
-random.seed(11)
+SEED = 11
+
+# Colours the ball scatters around the room in the rainbow colourway.
+SPECK_COLOURS = ["#ff5d7a", "#ffb14d", "#ffe95c", "#5df08a", "#4fd8ff", "#8f8bff", "#dc7bff"]
+
 
 
 # --- helpers ----------------------------------------------------------------
@@ -82,9 +88,22 @@ LETTER_B = (
 LETTERS = [LETTER_J, LETTER_A, LETTER_C, LETTER_B]
 
 
-def letters_svg():
+def letters_svg(rainbow=False):
+    """Chrome letters, or the same forms filled with the spectrum and re-lit.
+
+    The rainbow fill is flat on its own, so a second pass of the same path lays a
+    vertical light-to-dark sheen over it: that puts back the highlight, the core
+    shadow and the bounce along the bottom that make the letters read as metal.
+    """
+    if not rainbow:
+        return "".join(
+            f'<path d="{d}" fill="url(#silver)" fill-rule="evenodd" stroke="url(#edge)" '
+            f'stroke-width="2.5" stroke-linejoin="round"/>'
+            for d in LETTERS
+        )
     return "".join(
-        f'<path d="{d}" fill="url(#silver)" fill-rule="evenodd" stroke="url(#edge)" '
+        f'<path d="{d}" fill="url(#spectrum)" fill-rule="evenodd"/>'
+        f'<path d="{d}" fill="url(#sheen)" fill-rule="evenodd" stroke="url(#edge)" '
         f'stroke-width="2.5" stroke-linejoin="round"/>'
         for d in LETTERS
     )
@@ -101,6 +120,14 @@ def letters_svg():
 KEY = norm((-0.40, -0.72, 0.57))     # the big spotlight, above and in front
 FILL_L = norm((-0.92, -0.16, 0.36))  # cool bounce, stage left
 FILL_R = norm((0.88, -0.10, 0.45))   # cool bounce, stage right
+# Coloured stage lights, used only by the rainbow colourway. Each is a direction
+# the mirrors can reflect, the colour of that lamp, and how hard it burns.
+DISCO_LIGHTS = [
+    (norm((-0.80, -0.34, 0.49)), (1.00, 0.22, 0.85), 0.62),   # magenta, stage left
+    (norm((0.84, -0.26, 0.47)), (0.24, 0.92, 1.00), 0.58),    # cyan, stage right
+    (norm((0.10, 0.86, 0.50)), (1.00, 0.74, 0.20), 0.50),     # gold, from below
+    (norm((-0.30, 0.70, 0.65)), (0.36, 1.00, 0.45), 0.42),    # green, low left
+]
 
 DARK = (58, 70, 96)                  # what a mirror sees away from the light
 LIT = (255, 255, 255)
@@ -124,7 +151,7 @@ def sphere_point(lat, lon):
     return (BALL_CX + BALL_R * n[0], BALL_CY + BALL_R * n[1]), n
 
 
-def facets():
+def facets(rainbow=False):
     """Square-ish mirror tiles, back faces culled, each shaded as a mirror."""
     out = []
     bands = 17
@@ -161,16 +188,25 @@ def facets():
                 v += random.uniform(0.35, 0.95)
 
             t = clamp(v)
-            col = tuple(DARK[k] + (LIT[k] - DARK[k]) * t for k in range(3))
+            col = [DARK[k] + (LIT[k] - DARK[k]) * t for k in range(3)]
             if v > 1.0:                              # blown-out highlight
-                col = tuple(min(255, c + (v - 1.0) * 90) for c in col)
-            out.append((quad, rgb(col[0] * 0.99, col[1] * 1.0, col[2] * 1.03), v))
+                col = [min(255, c + (v - 1.0) * 90) for c in col]
+            if rainbow:
+                for direction, colour, power in DISCO_LIGHTS:
+                    a = clamp(power * max(0.0, dot(r, direction)) ** 5)
+                    a *= 0.55 + 0.45 * n[2]          # front-facing tiles catch most
+                    for k in range(3):               # tint towards the lamp, don't
+                        col[k] = col[k] * (1 - a) + 255 * colour[k] * a * 1.1
+            else:
+                col = [col[0] * 0.99, col[1], col[2] * 1.03]
+            out.append((quad, rgb(*col), v))
     return out
 
 
 # --- assemble ---------------------------------------------------------------
-def build():
-    tiles = facets()
+def build(rainbow=False):
+    random.seed(SEED)                    # same tiles and specks in both colourways
+    tiles = facets(rainbow)
     tile_svg = "".join(f'<polygon points="{pts(p)}" fill="{c}"/>' for p, c, _ in tiles)
 
     # haze inside the beam, and the specks the ball throws around the room
@@ -194,25 +230,67 @@ def build():
         if not (10 < x < W - 10 and 10 < y < H - 10):
             continue
         s = random.uniform(2.0, 7.0)
+        hue = random.choice(SPECK_COLOURS) if rainbow else "#dce6ff"
         specks.append(
             f'<rect x="{fmt(x)}" y="{fmt(y)}" width="{fmt(s)}" height="{fmt(s)}" '
             f'transform="rotate({fmt(random.uniform(0, 90))} {fmt(x)} {fmt(y)})" '
-            f'fill="#dce6ff" opacity="{random.uniform(0.10, 0.45):.2f}"/>'
+            f'fill="{hue}" opacity="{random.uniform(0.10, 0.45):.2f}"/>'
         )
 
-    letters = letters_svg()
+    letters = letters_svg(rainbow)
+
+    # coloured spill either side of the ball, so the stage lights have a source
+    spill = ""
+    if rainbow:
+        spill = (
+            f'<ellipse cx="{fmt(BALL_CX - 250)}" cy="{fmt(BALL_CY + 40)}" rx="300" ry="240" '
+            f'fill="url(#spillMagenta)"/>'
+            f'<ellipse cx="{fmt(BALL_CX + 250)}" cy="{fmt(BALL_CY - 20)}" rx="300" ry="240" '
+            f'fill="url(#spillCyan)"/>'
+        )
+
+    label = ("Jacob — bar mitzvah logo, the O is a disco ball under one large spotlight, "
+             + ("the letters filled with a rainbow spectrum" if rainbow else "the letters in chrome"))
 
     beam_outer = pts(cone(LAMP_Y, SPREAD, H - LAMP_Y))
     beam_mid = pts(cone(LAMP_Y, SPREAD * 0.66, H - LAMP_Y))
     beam_core = pts(cone(LAMP_Y, SPREAD * 0.3, H - LAMP_Y))
 
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="Jacob — bar mitzvah logo, the O is a disco ball under one large silver spotlight">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="{label}">
   <title>JACOB</title>
   <defs>
     <radialGradient id="bg" cx="0.5" cy="0.42" r="0.78">
       <stop offset="0" stop-color="#1d2748"/>
       <stop offset="0.55" stop-color="#0f1630"/>
       <stop offset="1" stop-color="#04060d"/>
+    </radialGradient>
+    <linearGradient id="spectrum" x1="137" y1="0" x2="1463" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff3d5a"/>
+      <stop offset="0.17" stop-color="#ff8a3d"/>
+      <stop offset="0.33" stop-color="#ffd93d"/>
+      <stop offset="0.5" stop-color="#48dd7b"/>
+      <stop offset="0.67" stop-color="#35c6f4"/>
+      <stop offset="0.84" stop-color="#6f7bff"/>
+      <stop offset="1" stop-color="#c96bff"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="{TOP}" x2="0" y2="{BOT}" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.46"/>
+      <stop offset="0.2" stop-color="#ffffff" stop-opacity="0.13"/>
+      <stop offset="0.44" stop-color="#0a0f1c" stop-opacity="0.26"/>
+      <stop offset="0.52" stop-color="#0a0f1c" stop-opacity="0.36"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="0.82" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#0a0f1c" stop-opacity="0.34"/>
+    </linearGradient>
+    <radialGradient id="spillMagenta" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff3ec8" stop-opacity="0.3"/>
+      <stop offset="0.55" stop-color="#c23bd8" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#8f3ad0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="spillCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3ee0ff" stop-opacity="0.28"/>
+      <stop offset="0.55" stop-color="#3aa8e8" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#3a76d0" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="silver" x1="0" y1="{TOP}" x2="0" y2="{BOT}" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ffffff"/>
@@ -299,6 +377,7 @@ def build():
     <g>{"".join(haze)}</g>
   </g>
 
+  {spill}
   <ellipse cx="{fmt(BALL_CX)}" cy="{fmt(BALL_CY)}" rx="{fmt(BALL_R * 2.1)}" ry="{fmt(BALL_R * 2.1)}" fill="url(#halo)"/>
 
   <g filter="url(#textGlow)">{letters}</g>
@@ -320,5 +399,7 @@ def build():
 
 
 if __name__ == "__main__":
-    open("jacob-bar-mitzvah-logo.svg", "w").write(build())
-    print("wrote jacob-bar-mitzvah-logo.svg")
+    for name, rainbow in (("jacob-bar-mitzvah-logo.svg", False),
+                          ("jacob-bar-mitzvah-logo-rainbow.svg", True)):
+        open(name, "w").write(build(rainbow))
+        print("wrote", name)
