@@ -8,8 +8,8 @@
 | **Dates** | Wed 21 Oct – Mon 2 Nov 2026 |
 | **Islands** | Unguja + Pemba |
 | **Activity days** | 8 |
-| **Water bodies** | 13 |
-| **Average day score** | **27.06 / 30** |
+| **Water bodies** | 12 |
+| **Average day score** | **26.94 / 30** |
 | **Est. total cost (3)** | **£4,000–4,500** |
 
 ---
@@ -38,24 +38,25 @@ Cultural Quarter, NEMO. At Schiphol by 18:00.
 | **Sun 25** | **Fly Pemba · REST** | — | — | — |
 | **Mon 26** | **Misali Island** 6h | Island | Wesha | **29** |
 | **Tue 27** | **Vumawimbi** 4h · **Ngezi** 1h · **lighthouse sunset** | Beach on land | road | **29** |
-| **Wed 28** | Land 10:35 · **Kwale + mangrove lagoon** | Island hop | **Fumba** | **25** |
+| **Wed 28** | Land 10:35 · **Michamvi Kae** + **sunset** | Beach on land | road | **24** |
 | **Thu 29** | **Chumbe Island** · sails 10:00 | Island | Mbweni | **27** |
 | **Fri 30** | **Nakupenda** 09:00 · **Bawe** | Island hop | Stone Town harbour | **26.5** |
 | **Sat 31** | **Jozani · Kuza Cave · Mtende** | Inland | road | **26** |
 | **Sun 1** | **Pungume** 4h + optional islet | Island | **Fumba** | **26** |
 | **Mon 2** | Taxi 03:50 · fly 06:20 | — | — | — |
 
-**Rhythm:** island · land · hop · island · hop · inland · island — no two
-consecutive hops.
+**Rhythm:** island · land · land · island · hop · inland · island. Only one
+island hop remains, and **five of eight days involve a boat rather than six.**
 
-**The two Fumba days are four days apart** — Wed 28 and Sun 1 — with Chumbe, a
-harbour hop and an inland day between them.
+**Tue 27 and Wed 28 are both land-and-beach days** — the one repetition in the
+sequence. They read differently (remote Pemba wilderness with no infrastructure
+versus a developed Unguja peninsula) but it is back-to-back and worth knowing.
 
 **Bases:** Stone Town (22–24) · Kendwa (24) · Pemba (25–27) · Stone Town (28–1)
 
 ---
 
-## THE 13 WATER BODIES
+## THE 12 WATER BODIES
 
 | Water body | Island | Disc. | Colour | Water | /30 |
 |---|---|---|---|---|---|
@@ -67,9 +68,8 @@ harbour hop and an inland day between them.
 | **Bawe Island** | Unguja | 8 | 9 | 10 | **27** |
 | **Pungume sandbank** | Unguja | 8 | 8 | 10 | **26** |
 | **Nakupenda sandbank** | Unguja | 6 | 10 | 10 | **26** |
-| **Mangrove lagoon, Kwale** | Unguja | 7 | 10 | 8 | **25** |
-| **Kwale Island** | Unguja | 6 | 9 | 10 | **25** |
 | **Mtende Beach** | Unguja | 9 | 9 | 7 | **25** |
+| **Michamvi Kae** | Unguja | 6 | 9 | 9 | **24** |
 | **One Menai islet** *(provisional, optional)* | Unguja | 9 | 8 | 7 | **~24** |
 | **Ras Kigomasha** | Pemba | 7 | 8 | 8 | **23** |
 
@@ -89,7 +89,10 @@ water body left the itinerary.
 | **Pungume** | 27 | **26** | Real and good, but a published $55 excursion from Kizimkazi. Discovery 9 → 8 |
 | **Nakupenda** | 27 | **26** | Near-empty in the morning, "hundreds of people" by afternoon. Discovery 7 → 6 — hence the 09:00 start |
 | **Chapwani** | 23 | **22 — CUT** | A ten-room private hotel; day access for non-guests unadvertised. Dropping it raised the day 25 → 26.5 |
-| **Menai reef** | 24 | **CUT** | Weakest stop on a tide-locked day. Cutting it bought 90 min for Kwale and the lagoon |
+| **Menai reef** | 24 | **CUT** | Weakest stop on a tide-locked day |
+| **Mangrove lagoon, Kwale** | 25 | **24 — CUT** | **No source anywhere gives it a size.** It sits ~10 min by boat *off* Kwale, not inside it, and the standard circuit allows it about half an hour. Water 8 → 7 |
+| **Kwale Island** | 25 | **CUT** | Went with the lagoon when Michamvi took Wednesday |
+| **Michamvi Kae** | 23 | **24 — IN** | **"One of the few beaches in Zanzibar where the tide does not significantly fluctuate."** That is the exact failing that killed Paje, Jambiani, Pongwe and Matemwe. Colour 8 → 9, Water 8 → 9 |
 
 **Confirmed unchanged:** Misali (visibility >30 m, 350 fish species, uninhabited),
 Tumbatu (elders' permission, forbidden to most), Kuza (50 m sinkhole, spring-fed,
@@ -106,7 +109,7 @@ Sunset is **18:25** and barely varies.
 | Date | Where |
 |---|---|
 | **Tue 27** | **Ras Kigomasha** — north-western tip, west-facing. **Only if the driver will do the tracks after dark** |
-| **Wed 28** | Forodhani — back at 18:00 |
+| **Wed 28** | **Michamvi Kae** — faces west into Chwaka Bay. The one proper beach sunset of the trip: the sun goes down over water, not behind you. Home 19:40, **so dinner moves to 20:30 that night** |
 | **Thu 29** | Forodhani — back at 16:30, two hours spare |
 | **Fri 30** | Forodhani — back at 17:45 |
 
@@ -125,7 +128,7 @@ Full moon on the 26th means **spring tides 26–29 Oct**, easing toward **neap b
 
 | Date | Day | Needs |
 |---|---|---|
-| **Wed 28** | Mangrove lagoon | **HIGH** water 13:00–17:00. At low tide it is bare sand |
+| **Wed 28** | Michamvi Kae | **None** — the tide barely moves there. That is why it took this day |
 | **Fri 30** | Nakupenda | **LOW** water. +4 from full moon — a stronger low than Sunday would give |
 | **Sat 31** | Mtende | **UNRESOLVED — see below** |
 | **Sun 1** | Pungume | **None.** The only tide-blind stop, so it takes the neap day |
@@ -187,9 +190,10 @@ Jambiani or anywhere on Pemba.
 1. **Confirm the Kendwa full moon party runs Sat 24.** The moon is full Mon 26.
    If it is actually Sat 31, the trip restructures.
 2. **Chumbe** — 14 places, one 10:00 sailing, Thursday 29. Book first.
-3. **Fumba tide tables for 28 Oct and 1 Nov.** High water 13:00–17:00 decides
-   which day gets the mangrove lagoon; Pungume takes the other.
-4. **Both Fumba dhows from one skipper**, negotiated together.
+3. **Tide table for Fri 30** — Nakupenda needs low water. Sunday's Pungume needs
+   none, which is why it sits on the trip's weakest tide.
+4. **The Fumba dhow, direct at the jetty** — £80–140 against £150–250 through a
+   hotel. The driver will know who to talk to.
 5. **Confirm the Sunday charter reaches Pungume** — 45 min beyond where scheduled
    boats stop. They will offer Kwale instead.
 6. **Tumbatu** — local guide, and permission sought from the elders in advance.
@@ -204,12 +208,16 @@ Jambiani or anywhere on Pemba.
 - **Fri 30 uses no transport, Thu 29 uses Bolt** — driver on six days only.
 - **Sun 1 starts 09:45, Sat 31 starts 09:30** — both break the 11:15 rule.
 - **Fri 23 is a rest day** — landing 07:50 after ~24h awake.
+- **Wed 28 gets home at 19:40 and dinner moves to 20:30** — the one night the
+  19:15 rule breaks, traded for the only proper beach sunset of the trip.
+- **Tue 27 and Wed 28 are consecutive land-and-beach days.**
 - **Sun 1 ends early at 17:40** — the taxi comes at 03:50 the next morning.
 - **The optional Menai islet is the one unverified stop**, and it is optional
   for that reason.
-- **Six of eight days involve a boat.** Ten of thirteen water bodies are salt
-  water over coral. Kuza Cave and the mangrove lagoon are what stop the trip
-  being one idea eight times, and both sit in the back half deliberately.
+- **Five of eight days involve a boat.** Nine of twelve water bodies are salt
+  water over coral, and **Kuza Cave is now the only one that isn't the sea.**
+  Losing the mangrove lagoon narrowed the trip — that is the real price of the
+  Michamvi swap, paid for a land day, a sunset and no tide risk.
 
 ---
 
@@ -239,9 +247,10 @@ Change before Kendwa. Arrive at Tumbatu as guests of a religious village.
 | **Mafia Island** — Bwejuu 28, Blue Lagoon 26, Jibondo 25, Chole Bay 24, Kinasi Pass 24 | | **£1,500–2,000 and two flights.** Bwejuu was one of three flawless water bodies — the most painful cut on the list |
 | **Njao Gap** | 25 | Pemba capped at two days. Also a 5–40 m dive channel, not a place you land |
 | **Latham Island** | 25 | Best June–Sept. Charter only, no shade, no fresh water |
-| **Menai Bay reef** | 24 | Cut from Wed 28 to give Kwale and the lagoon more time |
+| **Kwale Island** | 25 | Cut when Michamvi took Wednesday |
+| **Mangrove lagoon, Kwale** | 24 | Cut with it. **No published size anywhere**, sits 10 min off Kwale rather than inside it, ~30 min on the standard circuit, and only exists at high tide |
+| **Menai Bay reef** | 24 | Cut from Wed 28 before the day itself changed |
 | **Miwi · Niamembe · Pamunda · Tele · Ukombe** | ~24 | Reserves. The rawest corner of the archipelago, and the least documented |
-| **Michamvi Kae** | 23 | Lost to Menai Bay |
 | **Chapwani** | 22 | Private hotel, day access unadvertised |
 | **Vundwe** | 20 | **Weak link** — Colour 5, Water 5 |
 | **Maalum Cave** | 20 | **Weak link** — Discovery 3. Towels, goggles, restaurant, spa |
@@ -263,7 +272,13 @@ score where one genuinely carries it, otherwise the average.
 
 **Weak-link rule:** anything below 7 in any category is cut regardless of total.
 
-**Confidence.** Ten of the thirteen were verified against multiple independent
+**Confidence.** Eleven of the twelve were verified against multiple independent
 sources in September 2026. The optional Menai islet rests on a Wikipedia stub and
 one sentence about the southern islets being undisturbed — it is marked
 provisional and left optional for that reason.
+
+**Two scores were wrong because they were inferred rather than checked.** Vundwe
+was given 27 because it is a Menai Bay island; it is 20. The Kwale lagoon was
+given Water 8 without anyone establishing how big it is — no source states a
+size, which is itself the answer. Both errors ran the same way: assuming a place
+was good because of the company it kept.
