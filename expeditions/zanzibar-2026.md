@@ -8,8 +8,8 @@
 | **Dates** | Wed 21 Oct – Mon 2 Nov 2026 |
 | **Islands** | Unguja + Pemba |
 | **Activity days** | 8 |
-| **Water bodies** | 12 |
-| **Average day score** | **27.00 / 30** |
+| **Water bodies** | 13 |
+| **Average day score** | **26.92 / 30** |
 | **Est. total cost (3)** | **£4,000–4,500** |
 
 ---
@@ -40,7 +40,7 @@ Cultural Quarter, NEMO. At Schiphol by 18:00.
 | **Tue 27** | **Vumawimbi** 4h · **Ngezi** 1h · **lighthouse sunset** | Beach on land | road | **29** |
 | **Wed 28** | Land 10:35 · **Michamvi Kae** + **sunset** | Beach on land | road | **24** |
 | **Thu 29** | **Chumbe Island** · sails 10:00 | Island | Mbweni | **27** |
-| **Fri 30** | **Nakupenda** 09:00 · **Nyange** | Island hop | Stone Town harbour | **26** |
+| **Fri 30** | **Nakupenda** 09:00 · **Murogo** 40m · **Nyange** | Island hop | Stone Town harbour | **25.33** |
 | **Sat 31** | **Jozani · Kuza Cave · Mtende** | Inland | road | **26** |
 | **Sun 1** | **Niamembe** 4h30 — sandbank, snorkel, **cave walk** | Island | **Unguja Ukuu** | **27** |
 | **Mon 2** | Taxi 03:50 · fly 06:20 | — | — | — |
@@ -70,6 +70,7 @@ versus a developed Unguja peninsula) but it is back-to-back and worth knowing.
 | **Nakupenda sandbank** | Unguja | 6 | 10 | 10 | **26** |
 | **Mtende Beach** | Unguja | 9 | 9 | 7 | **25** |
 | **Michamvi Kae** | Unguja | 6 | 9 | 9 | **24** |
+| **Murogo reef** *(no landing)* | Unguja | 7 | 9 | 8 | **24** |
 | **One Menai islet** *(provisional, optional)* | Unguja | 9 | 8 | 7 | **~24** |
 | **Ras Kigomasha** | Pemba | 7 | 8 | 8 | **23** |
 
@@ -248,17 +249,19 @@ Change before Kendwa. Arrive at Tumbatu as guests of a religious village.
 |---|---|---|---|---|
 | **Nakupenda** | **26** | 2h00 | 20m | **IN — the colour.** Sandbank, low water only |
 | **Nyange** | **26** | 2h45 | ~40m | **IN — the snorkelling.** Sandbank + reef, endemic coral |
-| **Murogo** | 24 | 1h00 | ~40m | Sloping reef, excellent visibility. **No landing** — an add-on |
+| **Murogo** | 24 | 40m | ~40m | **IN — the add-on.** Sloping reef, excellent visibility, **no landing**. Sits between the other two |
 | **Pange** | 24 | 2h00 | 25m | Shallow, sheltered, healthy coral. The beginner dive site, so busy |
 | **Bawe** | 22 | 3h00 | 45m | **Weak link** — 70-villa resort since 2024 |
 | **Chapwani** | 22 | 2h00 | 15m | 1879 colonial cemetery, ten-room hotel, access unadvertised |
 | **Changuu** | 19 | 2h00 | 30m | **Weak link** — tortoises, most-visited island in the archipelago |
 
-**Friday is Nakupenda + Nyange**, home at 16:00 — which also gives the longest
-continuous stretch in Stone Town itself, two and a half hours before sunset.
+**Friday is Nakupenda + Murogo + Nyange**, home at 16:30 — which still gives the
+longest continuous stretch in Stone Town itself, two hours before sunset.
 
-**Murogo is the cheapest possible addition to any day** — one hour, no landing,
-and it sits between the two.
+**Note what the metric does here.** Adding a good 40-minute reef *lowers* the day
+from 26 to 25.33, because averaging a 24 into two 26s pulls the mean down. The
+day is better and the number is worse. Worth remembering that the averaging rule
+penalises adding anything below a day's existing average, however good it is.
 
 ---
 
