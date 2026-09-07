@@ -9,7 +9,7 @@
 | **Islands** | Unguja + Pemba |
 | **Activity days** | 8 |
 | **Water bodies** | 12 |
-| **Average day score** | **26.94 / 30** |
+| **Average day score** | **27.06 / 30** |
 | **Est. total cost (3)** | **£4,000–4,500** |
 
 ---
@@ -42,7 +42,7 @@ Cultural Quarter, NEMO. At Schiphol by 18:00.
 | **Thu 29** | **Chumbe Island** · sails 10:00 | Island | Mbweni | **27** |
 | **Fri 30** | **Nakupenda** 09:00 · **Bawe** | Island hop | Stone Town harbour | **26.5** |
 | **Sat 31** | **Jozani · Kuza Cave · Mtende** | Inland | road | **26** |
-| **Sun 1** | **Pungume** 4h + optional islet | Island | **Fumba** | **26** |
+| **Sun 1** | **Niamembe** 4h30 — sandbank, snorkel, **cave walk** | Island | **Unguja Ukuu** | **27** |
 | **Mon 2** | Taxi 03:50 · fly 06:20 | — | — | — |
 
 **Rhythm:** island · land · land · island · hop · inland · island. Only one
@@ -66,7 +66,7 @@ versus a developed Unguja peninsula) but it is back-to-back and worth knowing.
 | **Kuza Cave** | Unguja | 10 | 10 | 7 | **27** |
 | **Chumbe Island** | Unguja | 8 | 9 | 10 | **27** |
 | **Bawe Island** | Unguja | 8 | 9 | 10 | **27** |
-| **Pungume sandbank** | Unguja | 8 | 8 | 10 | **26** |
+| **Niamembe Island** | Unguja | 9 | 9 | 9 | **27** |
 | **Nakupenda sandbank** | Unguja | 6 | 10 | 10 | **26** |
 | **Mtende Beach** | Unguja | 9 | 9 | 7 | **25** |
 | **Michamvi Kae** | Unguja | 6 | 9 | 9 | **24** |
@@ -131,7 +131,7 @@ Full moon on the 26th means **spring tides 26–29 Oct**, easing toward **neap b
 | **Wed 28** | Michamvi Kae | **None** — the tide barely moves there. That is why it took this day |
 | **Fri 30** | Nakupenda | **LOW** water. +4 from full moon — a stronger low than Sunday would give |
 | **Sat 31** | Mtende | **UNRESOLVED — see below** |
-| **Sun 1** | Pungume | **None.** The only tide-blind stop, so it takes the neap day |
+| **Sun 1** | Niamembe cave walk | **LOW** water — and this is the trip's weakest tide. **Ask the operator whether the cave works on 1 Nov.** The sandbank is attached to the island, so it survives a neap far better than a standalone bank would |
 
 ### Mtende — sources contradict each other
 
@@ -190,12 +190,12 @@ Jambiani or anywhere on Pemba.
 1. **Confirm the Kendwa full moon party runs Sat 24.** The moon is full Mon 26.
    If it is actually Sat 31, the trip restructures.
 2. **Chumbe** — 14 places, one 10:00 sailing, Thursday 29. Book first.
-3. **Tide table for Fri 30** — Nakupenda needs low water. Sunday's Pungume needs
-   none, which is why it sits on the trip's weakest tide.
-4. **The Fumba dhow, direct at the jetty** — £80–140 against £150–250 through a
-   hotel. The driver will know who to talk to.
-5. **Confirm the Sunday charter reaches Pungume** — 45 min beyond where scheduled
-   boats stop. They will offer Kwale instead.
+3. **Tide table for Fri 30 and Sun 1** — Nakupenda needs low water on the Friday,
+   and Niamembe's cave walk needs a low on the Sunday.
+4. **Niamembe via Eco & Culture Tours, from Unguja Ukuu** — $95pp for three,
+   barbecue included. **Ask whether the cave works on 1 Nov.**
+5. **Ask for Niamembe by name.** The default Menai product is Safari Blue from
+   Fumba, which goes to Kwale with a crowd and never reaches the southern islets.
 6. **Tumbatu** — local guide, and permission sought from the elders in advance.
 7. **Stone Town room for the night of 22 Oct** so it is yours when you land 07:50.
 8. **Ask the Pemba driver** whether he will do the Kigomasha tracks after dark.
@@ -247,6 +247,12 @@ Change before Kendwa. Arrive at Tumbatu as guests of a religious village.
 | **Mafia Island** — Bwejuu 28, Blue Lagoon 26, Jibondo 25, Chole Bay 24, Kinasi Pass 24 | | **£1,500–2,000 and two flights.** Bwejuu was one of three flawless water bodies — the most painful cut on the list |
 | **Njao Gap** | 25 | Pemba capped at two days. Also a 5–40 m dive channel, not a place you land |
 | **Latham Island** | 25 | Best June–Sept. Charter only, no shade, no fresh water |
+| **Pungume sandbank** | 26 | **Lost Sunday to Niamembe.** Better snorkelling (7 vs 6 — it is sold *as* a snorkelling trip) but a standalone offshore bank 15 km out, which a neap tide serves worst. Best-evidenced option in the bay |
+| **Miwi Island** | 25 | Same trip as Niamembe. Doing both properly needs 9h50 and Sunday has 8h |
+| **Ukombe Island** | 22 | **Weak link** — Water 6. Reefs being broken by octopus fishermen using iron rods (*umangu*) |
+| **Pamunda Island** | 20 | **Weak link** — Colour 5, Water 6. *Eucheuma denticulatum* seaweed abundant around it. The Uzi problem |
+| **Tele Island** | ~20 | **Weak link** — jagged coral rag on the shelf edge, no beach evidence |
+| **Sume Island** | 20 | **Weak link** — **300 m × 70 m.** A rock with a reef |
 | **Kwale Island** | 25 | Cut when Michamvi took Wednesday |
 | **Mangrove lagoon, Kwale** | 24 | Cut with it. **No published size anywhere**, sits 10 min off Kwale rather than inside it, ~30 min on the standard circuit, and only exists at high tide |
 | **Menai Bay reef** | 24 | Cut from Wed 28 before the day itself changed |
@@ -273,12 +279,22 @@ score where one genuinely carries it, otherwise the average.
 **Weak-link rule:** anything below 7 in any category is cut regardless of total.
 
 **Confidence.** Eleven of the twelve were verified against multiple independent
-sources in September 2026. The optional Menai islet rests on a Wikipedia stub and
-one sentence about the southern islets being undisturbed — it is marked
-provisional and left optional for that reason.
+sources in September 2026. **Niamembe is the exception** — its 27 rests on one
+operator's page and one aggregated sentence. It is the highest-scoring thing in
+Menai Bay and the least proven thing on the itinerary. That is a real trade and
+it was made knowingly.
 
-**Two scores were wrong because they were inferred rather than checked.** Vundwe
-was given 27 because it is a Menai Bay island; it is 20. The Kwale lagoon was
-given Water 8 without anyone establishing how big it is — no source states a
-size, which is itself the answer. Both errors ran the same way: assuming a place
-was good because of the company it kept.
+**Three scores were wrong because they were inferred rather than checked.**
+Vundwe was given 27 because it is a Menai Bay island; it is 20. The Kwale lagoon
+was given Water 8 without anyone establishing how big it is — no source states a
+size, which is itself the answer. And four southern islets sat at a hopeful ~24
+purely on the group's reputation for being undisturbed; researched properly,
+Ukombe is 22, Pamunda 20, Tele ~20 and Sume 20 — **all four fail the weak-link
+rule.** Every error ran the same way: assuming a place was good because of the
+company it kept.
+
+**The distinction that matters for Niamembe.** Vundwe had no operator, no
+product and no price — it was pure inference. Niamembe has a company running a
+costed trip with tiered pricing, which is evidence people go and come back
+satisfied enough for it to stay on sale. Thinner than Pungume's reviews, but a
+different kind of thin from Vundwe's.
