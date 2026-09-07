@@ -7,9 +7,9 @@
 | **Travellers** | Zac (14), James (47), Jacob (12) |
 | **Dates** | Wed 21 Oct – Mon 2 Nov 2026 |
 | **Islands** | Unguja + Pemba |
-| **Activity days** | 7 + a city day |
-| **Water bodies** | 9 |
-| **Average day score** | **27.14 / 30** |
+| **Activity days** | 8 |
+| **Water bodies** | 12 |
+| **Average day score** | **26.92 / 30** |
 | **Est. total cost (3)** | **£4,000–4,500** |
 
 ---
@@ -42,12 +42,12 @@ Cultural Quarter, NEMO. At Schiphol by 18:00.
 | **Thu 29** | **Chumbe Island** · sails 10:00 | Island | Mbweni | **27** |
 | **Fri 30** | **Niamembe** 4h30 — sandbank, snorkel, **cave walk**, village BBQ | Island | **Unguja Ukuu** | **27** |
 | **Sat 31** | **Jozani · Kuza Cave · Mtende** | Inland | road | **26** |
-| **Sun 1** | **Stone Town on foot** — Darajani, the old town, last sunset | City | walk | **—** |
+| **Sun 1** | **Nakupenda** 30m · **Murogo** 40m · **Nyange** · **Stone Town** · **Forodhani night market** | Island hop + city | Stone Town harbour | **25.33** |
 | **Mon 2** | Taxi 03:50 · fly 06:20 | — | — | — |
 
-**Rhythm:** island · land · land · island · island · inland · **city**. Four of
-seven activity days involve a boat, three are on land, and the trip ends on foot.
-**No island hops remain at all** — every boat day is one place, done in full.
+**Rhythm:** island · land · land · island · island · inland · **hop + city**.
+Five of eight activity days involve a boat and three are on land. The only hop
+left is the last day, and it ends on foot in Stone Town at the night market.
 
 **Tue 27 and Wed 28 are both land-and-beach days** — the one repetition in the
 sequence. They read differently (remote Pemba wilderness with no infrastructure
@@ -57,7 +57,7 @@ versus a developed Unguja peninsula) but it is back-to-back and worth knowing.
 
 ---
 
-## THE 9 WATER BODIES
+## THE 12 WATER BODIES
 
 | Water body | Island | Disc. | Colour | Water | /30 |
 |---|---|---|---|---|---|
@@ -67,8 +67,11 @@ versus a developed Unguja peninsula) but it is back-to-back and worth knowing.
 | **Kuza Cave** | Unguja | 10 | 10 | 7 | **27** |
 | **Chumbe Island** | Unguja | 8 | 9 | 10 | **27** |
 | **Niamembe Island** | Unguja | 9 | 9 | 9 | **27** |
+| **Nyange sandbank** | Unguja | 8 | 9 | 9 | **26** |
+| **Nakupenda sandbank** | Unguja | 6 | 10 | 10 | **26** |
 | **Mtende Beach** | Unguja | 9 | 9 | 7 | **25** |
 | **Michamvi Kae** | Unguja | 6 | 9 | 9 | **24** |
+| **Murogo reef** *(no landing)* | Unguja | 7 | 9 | 8 | **24** |
 | **Ras Kigomasha** | Pemba | 7 | 8 | 8 | **23** |
 
 **Plus two rainforests:** Ngezi (Pemba, 1,476 ha) and Jozani (Unguja, red colobus)
@@ -112,7 +115,7 @@ Sunset is **18:25** and barely varies.
 | **Wed 28** | **Michamvi Kae** — faces west into Chwaka Bay. The one proper beach sunset of the trip: the sun goes down over water, not behind you. Home 19:40, **so dinner moves to 20:30 that night** |
 | **Thu 29** | Forodhani — back at 16:30, two hours spare |
 | **Fri 30** | Forodhani — back at 17:15 from Niamembe |
-| **Sun 1** | **Forodhani, the last one** — a city day, so no rush at all |
+| **Sun 1** | **Forodhani, the last one** — back at 15:00, then the **night market** |
 
 Stone Town faces west. Forodhani Gardens looks straight out over the water.
 
@@ -125,14 +128,14 @@ its party on the nearest Saturday, so the 24th is plausible — **but confirm it
 because Sat 31 is the other candidate and the whole trip is built on this night.**
 
 Full moon on the 26th means **spring tides 26–29 Oct**, easing toward **neap by
-1–2 Nov**. Biggest range on Wed 28; smallest on Sun 1 — which is now the city day, so nothing depends on it.
+1–2 Nov**. Biggest range on Wed 28; smallest on Sun 1.
 
 | Date | Day | Needs |
 |---|---|---|
 | **Wed 28** | Michamvi Kae | **None** — the tide barely moves there. That is why it took this day |
 | **Fri 30** | Niamembe cave walk | **LOW** water. +4 from the full moon, so a decent low. **Ask the operator whether the cave works on 30 Oct.** The sandbank is attached to the island, so it holds up regardless |
 | **Sat 31** | Mtende | **UNRESOLVED — see below** |
-| **Sun 1** | Stone Town | **None** — a city day, which is why it takes the trip's weakest tide |
+| **Sun 1** | Nakupenda | **LOW** water — and this is the trip's weakest tide, so the sandbank will be smaller. Thirty minutes is the right length for it partly for that reason. Nyange and Murogo need nothing |
 
 ### Mtende — sources contradict each other
 
@@ -207,20 +210,21 @@ Jambiani or anywhere on Pemba.
 ## ACCEPTED COMPROMISES
 
 - **Fri 30 uses no transport, Thu 29 uses Bolt** — driver on six days only.
-- **Sun 1 starts 09:45, Sat 31 starts 09:30** — both break the 11:15 rule.
+- **Sun 1 starts 09:00 and Fri 30 09:45, Sat 31 09:30** — all break the 11:15
+  rule. Sunday's early start is the whole point: Nakupenda before the crowd.
 - **Fri 23 is a rest day** — landing 07:50 after ~24h awake.
 - **Wed 28 gets home at 19:40 and dinner moves to 20:30** — the one night the
   19:15 rule breaks, traded for the only proper beach sunset of the trip.
 - **Tue 27 and Wed 28 are consecutive land-and-beach days.**
-- **Sun 1 is a city day with no water body in it** — deliberately, before a
-  03:50 taxi, and because Stone Town had never had a proper slot.
+- **Sun 1 does three sandbanks and then the town**, ending at the Forodhani
+  night market. Nakupenda is deliberately only 30 minutes.
 - **Niamembe is the one stop resting on thin evidence** — one operator's page.
-- **Four of seven activity days involve a boat**, and **seven of nine water
+- **Five of eight activity days involve a boat**, and **ten of twelve water
   bodies are salt water over coral.** Kuza Cave is the only one that isn't the
   sea; Niamembe's cave is the only other non-beach thing on the trip. Those two
   are what stop it being one idea repeated seven times, and they now fall on
   consecutive days by accident.
-- **Only one sandbank remains**, done in full, rather than four in sequence.
+
 
 ---
 
@@ -247,21 +251,20 @@ Change before Kendwa. Arrive at Tumbatu as guests of a religious village.
 
 | Island | /30 | Ashore | Boat | Best for |
 |---|---|---|---|---|
-| **Nakupenda** | **26** | 2h00 | 20m | The classic sandbank, best colour off Stone Town — crowded by afternoon, only 2h deep |
-| **Nyange** | **26** | 2h45 | ~40m | The best snorkelling off Stone Town: own reef, endemic coral |
-| **Murogo** | 24 | 40m | ~40m | Sloping reef, excellent visibility, **no landing**. Cheapest add-on to any day |
+| **Nakupenda** | **26** | **30m** | 20m | **IN.** Classic sandbank, best colour off Stone Town |
+| **Nyange** | **26** | 2h45 | ~40m | **IN — the anchor.** Best snorkelling off Stone Town: own reef, endemic coral |
+| **Murogo** | 24 | 40m | ~40m | **IN.** Sloping reef, excellent visibility, **no landing** |
 | **Pange** | 24 | 2h00 | 25m | Shallow, sheltered, healthy coral. The beginner dive site, so busy |
 | **Bawe** | 22 | 3h00 | 45m | **Weak link** — 70-villa resort since 2024 |
 | **Chapwani** | 22 | 2h00 | 15m | 1879 colonial cemetery, ten-room hotel, access unadvertised |
 | **Changuu** | 19 | 2h00 | 30m | **Weak link** — tortoises, most-visited island in the archipelago |
 
-**None of them are taken.** The whole harbour day came off when Stone Town itself
-took the Sunday and Niamembe took the Friday. Three sandbanks in a row was the
-repetition the trip could least afford — and **Niamembe beats every one of these
-on all three columns.**
+**Three of these make the last day** — Nakupenda 30m, Murogo 40m, Nyange 2h45 —
+followed by Stone Town from 15:00 and the Forodhani night market in the evening.
 
-**If anything on the Friday falls through**, Nakupenda + Nyange + Murogo is the
-replacement, walked to, no transport, home by 16:30.
+**Nakupenda is cut to thirty minutes on purpose.** Long enough to see the best
+colour off Stone Town and the hustle on the sandbank; short enough that it is not
+a fourth beach. It also matters that 1 Nov is the trip's weakest tide.
 
 ---
 
