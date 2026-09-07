@@ -9,7 +9,7 @@
 | **Islands** | Unguja + Pemba |
 | **Activity days** | 8 |
 | **Water bodies** | 12 |
-| **Average day score** | **26.92 / 30** |
+| **Average day score** | **27 / 30** *(26.92 exactly)* |
 | **Est. total cost (3)** | **£4,000–4,500** |
 
 ---
