@@ -9,7 +9,7 @@
 | **Islands** | Unguja + Pemba |
 | **Activity days** | 8 |
 | **Water bodies** | 12 |
-| **Average day score** | **27.06 / 30** |
+| **Average day score** | **27.00 / 30** |
 | **Est. total cost (3)** | **£4,000–4,500** |
 
 ---
@@ -40,7 +40,7 @@ Cultural Quarter, NEMO. At Schiphol by 18:00.
 | **Tue 27** | **Vumawimbi** 4h · **Ngezi** 1h · **lighthouse sunset** | Beach on land | road | **29** |
 | **Wed 28** | Land 10:35 · **Michamvi Kae** + **sunset** | Beach on land | road | **24** |
 | **Thu 29** | **Chumbe Island** · sails 10:00 | Island | Mbweni | **27** |
-| **Fri 30** | **Nakupenda** 09:00 · **Bawe** | Island hop | Stone Town harbour | **26.5** |
+| **Fri 30** | **Nakupenda** 09:00 · **Nyange** | Island hop | Stone Town harbour | **26** |
 | **Sat 31** | **Jozani · Kuza Cave · Mtende** | Inland | road | **26** |
 | **Sun 1** | **Niamembe** 4h30 — sandbank, snorkel, **cave walk** | Island | **Unguja Ukuu** | **27** |
 | **Mon 2** | Taxi 03:50 · fly 06:20 | — | — | — |
@@ -65,7 +65,7 @@ versus a developed Unguja peninsula) but it is back-to-back and worth knowing.
 | **Tumbatu Island** | Unguja | 10 | 8 | 10 | **28** |
 | **Kuza Cave** | Unguja | 10 | 10 | 7 | **27** |
 | **Chumbe Island** | Unguja | 8 | 9 | 10 | **27** |
-| **Bawe Island** | Unguja | 8 | 9 | 10 | **27** |
+| **Nyange sandbank** | Unguja | 8 | 9 | 9 | **26** |
 | **Niamembe Island** | Unguja | 9 | 9 | 9 | **27** |
 | **Nakupenda sandbank** | Unguja | 6 | 10 | 10 | **26** |
 | **Mtende Beach** | Unguja | 9 | 9 | 7 | **25** |
@@ -88,7 +88,9 @@ water body left the itinerary.
 | **Vumawimbi** | 9/10/10 | *confirmed* | "Crystal-clear turquoise", no hotels, no shops. Now carries Tue 27 outright at 29 |
 | **Pungume** | 27 | **26** | Real and good, but a published $55 excursion from Kizimkazi. Discovery 9 → 8 |
 | **Nakupenda** | 27 | **26** | Near-empty in the morning, "hundreds of people" by afternoon. Discovery 7 → 6 — hence the 09:00 start |
-| **Chapwani** | 23 | **22 — CUT** | A ten-room private hotel; day access for non-guests unadvertised. Dropping it raised the day 25 → 26.5 |
+| **Chapwani** | 23 | **22 — CUT** | A ten-room private hotel; day access for non-guests unadvertised |
+| **Bawe** | 27 | **22 — CUT** | **Discovery 8 → 4.** Sources calling it uninhabited with no resort predate 2024. **Bawe now has a 70-villa luxury resort** — private pools, butler service, spa, helicopter transfers. Same failure as Mnemba |
+| **Nyange** | — | **26 — IN** | Not previously catalogued. A large sandbank with its own reef, "some of the best snorkelling outside Chumbe and Mnemba", holding **a coral found nowhere else on earth** |
 | **Menai reef** | 24 | **CUT** | Weakest stop on a tide-locked day |
 | **Mangrove lagoon, Kwale** | 25 | **24 — CUT** | **No source anywhere gives it a size.** It sits ~10 min by boat *off* Kwale, not inside it, and the standard circuit allows it about half an hour. Water 8 → 7 |
 | **Kwale Island** | 25 | **CUT** | Went with the lagoon when Michamvi took Wednesday |
@@ -240,6 +242,26 @@ Change before Kendwa. Arrive at Tumbatu as guests of a religious village.
 
 ---
 
+## STONE TOWN HARBOUR — THE SEVEN
+
+| Island | /30 | Ashore | Boat | Best for |
+|---|---|---|---|---|
+| **Nakupenda** | **26** | 2h00 | 20m | **IN — the colour.** Sandbank, low water only |
+| **Nyange** | **26** | 2h45 | ~40m | **IN — the snorkelling.** Sandbank + reef, endemic coral |
+| **Murogo** | 24 | 1h00 | ~40m | Sloping reef, excellent visibility. **No landing** — an add-on |
+| **Pange** | 24 | 2h00 | 25m | Shallow, sheltered, healthy coral. The beginner dive site, so busy |
+| **Bawe** | 22 | 3h00 | 45m | **Weak link** — 70-villa resort since 2024 |
+| **Chapwani** | 22 | 2h00 | 15m | 1879 colonial cemetery, ten-room hotel, access unadvertised |
+| **Changuu** | 19 | 2h00 | 30m | **Weak link** — tortoises, most-visited island in the archipelago |
+
+**Friday is Nakupenda + Nyange**, home at 16:00 — which also gives the longest
+continuous stretch in Stone Town itself, two and a half hours before sunset.
+
+**Murogo is the cheapest possible addition to any day** — one hour, no landing,
+and it sits between the two.
+
+---
+
 ## DELIBERATELY EXCLUDED
 
 | | /30 | Why |
@@ -284,7 +306,12 @@ operator's page and one aggregated sentence. It is the highest-scoring thing in
 Menai Bay and the least proven thing on the itinerary. That is a real trade and
 it was made knowingly.
 
-**Three scores were wrong because they were inferred rather than checked.**
+**Dates matter as much as sources.** Bawe sat on this itinerary at 27 because
+several pages describe it as uninhabited with no resort. Those pages are older
+than the 70-villa resort that opened there in 2024. **A description is only as
+good as the year it was written** — check the date, not just the source.
+
+**Four scores were wrong because they were inferred rather than checked.**
 Vundwe was given 27 because it is a Menai Bay island; it is 20. The Kwale lagoon
 was given Water 8 without anyone establishing how big it is — no source states a
 size, which is itself the answer. And four southern islets sat at a hopeful ~24
