@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Night Form — premium streetwear built for the after-hours. Oversized cuts, raw finishes, limited drops." />
+  <meta name="keywords" content="Night Form, streetwear, UK streetwear brand, oversized clothing, limited drops, urban fashion" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Night Form — Streetwear" />
+  <meta property="og:description" content="Premium streetwear built for the after-hours. Limited drops. No compromises." />
+  <meta property="og:url" content="https://nightform.co.uk" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Night Form — Streetwear" />
+  <link rel="canonical" href="https://nightform.co.uk" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230d0d0d'/><text x='16' y='22' text-anchor='middle' font-family='system-ui,sans-serif' font-weight='900' font-size='13' fill='white'>NF</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <title>Night Form — Streetwear</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ClothingStore",
+        "name": "Night Form",
+        "url": "https://nightform.co.uk",
+        "description": "Premium streetwear brand offering limited drops of oversized and urban clothing.",
+        "areaServed": "United Kingdom"
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --black:      hsl(0,0%,5%);
+      --near-black: hsl(0,0%,9%);
+      --dark:       hsl(0,0%,13%);
+      --mid:        hsl(0,0%,25%);
+      --grey:       hsl(0,0%,50%);
+      --light-grey: hsl(0,0%,70%);
+      --off-white:  hsl(0,0%,88%);
+      --white:      hsl(0,0%,96%);
+      --font-d: 'Bebas Neue',system-ui,sans-serif;
+      --font-b: 'DM Sans',system-ui,sans-serif;
+      --ease: cubic-bezier(.4,0,.2,1);
+      --spring: cubic-bezier(.34,1.56,.64,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--font-b);background:var(--black);color:var(--off-white);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden;cursor:none;}
+
+    /* ── GRAIN ─────────────────────────────────── */
+    body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.045;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+    /* ── SCROLL PROGRESS ───────────────────────── */
+    .scroll-bar{position:fixed;top:0;left:0;width:100%;height:2px;background:var(--white);transform-origin:left;animation:prog linear both;animation-timeline:scroll();z-index:9999;}
+    @keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+    /* ── CUSTOM CURSOR ─────────────────────────── */
+    #cur-dot{position:fixed;width:6px;height:6px;background:var(--white);border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:width 250ms,height 250ms;}
+    #cur-ring{position:fixed;width:32px;height:32px;border:1px solid hsl(0,0%,96%/.5);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width 300ms,height 300ms,opacity 300ms;}
+
+    /* ── SKIP ──────────────────────────────────── */
+    .skip{position:absolute;top:-40px;left:1rem;background:var(--white);color:var(--black);padding:.5rem 1rem;font-weight:700;text-decoration:none;z-index:9999;transition:top 200ms;}
+    .skip:focus{top:1rem;}
+
+    /* ── NAV ───────────────────────────────────── */
+    header{position:fixed;top:0;left:0;right:0;z-index:100;transition:background 300ms var(--ease),border-color 300ms;}
+    header.scrolled{background:hsl(0,0%,5%/.92);backdrop-filter:blur(16px);border-bottom:1px solid hsl(0,0%,100%/.08);}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:1.4rem clamp(1.5rem,5vw,3rem);max-width:1400px;margin:0 auto;}
+    .nav-logo{font-family:var(--font-d);font-size:1.5rem;letter-spacing:.12em;color:var(--white);text-decoration:none;transition:opacity 200ms;}
+    .nav-logo:hover{opacity:.7;}
+    .nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none;}
+    .nav-links a{text-decoration:none;font-size:.78rem;font-weight:500;color:var(--grey);letter-spacing:.12em;text-transform:uppercase;transition:color 200ms;}
+    .nav-links a:hover{color:var(--white);}
+    .nav-cta{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--black);background:var(--white);padding:.65rem 1.4rem;border-radius:2px;text-decoration:none;transition:background 200ms,color 200ms;}
+    .nav-cta:hover{background:var(--off-white);}
+    .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:none;padding:.5rem;}
+    .nav-toggle span{display:block;width:22px;height:1.5px;background:var(--white);transition:transform 300ms,opacity 300ms;}
+    .mobile-nav{position:fixed;inset:0;background:var(--black);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;z-index:99;opacity:0;pointer-events:none;transition:opacity 300ms;}
+    .mobile-nav.open{opacity:1;pointer-events:all;}
+    .mobile-nav a{font-family:var(--font-d);font-size:clamp(2.5rem,8vw,5rem);color:var(--white);text-decoration:none;letter-spacing:.1em;transition:opacity 200ms;}
+    .mobile-nav a:hover{opacity:.5;}
+    @media(max-width:768px){.nav-links,.nav-cta{display:none;}.nav-toggle{display:flex;}}
+
+    /* ── HERO ──────────────────────────────────── */
+    #hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:clamp(3rem,6vw,5rem);position:relative;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,hsl(0,0%,9%) 0%,hsl(0,0%,5%) 100%);}
+    .hero-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1509631179647-0177331693ae?w=1600&q=70');background-size:cover;background-position:center top;opacity:.18;}
+    .hero-inner{position:relative;z-index:1;padding:0 clamp(1.5rem,5vw,3rem);max-width:1400px;margin:0 auto;width:100%;}
+    .hero-tag{font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--grey);margin-bottom:1.5rem;}
+    .hero-h1{font-family:var(--font-d);font-size:clamp(5rem,18vw,18rem);line-height:.9;letter-spacing:.01em;color:var(--white);margin-bottom:2.5rem;}
+    .hero-h1 .stroke{-webkit-text-stroke:1px var(--white);color:transparent;}
+    .hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:2rem;}
+    .hero-sub{font-size:clamp(.9rem,1.5vw,1rem);color:var(--light-grey);max-width:340px;line-height:1.7;}
+    .hero-btns{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;}
+    .btn-white{display:inline-flex;align-items:center;gap:.5rem;background:var(--white);color:var(--black);padding:.9rem 2.2rem;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 200ms,transform 300ms var(--spring);}
+    .btn-white:hover{background:var(--off-white);transform:translateY(-2px);}
+    .btn-ghost{display:inline-flex;align-items:center;gap:.5rem;background:transparent;color:var(--white);padding:.9rem 2.2rem;font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid hsl(0,0%,100%/.25);border-radius:2px;transition:border-color 200ms,transform 300ms var(--spring);}
+    .btn-ghost:hover{border-color:var(--white);transform:translateY(-2px);}
+    .hero-scroll{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mid);display:flex;align-items:center;gap:.75rem;}
+    .hero-scroll::before{content:'';display:block;width:32px;height:1px;background:var(--mid);}
+
+    [data-a]{opacity:0;transform:translateY(20px);transition:opacity 600ms var(--ease),transform 600ms var(--ease);}
+    [data-a].vis{opacity:1;transform:none;}
+    [data-a="left"]{transform:translateX(-20px);}
+    [data-a="left"].vis{transform:none;}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;}[data-a]{opacity:1;transform:none;}}
+
+    /* ── TICKER ────────────────────────────────── */
+    .ticker{background:var(--white);padding:.7rem 0;overflow:hidden;white-space:nowrap;}
+    .ticker-track{display:inline-flex;gap:3rem;animation:tick 20s linear infinite;}
+    .ticker-track:hover{animation-play-state:paused;}
+    @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    .ticker-item{font-family:var(--font-d);font-size:1rem;letter-spacing:.12em;color:var(--black);}
+    .ticker-dot{color:var(--mid);}
+
+    /* ── PRODUCTS ──────────────────────────────── */
+    #drop{padding:clamp(5rem,10vw,10rem) 0;}
+    .section-wrap{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,5vw,3rem);}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(2.5rem,5vw,4rem);gap:2rem;flex-wrap:wrap;}
+    .section-tag{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--grey);margin-bottom:.75rem;}
+    .section-h2{font-family:var(--font-d);font-size:clamp(2.5rem,6vw,5rem);letter-spacing:.04em;color:var(--white);line-height:1;}
+    .section-link{font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);text-decoration:none;transition:color 200ms;white-space:nowrap;}
+    .section-link:hover{color:var(--white);}
+    .products-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5px;background:var(--dark);}
+    .prod-card{background:var(--near-black);position:relative;overflow:hidden;cursor:none;}
+    .prod-img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;transition:transform 600ms var(--ease);filter:grayscale(20%);}
+    .prod-placeholder{width:100%;aspect-ratio:3/4;background:var(--dark);display:flex;align-items:center;justify-content:center;position:relative;}
+    .prod-placeholder-label{font-family:var(--font-d);font-size:5rem;letter-spacing:.05em;color:hsl(0,0%,100%/.06);}
+    .prod-card:hover .prod-img{transform:scale(1.04);}
+    .prod-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,hsl(0,0%,5%/.9) 100%);opacity:0;transition:opacity 400ms;display:flex;align-items:flex-end;padding:1.5rem;}
+    .prod-card:hover .prod-overlay{opacity:1;}
+    .prod-overlay-btn{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--white);background:transparent;border:1px solid hsl(0,0%,100%/.5);padding:.6rem 1.2rem;border-radius:2px;cursor:none;text-decoration:none;}
+    .prod-body{padding:1.25rem 1rem;}
+    .prod-name{font-size:.85rem;font-weight:600;color:var(--off-white);margin-bottom:.3rem;letter-spacing:.04em;}
+    .prod-price{font-size:.8rem;color:var(--grey);}
+    @media(max-width:900px){.products-grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:480px){.products-grid{grid-template-columns:repeat(2,1fr);gap:1px;}}
+
+    /* ── MANIFESTO ─────────────────────────────── */
+    #manifesto{padding:clamp(5rem,10vw,10rem) 0;border-top:1px solid hsl(0,0%,100%/.06);}
+    .manifesto-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,8vw,8rem);align-items:center;}
+    .manifesto-label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--grey);margin-bottom:2rem;}
+    .manifesto-h2{font-family:var(--font-d);font-size:clamp(3rem,7vw,6.5rem);line-height:.95;letter-spacing:.02em;color:var(--white);margin-bottom:2.5rem;}
+    .manifesto-h2 em{-webkit-text-stroke:1px var(--white);color:transparent;font-style:normal;}
+    .manifesto-p{color:var(--light-grey);line-height:1.8;font-size:.95rem;margin-bottom:1.25rem;max-width:440px;}
+    .manifesto-img-wrap{position:relative;}
+    .manifesto-img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;filter:grayscale(15%);}
+    .manifesto-img-placeholder{width:100%;aspect-ratio:4/5;background:var(--dark);display:flex;align-items:center;justify-content:center;}
+    .manifesto-badge{position:absolute;bottom:2rem;right:-1.5rem;background:var(--white);color:var(--black);padding:1.25rem 1.5rem;font-family:var(--font-d);letter-spacing:.08em;}
+    .manifesto-badge-num{font-size:2.5rem;line-height:1;}
+    .manifesto-badge-label{font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;opacity:.6;}
+    @media(max-width:768px){.manifesto-inner{grid-template-columns:1fr;}.manifesto-badge{right:1.5rem;}}
+
+    /* ── LOOKBOOK ──────────────────────────────── */
+    #lookbook{padding:clamp(5rem,10vw,10rem) 0;border-top:1px solid hsl(0,0%,100%/.06);}
+    .lookbook-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto;gap:1.5px;background:var(--dark);margin-top:clamp(2.5rem,5vw,4rem);}
+    .lb-item{overflow:hidden;position:relative;cursor:none;}
+    .lb-item img,.lb-placeholder{width:100%;height:100%;object-fit:cover;display:block;transition:transform 600ms var(--ease);filter:grayscale(10%);}
+    .lb-placeholder{background:var(--near-black);display:flex;align-items:center;justify-content:center;}
+    .lb-item:hover img{transform:scale(1.04);}
+    .lb-1{grid-column:span 7;min-height:500px;}
+    .lb-2{grid-column:span 5;min-height:500px;}
+    .lb-3{grid-column:span 4;min-height:380px;}
+    .lb-4{grid-column:span 4;min-height:380px;}
+    .lb-5{grid-column:span 4;min-height:380px;}
+    @media(max-width:768px){
+      .lookbook-grid{grid-template-columns:1fr 1fr;}
+      .lb-1,.lb-2,.lb-3,.lb-4,.lb-5{grid-column:span 1;min-height:260px;}
+      .lb-1{grid-column:span 2;}
+    }
+
+    /* ── NEWSLETTER ────────────────────────────── */
+    #newsletter{padding:clamp(5rem,10vw,8rem) 0;border-top:1px solid hsl(0,0%,100%/.06);}
+    .newsletter-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(3rem,8vw,8rem);align-items:center;}
+    .nl-h2{font-family:var(--font-d);font-size:clamp(2.5rem,6vw,5rem);letter-spacing:.04em;color:var(--white);line-height:1;margin-bottom:1rem;}
+    .nl-sub{color:var(--grey);font-size:.9rem;line-height:1.7;}
+    .nl-form{display:flex;gap:0;border:1px solid hsl(0,0%,100%/.2);border-radius:2px;overflow:hidden;}
+    .nl-input{flex:1;background:transparent;border:none;padding:1rem 1.25rem;color:var(--white);font-family:var(--font-b);font-size:.88rem;outline:none;}
+    .nl-input::placeholder{color:var(--grey);}
+    .nl-btn{background:var(--white);color:var(--black);border:none;padding:1rem 1.75rem;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:none;transition:background 200ms;white-space:nowrap;}
+    .nl-btn:hover{background:var(--off-white);}
+    .nl-note{font-size:.72rem;color:var(--mid);margin-top:.85rem;}
+    @media(max-width:768px){.newsletter-inner{grid-template-columns:1fr;}.nl-form{flex-direction:column;}.nl-btn{padding:1rem;}}
+
+    /* ── FOOTER ────────────────────────────────── */
+    footer{border-top:1px solid hsl(0,0%,100%/.06);padding:3rem 0 2rem;}
+    .footer-inner{max-width:1400px;margin:0 auto;padding:0 clamp(1.5rem,5vw,3rem);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;}
+    .footer-logo{font-family:var(--font-d);font-size:1.2rem;letter-spacing:.12em;color:var(--white);}
+    .footer-links{display:flex;gap:2rem;list-style:none;}
+    .footer-links a{font-size:.72rem;color:var(--grey);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:color 200ms;}
+    .footer-links a:hover{color:var(--white);}
+    .footer-copy{font-size:.72rem;color:hsl(0,0%,100%/.2);letter-spacing:.05em;}
+    .footer-credit{font-size:.68rem;color:var(--mid);}
+    .footer-credit a{color:var(--grey);text-decoration:none;transition:color 200ms;}
+    .footer-credit a:hover{color:var(--white);}
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+<div class="scroll-bar" aria-hidden="true"></div>
+<div id="cur-dot" aria-hidden="true"></div>
+<div id="cur-ring" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header id="site-header">
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav-logo" id="nav-logo">NIGHT FORM</a>
+    <ul class="nav-links">
+      <li><a href="#drop">Drop 001</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#manifesto">Brand</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+    </ul>
+    <a href="#drop" class="nav-cta">Shop Now</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="menu-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true">
+  <a href="#drop" class="mob-link">Drop 001</a>
+  <a href="#lookbook" class="mob-link">Lookbook</a>
+  <a href="#manifesto" class="mob-link">Brand</a>
+  <a href="#newsletter" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" aria-labelledby="hero-h1">
+  <main id="main">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-img" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-tag" data-a>Drop 001 — Now Available</p>
+    <h1 class="hero-h1" id="hero-h1" data-a>NIGHT<br><span class="stroke">FORM.</span></h1>
+    <div class="hero-bottom">
+      <p class="hero-sub" data-a>Streetwear built for the after-hours. Oversized cuts, raw finishes, limited runs.</p>
+      <div class="hero-btns" data-a>
+        <a href="#drop" class="btn-white">Shop Drop 001</a>
+        <a href="#lookbook" class="btn-ghost">View Lookbook</a>
+      </div>
+      <p class="hero-scroll" data-a>Scroll to explore</p>
+    </div>
+  </div>
+  </main>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">NIGHT FORM</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">DROP 001</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">LIMITED RUNS</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">UK STREETWEAR</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">AFTER-HOURS</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">NIGHT FORM</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">DROP 001</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">LIMITED RUNS</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">UK STREETWEAR</span><span class="ticker-dot"> · </span>
+    <span class="ticker-item">AFTER-HOURS</span><span class="ticker-dot"> · </span>
+  </div>
+</div>
+
+<!-- DROP / PRODUCTS -->
+<section id="drop" aria-labelledby="drop-h2">
+  <div class="section-wrap">
+    <div class="section-head" data-a>
+      <div>
+        <p class="section-tag">Current Drop</p>
+        <h2 id="drop-h2" class="section-h2">DROP 001</h2>
+      </div>
+      <a href="#newsletter" class="section-link">View all pieces →</a>
+    </div>
+    <div class="products-grid">
+      <div class="prod-card" data-a>
+        <div class="prod-placeholder"><span class="prod-placeholder-label">NF</span></div>
+        <div class="prod-overlay"><a href="#newsletter" class="prod-overlay-btn">Quick View</a></div>
+        <div class="prod-body">
+          <p class="prod-name">Form Oversized Tee — Black</p>
+          <p class="prod-price">£45</p>
+        </div>
+      </div>
+      <div class="prod-card" data-a>
+        <div class="prod-placeholder"><span class="prod-placeholder-label">NF</span></div>
+        <div class="prod-overlay"><a href="#newsletter" class="prod-overlay-btn">Quick View</a></div>
+        <div class="prod-body">
+          <p class="prod-name">Night Cargo Pant — Charcoal</p>
+          <p class="prod-price">£95</p>
+        </div>
+      </div>
+      <div class="prod-card" data-a>
+        <div class="prod-placeholder"><span class="prod-placeholder-label">NF</span></div>
+        <div class="prod-overlay"><a href="#newsletter" class="prod-overlay-btn">Quick View</a></div>
+        <div class="prod-body">
+          <p class="prod-name">Form Hoodie — Washed Black</p>
+          <p class="prod-price">£85</p>
+        </div>
+      </div>
+      <div class="prod-card" data-a>
+        <div class="prod-placeholder"><span class="prod-placeholder-label">NF</span></div>
+        <div class="prod-overlay"><a href="#newsletter" class="prod-overlay-btn">Quick View</a></div>
+        <div class="prod-body">
+          <p class="prod-name">Track Jacket — Grey Marl</p>
+          <p class="prod-price">£110</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section id="manifesto" aria-labelledby="manifesto-h2">
+  <div class="section-wrap">
+    <div class="manifesto-inner">
+      <div data-a="left">
+        <p class="manifesto-label">The Brand</p>
+        <h2 id="manifesto-h2" class="manifesto-h2">BUILT IN<br>THE <em>DARK.</em></h2>
+        <p class="manifesto-p">Night Form wasn't made for daylight. It was built for the hours after — when the city slows down, when what you wear says everything without saying anything.</p>
+        <p class="manifesto-p">Every piece is designed with one rule: wear it anywhere, answer to no one. Limited runs. No restocks. No compromises.</p>
+        <a href="#drop" class="btn-ghost" style="margin-top:1rem;">Shop the Drop</a>
+      </div>
+      <div class="manifesto-img-wrap" data-a>
+        <div class="manifesto-img-placeholder">
+          <span style="font-family:var(--font-d);font-size:8rem;color:hsl(0,0%,100%/.05);letter-spacing:.05em;">NF</span>
+        </div>
+        <div class="manifesto-badge">
+          <p class="manifesto-badge-num">001</p>
+          <p class="manifesto-badge-label">First Drop</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section id="lookbook" aria-labelledby="lookbook-h2">
+  <div class="section-wrap">
+    <div class="section-head" data-a>
+      <div>
+        <p class="section-tag">Visual</p>
+        <h2 id="lookbook-h2" class="section-h2">LOOKBOOK</h2>
+      </div>
+    </div>
+  </div>
+  <div class="lookbook-grid">
+    <div class="lb-item lb-1" data-a>
+      <div class="lb-placeholder"><span style="font-family:var(--font-d);font-size:6rem;color:hsl(0,0%,100%/.05);">NIGHT</span></div>
+    </div>
+    <div class="lb-item lb-2" data-a>
+      <div class="lb-placeholder"><span style="font-family:var(--font-d);font-size:5rem;color:hsl(0,0%,100%/.05);">FORM</span></div>
+    </div>
+    <div class="lb-item lb-3" data-a>
+      <div class="lb-placeholder"><span style="font-family:var(--font-d);font-size:4rem;color:hsl(0,0%,100%/.05);">001</span></div>
+    </div>
+    <div class="lb-item lb-4" data-a>
+      <div class="lb-placeholder"><span style="font-family:var(--font-d);font-size:4rem;color:hsl(0,0%,100%/.05);">DROP</span></div>
+    </div>
+    <div class="lb-item lb-5" data-a>
+      <div class="lb-placeholder"><span style="font-family:var(--font-d);font-size:4rem;color:hsl(0,0%,100%/.05);">NF</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" aria-labelledby="nl-h2">
+  <div class="section-wrap">
+    <div class="newsletter-inner">
+      <div data-a="left">
+        <h2 id="nl-h2" class="nl-h2">BE FIRST<br>TO KNOW.</h2>
+        <p class="nl-sub">Drop dates, early access, and nothing else. No noise.</p>
+      </div>
+      <div data-a>
+        <form class="nl-form" action="https://formspree.io/f/xykakqay" method="POST">
+          <input type="email" name="email" class="nl-input" placeholder="Your email address" required aria-label="Email address" />
+          <button type="submit" class="nl-btn">Join</button>
+        </form>
+        <p class="nl-note">No spam. Unsubscribe any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">NIGHT FORM</span>
+    <ul class="footer-links">
+      <li><a href="#drop">Shop</a></li>
+      <li><a href="#lookbook">Lookbook</a></li>
+      <li><a href="#manifesto">Brand</a></li>
+      <li><a href="#newsletter">Contact</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 Night Form. All rights reserved.</p>
+    <p class="footer-credit">Site by <a href="https://formandforge.co.uk" target="_blank" rel="noopener">Form & Forge</a></p>
+  </div>
+</footer>
+
+<script>
+// Scroll animations
+const aObs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) setTimeout(() => e.target.classList.add('vis'), i * 80);
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('[data-a]').forEach(el => aObs.observe(el));
+
+// Sticky header
+const hdr = document.querySelector('header');
+let last = 0;
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  hdr.classList.toggle('scrolled', y > 60);
+  last = Math.max(y, 0);
+}, { passive: true });
+
+// Mobile nav
+const menuBtn = document.getElementById('menu-btn');
+const mobileNav = document.getElementById('mobile-nav');
+menuBtn.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+  const spans = menuBtn.querySelectorAll('span');
+  if (open) {
+    spans[0].style.transform = 'translateY(6.5px) rotate(45deg)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'translateY(-6.5px) rotate(-45deg)';
+  } else {
+    spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  }
+});
+document.querySelectorAll('.mob-link').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    menuBtn.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+  });
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const href = a.getAttribute('href');
+    if (href === '#') return;
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (!target) return;
+    const h = document.querySelector('header')?.offsetHeight || 0;
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - h - 20, behavior: 'smooth' });
+    history.pushState(null, null, href);
+  });
+});
+
+// Custom cursor
+(function () {
+  if (window.matchMedia('(hover:none)').matches) return;
+  const dot = document.getElementById('cur-dot');
+  const ring = document.getElementById('cur-ring');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+  });
+  const anim = () => {
+    rx += (mx - rx) * 0.1; ry += (my - ry) * 0.1;
+    ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+    requestAnimationFrame(anim);
+  };
+  anim();
+  document.querySelectorAll('a,button').forEach(el => {
+    el.addEventListener('mouseenter', () => { dot.style.width = '10px'; dot.style.height = '10px'; ring.style.width = '52px'; ring.style.height = '52px'; });
+    el.addEventListener('mouseleave', () => { dot.style.width = '6px'; dot.style.height = '6px'; ring.style.width = '32px'; ring.style.height = '32px'; });
+  });
+  document.documentElement.style.cursor = 'none';
+  document.querySelectorAll('a,button').forEach(el => el.style.cursor = 'none');
+})();
+
+// Logo wave
+(function () {
+  const logo = document.getElementById('nav-logo');
+  logo.innerHTML = 'NIGHT FORM'.split('').map((ch, i) =>
+    ch === ' ' ? '<span style="display:inline-block;width:.3em"> </span>' :
+    `<span style="display:inline-block;transition:transform 300ms cubic-bezier(.34,1.56,.64,1) ${i * 18}ms,opacity 250ms ease ${i * 14}ms">${ch}</span>`
+  ).join('');
+  const spans = logo.querySelectorAll('span');
+  logo.addEventListener('mouseenter', () => spans.forEach(s => { s.style.transform = 'translateY(-4px)'; s.style.opacity = '.5'; }));
+  logo.addEventListener('mouseleave', () => spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; }));
+})();
+</script>
+</body>
+</html>

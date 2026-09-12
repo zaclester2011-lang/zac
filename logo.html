@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form & Forge — Logo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%; height: 100%;
+      background: hsl(0, 0%, 4%);
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .logo-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 4rem 5rem;
+    }
+
+    .logo-line {
+      width: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, hsl(43,72%,65%), transparent);
+      animation: line-grow 800ms cubic-bezier(0,0.55,0.45,1) 400ms forwards;
+    }
+    @keyframes line-grow {
+      to { width: min(320px, 60vw); }
+    }
+
+    .logo-text {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(3rem, 10vw, 7rem);
+      font-weight: 800;
+      letter-spacing: -.05em;
+      line-height: 1;
+      background: linear-gradient(100deg, hsl(43,72%,65%) 0%, hsl(0,0%,93%) 55%, hsl(43,60%,52%) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fade-up 700ms cubic-bezier(0,0,0.2,1) 700ms forwards;
+    }
+    @keyframes fade-up {
+      to { opacity: 1; transform: none; }
+    }
+
+    .logo-sub {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(0.55rem, 1.2vw, 0.75rem);
+      font-weight: 700;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      background: linear-gradient(100deg, hsl(43,72%,65%) 0%, hsl(0,0%,93%) 55%, hsl(43,60%,52%) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      transform: translateY(8px);
+      animation: fade-up 500ms cubic-bezier(0,0,0.2,1) 1100ms forwards;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-wrap">
+    <div class="logo-line"></div>
+    <p class="logo-text">Form &amp; Forge</p>
+    <p class="logo-sub">Premium Website Designer &mdash; London</p>
+  </div>
+</body>
+</html>
