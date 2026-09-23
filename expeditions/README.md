@@ -44,6 +44,7 @@ Last updated: 30 August 2026
 | `sardinia-corsica-2026.md` | Shelved — full itinerary retained |
 | `baja-california-sur.md` | Shelved — trip record + costing |
 | `california-2027.md` | **California road trip — three routes, water scored, RV maths** |
+| `august-weather-map.html` | **The August Line — which regions work in August, by latitude** |
 | `scotland-2026.md` | Scotland trip record |
 
 ---
