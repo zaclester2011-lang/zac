@@ -3,7 +3,7 @@
 Planning archive for Zac Lester. Persistent record of trips planned, DNA criteria,
 and scored destination research.
 
-Last updated: 30 August 2026
+Last updated: 24 September 2026
 
 ---
 
@@ -13,7 +13,8 @@ Last updated: 30 August 2026
 |---|---|---|---|
 | **Zanzibar + Pemba** | **CONFIRMED** — flights booked, itinerary complete | **21 Oct – 2 Nov 2026** | Zac, James, Jacob |
 | **Scotland** | Partially planned | 23–27 Aug 2026 | Zac, James |
-| **Philippines / Indonesia / Oceania** | Under consideration | Summer 2027 | TBC |
+| **Indonesia** | **Research complete — route not chosen** | **August 2027** | Zac, James, Jacob |
+| Philippines / Oceania | Under consideration — Philippines opened Sep 2026 | Summer 2027 | TBC |
 | **California** | Under consideration — route drafted | Oct 2027 | Zac, James, Jacob |
 | Baja California Sur | Shelved — for future travelling | — | — |
 | Sardinia → Corsica | Shelved — for future travelling | — | — |
@@ -26,10 +27,18 @@ Last updated: 30 August 2026
 > Wayag (the only 30/30 water body on earth) can be unreachable. **Palawan is in
 > the full habagat** in August; its season is March–May.
 >
-> What August *does* work for: **Southeast Sulawesi** (Labengki 28, Sombori 27,
-> Wakatobi 26), **Sumba** (Weekuri 27, Tanggedu 27), **east-side Philippines**
-> (Sohoton Cove 27), and **Vanuatu's blue holes** (Riri and Matevulu, both 28) —
-> the best DNA match found anywhere outside Raja Ampat.
+> **Indonesia is now fully researched — see `indonesia-2027.md`.** ~360 water
+> bodies catalogued nationwide; **131 score 26+ and are in season in August**,
+> including **six 28s**: Labengki, Sombori, Sombori's Five Lagoons, Lake Matano,
+> Ngurtafur (Kei) and Padaido (Biak).
+>
+> **The anchor: Labengki–Sombori** — nine water bodies, three 28s, one boat,
+> **≈ £1,095 for three** including beds and meals. Built on karst and lagoons,
+> not coral, so bleaching does not touch it.
+>
+> Still open from earlier research and **not** in the Indonesia file:
+> **east-side Philippines** (Sohoton Cove 27) and **Vanuatu's blue holes**
+> (Riri and Matevulu, both 28).
 
 ---
 
@@ -43,6 +52,7 @@ Last updated: 30 August 2026
 | `october-2026-alternatives.md` | Costed shortlist researched Aug 2026 |
 | `sardinia-corsica-2026.md` | Shelved — full itinerary retained |
 | `baja-california-sur.md` | Shelved — trip record + costing |
+| `indonesia-2027.md` | **August 2027 — 131 water bodies at 26+ in season, costed, moon dates, gaps** |
 | `california-2027.md` | **California road trip — three routes, water scored, RV maths** |
 | `august-weather-map.html` | **The August Line — which regions work in August, by latitude** |
 | `scotland-2026.md` | Scotland trip record |
