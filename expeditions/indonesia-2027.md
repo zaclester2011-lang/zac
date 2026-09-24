@@ -176,6 +176,18 @@ Open but compromised in August — **not counted above**:
 **Jogan 26 · Banyu Tibo 26** — Java's south coast; same swell
 **Pulau Pisang 26 · Pantai Komang 26** (Enggano) · **Rondo 26**
 
+**Kali Biru 27** *(Warsambin, Teluk Mayalibit, Waigeo)* — **reclassified from ✗ to ⚠.**
+It is freshwater, inside a sheltered inner bay, reached by road from Waisai
+(~1 hr) then a 10-min boat and 15-min jungle walk — **so the southeast trade
+winds that close Raja Ampat's dive sites do not apply to it.** The Sorong–Waisai
+ferry still runs (2 daily, ~2 hrs), but **July–August southerly winds can make
+it rough and stretch it to 3–4 hrs**, and there is no online booking.
+**The real disqualifier is light, not sea:** the blue is a midday sun effect on
+pale rock, and **northern Raja Ampat's clear-sky season is October–April
+(best Nov–March)**. Overcast, it is just a river. A gamble, not a plan.
+Combines with **Friwen Wall** and the **Mangrove Tunnel** *(the latter not yet
+catalogued)*.
+
 ## CLOSED IN AUGUST
 
 **Raja Ampat** — Wayag 30 · Misool 28 · Lenmakana 28 · Ayau 28 · Piaynemo 27 ·
