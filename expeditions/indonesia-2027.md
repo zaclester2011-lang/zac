@@ -202,6 +202,48 @@ Banda Neira 27 · Ora 26 · Run 26 · Guraici 26 · Ngurbloat-adjacent Maluku si
 | **B** | **Sulawesi wide** | **41** | **4** | **17** | Deepest in the country; needs internal flights |
 | **C** | **Nusa Tenggara** | **41** | 0 | **18** | One chain; **whale sharks, blue whales, mantas** |
 
+### FULL COSTING — three people (researched Sep 2026)
+
+**Base fares found.** August is peak UK school holiday — **add 30–50% to
+international flights**. 2027 fares cannot be priced yet; these are current-year
+baselines.
+
+| Item | Found | Notes |
+|---|---|---|
+| **LHR → Jakarta return** | **from £360** | Cheapest long-haul entry point |
+| **LHR → Makassar (UPG) return** | **from ~£545** | Direct entry to Sulawesi |
+| **Makassar ↔ Jakarta return** | **£122–170** | |
+| **Kendari ↔ Makassar return** | **~£65** | The Labengki leg |
+| **Makassar → Labuan Bajo** | **~£95–140** one way | The Flores leg |
+| **Labengki–Sombori 3D2N** | **£365 pp → £1,095 for three** | Boat, 2 nights, all meals, gear, fees |
+| **Labengki–Sombori 7-day extension** | **IDR 15,000,000 ≈ £790** | *Unclear if per person or total — confirm* |
+
+### Three scenarios
+
+| | Route | Days | **Total (3)** | **Per person per day** |
+|---|---|---|---|---|
+| **A** | **Labengki–Sombori core** | 10 | **£4,300–5,100** | **£157** |
+| **B** | **Sulawesi wide** | 21 | **£6,500–8,000** | **£115** |
+| **C** | **Nusa Tenggara** | 21 | **£5,000–6,500** | **£91** |
+
+### Against the other trips
+
+| Trip | Total (3) | Days | **Per person per day** |
+|---|---|---|---|
+| Sardinia → Corsica *(October)* | £2,200–2,500 | 11 | **£71** |
+| **Indonesia C — Nusa Tenggara** | £5,000–6,500 | 21 | **£91** |
+| **Indonesia B — Sulawesi wide** | £6,500–8,000 | 21 | **£115** |
+| **Zanzibar** | £4,450–4,950 | 11 | **£142** |
+| **Indonesia A — Labengki core** | £4,300–5,100 | 10 | **£157** |
+| Baja California Sur | £6,100–7,490 | 11 | **£206** |
+
+> **The flight is the fixed cost. Once you are there, Indonesia is very cheap.**
+> Three weeks in Nusa Tenggara costs **less per day than eleven nights in
+> Zanzibar**, and **under half Baja's daily rate**. The short trip is the
+> expensive one, because the flight has fewer days to spread across.
+
+---
+
 ### Route A — costed
 
 | Leg | Cost |
