@@ -26,6 +26,8 @@ Anything below 7 in any category is cut regardless of total.
 
 ---
 
+**Count at 27+ and ticked: 57.** *(Kelimutu removed — Water 1, the crater lakes cannot be swum.)*
+
 ## THE 28s — SIX
 
 | | Water body | Region | Note |
@@ -39,9 +41,9 @@ Anything below 7 in any category is cut regardless of total.
 
 ---
 
-## THE 27s — FORTY-FIVE
+## THE 27s — FIFTY-ONE
 
-### Sulawesi (17)
+### Sulawesi (19)
 | | Water body | Note |
 |---|---|---|
 | ✓✓ | **Laguna Mahumalalang** (Labengki) | The Blue Lagoon; favourite of foreign divers |
@@ -51,6 +53,8 @@ Anything below 7 in any category is cut regardless of total.
 | ✓ | **Danau Napabale** (Muna) | **Lake joined to the sea by a 30 m natural tunnel** |
 | ✓ | **Danau Ubur-Ubur Lohia** (Muna) | **Jellyfish lake** — Indonesia's fourth |
 | ✓✓ | **Hoga** (Wakatobi) | 12 dive sites; no internet, limited phone |
+| ✓✓ | **Gua Kontamale** (Wangi-Wangi, Wakatobi) | **Freshwater spring cave** — stalactites over clear blue water. **LOW hazard, airport island** |
+| ⚠ | **Pulau Anano** (Tomia, Wakatobi) | *"Island of a Thousand Turtles"* — uninhabited, nests counted monthly. **Runduma crossing is open Banda Sea in the SE trades** |
 | ✓✓ | **Togean Islands** | **Jul–Aug is peak** — 25–30 m visibility |
 | ✓✓ | **Mariona Jellyfish Lake** (Katupat, Togean) | Stingless jellyfish, ancient doline |
 | ✓✓ | **Malenge** (Togean) | **1,800 m wooden walkway over water** |
@@ -70,10 +74,9 @@ Anything below 7 in any category is cut regardless of total.
 | ✓✓ | **Sangalaki** | **August is peak turtle nesting**; manta congregations |
 | ✓ | **Goa Haji Mangku** | Turquoise water at the cave mouth |
 
-### Nusa Tenggara (18)
+### Nusa Tenggara (17)
 | | Water body | Note |
 |---|---|---|
-| ✓ | **Kelimutu** (Flores) | Three crater lakes that change colour |
 | ✓ | **Riung 17 Islands** (Flores) | **24 islands, uninhabited but for fishing camps** |
 | ✓✓ | **Gua Rangko** (Labuan Bajo) | **Swim in a lit cave over stalagmites, 7 m deep** |
 | ✓✓ | **Padar / Pink Beach** (Komodo) | |
@@ -103,6 +106,19 @@ Anything below 7 in any category is cut regardless of total.
 | | Water body | Note |
 |---|---|---|
 | ✓✓ | **Menjangan** | **More coral species than the entire Caribbean** (Cousteau) |
+
+### Sumatra — resolved from ⚠ (4)
+| | Water body | Note |
+|---|---|---|
+| ✓ | **Telo (Batu) Islands** | Protected channels, calms frequent in August; **clearer than anywhere on Nias — no rivers, no towns**. *Access may be private aircraft only — verify* |
+| ✓ | **Banyak Islands** | Inner islands, dry Mar–Oct |
+| ✓ | **Bangkaru** | Most remote of the Banyaks; **leatherback and green turtles nesting year-round** |
+| ✓ | **Rubiah Sea Garden** (Weh) | Sheltered bay, year-round — **not** a west-facing Weh site |
+
+### Papua — resolved from ⚠ (1)
+| | Water body | Note |
+|---|---|---|
+| ✓ | **Cenderawasih Bay** | **July–October is its season**; whale sharks year-round |
 
 ### Riau Islands (2)
 | | Water body | Note |
@@ -167,10 +183,9 @@ Pemuteran Bio-Rock
 Open but compromised in August — **not counted above**:
 
 **Takabonerate 28** — open Apr–Nov but August is mid-season chop; optimal windows are Apr–May and Oct–Nov
-**Rubiah 27 · Iboih 26 · Gapang 26** — Weh's **west-facing** sites; the **west wind peaks Jun–Aug**
+**Iboih 26 · Gapang 26** — Weh's **west-facing** sites; the **west wind peaks Jun–Aug**. *(Rubiah resolved ✓ — it is in a sheltered bay, now counted at 27)*
 **Mursala 27** — waterfall into the sea on Sumatra's **west coast**; Indian Ocean swell
-**Telo (Batu) 27 · Banyak 27 · Bangkaru 27 · Mentawai 26 · Nias 24** — same swell
-**Cenderawasih 27** — whale sharks year-round, but Jul–Aug visibility drops
+**Mentawai 26 · Nias 24** — same swell. *(Telo, Banyak and Bangkaru resolved ✓ — archipelagos shelter themselves; now counted at 27)*
 **Botubarani 26** — whale sharks peak **May–July**; gone by August
 **Mata Jitu 26** (Moyo) — flow weakens in the dry season
 **Jogan 26 · Banyu Tibo 26** — Java's south coast; same swell
