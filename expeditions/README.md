@@ -54,6 +54,7 @@ Last updated: 26 September 2026
 | `october-2026-alternatives.md` | Costed shortlist researched Aug 2026 |
 | `sardinia-corsica-2026.md` | Shelved — full itinerary retained |
 | `baja-california-sur.md` | Shelved — trip record + costing |
+| `malaysia.md` | **Malaysia — best water is inside the eastern Sabah advisory; without it, ceiling 24** |
 | `palawan.md` | **Palawan first pass — ~60 water bodies, two 27s, season is Mar–May not August** |
 | `europe-country-audit.md` | **Every European country's best 10 — nine countries done, ceiling is 25** |
 | `indonesia-2027.md` | **August 2027 — 131 water bodies at 26+ in season, costed, moon dates, gaps** |
