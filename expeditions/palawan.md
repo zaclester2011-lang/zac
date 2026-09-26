@@ -218,15 +218,131 @@ here — flagged as a gap.
 
 ---
 
+## TAYTAY — the missing middle
+
+| Water body | D · C · W | Total |
+|---|---|---|
+| **Elephant Island (Pabellon) hidden lagoon** | 8 · 9 · 8 | **25** |
+| **Isla Blanca** | 8 · 8 · 8 | **24** |
+| **Lake Manguao (Lake Danao)** | **9** · 6 · 8 | ✗ cut |
+| **Apulit Island** | 6 · 9 · 8 | **23** |
+| **Dicaruyan / Talakanen** | 8 · 8 · 8 | **24** |
+| **Malampaya Sound** | 8 · 6 · 7 | ✗ cut |
+
+**Elephant Island is the find here** — magnificent rockscapes, white sand,
+a large coral community, and **a natural hidden lagoon tucked deep inside the
+cliffs**. It is a Bacuit-grade lagoon in a bay nobody routes through, because
+Taytay sits between El Nido and Port Barton and everyone drives past it.
+
+**Lake Manguao is Palawan's largest freshwater lake and is CUT on Colour 6.**
+This matters, because it was the great hope for Palawan freshwater. It is a
+tannin-stained crater lake used for kayaking and birdwatching — dark green,
+not turquoise, and with crocodile presence reported in the Malampaya system
+nearby. **Palawan has no freshwater answer.** Its waterfalls are 21–22s and
+its one big lake fails on colour.
+
+**Malampaya Sound is cut on Colour 6 too** — it is a deep brackish inlet,
+the richest fishing ground in the Philippines, home to a critically
+endangered Irrawaddy dolphin population. Ecologically extraordinary,
+visually brown.
+
+---
+
+## NORTH BUSUANGA & OUTER CALAMIANES
+
+| Water body | D · C · W | Total |
+|---|---|---|
+| **North Busuanga coast (Cheey, Concepcion)** | **9** · 8 · 8 | **25** |
+| **Sangat Island** | 7 · 8 · 8 | **23** |
+| **Lusong Island** | 7 · 8 · 8 | **23** |
+| **Dimipac Island** | 8 · 9 · 8 | **25** |
+| **Marily Island** | 8 · 8 · 8 | **24** |
+| **Ocam Ocam Beach** | 8 · 7 · 8 | **23** |
+
+**Northern Busuanga is explicitly described as the part tourists have not
+reached** — the town of Coron and the day-tour islands sit south and east,
+and the north coast is canoeing, swimming and nothing else.
+
+**Dimipac at 25** is the pick: a small limestone island off the north coast
+with a lagoon, and no day-tour route to it.
+
+---
+
+## ROXAS & GREEN ISLAND BAY
+
+| Water body | D · C · W | Total |
+|---|---|---|
+| **Modessa Island** | 8 · 8 · 8 | **24** |
+| **Johnson Island** | 8 · 8 · 8 | **24** |
+| **Blue Cove / Green Island Bay** | 8 · 8 · 8 | **24** |
+| **Caramay** | 7 · 7 · 8 | 22 |
+
+**Modessa is a 7-hectare island in Roxas, on the east coast, explicitly
+described as relatively unknown despite the touristy places nearby.** The
+whole of Green Island Bay is a consistent 24: good on everything,
+outstanding on nothing, and genuinely uncrowded.
+
+**Its real value is the season.** Roxas faces **east**, into the Sulu Sea.
+It is the one part of Palawan sheltered from the habagat — and the one part
+exposed during amihan. **This is the only Palawan region that might work in
+the June–October window**, which makes it worth far more research than one
+search.
+
+---
+
+## SOUTHERN PALAWAN MAINLAND
+
+| Water body | D · C · W | Total |
+|---|---|---|
+| **Mainit Falls, Brooke's Point** | 8 · 7 · 7 | 22 |
+| **Muslod Falls, Rizal** | **9** · 7 · 7 | **23** |
+| **Turbong Falls, Punta Baja** | **9** · 7 · 7 | **23** |
+| **Buar-Buar Falls, Ransang** | **9** · 7 · 7 | **23** |
+| **Mantayob / Ilian Falls, Bunog** | **9** · 7 · 7 | **23** |
+| **Madiplak / Kinaruwayan / Gamay Falls, Iraan** | **9** · 7 · 7 | **23** |
+| **Tabon / Quezon coast** | 7 · 7 · 7 | 21 |
+
+**Rizal municipality alone has eight named waterfalls** — Muslod, Buar-Buar,
+Turbong, Mantayob, Ilian, Madiplak, Kinaruwayan and Gamay. They are 190+ km
+from Puerto Princesa, almost entirely unvisited, and they all score the same:
+**Discovery 9, Colour 7, Water 7.**
+
+**That flat 23 is itself the finding.** Tropical jungle waterfalls in
+Palawan are clear-to-green, not turquoise — there is no limestone travertine
+system here doing what Kravice or Krka does. Discovery cannot rescue them.
+**Southern Palawan is a route to Balabac, not a destination.**
+
+---
+
+## CAGAYANCILLO — the far outlier
+
+| Water body | D · C · W | Total |
+|---|---|---|
+| **Cagayancillo islands (31)** | **10** · 9 · 8 | **27** |
+| **Tubbataha Reefs** | 9 · 9 · 9 | **27** — see cost flag |
+
+**Cagayancillo is 31 islands in the open Sulu Sea, midway between Palawan and
+Negros, with 7,000 people living on fishing and seaweed farming.** It is the
+closest settlement to Tubbataha. There is an airstrip and an irregular ferry.
+**Discovery 10** — it is not a tourist destination in any sense.
+
+**Tubbataha scores 27 and carries a hard practical flag.** It is a UNESCO
+marine park reachable **only by liveaboard**, **only from mid-March to
+mid-June**, at roughly **£2,000–3,500 per person for the trip alone**. That is
+Zanzibar money for one activity. Recorded at its real score, flagged as
+almost certainly unaffordable.
+
+---
+
 ## RUNNING PALAWAN LEADERBOARD
 
 | Score | Water bodies |
 |---|---|
-| **27** | **Onuk (Balabac)** · **Maosonon (Linapacan)** |
+| **27** | **Onuk (Balabac)** · **Maosonon (Linapacan)** · **Cagayancillo** · Tubbataha *(cost-flagged)* |
 | **26** | Cadlao Lagoon (El Nido) · Inaladelan · Dicotcotan · Calibangbangan (Linapacan) · Punta Sebaring · Candaraman · Patawan · Mansalangan (Balabac) |
 | **25** | Big Lagoon · Secret Beach · Pinagbuyutan (El Nido) · Barracuda Lake · Ditaytayan (Coron) · Cabunlawan · Nangalao (Linapacan) · Canabungan · Bugsuk (Balabac) · Cuyo · Quiniluban |
 
-**Ten water bodies at 26+, two at 27.** Against Europe's audited ceiling of
+**Twelve water bodies at 26+, four at 27.** Against Europe's audited ceiling of
 25 across nine countries, and Indonesia's six 28s.
 
 **Palawan's shape: the score is concentrated in the two places nobody goes.**
@@ -250,15 +366,14 @@ flight and roughly three days of overland time.
 
 ## GAPS — NOT YET RESEARCHED
 
-- **Taytay** — Lake Manguao (Palawan's largest freshwater lake), Elephant Island,
-  Isla Blanca, Apulit
 - **Culion beyond Ditaytayan** — the whole west coast
-- **Busuanga north coast** — Marily, Sangat, Lusong, Dimipac
 - **Cuyo and Agutaya in any depth** — currently one search
-- **Southern Palawan mainland** — Brooke's Point, Rizal, Bataraza falls and rivers
-- **Green Island Bay / Roxas** — Modessa, Johnson, Arena
+- **Green Island Bay / Roxas in depth** — the one habagat-sheltered region,
+  and therefore the highest-value gap on this list
 - **Calamian freshwater** — the Busuanga interior rivers
-- **Araceli, Dumaran, Cagayancillo (Tubbataha's home islands)**
+- **Araceli and Dumaran**
+- **Cagayancillo access** — ferry frequency, airstrip service, whether a
+  visit is realistically arrangeable at all
 - **Security advisory status for Balabac and the Sulu Sea** — must be checked
   properly, not assumed
 - **Whether Linapacan has any accommodation** beyond a handful of beach camps
