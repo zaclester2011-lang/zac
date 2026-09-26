@@ -3,7 +3,7 @@
 Planning archive for Zac Lester. Persistent record of trips planned, DNA criteria,
 and scored destination research.
 
-Last updated: 24 September 2026
+Last updated: 26 September 2026
 
 ---
 
@@ -11,7 +11,7 @@ Last updated: 24 September 2026
 
 | Trip | Status | Window | Travellers |
 |---|---|---|---|
-| **Zanzibar + Pemba** | **CONFIRMED** — flights booked, itinerary complete | **21 Oct – 2 Nov 2026** | Zac, James, Jacob |
+| **Zanzibar + Pemba** | **PLANNED, NOT BOOKED** — itinerary complete, nothing reserved | **21 Oct – 2 Nov 2026** | Zac, James, Jacob |
 | **Scotland** | Partially planned | 23–27 Aug 2026 | Zac, James |
 | **Indonesia** | **Research complete — route not chosen** | **August 2027** | Zac, James, Jacob |
 | Philippines / Oceania | Under consideration — Philippines opened Sep 2026 | Summer 2027 | TBC |
@@ -19,8 +19,10 @@ Last updated: 24 September 2026
 | Baja California Sur | Shelved — for future travelling | — | — |
 | Sardinia → Corsica | Shelved — for future travelling | — | — |
 
-> **October 2026 is Zanzibar.** Baja and Sardinia → Corsica were both planned for
-> this slot and are now shelved for a future trip. See `zanzibar-2026.md`.
+> **October 2026 is Zanzibar — but NOTHING IS BOOKED.** Corrected 26 Sep 2026;
+> both this file and `zanzibar-2026.md` previously said the flights were booked.
+> They are not. The slot is **under four weeks away** and still open, which also
+> means Baja and Sardinia → Corsica are not definitively ruled out for it.
 
 > **August 2027 is unresolved, and both original picks were wrong for August.**
 > **Raja Ampat's season is October–April** — July and August are its roughest, and

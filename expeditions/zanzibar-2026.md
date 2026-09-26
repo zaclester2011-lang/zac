@@ -1,6 +1,11 @@
 # Zanzibar Archipelago — October 2026
 
-**Status: FINAL — flights booked, itinerary settled and research-verified**
+**Status: PLANNED, NOT BOOKED — itinerary settled and research-verified**
+
+> **Corrected 26 Sep 2026.** This file previously said "FINAL — flights booked".
+> **Nothing is booked.** The flights below are a researched, priced route, not
+> a reservation. Quoted at ~£5,000 for flights and beds — above the £3,000 the
+> costing section assumed. Treat every price here as a quote to re-check.
 
 | | |
 |---|---|
@@ -10,11 +15,11 @@
 | **Activity days** | 8 |
 | **Water bodies** | 12 |
 | **Average day score** | **27 / 30** *(26.92 exactly)* |
-| **Est. total cost (3)** | **£4,000–4,500** |
+| **Est. total cost (3)** | **£4,000–6,500** — depends which flight figure holds |
 
 ---
 
-## Flights — booked
+## Flights — RESEARCHED ROUTE, NOT BOOKED
 
 | Date | Leg | Flight | Times |
 |---|---|---|---|
@@ -154,13 +159,13 @@ way** — coral and sea urchins.
 
 | Item | Cost |
 |---|---|
-| **Flights + hotels + internal flights** | **£3,000** — booked, all-inclusive |
+| **Flights + hotels + internal flights** | **£3,000 researched / ~£5,000 quoted** — NOT booked |
 | Driver — **6 days**, not 8 | £330–420 |
 | Activities — boats booked direct at the jetty | £650–1,000 |
 | Food — 7 local nights, 4 out, 1 free at Chabad | £450–700 |
 | Visas — Tanzania e-visa ~$50pp | £120 |
 | Kendwa party | £50–100 |
-| **TOTAL** | **£4,000–4,500** |
+| **TOTAL** | **£4,000–4,500 on the £3,000 figure · £6,000–6,500 on the £5,000 quote** |
 
 ### The big saving: book boats directly at the jetty
 
