@@ -228,26 +228,244 @@ banned after fatal shark attacks.
 
 ---
 
+## CROATIA — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Zrmanja canyon at Muškovci** | Dalmatian hinterland | 8 · **9** · 8 | **25** |
+| 2 | **Cetina canyon (lower, Omiš side)** | Dalmatia | 7 · **9** · 8 | **24** |
+| 3 | **Stiniva, Vis** | Dalmatian islands | 7 · 8 · 8 | **23** |
+| 4 | **Lubenice / Sveti Ivan, Cres** | Kvarner | 8 · 8 · 8 | **24** |
+| 5 | **Una river, Štrbački buk** | Lika / border | 8 · **9** · 7 | **24** |
+| 6 | **Roški slap, Krka NP** | Dalmatia | 5 · 8 · 7 | 20 |
+| 7 | **Modra špilja (Blue Cave), Biševo** | Dalmatian islands | 5 · **10** · 6 | ✗ cut |
+| 8 | **Cetina spring (Izvor Cetine)** | Dinara | 7 · **10** · **3** | ✗ cut |
+| 9 | **Plitvice lakes** | Lika | 3 · **10** · **1** | ✗ cut |
+| 10 | **Zlatni rat, Brač** | Dalmatia | 2 · 7 · 8 | ✗ cut |
+| — | **Sakarun, Dugi Otok** | Zadar | 5 · **9** · 8 | 22 |
+
+**Zrmanja at Muškovci is Croatia's best — 25, joint European lead.** Water
+clarity is reported at 20 feet of visibility to the riverbed, and it runs
+*warm enough*, which is the whole point: it is far enough downstream of its
+spring to be swimmable.
+
+**The Cetina spring is the audit in miniature.** A perfect turquoise eye
+beneath Mount Dinara — **Colour 10, Water 3.** It is a vertical spring shaft,
+roughly 8°C, and swimming it is a cold-water dive, not a swim.
+
+**Plitvice is cut on Water 1.** Swimming has been banned throughout the park
+since 2006. It is the most visited place in Croatia. Colour 10, and
+completely useless on these criteria — worth stating plainly, because it is
+the first thing anyone recommends.
+
+**Still to check:** Kornati, Telašćica's salt lake, Mljet's two lakes,
+Lastovo, Premantura / Kamenjak, Gacka, Kupa, Krupa and the Krupa monastery
+pools, Rastoke.
+
+---
+
+## SLOVENIA — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Nadiža river** | Breginj, Kobarid | 8 · 8 · 8 | **24** |
+| 2 | **Soča at Otona / Napoleon bridge** | Primorska | 7 · **10** · 7 | **24** |
+| 3 | **Fratarica gorge pools** | Log pod Mangartom | **9** · **9** · 6 | ✗ cut |
+| 4 | **Tolmin gorge (Tolminska korita)** | Tolmin | 6 · **9** · 6 | ✗ cut |
+| 5 | **Lake Bohinj** | Julian Alps | 5 · 8 · **9** | 22 |
+| 6 | **Kozjak waterfall** | Kobarid | 5 · **9** · 5 | ✗ cut |
+| 7 | **Savica waterfall** | Bohinj | 4 · 8 · **2** | ✗ cut |
+| 8 | **Lake Jasna** | Kranjska Gora | 4 · 8 · 6 | ✗ cut |
+| 9 | **Kolpa river** | Bela krajina | 7 · 7 · 8 | 22 |
+| 10 | **Lake Bled** | Gorenjska | **1** · 7 · 8 | ✗ cut |
+
+**Slovenia has the purest Colour scores in Europe and loses almost all of
+them to temperature.** The Soča is the only river in the survey that
+genuinely earns **Colour 10** — it is emerald-turquoise from glacial rock
+flour, not just clear over pale stone — and it runs 8–12°C.
+
+**Nadiža at 24 is the exception, and it is the whole reason Slovenia is
+worth a paragraph.** It is the warmest Alpine river in the country, reaching
+roughly 20–22°C in summer, locally reputed to heal wounds. On these criteria
+it beats the Soča outright: same region, similar colour, water you can
+actually stay in.
+
+**Kolpa is the second warm-water exception** — Slovenia's warmest river,
+often 24°C+ — but its colour is green, not turquoise, hence 7.
+
+**Bled is cut on Discovery 1**, the lowest score awarded anywhere in this
+audit, Indonesia included.
+
+---
+
+## BOSNIA AND HERZEGOVINA — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Una river, Martin Brod** | NW Bosnia | **9** · **9** · 7 | **25** |
+| 2 | **Kravice falls** | Herzegovina | 6 · 8 · 8 | **22** |
+| 3 | **Rakitnica canyon** | Bjelašnica | **10** · 8 · 6 | ✗ cut |
+| 4 | **Neretva, upper canyon** | Konjic | 8 · **9** · 7 | **24** |
+| 5 | **Pliva lakes / Jajce** | Central Bosnia | 7 · 7 · 8 | 22 |
+| 6 | **Vrelo Bosne** | Sarajevo | 4 · 8 · **3** | ✗ cut |
+| 7 | **Blagaj / Buna spring** | Mostar | 5 · **9** · **3** | ✗ cut |
+| 8 | **Štrbački buk (Bosnian side)** | Una NP | 7 · **9** · 7 | **23** |
+| 9 | **Drina, Višegrad reach** | East Bosnia | 8 · 8 · 8 | **24** |
+| 10 | **Prokoško lake** | Vranica | 8 · 6 · 6 | ✗ cut |
+
+**Bosnia is Europe's Discovery champion.** Rakitnica canyon scores
+**Discovery 10** — the only 10 for Discovery anywhere in Europe in this
+audit. It is a 26 km limestone canyon between Bjelašnica and Visočica,
+sections of which have been descended by a handful of people, with no road,
+no path and no signage. **It is cut on Water 6** — the river is 6–9°C from
+underground springs and the canyon requires technical descent.
+
+That is the Bosnian pattern exactly: the most genuinely undiscovered water
+in Europe, unusable because it comes straight out of the rock.
+
+**Una at Martin Brod (25) and the Neretva and Drina (24 each) are the real
+answers** — big, warm-enough, travertine-terraced rivers where the water has
+had time and surface area to warm up. **Kravice is the family option**: a
+25-metre-high, 120-metre-wide amphitheatre of falls with a genuinely
+swimmable plunge pool, marked down to Discovery 6 because it is now Bosnia's
+busiest natural attraction.
+
+**Blagaj is a Water 3** — the Buna emerges from a 200-metre cliff beside a
+16th-century dervish house, at around 8°C, and is not a swim.
+
+---
+
+## MONTENEGRO — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Mrtvica canyon pools** | Kolašin | **9** · **9** · 7 | **25** |
+| 2 | **Tara canyon** | Durmitor | 8 · **9** · 7 | **24** |
+| 3 | **Plavo oko / Blue Eye, Lim** | Plav | 8 · **9** · 6 | ✗ cut |
+| 4 | **Zabljak Sotonicki / Skadar lake channels** | Lake Skadar | 8 · 7 · 8 | **23** |
+| 5 | **Drobni pijesak** | Budva riviera | 7 · 8 · 8 | **23** |
+| 6 | **Uvala Dobreč, Luštica** | Luštica | 8 · 8 · 8 | **24** |
+| 7 | **Crno jezero (Black Lake)** | Durmitor | 4 · 7 · 7 | ✗ cut |
+| 8 | **Plavnica / Rijeka Crnojevića** | Skadar | 6 · 7 · 7 | 20 |
+| 9 | **Ostrvo / Ada Bojana** | Ulcinj | 6 · 6 · 8 | ✗ cut |
+| 10 | **Blue Cave, Luštica** | Herceg Novi | 4 · **9** · 6 | ✗ cut |
+
+**Mrtvica at 25 is Montenegro's answer and one of the five best water bodies
+in Europe.** A gorge reached on an old stone-cut path with carved
+Montenegrin arches, deep emerald-turquoise pools, and almost no
+infrastructure. **Water 7 is the honest limit** — it is a mountain river,
+14–17°C in late summer.
+
+**The Tara is "the tear of Europe"** — among the cleanest rivers on the
+continent, 1,300 m deep canyon, second only to the Grand Canyon. Discovery 8
+despite being Montenegro's flagship rafting river, because the rafting is
+concentrated on a short commercial reach and the rest of the canyon is empty.
+
+**Luštica is Montenegro's underrated coast** — Dobreč is boat-or-45-minute-walk
+only, on a peninsula the development boom has mostly skipped.
+
+---
+
+## ALBANIA — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Vjosa river gravel pools** | Përmet / Tepelenë | **9** · 8 · 8 | **25** |
+| 2 | **Gjipe beach & canyon mouth** | Ionian coast | 8 · 8 · 8 | **24** |
+| 3 | **Lengarica canyon & thermal pools** | Përmet | 8 · 8 · 8 | **24** |
+| 4 | **Grunas / Theth Blue Eye** | Albanian Alps | 8 · **9** · 6 | ✗ cut |
+| 5 | **Syri i Kaltër (Sarandë Blue Eye)** | Sarandë | **3** · **10** · **2** | ✗ cut |
+| 6 | **Kaverina / Dhërmi coves** | Ionian coast | 6 · 8 · 8 | **22** |
+| 7 | **Osumi canyon** | Berat | 8 · 7 · 7 | 22 |
+| 8 | **Ksamil islets** | Sarandë | 3 · **9** · 8 | ✗ cut |
+| 9 | **Lake Koman / Shala river** | Shkodër | 7 · 8 · 8 | **23** |
+| 10 | **Bogova waterfall** | Berat | 8 · 7 · 7 | 22 |
+
+**The Vjosa at 25 is Albania's best and Europe's most distinctive entry.**
+It is the last major river in Europe running free from source to sea without
+a single dam. The floodplain shifts every flood season, so the gravel beaches
+and swimming pools **reform each year** — there is no fixed place to be
+crowded. And crucially it reaches **20°C in summer**, which nothing else in
+the Dinaric system manages.
+
+**Syri i Kaltër is now a hard cut and this has changed.** Swimming is
+**prohibited** at the Sarandë Blue Eye. It is fenced, has a viewing
+platform, restaurants, cabins and a tourist information office.
+**Water 2, Discovery 3.** Any guide recommending it as a swim is out of
+date — this is the same failure mode as Bawe's pre-2024 resort in the
+Indonesia file: *a description is only as good as the year it was written.*
+
+**Lengarica is the one thermal entry in the audit** — a canyon where
+hot springs feed pools inside the gorge, which means it is the only
+Balkan karst water body that does not lose points for temperature.
+
+**Ksamil scores Colour 9 and Discovery 3** — it is now Albania's most
+developed beach strip.
+
+---
+
+## THE DINARIC VERDICT
+
+**The prediction was half right.** The Balkans do produce Europe's highest
+Colour scores — Soča 10, Cetina spring 10, Plitvice 10, Syri i Kaltër 10,
+and Colour 9 across two dozen entries. And they lose almost all of them, for
+three separate reasons:
+
+| Failure | Examples |
+|---|---|
+| **Water temperature** — karst springs emerge at 6–9°C | Cetina spring, Blagaj, Vrelo Bosne, Kozjak, Savica, Rakitnica |
+| **Swimming banned** | Plitvice (since 2006), Syri i Kaltër |
+| **Depth** — a spring shaft or a shallow gorge, not a swim | Cetina spring, Tolmin, Fratarica |
+
+**The survivors all share one thing: distance from the spring.** Zrmanja at
+Muškovci, Una at Martin Brod, the Neretva, the Drina, the Tara, the Vjosa,
+the Nadiža, the Kolpa. Every one is a river that has run far enough, over
+enough surface area, to warm up while staying clear.
+
+**The rule for the Balkans, stated for reuse: score the reach, not the
+river.** The same river fails at its spring and scores 25 thirty kilometres
+downstream. Getting this wrong is the exact mistake made with the Cetina
+on a first pass.
+
+---
+
 ## RUNNING EUROPEAN LEADERBOARD
 
 | Score | Water bodies |
 |---|---|
-| **25** | Cala Goloritzé (IT) · Cavu (FR) · Purcaraccia (FR) · Plage de Ghignu (FR) |
-| **24** | S'Ogliu Ermanu (IT) · Cala Mariolu (IT) · Cavagrande (IT) · Voidomatis (GR) · Kleftiko (GR) · Seychelles Beach (GR) · Glyka Nera (GR) · Neda (GR) |
-| **23** | Nine entries — Italy 4, France 4, Spain 3, Portugal 1 |
+| **25** | Cala Goloritzé (IT) · Cavu (FR) · Purcaraccia (FR) · Plage de Ghignu (FR) · **Zrmanja at Muškovci (HR)** · **Una at Martin Brod (BA)** · **Mrtvica (ME)** · **Vjosa (AL)** |
+| **24** | S'Ogliu Ermanu · Cala Mariolu · Cavagrande (IT) · Voidomatis · Kleftiko · Seychelles Beach · Glyka Nera · Neda (GR) · Cetina lower canyon · Lubenice · Una Štrbački buk (HR) · Nadiža · Soča (SI) · Neretva · Drina (BA) · Tara · Dobreč (ME) · Gjipe · Lengarica (AL) |
+| **23** | Fourteen entries |
 
-**Country ranking so far: Italy ≈ France > Greece > Spain > Portugal.**
+**Country ranking so far:**
+Italy ≈ France ≈ **Bosnia** ≈ **Albania** ≈ **Montenegro** ≈ **Croatia** >
+Greece ≈ **Slovenia** > Spain > Portugal
 
-For scale: **Indonesia has six 28s and 131 entries at 26+.** Nothing in
-Europe has yet reached 26. That gap is not a research artefact — it is the
-Colour ceiling.
+**Nine countries in, nothing in Europe has reached 26.** Eight water bodies
+sit at 25 and none breaks out. For scale: **Indonesia has six 28s and 131
+entries at 26+.**
+
+That is no longer explicable as a research gap — it is structural, and
+now measurable. **Europe cannot stack all three categories at once.** Every
+European 25 is 9-8-8 or 8-9-8: one strong category, two good. Indonesia's
+28s run 9-10-9 and 10-9-9, because tropical shallow limestone gives Colour 9–10
+*and* 28°C water *and* remote islands simultaneously. In Europe:
+
+- **Colour 9–10 comes from cold** (glacial flour, karst springs) — so Water drops
+- **Warm water comes from the Mediterranean** — which is clear, not turquoise, so Colour caps at 8–9
+- **Discovery 9–10 comes from inaccessibility** — which in Europe means altitude, so Water drops again
+
+**The single European exception to all three is Albania's Vjosa** — warm
+(20°C), vivid, undammed, and re-forming its own beaches annually so it cannot
+be permanently crowded. If anything in Europe reaches 26, it will be found in
+Albania or in unsurveyed Greek and Turkish coast, not in the Alps.
 
 ---
 
 ## OUTSTANDING COUNTRIES
 
-Croatia · Montenegro · Albania · Slovenia ·
-Bosnia · North Macedonia · Bulgaria · Romania · Turkey (European + Aegean) ·
+
+North Macedonia · Bulgaria · Romania · Turkey (European + Aegean) ·
 Cyprus · Malta · Ireland · United Kingdom · Iceland · Norway · Sweden ·
 Finland · Denmark · Estonia · Latvia · Lithuania · Poland · Czechia ·
 Slovakia · Austria · Switzerland · Germany · Netherlands · Belgium ·
