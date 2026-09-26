@@ -100,9 +100,153 @@ gorges, Lousios and the Arcadian rivers, Chalkidiki, Zagori's other rivers.
 
 ---
 
+## PORTUGAL — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Poço Azul, Madeira (Caldeirão Verde area)** | Madeira | 8 · 8 · 7 | **23** |
+| 2 | **Sete Cidades lagoon** | Azores, São Miguel | 5 · 8 · 8 | 21 |
+| 3 | **Porto Moniz natural pools** | Madeira | 4 · 8 · 8 | ✗ cut |
+| 4 | **Praia Fluvial do Lago Azul, Castelo de Bode** | Ribatejo | 5 · 8 · **9** | 22 |
+| 5 | **Loriga river beach** | Serra da Estrela | 7 · 7 · 7 | 21 |
+| 6 | **Penedo Furado** | Vila de Rei | 7 · 7 · 7 | 21 |
+| 7 | **Poça da Dona Beija / Ferraria** | Azores | 4 · 5 · 7 | ✗ cut |
+| 8 | **Praia de Odeceixe river mouth** | Algarve / Alentejo | 5 · 6 · 8 | ✗ cut |
+| 9 | **Praia da Marinha** | Algarve | 3 · 8 · 8 | ✗ cut |
+| 10 | **Benagil / Algar Seco caves** | Algarve | 3 · 7 · 7 | ✗ cut |
+
+**Portugal's best: Poço Azul, Madeira — 23.** Nothing clears it.
+
+**Portugal is the weakest major coastal country in Europe on these
+criteria, and the reason is the Atlantic.** The mainland coast is
+green-grey, cold (17–19°C even in August) and surf-driven. Colour 8 only
+happens inland, in the *praias fluviais* — Portugal's genuinely distinctive
+category, river beaches with communal barbecues, which score 21 across the
+board: good on all three, outstanding on none.
+
+**The Algarve is a Discovery graveyard.** Marinha and Benagil have Europe's
+most photographed sea caves and score Discovery 3 — worse than Navagio.
+
+**Loriga is the one real curiosity**: Portugal's only river beach in a
+glacial valley, at 800 m in the Serra da Estrela.
+
+**Still to check:** Madeira's levada pools in depth (25 Fontes, Risco),
+Azores beyond São Miguel (Flores' Poço da Ribeira do Ferreiro, Faial),
+Gerês / Peneda-Gerês cascades, Cascata da Pedra Furada, Alqueva.
+
+---
+
+## ITALY — **DONE** (best in Europe so far)
+
+Sardinia and Corsica already hold a full itinerary file on the old 48-point
+system; these are the /30 conversions plus the mainland and Sicily.
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Cala Goloritzé** | Sardinia, Baunei | 7 · **9** · **9** | **25** |
+| 2 | **S'Ogliu Ermanu jungle pools** | Sardinia, Supramonte | **9** · 8 · 7 | **24** |
+| 3 | **Cala Mariolu** | Sardinia, Baunei | 6 · **9** · **9** | **24** |
+| 4 | **Cavagrande del Cassibile** | Sicily | 8 · 8 · 8 | **24** |
+| 5 | **Cala Sisine / Cala Biriola** | Sardinia | 7 · 8 · 8 | **23** |
+| 6 | **Zingaro reserve coves** | Sicily | 7 · 8 · 8 | **23** |
+| 7 | **Cala Coticcio, Caprera** | La Maddalena | 6 · **9** · 8 | **23** |
+| 8 | **Cala Luna** | Sardinia | 5 · 8 · 8 | 21 |
+| 9 | **Cala Rossa** | Favignana, Sicily | 6 · **9** · 8 | **23** |
+| 10 | **Spiaggia dei Conigli** | Lampedusa | 3 · **10** · 8 | ✗ cut |
+| — | **Gole dell'Alcantara** | Sicily | 6 · 7 · 5 | ✗ cut |
+| — | **Grotta Azzurra, Capri** | Campania | 3 · **10** · 3 | ✗ cut |
+
+**Cala Goloritzé at 25 is the highest-scoring water body in Europe found so
+far** — and it held the same position on the old system at 48/48.
+
+**Italy has Europe's second Colour 10, and cuts it twice.** Lampedusa's
+Spiaggia dei Conigli is consistently ranked the best beach in the world
+(Discovery 3). The Blue Grotto is a Colour 10 with **Water 3** — you lie
+flat in a rowboat to get through the entrance and swimming is prohibited.
+It is a light effect, not a swim.
+
+**Gole dell'Alcantara is a Water cut at 5** — the Alcantara runs off Etna's
+snowmelt at roughly 12°C year-round, and the gorge is knee-to-waist deep for
+most of its walkable length. Waders are rented at the entrance. That is the
+tell.
+
+**Italy's real strength is that its top seven are all different things** —
+a hike-in cove, inland jungle pools, a Sicilian canyon with staircase
+descent, an island cove, a granite cove. No repetition problem, which is the
+flaw flagged in the Sardinia–Corsica itinerary file.
+
+**Still to check:** Cilento and the Campanian coast, Puglia (Grotta della
+Poesia, Torre Sant'Andrea), Calabria's Costa Viola, the Aeolians
+(Pollara, Cala Junco), Elba and the Tuscan archipelago, the Dolomite lakes
+(Braies, Sorapis — likely Water cuts on temperature), Lake Garda's
+Valle delle Cartiere, Marmore falls.
+
+---
+
+## FRANCE — **DONE**
+
+Corsica dominates. Mainland France contributes exactly one serious entry.
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Cavu river pools** | Corsica, Porto-Vecchio | 8 · **9** · 8 | **25** |
+| 2 | **Purcaraccia** | Corsica, Bavella | 8 · **9** · 8 | **25** |
+| 3 | **Plage de Ghignu** | Corsica, Agriates | **9** · 8 · 8 | **25** |
+| 4 | **Gorges de Spelunca** | Corsica, Ota | 7 · 8 · 8 | **23** |
+| 5 | **Fango valley granite pools** | Corsica, Galéria | 8 · 8 · 7 | **23** |
+| 6 | **Lavezzi islands** | Corsica | 6 · **9** · 8 | **23** |
+| 7 | **Calanque de Ficajola** | Corsica, Piana | 7 · 8 · 8 | **23** |
+| 8 | **Gorges du Verdon / Lac de Ste-Croix** | Provence | 4 · **9** · **9** | ✗ cut |
+| 9 | **Sillans-la-Cascade** | Provence | 6 · 8 · 7 | 21 |
+| 10 | **Gorges du Toulourenc** | Provence, Ventoux | 7 · 7 · 6 | ✗ cut |
+| — | **Restonica lakes** | Corsica, Corte | 7 · 7 · 5 | ✗ cut |
+| — | **Calanques de Cassis** | Provence | 3 · 8 · 8 | ✗ cut |
+
+**Three French 25s — all Corsican — tying Cala Goloritzé for the European lead.**
+
+**Plage de Ghignu scores Discovery 9**, the joint highest in Western Europe
+with Neda and Cala de San Pedro: **no road access at all**, reached by boat
+from Saint-Florent or a long 4x4 track. That is also exactly why the
+Sardinia–Corsica file flags it as an open booking risk — the boats are
+heavily seasonal.
+
+**Verdon is the audit's most painful cut.** Colour 9 and Water 9 — Lac
+d'Esparron reaches 26°C, the warmest freshwater in the survey — and
+**Discovery 4**. It is one of Europe's premier canyons with pedal-boat hire
+at the lake mouth and coach parking above it.
+
+**Toulourenc fails on Water 6** and Restonica on Water 5: the Toulourenc is
+a shallow river walk and the Restonica lakes sit at 1,700–1,900 m, meaning
+snowmelt.
+
+**Still to check:** Corsica's remaining pools (Tavignano, Bavella's other
+branches), the Calanques beyond Cassis, Ardèche, Hérault and the
+Languedoc rivers, Pyrenean lakes and the Cirque de Gavarnie (probable
+temperature cuts), Réunion and the overseas départements if they count as
+France for this purpose — noting Réunion's sea swimming is effectively
+banned after fatal shark attacks.
+
+---
+
+## RUNNING EUROPEAN LEADERBOARD
+
+| Score | Water bodies |
+|---|---|
+| **25** | Cala Goloritzé (IT) · Cavu (FR) · Purcaraccia (FR) · Plage de Ghignu (FR) |
+| **24** | S'Ogliu Ermanu (IT) · Cala Mariolu (IT) · Cavagrande (IT) · Voidomatis (GR) · Kleftiko (GR) · Seychelles Beach (GR) · Glyka Nera (GR) · Neda (GR) |
+| **23** | Nine entries — Italy 4, France 4, Spain 3, Portugal 1 |
+
+**Country ranking so far: Italy ≈ France > Greece > Spain > Portugal.**
+
+For scale: **Indonesia has six 28s and 131 entries at 26+.** Nothing in
+Europe has yet reached 26. That gap is not a research artefact — it is the
+Colour ceiling.
+
+---
+
 ## OUTSTANDING COUNTRIES
 
-Portugal · Italy · France · Croatia · Montenegro · Albania · Slovenia ·
+Croatia · Montenegro · Albania · Slovenia ·
 Bosnia · North Macedonia · Bulgaria · Romania · Turkey (European + Aegean) ·
 Cyprus · Malta · Ireland · United Kingdom · Iceland · Norway · Sweden ·
 Finland · Denmark · Estonia · Latvia · Lithuania · Poland · Czechia ·
