@@ -429,10 +429,167 @@ on a first pass.
 
 ---
 
+## TURKEY — **DONE** (Aegean + Mediterranean coast)
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Butterfly Valley (Kelebekler Vadisi)** | Fethiye | **9** · 9 · 8 | **26** |
+| 2 | **Kaputaş** | Kaş / Kalkan | 5 · **10** · 8 | ✗ cut |
+| 3 | **Kabak Bay** | Fethiye | 8 · 8 · 8 | **24** |
+| 4 | **Gemiler / Aya Nikola** | Fethiye | 7 · 8 · 8 | **23** |
+| 5 | **Kekova sunken city coves** | Demre | 7 · 8 · 8 | **23** |
+| 6 | **Lake Salda** | Burdur | 4 · **10** · 8 | ✗ cut |
+| 7 | **Saklıkent gorge** | Muğla | 5 · 6 · **5** | ✗ cut |
+| 8 | **Ölüdeniz lagoon** | Fethiye | **2** · **10** · 8 | ✗ cut |
+| 9 | **Patara** | Antalya | 5 · 7 · 8 | 20 |
+| 10 | **Yeşilgöz / Aydıncık** | Mersin | 8 · 9 · 7 | **24** |
+| 11 | **Cennet–Cehennem sinkholes** | Mersin | 6 · 7 · 4 | ✗ cut |
+| 12 | **Datça / Palamutbükü** | Muğla | 7 · 8 · 8 | **23** |
+
+**Butterfly Valley at 26 is the first 26 found in Europe.** It is a canyon
+beach between high cliffs, **reachable only by boat or a genuinely difficult
+scramble down from Faralya**, with a waterfall in the valley behind it. That
+is Discovery 9 — earned access, not just distance — with Colour 9 water. It
+is the one European entry that gets all three above 8.
+
+**Turkey holds Europe's densest cluster of Colour 10s and cuts all three.**
+Kaputaş (Discovery 5 — a staircase from the coast road and a car park above
+it), **Lake Salda** — "Turkey's Maldives", white magnesite sand, and as of
+2026 you park far away and are shuttled in by electric bus, which is
+Discovery 4 — and **Ölüdeniz at Discovery 2**, the most photographed lagoon
+in the country and the lowest Discovery score in the audit after Bled.
+
+**Saklıkent is a Water 5 cut** — one of Turkey's deepest canyons, and you
+wade it in rented shoes through ankle-to-thigh water at about 10°C from
+snowmelt. The Alcantara failure again.
+
+**Yeşilgöz near Aydıncık (24)** is the find nobody lists — a small turquoise
+cove on the Mersin coast, east of the tourist belt entirely.
+
+**Season note: Turkey's south coast runs warm into November** — sea 25–26°C
+in late October, the warmest in the Mediterranean after Cyprus.
+
+---
+
+## CYPRUS — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Blue Lagoon, Akamas** | Polis / Latchi | 6 · **9** · 8 | **23** |
+| 2 | **Lara Bay** | Akamas | 8 · 7 · 8 | **23** |
+| 3 | **Avakas Gorge** | Akamas | 7 · 6 · **3** | ✗ cut |
+| 4 | **Konnos Bay** | Protaras | 4 · 8 · 8 | ✗ cut |
+| 5 | **Cape Greco sea caves** | Ayia Napa | 4 · 8 · 7 | ✗ cut |
+| 6 | **Governor's Beach** | Limassol | 6 · 7 · 7 | 20 |
+| 7 | **Caledonia / Millomeris falls** | Troodos | 6 · 6 · **4** | ✗ cut |
+| 8 | **Fontana Amorosa** | Akamas | 8 · 8 · 7 | **23** |
+| 9 | **Petra tou Romiou** | Paphos | 3 · 7 · 7 | ✗ cut |
+| 10 | **Karpas / Golden Beach** | North Cyprus | 8 · 7 · 8 | **23** |
+
+**Cyprus tops out at 23 and the reason is structural.** It has the warmest
+sea in the Mediterranean in late October — **26°C** — and almost no
+freshwater: the Troodos streams are seasonal and mostly dry by autumn, which
+is why Caledonia is a Water 4.
+
+**The Blue Lagoon is Cyprus's best water and it is a boat-trip destination
+from Latchi**, which caps Discovery at 6. **Lara Bay is the better answer on
+these criteria** — a protected loggerhead and green turtle nesting beach with
+a rough track in and no development permitted.
+
+**Confirms the earlier 39/48 assessment**: warmest Med sea in late October,
+only about three quality spots, gorges dry by autumn.
+
+---
+
+## MALTA — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Blue Lagoon, Comino** | Comino | **2** · **10** · 8 | ✗ cut |
+| 2 | **Blue Hole & Inland Sea, Gozo** | Dwejra | 5 · 8 · 8 | 21 |
+| 3 | **San Blas Bay** | Gozo | 7 · 8 · 8 | **23** |
+| 4 | **Wied il-Għasri** | Gozo | 8 · 8 · 7 | **23** |
+| 5 | **Santa Marija caves** | Comino | 6 · 9 · 7 | 22 |
+| 6 | **Ġnejna / Fomm ir-Riħ** | Malta | 7 · 7 · 8 | 22 |
+| 7 | **Il-Kalanka / Delimara** | Malta | 7 · 8 · 8 | **23** |
+| 8 | **Ramla l-Ħamra** | Gozo | 5 · 7 · 8 | 20 |
+| 9 | **Crystal Lagoon** | Comino | 6 · 9 · 8 | **23** |
+| 10 | **Għar Lapsi** | Malta | 6 · 7 · 8 | 21 |
+
+**Malta's Blue Lagoon is the audit's single worst Discovery score: 2.**
+Colour 10 — a swimmable channel of bright turquoise between Comino and
+Cominotto — and in summer it receives thousands of people a day on a
+0.5 km strip, with sunbeds, kiosks and ferries every 30 minutes.
+
+**Wied il-Għasri is the opposite and the one to keep** — a narrow fjord-like
+inlet on Gozo's north coast reached down a steep staircase in a cleft, barely
+wide enough for two people to swim abreast.
+
+**Malta has no freshwater at all.** Every entry is the sea. Ceiling 23.
+
+---
+
+## NORTH MACEDONIA — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Lake Ohrid** | Ohrid | 4 · 8 · **9** | ✗ cut |
+| 2 | **Lake Prespa** | Resen | 7 · 7 · 8 | 22 |
+| 3 | **Matka Canyon / Vrelo cave** | Skopje | 6 · 7 · 8 | 21 |
+| 4 | **Smolare falls** | Strumica | 7 · 6 · 6 | ✗ cut |
+| 5 | **Kolešino falls** | Strumica | 7 · 6 · 6 | ✗ cut |
+| 6 | **Radika river, Mavrovo** | Mavrovo | 8 · 8 · 6 | ✗ cut |
+| 7 | **Kanjon Matka lake** | Skopje | 5 · 7 · 8 | 20 |
+| 8 | **Ohrid, Gradište / Ljubaništa** | Ohrid | 5 · 8 · 8 | 21 |
+
+**North Macedonia cannot field ten qualifying water bodies.** This is the
+first country in the audit where that has happened, and it is recorded rather
+than padded.
+
+**Lake Ohrid is cut on Discovery 4.** It is one of the oldest and deepest
+lakes in Europe, called the European Galápagos for its endemic biodiversity,
+**a UNESCO site, and lined with resort towns**. Water 9, and you are
+swimming off a promenade.
+
+**Vrelo cave in Matka is possibly the deepest underwater cave in the world**
+— explored past 240 m with no bottom found. It is a boat-and-ticket
+attraction, not a swim.
+
+---
+
+## BULGARIA — **DONE**
+
+| # | Water body | Region | D · C · W | Total |
+|---|---|---|---|---|
+| 1 | **Erma river gorge** | Tran | 8 · 7 · 7 | **22** |
+| 2 | **Krushuna falls** | Letnitsa | 6 · **9** · 7 | 22 |
+| 3 | **Devil's Throat cave** | Rhodopes | 8 · 5 · 4 | ✗ cut |
+| 4 | **Rila lakes (Seven)** | Rila | 4 · 8 · **4** | ✗ cut |
+| 5 | **Silistar** | Black Sea south | 8 · 6 · 8 | ✗ cut |
+| 6 | **Sinemorets / Veleka mouth** | Black Sea south | 7 · 6 · 8 | ✗ cut |
+| 7 | **Emen canyon** | Veliko Tarnovo | 8 · 7 · 6 | ✗ cut |
+| 8 | **Kanyon na Vodopadite** | Smolyan | 8 · 7 · 6 | ✗ cut |
+| 9 | **Rusalka / Bolata** | Black Sea north | 6 · 6 · 7 | ✗ cut |
+
+**Bulgaria fails on Colour, decisively.** The Black Sea is brackish — it is
+the largest anoxic basin on earth, fed by huge rivers — and it is
+**green-brown, not turquoise, anywhere on the Bulgarian coast**. Every
+coastal entry is cut at Colour 6.
+
+**Krushuna is the exception and nearly makes it** — genuine travertine
+terraces in emerald-turquoise, the only Kravice-type system in the country.
+Colour 9, and **Water 7**: the pools are shallow and swimming in the main
+cascade is restricted.
+
+**Bulgaria cannot field ten either.** Two entries at 22, nothing higher.
+
+---
+
 ## RUNNING EUROPEAN LEADERBOARD
 
 | Score | Water bodies |
 |---|---|
+| **26** | **Butterfly Valley (TR)** — the only 26 in Europe |
 | **25** | Cala Goloritzé (IT) · Cavu (FR) · Purcaraccia (FR) · Plage de Ghignu (FR) · **Zrmanja at Muškovci (HR)** · **Una at Martin Brod (BA)** · **Mrtvica (ME)** · **Vjosa (AL)** |
 | **24** | S'Ogliu Ermanu · Cala Mariolu · Cavagrande (IT) · Voidomatis · Kleftiko · Seychelles Beach · Glyka Nera · Neda (GR) · Cetina lower canyon · Lubenice · Una Štrbački buk (HR) · Nadiža · Soča (SI) · Neretva · Drina (BA) · Tara · Dobreč (ME) · Gjipe · Lengarica (AL) |
 | **23** | Fourteen entries |
@@ -441,8 +598,9 @@ on a first pass.
 Italy ≈ France ≈ **Bosnia** ≈ **Albania** ≈ **Montenegro** ≈ **Croatia** >
 Greece ≈ **Slovenia** > Spain > Portugal
 
-**Nine countries in, nothing in Europe has reached 26.** Eight water bodies
-sit at 25 and none breaks out. For scale: **Indonesia has six 28s and 131
+**Fourteen countries in, exactly one water body has reached 26** — Turkey's
+Butterfly Valley, and it needed a boat-only canyon beach to do it. Eight sit
+at 25. For scale: **Indonesia has six 28s and 131
 entries at 26+.**
 
 That is no longer explicable as a research gap — it is structural, and
@@ -465,8 +623,7 @@ Albania or in unsurveyed Greek and Turkish coast, not in the Alps.
 ## OUTSTANDING COUNTRIES
 
 
-North Macedonia · Bulgaria · Romania · Turkey (European + Aegean) ·
-Cyprus · Malta · Ireland · United Kingdom · Iceland · Norway · Sweden ·
+Romania · Ireland · United Kingdom · Iceland · Norway · Sweden ·
 Finland · Denmark · Estonia · Latvia · Lithuania · Poland · Czechia ·
 Slovakia · Austria · Switzerland · Germany · Netherlands · Belgium ·
 Luxembourg · Hungary · Serbia · Kosovo · Moldova · Ukraine · Belarus ·
