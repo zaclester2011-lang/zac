@@ -77,6 +77,38 @@ that fail the turquoise, hidden, or uncrowded filters.
 
 ---
 
+## Malaysia — added 26 Sep 2026
+
+Malaysia was never scored as a region here; it appeared only as
+"Danum Valley & Sipadan 43/48" in the jungle subset below, with no note
+on access. Full catalogue in `malaysia.md`.
+
+| Region | Score | Nearest airport | Aug | Status |
+|---|---|---|---|---|
+| **Semporna & Tun Sakaran** | 43/48 | Tawau (TWU) | Good | **⚠ FCDO advisory** |
+| **Sipadan** | 43/48 | Tawau (TWU) | Good | **⚠ advisory · 176 permits/day** |
+| Maliau Basin & Danum Valley | 40/48 | Lahad Datu (LDU) | Good | Permit only |
+| Perhentian, Redang & east coast | 38/48 | Kuala Terengganu (TGG) | **Open Mar–Oct** | Closed Nov–Feb |
+| Ulu Legong & Baling karst | 37/48 | Penang (PEN) | Good | 2–3 hr trek |
+| Tioman & Johor islands | 37/48 | Tioman (TOD) | Open | |
+| Langkawi | 33/48 | Langkawi (LGK) | Good | Colour fails |
+
+**The ESSZONE advisory governs Malaysia.** Semporna, Sipadan, Mabul,
+Kapalai and Mataking sit inside the eastern Sabah security zone — standing
+kidnap-for-ransom threat, nightly sea curfew, UK advice against all but
+essential travel. **Those are Malaysia's only 24+ water bodies.**
+
+**Without them Malaysia's ceiling is 24/30** — the same as Europe's best,
+at Indonesia's flight price. **Re-check current FCDO wording before any
+decision; advisories move.**
+
+**The structural limit is peat.** Bornean rivers drain peat swamp and run
+tea-brown: Maliau Falls scores Discovery 10 and is capped at 24 by Colour 7;
+Danum's Segama river is a Colour 5 cut. The one turquoise freshwater found
+in the country is **Ulu Legong, Baling** — peninsular, over limestone.
+
+---
+
 ## Jungle + turquoise subset
 
 | Rank | Region | Score | Airport |
@@ -87,7 +119,7 @@ that fail the turquoise, hidden, or uncrowded filters.
 | 4 | Yucatán cenotes & jungle | 45/48 | Cancún (CUN) |
 | 5 | Semuc Champey & Alta Verapaz | 44/48 | Guatemala City (GUA) |
 | 6 | Bonito & Serra da Bodoquena | 44/48 | Campo Grande (CGR) |
-| 7 | Danum Valley & Sipadan | 43/48 | Tawau (TWU) |
+| 7 | Danum Valley & Sipadan | 43/48 | Tawau (TWU) — **⚠ see Malaysia section** |
 | 8 | Chapada Diamantina | 43/48 | Lençóis (LEC) |
 | 9 | Iriomote & Yakushima | 43/48 | Ishigaki (ISG) |
 | 10 | Khao Sok | 42/48 | Surat Thani (URT) |
