@@ -54,7 +54,7 @@ Anything below 7 in any category is cut regardless of total.
 | ✓ | **Danau Ubur-Ubur Lohia** (Muna) | **Jellyfish lake** — Indonesia's fourth |
 | ✓✓ | **Hoga** (Wakatobi) | 12 dive sites; no internet, limited phone |
 | ✓✓ | **Gua Kontamale** (Wangi-Wangi, Wakatobi) | **Freshwater spring cave** — stalactites over clear blue water. **LOW hazard, airport island** |
-| ⚠ | **Pulau Anano** (Tomia, Wakatobi) | *"Island of a Thousand Turtles"* — uninhabited, nests counted monthly. **Runduma crossing is open Banda Sea in the SE trades** |
+| ⚠ | **Pulau Anano** (Tomia, Wakatobi) — *the only ⚠ left in the 27+ list* | *"Island of a Thousand Turtles"* — uninhabited, nests counted monthly. **Runduma crossing is open Banda Sea in the SE trades** |
 | ✓✓ | **Togean Islands** | **Jul–Aug is peak** — 25–30 m visibility |
 | ✓✓ | **Mariona Jellyfish Lake** (Katupat, Togean) | Stingless jellyfish, ancient doline |
 | ✓✓ | **Malenge** (Togean) | **1,800 m wooden walkway over water** |
@@ -183,15 +183,18 @@ Pemuteran Bio-Rock
 Open but compromised in August — **not counted above**:
 
 **Takabonerate 28** — open Apr–Nov but August is mid-season chop; optimal windows are Apr–May and Oct–Nov
-**Iboih 26 · Gapang 26** — Weh's **west-facing** sites; the **west wind peaks Jun–Aug**. *(Rubiah resolved ✓ — it is in a sheltered bay, now counted at 27)*
+**Iboih 26 · Gapang 26** — ✓ **RESOLVED YES.** Same sheltered Iboih bay as Rubiah, which shelters it. *(Rubiah resolved ✓ at 27 and is counted above.)*
 **Mursala 27** — waterfall into the sea on Sumatra's **west coast**; Indian Ocean swell
-**Mentawai 26 · Nias 24** — same swell. *(Telo, Banyak and Bangkaru resolved ✓ — archipelagos shelter themselves; now counted at 27)*
-**Botubarani 26** — whale sharks peak **May–July**; gone by August
-**Mata Jitu 26** (Moyo) — flow weakens in the dry season
-**Jogan 26 · Banyu Tibo 26** — Java's south coast; same swell
-**Pulau Pisang 26 · Pantai Komang 26** (Enggano) · **Rondo 26**
+**Mentawai 26 · Nias 24** — ✗ **RESOLVED NO.** August is the **heart of the Mentawai surf season** — peak dry season, **overhead to double-overhead Indian Ocean swell**, and the southeast trades blow *offshore*, which grooms the wave faces rather than flattening them. It is also the busiest month. This is the opposite of Telo and Banyak, where sources described protected channels and frequent calms. **Same ocean, different reading — because here the sources say peak swell explicitly.** Water 27–29°C year-round, which is not the problem. *(Telo, Banyak and Bangkaru resolved ✓ — archipelagos shelter themselves; now counted at 27)*
+**Botubarani 26** — ✗ **RESOLVED NO.** The whale sharks *are* the water body; they peak **May–July** and are gone by August
+**Mata Jitu 26** (Moyo) — ✗ **RESOLVED NO.** A terraced waterfall whose flow weakens in the dry season, and **August is peak dry**
+**Jogan 26 · Banyu Tibo 26** — ✗ **RESOLVED NO.** Java's south coast faces the open Indian Ocean with no outer chain to break the swell. Jogan is a waterfall *onto* the beach — access is swell-dependent by definition
+**Pulau Pisang 26 · Pantai Komang 26** (Enggano) — ✗ **RESOLVED NO.** Enggano is the furthest-out link in the Sumatran outer chain with nothing seaward of it, reached by a weekly ferry from Bengkulu. Nothing shelters it.
+**Rondo 26** — ✗ **RESOLVED NO.** Indonesia's northernmost point, off Weh's tip, exposed on all sides with strong through-currents.
+**Sombu 26** (Wangi-Wangi, Wakatobi) — ✓ **RESOLVED YES (by inference, flagged).** On Wangi-Wangi's sheltered side, the same island as Gua Kontamale. **Mechanism, not a source — verify before use.**
+**Tanjung Karang 26** (Donggala) — ✓ **RESOLVED YES, VERIFIED.** The 2018 Palu–Donggala tsunami concern is answered: **Prince John Dive Resort is trading in 2025–26**, ranked #1 of 1 in Donggala, taking bookings, with **snorkelling and diving on the reef directly in front**. Donggala faces west into the Makassar Strait, so the southeast trades do not reach it.
 
-**Kali Biru 27** *(Warsambin, Teluk Mayalibit, Waigeo)* — **reclassified from ✗ to ⚠.**
+**Kali Biru 27** *(Warsambin, Teluk Mayalibit, Waigeo)* — **stays ⚠ for August.** Reclassified from ✗ earlier.
 It is freshwater, inside a sheltered inner bay, reached by road from Waisai
 (~1 hr) then a 10-min boat and 15-min jungle walk — **so the southeast trade
 winds that close Raja Ampat's dive sites do not apply to it.** The Sorong–Waisai
