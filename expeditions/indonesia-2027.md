@@ -26,7 +26,7 @@ Anything below 7 in any category is cut regardless of total.
 
 ---
 
-**Count at 27+ and ticked: 57.** *(Kelimutu removed — Water 1, the crater lakes cannot be swum.)*
+**Count at 27+ and ticked: 56.** *(Pulau Anano cut 27 Sep 2026 — see below.)* *(Kelimutu removed — Water 1, the crater lakes cannot be swum.)*
 
 ## THE 28s — SIX
 
@@ -41,9 +41,9 @@ Anything below 7 in any category is cut regardless of total.
 
 ---
 
-## THE 27s — FIFTY-ONE
+## THE 27s — FIFTY
 
-### Sulawesi (19)
+### Sulawesi (18)
 | | Water body | Note |
 |---|---|---|
 | ✓✓ | **Laguna Mahumalalang** (Labengki) | The Blue Lagoon; favourite of foreign divers |
@@ -205,6 +205,46 @@ pale rock, and **northern Raja Ampat's clear-sky season is October–April
 (best Nov–March)**. Overcast, it is just a river. A gamble, not a plan.
 Combines with **Friwen Wall** and the **Mangrove Tunnel** *(the latter not yet
 catalogued)*.
+
+## RESOLVED AND CUT — 27 September 2026
+
+**Pulau Anano 27 — ✗ CUT.** It sits **west of Pulau Runduma and faces directly
+into the Banda Sea**, and it is **~4 hours by boat from Tomia** (route:
+Matahora airport, Wangi-Wangi → Wakatobi port → Tomia → Anano; a national
+park speedboat is faster). **That is an eight-hour round trip of open Banda
+Sea in the season of 20–30 knot southeast trades.** Identical in shape to
+Takabonerate, and the answer is the same. Green and hawksbill turtles nest
+there and it is genuinely wonderful — in April or October.
+
+**Takabonerate 28 — ✗ CUT, on access rather than season.** The sources
+contradict each other on August: one gives **Mar–mid-May and mid-Sep–Dec**,
+another gives **Apr–May and Aug–Nov**. So August may well be in season. It
+is cut anyway because the journey is **Makassar → bus 5 hrs → ferry 2 hrs →
+car 3 hrs → boat 5 hrs ≈ 15 hours one way**, or 4 hours by rented boat from
+Benteng once you are on Selayar. **Two travel days each way inside a ten-day
+trip, with ferries that suspend in bad weather.** The highest-scoring thing
+in the country that is simply too far.
+
+**Kali Biru 27 — ✗ CUT for August.** No longer left open. The disqualifier is
+**light, not sea state**: the blue is a midday-sun effect on pale rock, and
+northern Raja Ampat's clear-sky season is **October–April (best Nov–March)**.
+Overcast it is just a river. Keep it for an October Raja Ampat trip, where it
+is excellent.
+
+**Mursala 27 — ✗ CUT.** Access to the waterfall is explicitly wave-dependent
+and no reliable season data was found.
+
+**Moromaho · Tolandono · Sawa · North & South Lintea · Tokobao · Kampenaune ·
+Kentiole — UNSCORABLE, not cut.** All seven appear in the Wakatobi National
+Park island list and in dive-operator site lists, and nowhere else in English
+or Indonesian. **Tolandono is separately a Discovery cut** — it is the home
+island of Wakatobi Dive Resort, a private resort with its own airstrip and
+charter flights from Bali; world-class house reef behind a gate. **Moromaho**
+is the remote southeastern outlier and the one most likely to be worth
+something if anything is ever written about it.
+
+> **The ⚠ column is now empty.** Every triangle in the catalogue has been
+> resolved to ✓ or ✗. Nothing is left pending.
 
 ## CLOSED IN AUGUST
 
