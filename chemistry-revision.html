@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>body{margin:0}</style>
+</head>
+<body>
+<title>Chemistry KO Revision</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+  :root {
+    --bg: #eef2f1;
+    --surface: #ffffff;
+    --surface-2: #f6f8f8;
+    --ink: #14201e;
+    --muted: #55625f;
+    --line: #d3dbd9;
+    --accent: #1b6ca8;
+    --accent-ink: #ffffff;
+    --accent-soft: #deeaf5;
+    --good: #2b7a4b;
+    --good-soft: #e1f1e7;
+    --bad: #b0442c;
+    --bad-soft: #f8e4de;
+    --tag: #7a4ea3;
+    --tag-soft: #efe6f7;
+    --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+    --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0e1514;
+      --surface: #16201f;
+      --surface-2: #1b2726;
+      --ink: #e4ebe9;
+      --muted: #98a6a2;
+      --line: #2b3836;
+      --accent: #6cb2e8;
+      --accent-ink: #0b1a26;
+      --accent-soft: #1a2d3d;
+      --good: #6cc792;
+      --good-soft: #17301f;
+      --bad: #ee8f76;
+      --bad-soft: #3a1f18;
+      --tag: #c7a2ec;
+      --tag-soft: #2c2138;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0e1514;
+    --surface: #16201f;
+    --surface-2: #1b2726;
+    --ink: #e4ebe9;
+    --muted: #98a6a2;
+    --line: #2b3836;
+    --accent: #6cb2e8;
+    --accent-ink: #0b1a26;
+    --accent-soft: #1a2d3d;
+    --good: #6cc792;
+    --good-soft: #17301f;
+    --bad: #ee8f76;
+    --bad-soft: #3a1f18;
+    --tag: #c7a2ec;
+    --tag-soft: #2c2138;
+  }
+
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; }
+  h1, h2, h3 { font-family: var(--display); text-wrap: balance; margin: 0; line-height: 1.15; }
+  h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); font-weight: 800; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.5rem, 3.6vw, 2rem); font-weight: 800; letter-spacing: -0.01em; }
+  h3 { font-size: 1.15rem; font-weight: 700; }
+  sub, sup { font-size: 0.72em; line-height: 0; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  .top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px; }
+  .top p { margin: 6px 0 0; color: var(--muted); max-width: 58ch; }
+  .eyebrow { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; }
+  .btn {
+    border: 1px solid var(--line); background: var(--surface); border-radius: 8px;
+    padding: 9px 14px; font-weight: 600; font-size: 0.95rem;
+  }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+  /* Periodic-table style KO tiles */
+  .table { margin-top: 24px; display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 8px; }
+  .tile {
+    position: relative; text-align: left; background: var(--surface); border: 1.5px solid var(--line);
+    border-radius: 6px; padding: 8px 9px 10px; min-height: 108px;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 4px;
+  }
+  .tile:hover { border-color: var(--accent); }
+  .tile[aria-current="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+  .tile .num { font-family: var(--mono); font-size: 0.72rem; font-weight: 700; }
+  .tile .sym { font-family: var(--display); font-weight: 800; font-size: 1.9rem; line-height: 1; }
+  .tile .nm { font-size: 0.78rem; line-height: 1.2; font-weight: 600; }
+  .tile .bar { height: 4px; border-radius: 2px; background: var(--line); overflow: hidden; }
+  .tile .bar i { display: block; height: 100%; background: var(--good); width: 0; transition: width .3s; }
+  .tile[aria-current="true"] .bar { background: color-mix(in srgb, var(--accent-ink) 30%, transparent); }
+  .tile[aria-current="true"] .bar i { background: var(--accent-ink); }
+  @media (max-width: 820px) { .table { grid-template-columns: repeat(3, minmax(0, 1fr)); } .tile { min-height: 96px; } }
+
+  .legend { margin-top: 10px; font-size: 0.85rem; color: var(--muted); font-family: var(--mono); }
+
+  /* Topic view */
+  .topic { margin-top: 36px; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 28px; align-items: start; }
+  @media (max-width: 900px) { .topic { grid-template-columns: minmax(0, 1fr); } }
+  .topic-head { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; }
+  .topic-head .eyebrow { font-size: 0.8rem; }
+  .notes { display: grid; gap: 14px; }
+  .note { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  .note h3 { margin-bottom: 8px; }
+  .note h3 .tag { margin-left: 6px; vertical-align: middle; }
+  .note ul { margin: 0; padding-left: 1.15em; display: grid; gap: 5px; }
+  .note p { margin: 0 0 8px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note b { font-weight: 700; }
+  .eq {
+    font-family: var(--mono); font-size: 0.88rem; background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: 6px; padding: 8px 10px; margin: 8px 0; overflow-x: auto; white-space: nowrap;
+  }
+  .tip { margin-top: 10px; padding: 9px 12px; border-radius: 6px; background: var(--accent-soft); font-size: 0.95rem; }
+  .tip::before { content: "Exam tip · "; font-weight: 700; color: var(--accent); }
+  .tag { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; background: var(--tag-soft); color: var(--tag); font-weight: 700; }
+  .tbl { overflow-x: auto; margin: 6px 0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; min-width: 460px; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+
+  /* Flashcards */
+  .cards { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); display: grid; gap: 10px; }
+  @media (max-width: 900px) { .cards { position: static; } }
+  .cards-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .cards-head span { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+  .card { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+  .card[data-state="known"] { border-left-color: var(--good); }
+  .card[data-state="again"] { border-left-color: var(--bad); }
+  .card .q { font-weight: 600; }
+  .card .a { margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--line); }
+  .card .row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .mini { border: 1px solid var(--line); background: var(--surface-2); border-radius: 6px; padding: 5px 10px; font-size: 0.85rem; font-weight: 600; }
+  .mini.good { background: var(--good-soft); color: var(--good); border-color: transparent; }
+  .mini.bad { background: var(--bad-soft); color: var(--bad); border-color: transparent; }
+  .cards-scroll { display: grid; gap: 10px; max-height: calc(100vh - 120px); overflow-y: auto; padding-right: 2px; }
+  @media (max-width: 900px) { .cards-scroll { max-height: none; overflow: visible; } }
+
+  /* Quiz overlay */
+  .quiz { margin-top: 36px; background: var(--surface); border: 1.5px solid var(--accent); border-radius: 12px; padding: 20px; }
+  .quiz .meta { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .quiz .qbig { font-family: var(--display); font-size: clamp(1.2rem, 3vw, 1.5rem); font-weight: 700; margin: 12px 0; max-width: 60ch; }
+  .quiz .abig { background: var(--surface-2); border-radius: 8px; padding: 12px 14px; max-width: 70ch; }
+  .quiz .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .score { font-family: var(--display); font-size: 3rem; font-weight: 800; }
+
+  @media (prefers-reduced-motion: reduce) { .tile .bar i { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow">GCSE Chemistry · Knowledge Organisers</div>
+      <h1>Chemistry KO Revision</h1>
+      <p>Pick a KO tile to read the key facts, then test yourself with the flashcards. Mark each card so you know what to go back to.</p>
+    </div>
+    <div class="actions">
+      <button class="btn primary" id="mixed-all" type="button">Mixed quiz (10)</button>
+      <button class="btn" id="mixed-weak" type="button">Quiz my weak cards</button>
+      <button class="btn" id="reset" type="button">Reset progress</button>
+    </div>
+  </header>
+
+  <nav class="table" id="tiles" aria-label="Knowledge organisers"></nav>
+  <div class="legend" id="legend"></div>
+
+  <section class="quiz" id="quiz" hidden></section>
+  <section class="topic" id="topic"></section>
+</div>
+
+<script>
+const T = [
+{
+  id: "ko1", sym: "Pa", name: "Particles",
+  notes: [
+    { h: "The three states of matter", html: `
+      <div class="tbl"><table>
+        <tr><th>State</th><th>Arrangement</th><th>Movement</th><th>Energy</th></tr>
+        <tr><td><b>Solid</b></td><td>Regular pattern, touching</td><td>Vibrate about fixed positions</td><td>Lowest</td></tr>
+        <tr><td><b>Liquid</b></td><td>Random, still touching</td><td>Move around each other</td><td>Medium</td></tr>
+        <tr><td><b>Gas</b></td><td>Random, far apart</td><td>Move quickly in all directions</td><td>Highest</td></tr>
+      </table></div>
+      <p>Solids have a fixed shape and volume. Liquids have a fixed volume but take the shape of their container. Gases fill their container and can be compressed.</p>` },
+    { h: "Changes of state", html: `<ul>
+      <li><b>Melting</b> solid → liquid, <b>freezing</b> liquid → solid.</li>
+      <li><b>Boiling / evaporating</b> liquid → gas, <b>condensing</b> gas → liquid.</li>
+      <li><b>Sublimation</b> solid → gas directly (e.g. dry ice, iodine).</li>
+      <li>Changes of state are <b>physical</b> changes: no new substance forms, they are reversible and <b>mass is conserved</b>.</li>
+      <li>To melt or boil, energy must overcome the <b>forces between particles</b>. Stronger forces mean higher melting and boiling points.</li>
+    </ul>` },
+    { h: "Predicting a state from data", html: `<ul>
+      <li>Below the melting point → <b>solid</b>.</li>
+      <li>Between melting point and boiling point → <b>liquid</b>.</li>
+      <li>Above the boiling point → <b>gas</b>.</li>
+    </ul>
+    <div class="tip">Read negative numbers carefully. Bromine melts at −7 °C and boils at 59 °C, so at 25 °C it is a liquid.</div>` },
+    { h: "Diffusion, pressure and heating", html: `<ul>
+      <li><b>Diffusion</b> is the net movement of particles from a high to a low concentration. It is fastest in gases.</li>
+      <li><b>Gas pressure</b> comes from particles colliding with the walls of the container.</li>
+      <li>Heating a gas makes particles move faster, so they hit the walls <b>more often and harder</b> and pressure rises.</li>
+      <li>A <b>pure</b> substance melts and boils at one fixed temperature. A <b>mixture</b> melts over a range.</li>
+    </ul>` },
+    { h: "Limitations of the particle model", html: `<ul>
+      <li>Particles are drawn as <b>solid, inelastic spheres</b>, but atoms are mostly empty space.</li>
+      <li>It does <b>not show the forces</b> between particles.</li>
+      <li>It ignores the <b>size</b> of particles and the <b>space</b> between them.</li>
+    </ul>` }
+  ],
+  cards: [
+    ["Describe the arrangement and movement of particles in a liquid.", "Randomly arranged and touching. They move around each other."],
+    ["A substance melts at −7 °C and boils at 59 °C. What state is it at 25 °C?", "Liquid: 25 °C is above its melting point but below its boiling point."],
+    ["What is sublimation?", "A solid turning straight into a gas without becoming a liquid."],
+    ["Why does the pressure of a gas increase when it is heated in a sealed container?", "Particles gain energy and move faster, so they collide with the walls more often and with more force."],
+    ["Why does a substance with strong forces between particles have a high boiling point?", "More energy is needed to overcome the strong forces between the particles."],
+    ["Give two limitations of the simple particle model.", "Any two: particles shown as solid spheres; no forces shown between particles; ignores particle size; ignores the space between particles."],
+    ["How can melting point show whether a substance is pure?", "A pure substance melts at a sharp, fixed temperature. An impure substance melts over a range of temperatures."],
+    ["What is diffusion?", "The net movement of particles from an area of high concentration to an area of low concentration."]
+  ]
+},
+{
+  id: "ko2", sym: "At", name: "Atomic Structure",
+  notes: [
+    { h: "Inside the atom", html: `
+      <div class="tbl"><table>
+        <tr><th>Particle</th><th>Relative mass</th><th>Relative charge</th><th>Where</th></tr>
+        <tr><td>Proton</td><td>1</td><td>+1</td><td>Nucleus</td></tr>
+        <tr><td>Neutron</td><td>1</td><td>0</td><td>Nucleus</td></tr>
+        <tr><td>Electron</td><td>Very small (≈ 1/1840)</td><td>−1</td><td>Shells around nucleus</td></tr>
+      </table></div>
+      <ul>
+        <li>Atom radius ≈ <b>0.1 nm</b> (1 × 10<sup>−10</sup> m). The nucleus is about 1/10 000 of the atom's radius but holds almost all the mass.</li>
+        <li>Atoms have <b>no overall charge</b>: number of protons = number of electrons.</li>
+      </ul>` },
+    { h: "Atomic number and mass number", html: `<ul>
+      <li><b>Atomic number</b> = number of protons (bottom number).</li>
+      <li><b>Mass number</b> = protons + neutrons (top number).</li>
+      <li>Neutrons = mass number − atomic number.</li>
+    </ul>
+    <div class="eq">²³₁₁Na → 11 protons, 11 electrons, 23 − 11 = 12 neutrons</div>` },
+    { h: "Isotopes and relative atomic mass", html: `<p><b>Isotopes</b> are atoms of the same element with the same number of protons but a different number of neutrons.</p>
+    <div class="eq">A<sub>r</sub> = (mass₁ × %₁ + mass₂ × %₂) ÷ 100</div>
+    <div class="eq">Chlorine: (35 × 75 + 37 × 25) ÷ 100 = 35.5</div>` },
+    { h: "Electron shells", html: `<ul>
+      <li>Shells fill from the inside: <b>2, 8, 8</b> (then the 4th shell).</li>
+      <li>Examples: C = 2,4 · O = 2,6 · Na = 2,8,1 · Cl = 2,8,7 · Ca = 2,8,8,2.</li>
+      <li>Number of shells = period. Electrons in outer shell = group.</li>
+      <li>An <b>ion</b> forms when an atom loses or gains electrons. Na → Na⁺ (2,8). Cl → Cl⁻ (2,8,8).</li>
+    </ul>` },
+    { h: "How the model of the atom developed", html: `<ul>
+      <li><b>Dalton</b> (early 1800s): atoms are tiny solid spheres that cannot be divided.</li>
+      <li><b>Thomson</b> (1897): discovered the electron → <b>plum pudding</b> model, a ball of positive charge with electrons embedded.</li>
+      <li><b>Rutherford</b> (1909–11): <b>alpha scattering</b>. Most alpha particles passed straight through (atom mostly empty space); a few were deflected or bounced back (small, dense, positive nucleus). → <b>nuclear model</b>.</li>
+      <li><b>Bohr</b>: electrons orbit the nucleus at fixed distances in <b>shells</b>.</li>
+      <li><b>Chadwick</b> (1932): proved the <b>neutron</b> exists.</li>
+    </ul>
+    <div class="tip">New experimental evidence is why models change. Say what the evidence was, not just the name.</div>` },
+    { h: "Elements, compounds, mixtures and separating", html: `<ul>
+      <li><b>Element</b>: one type of atom. <b>Compound</b>: two or more elements chemically bonded in fixed proportions. <b>Mixture</b>: not chemically joined, can be separated by physical methods.</li>
+      <li><b>Filtration</b>: insoluble solid from a liquid (sand from water).</li>
+      <li><b>Crystallisation</b>: soluble solid from a solution (salt from salt water).</li>
+      <li><b>Simple distillation</b>: solvent from a solution (pure water from sea water).</li>
+      <li><b>Fractional distillation</b>: liquids with different boiling points (ethanol and water; crude oil).</li>
+      <li><b>Chromatography</b>: different dissolved substances, e.g. dyes in ink.</li>
+    </ul>` }
+  ],
+  cards: [
+    ["Give the relative mass and charge of a proton, neutron and electron.", "Proton: mass 1, charge +1. Neutron: mass 1, charge 0. Electron: very small mass, charge −1."],
+    ["How many protons, neutrons and electrons are in ³⁵₁₇Cl?", "17 protons, 18 neutrons (35 − 17), 17 electrons."],
+    ["What is an isotope?", "Atoms of the same element with the same number of protons but different numbers of neutrons."],
+    ["Chlorine is 75% Cl-35 and 25% Cl-37. Calculate its relative atomic mass.", "(35 × 75 + 37 × 25) ÷ 100 = 35.5"],
+    ["Write the electron configuration of sodium (atomic number 11).", "2,8,1"],
+    ["What did Rutherford's alpha scattering experiment show?", "Most alpha particles went straight through, so the atom is mostly empty space. A few were deflected, so the mass and positive charge are concentrated in a small nucleus."],
+    ["Which model came before the nuclear model, and what did it look like?", "The plum pudding model (Thomson): a ball of positive charge with negative electrons embedded in it."],
+    ["Who discovered the neutron?", "James Chadwick (1932)."],
+    ["How would you get pure water from salty water?", "Simple distillation: boil the water, then cool and condense the vapour. The salt stays behind."],
+    ["Why does an atom have no overall charge?", "It has the same number of protons (+) as electrons (−)."]
+  ]
+},
+{
+  id: "ko3", sym: "Pt", name: "Periodic Table",
+  notes: [
+    { h: "How it is organised", html: `<ul>
+      <li>Elements are in order of <b>atomic number</b>.</li>
+      <li><b>Groups</b> (columns): same number of outer-shell electrons → similar reactions.</li>
+      <li><b>Periods</b> (rows): same number of electron shells.</li>
+      <li><b>Metals</b> are on the left and centre and form <b>positive</b> ions. <b>Non-metals</b> are on the right and do not usually form positive ions.</li>
+    </ul>` },
+    { h: "Mendeleev's table", html: `<ul>
+      <li>Ordered by atomic weight but <b>swapped some elements</b> (e.g. iodine and tellurium) so elements with similar properties lined up in groups.</li>
+      <li>Left <b>gaps</b> for undiscovered elements and <b>predicted</b> their properties. When germanium and gallium were found and matched, the table was accepted.</li>
+      <li>The discovery of protons and <b>isotopes</b> later explained why ordering by atomic weight was not always right.</li>
+    </ul>` },
+    { h: "Group 1: alkali metals", html: `<ul>
+      <li>1 outer electron. Soft, low density, stored in oil.</li>
+      <li>React with water: <b>metal + water → metal hydroxide + hydrogen</b>. The solution is alkaline.</li>
+      <li>Lithium fizzes steadily. Sodium melts into a ball and whizzes around. Potassium burns with a <b>lilac</b> flame.</li>
+      <li><b>More reactive down the group</b>: the outer electron is further from the nucleus with more shielding, so it is attracted less and lost more easily.</li>
+    </ul>
+    <div class="eq">2Na(s) + 2H₂O(l) → 2NaOH(aq) + H₂(g)</div>` },
+    { h: "Group 7: halogens", html: `
+      <div class="tbl"><table>
+        <tr><th>Halogen</th><th>At room temp</th></tr>
+        <tr><td>Fluorine F₂</td><td>Pale yellow gas</td></tr>
+        <tr><td>Chlorine Cl₂</td><td>Green gas</td></tr>
+        <tr><td>Bromine Br₂</td><td>Red-brown liquid</td></tr>
+        <tr><td>Iodine I₂</td><td>Grey solid (purple vapour)</td></tr>
+      </table></div>
+      <ul>
+        <li>7 outer electrons, exist as <b>diatomic</b> molecules. Melting and boiling points <b>increase</b> down the group.</li>
+        <li><b>Less reactive down the group</b>: the outer shell is further from the nucleus, so it is harder to attract an extra electron.</li>
+        <li><b>Displacement</b>: a more reactive halogen displaces a less reactive one from its salt solution.</li>
+      </ul>
+      <div class="eq">Cl₂ + 2KBr → 2KCl + Br₂ (solution turns orange)</div>` },
+    { h: "Group 0: noble gases", html: `<ul>
+      <li><b>Full outer shell</b> (He has 2, the rest 8) so they are very <b>unreactive</b>.</li>
+      <li>Exist as single atoms (monatomic). Boiling points <b>increase</b> down the group.</li>
+    </ul>` },
+    { h: "Transition metals <span class=\"tag\">Triple</span>", html: `<ul>
+      <li>Compared to Group 1: higher melting points, higher density, stronger and harder, much less reactive.</li>
+      <li>Form ions with <b>different charges</b> (Fe²⁺, Fe³⁺), form <b>coloured</b> compounds, and are useful <b>catalysts</b> (iron in the Haber process).</li>
+    </ul>` }
+  ],
+  cards: [
+    ["How are elements arranged in the modern periodic table?", "In order of increasing atomic number (proton number)."],
+    ["What do elements in the same group have in common?", "The same number of electrons in their outer shell, so they react in similar ways."],
+    ["Give two things Mendeleev did that made his table successful.", "He left gaps for undiscovered elements and predicted their properties. He also swapped the order of some elements so that similar elements lined up."],
+    ["Write the word equation for potassium reacting with water.", "Potassium + water → potassium hydroxide + hydrogen"],
+    ["Explain why reactivity increases down Group 1.", "Atoms get bigger, so the outer electron is further from the nucleus and more shielded. It is less strongly attracted, so it is lost more easily."],
+    ["Explain why reactivity decreases down Group 7.", "The outer shell is further from the nucleus with more shielding, so it is harder to attract and gain an extra electron."],
+    ["What happens when chlorine water is added to potassium iodide solution?", "Chlorine displaces iodine because it is more reactive. The solution turns brown. Cl₂ + 2KI → 2KCl + I₂"],
+    ["Why are noble gases unreactive?", "They have a full outer shell of electrons, so they do not need to gain, lose or share electrons."],
+    ["What is the state and colour of bromine at room temperature?", "Red-brown liquid."],
+    ["Give three properties of transition metals that Group 1 metals do not have.", "Any three: form coloured compounds; form ions with different charges; act as catalysts; high melting points; high density; hard and strong."]
+  ]
+},
+{
+  id: "ko4", sym: "Bo", name: "Bonding",
+  notes: [
+    { h: "Ionic bonding: metal + non-metal", html: `<ul>
+      <li>Electrons are <b>transferred</b> from the metal to the non-metal. Both end with a full outer shell.</li>
+      <li>Metal → <b>positive</b> ion. Non-metal → <b>negative</b> ion.</li>
+      <li>Ions are held by strong <b>electrostatic attraction</b> in a <b>giant ionic lattice</b>.</li>
+      <li>Charges: Group 1 = +1, Group 2 = +2, Group 3 = +3, Group 6 = −2, Group 7 = −1.</li>
+    </ul>
+    <div class="eq">Mg (2,8,2) gives 2 e⁻ to O (2,6) → Mg²⁺ + O²⁻ → MgO</div>
+    <div class="tip">In a dot-and-cross diagram, draw the ions in square brackets with the charge top right, and show the outer shell only unless asked.</div>` },
+    { h: "Covalent bonding: non-metal + non-metal", html: `<ul>
+      <li>Atoms <b>share pairs</b> of electrons. Each shared pair is one covalent bond.</li>
+      <li>Common molecules: H₂, Cl₂, O₂ (double bond), N₂ (triple bond), H₂O, NH₃, CH₄, HCl.</li>
+      <li>Number of bonds usually = 8 − group number (H makes 1).</li>
+    </ul>` },
+    { h: "Simple molecules vs giant covalent structures", html: `
+      <p><b>Simple molecules</b>: covalent bonds inside the molecule are strong, but the <b>intermolecular forces</b> between molecules are weak. Only these weak forces break on melting or boiling, so melting and boiling points are low. They do not conduct electricity (no charged particles).</p>
+      <p><b>Giant covalent</b>: very many atoms all joined by strong covalent bonds.</p>
+      <ul>
+        <li><b>Diamond</b>: each C bonded to 4 others. Very hard, very high melting point, does not conduct.</li>
+        <li><b>Graphite</b>: each C bonded to 3 others in layers. Weak forces between layers so it is soft and slippery. One <b>delocalised electron</b> per atom so it conducts.</li>
+        <li><b>Silicon dioxide</b> (sand): giant covalent, high melting point.</li>
+        <li><b>Graphene</b>: a single layer of graphite. <b>Fullerenes</b> (e.g. C₆₀) and <b>nanotubes</b> are hollow carbon structures.</li>
+      </ul>` },
+    { h: "Metallic bonding", html: `<ul>
+      <li>A lattice of <b>positive metal ions</b> in a <b>sea of delocalised electrons</b>. Strong electrostatic attraction between them.</li>
+      <li>Good conductors of electricity and heat: delocalised electrons move through the structure.</li>
+      <li><b>Malleable</b>: layers of ions slide over each other.</li>
+      <li><b>Alloys</b> are harder: atoms of a different size distort the layers so they cannot slide easily.</li>
+    </ul>` }
+  ],
+  cards: [
+    ["What happens to electrons in ionic bonding?", "They are transferred from the metal atom to the non-metal atom, forming positive and negative ions."],
+    ["What is a covalent bond?", "A shared pair of electrons between two non-metal atoms."],
+    ["What are the ions in magnesium oxide?", "Mg²⁺ and O²⁻. Magnesium loses 2 electrons and oxygen gains 2."],
+    ["What is the formula of aluminium oxide?", "Al₂O₃. Al³⁺ and O²⁻: two Al³⁺ (+6) balance three O²⁻ (−6)."],
+    ["Why does sodium chloride have a high melting point?", "It is a giant ionic lattice with strong electrostatic forces between oppositely charged ions in all directions. Lots of energy is needed to break them."],
+    ["Why do simple molecular substances have low boiling points?", "The intermolecular forces between molecules are weak, so little energy is needed. The covalent bonds do not break."],
+    ["Why can graphite conduct electricity but diamond cannot?", "Each carbon in graphite forms 3 bonds, leaving one delocalised electron that can move. In diamond every outer electron is used in 4 bonds."],
+    ["Why is graphite soft and slippery?", "It is made of layers with only weak forces between them, so the layers slide over each other."],
+    ["Describe metallic bonding.", "Positive metal ions arranged in layers, surrounded by a sea of delocalised electrons, held by strong electrostatic attraction."],
+    ["Why are alloys harder than pure metals?", "Different sized atoms distort the layers, so the layers cannot slide over each other as easily."]
+  ]
+},
+{
+  id: "ko5", sym: "Pm", name: "Properties of Matter",
+  notes: [
+    { h: "Structure decides properties", html: `
+      <div class="tbl"><table>
+        <tr><th>Structure</th><th>Melting point</th><th>Conducts?</th><th>Example</th></tr>
+        <tr><td>Giant ionic</td><td>High</td><td>Only when molten or dissolved (ions free to move)</td><td>NaCl, MgO</td></tr>
+        <tr><td>Simple molecular</td><td>Low</td><td>No</td><td>H₂O, CO₂, CH₄</td></tr>
+        <tr><td>Giant covalent</td><td>Very high</td><td>No (except graphite, graphene)</td><td>Diamond, SiO₂</td></tr>
+        <tr><td>Metallic</td><td>Usually high</td><td>Yes, as solid and liquid</td><td>Cu, Fe, Al</td></tr>
+      </table></div>
+      <div class="tip">"Molecules" only for simple covalent substances. Never say ionic compounds have "intermolecular forces" or "molecules".</div>` },
+    { h: "State symbols", html: `<ul>
+      <li><b>(s)</b> solid, <b>(l)</b> liquid, <b>(g)</b> gas, <b>(aq)</b> aqueous = dissolved in water.</li>
+      <li>The larger the molecules, the stronger the intermolecular forces and the higher the boiling point.</li>
+    </ul>` },
+    { h: "Polymers", html: `<ul>
+      <li>Very large molecules made of repeating units joined by strong covalent bonds.</li>
+      <li>Intermolecular forces between chains are relatively strong because the molecules are large, so most polymers are solid at room temperature.</li>
+      <li><span class="tag">Triple</span> <b>Thermosoftening</b> polymers melt on heating (no cross-links). <b>Thermosetting</b> polymers do not melt (cross-links between chains).</li>
+    </ul>` },
+    { h: "Nanoparticles <span class=\"tag\">Triple</span>", html: `<ul>
+      <li><b>Nanoparticles</b> are 1–100 nm across (a few hundred atoms). 1 nm = 1 × 10<sup>−9</sup> m.</li>
+      <li>They have a very high <b>surface area to volume ratio</b>. If a cube's side falls by 10×, its SA:V rises by 10×.</li>
+      <li>Uses: catalysts, sun creams, medicine delivery, antibacterial silver in wound dressings, electronics.</li>
+      <li>Risks: may be breathed in or absorbed into cells, and long-term effects are not fully known.</li>
+    </ul>` },
+    { h: "Metals and alloys in use", html: `<ul>
+      <li>Pure metals are often too soft, so they are made into alloys: <b>steel</b> (iron + carbon), <b>brass</b> (copper + zinc), <b>bronze</b> (copper + tin).</li>
+      <li>Copper for wires (conducts, ductile). Aluminium for aircraft (low density, resists corrosion).</li>
+    </ul>` }
+  ],
+  cards: [
+    ["Why do ionic compounds conduct electricity when molten or dissolved, but not when solid?", "When molten or dissolved the ions are free to move and carry charge. In a solid they are fixed in the lattice."],
+    ["What does the state symbol (aq) mean?", "Aqueous: dissolved in water."],
+    ["Why do metals conduct electricity?", "They have delocalised electrons that can move through the structure and carry charge."],
+    ["Which type of structure has a very high melting point and does not conduct (apart from graphite)?", "Giant covalent (e.g. diamond, silicon dioxide)."],
+    ["What size are nanoparticles?", "Between 1 and 100 nanometres across."],
+    ["Why are nanoparticles useful as catalysts?", "They have a very high surface area to volume ratio, so more particles are exposed to react. Less material is needed."],
+    ["Give one risk of using nanoparticles.", "They may be breathed in or absorbed into body cells, and their long-term effects are not fully understood."],
+    ["What is the difference between thermosoftening and thermosetting polymers?", "Thermosoftening polymers have no cross-links and melt when heated. Thermosetting polymers have cross-links between chains and do not melt."],
+    ["Why is methane a gas at room temperature?", "It is a small simple molecule with weak intermolecular forces, so it has a very low boiling point."]
+  ]
+},
+{
+  id: "ko6", sym: "Qc", name: "Quantitative Chemistry",
+  notes: [
+    { h: "Conservation of mass", html: `<ul>
+      <li>No atoms are made or lost in a reaction: total mass of reactants = total mass of products.</li>
+      <li>If mass seems to <b>decrease</b>, a gas has escaped (e.g. CO₂ from heating a carbonate). If it <b>increases</b>, a gas from the air has been gained (e.g. oxygen when magnesium burns).</li>
+    </ul>` },
+    { h: "Relative formula mass (M<sub>r</sub>)", html: `<p>Add up the relative atomic masses (A<sub>r</sub>) of every atom in the formula.</p>
+      <div class="eq">CO₂ = 12 + (2 × 16) = 44</div>
+      <div class="eq">H₂SO₄ = (2 × 1) + 32 + (4 × 16) = 98</div>
+      <div class="eq">CaCO₃ = 40 + 12 + (3 × 16) = 100</div>
+      <div class="eq">% by mass of element = (A<sub>r</sub> × number of atoms) ÷ M<sub>r</sub> × 100</div>` },
+    { h: "Moles", html: `<ul>
+      <li>One mole contains <b>6.02 × 10<sup>23</sup></b> particles (Avogadro constant).</li>
+      <li>One mole of a substance has a mass in grams equal to its A<sub>r</sub> or M<sub>r</sub>.</li>
+    </ul>
+    <div class="eq">moles = mass (g) ÷ M<sub>r</sub></div>
+    <div class="eq">Gas at room temperature and pressure: volume (dm³) = moles × 24</div>` },
+    { h: "Reacting mass calculations", html: `<p>Steps: 1) moles of what you know, 2) use the ratio in the balanced equation, 3) convert moles to mass.</p>
+      <div class="eq">CaCO₃ → CaO + CO₂. Mass of CO₂ from 10 g CaCO₃?</div>
+      <div class="eq">10 ÷ 100 = 0.1 mol CaCO₃ → 0.1 mol CO₂ → 0.1 × 44 = 4.4 g</div>
+      <p>The <b>limiting reactant</b> is the one that is used up first. It sets how much product forms. The other reactant is <b>in excess</b>.</p>` },
+    { h: "Concentration", html: `
+      <div class="eq">concentration (g/dm³) = mass (g) ÷ volume (dm³)</div>
+      <div class="eq">concentration (mol/dm³) = moles ÷ volume (dm³)</div>
+      <p>1 dm³ = 1000 cm³. To change cm³ to dm³, divide by 1000.</p>` },
+    { h: "Yield and atom economy <span class=\"tag\">Triple</span>", html: `
+      <div class="eq">% yield = actual mass ÷ theoretical mass × 100</div>
+      <div class="eq">atom economy = M<sub>r</sub> of useful product ÷ total M<sub>r</sub> of reactants × 100</div>
+      <p>Yield is less than 100% because the reaction may be reversible, product is lost when separating, or side reactions happen. A high atom economy wastes fewer atoms, which is better for sustainability.</p>` }
+  ],
+  cards: [
+    ["Calculate the M<sub>r</sub> of magnesium oxide, MgO. (Mg = 24, O = 16)", "24 + 16 = 40"],
+    ["How many moles are in 88 g of CO₂? (M<sub>r</sub> = 44)", "88 ÷ 44 = 2 mol"],
+    ["5 g of salt is dissolved to make 250 cm³ of solution. What is the concentration in g/dm³?", "250 cm³ = 0.25 dm³. 5 ÷ 0.25 = 20 g/dm³"],
+    ["2Mg + O₂ → 2MgO. What mass of MgO forms from 12 g of Mg? (Mg = 24, O = 16)", "12 ÷ 24 = 0.5 mol Mg. Ratio 2:2, so 0.5 mol MgO. 0.5 × 40 = 20 g"],
+    ["Why does the mass go down when calcium carbonate is heated in an open tube?", "Carbon dioxide gas is produced and escapes into the air."],
+    ["Calculate the percentage by mass of oxygen in water, H₂O. (H = 1, O = 16)", "16 ÷ 18 × 100 = 88.9%"],
+    ["What is a limiting reactant?", "The reactant that is completely used up first. It limits the amount of product made."],
+    ["The theoretical yield is 20 g but you make 15 g. What is the percentage yield?", "15 ÷ 20 × 100 = 75%"],
+    ["How many particles are in one mole?", "6.02 × 10²³ (the Avogadro constant)."],
+    ["What volume does 0.5 mol of any gas take up at room temperature and pressure?", "0.5 × 24 = 12 dm³"]
+  ]
+},
+{
+  id: "ko7", sym: "Or", name: "Organic Chemistry",
+  notes: [
+    { h: "Crude oil and alkanes", html: `<ul>
+      <li><b>Crude oil</b> is a finite resource formed from the remains of ancient plankton buried in mud. It is a mixture of mostly <b>hydrocarbons</b> (compounds of hydrogen and carbon only).</li>
+      <li>Most are <b>alkanes</b>: general formula <b>C<sub>n</sub>H<sub>2n+2</sub></b>. They are <b>saturated</b> (single C–C bonds only).</li>
+      <li>First four: <b>methane</b> CH₄, <b>ethane</b> C₂H₆, <b>propane</b> C₃H₈, <b>butane</b> C₄H₁₀. Memory aid: <i>Mice Eat Peanut Butter</i>.</li>
+    </ul>` },
+    { h: "Fractional distillation", html: `<ul>
+      <li>Crude oil is heated until it evaporates. The vapour enters a column that is <b>hot at the bottom, cooler at the top</b>.</li>
+      <li>Hydrocarbons <b>condense</b> at the level where the temperature matches their boiling point and are collected as <b>fractions</b>.</li>
+      <li>Top to bottom: refinery gases, petrol, kerosene, diesel, heavy fuel oil, bitumen.</li>
+    </ul>` },
+    { h: "Trends with chain length", html: `
+      <div class="tbl"><table>
+        <tr><th>As chains get longer</th><th>Trend</th></tr>
+        <tr><td>Boiling point</td><td>Higher</td></tr>
+        <tr><td>Viscosity (thickness)</td><td>Higher</td></tr>
+        <tr><td>Flammability</td><td>Lower (harder to ignite)</td></tr>
+        <tr><td>Volatility</td><td>Lower</td></tr>
+      </table></div>` },
+    { h: "Combustion", html: `
+      <div class="eq">Complete: hydrocarbon + oxygen → carbon dioxide + water</div>
+      <div class="eq">CH₄ + 2O₂ → CO₂ + 2H₂O</div>
+      <p><b>Incomplete</b> combustion (not enough oxygen) makes <b>carbon monoxide</b>, a toxic gas, and <b>soot</b> (carbon).</p>` },
+    { h: "Cracking and alkenes", html: `<ul>
+      <li><b>Cracking</b> breaks long-chain alkanes into shorter alkanes and <b>alkenes</b>. It is <b>thermal decomposition</b>.</li>
+      <li>Catalytic cracking: hot vapour over a hot catalyst (aluminium oxide / zeolite). Steam cracking: mix with steam at a very high temperature.</li>
+      <li>Why? There is more <b>demand</b> for short chains (petrol) than supply, and alkenes are used to make <b>polymers</b>.</li>
+      <li><b>Alkenes</b>: general formula <b>C<sub>n</sub>H<sub>2n</sub></b>, have a C=C double bond, <b>unsaturated</b>. Ethene C₂H₄, propene C₃H₆.</li>
+    </ul>
+    <div class="eq">C₁₀H₂₂ → C₈H₁₈ + C₂H₄</div>
+    <div class="tip">Test for an alkene: add <b>bromine water</b>. It turns from <b>orange to colourless</b>. An alkane leaves it orange.</div>` },
+    { h: "Alcohols, acids and polymers <span class=\"tag\">Triple</span>", html: `<ul>
+      <li><b>Alcohols</b> contain –OH: methanol, ethanol, propanol, butanol. Ethanol is made by <b>fermentation</b> of sugar with yeast.</li>
+      <li><b>Carboxylic acids</b> contain –COOH, e.g. ethanoic acid (vinegar). Weak acids.</li>
+      <li>Alcohol + carboxylic acid → <b>ester</b> + water (sweet smelling).</li>
+      <li><b>Addition polymers</b> form from alkenes, e.g. many ethene → poly(ethene).</li>
+    </ul>` }
+  ],
+  cards: [
+    ["What is a hydrocarbon?", "A compound made of hydrogen and carbon atoms only."],
+    ["What is the general formula of the alkanes?", "C<sub>n</sub>H<sub>2n+2</sub>"],
+    ["Name and give the formula of the alkane with 3 carbon atoms.", "Propane, C₃H₈."],
+    ["Explain how fractional distillation separates crude oil.", "Oil is heated to a vapour, which rises up a column that is cooler at the top. Each fraction condenses at a different height depending on its boiling point and is collected."],
+    ["How does viscosity change as hydrocarbon chains get longer?", "It increases: longer chains are thicker and flow less easily."],
+    ["What are the products of complete combustion of a hydrocarbon?", "Carbon dioxide and water."],
+    ["Why is incomplete combustion dangerous?", "It produces carbon monoxide, which is toxic and has no colour or smell."],
+    ["What is cracking and why is it done?", "Breaking long-chain hydrocarbons into shorter, more useful ones (alkanes and alkenes). Short chains like petrol are in higher demand, and alkenes are used to make polymers."],
+    ["Describe the test for an alkene.", "Add bromine water. It changes from orange to colourless."],
+    ["What is the general formula of the alkenes and what makes them unsaturated?", "C<sub>n</sub>H<sub>2n</sub>. They have a carbon–carbon double bond."]
+  ]
+},
+{
+  id: "ko8", sym: "An", name: "Chemical Analysis",
+  notes: [
+    { h: "Pure substances and formulations", html: `<ul>
+      <li>In chemistry a <b>pure substance</b> is a single element or compound, not mixed with anything else. (In everyday use "pure" means nothing added, like pure orange juice.)</li>
+      <li>Pure substances melt and boil at <b>specific temperatures</b>. Impurities lower the melting point and make it melt over a range.</li>
+      <li>A <b>formulation</b> is a mixture designed as a useful product, with each part in measured amounts. Examples: paints, medicines, fuels, cleaning products, alloys, fertilisers.</li>
+    </ul>` },
+    { h: "Paper chromatography", html: `<ul>
+      <li>Draw the start line in <b>pencil</b> (it won't dissolve). Spot the samples on it. Keep the solvent level <b>below</b> the line.</li>
+      <li><b>Stationary phase</b>: the paper. <b>Mobile phase</b>: the solvent.</li>
+      <li>Substances move different distances depending on how they distribute between the phases.</li>
+      <li>A pure substance gives <b>one spot</b> in every solvent. A mixture gives several.</li>
+    </ul>
+    <div class="eq">R<sub>f</sub> = distance moved by substance ÷ distance moved by solvent</div>
+    <div class="tip">R<sub>f</sub> is always less than 1 and has no units. Measure to the centre of the spot.</div>` },
+    { h: "Tests for gases", html: `
+      <div class="tbl"><table>
+        <tr><th>Gas</th><th>Test</th><th>Positive result</th></tr>
+        <tr><td>Hydrogen</td><td>Lit splint</td><td>Squeaky pop</td></tr>
+        <tr><td>Oxygen</td><td>Glowing splint</td><td>Splint relights</td></tr>
+        <tr><td>Carbon dioxide</td><td>Bubble through limewater</td><td>Limewater turns milky / cloudy</td></tr>
+        <tr><td>Chlorine</td><td>Damp litmus paper</td><td>Bleached white</td></tr>
+      </table></div>` },
+    { h: "Identifying ions <span class=\"tag\">Triple</span>", html: `
+      <p><b>Flame tests</b>: lithium <b>crimson</b>, sodium <b>yellow</b>, potassium <b>lilac</b>, calcium <b>orange-red</b>, copper <b>green</b>.</p>
+      <p><b>Sodium hydroxide</b> precipitates: Cu²⁺ <b>blue</b>, Fe²⁺ <b>green</b>, Fe³⁺ <b>brown</b>. Al³⁺, Ca²⁺ and Mg²⁺ give <b>white</b> (only Al³⁺ dissolves in excess NaOH).</p>
+      <p><b>Carbonates</b>: add dilute acid, bubble the gas through limewater, it turns milky.</p>
+      <p><b>Halides</b>: add dilute nitric acid then silver nitrate. Chloride <b>white</b>, bromide <b>cream</b>, iodide <b>yellow</b> precipitate.</p>
+      <p><b>Sulfates</b>: add dilute hydrochloric acid then barium chloride. <b>White</b> precipitate.</p>` }
+  ],
+  cards: [
+    ["What does 'pure' mean in chemistry?", "A single element or compound that is not mixed with any other substance."],
+    ["What is a formulation? Give two examples.", "A mixture designed as a useful product, with each component in measured quantities. E.g. paint, medicine, fuel, cleaning products."],
+    ["Why is the start line in chromatography drawn in pencil?", "Pencil (graphite) does not dissolve in the solvent, so it won't run and mix with the samples."],
+    ["A spot moves 3.0 cm and the solvent moves 7.5 cm. Calculate the R<sub>f</sub> value.", "3.0 ÷ 7.5 = 0.4"],
+    ["How does chromatography show a substance is pure?", "It produces only one spot."],
+    ["Describe the test for hydrogen.", "Hold a lit splint at the mouth of the test tube. Hydrogen burns with a squeaky pop."],
+    ["Describe the test for oxygen.", "Put a glowing splint in the gas. It relights."],
+    ["Describe the test for carbon dioxide.", "Bubble the gas through limewater. It turns milky (cloudy)."],
+    ["Describe the test for chlorine.", "Hold damp litmus paper in the gas. It is bleached white."],
+    ["What colour flame does potassium give? What about sodium?", "Potassium: lilac. Sodium: yellow."],
+    ["Sodium hydroxide is added to a solution and a brown precipitate forms. Which ion is present?", "Iron(III), Fe³⁺."]
+  ]
+},
+{
+  id: "ko9", sym: "Cr", name: "Chemical Reactions",
+  notes: [
+    { h: "Reactivity series and extraction", html: `
+      <div class="eq">K · Na · Li · Ca · Mg · (C) · Zn · Fe · (H) · Cu · Ag · Au</div>
+      <ul>
+        <li>More reactive metals lose electrons more easily to form positive ions.</li>
+        <li>A more reactive metal <b>displaces</b> a less reactive one from its compound: Mg + CuSO₄ → MgSO₄ + Cu.</li>
+        <li>Metals <b>below carbon</b> are extracted by <b>reduction with carbon</b>: 2Fe₂O₃ + 3C → 4Fe + 3CO₂.</li>
+        <li>Metals <b>above carbon</b> are extracted by <b>electrolysis</b> (costs more energy).</li>
+        <li>Gold and silver are so unreactive they are found as the metal itself.</li>
+      </ul>` },
+    { h: "Oxidation and reduction", html: `<ul>
+      <li><b>Oxidation</b> = gain of oxygen / loss of electrons. <b>Reduction</b> = loss of oxygen / gain of electrons.</li>
+      <li><b>OIL RIG</b>: Oxidation Is Loss, Reduction Is Gain (of electrons).</li>
+    </ul>` },
+    { h: "Acids, bases and salts", html: `
+      <div class="eq">metal + acid → salt + hydrogen</div>
+      <div class="eq">acid + metal oxide/hydroxide → salt + water</div>
+      <div class="eq">acid + metal carbonate → salt + water + carbon dioxide</div>
+      <ul>
+        <li>Hydrochloric acid → <b>chlorides</b>. Sulfuric acid → <b>sulfates</b>. Nitric acid → <b>nitrates</b>.</li>
+        <li>pH: 0–6 acid, 7 neutral, 8–14 alkali. Acids release <b>H⁺</b> ions in water, alkalis release <b>OH⁻</b>.</li>
+        <li>Neutralisation: <b>H⁺ + OH⁻ → H₂O</b>.</li>
+        <li><b>Strong</b> acids (HCl, H₂SO₄, HNO₃) fully ionise in water. <b>Weak</b> acids (ethanoic, citric) only partly ionise.</li>
+        <li>Making a soluble salt: add excess insoluble base to warm acid, filter off the excess, heat the filtrate to evaporate some water, leave to crystallise.</li>
+      </ul>` },
+    { h: "Electrolysis", html: `<ul>
+      <li>An ionic compound is <b>molten or dissolved</b> so ions can move. Passing a current splits it.</li>
+      <li><b>Cathode (−)</b> attracts positive ions. <b>Anode (+)</b> attracts negative ions. Memory aid: <i>PANIC</i>, Positive Anode Negative Is Cathode.</li>
+      <li>Molten lead bromide → <b>lead</b> at cathode, <b>bromine</b> at anode.</li>
+      <li>In <b>aqueous</b> solutions: at the cathode, <b>hydrogen</b> forms if the metal is more reactive than hydrogen. At the anode, <b>oxygen</b> forms unless a halide is present (then the halogen forms).</li>
+      <li>Brine (NaCl(aq)) → hydrogen at cathode, chlorine at anode, sodium hydroxide left in solution.</li>
+      <li><b>Aluminium</b>: aluminium oxide is dissolved in molten <b>cryolite</b> to lower the melting point and save energy. The carbon anodes react with oxygen to make CO₂, so they must be replaced.</li>
+    </ul>` },
+    { h: "Energy changes", html: `<ul>
+      <li><b>Exothermic</b>: gives out energy, temperature of surroundings <b>rises</b>. Combustion, neutralisation, oxidation. Uses: hand warmers, self-heating cans.</li>
+      <li><b>Endothermic</b>: takes in energy, temperature <b>falls</b>. Thermal decomposition, citric acid + sodium hydrogencarbonate. Uses: sports injury packs.</li>
+      <li><b>Activation energy</b>: the minimum energy particles need to react. On a reaction profile it is the "hump" from reactants to the peak.</li>
+      <li>Breaking bonds is endothermic. Making bonds is exothermic.</li>
+    </ul>
+    <div class="eq">energy change = bonds broken − bonds made (negative = exothermic)</div>` },
+    { h: "Rates in brief", html: `<ul>
+      <li><b>Collision theory</b>: particles must collide with enough energy (the activation energy).</li>
+      <li>Rate increases with higher <b>temperature</b>, <b>concentration</b> or <b>pressure</b>, larger <b>surface area</b>, or a <b>catalyst</b> (gives a route with lower activation energy and is not used up).</li>
+    </ul>` }
+  ],
+  cards: [
+    ["What does OIL RIG stand for?", "Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons)."],
+    ["How is iron extracted from iron oxide, and why can this method be used?", "Reduction with carbon in a blast furnace. Iron is less reactive than carbon, so carbon can remove the oxygen."],
+    ["Why must aluminium be extracted by electrolysis?", "Aluminium is more reactive than carbon, so carbon cannot reduce aluminium oxide."],
+    ["What are the products when magnesium reacts with hydrochloric acid?", "Magnesium chloride and hydrogen."],
+    ["What are the products of an acid reacting with a metal carbonate?", "A salt, water and carbon dioxide."],
+    ["Which acid would you use to make copper nitrate?", "Nitric acid."],
+    ["Write the ionic equation for neutralisation.", "H⁺(aq) + OH⁻(aq) → H₂O(l)"],
+    ["What is the difference between a strong and a weak acid?", "A strong acid is fully ionised in water. A weak acid is only partly ionised."],
+    ["What forms at each electrode when molten lead bromide is electrolysed?", "Lead at the cathode (−), bromine at the anode (+)."],
+    ["What forms at each electrode when sodium chloride solution is electrolysed?", "Hydrogen at the cathode (sodium is more reactive than hydrogen). Chlorine at the anode. Sodium hydroxide is left in solution."],
+    ["Why is cryolite used in the extraction of aluminium?", "It lowers the melting point of aluminium oxide, so less energy is needed and costs are lower."],
+    ["What is an exothermic reaction? Give an example.", "A reaction that transfers energy to the surroundings, so the temperature rises. E.g. combustion or neutralisation."],
+    ["What is activation energy?", "The minimum amount of energy particles need when they collide in order to react."]
+  ]
+}
+];
+
+const KEY = "chem-ko-progress-v1";
+let progress = {};
+try { progress = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { progress = {}; }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(progress)); } catch (e) {} }
+
+const tilesEl = document.getElementById("tiles");
+const topicEl = document.getElementById("topic");
+const quizEl = document.getElementById("quiz");
+const legendEl = document.getElementById("legend");
+let current = "ko1";
+try { current = localStorage.getItem(KEY + "-topic") || "ko1"; } catch (e) {}
+const hash = location.hash.replace("#", "");
+if (T.some(t => t.id === hash)) current = hash;
+
+function cardId(t, i) { return t.id + "-" + i; }
+function stats(t) {
+  let known = 0, again = 0;
+  t.cards.forEach((_, i) => { const s = progress[cardId(t, i)]; if (s === "known") known++; else if (s === "again") again++; });
+  return { known, again, total: t.cards.length };
+}
+
+function renderTiles() {
+  let tk = 0, tt = 0;
+  tilesEl.innerHTML = T.map((t, n) => {
+    const s = stats(t); tk += s.known; tt += s.total;
+    return `<button class="tile" type="button" data-id="${t.id}" aria-current="${t.id === current && quizEl.hidden}">
+      <span class="num">KO${n + 1}</span>
+      <span class="sym">${t.sym}</span>
+      <span class="nm">${t.name}</span>
+      <span class="bar" title="${s.known} of ${s.total} cards known"><i style="width:${Math.round(s.known / s.total * 100)}%"></i></span>
+    </button>`;
+  }).join("");
+  legendEl.textContent = `${tk} / ${tt} flashcards marked "Got it" across all nine KOs`;
+}
+
+function cardHTML(t, i, c) {
+  const id = cardId(t, i);
+  const st = progress[id] || "";
+  return `<div class="card" data-state="${st}" data-card="${id}">
+    <div class="q">${c[0]}</div>
+    <div class="a" hidden>${c[1]}</div>
+    <div class="row">
+      <button class="mini" type="button" data-act="show">Show answer</button>
+      <button class="mini good" type="button" data-act="known">Got it</button>
+      <button class="mini bad" type="button" data-act="again">Need practice</button>
+    </div>
+  </div>`;
+}
+
+function renderTopic() {
+  const n = T.findIndex(t => t.id === current);
+  const t = T[n];
+  const s = stats(t);
+  topicEl.innerHTML = `
+    <div class="topic-head">
+      <span class="eyebrow">KO${n + 1} · ${t.sym}</span>
+      <h2>${t.name}</h2>
+    </div>
+    <div class="notes">
+      ${t.notes.map(x => `<article class="note"><h3>${x.h}</h3>${x.html}</article>`).join("")}
+    </div>
+    <aside class="cards" aria-label="Flashcards">
+      <div class="cards-head"><h3>Test yourself</h3><span>${s.known} got · ${s.again} practise · ${s.total}</span></div>
+      <div class="cards-scroll">${t.cards.map((c, i) => cardHTML(t, i, c)).join("")}</div>
+    </aside>`;
+}
+
+function mark(id, state) {
+  progress[id] = state; save();
+}
+
+document.addEventListener("click", e => {
+  const tile = e.target.closest(".tile");
+  if (tile) {
+    current = tile.dataset.id;
+    try { localStorage.setItem(KEY + "-topic", current); } catch (err) {}
+    quizEl.hidden = true;
+    topicEl.hidden = false;
+    renderTiles(); renderTopic();
+    topicEl.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    return;
+  }
+  const btn = e.target.closest(".card [data-act]");
+  if (btn) {
+    const card = btn.closest(".card");
+    const act = btn.dataset.act;
+    if (act === "show") {
+      const a = card.querySelector(".a");
+      a.hidden = !a.hidden;
+      btn.textContent = a.hidden ? "Show answer" : "Hide answer";
+    } else {
+      mark(card.dataset.card, act);
+      card.dataset.state = act;
+      card.querySelector(".a").hidden = false;
+      renderTiles();
+      const t = T.find(x => x.id === current);
+      const s = stats(t);
+      const head = topicEl.querySelector(".cards-head span");
+      if (head) head.textContent = `${s.known} got · ${s.again} practise · ${s.total}`;
+    }
+  }
+});
+
+/* Mixed quiz */
+let quiz = null;
+function allCards() {
+  const out = [];
+  T.forEach((t, n) => t.cards.forEach((c, i) => out.push({ id: cardId(t, i), ko: `KO${n + 1} ${t.name}`, q: c[0], a: c[1] })));
+  return out;
+}
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+function startQuiz(weakOnly) {
+  let pool = allCards();
+  if (weakOnly) {
+    pool = pool.filter(c => progress[c.id] !== "known");
+  }
+  if (!pool.length) {
+    quiz = null;
+    quizEl.hidden = false; topicEl.hidden = true;
+    quizEl.innerHTML = `<div class="qbig">Every card is marked "Got it". Reset progress or try a mixed quiz to keep it fresh.</div>
+      <div class="row"><button class="btn" type="button" data-q="close">Back to notes</button></div>`;
+    renderTiles();
+    return;
+  }
+  quiz = { items: shuffle(pool).slice(0, 10), i: 0, score: 0, shown: false };
+  quizEl.hidden = false; topicEl.hidden = true;
+  renderTiles(); renderQuiz();
+  quizEl.scrollIntoView({ block: "start" });
+}
+
+function renderQuiz() {
+  if (!quiz) return;
+  if (quiz.i >= quiz.items.length) {
+    const pct = Math.round(quiz.score / quiz.items.length * 100);
+    quizEl.innerHTML = `<div class="meta"><span>Quiz complete</span></div>
+      <div class="score">${quiz.score} / ${quiz.items.length}</div>
+      <p>${pct >= 80 ? "Strong result. Try the weak-cards quiz to finish off the rest." : pct >= 50 ? "Good progress. Reread the notes for the cards you missed, then go again." : "Go back through the notes for these KOs, then try the weak-cards quiz."}</p>
+      <div class="row">
+        <button class="btn primary" type="button" data-q="again">New mixed quiz</button>
+        <button class="btn" type="button" data-q="weak">Quiz my weak cards</button>
+        <button class="btn" type="button" data-q="close">Back to notes</button>
+      </div>`;
+    return;
+  }
+  const c = quiz.items[quiz.i];
+  quizEl.innerHTML = `<div class="meta"><span>Question ${quiz.i + 1} of ${quiz.items.length} · ${c.ko}</span><span>Score ${quiz.score}</span></div>
+    <div class="qbig">${c.q}</div>
+    ${quiz.shown ? `<div class="abig">${c.a}</div>
+      <p style="color:var(--muted);margin:10px 0 0">Did you get it right?</p>
+      <div class="row">
+        <button class="btn" type="button" data-q="right" style="background:var(--good-soft);color:var(--good);border-color:transparent">Yes, got it</button>
+        <button class="btn" type="button" data-q="wrong" style="background:var(--bad-soft);color:var(--bad);border-color:transparent">No, need practice</button>
+      </div>`
+    : `<div class="row"><button class="btn primary" type="button" data-q="show">Show answer</button><button class="btn" type="button" data-q="close">Stop quiz</button></div>`}`;
+}
+
+quizEl.addEventListener("click", e => {
+  const b = e.target.closest("[data-q]");
+  if (!b) return;
+  const act = b.dataset.q;
+  if (act === "show") { quiz.shown = true; }
+  else if (act === "right" || act === "wrong") {
+    const c = quiz.items[quiz.i];
+    mark(c.id, act === "right" ? "known" : "again");
+    if (act === "right") quiz.score++;
+    quiz.i++; quiz.shown = false;
+    renderTiles();
+  }
+  else if (act === "again") { startQuiz(false); return; }
+  else if (act === "weak") { startQuiz(true); return; }
+  else if (act === "close") { quizEl.hidden = true; topicEl.hidden = false; renderTiles(); renderTopic(); return; }
+  renderQuiz();
+});
+
+document.getElementById("mixed-all").addEventListener("click", () => startQuiz(false));
+document.getElementById("mixed-weak").addEventListener("click", () => startQuiz(true));
+const resetBtn = document.getElementById("reset");
+resetBtn.addEventListener("click", () => {
+  if (resetBtn.dataset.confirm !== "1") {
+    resetBtn.dataset.confirm = "1";
+    resetBtn.textContent = "Tap again to reset";
+    setTimeout(() => { resetBtn.dataset.confirm = ""; resetBtn.textContent = "Reset progress"; }, 3000);
+    return;
+  }
+  progress = {}; save();
+  resetBtn.dataset.confirm = ""; resetBtn.textContent = "Reset progress";
+  renderTiles(); if (!topicEl.hidden) renderTopic();
+});
+
+renderTiles();
+renderTopic();
+</script>
+
+</body>
+</html>
