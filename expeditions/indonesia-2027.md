@@ -17,6 +17,14 @@
 
 ---
 
+## REGIONS — the working scheme (set 28 Sep 2026)
+
+1. **Sumatra & all the Sunda islands** — Greater and Lesser, **including Timor Leste**
+2. **Kalimantan**
+3. **Sulawesi**
+4. **North Maluku, Maluku & the Banda arc**
+5. **West Papua & Ayu**
+
 ## SCORING
 
 Three categories, 10 each. **Discovery · Colour · Water.**
@@ -119,6 +127,13 @@ Anything below 7 in any category is cut regardless of total.
 | | Water body | Note |
 |---|---|---|
 | ✓ | **Cenderawasih Bay** | **July–October is its season**; whale sharks year-round |
+
+### Timor Leste (1) — NEW, region 1
+| | Water body | Note |
+|---|---|---|
+| ✓ | **Jaco Island** | Uninhabited and **held sacred — no one stays overnight**. No shops, no food, no water, no accommodation: bring everything. Crystal-clear turquoise over white sand, inside **Nino Konis Santana National Park**, boat across the channel from Tutuala. **Timor Leste's dry season is May–November, so August is peak.** Single-ticked — needs a second source |
+
+**Also found, below 27:** Atauro Island ~25 *(record reef-fish diversity)* · Dollar Beach 24 · Atecru 24 · Akrema 23 · Com 22. **Timor Leste is otherwise unresearched — a live gap.**
 
 ### Riau Islands (2)
 | | Water body | Note |
