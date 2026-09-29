@@ -169,6 +169,45 @@
   .quiz .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
   .score { font-family: var(--display); font-size: 3rem; font-weight: 800; }
 
+  /* Year 10 test paper */
+  .test { margin-top: 36px; display: grid; gap: 22px; }
+  .test-head p { margin: 8px 0 0; color: var(--muted); max-width: 64ch; }
+  .tsec { display: grid; gap: 12px; }
+  .tsec > h3 { font-size: 1.05rem; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+  .tq { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 10px; }
+  .tq-top { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: baseline; }
+  .qn { font-family: var(--mono); font-weight: 700; font-size: 0.9rem; color: var(--accent); }
+  .qt p { margin: 0 0 6px; }
+  .qt p:last-child { margin-bottom: 0; }
+  .mk { font-family: var(--mono); font-size: 0.82rem; color: var(--muted); white-space: nowrap; }
+  .opts { display: grid; gap: 6px; }
+  .opt { display: flex; gap: 10px; align-items: baseline; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; cursor: pointer; }
+  .opt:hover { border-color: var(--accent); }
+  .opt .l { font-family: var(--mono); font-weight: 700; font-size: 0.85rem; }
+  .opt.right { background: var(--good-soft); border-color: var(--good); }
+  .opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+  .tq textarea { width: 100%; font: inherit; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; resize: vertical; }
+  .verdict { font-weight: 700; font-size: 0.95rem; }
+  .verdict.good { color: var(--good); }
+  .verdict.bad { color: var(--bad); }
+  .ms { background: var(--accent-soft); border-radius: 8px; padding: 10px 12px; font-size: 0.95rem; }
+  .ms > b { display: block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+  .ms ul { margin: 0; padding-left: 1.15em; display: grid; gap: 3px; }
+  .ms p { margin: 6px 0 0; }
+  .award { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; }
+  .award button { min-width: 38px; border: 1px solid var(--line); background: var(--surface); border-radius: 6px; padding: 5px 10px; font-family: var(--mono); font-weight: 700; }
+  .award button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .results { background: var(--surface); border: 1.5px solid var(--accent); border-radius: 12px; padding: 18px 20px; display: grid; gap: 12px; }
+  .results .big { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; }
+  .results .pct { font-family: var(--mono); font-size: 1.1rem; color: var(--muted); }
+  .kobar { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) 4.5rem; gap: 10px; align-items: center; font-size: 0.92rem; }
+  .kobar .track { height: 8px; border-radius: 4px; background: var(--line); overflow: hidden; }
+  .kobar .track i { display: block; height: 100%; background: var(--accent); }
+  .kobar .v { font-family: var(--mono); font-size: 0.82rem; text-align: right; font-variant-numeric: tabular-nums; }
+  .kolist { display: grid; gap: 6px; }
+  @media (max-width: 520px) { .kobar { grid-template-columns: minmax(0, 1fr) 4.5rem; } .kobar .track { grid-column: 1 / -1; order: 3; } }
+  .test .row { display: flex; flex-wrap: wrap; gap: 8px; }
+
   @media (prefers-reduced-motion: reduce) { .tile .bar i { transition: none; } }
 </style>
 
@@ -180,7 +219,8 @@
       <p>Pick a KO tile to read the key facts, then test yourself with the flashcards. Mark each card so you know what to go back to.</p>
     </div>
     <div class="actions">
-      <button class="btn primary" id="mixed-all" type="button">Mixed quiz (10)</button>
+      <button class="btn primary" id="open-test" type="button">Year 10 test paper</button>
+      <button class="btn" id="mixed-all" type="button">Mixed quiz (10)</button>
       <button class="btn" id="mixed-weak" type="button">Quiz my weak cards</button>
       <button class="btn" id="reset" type="button">Reset progress</button>
     </div>
@@ -190,6 +230,7 @@
   <div class="legend" id="legend"></div>
 
   <section class="quiz" id="quiz" hidden></section>
+  <section class="test" id="test" hidden aria-label="Year 10 test paper"></section>
   <section class="topic" id="topic"></section>
 </div>
 
@@ -662,6 +703,7 @@ function save() { try { localStorage.setItem(KEY, JSON.stringify(progress)); } c
 const tilesEl = document.getElementById("tiles");
 const topicEl = document.getElementById("topic");
 const quizEl = document.getElementById("quiz");
+const testEl = document.getElementById("test");
 const legendEl = document.getElementById("legend");
 let current = "ko1";
 try { current = localStorage.getItem(KEY + "-topic") || "ko1"; } catch (e) {}
@@ -679,7 +721,7 @@ function renderTiles() {
   let tk = 0, tt = 0;
   tilesEl.innerHTML = T.map((t, n) => {
     const s = stats(t); tk += s.known; tt += s.total;
-    return `<button class="tile" type="button" data-id="${t.id}" aria-current="${t.id === current && quizEl.hidden}">
+    return `<button class="tile" type="button" data-id="${t.id}" aria-current="${t.id === current && !topicEl.hidden}">
       <span class="num">KO${n + 1}</span>
       <span class="sym">${t.sym}</span>
       <span class="nm">${t.name}</span>
@@ -725,15 +767,20 @@ function mark(id, state) {
   progress[id] = state; save();
 }
 
+function showTopic(id) {
+  current = id;
+  try { localStorage.setItem(KEY + "-topic", current); } catch (err) {}
+  quizEl.hidden = true;
+  testEl.hidden = true;
+  topicEl.hidden = false;
+  renderTiles(); renderTopic();
+  topicEl.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+}
+
 document.addEventListener("click", e => {
-  const tile = e.target.closest(".tile");
+  const tile = e.target.closest(".tile, [data-goto]");
   if (tile) {
-    current = tile.dataset.id;
-    try { localStorage.setItem(KEY + "-topic", current); } catch (err) {}
-    quizEl.hidden = true;
-    topicEl.hidden = false;
-    renderTiles(); renderTopic();
-    topicEl.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    showTopic(tile.dataset.id || tile.dataset.goto);
     return;
   }
   const btn = e.target.closest(".card [data-act]");
@@ -773,14 +820,14 @@ function startQuiz(weakOnly) {
   }
   if (!pool.length) {
     quiz = null;
-    quizEl.hidden = false; topicEl.hidden = true;
+    quizEl.hidden = false; topicEl.hidden = true; testEl.hidden = true;
     quizEl.innerHTML = `<div class="qbig">Every card is marked "Got it". Reset progress or try a mixed quiz to keep it fresh.</div>
       <div class="row"><button class="btn" type="button" data-q="close">Back to notes</button></div>`;
     renderTiles();
     return;
   }
   quiz = { items: shuffle(pool).slice(0, 10), i: 0, score: 0, shown: false };
-  quizEl.hidden = false; topicEl.hidden = true;
+  quizEl.hidden = false; topicEl.hidden = true; testEl.hidden = true;
   renderTiles(); renderQuiz();
   quizEl.scrollIntoView({ block: "start" });
 }
@@ -844,8 +891,199 @@ resetBtn.addEventListener("click", () => {
   renderTiles(); if (!topicEl.hidden) renderTopic();
 });
 
+/* Year 10 test paper */
+const TEST = [
+  { ko: 1, title: "Particles", qs: [
+    { n: "01.1", type: "mcq", q: "Which statement describes the particles in a gas?", opts: ["Regular pattern, vibrating in fixed positions", "Random arrangement, touching, moving past each other", "Random arrangement, far apart, moving quickly", "Regular pattern, far apart, moving slowly"], ans: 2 },
+    { n: "01.2", type: "mcq", q: "Mercury melts at −39 °C and boils at 357 °C. What state is mercury at 20 °C?", opts: ["Solid", "Liquid", "Gas", "Solid and liquid"], ans: 1 },
+    { n: "01.3", type: "text", marks: 2, q: "A sealed container of gas is heated. Explain why the pressure of the gas increases.", ms: ["The particles gain energy and move faster (1)", "so they collide with the walls more often / with more force (1)"] },
+    { n: "01.4", type: "text", marks: 2, q: "Give two limitations of the simple particle model.", ms: ["Any two (1 each): particles are shown as solid spheres; no forces between particles are shown; the size of particles is not shown; the space between particles is not shown"] }
+  ]},
+  { ko: 2, title: "Atomic Structure", qs: [
+    { n: "02.1", type: "mcq", q: "What is the relative charge of a neutron?", opts: ["−1", "0", "+1", "+2"], ans: 1 },
+    { n: "02.2", type: "text", marks: 2, q: "An atom of potassium is shown as ³⁹₁₉K. Give the number of protons, neutrons and electrons in this atom.", ms: ["19 protons and 19 electrons (1)", "20 neutrons (1)"] },
+    { n: "02.3", type: "text", marks: 1, q: "Chlorine has atomic number 17. Give the electronic structure of a chlorine atom.", ms: ["2,8,7 (1)"] },
+    { n: "02.4", type: "text", marks: 2, q: "Boron has two isotopes: 20% is boron-10 and 80% is boron-11. Calculate the relative atomic mass of boron.", ms: ["(10 × 20) + (11 × 80) ÷ 100 (1)", "= 10.8 (1)", "Correct answer with no working scores 2"] },
+    { n: "02.5", type: "text", marks: 2, q: "Describe one difference between the plum pudding model and the nuclear model of the atom.", ms: ["Plum pudding: the atom is a ball of positive charge with electrons embedded in it (1)", "Nuclear: the positive charge (and mass) is concentrated in a small central nucleus, with electrons outside it / the atom is mostly empty space (1)"] },
+    { n: "02.6", type: "mcq", q: "Which method separates ethanol from a mixture of ethanol and water?", opts: ["Filtration", "Crystallisation", "Chromatography", "Fractional distillation"], ans: 3 }
+  ]},
+  { ko: 3, title: "Periodic Table", qs: [
+    { n: "03.1", type: "mcq", q: "Why do the elements in Group 1 have similar chemical reactions?", opts: ["They all have one electron in their outer shell", "They all have one shell of electrons", "They all have the same mass number", "They are all soft metals"], ans: 0 },
+    { n: "03.2", type: "text", marks: 2, q: "Sodium reacts with water. Name the two products.", ms: ["Sodium hydroxide (1)", "Hydrogen (1)"] },
+    { n: "03.3", type: "text", marks: 3, q: "Explain why potassium is more reactive than sodium.", ms: ["Potassium's outer electron is further from the nucleus / potassium has more shells (1)", "so there is weaker attraction to the nucleus / more shielding (1)", "so the outer electron is lost more easily (1)"] },
+    { n: "03.4", type: "text", marks: 2, q: "Bromine water is added to potassium iodide solution. Complete the equation and explain why the reaction happens.<br><span class=\"eq\" style=\"display:inline-block\">Br₂ + 2KI → ____ + ____</span>", ms: ["2KBr + I₂ (1)", "Bromine is more reactive than iodine, so it displaces it (1)"] },
+    { n: "03.5", type: "mcq", q: "Why did Mendeleev leave gaps in his periodic table?", opts: ["For elements that were radioactive", "For elements that had not been discovered yet", "To keep the table symmetrical", "For the noble gases"], ans: 1 }
+  ]},
+  { ko: 4, title: "Bonding", qs: [
+    { n: "04.1", type: "mcq", q: "What type of bonding is found in a methane molecule, CH₄?", opts: ["Ionic", "Metallic", "Covalent", "Intermolecular"], ans: 2 },
+    { n: "04.2", type: "mcq", q: "What is the formula of calcium chloride?", opts: ["CaCl", "CaCl₂", "Ca₂Cl", "CaCl₃"], ans: 1 },
+    { n: "04.3", type: "text", marks: 3, q: "Magnesium reacts with oxygen to make magnesium oxide. Describe what happens to the electrons when magnesium oxide forms. Give the charges of the ions.", ms: ["Magnesium loses two electrons (1)", "Oxygen gains two electrons / electrons are transferred from magnesium to oxygen (1)", "Mg²⁺ and O²⁻ ions form (1)"] },
+    { n: "04.4", type: "text", marks: 2, q: "Explain why diamond is very hard.", ms: ["Each carbon atom forms four covalent bonds / giant covalent structure (1)", "The covalent bonds are strong and need a lot of energy to break (1)"] },
+    { n: "04.5", type: "text", marks: 2, q: "Explain why graphite conducts electricity.", ms: ["Each carbon atom forms three bonds, leaving one electron free (1)", "These delocalised electrons can move through the structure and carry charge (1)"] }
+  ]},
+  { ko: 5, title: "Properties of Matter", qs: [
+    { n: "05.1", type: "mcq", q: "Which state symbol shows sodium chloride dissolved in water?", opts: ["(s)", "(l)", "(g)", "(aq)"], ans: 3 },
+    { n: "05.2", type: "text", marks: 2, q: "Explain why water has a low boiling point.", ms: ["Water is a simple molecule with weak intermolecular forces (1)", "so little energy is needed to overcome them (1)", "Do not credit 'covalent bonds break'"] },
+    { n: "05.3", type: "text", marks: 2, q: "Explain why sodium chloride conducts electricity when molten but not when solid.", ms: ["When molten the ions are free to move and carry charge (1)", "When solid the ions are fixed in the lattice / cannot move (1)", "Do not credit 'electrons move'"] },
+    { n: "05.4", type: "text", marks: 2, q: "Explain why alloys are harder than pure metals.", ms: ["Alloys contain atoms of different sizes, which distort the layers (1)", "so the layers cannot slide over each other easily (1)"] }
+  ]},
+  { ko: 6, title: "Quantitative Chemistry", qs: [
+    { n: "06.1", type: "text", marks: 1, q: "Calculate the relative formula mass (M<sub>r</sub>) of calcium carbonate, CaCO₃. (A<sub>r</sub>: Ca = 40, C = 12, O = 16)", ms: ["40 + 12 + (3 × 16) = 100 (1)"] },
+    { n: "06.2", type: "text", marks: 2, q: "Calculate the number of moles in 4.4 g of carbon dioxide, CO₂. (M<sub>r</sub> = 44)", ms: ["4.4 ÷ 44 (1)", "= 0.1 mol (1)"] },
+    { n: "06.3", type: "text", marks: 3, q: "2Mg + O₂ → 2MgO<br>Calculate the mass of magnesium oxide made from 4.8 g of magnesium. (A<sub>r</sub>: Mg = 24, O = 16)", ms: ["Moles of Mg = 4.8 ÷ 24 = 0.2 (1)", "Ratio 2:2 so 0.2 mol MgO (1)", "Mass = 0.2 × 40 = 8.0 g (1)", "Correct answer with no working scores 3"] },
+    { n: "06.4", type: "text", marks: 2, q: "A student heats magnesium in a crucible. The mass of the solid increases. Explain why.", ms: ["Magnesium reacts with oxygen from the air (1)", "The mass of the oxygen is added to the product (1)"] },
+    { n: "06.5", type: "text", marks: 2, q: "10 g of solute is dissolved to make 500 cm³ of solution. Calculate the concentration in g/dm³.", ms: ["500 cm³ = 0.5 dm³ (1)", "10 ÷ 0.5 = 20 g/dm³ (1)"] }
+  ]},
+  { ko: 7, title: "Organic Chemistry", qs: [
+    { n: "07.1", type: "mcq", q: "What is the general formula of the alkanes?", opts: ["C<sub>n</sub>H<sub>2n</sub>", "C<sub>n</sub>H<sub>2n+2</sub>", "C<sub>n</sub>H<sub>2n−2</sub>", "C<sub>n</sub>H<sub>n</sub>"], ans: 1 },
+    { n: "07.2", type: "text", marks: 1, q: "Give the formula of butane.", ms: ["C₄H₁₀ (1)"] },
+    { n: "07.3", type: "text", marks: 4, q: "Describe how crude oil is separated into fractions by fractional distillation.", ms: ["Crude oil is heated so it evaporates (1)", "The vapour rises up the column (1)", "The column is hot at the bottom and cooler at the top (1)", "Each fraction condenses at a different height depending on its boiling point (1)"] },
+    { n: "07.4", type: "text", marks: 1, q: "Name the toxic gas produced by the incomplete combustion of a hydrocarbon.", ms: ["Carbon monoxide (1)"] },
+    { n: "07.5", type: "text", marks: 2, q: "Describe a test to show a substance is an alkene. Give the result.", ms: ["Add bromine water (1)", "It turns from orange to colourless (1)"] },
+    { n: "07.6", type: "mcq", q: "How does viscosity change as hydrocarbon chains get longer?", opts: ["It decreases", "It stays the same", "It increases", "It decreases, then increases"], ans: 2 }
+  ]},
+  { ko: 8, title: "Chemical Analysis", qs: [
+    { n: "08.1", type: "text", marks: 2, q: "On a chromatogram a spot moved 2.4 cm and the solvent moved 8.0 cm. Calculate the R<sub>f</sub> value.", ms: ["2.4 ÷ 8.0 (1)", "= 0.3 (1)"] },
+    { n: "08.2", type: "text", marks: 1, q: "Why is the start line on a chromatogram drawn in pencil, not ink?", ms: ["Pencil does not dissolve in the solvent / ink would dissolve and run (1)"] },
+    { n: "08.3", type: "mcq", q: "Which gas relights a glowing splint?", opts: ["Hydrogen", "Oxygen", "Carbon dioxide", "Chlorine"], ans: 1 },
+    { n: "08.4", type: "mcq", q: "A gas turns limewater milky. What is the gas?", opts: ["Carbon dioxide", "Oxygen", "Hydrogen", "Chlorine"], ans: 0 },
+    { n: "08.5", type: "text", marks: 2, q: "What is a formulation?", ms: ["A mixture designed as a useful product (1)", "made by mixing components in carefully measured quantities (1)"] },
+    { n: "08.6", type: "text", marks: 1, q: "How does a chromatogram show that a substance is pure?", ms: ["It gives only one spot (1)"] }
+  ]},
+  { ko: 9, title: "Chemical Reactions", qs: [
+    { n: "09.1", type: "mcq", q: "Which metal can be extracted from its oxide by reduction with carbon?", opts: ["Potassium", "Magnesium", "Aluminium", "Iron"], ans: 3 },
+    { n: "09.2", type: "text", marks: 1, q: "Name the salt formed when zinc reacts with sulfuric acid.", ms: ["Zinc sulfate (1)"] },
+    { n: "09.3", type: "text", marks: 2, q: "Complete the word equation:<br>calcium carbonate + hydrochloric acid →", ms: ["calcium chloride + water + carbon dioxide", "All three products: 2 marks. Two correct: 1 mark"] },
+    { n: "09.4", type: "text", marks: 2, q: "Mg + CuSO₄ → MgSO₄ + Cu<br>Which substance is oxidised? Explain your answer in terms of electrons.", ms: ["Magnesium (1)", "because it loses electrons (1)"] },
+    { n: "09.5", type: "text", marks: 2, q: "Molten lead bromide is electrolysed. Name the product at each electrode.", ms: ["Cathode (negative): lead (1)", "Anode (positive): bromine (1)"] },
+    { n: "09.6", type: "text", marks: 2, q: "In the extraction of aluminium, aluminium oxide is dissolved in molten cryolite. Explain why.", ms: ["It lowers the melting point (1)", "so less energy is needed / it costs less (1)"] },
+    { n: "09.7", type: "mcq", q: "What happens to the temperature of the surroundings during an exothermic reaction?", opts: ["It decreases", "It increases", "It stays the same", "It decreases, then increases"], ans: 1 },
+    { n: "09.8", type: "text", marks: 1, q: "Write the ionic equation for neutralisation.", ms: ["H⁺ + OH⁻ → H₂O (1)"] }
+  ]},
+  { ko: 9, req: true, title: "Required practical: making a salt (KO9)", qs: [
+    { n: "10.1", type: "text", marks: 6, q: "Describe how you would make pure, dry crystals of copper sulfate from copper oxide and dilute sulfuric acid.", ms: `
+      <p><b>Level 3 (5–6 marks):</b> a clear method with the steps in a logical order, which would produce pure, dry crystals.</p>
+      <p><b>Level 2 (3–4 marks):</b> most of the main steps, mostly in order.</p>
+      <p><b>Level 1 (1–2 marks):</b> some relevant steps, but not in a logical order.</p>
+      <p><b>Points to include:</b></p>
+      <ul>
+        <li>Measure dilute sulfuric acid into a beaker and warm it gently</li>
+        <li>Add copper oxide a spatula at a time, stirring</li>
+        <li>Keep adding until copper oxide is in excess (black solid no longer dissolves), so all the acid has reacted</li>
+        <li>Filter to remove the excess copper oxide</li>
+        <li>Heat the filtrate in an evaporating basin to evaporate some of the water</li>
+        <li>Leave to cool so crystals form</li>
+        <li>Pat the crystals dry with filter paper / leave in a warm place to dry</li>
+      </ul>` }
+  ]}
+];
+TEST.forEach(sec => sec.qs.forEach(q => { if (q.type === "mcq") q.marks = 1; }));
+const TEST_TOTAL = TEST.reduce((s, sec) => s + sec.qs.reduce((a, q) => a + q.marks, 0), 0);
+let testState = { marked: false, mcq: {}, text: {}, awards: {} };
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+function qScore(q) {
+  if (q.type === "mcq") return testState.mcq[q.n] === q.ans ? 1 : 0;
+  return testState.awards[q.n] ?? 0;
+}
+
+function qHTML(q) {
+  const m = testState.marked;
+  const top = `<div class="tq-top"><span class="qn">${q.n}</span><div class="qt">${q.q}</div><span class="mk">[${q.marks} mark${q.marks > 1 ? "s" : ""}]</span></div>`;
+  if (q.type === "mcq") {
+    const pick = testState.mcq[q.n];
+    const opts = q.opts.map((o, i) => {
+      let cls = "";
+      if (m && i === q.ans) cls = "right";
+      else if (m && i === pick) cls = "wrong";
+      return `<label class="opt ${cls}"><input type="radio" name="q-${q.n}" value="${i}" ${pick === i ? "checked" : ""} ${m ? "disabled" : ""}><span class="l">${"ABCD"[i]}</span><span>${o}</span></label>`;
+    }).join("");
+    const verdict = !m ? "" : pick === q.ans
+      ? `<div class="verdict good">Correct: 1 mark</div>`
+      : `<div class="verdict bad">${pick === undefined ? "Not answered" : "Incorrect"}. The answer is ${"ABCD"[q.ans]}.</div>`;
+    return `<div class="tq">${top}<div class="opts">${opts}</div>${verdict}</div>`;
+  }
+  const text = testState.text[q.n] || "";
+  const ms = Array.isArray(q.ms) ? `<ul>${q.ms.map(x => `<li>${x}</li>`).join("")}</ul>` : q.ms;
+  const aw = testState.awards[q.n];
+  const award = !m ? "" : `<div class="ms"><b>Mark scheme</b>${ms}
+    <div class="award"><span>Your mark:</span>${Array.from({ length: q.marks + 1 }, (_, k) => `<button type="button" data-award="${q.n}" data-k="${k}" aria-pressed="${aw === k}">${k}</button>`).join("")}</div></div>`;
+  return `<div class="tq">${top}<textarea id="ans-${q.n}" data-n="${q.n}" rows="${q.marks >= 4 ? 7 : 2}" ${m ? "readonly" : ""} placeholder="Write your answer" aria-label="Answer to ${q.n}">${esc(text)}</textarea>${award}</div>`;
+}
+
+function resultsHTML() {
+  let score = 0, pending = 0;
+  const byKo = {};
+  TEST.forEach(sec => sec.qs.forEach(q => {
+    score += qScore(q);
+    if (q.type === "text" && testState.awards[q.n] === undefined) pending++;
+    const k = sec.ko;
+    byKo[k] = byKo[k] || { got: 0, max: 0 };
+    byKo[k].got += qScore(q); byKo[k].max += q.marks;
+  }));
+  const pct = Math.round(score / TEST_TOTAL * 100);
+  const rows = Object.keys(byKo).map(k => {
+    const r = byKo[k], p = Math.round(r.got / r.max * 100);
+    return { k: +k, p, html: `<div class="kobar"><span>KO${k} ${T[k - 1].name}</span><span class="track"><i style="width:${p}%"></i></span><span class="v">${r.got}/${r.max}</span></div>` };
+  });
+  const weak = rows.filter(r => r.p < 60).sort((a, b) => a.p - b.p);
+  return `<div class="results">
+    <div class="big"><span class="score">${score} / ${TEST_TOTAL}</span><span class="pct">${pct}%</span></div>
+    <p style="margin:0">${pending ? `${pending} written answer${pending > 1 ? "s" : ""} still to mark. Read the mark scheme under each one and tap the mark you earned. Your score updates as you go.` : "All questions marked."}</p>
+    <div class="kolist">${rows.map(r => r.html).join("")}</div>
+    ${!pending && weak.length ? `<div><b>Revise these first:</b><div class="row" style="margin-top:8px">${weak.map(r => `<button class="btn" type="button" data-goto="ko${r.k}">KO${r.k} ${T[r.k - 1].name}</button>`).join("")}</div></div>` : ""}
+    ${!pending && !weak.length ? `<p style="margin:0">You scored at least 60% on every KO. Try the weak-cards quiz to tighten up the rest.</p>` : ""}
+  </div>`;
+}
+
+function renderTest() {
+  const m = testState.marked;
+  testEl.innerHTML = `
+    <div class="test-head">
+      <span class="eyebrow">Year 10 · Chemistry · KO1–KO9</span>
+      <h2>End of Year 10 Chemistry Test</h2>
+      <p>${TEST_TOTAL} marks · about 60 minutes. Answer every question as you would in the exam, then press <b>Finish and mark</b>. Multiple-choice questions mark themselves. For written answers you check the mark scheme and give yourself the marks, so be strict.</p>
+    </div>
+    ${m ? resultsHTML() : ""}
+    ${TEST.map(sec => `<section class="tsec"><h3>Question ${sec.qs[0].n.slice(0, 2)} · ${sec.req ? sec.title : `KO${sec.ko} ${sec.title}`}</h3>${sec.qs.map(qHTML).join("")}</section>`).join("")}
+    <div class="row">
+      ${m ? `<button class="btn primary" type="button" data-t="retake">Start the test again</button>` : `<button class="btn primary" type="button" data-t="finish">Finish and mark</button>`}
+      <button class="btn" type="button" data-t="close">Back to notes</button>
+    </div>`;
+}
+
+function openTest() {
+  quizEl.hidden = true; topicEl.hidden = true; testEl.hidden = false;
+  renderTiles(); renderTest();
+  testEl.scrollIntoView({ block: "start" });
+}
+
+testEl.addEventListener("change", e => {
+  if (e.target.type === "radio") testState.mcq[e.target.name.slice(2)] = +e.target.value;
+});
+testEl.addEventListener("input", e => {
+  if (e.target.dataset.n) testState.text[e.target.dataset.n] = e.target.value;
+});
+testEl.addEventListener("click", e => {
+  const aw = e.target.closest("[data-award]");
+  if (aw) {
+    const y = window.scrollY;
+    testState.awards[aw.dataset.award] = +aw.dataset.k;
+    renderTest();
+    window.scrollTo(0, y);
+    return;
+  }
+  const b = e.target.closest("[data-t]");
+  if (!b) return;
+  const act = b.dataset.t;
+  if (act === "finish") { testState.marked = true; renderTest(); testEl.scrollIntoView({ block: "start" }); }
+  else if (act === "retake") { testState = { marked: false, mcq: {}, text: {}, awards: {} }; renderTest(); testEl.scrollIntoView({ block: "start" }); }
+  else if (act === "close") { showTopic(current); }
+});
+document.getElementById("open-test").addEventListener("click", openTest);
+
 renderTiles();
-renderTopic();
+if (location.hash === "#test") { openTest(); } else { renderTopic(); }
 </script>
 
 </body>
