@@ -1143,3 +1143,56 @@ including with named beaches, and stay unscorable.**
 **The trip: west Crete, first half of October, based between Chora Sfakion
 and Loutro.** Seven at 25+ from one base, ten if you cross to Sitia.
 24°C water. Direct flights to Chania.
+
+## SWEEP COMPLETE — 90 at 25+ · Greece 78 · Turkey 12 · Cyprus 0 · ten 26s
+
+**A tenth 26: Επιτάφιος / Epitafios, Antiparos** — south side, **white
+vertical cliffs and turquoise water, boat access only.** Three of the ten 26s
+now share that mechanism: **white rock is what makes European water
+turquoise** — Marmara's marble, Portello's chalk, Epitafios' cliffs.
+
+**Final additions:** Livadaki *(Folegandros)* · Faneromeni & Livadia
+*(Antiparos — upgraded, boat or sail only)* · **Tsigrado (Milos) upgraded
+23→25** *(the rope-and-ladder descent through a sandstone crevice)* ·
+Agioklima *(Kimolos)* · Psara's boat-only beaches · **Dokos** *(sea taxi from
+Hydra, Spetses or Ermioni)* · **Atokos** *(Afales bay, boat only)*.
+
+### Islands closed at a 24 ceiling
+
+Rhodes 22 · Mykonos 24 · Ios 24 · Andros 24 · Angistri 24 · Hydra 24 ·
+Kos 24 · Zakynthos 23 · Nisyros 24 · Chalkidiki 24.
+
+> **Nothing at 25+ in Greece sits on a big island except Crete — and all ten
+> of Crete's are roadless coast or offshore islets. The score tracks the
+> absence of a road, not the island.**
+>
+> **Hydra proves the finer point:** no cars at all, and still 24, because its
+> beaches are on scheduled daily excursion routes. **Roadless is not enough —
+> it has to be roadless *and* unscheduled.**
+
+### Unscorable, with reasons
+
+**Oxeia** *(steep coast, privately owned, no beach described)* · **Strofades**
+*(Discovery would be 10 — two flat islets 44 km south of Zakynthos with a
+fortified monastery; a bird migration stop, and **no beach named in any
+source**)* · **Psathoura** *(landing permitted, water undescribed)* ·
+**Kythnos' unnamed north-coast beaches** · Aspri Limni *(Crete)* ·
+**Koufonisi, the Dionysades, Dia and the Paximadia** *(uninhabited Cretan
+islets)*.
+
+### THE QUERY LESSON — five for five
+
+| Island | Attempts before it opened |
+|---|---|
+| Kythnos | 2 — then named its ten boat-and-path beaches |
+| Anafi | 2 — then Katsouni 25 |
+| Despotiko | 2 — then Livadi 25 |
+| Psara | 3 — then five named beaches |
+| Dokos | 3 — then the sea-taxi detail |
+
+**Every one opened the moment the query changed from "isolated beaches, boat
+only" to actual place names.** The same error as the false saturation call
+earlier in this file, repeated five times at smaller scale. **The method was
+the limit, not the coastline** — and the three that stayed silent did so
+because they have no beach names to ask with, not because they were
+unsearched.
