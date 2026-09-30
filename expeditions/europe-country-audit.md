@@ -754,7 +754,60 @@ ringed by **fossilised cedars**; too little detail to score)* · Cavo Paradiso
 *(Kos)* 24 · Thapsa *(Evia)* 24 · Armyrichi *(Evia)* 24 · Chrysi Ammos
 *(Evia)* 23.
 
-**Running total: 33 at 25+ — Greece 22, Turkey 11, Cyprus 0.**
+**Running total: 38 at 25+ — Greece 26, Turkey 12, Cyprus 0.**
+
+### Later local-language rounds
+
+**🇬🇷 Crete's south coast — the strongest cluster in Greece**
+
+| | Score | Why |
+|---|---|---|
+| **Δώματα / Domata** | **26** | *"One of the most isolated points of the southern Chania coastline."* **No road, no tourist infrastructure.** Land access is the **E4 path** and the Greek sources warn it needs experience, equipment and planning. **Discovery 10 — the only one given to a swimmable water body in Europe.** Practical route with a 12-year-old is the boat from Sougia or Agia Roumeli |
+| **Τρυπητή / Trypiti** | 25 | 5 km east of Sougia at the mouth of the Trypiti gorge — **boat or a hard hike only** |
+
+Confirmed alongside them: **Marmara now double-verified** · Agios Pavlos 24
+*(1.5 km, isolated, Colour 7 — coarse sand)* · Loutro 24 *(**no road access
+except by boat**)* · Agia Roumeli 23 *(**no road at all**)* · Sougia 22 ·
+Vlychadia 24 · Agiofarago 24.
+
+**🇬🇷 Ionian — Kalamos and Kastos** *(single-source, flagged)*
+
+**Kastos west coast** *(Fokiotrypa, Agios Aimilianos)* **25** and **Kalamos
+west beaches** *(Myrtia, Asprogiali, Kefali)* **25** — both reachable mainly
+from the sea, on two of the least-visited islands in Greece.
+
+**🇹🇷 Turkey — Karaloz Koyu 25** *(Kekova's fjord-like southern inlet)*.
+Also Gökkaya 24 · Aperlai 23 *(a sunken Lycian purple-dye city, 20 min by
+boat from Üçağız)* · Tersane 23 · Limanağzı 23.
+
+**🇹🇷 Turkey is now swept — three rounds in Turkish, and outside the Lycian
+corridor nothing reaches 25.** Datça, Marmaris and Fethiye town all top out
+at 24: Gereme 24 · Perili Köşk 24 · Turunç Pınarı 24 · Gebekse 24 ·
+**Akvaryum Koyu (Marmaris)** 24 *(a third Aquarium Bay — "perhaps one of the
+clearest coves in Turkey")* · Palamutbükü 23 · Kalemya 23 · Bördübet 24.
+
+## ⛴ THE FACT THAT DECIDES IT — the Sfakia ferry runs to 31 October
+
+**ANENDYK Seaways, confirmed for 2026:**
+
+| Route | Dates | Service |
+|---|---|---|
+| Paleochora ↔ Sougia | **7 Sep – 31 Oct** | Daily 08:30, return 18:25 |
+| Loutro ↔ Chora Sfakion | **1–15 Oct** | **14 sailings a day** |
+| Loutro ↔ Chora Sfakion | **16–31 Oct** | 8 sailings a day |
+| Paleochora · Sougia · Agia Roumeli · Chora Sfakion · **Gavdos** | April–October | Daily |
+
+**Crete's road-free south coast is a connected scheduled-ferry network, and
+it runs through October.** Domata, Marmara, Trypiti, Glyka Nera, Loutro,
+Agia Roumeli and Gavdos are all on it — five at 25+ including two 26s,
+by public ferry rather than five charters. **The first half of October is
+materially better than the second.**
+
+**Turkey's ten includes seven boat-only coves served by day tours from Kaş,
+Üçağız and Adrasan, and not one of those operators has been confirmed to run
+past mid-October.** If they stop, Turkey's ten drops to three road-accessible
+beaches — Kaputaş, Kabak and Akvaryum Koyu. **That asymmetry, not the
+scores, is the live question.**
 
 ### The structural finding
 
