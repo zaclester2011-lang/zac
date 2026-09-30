@@ -836,3 +836,55 @@ Below the cut from the final rounds: Kaladi *(Kythira)* 24 · Kavourotrypes
 Geranos *(Patmos)* 24 · Fykiada *(Sifnos)* 24 · Zogeria *(Spetses)* 23 ·
 Kolitsanis *(Ios)* 23 · **Psili Ammos *(Patmos)* — ✗ cut on Water 6,
 "shallow enough to stand knee-deep in"**
+
+---
+
+## FINAL TALLY — 43 at 25+ · Greece 31 · Turkey 12 · Cyprus 0
+
+### The six 26s, and which survive October
+
+| | Where | October |
+|---|---|---|
+| **Domata** | 🇬🇷 Crete, Sfakia/Sougia | ✅ **Discovery 10** — the only one in Europe for a swimmable water body |
+| **Marmara** | 🇬🇷 Crete, Aradena gorge mouth | ✅ |
+| **Delfinia** | 🇬🇷 Mani | ✅ **Road access, no boat at all** |
+| **Polyaigos** | 🇬🇷 Kimolos | ⚠ Athens plus a domestic connection |
+| **Vatos** | 🇬🇷 Samothraki | ✗ **21°C** and the far northeast |
+| **Butterfly Valley** | 🇹🇷 Fethiye | ✗ **Boats stop in the first weeks of October** |
+
+### Late additions
+
+**Μικρό Μαράθι / Mikro Marathi** *(Messenia)* **25** — untouched, **small boat
+only**. Also Tsapi 24 · Tigani 24 · Zematas *(Lemnos)* 24.
+
+**Recovered from this project's own earlier Mani work, which this sweep had
+overlooked: Delfinia 26 · Foneas 25 · Pantazi 25.** Four Greek entries at 25+
+came from re-reading notes rather than searching.
+
+### THE NORTH AEGEAN IS OUT — on temperature, not quality
+
+Greek sources head their own Lesvos round-up **"πεντακάθαρα, αρκετά κρύα
+νερά"** — *very clean, fairly cold water* — a warning they do not give for
+Crete or the Dodecanese. **Lesvos, Lemnos, Chios, Samothraki, Thassos and
+Psara sit at 20–21°C in late October**, the coldest in the sweep. That is
+why Vatos cannot be used: the sea, not the schedule.
+
+### THE THREE-WAY, RESOLVED
+
+| | 25+ | 26s | Boat risk | Flight risk |
+|---|---|---|---|---|
+| **🇬🇷 Crete south coast** | **7** | **2** | **None — ANENDYK public ferry, daily to 31 Oct** | None — direct to Chania |
+| **🇬🇷 Mani / Messenia** | 4 | 1 | **None — road** | ⚠ **Kalamata flights are seasonal** |
+| 🇹🇷 Lycian corridor | **3** *(after early Oct)* | 0 | ✗ **Day boats stop** | None |
+
+**Crete wins on every axis and is the only one of the three with no
+unresolved risk.** Mani is the fallback if Chania flights fail — a different
+trip entirely: no boats, no ferries, a hire car.
+
+### Search productivity, by round
+
+Greek-language rounds returned **5 · 2 · 2 · 1 · 0 · 1 · 0** new entries at
+25+. **The remaining unsearched are Psara, Tilos, Nisyros, Halki,
+Agathonisi, Arkioi and Lipsi** — tiny Dodecanese islands that would each
+yield one entry on an island with no practical October access. **Further
+searching will not change the answer.**
