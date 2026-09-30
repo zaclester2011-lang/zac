@@ -1081,3 +1081,65 @@ they do.
 
 **Crete still holds it.** Karpathos–Saria–Kasos has more entries but every one
 depends on a seasonal boat, which is the failure mode that removed Turkey.
+
+## ROUNDS 19–26 — the sweep closes at 82
+
+**Final: 82 at 25+ — Greece 70, Turkey 12, Cyprus 0. Nine 26s.**
+
+**Crete swept in full** (south, east and west, three rounds): **ten at 25+,
+two 26s**, and every famous Cretan beach fails on Discovery — Balos 22,
+Gramvousa 22, Preveli 21, Falasarna 20, **Elafonissi cut on Water 6**. The
+entries that score are gorge mouths, offshore islands, or coast with no road:
+Domata **26** · Marmara **26** · Trypiti · Glyka Nera · Gavdos · Kedrodasos ·
+Seitan Limania · Chrissi · **Karoumes** *(gorge or sea only)* · **Richtis**
+*(3–4 hrs through a gorge with a waterfall — the third waterfall-and-beach
+in Europe, after Samothraki and Fakistra)*.
+
+**A ninth 26: Άγιος Ευστράτιος / Agios Efstratios** — *"the most isolated
+island of the Archipelago"*, ~250 residents, **eight beaches and every one
+reachable only by boat or footpath**. Discovery 10. **Out for October at
+20–21°C.**
+
+**Further 25s:** North Skyros *(**28 hidden coves**)* · Karoumes · Richtis ·
+**Kyra Panagia** *(**the only permitted landings in the 2,200 km² Alonissos
+marine park are Planitis and Agios Petros here, plus Psathoura** — Gioura's
+landing is prohibited by law)* · Katsouni *(Anafi)* · Livadi *(Despotiko —
+uninhabited, "the other Delos")*.
+
+**Closed as 24-ceiling islands:** Andros *(Achla, Zorkos, Vitali, Grias to
+Pidima — all 24; Greek sources also note its water is cold)* · Angistri
+*(Chalikiada, Dragonera, Aponisos — all 24, and it is 40 minutes from
+Piraeus)*.
+
+### The query lesson
+
+**Anafi returned nothing twice on generic queries and gave a 25 immediately
+on the third, once actual beach names were used. Kythnos did the same.**
+
+> **"Returns nothing" usually means the wrong query, not an empty island.**
+
+That is the same failure that produced the false saturation call earlier in
+this file, in miniature. **Psara and Dokos have now had three attempts,
+including with named beaches, and stay unscorable.**
+
+### THE DECISION, CLOSED
+
+| | 25+ | 26s | October transport | Verdict |
+|---|---|---|---|---|
+| **Crete** | **10** | **2** | **ANENDYK public ferry, daily to 31 Oct** | ✅ **WINNER** |
+| Karpathos–Saria–Kasos | 9 | 1 | **Excursion boats end 20 Oct**; Kasos 2/week | ✗ |
+| Peloponnese | 6 | 1 | **Road, no boats** | Fallback |
+| Small Cyclades | 5 | 0 | Skopelitis, 6 days/wk, year-round | Second |
+| Kea–Kythnos | 3 | 0 | 20 min from Athens airport | Low-effort option |
+| Turkey — Lycian | 12 | 1 | **Day boats stop in the first weeks of Oct** | ✗ |
+
+> **Every alternative failed on the same thing: a boat that stops running.**
+> Turkey's stop in the first weeks of October. Karpathos's on the 20th.
+> Kasos runs twice a week. Mathraki's final leg is not a service at all.
+>
+> **Crete's ferry is not a tourist boat — Loutro, Agia Roumeli and Gavdos
+> have no road, so it is how people get their shopping. That is why it wins.**
+
+**The trip: west Crete, first half of October, based between Chora Sfakion
+and Loutro.** Seven at 25+ from one base, ten if you cross to Sitia.
+24°C water. Direct flights to Chania.
