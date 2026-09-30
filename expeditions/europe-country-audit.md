@@ -679,6 +679,16 @@ descent)* · Pori *(Koufonisia)* · Kleftiko *(Milos)* · Kato Lakos ⚠
 *(Karpathos, boat only)* · Alonissos Marine Park ⚠ *(cleanest water in the
 Aegean, but boat rental essential and 21–22°C — the coldest here)*
 
+**Added in later rounds:** **Chrissi Island** *(off Ierapetra, Crete — 25.
+Uninhabited, no shops, no restrooms, nothing; pink fossilised-shell sand and
+**Europe's largest naturally formed juniper forest**)* · **Fteri**
+*(Kefalonia — 25, water taxi from Zola or a hard hike; ranked #4 in the
+world)* · **Alonissos Marine Park** ⚠ *(25 — cleanest water in the Aegean,
+but boat rental essential and 21–22°C)* · **Sikinos, Agios Georgios &
+Dialiskari** *(25 — one source calls it **the clearest water in the
+Cyclades**; ~270 residents, no airport, few ferries. **Single-source —
+verify**)*
+
 ## 🇨🇾 Cyprus — nothing at 25
 
 **Ceiling 23.** Blue Lagoon (Akamas) · Lara Bay · Fontana Amorosa · Karpas.
@@ -708,3 +718,19 @@ Loutro boats. **Marmara, Kedrodasos and Seitan Limania are foot-access and
 cannot be cancelled** — as are Kaputaş, Kabak and Akvaryum Koyu.
 
 > **The choice reduces to: 24–26°C water, or a coast with no road on it.**
+
+## SWEEP CLOSED — saturated
+
+Five rounds returned **5 · 3 · 2 · 1 · 1** new entries at 25+. The last
+round swept the Saronic, Patmos, Rhodes, Sifnos, Serifos, Ios, Anafi,
+Naxos, Kythira and Chalkidiki and produced **one** flagged entry.
+
+**Final: 27 water bodies at 25+ across the three countries — Greece 20,
+Turkey 7, Cyprus 0.** Further searching produces marginal entries, not
+better answers. **The sweep is closed.**
+
+Below the cut from the final rounds: Kaladi *(Kythira)* 24 · Kavourotrypes
+*(Sithonia)* 24 · Simos *(Elafonisos)* 24 · Tsakonas *(Spetses)* 24 ·
+Geranos *(Patmos)* 24 · Fykiada *(Sifnos)* 24 · Zogeria *(Spetses)* 23 ·
+Kolitsanis *(Ios)* 23 · **Psili Ammos *(Patmos)* — ✗ cut on Water 6,
+"shallow enough to stand knee-deep in"**
