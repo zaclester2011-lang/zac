@@ -1005,3 +1005,79 @@ islets *(Gioura, Kyra Panagia, Piperi, Psathoura)* · Psara · Oinousses ·
 Agios Efstratios · Nisyros · Kastellorizo · Saria · the Ionian outliers
 *(Othonoi, Erikoussa, Mathraki, Atokos, Oxeia, Strofades)* · **Pelion** ·
 the Peloponnese outside the Mani.
+
+## ROUNDS 12–18 — 75 at 25+ · Greece 63 · Turkey 12 · Cyprus 0 · eight 26s
+
+**New 26: Πορτέλλο / Portello, Mathraki** *(Diapontia islands, NW of Corfu)* —
+the island's most beautiful beach, **boat only**, sea running deep blue to pale
+blue **against white chalky cliffs**. That pale rock is the same mechanism as
+Marmara's marble and Milos's white tuff. **Corfu has direct UK flights**, so
+this is the most reachable 26 outside Crete — subject to whether the Diapontia
+boats run in October.
+
+**New 25s:** Fykio · Makares islets ⚠ *(Donousa)* · Merichas *(Iraklia)* ·
+Fakistra *(Pelion — **a chapel cut into the rock and a waterfall**; the second
+confirmed waterfall-onto-a-beach in Europe after Samothraki)* · Alatas &
+Prassouda islets ⚠ *(Pagasitic — "**only with your own boat**")* · Glossa ⚠ ·
+Kyparissi *(**isolated until the 1970s, when access was only from the sea**)* ·
+Stroggyli *(**the easternmost tip of Greece**)* · Rho · Palatia & Alimountas
+*(Saria, uninhabited)* · Hai · Agios Minas *(Karpathos)* · Aspri Ammos
+*(Othonoi)* · Rineia *(Glyfada, Stena, Lia, Ampelia — uninhabited, beside
+Mykonos)* · Livada *(Tinos)*.
+
+### Two cuts by rule, not by score
+
+**Γιούρα / Gioura** — Zone B of the Alonissos marine park: **landing and
+staying on the island are prohibited.** Cleanest water in the Aegean, and
+you may not set foot on it.
+
+**Γαλάζιο Σπήλαιο / Fokiali, Kastellorizo — Colour 10, Water 6, cut.**
+You enter lying flat on the boat floor through a three-foot opening, in
+windless seas only, and **swimming is discretionary — some are allowed,
+some are not.** Not Capri, but not plannable.
+
+### THE COLOUR 10 FINDING — the real reason Europe stops at 26
+
+**Europe has eleven Colour 10s. Nine are cut.**
+
+| Colour 10 | Fate |
+|---|---|
+| Melissani 🇬🇷 | Ticketed rowboat on a timetable |
+| Grotta Azzurra 🇮🇹 | **Water 3** — swimming prohibited |
+| Cetina spring 🇭🇷 | **Water 3** — 8°C vertical shaft |
+| Plitvice 🇭🇷 | **Water 1** — banned since 2006 |
+| Syri i Kaltër 🇦🇱 | **Water 2** — prohibited, fenced |
+| Soča 🇸🇮 | Water 7 — 8–12°C |
+| Lake Salda 🇹🇷 | Discovery 4 — electric shuttle from a distant car park |
+| Spiaggia dei Conigli 🇮🇹 | Discovery 3 |
+| Fokiali 🇬🇷 | **Water 6** — the swim is not guaranteed |
+| **Kaputaş** 🇹🇷 | ✅ survives — **only in October**, at 25 |
+| **Blue Lagoon, Comino** 🇲🇹 | ✅ survives — **only in October**, at 24 |
+
+> **The colour exists in Europe. The access and the temperature kill it.**
+> That is a better explanation than the Colour ceiling proposed earlier in
+> this file: Europe's most vivid water sits in caves you may not swim in,
+> springs at 8°C, parks that ban bathing, or car parks.
+
+### The volcanic rule
+
+Nisyros *(Pachia Ammos 24 — **Discovery 9, no road, and still cut**,
+Yialiskari 22, Lyes 22)*, Chios *(Mavra Volia 22)* and Kalymnos
+*(Platy-Gialos 21)* all cap on Colour 7: **dark volcanic sand reads deep
+blue, not turquoise.** This rules out **Santorini and Thirasia** without
+searching them. **Milos is the exception because its rock is white volcanic
+tuff, not basalt** — which is exactly why Kleftiko and Sarakiniko look as
+they do.
+
+### Where it stands
+
+| | 25+ | 26s | Transport | Getting there |
+|---|---|---|---|---|
+| **Crete south coast** | **7** | **2** | **ANENDYK ferry, daily to 31 Oct** | **Direct to Chania** |
+| **Peloponnese** | 6 | 1 | **Road — no boats at all** | Athens + 3 hrs, or ⚠ seasonal Kalamata |
+| Karpathos–Saria–Kasos | **9** | 1 | Seasonal boats ⚠ | Karpathos airport |
+| Small Cyclades | 5 | 0 | **Skopelitis, 6 days/wk, year-round** | Athens + 4–5 hr ferry |
+| Kea–Kythnos | 3 | 0 | Road + short ferry | **Lavrio, 20 min from Athens airport** |
+
+**Crete still holds it.** Karpathos–Saria–Kasos has more entries but every one
+depends on a seasonal boat, which is the failure mode that removed Turkey.
