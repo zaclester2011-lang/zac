@@ -967,3 +967,41 @@ through the rock)* 24 · **İotape (Aytap) ancient city cove** 24 ·
 > Finike** — roughly 150 km out of 8,000.
 
 **Running total: 52 at 25+ — Greece 40, Turkey 12, Cyprus 0.**
+
+## ROUNDS 10–11 — Epirus, Kea, Kythnos, Syros, the small Cyclades
+
+| Water body | Where | Why |
+|---|---|---|
+| **Πισίνα / "Blue Lagoon"** | Agios Nikolaos islet, **Syvota, Epirus** | *"Uniquely deep blue water"*, **boat access only** — day boats from Syvota or Parga |
+| **Αβύθου / Avythou** | Kea | Small, **particularly isolated**, hidden in a quiet cove |
+| **Μαυραμπέλι / Mavrabeli** | Kea | *"Paradisiacal"* — transparent water, fine pebble. Rough dirt track or boat |
+| **Σκύλος / Skylos** | Kythnos | Small, isolated, southeast corner |
+| **Βαρβαρούσα · Αετός · Γράμματα** | **Syros, northwest** | *"Exceptional green-blue waters"*, **path or boat only**. **Grammata carries inscriptions cut by ancient sailors** — the same thing that makes Albania's Grama Bay |
+| **Γερολιμιώνας · Σιφνέικο** | **Schinoussa** | **Accessible only from the sea** |
+
+**Kythnos corrected — no longer unscorable.** Its boat-or-path beaches are
+named: Agios Ioannis Theologos · Arkoudi · Gaidouromantra · Kastellas ·
+**Kolona** *(24 — the famous double-sided sandbar to Agios Loukas islet, well
+known to yachts)* · Mavrianou · Potamia · Simousi · Skylos · Stifo.
+
+Below: Bella Vraka *(Syvota — you **wade to the islet through the sea**;
+that shallowness caps it at Water 7)* 23 · Piso Kryoneri 23 · Kalamitsi
+*(Kea)* 24 · **Kryoneri, Parga ✗ cut — Discovery 4, tavernas on the sand.**
+
+### Kea and Kythnos are the most October-accessible cluster in the sweep
+
+**Ferry from Lavrio, twenty minutes from Athens airport** — Kea about an
+hour, Kythnos about two. Water 22–23°C. **Three at 25+ plus Kolona and
+Kalamitsi at 24, with no domestic flight and no island-hopping.** Land at
+Athens, drive to Lavrio, be on Kea the same afternoon. It is the low-effort
+alternative to Crete — far fewer entries, no 26, but no travel days either.
+
+**Running total: 58 at 25+ — Greece 46, Turkey 12, Cyprus 0.**
+
+**Still unsearched:** Andros · Tinos · Mykonos · Delos · Rinia · Antiparos ·
+Despotiko · Paros · Anafi · Donousa · Iraklia · Santorini · Thirasia ·
+Aegina · Angistri · Poros · Dokos · Skyros · the Alonissos marine park
+islets *(Gioura, Kyra Panagia, Piperi, Psathoura)* · Psara · Oinousses ·
+Agios Efstratios · Nisyros · Kastellorizo · Saria · the Ionian outliers
+*(Othonoi, Erikoussa, Mathraki, Atokos, Oxeia, Strofades)* · **Pelion** ·
+the Peloponnese outside the Mani.
