@@ -932,3 +932,38 @@ entry.
 **Despotiko, Schinoussa, Iraklia, Keros and Antiparos' boat-only beaches** —
 the small Cyclades need specialist sources; general Greek travel writing does
 not cover them. Also Agathonisi, Psara and Telendos.
+
+## ROUND 9 — three more Greek 25s; Turkey's east confirms the Lycian rule
+
+**🇬🇷 New at 25**
+
+| Water body | Island | Why |
+|---|---|---|
+| **Γαϊδουραύλακος / Gaidouravlakos** | Agathonisi | South side, pebble and blue-green water, **boat access only**. Most of Agathonisi's beaches are path or boat and none are organised |
+| **Νταμάρι / Damari** | Leros | **Boat access only**, crystal-clear |
+| **Vatoudi · Vgeniou · Lagkadia · Baloma** | Serifos | Four beaches **reachable only from the sea**. Serifos has **over 45 beaches**, all with clean water |
+
+**Serifos is the most October-usable of the recent finds** — a fast ferry from
+Piraeus, 22–23°C water — but it is still one island behind Athens.
+
+Below: Paradise beach *(Telendos — rocks enclose it, sheltered from the wind)*
+24 · Kryfos *(Leros)* confirmed at 25.
+
+**Unscorable: Kythnos.** Over 92 beaches, a few reachable only by boat or path
+on the north side, **and no individual beach named in any source found.** Same
+treatment as the six Wakatobi islands — logged, not scored.
+
+**🇹🇷 Turkey's eastern Mediterranean — nothing at 25**
+
+Searched Alanya, Gazipaşa, Anamur, Silifke, Mersin and Hatay in Turkish.
+**Delik Deniz / Kral Koyu** *(Gazipaşa — a natural arch the sea has pierced
+through the rock)* 24 · **İotape (Aytap) ancient city cove** 24 ·
+**Barbaros / Eğribük Koyu** *(Taşucu)* 23 · Yeşilgöz *(Aydıncık)* 24.
+
+> **The Lycian rule is now double-confirmed.** Turkey's coast was swept in
+> Turkish to the **west** (Datça, Marmaris, Bozburun, İzmir) and to the
+> **east** (Gazipaşa to Hatay). Both are consistently 23–24. **Every one of
+> Turkey's twelve entries at 25+ lies on the Lycian coast between Fethiye and
+> Finike** — roughly 150 km out of 8,000.
+
+**Running total: 52 at 25+ — Greece 40, Turkey 12, Cyprus 0.**
