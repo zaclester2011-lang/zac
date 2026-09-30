@@ -888,3 +888,47 @@ Greek-language rounds returned **5 · 2 · 2 · 1 · 0 · 1 · 0** new entries a
 Agathonisi, Arkioi and Lipsi** — tiny Dodecanese islands that would each
 yield one entry on an island with no practical October access. **Further
 searching will not change the answer.**
+
+## LATER ROUNDS — the catalogue grows, the October answer does not
+
+**A seventh 26: Αρμάθια / Armathia** *(uninhabited islet off Kasos, excursion
+boat from Fry — "the amazing beach Marmara, turquoise water and white sand")*.
+**Not October-viable** — Kasos is among the remotest islands in Greece and the
+Fry excursion boats are a summer service. Kasos also gives **Helatros 25** and
+**Αυλάκι / Avlaki 25** *(boat or a rough path)*, a better ratio than most
+islands here. **File Kasos for a summer trip.**
+
+**Further 25s, all on islands with no usable October access:**
+**Λημενάρι / Limenari · Άγιος Πέτρος** *(Tilos — "the best and most virgin
+beaches", **foot access only**)* · **Αρέτα / Areta · Τραχειά** *(Halki —
+caïque, or a complicated walk)* · **Marathi / Arkoi** ⚠ *(the
+Lipsi–Agathonisi–Arkoi–Marathi group is called "**the Polynesia of the
+Aegean, with coral waters**" — journalistic, flagged)* · **Ψιλή Άμμος /
+Psili Ammos** *(Naxos — cedars on golden dunes, turquoise water)*.
+
+Below the cut: Kamares *(Lipsi)* 24 · Marathounta, Grafiotissa, Vathy
+*(Psérimos)* 24 · Gyaloi *(Halki)* 24 · Alyko *(Naxos)* 24 · Zematas
+*(Lemnos)* 24 · Livadia *(Tilos)* 23 · Masouri *(Kalymnos)* 22 ·
+Platy-Gialos *(Kalymnos)* 21 · Mavra Volia *(Chios)* 22.
+
+**Running total: 49 at 25+ — Greece 37, Turkey 12, Cyprus 0. Seven 26s, of
+which three are usable in late October: Domata, Marmara and Delfinia.**
+
+### What actually decided this trip
+
+| Finding | Moved the decision? |
+|---|---|
+| Crete's south coast, searched in Greek — **Domata 26** | **Yes, decisively** |
+| **Turkish boat season — stops in the first weeks of October** | **Yes — removed Turkey** |
+| **ANENDYK ferry timetable — daily to 31 October** | **Yes — confirmed Crete** |
+| Six further rounds, 12 more water bodies | **No** |
+
+**Three facts decided it: two timetables and one search in the right
+language.** Everything found after the ferry timetable has been a summer
+entry.
+
+### Still genuinely unsearched
+
+**Despotiko, Schinoussa, Iraklia, Keros and Antiparos' boat-only beaches** —
+the small Cyclades need specialist sources; general Greek travel writing does
+not cover them. Also Agathonisi, Psara and Telendos.
