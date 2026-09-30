@@ -719,7 +719,56 @@ cannot be cancelled** — as are Kaputaş, Kabak and Akvaryum Koyu.
 
 > **The choice reduces to: 24–26°C water, or a coast with no road on it.**
 
-## SWEEP CLOSED — saturated
+## THE SWEEP WAS NOT SATURATED — reopened in Greek and Turkish
+
+**The "saturated" call below was wrong.** Five rounds of *English* searching
+had stopped producing; that is a limit of the method, not of the coast.
+**One search in Turkish and one in Greek each produced names that appear in
+no English listicle** — the same lesson already recorded for Indonesia:
+*search in the local language.*
+
+**🇹🇷 Turkish search — four new 25s, all in a region English sources had me
+score at 21–23 and write off:**
+
+| Cove | Where | Why |
+|---|---|---|
+| **Ceneviz Koyu (Porto Ceneviz)** | Olympos–Adrasan | Protected, **boat access only** |
+| **Sazak Koyu** | Adrasan | **No road at all** |
+| **Korsan Koyu** | Demre | Access from the sea; land route "limited and difficult" |
+| **Mağaralı Koy** | Finike | **Sea access only**, natural caves, turquoise water |
+
+Also found: **Akvaryum Koyu (Göcek)** 24 — a *second* Aquarium Bay, distinct
+from Datça's.
+
+**🇬🇷 Greek search — two new 25s:**
+
+| Beach | Where | Why |
+|---|---|---|
+| **Κρυφός / Kryfos** | Leros | Hidden behind the rocks; **reached only by small boat** |
+| **Χέλατρος / Helatros** | Kasos | Isolated, wild, remarkable water |
+
+Also found and scored below: **Μένιες / Menies** *(Rodopos, Crete — 24, dirt
+track or boat)* · **Λιχαδονήσια / Lichadonisia** *(off north Evia — 24, boat
+only, "the Greek Seychelles")* · **Άσπρη Λίμνη / Aspri Limni** *(Crete — cove
+ringed by **fossilised cedars**; too little detail to score)* · Cavo Paradiso
+*(Kos)* 24 · Thapsa *(Evia)* 24 · Armyrichi *(Evia)* 24 · Chrysi Ammos
+*(Evia)* 23.
+
+**Running total: 33 at 25+ — Greece 22, Turkey 11, Cyprus 0.**
+
+### The structural finding
+
+**Every one of Turkey's 25s is on the Lycian coast**, Fethiye to Finike. The
+Aegean north of Datça — Marmaris, Selimiye, Bozburun, Karaburun — is
+pine-forest and green water, not turquoise limestone, and produced nothing at
+25 in Turkish either. **Turkey's quality is concentrated in about 150 km.**
+
+**Nine of Turkey's eleven sit between Fethiye and Adrasan**, with seven of
+those reachable from Kaş: Butterfly Valley **26**, Kaputaş, Kekova Aquarium
+Bay, Kabak, Korsan, Mağaralı, plus Suluada, Ceneviz and Sazak at Adrasan.
+**Greece's 22 are spread across more than fifteen islands.**
+
+## SUPERSEDED — the earlier saturation call
 
 Five rounds returned **5 · 3 · 2 · 1 · 1** new entries at 25+. The last
 round swept the Saronic, Patmos, Rhodes, Sifnos, Serifos, Ios, Anafi,
