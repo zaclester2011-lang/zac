@@ -644,3 +644,67 @@ can be checked against the findings later:
   Belarus and the micro-states** may not produce ten qualifying water
   bodies at all. Where a country cannot field ten, that will be recorded
   rather than padded.
+
+---
+
+# THE EASTERN MED SWEEP — Greece · Turkey · Cyprus at 25+
+
+**Done 30 September 2026, for an October trip.** Scored with October
+Discovery — crowds leave, so entries marked down on summer crowding rise.
+**All are sea; none is freshwater; all are swimmable in late October.**
+
+## The 26s — three
+
+| Water body | Country | Oct water | Why |
+|---|---|---|---|
+| **Butterfly Valley** | 🇹🇷 Fethiye | 24–25°C | Canyon beach, boat-only or a hard scramble from Faralya, waterfall behind |
+| **Marmara Beach** | 🇬🇷 Sfakia, Crete | **24°C** | **No road.** Down the Aradena Gorge (3–4 hrs) or the coast path from Loutro. Pale marble rock is what makes the colour |
+| **Polyaigos** | 🇬🇷 Kimolos | 22–23°C | Largest uninhabited island in the Cyclades — no roads, no hotels, no beach bars. Monk seals |
+
+## The 25s — twenty-two
+
+**🇹🇷 Turkey (6)** — Suluada *(Adrasan, 25–26°C)* · Kaputaş *(Kaş, 25°C,
+cooled by an underground spring from the canyon)* · Kekova Aquarium Bay
+*("the Maldives of Turkey", seabed visible at ~20 m)* · Kabak Bay ·
+Akvaryum Koyu *(Datça)* · Serçe Limanı ⚠ *(yacht only)*
+
+**🇬🇷 Greece (16)** — Glyka Nera *(Sfakia — freshwater springs through the
+seabed, cold patches)* · Gavdos *(southernmost Europe, 90 residents)* ·
+Kedrodasos · Seitan Limania · Dysalona *(Symi — boat only, €12)* ·
+Voutoumi *(Antipaxos, Colour 10, #16 in the world 2025)* · Mesovrika
+*(Antipaxos, no facilities)* · Fteri *(Kefalonia — water taxi from Zola or a
+hard hike; ranked #4 in the world)* · Seychelles Beach *(Ikaria)* · Mouros
+*(Amorgos)* · Katergo *(Folegandros)* · Agios Ioannis *(Astypalea, 250 m
+descent)* · Pori *(Koufonisia)* · Kleftiko *(Milos)* · Kato Lakos ⚠
+*(Karpathos, boat only)* · Alonissos Marine Park ⚠ *(cleanest water in the
+Aegean, but boat rental essential and 21–22°C — the coldest here)*
+
+## 🇨🇾 Cyprus — nothing at 25
+
+**Ceiling 23.** Blue Lagoon (Akamas) · Lara Bay · Fontana Amorosa · Karpas.
+The **warmest sea in the Mediterranean in late October at 26°C**, and its
+freshwater is gone by autumn — Caledonia Falls is a Water 4.
+
+## Swept and produced nothing at 25+
+
+Çıralı 22 · Adrasan 23 · Olympos 21 · Bodrum / Cennet Koyu 22 · Gökçeada 21
+· Agiofili 24 · Gidaki 24 · Spilia, Skopelos 24 · Apella 23 · Kyra Panagia 23
+· Papafragas 23 · Tsigrado 23 · Sarakiniko 22 · Balos 22 · Navagio 22 ·
+Voidokilia 23 · Marathonisi 23 · Porto Katsiki 23
+
+## The two bases that give more than two
+
+| Base | 25+ | Flight | Oct water |
+|---|---|---|---|
+| **🇹🇷 Kaş / Kalkan** | **5** — Butterfly Valley **26**, Kaputaş, Kekova Aquarium Bay, Kabak, Suluada | Direct, Dalaman | **24–26°C** |
+| **🇬🇷 West Crete** | **5** — Marmara **26**, Glyka Nera, Gavdos, Kedrodasos, Seitan Limania | **Direct, Chania** | 23–24°C |
+
+**Everything else in Greece is one or two water bodies behind two flights.**
+Greece has 17 of the 25 and they are spread over twelve islands.
+
+**Both bases degrade to three if the October boats stop.** Turkey's risk is
+the Ölüdeniz boats to Butterfly Valley; Crete's is the Gavdos ferry and the
+Loutro boats. **Marmara, Kedrodasos and Seitan Limania are foot-access and
+cannot be cancelled** — as are Kaputaş, Kabak and Akvaryum Koyu.
+
+> **The choice reduces to: 24–26°C water, or a coast with no road on it.**
