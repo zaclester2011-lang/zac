@@ -3,7 +3,7 @@
 Planning archive for Zac Lester. Persistent record of trips planned, DNA criteria,
 and scored destination research.
 
-Last updated: 26 September 2026
+Last updated: 2 October 2026
 
 ---
 
@@ -11,6 +11,7 @@ Last updated: 26 September 2026
 
 | Trip | Status | Window | Travellers |
 |---|---|---|---|
+| **West Crete** | **PLANNED FROM RESEARCH** — dates assumed, nothing booked | **October 2026** | Zac, James, Jacob |
 | **Zanzibar + Pemba** | **PLANNED, NOT BOOKED** — itinerary complete, nothing reserved | **21 Oct – 2 Nov 2026** | Zac, James, Jacob |
 | **Scotland** | Partially planned | 23–27 Aug 2026 | Zac, James |
 | **Indonesia** | **Research complete — route not chosen** | **August 2027** | Zac, James, Jacob |
@@ -54,6 +55,7 @@ Last updated: 26 September 2026
 | `october-2026-alternatives.md` | Costed shortlist researched Aug 2026 |
 | `sardinia-corsica-2026.md` | Shelved — full itinerary retained |
 | `baja-california-sur.md` | Shelved — trip record + costing |
+| `crete-2026.md` | **October 2026 candidate — 7 water bodies at 25+ from one base, two 26s, ferry verified to 31 Oct** |
 | `malaysia.md` | **Malaysia — best water is inside the eastern Sabah advisory; without it, ceiling 24** |
 | `palawan.md` | **Palawan first pass — ~60 water bodies, two 27s, season is Mar–May not August** |
 | `europe-country-audit.md` | **Every European country's best 10 — nine countries done, ceiling is 25** |
