@@ -1334,3 +1334,73 @@ all.
 
 > **So: complete for everywhere that has been written about. Not complete for
 > everywhere that exists — and that gap cannot be closed with search.**
+
+## THE FOUR GAPS — closed 2 October 2026
+
+After a challenge to the completion claim, four regions were identified as
+either unsearched or ruled out by inference rather than evidence. **All four
+now searched. None produced a 25.**
+
+### 1 · Sea of Marmara — searched, not inferred. Ceiling 22.
+
+Kapıdağ peninsula / Erdek 22 *(coves "hidden in every corner", blue-flag
+beaches, and **"some of the cleanest sea on the Marmara coast because it
+sits in a gulf"** — Ocaklar, Turanköy and Çuğra described as "glass-clear")* ·
+Altınkum, Çınar, Tavşanlı 22 *(the hidden coves outside Marmara Adası's
+centre)* · Paşalimanı 21 · Ekinlik 21 · Marmara Adası 21 · **Avşa ✗ cut** *(a
+5 km beach, "the sea as clear as an aquarium", and it is Istanbul's weekend
+island — Discovery 4)*.
+
+**Mechanism: Colour 7 across the basin.** The Marmara is a transitional sea
+with a low-salinity surface layer — clean in the gulfs, sandy and shallow,
+**clear but never turquoise.**
+
+### 2 · Black Sea — searched properly. It corrected two of my own figures.
+
+| Correction | |
+|---|---|
+| **Temperature** | I stated 18–19°C. **Measured: Giresun 22.6°C, Ordu 21°C in early October** — comparable to the north Aegean |
+| **Colour** | I had ruled it out by analogy with Bulgaria. **Kapısuyu's water is "turquoise, in defiance of the Black Sea"**; Çaka is "White Sand Beach" with "the clearest water on the Black Sea"; Gideros is emerald |
+
+**Gideros Koyu 24** *(Cide — **one of the most protected coves of the Black
+Sea**, a first-degree natural and second-degree historical site, where
+chestnut, oak, beech and boxwood meet the water)* · **Kapısuyu 24** · Çaka 23
+· Vona 21 *(shallow)* · **Karakum ✗ cut** *(black volcanic sand from the
+Boztepe peninsula — the volcanic rule, 1,000 km from the Aegean)*.
+
+**Mechanism: geology, not temperature or pollution.** The coast is the Pontic
+mountains meeting the sea — forest, dark rock, river valleys, **and no
+limestone karst, so no pale shallow coves.** The positive rule in the
+negative: **no pale rock, no turquoise.**
+
+### 3 · Greek Thrace — ceiling 22.
+
+Erasmio 22 *(**the most remote beach in Xanthi** — and the sources call its
+water shallow outright)* · Ammolofoi 21 *(**four successive coves over 3 km,
+turquoise and crystal-clear** — and famous)* · Fanari, Makri, Dikella 21 ·
+Ammoglossa 20 *(a 5 km sandspit on the Nestos delta)*.
+
+**Mechanism: the Nestos and Evros deltas plus a long shallow sandy shelf**,
+inside the cold north Aegean band.
+
+### 4 · Aetolia-Acarnania — ceiling 22.
+
+Agios Ioannis, Palairos 22 *("further from the village, therefore more
+isolated")* · Mytikas 22 · Potamaki, Pogonia, Varko 21 · **Kryoneri ✗ cut**
+*(a resort with an organised beach and shops)*.
+
+**Mechanism: sheltered inner-Ionian channel water** between the mainland and
+Lefkada, Kalamos and Kastos, with the Acheloos delta to the south — green,
+not turquoise — **and it is the heart of the Ionian charter grounds.**
+
+---
+
+**TALLY UNCHANGED BY ALL FOUR: 95 at 25+ — Greece 83 · Turkey 12 · Cyprus 0 ·
+ten 26s.**
+
+**Turkey is now covered to the same depth as Greece: eleven Turkish-language
+rounds across the Lycian coast, the Aegean, the Bodrum peninsula, Göcek's
+twelve islands, the eastern Mediterranean, the Turkish islands, the Black Sea
+and the Gulf of Saros.** Every one of its twelve entries at 25+ lies on about
+150 km of Lycian coast between Fethiye and Finike. **That was an inference
+from five searches. It is now a finding.**
