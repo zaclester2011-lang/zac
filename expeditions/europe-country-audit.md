@@ -1516,3 +1516,54 @@ year-round ferry spine, a 30-minute hop between islands)**.
 **Milos + Kimolos is the quiet winner on logistics.** Crete is the winner on
 score. Nothing else in 97 entries across three countries comes close on
 these dates.
+
+---
+
+## THE ORPHAN CUT — 44 green becomes 36
+
+**A second filter, laid over the green list: is there more than one thing to
+do when you get there?**
+
+Eight green entries are **orphans** — one water body, its own journey, nothing
+else within reach. They are cut from the trip list. **They keep their scores
+and stay in the audit; they are out of the plan.**
+
+| Cut | Score | The journey | What else is near it |
+|---|---|---|---|
+| Naxos | 25 | Athens + 4–5 hr ferry | **Nothing** — the island's other beaches are 22–24 |
+| Amorgos | 25 | Athens + 8 hrs | **Nothing** |
+| Astypalea | 25 | Its own flight | **Nothing** — it sits in the gap between the Cyclades and the Dodecanese |
+| Folegandros | 25 | Athens + 4 hrs | **Nothing** |
+| Anafi — Katsouni | 25 | Athens + 9 hrs, or via Santorini | **Nothing.** One beach, 300 residents |
+| Sikinos — Malta | 25 | Athens + 6 hrs | **Nothing.** Only 3 Sikinos beaches have road access and Malta is not one |
+| Rineia | 25 | Mykonos, 45 min, **24–31 Oct only** | **Delos — and you may not swim or stay there** |
+| **Mathraki — Portello** | **26** | Fly Corfu, then a ferry sailing **~once a week** | **Nothing.** Aspri Ammos is 🔴 — its boat stopped 7 Sep |
+
+**Mathraki is the one that costs something, because Portello is a 26.** But
+the price is a separate flight, a weekly boat, and **being stranded for seven
+days if you mistime it — for one beach, on an island with nothing else on
+it.** The 26 is real. The trip is not.
+
+### What the green list actually looks like after the cut
+
+| | Entries | Verdict |
+|---|---|---|
+| **Three clusters** | **22** — Crete 10 · Milos+Kimolos 6 · Mani 6 | **Where the trip is. Five of the six green 26s** |
+| Two walkable chains | 8 — Serifos 4 · small Cyclades 4 | Defensible as a second week |
+| One foreign cluster | 5 — Lycian coast | Different country, every day-boat already stopped |
+| ~~Orphans~~ | ~~8~~ | **CUT** |
+
+**36 green. And the comparison is now brutally simple: Crete is ten water
+bodies and three 26s from one base, and the entire rest of Europe offers one
+further 26 — on an island with a weekly boat.**
+
+### The rule this adds
+
+> **A cluster is worth more than the sum of its scores, and an orphan is
+> worth less than its score.** A 25 is a good swim. It is not worth a
+> five-hour ferry, a night's accommodation and a five-hour ferry back when
+> Crete has nine of them inside one bus ride.
+
+**Three filters have now been applied to the archive, in order: the weak-link
+rule (water), the October filter (access), the orphan cut (geography).**
+97 at 25+ → 44 reachable → **36 worth going to.**
