@@ -1,17 +1,27 @@
-# West Crete — October 2026
+# West Crete — 24 October to 2 November 2026
 
-**Status: PLANNED FROM RESEARCH — nothing booked, dates assumed**
+**Status: PLANNED FROM RESEARCH — nothing booked. Dates now fixed.**
 
-> **Dates assumed: 7 nights in the first half of October.** Change them and
-> two things move — the Gavdos sailing port, and the Loutro ferry frequency.
-> Everything else holds to 31 October.
+> **Dates: 24 October – 2 November. Nine nights.** Two things follow from
+> that and both matter.
+>
+> **1 · The dates straddle the ferry window.** ANENDYK runs to **31 October**.
+> **24–31 Oct is the water; 1–2 November is the drive back to Chania.**
+> Build the whole plan inside the first eight days.
+>
+> **2 · The clocks change on 25 October.** Sunset drops to about **17:20**.
+> Every gorge walk and every water taxi has to be finished by about 16:30,
+> and the Aradena descent has to start early.
+>
+> **3 · After the 16th, Loutro drops from 14 sailings a day to 8.** Still
+> plenty, but no longer "turn up and go".
 
 | | |
 |---|---|
 | **Travellers** | Zac, James, Jacob |
 | **Airport** | **Chania (CHQ) — direct from London** |
 | **Bases** | Chania 1 night · **Chora Sfakion or Loutro 5** · Chania 1 |
-| **Water bodies at 25+** | **7 from one base** · 10 if you cross to Sitia |
+| **Water bodies at 25+** | **9 green on these dates** · 10 with the Sougia taxi |
 | **Sea temperature** | **24°C — Libyan Sea, warmer than Crete's north coast** |
 | **Flight budget** | **£800 return, all three** *(as set)* |
 
@@ -36,7 +46,8 @@ reason this wins.**
 |---|---|---|---|
 | 1 | **Δώματα / Domata** | **26** | **No road.** Water taxi from Sougia or Agia Roumeli, or the E4 path *(experience, equipment and planning required — not with a 12-year-old)*. **Discovery 10 — the only one in Europe for water you can swim in** |
 | 2 | **Μάρμαρα / Marmara** | **26** | **No road.** Down the Aradena gorge, or boat from Loutro. **Pale marble rock is what makes the colour** |
-| 3 | **Τρυπητή / Trypiti** | 25 | Boat, or a hard hike from Sougia |
+| 3 | **Τρυπητή / Trypiti** | **26** | Boat, or a hard hike from Sougia. **Upgraded from 25** — the Greek sources say *turquoise* outright, not just "clear" |
+| 3b | **Πεύκη / Pefki** | 25 | Same Sougia cluster, boat or path |
 | 4 | **Γλυκά Νερά / Glyka Nera** | 25 | Foot from Loutro, or boat. **Freshwater springs well up through the seabed — expect cold patches** |
 | 5 | **Γαύδος / Gavdos** | 25 | **The southernmost point of Europe.** 29 km², ~90 permanent residents |
 | 6 | **Σεϊτάν Λιμάνια / Seitan Limania** | 25 | Road + a steep descent, near Chania |
@@ -44,8 +55,13 @@ reason this wins.**
 
 **Add a second base at Sitia (3+ hrs east) for:** **Καρούμες / Karoumes 25**
 *(gorge or sea only)* · **Ρίχτης / Richtis 25** *(3–4 hrs through a gorge with
-a waterfall)* · **Χρυσή / Chrissi 25** *(uninhabited, pink fossil-shell sand,
-**Europe's largest naturally formed juniper forest**, no facilities at all)*.
+a waterfall)*.
+
+**Χρυσή / Chrissi 25 is OUT on these dates.** Uninhabited, pink fossil-shell
+sand, **Europe's largest naturally formed juniper forest** — and the boats
+from Ierapetra run May to September, last sailing about **30 September**.
+One source is blunt: *"On 9 October there are no more connections."*
+**Παξιμάδια / Paximadia is out for the same reason.**
 
 **Supporting, 24 and below:** Agios Pavlos 24 *(1.5 km, isolated)* · Loutro 24
 *(**car-free village, no road connects it to anywhere**)* · Agiofarago 24 ·
@@ -78,16 +94,22 @@ about two hours on the island. It has rooms and camping.
 
 ## DRAFT WEEK
 
-| Day | | Water |
+| Date | | Water |
 |---|---|---|
-| Arrive | Fly London → Chania. Drive 30 min | **Seitan Limania 25** |
-| 1 | Drive southwest | **Kedrodasos 25** *(and look at Elafonissi, don't swim it)* |
-| 2 | Drive to Chora Sfakion, ferry in | **Glyka Nera 25** |
-| 3 | Aradena gorge down, boat back from Loutro | **Marmara 26** |
-| 4 | Ferry to Sougia, water taxi | **Domata 26** + **Trypiti 25** |
-| 5 | **Gavdos — overnight** | **Gavdos 25** |
-| 6 | Return ferry, slack day | Agios Pavlos 24 or Agiofarago 24 |
-| 7 | Drive to Chania, fly home | — |
+| **Fri 24 Oct** | Fly London → Chania. Drive 30 min | **Seitan Limania 25** |
+| Sat 25 | Drive southwest. **Clocks change tonight** | **Kedrodasos 25** *(look at Elafonissi, don't swim it)* |
+| Sun 26 | Drive to Chora Sfakion, ferry in | **Glyka Nera 25** |
+| Mon 27 | **Aradena gorge down early**, boat back from Loutro | **Marmara 26** |
+| Tue 28 | Ferry to Sougia, water taxi | **Domata 26** + **Trypiti 26** + Pefki 25 |
+| Wed 29 | Slack / weather buffer | Agios Pavlos 24 or Agiofarago 24 |
+| **Thu 30** | **Gavdos — overnight.** 10:30 out of Sfakion | **Gavdos 25** |
+| Fri 31 | **14:30 return. Last day of the ferry season** | Loutro 24 |
+| Sat 1 Nov | Drive to Chania *(or east to Sitia for Karoumes/Richtis)* | — |
+| **Sun 2 Nov** | Fly home | — |
+
+**Wednesday 29 is deliberately empty.** One blown day in the Libyan Sea in
+late October is normal, and the Gavdos overnight is the thing that cannot
+move — it has to be Thu–Sun and the 30th is the last one inside the window.
 
 **Base at Chora Sfakion for the car, or Loutro for the no-road village —
 Loutro means parking at Sfakion and going in on the boat.**
@@ -96,12 +118,17 @@ Loutro means parking at Sfakion and going in on the boat.**
 
 ## OPEN — in priority order
 
-1. **The Domata water taxi.** The one thing that cannot be booked from the UK.
-   A conversation in Sougia the day before. **If it falls through, Domata is
-   the E4 path and that is not on with Jacob** — so treat the 26 as likely,
-   not certain.
-2. **Which week.** It sets the Gavdos port: Thu–Sun from Sfakion, Mon–Wed from
-   Paleochora.
+1. **The Domata water taxi — SEND THIS EMAIL.** **Sougia Taxi Meletis**
+   publishes **Domata, Trypiti, Marmara and Gavdos** on its route list,
+   €20–350. **meletistaxisougia@gmail.com · +30 694 085 9860 ·
+   +30 28230 51186.** Ask one thing: *does it run 24–31 October 2026.*
+   **This converts Domata from a conversation on the quay into a booking,
+   and it is the difference between 9 water bodies and 10 — and between two
+   26s and three.** If it is no, Domata is the E4 path and **that is not on
+   with Jacob.**
+2. **Gavdos day: Thursday 30 October.** The Sfakion boat runs Thu–Sun to
+   31 Oct, so Thu 30 is the last clean overnight inside the window.
+   *(Mon–Wed the boat goes from Paleochora instead.)*
 3. **Flights — London only.** Birmingham, Bristol and Leeds/Bradford all stop
    flying to Chania **in October**; London Stansted and Heathrow run into
    **November**. **The regional routes would die before the ferry does.**
@@ -126,3 +153,34 @@ Loutro means parking at Sfakion and going in on the boat.**
 available this month.** It is not the best water in the archive — Indonesia
 and Zanzibar are far above it — but both are the wrong month or the wrong
 budget for October 2026.
+
+---
+
+## THE ONE REAL ALTERNATIVE — Milos + Kimolos
+
+The October access filter threw up a second cluster that nothing else in 97
+entries matches. **It loses on score and wins on logistics.**
+
+| | West Crete | Milos + Kimolos |
+|---|---|---|
+| Green on the dates | **9–10** | **6** |
+| 26s | **Marmara · Trypiti** (+Domata) | **Polyaigos** |
+| Hardest access | **Aradena gorge, E4 to Domata** | **a 30-min walk on a dirt track** |
+| Boats | ANENDYK daily to 31 Oct | Pollonia–Kimolos year-round · Polyaigos tours **to end Oct** |
+| Risk | Domata unresolved | exact last tour date unpublished |
+| Flights | Chania direct from London | Milos via Athens, or ferry from Piraeus |
+
+**The six:** Polyaigos 26 · Kleftiko 25 · Tsigrado 25 *(rope-and-ladder
+descent)* · Papafragas 25 *(you swim inside it)* · **Agioklima 25**
+*(4×4 or a path over Mt Sklavos — **a 50°C thermal spring at the water's
+edge**)* · **Mavrospilia 25** *(20–30 min on foot, white rock at
+Aspragremna, looking across at Polyaigos)*.
+
+**Why Milos escapes the volcanic rule:** its rock is **white tuff, not
+basalt**. Santorini, Thirasia, Nisyros and south Chios all cap at Colour 7
+on black sand. Milos is the exception that proves the mechanism.
+
+**Recommendation: Crete.** Two 26s are certain there and only one is certain
+on Milos, and Chania is a direct flight. **But if the Meletis email comes
+back no, the gap narrows to 9 v 6 with the hardest Cretan entries removed —
+and at that point Milos is the better trip for a thirteen-year-old.**

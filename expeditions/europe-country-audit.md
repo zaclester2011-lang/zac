@@ -1404,3 +1404,115 @@ twelve islands, the eastern Mediterranean, the Turkish islands, the Black Sea
 and the Gulf of Saros.** Every one of its twelve entries at 25+ lies on about
 150 km of Lycian coast between Fethiye and Finike. **That was an inference
 from five searches. It is now a finding.**
+
+---
+
+# THE OCTOBER FILTER — 24 October to 2 November 2026
+
+The audit above scores water. **This section scores access on actual dates.**
+Every entry at 25+ was tested against one question: **can three people get to
+it, legally and physically, between 24 October and 2 November?**
+
+**Traffic lights:** 🟢 a service that runs, verified · 🟡 unresolved ·
+🔴 the boat stops, the landing is prohibited, or there is no service at all.
+
+**The count resolved: 97 at 25+ → 44 green · 0 yellow · 53 red.**
+
+## The rule the filter found
+
+**It is almost never the weather and almost never the water. It is a boat
+that stops running.** The Aegean in late October is 23–24°C in the south.
+What ends on 15 or 20 October is the *excursion industry*.
+
+**So the test is not "is there a boat" but "is the boat a service or a
+tour".** A tour sells a season. A service carries the shopping.
+
+| | Service | Tour |
+|---|---|---|
+| Runs to 31 Oct+ | ANENDYK (south Crete) · Skopelitis · Kerkyra Lines (Diapontia) · Kimolos–Pollonia · every main-island ferry | — |
+| Stops 15–20 Oct | — | Antiparos/Despotiko · Saria · Antipaxos sea taxis · Ölüdeniz |
+| Already finished | — | Chrissi (~30 Sep) · Aspiotis Diapontia cruise (7 Sep) |
+
+## GREEN — the 44
+
+| Cluster | Green | 26s |
+|---|---|---|
+| **Crete — Chania + Sfakia, 2nd base Sitia** | **9** (10 with Meletis) | **Marmara 26 · Trypiti 26** (+Domata 26) |
+| **Milos + Kimolos** | **6** — Polyaigos · Kleftiko · Tsigrado · Papafragas · Agioklima · Mavrospilia | **Polyaigos 26** |
+| **Peloponnese / Mani** | **6** | **Delfinia 26** |
+| **Serifos** | 4 | — |
+| Small Cyclades (Skopelitis) | 4 | — |
+| Naxos, Amorgos, Astypalea, Folegandros | 4 | — |
+| Kythnos — Kolona/Merichas | 2 | — |
+| Anafi — Katsouni · Sikinos — Malta | 2 | — |
+| Rineia *(24–31 Oct only)* | 1 | — |
+| Mathraki — Portello *(one sailing a week)* | 1 | **Portello 26** |
+| Lycian coast, Turkey *(road-reached only)* | 5 | — |
+
+## RED — why, grouped by mechanism
+
+**1 · The tour season ends mid-October (14).** **Epitafios 26** · Livadi
+(Despotiko) · Faneromeni · Voutoumi · Mesovrika · Aspri Ammos · Marathi ·
+Saria · Butterfly Valley · Chrissi · Paximadia · Pisina (Syvota) · Alatas ·
+Prassouda.
+
+**2 · No scheduled service exists at all (3).** **Dokos** *(kaïki, speedboat
+or yacht only)* · Makares · Gioura-side islets.
+
+**3 · Administrative failure, not season (2). Kastos · Kalamos** — the
+Ministry of Maritime Affairs **received no bids for Kastos–Mytikas and
+rejected the Kalamos–Mytikas bid**; the line sits in a failed tender, and the
+Ionian small islands have gone into a season with no link at all. **This one
+could flip either way by next October.**
+
+**4 · Statutory closure (6).** Gioura *(landing prohibited, marine park Zone
+B)* · Piperi *(Zone A — approach by any vessel forbidden)* · Keros *(Ministry
+of Culture permit)* · Delos *(no overnight)* · Farmakonisi *(military)* ·
+**Thodorou (open one day a year** — kri-kri sanctuary, NATURA 2000).
+
+**5 · Private (7).** Skorpios · Madouri · Sparti · Arkoudi · Spetsopoula ·
+Oxeia · **Atokos** *(scored 25 before ownership was known)*.
+
+**6 · Water temperature (21).** The whole north Aegean band at 20–21°C.
+
+## The three resolutions that went the other way
+
+Three entries were carried as yellow on the assumption they were boat-only.
+**They are not, and that is worth recording as a method note: "isolated"
+in travel writing does not mean "sea-access".**
+
+- **Mavrospilia (Kimolos) 25** — car or bike to a point, then **20–30 min on
+  foot, last stretch dirt track**. South-west tip, looking at Polyaigos,
+  beside **Aspragremna — the all-white rocks**. The pale-rock signature.
+- **Agioklima (Kimolos)** — "by boat, **or 4×4, or a difficult path from
+  Chorio over Mt Sklavos**". **A 50°C thermal spring surfaces at its edge**,
+  which in late October is an asset, not a curiosity.
+- **Serifos' four** — Malliadiko is road, then 500 m of dirt track to a
+  parking flat, then a 250 m path. Vagia, Koutalas, Mega Livadi all road.
+
+**Katsouni (Anafi)** and **Malta (Sikinos)** resolved the same way — a path
+above Klisidi, 10–15 minutes; a trail from the church of Prophet Elias.
+
+## THE VERDICT ON THE DATES
+
+**Of Europe's eleven 26s, four are green, one is green but awkward, one hangs
+on an email, and five are shut.**
+
+| 26 | Status |
+|---|---|
+| **Marmara** (Crete) | 🟢 ANENDYK, daily to 31 Oct |
+| **Trypiti** (Crete) | 🟢 same coast, 40 km away |
+| **Delfinia** (Mani) | 🟢 road |
+| **Polyaigos** (Milos) | 🟢 daily boats May–Oct, €75–140pp |
+| **Portello** (Mathraki) | 🟢 year-round ferry — **~1 sailing a week in Oct** |
+| **Domata** (Crete) | 🟡 **Sougia Taxi Meletis** — one email |
+| **Epitafios** (Antiparos) | 🔴 boats stop 10–20 Oct |
+| Kleftiko-side 26s, Saria, Chrissi, Paximadia | 🔴 |
+
+**Two clusters survive the filter with a 26 and no hiking risk:**
+**Crete (9–10, two 26s certain)** and **Milos + Kimolos (6, one 26, one
+year-round ferry spine, a 30-minute hop between islands)**.
+
+**Milos + Kimolos is the quiet winner on logistics.** Crete is the winner on
+score. Nothing else in 97 entries across three countries comes close on
+these dates.
