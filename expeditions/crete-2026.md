@@ -118,14 +118,9 @@ Loutro means parking at Sfakion and going in on the boat.**
 
 ## OPEN — in priority order
 
-1. **The Domata water taxi — SEND THIS EMAIL.** **Sougia Taxi Meletis**
-   publishes **Domata, Trypiti, Marmara and Gavdos** on its route list,
-   €20–350. **meletistaxisougia@gmail.com · +30 694 085 9860 ·
-   +30 28230 51186.** Ask one thing: *does it run 24–31 October 2026.*
-   **This converts Domata from a conversation on the quay into a booking,
-   and it is the difference between 9 water bodies and 10 — and between two
-   26s and three.** If it is no, Domata is the E4 path and **that is not on
-   with Jacob.**
+1. **The Domata charter — EMAIL BOTH OPERATORS.** See the section below.
+   **It is the difference between 9 water bodies and 10, and between two
+   26s and three.** It is no longer a season risk.
 2. **Gavdos day: Thursday 30 October.** The Sfakion boat runs Thu–Sun to
    31 Oct, so Thu 30 is the last clean overnight inside the window.
    *(Mon–Wed the boat goes from Paleochora instead.)*
@@ -184,3 +179,56 @@ on black sand. Milos is the exception that proves the mechanism.
 on Milos, and Chania is a direct flight. **But if the Meletis email comes
 back no, the gap narrows to 9 v 6 with the hardest Cretan entries removed —
 and at that point Milos is the better trip for a thirteen-year-old.**
+
+---
+
+## DOMATA — RESOLVED
+
+**The mistake was treating this as a season question.** No operator publishes
+an end date for Domata because **there is no timetable to end.** Domata has
+never had a scheduled service. It is a **private charter stop**, and the
+uniform wording across every operator is:
+
+> **"April to October, when the sea conditions allow."**
+
+**The constraint is the sea on the day, not the calendar — and 24–31 October
+is inside April–October.** That puts Domata in exactly the same risk class as
+the Marmara boat leg and the Polyaigos tour, which is a class this plan
+already accepts everywhere else.
+
+### Three operators, two ports
+
+| Operator | Contact | Serves |
+|---|---|---|
+| **Sougia Taxi Meletis** *(Meletis Nempavlakis)* | **meletistaxisougia@gmail.com**<br>**+30 694 085 9860**<br>Papaderou St, Sougia Selinou 73009 | **Domata · Trypiti · Marmara · Lykos · Gavdos.** Also runs **out of Agia Roumeli** for walkers coming off the Samaria gorge |
+| **Sougia Cruises** | **soygiacruises@hotmail.com**<br>**+30 693 407 8684 · +30 697 322 0472** | **Domata · Trypiti · Lissos · Agios Antonios** |
+| **Yannis Paterakis** — traditional wooden caïque | **+30 697 322 0472** | Charter east to Agia Roumeli, **optional stops Lissos, Anidri, Agios Antonios, Trypiti, Domata.** Scheduled Lissos run €4pp, 10:00/15:30 |
+
+**Two ports is the real insurance.** You can go from Sougia *or* from Agia
+Roumeli, and Agia Roumeli is on the daily ANENDYK ferry. **If one boatman
+won't go, ask the next.** Polyaigos, by contrast, has a single tour operation
+out of Adamas.
+
+**Price anchor: Sougia → Trypiti was €40 in October 2020.** Domata is further
+east; budget perhaps €60–100 for the boat, not per person. **Trypiti is on the
+way, so one charter buys both 26s in a single morning**, with Pefki and Agios
+Antonios as optional stops.
+
+### The email to send
+
+> *A charter from Sougia to Domata and Trypiti, one morning between 24 and
+> 31 October 2026, three people. What does it cost, and will you go?*
+
+**Send it to Meletis and Sougia Cruises both.** A "no" now means "not that
+day's weather", not "no boat" — **which is why Wednesday 29 October stays
+empty as the retry day.**
+
+### The E4 is definitively out
+
+Not "not ideal with Jacob" — out. The Greek hiking sources on the
+Domata–Agia Roumeli section are explicit: highest point **350 m**,
+**"particularly exhausting and extremely dangerous — you walk for a
+considerable time on the cliff's edge, and if you are not an experienced
+hiker it is very likely you could get lost."**
+
+**The boat is not the preferred option. It is the only option.**
