@@ -1235,3 +1235,31 @@ has nowhere to score. The zero is a property of the island, confirmed in both
 languages.**
 
 **FINAL: 90 at 25+ — Greece 78 · Turkey 12 · Cyprus 0 · ten 26s.**
+
+## THE STRUCTURAL RULES — how a region this size actually gets finished
+
+Thirty-eight rounds in, these five mechanisms rule out hundreds of
+kilometres of coast at a time, without searching it beach by beach. **Each
+was derived from places that were searched and scored, then applied
+outward.**
+
+| Rule | What it caps | Rules out |
+|---|---|---|
+| **Volcanic sand** | Colour 7 — a dark bottom reads deep blue, never turquoise | Santorini · Thirasia · Nisyros *(Pachia Ammos has **Discovery 9, no road, and still fails**)* · south Chios · Kalymnos · Glaronisia. **Milos escapes only because its rock is white tuff, not basalt** |
+| **North Aegean temperature** | Water — **20–21°C in late October** | Lesvos · Lemnos · Samothraki · Chios · Thassos · Psara · Agios Efstratios · Skyros · Chalkidiki. **Kills Vatos 26 and Agios Efstratios 26 outright** |
+| **River deltas** | Colour 6–7 — sediment | **All 23 Echinades** *(the Acheloos empties into them)* · **the Thermaic Gulf** *(four rivers: Aliakmonas, Loudias, Axios, Gallikos)* · Pieria · Elis |
+| **The Argosaronic** | Discovery — *"concentrates **the most boats and sailing yachts in all of Greece**"* | Hydra *(no cars at all, and still 24)* · Angistri · Aegina · Poros · Salamina. **Dokos 25 is the gulf's only entry, and it is the one island with nothing on it** |
+| **Deep enclosed gulfs** | Colour — no pale shallow shelf, so no turquoise | The Corinthian *(Trizonia 23 — **vehicle-free, 64 residents**, and still cut)* · the Alkyonides · inner Pagasitic · Maliakos · Amvrakikos |
+
+### The positive form of the same finding
+
+**Turquoise in this region requires shallow water over pale rock —
+limestone, marble or white tuff — in water above about 22°C, somewhere with
+no road and no scheduled boat.**
+
+Every one of the ten 26s satisfies all four conditions. **Three of them share
+the same specific mechanism — white rock:** Marmara's marble, Portello's
+chalk cliffs, Epitafios' white cliffs.
+
+**And the two usable in late October are both on forty kilometres of one
+Cretan coast.**
