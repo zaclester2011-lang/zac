@@ -1263,3 +1263,74 @@ chalk cliffs, Epitafios' white cliffs.
 
 **And the two usable in late October are both on forty kilometres of one
 Cretan coast.**
+
+---
+
+# COMPLETION STATEMENT — 2 October 2026
+
+**FINAL: 95 at 25+ — Greece 83 · Turkey 12 · Cyprus 0 · ten 26s.**
+
+## What is genuinely complete
+
+**Every named inhabited island in Greece, Turkey and Cyprus that has
+beaches described in any source, searched in Greek, Turkish and English.**
+Around forty rounds. All the island groups worked by name:
+
+Crete *(south, east and west)* · the Dodecanese *(Rhodes, Kos, Karpathos,
+Saria, Kasos, Armathia, Halki, Symi, Tilos, Nisyros, Kalymnos, Telendos,
+Pserimos, Leros, Lipsi, Arkoi, Marathi, Agathonisi, Astypalea, Patmos,
+Kastellorizo, Rho, Stroggyli, Gyali)* · the Cyclades including the small
+ones *(Milos, Kimolos, Polyaigos, Serifos, Sifnos, Kythnos, Kea, Andros,
+Tinos, Syros, Mykonos, Rineia, Naxos, Paros, Antiparos, Despotiko, Ios,
+Sikinos, Folegandros, Santorini, Thirasia, Anafi, Amorgos, Koufonisia,
+Schinoussa, Iraklia, Donousa)* · the north Aegean *(Lesvos, Lemnos, Chios,
+Oinousses, Psara, Samos, Ikaria, the whole Fourni group, Agios Efstratios,
+Samothraki, Thassos)* · the Sporades *(Skiathos, Skopelos, Alonissos,
+Skyros, Kyra Panagia, Psathoura)* · the Ionian *(Corfu, the Diapontia,
+Paxos, Antipaxos, Lefkada, Meganisi, Kalamos, Kastos, Atokos, Oxeia, the
+Echinades, Ithaca, Kefalonia, Zakynthos, Strofades, Kythira,
+Antikythira)* · the Argosaronic *(Aegina, Salamina, Angistri, Poros,
+Hydra, Dokos, Spetses, Spetsopoula)*.
+
+**Mainland Greece by coast:** Mani · Messenia · east Laconia · Arcadia ·
+Argolis · Attica · Corinthian · Sterea Ellada · Pelion · Evia · Chalkidiki ·
+Pieria · Thermaic · Epirus · Elis.
+
+**Turkey:** the whole coast region by region in Turkish — Lycian *(Fethiye to
+Finike)*, Aegean *(Datça, Marmaris, Bozburun, İzmir, Gökçeada)* and eastern
+Mediterranean *(Alanya, Gazipaşa, Anamur, Silifke, Mersin, Hatay)*.
+
+**Cyprus:** south in Greek, north in Turkish. **Zero at 25+, confirmed in
+both languages.**
+
+## Closed by statute, not by score
+
+| | Ruling |
+|---|---|
+| **Γιούρα / Gioura** | Alonissos marine park Zone B — **landing and staying prohibited** |
+| **Πιπέρι / Piperi** | **Zone A, the park's core — approach by any vessel without permission forbidden.** Monk seal and raptor breeding |
+| **Κέρος / Keros** | **Landing forbidden without a Ministry of Culture permit** |
+| **Δήλος / Delos** | Uninhabited, **overnight stays prohibited**, organised trips only, UNESCO |
+| **Σπετσοπούλα / Spetsopoula** | Private island |
+| **Οξειά / Oxeia** | Private island |
+| **Σαλαμίνα / Salamina** | **11 of 15 beaches assessed unsuitable for swimming** — Piraeus, Perama shipyards, Elefsina refinery |
+
+## WHAT CANNOT BE COMPLETED
+
+**Greece has roughly 6,000 islands and islets. About 227 are inhabited, and
+this sweep covered the ones with any written description of their water.**
+
+**The uninhabited tail cannot be swept, and saying otherwise would be false.**
+Thousands of islets have no name in any travel source, let alone a named
+beach — and the five-for-five query lesson above proves the method needs a
+name to work. Where there is nothing to ask with, there is nothing to find.
+
+**Worked examples of the limit:** the 23 Echinades are all named and not one
+beach is described · Levitha, Kinaros, Syrna and Astakida are known to
+yachts and nobody else · Kythnos' north-coast beaches are referred to and
+never named · Psathoura's landing is permitted and its water undescribed ·
+Koufonisi, the Dionysades, Dia and the Paximadia off Crete have nothing at
+all.
+
+> **So: complete for everywhere that has been written about. Not complete for
+> everywhere that exists — and that gap cannot be closed with search.**
