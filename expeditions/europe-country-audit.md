@@ -1196,3 +1196,42 @@ earlier in this file, repeated five times at smaller scale. **The method was
 the limit, not the coastline** — and the three that stayed silent did so
 because they have no beach names to ask with, not because they were
 unsearched.
+
+## CYPRUS — swept in Greek and Turkish, north and south. Still zero.
+
+**Greek-language sweep lifted the ceiling from 23 to 24 and no further:**
+**Τρυπητή / Trypiti** *(Zapalo bay, Episkopi — an 800 m sandy "secret
+paradise", not easily accessible)* 24 · **Πεζουνόσπηλιοι / Pezounospilioi**
+*(Protaras — hidden under a cliff, **no services at all**, down many steep
+steps)* 24 · **Κάτερκο / Katerko** *(Sotira — an oasis at the end of a dirt
+track)* 24 · Peyia sea caves 23 · Lara bays 23.
+
+**Turkish-language sweep of the north produced the same ceiling:** Altınkum /
+Golden Beach *(Dipkarpaz — "one of the least crowded beaches on the island",
+Caretta caretta and Chelonia mydas nesting)* 24 · Ronnas 24 · **Ayfilon /
+Ayios Philon** *(beside a Roman church ruin with mosaic floors)* 24 ·
+**Aphendrika** *(beside the ruins of ancient Urania)* 24 · Aygün 24.
+
+### A correction, and a limit on the query lesson
+
+A Turkish source claimed **"dozens of hidden coves along the northern Karpaz,
+some unnamed, known only to locals, reachable by footpath or dirt track"** —
+which reads as a 25. **Asking for them by name resolved every one into a 24.**
+
+> **Local-language searching finds more places. But a regional claim is
+> weaker evidence than a named entry, and should not be scored as one.**
+
+### Why Cyprus structurally cannot reach 25
+
+| | |
+|---|---|
+| **No offshore islands** | Greece's 25+ are full of them — Gavdos, Chrissi, Polyaigos, Armathia, Despotiko, Rineia, Dokos, Atokos |
+| **No roadless coast** | The Akamas is the nearest thing and has dirt roads throughout |
+| **No freshwater** | Troodos streams dry by autumn; Caledonia Falls is **Water 4** |
+| **Warmest sea in the Mediterranean** | **26°C in late October** — and nothing on it that scores |
+
+**By this sweep's own rule — the score tracks the absence of a road — Cyprus
+has nowhere to score. The zero is a property of the island, confirmed in both
+languages.**
+
+**FINAL: 90 at 25+ — Greece 78 · Turkey 12 · Cyprus 0 · ten 26s.**
