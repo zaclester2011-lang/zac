@@ -1567,3 +1567,93 @@ further 26 — on an island with a weekly boat.**
 **Three filters have now been applied to the archive, in order: the weak-link
 rule (water), the October filter (access), the orphan cut (geography).**
 97 at 25+ → 44 reachable → **36 worth going to.**
+
+---
+
+# THE VERIFICATION PASS — 29 reachable becomes 21
+
+**A fourth filter: has this entry been checked in Greek or Turkish, or was it
+scored from English travel writing and never re-read?**
+
+The question was forced by **Delfinia**, which sat in this file as a 26 — the
+only one in Europe reachable without a boat — until one Greek search said
+**"covered in dark sand and fine pebble"** and **"the water deepens relatively
+quickly"**, with **showers and a canteen** on it. Dark sand and a fast
+drop-off is the exact inverse of the mechanism. **Delfinia is ≈21.**
+
+**Every entry scored from English and then re-checked has gone down. Not one
+verified entry has fallen.** That is now the single most reliable thing in
+this project.
+
+## Removed by the verification pass — 15 entries
+
+| Entry | Was | Now | The evidence that moved it |
+|---|---|---|---|
+| **Delfinia** (Mani) | **26** | ≈21 | Dark sand · deepens fast · showers and a canteen |
+| Malliadiko · Vagia · Koutalas · Mega Livadi (Serifos) | 25 ×4 | 22–23 | **Serifos is an iron island** — skarn-type ore mineralisation, mined since the 1890s. **Dark rock, so no pale shallow shelf** |
+| Seitan Limania (Crete) | 25 | 24 | Colour holds; **Discovery 6** — 30 min from Chania and saturated online |
+| Richtis beach (Crete) | 25 | 23 | **"Large pebbles, not suitable for swimming, especially on windy days."** North coast. The sea is described as *blue*, never *turquoise* |
+| **Kekova Aquarium Bay** (TR) | 25 🟢 | **🔴** | ***"Access is generally provided by Kekova boat tours"*** — a day-boat stop, and Turkish day-boats stop in the first weeks of October. **My access note was simply wrong** |
+| **Ceneviz Koyu** (TR) | 25 🟢 | **🔴** | *"Protected area — easiest access is by boat."* No trail named |
+| Gerolimionas (Mani) | 25 | 23 | Turquoise confirmed — but **tavernas and stone mansions on the water.** A settlement, not a hidden beach |
+| **Sifneiko** (Mani) | 25 | **STRUCK** | **Three Greek searches. It does not appear.** Laconian Mani sources name Agios Nikolaos, Alypa, Foneas, Marmari — never this |
+| Mikro Marathi (Messenia) | 25 | 24 | Genuinely hidden — *"very difficult access from land"* — but the water is **καταγάλανα, deep blue, not τιρκουάζ** |
+| **"2 Messenian coves"** | 25 ×2 | **STRUCK** | **They were Mikro and Megalo Marathi under other labels. A double-count** |
+
+**The Mani began the day with six entries and a 26 and ended with none.**
+
+## Found by the same pass — two new entries
+
+| | D·C·W | | |
+|---|---|---|---|
+| **Αθερίνα / Atherina** (SE Crete) | 8 · **9** · 8 | **25** | 🟢 *"The **secret** beach of Crete with the **turquoise** water"* · *"**completely unorganised**, far from mass tourism"* · between Goudouras and Kapsa Monastery, coast road then a walk beside a dry ravine. **South coast — 24°C and sheltered** |
+| **Sazak Koyu** (Adrasan, TR) | **9** · **9** · 8 | **26** 🔴 | ***"Sazak Koyu has no road."*** Boats from Adrasan, **or a ~10 km forest trail — "beautiful but difficult."** Turquoise, stony, ***"generally deserted."*** **A real 26 — and a 20 km round-trip walk with the boats stopped. Red on access** |
+
+**So Europe has eleven 26s again, and ten of them are shut or hard.**
+
+## Confirmed and strengthened
+
+**The small Cyclades got better under scrutiny, not worse.** Koufonisia:
+*"golden sand and **turquoise, shallow water**"* — the mechanism stated
+outright; Pori *"deep turquoise"*; **Platia Pounta (Gala) — a sea cave, a
+natural arch and blue natural pools.** Iraklia's Livadi: *"**white sand and
+shallow water**"*. Donousa's Kalotaritissa *"turquoise"*. Schinoussa's Psili
+Ammos *"among the best in the small Cyclades."* **All four hold at 25, all
+four now verified, all on a year-round boat.**
+
+**Kabak (TR) confirmed and reclassified:** ***"a 30-minute walk from Faralya
+village"***, the Lycian Way running through it, turquoise and clear. **Not the
+drive-up I had recorded — a trek.**
+
+**Crete and Milos/Kimolos passed all three rounds untouched.**
+
+---
+
+# THE FINAL LIST — 21, every entry verified
+
+| | Entries | 26s |
+|---|---|---|
+| **🇬🇷 Crete** | **9** | **Domata · Marmara · Trypiti** |
+| **🇬🇷 Milos + Kimolos** | **6** | **Polyaigos** |
+| **🇬🇷 Small Cyclades** | **4** | — |
+| **🇹🇷 Lycian coast** | **2** — Kaputaş · Kabak | — |
+| | **21** | **4** |
+
+**The funnel, in full: 97 at 25+ → 44 reachable → 35 after the double-count
+→ 29 → 25 → 21 verified.**
+
+**Fifteen entries removed in a single day, every one of them English-sourced.
+Zero verified entries lost.**
+
+## The four filters, in the order they must be applied
+
+1. **The weak-link rule** — below 7 in any category is cut. *(Water)*
+2. **The October filter** — can three people get there on the dates?
+   *(Access)*
+3. **The orphan cut** — is there more than one thing to do when you arrive?
+   *(Geography)*
+4. **The verification pass** — has a local-language source actually said the
+   water is turquoise and the place is hard to reach? *(Evidence)*
+
+**Filter 4 should have come first.** It removed more entries than 2 and 3
+combined, and it removed a 26.
