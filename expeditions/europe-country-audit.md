@@ -1657,3 +1657,67 @@ Zero verified entries lost.**
 
 **Filter 4 should have come first.** It removed more entries than 2 and 3
 combined, and it removed a 26.
+
+---
+
+# APPENDIX — FLORIDA, CLOSED
+
+**Asked as an October 2026 alternative: Crete vs Miami and the Everglades.**
+Swept Biscayne, the Everglades, Miami, the central-Florida springs, the Keys
+and Dry Tortugas. **One entry reaches 25 and it is 70 miles west of Key West.**
+
+| Water body | D · C · W | | Note |
+|---|---|---|---|
+| **Dry Tortugas / Garden Key** | 8 · **9** · 8 | **25** | **70 miles west of Key West — ferry, seaplane or private charter only.** 8 campsites, booked months ahead, bring your own water |
+| Elliott Key (Biscayne) | 8 · 8 · 7 | 23 | **"Seven miles of open water, six hours' paddling — advanced kayakers and perfect weather only."** But restrooms, showers, grills, a 33-slip marina |
+| Boca Chita Key | 6 · 8 · 7 | 21 | *"Crystal-clear"* — and the park's most visited island, *"packed at weekends with Miami boaters"* |
+| Bahia Honda / Calusa | **3** · **9** · 8 | 20 | ***"Gin-clear, shallow, turquoise"*** — the mechanism outright. **State park with vehicle access** |
+| Miami Beach | **1** · 7 · 8 | ✗ | A city beach under high-rises |
+| **The Everglades** | **9** · **4** · **1** | **✗** | ***"We cannot recommend swimming in the Everglades, if not for one simple reason: alligators — they hide very well and you won't see them coming."*** Tannin-stained |
+| Devil's Den | 6 · **9** · 7 | ✗ | ***"Snorkelling and scuba only — no free swimming"*** |
+| Rainbow Springs · Ichetucknee | **3–4** · 9 · 7 | ✗ | State parks with car parks and tube rental |
+| Three Sisters | 5 · **9** · 7 | ✗ | **Manatee refuge — paddlecraft banned 15 Nov – 31 Mar** |
+| Jones Lagoon | 8 · 8 · **6** | ✗ | *"Paddling through **only inches deep** water"* |
+
+**Unswept: Lignumvitae Key and Indian Key.** Four searches returned nothing
+on either. Expect 22–24 — boat access is there, but these are mangrove and
+bay islands, not pale-limestone shelf.
+
+## Why Dry Tortugas still loses
+
+1. **Wrong season.** *"Visit in the **summer months** for the best water
+   temperatures and visibility for snorkelling."* Jellyfish reported in the
+   swimming area.
+2. **A day trip gives 4.5 hours ashore** — the Gavdos-as-a-day-trip problem.
+3. **Seven hours past Miami, then $250pp by ferry or $522pp by seaplane**, on
+   top of **£450–660pp of flights against a £800 budget for three.**
+4. **Hurricane season runs to 30 November.**
+
+## THE FINDING — Florida is this audit compressed into one state
+
+**Every failure mechanism in this file reappears there, in the same order:**
+
+| Europe | Florida |
+|---|---|
+| Colour 10s you may not swim in *(nine of eleven)* | **Devil's Den** |
+| Famous beach, Discovery 1–2 *(Balos, Elafonissi, Plathiena)* | **Miami Beach** |
+| Peat and tannin kill colour *(Danum, Maliau, all Borneo)* | **The Everglades** |
+| Ankle-deep water, Water 6 *(Elafonissi)* | **Jones Lagoon** |
+| 20–22°C is not swimmable for a trip *(north Aegean ×20)* | **Every spring — 72°F year-round** |
+| A wildlife statute closes the best one *(Thodorou, Gioura, Piperi)* | **Three Sisters** |
+
+**Six mechanisms, one state, nothing above 25.** The rules in this file are
+not Mediterranean rules. They are geology, temperature, statute and access,
+and they travel.
+
+## Verdict
+
+| | **Crete** | **Florida, best case** |
+|---|---|---|
+| At 25+ | **9** | **1** |
+| 26s | **3** | 0 |
+| Treks to hidden water | **3** | 0 |
+| Season on the dates | **ANENDYK daily to 31 Oct** | *"Visit in summer for visibility"* |
+| Flights, three people | **£800** | **£1,350–1,980** + $750 of ferries |
+
+**Crete, 9–1 on entries and 3–0 on 26s, at less than half the price.**
