@@ -1721,3 +1721,44 @@ and they travel.
 | Flights, three people | **£800** | **£1,350–1,980** + $750 of ferries |
 
 **Crete, 9–1 on entries and 3–0 on 26s, at less than half the price.**
+
+---
+
+## TURKEY REMOVED FROM THE SHORTLIST
+
+**Kaputaş and Kabak struck on the user's instruction.** Both verified 25s and
+both stay in the country sections above at full score — they are out of the
+October 2026 shortlist, not out of the archive.
+
+**The case for removing them was already strong.** Turkey entered the sweep
+with twelve entries at 25+ and one 26, every one on about 150 km of Lycian
+coast. The October filter and the verification pass took ten of the twelve:
+
+| | Why |
+|---|---|
+| **Butterfly Valley 26** | Boats stop in the first weeks of October |
+| **Kekova Aquarium Bay · Ceneviz Koyu** | ***"Access is generally provided by boat tours"*** / *"protected area, easiest access by boat"* — **my access notes were simply wrong, and Turkish day-boats have stopped** |
+| **Sazak Koyu 26** | ***"Sazak Koyu has no road."*** A genuine 26 — reachable only by a stopped boat or a **20 km round-trip forest walk** |
+| Suluada and the rest | Day boats, same season |
+
+**What was left was two road-reached coves in a different country** —
+Kaputaş *(Colour 10, Discovery 5, steps from a coach park)* and Kabak *(a
+30-minute walk from Faralya on the Lycian Way)* — needing their own Dalaman
+flight and attaching to nothing else on the list.
+
+**THE SHORTLIST IS NOW GREECE ONLY: 19 entries, four 26s, every one verified
+in Greek.**
+
+| | Entries | 26s |
+|---|---|---|
+| **Crete** | **9** | **Domata · Marmara · Trypiti** |
+| **Milos** | 4 | **Polyaigos** |
+| **Kimolos** | 2 | — |
+| **Small Cyclades** | 4 | — |
+| | **19** | **4** |
+
+**The funnel, complete: 97 at 25+ across three countries → 44 reachable →
+35 → 29 → 25 → 21 verified → 19 in Greece.**
+
+**Cyprus closed at zero. Turkey closed at two and then by choice. Greece
+holds everything that is left.**
