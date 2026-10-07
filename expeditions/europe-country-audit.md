@@ -1762,3 +1762,74 @@ in Greek.**
 
 **Cyprus closed at zero. Turkey closed at two and then by choice. Greece
 holds everything that is left.**
+
+---
+
+## THE CYCLADES REMOVED — THE SHORTLIST IS CRETE, 9
+
+**Struck on instruction, in two steps.** All ten entries keep their scores and
+stay in the sections above — they are out of the October 2026 shortlist, not
+out of the archive.
+
+**First the small Cyclades (4):** Koufonisia, Donousa, Iraklia, Schinoussa.
+All four verified, and they got *stronger* under scrutiny — Koufonisia's
+*"golden sand and turquoise, shallow water"* is the mechanism stated outright,
+and the **Skopelitis runs six days a week, year-round**. They went on
+geography: **zero 26s, zero treks, and the only cluster left needing its own
+flight** — Athens plus a 4–5 hour ferry, and Naxos is five hours from Milos.
+
+**Then Milos and Kimolos (6):** **Polyaigos 26**, Kleftiko, Tsigrado,
+Papafragas, Agioklima, Mavrospilia. A real loss — a 26, a rope-and-ladder
+descent, a rock tunnel you swim inside, and a 50°C spring at the water's edge.
+
+### What the cut buys
+
+| | 15 (Crete + Cyclades) | 9 (Crete alone) |
+|---|---|---|
+| Entries | 15 | **9** |
+| 26s | 4 | **3** |
+| Treks | 7 | **3** |
+| Destinations | 2 + a ferry | **1** |
+| **Travel days inside nine nights** | **2** | **0** |
+
+**The nine nights stay in one place, and Wednesday 29 October stays free as
+the Domata weather buffer — which is the thing that protects a 26.** That was
+always the argument for Crete alone.
+
+### THE FINAL LIST
+
+| | Score | |
+|---|---|---|
+| **Domata** | **26** | Discovery 10 · no road · charter from Sougia |
+| **Marmara** | **26** | Aradena gorge · iron ladders · pale marble |
+| **Trypiti** | **26** | Same boat · τιρκουάζ outright |
+| Pefki | 25 | Free boat stop |
+| Glyka Nera | 25 | 30-min walk · springs through the seabed |
+| Gavdos | 25 | Overnight · southernmost point of Europe |
+| Kedrodasos | 25 | Cedars onto the beach |
+| Karoumes | 25 | Gorge or sea only |
+| Atherina | 25 | *"The secret beach with the turquoise water"* |
+
+**9 entries · 3 of Europe's eleven 26s · 3 treks · one island · one flight ·
+one ferry that runs because people need their shopping.**
+
+## THE COMPLETE FUNNEL
+
+**Every water body in Europe → 97 at 25+ across Greece, Turkey and Cyprus →
+44 reachable on the dates → 35 after a double-count → 29 → 25 → 21 verified
+→ 19 Greek → 15 → 9 in one place.**
+
+**Six filters, in the order they should be applied:**
+
+1. **Verification** — has a local-language source said it? *(Removed 15 —
+   more than any other filter, including a 26. Should always run first.)*
+2. **The weak-link rule** — below 7 in any category is cut.
+3. **The October filter** — can three people get there on the dates?
+4. **The orphan cut** — is there more than one thing to do on arrival?
+5. **The flight test** — does this cluster justify its own flight?
+6. **The travel-day test** — does adding it cost a day you need as a buffer?
+
+**Ten destinations were tested against the result and none beat it:**
+Marrakesh · Malta · Amalfi · Turkey · Cyprus · Karpathos–Saria–Kasos ·
+Miami · the Everglades · Florida · Madeira. **The closest was Florida at
+9–1.**
