@@ -2,8 +2,8 @@
 
 **Status: PLANNED FROM RESEARCH — nothing booked. Dates fixed. 10 nights.**
 
-> **The goal: every one of Crete's nine water bodies at 25+, including all
-> three of its 26s.** It fits, with a weather buffer and two retry windows
+> **The goal: every one of Crete's nine water bodies at 25+, including both
+> of its 26s.** It fits, with a weather buffer and two retry windows
 > for the only entry that has no alternative route in.
 
 | | |
@@ -13,7 +13,7 @@
 | **Car** | **One-way hire, Heraklion drop** |
 | **Bases** | **Chania 2 nights · Chora Sfakion or Loutro 6 · Sitia 2** |
 | **Water bodies at 25+** | **9 — all of Crete** |
-| **26s** | **3 — Domata · Marmara · Trypiti** |
+| **26s** | **2 — Domata · Marmara** |
 | **Sea** | **24°C on the south coast — the Libyan Sea, sheltered by the island** |
 | **Flights quoted** | **£1,150, three people** |
 
@@ -42,10 +42,10 @@ window.** It cannot move.
 |---|---|---|---|---|
 | 1 | **Δώματα / Domata** | **26** | **10**·9·8 | **Charter from Sougia.** *"One of the most isolated points of the southern Chania coastline."* No road, no building. **The E4 there is "extremely dangerous — a long time on the cliff's edge, very likely to get lost." Boat or nothing.** |
 | 2 | **Μάρμαρα / Marmara** | **26** | 9·**9**·8 | **Aradena gorge, 2–3 hrs down, iron ladders in the narrows.** Ferry back from Loutro. **Pale marble shallows — the mechanism** |
-| 3 | **Τρυπητή / Trypiti** | **26** | 9·**9**·8 | **Same charter as Domata — it is on the way.** τιρκουάζ stated outright |
+| 3 | **Τρυπητή / Trypiti (Sougia)** | 25 | 9·8·8 | **Same charter as Domata — it is on the way.** At the mouth of the Trypiti gorge at Voukilasi, 5–10 km east of Sougia. **Boat, or the E4 — 3–4 hrs, "requires some experience"** |
 | 4 | **Πεύκη / Pefki** | 25 | 8·8·8 | A third stop on the same charter. **Free** |
 | 5 | **Γλυκά Νερά / Glyka Nera** | 25 | 7·8·8 | **30-min walk east from Loutro.** Springs well up through the shingle seabed — cold seams under warm water |
-| 6 | **Γαύδος / Gavdos** | 25 | 9·8·8 | **Thu 30 Oct, overnight.** Southernmost point of Europe — 29 km², ~90 residents |
+| 6 | **Γαύδος + Ακρωτήρι Τρυπητής**<br>**Gavdos + Cape Tripiti** | 25 | 9·8·8 | **Overnight — two days, two places, one entry.** The island: 29 km², ~90 residents, no road to most of it. **Cape Tripiti: the southernmost point of Greece and of Europe, 7 km south of Karave, reachable on foot only — about an hour from Vatsiana or Korfos over rough rock.** **Three natural sea arches, the Kamarelles — "Trypiti" means *pierced*, and that is where the name comes from.** A 2.5 m chair on the headland, built by Russians who settled on the island in the 1990s |
 | 7 | **Κεδρόδασος / Kedrodasos** | 25 | 8·8·8 | Far southwest, walk in from the track. **Cedars growing onto the beach.** *Elafonissi 1 km away is cut on Water 6 — look, do not swim* |
 | 8 | **Αθερίνα / Atherina** | 25 | 8·**9**·8 | Between Goudouras and Kapsa Monastery. Coast road, then a walk beside a dry ravine 300 m past Agioi Saranta. *"The **secret** beach of Crete with the **turquoise** water — **completely unorganised**"* |
 | 9 | **Καρούμες / Karoumes** | 25 | 9·8·8 | **Gorge or sea only — no path from any village.** ~1 hr from Sitia |
@@ -73,7 +73,7 @@ water.**
 | **Fri 24 Oct** | **Chania** | Fly London → Chania, drive 30 min | *Seitan Limania 24* |
 | Sat 25 | Chania | Drive southwest. **Clocks change tonight** | **Kedrodasos 25** |
 | Sun 26 | **→ Sfakia** | Drive 1h20, ferry into Loutro | **Glyka Nera 25** |
-| **Mon 27** | Sfakia | **SOUGIA CHARTER — go early in the week** | **Domata 26 · Trypiti 26 · Pefki 25** |
+| **Mon 27** | Sfakia | **SOUGIA CHARTER — go early in the week** | **Domata 26 · Trypiti 25 · Pefki 25** |
 | Tue 28 | Sfakia | **Aradena gorge** *(or Domata retry — swap them)* | **Marmara 26** |
 | Wed 29 | Sfakia | **BUFFER — second Domata retry** | *Agiofarago 24 if spare* |
 | **Thu 30** | **Gavdos** | **Overnight. 10:30 out of Sfakion** | **Gavdos 25** |
@@ -110,7 +110,7 @@ private charter stop, and every operator says the same thing:
 > October 2026, three people. What does it cost, and will you go?"**
 
 **Send it to Meletis and Sougia Cruises both.** **Trypiti is on the way, so
-one charter reaches two 26s in a morning**, with Pefki and Agios Antonios as
+one charter reaches three water bodies in a morning, one of them a 26**, with Pefki and Agios Antonios as
 free stops. **Price anchor: Sougia → Trypiti was €40 in October 2020** — budget
 €60–100 for the boat, not per person.
 
@@ -165,7 +165,7 @@ ANENDYK is how people get their shopping. That is the whole reason Crete won.**
 
 | Trip | Best water | Status |
 |---|---|---|
-| **CRETE, 24 Oct – 3 Nov 2026** | **Domata 26 · Marmara 26 · Trypiti 26** | **THIS FILE** |
+| **CRETE, 24 Oct – 3 Nov 2026** | **Domata 26 · Marmara 26** | **THIS FILE** |
 | Zanzibar + Pemba | Vumawimbi 29 | Not booked; ~£5,000–6,500 |
 | Indonesia — Labengki–Sombori | **three 28s** | August 2027; £4,300–5,100 |
 | Raja Ampat | **Wayag 30** | October–April, a future year |
@@ -176,3 +176,74 @@ on these dates, at this budget, anywhere that was tested — and eleven
 destinations were tested: Marrakesh, Malta, Amalfi, Turkey, Cyprus,
 Karpathos–Saria–Kasos, Miami, the Everglades, Florida, Madeira, Milos.
 The closest was Florida at 9–1.**
+
+---
+
+## CORRECTION — THREE TRYPITIS, AND A 26 LOST
+
+**There are three places called Trypiti in this region and I had merged two
+of them.**
+
+| | Where | Access |
+|---|---|---|
+| **Trypiti, Sougia** | Mouth of the Trypiti gorge at **Voukilasi**, 5–10 km east of Sougia, Sfakia | **Boat from Sougia, or the E4 — 3–4 hrs, "requires some experience"** |
+| **Cape Tripiti, Gavdos** | **7 km south of Karave — the southernmost point of Greece and of Europe** | **On foot only, ~1 hr from Vatsiana or Korfos** |
+| Trypiti, Heraklion | Near Vasiliki and Lentas | — |
+
+**The entry in this file is the Sougia one** — it is what Sougia Taxi Meletis
+lists beside Domata. **But the τιρκουάζ that took it from 25 to 26 was almost
+certainly describing the Gavdos cape.**
+
+**Sougia's Trypiti in Greek:** *"τα νερά είναι **κρυστάλλινα, με βραχώδη
+βυθό**"* — crystalline, **with a rocky bottom** — and *"the vertical rocks
+provide **shade for much of the day**."*
+
+| | Was | Now | |
+|---|---|---|---|
+| Discovery | 9 | **9** | No road; boat or a 3–4 hr E4 hike |
+| **Colour** | **9** | **8** | **κρυστάλλινα is an 8 in this scheme, not a 9. A rocky bottom is not a pale shallow shelf — and shade for much of the day is the opposite of what turquoise needs** |
+| Water | 8 | 8 | |
+| | **26** | **25** | |
+
+**Crete has two 26s, not three. Europe has ten, not eleven.** Domata and
+Marmara are unaffected — Domata's Discovery 10 and Marmara's pale marble are
+both directly sourced.
+
+**Nearby, unscored:** **Sentoni**, about 500 m east of Trypiti on the E4.
+
+## AND IT REVERSES THE VERDICT ON GAVDOS
+
+**Gavdos was scored as one 25 and judged the worst value on the list — two
+days for one water body. That was wrong, because Cape Tripiti is on it.**
+
+**An hour's walk over rough rock, reachable no other way, to three natural sea
+arches at the southern edge of the continent.** Combined with Sarakiniko and
+the island itself — 90 residents, no road to most of it — **the two days buy
+two places, not one.**
+
+**They are recorded as a single entry above, because you cannot do one without
+the other.**
+
+> That is the brief — *hidden, almost alone, earned* — more squarely than
+> anything on the list except Domata. **Gavdos stays.**
+
+## THE ONE RISK LEFT, AND THE TRADE THAT REMOVES IT
+
+**On the itinerary above you return from Gavdos on Friday 31 October — the
+last day of the ferry season.** If the sea is wrong that morning there is no
+Saturday boat, and you are on a 90-person island with a flight from Heraklion,
+five hours away, on the 3rd. **It is the only trip-threatening risk in the
+plan.**
+
+| | Water bodies | Risk |
+|---|---|---|
+| **A · Gavdos Thu 30 – Fri 31** | **9** — keeps Kedrodasos | **Return on the last ferry day** |
+| **B · Gavdos Sat 25 – Sun 26** | **8** — loses Kedrodasos | **None. Five days of slack behind it** |
+
+**Option B drives straight to Chora Sfakion on arrival and sails on the
+Saturday.** Kedrodasos is at the far south-west end and only works from a
+Chania or Paleochora base at the start of the week, so it is what pays for the
+safety.
+
+**Recommendation: B.** One 25 for the removal of the only risk that can break
+the trip.
