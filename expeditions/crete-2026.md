@@ -247,3 +247,75 @@ safety.
 
 **Recommendation: B.** One 25 for the removal of the only risk that can break
 the trip.
+
+---
+
+# FINAL — GAVDOS DROPPED. 8 AT 25+, TWO 26s
+
+**Supersedes every itinerary above.**
+
+**The reason: an overnight on Gavdos buys about one day of exploring for two
+days of the trip.** The boat arrives around 12:30 and the return sails at
+14:30 the next day. **And a day trip is not an option at all** — two hours
+ashore, when **Cape Tripiti alone is an hour's walk each way from Vatsiana,
+which is 7 km from the port.**
+
+**Cape Tripiti goes with it.** It is a genuine Discovery 9–10 — the
+southernmost point of Europe, three sea arches, footpath only — and it cannot
+be reached inside the time the ferry allows.
+
+| | Base | | Water |
+|---|---|---|---|
+| **Fri 24 Oct** | Chania | Fly London → Chania, drive 30 min | *Seitan Limania 24* |
+| Sat 25 | Chania | Drive southwest. **Clocks change tonight** | **Kedrodasos 25** |
+| Sun 26 | **→ Sfakia** | Drive 1h20, ferry into Loutro | **Glyka Nera 25** |
+| **Mon 27** | Sfakia | **SOUGIA CHARTER — early in the week on purpose** | **Domata 26 · Trypiti 25 · Pefki 25** |
+| Tue 28 | Sfakia | **Aradena gorge, early start** | **Marmara 26** |
+| Wed 29 | Sfakia | **BUFFER — Domata retry** | *Agiofarago 24* |
+| Thu 30 | Sfakia | **SECOND BUFFER / slack** | *Agios Pavlos 24 · Loutro 24* |
+| Fri 31 | | **Last ferry day.** Drive out north | — |
+| **Sat 1 Nov** | **→ Sitia** | Drive ~4h15 *(1h15 to Rethymno, ~3h on the A90)* | **Atherina 25** |
+| Sun 2 Nov | Sitia | ~1 hr out | **Karoumes 25** |
+| **Mon 3 Nov** | | **Richtis walk**, then Sitia → Heraklion 2.5 hrs, fly | *Richtis* |
+
+## THE EIGHT
+
+| | Score | |
+|---|---|---|
+| **Domata** | **26** | Charter from Sougia · Discovery 10 · no road, no building |
+| **Marmara** | **26** | Aradena gorge · iron ladders · pale marble shallows |
+| Trypiti (Sougia) | 25 | Same charter · gorge mouth at Voukilasi |
+| Pefki | 25 | Third stop on the same charter — free |
+| Glyka Nera | 25 | 30-min walk from Loutro · springs through the seabed |
+| Kedrodasos | 25 | Far southwest · cedars onto the beach |
+| Atherina | 25 | *"The secret beach with the turquoise water"* |
+| Karoumes | 25 | Gorge or sea only · no village path |
+
+**Free:** Seitan Limania 24 · Agiofarago 24 · Agios Pavlos 24 · Loutro 24 ·
+**Richtis** *(3 hrs through forest, river pools, watermills, a 20 m waterfall —
+the beach itself is "not suitable for swimming, especially when windy", so
+take it as the walk)*.
+
+## WHAT DROPPING GAVDOS BOUGHT
+
+| | |
+|---|---|
+| **Two buffer days instead of one** | **Domata now has Tuesday, Wednesday and Thursday as retries.** It is the only entry with no alternative route in — the E4 there is disqualified — and it is now the best-protected thing in the plan |
+| **No last-ferry-day exposure** | Nothing in the itinerary depends on 31 October |
+| **Kedrodasos kept** | The trade that was going to pay for Gavdos' safety is no longer needed |
+| **Richtis for free** | It sits on the Sitia → Heraklion road |
+
+**Net: one 25 given up for two retry days, Kedrodasos, and the best gorge walk
+in east Crete.**
+
+## STILL OPEN
+
+1. **THE CHARTER EMAIL.** meletistaxisougia@gmail.com · soygiacruises@hotmail.com
+   — *"A charter from Sougia to Domata and Trypiti, the morning of Monday 27
+   October 2026, three people."* **Worth a 26, and nothing else can replace it.**
+2. **Open-jaw flights — in Chania, out Heraklion.** London only.
+3. **One-way car hire, Heraklion drop.**
+4. **Base: Chora Sfakion or Loutro.**
+5. **Sitia, 2 nights (1–2 Nov).**
+6. **Atherina's turning** — 300 m past the church of Agioi Saranta at Kalami,
+   then a walk beside a dry ravine. Unverified on the ground.
