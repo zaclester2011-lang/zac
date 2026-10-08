@@ -1833,3 +1833,69 @@ one ferry that runs because people need their shopping.**
 Marrakesh · Malta · Amalfi · Turkey · Cyprus · Karpathos–Saria–Kasos ·
 Miami · the Everglades · Florida · Madeira. **The closest was Florida at
 9–1.**
+
+---
+
+## REVISED — THE SHORTLIST IS 15, NOT 9
+
+**Supersedes the section above.** Milos and Kimolos are restored; only the
+**small Cyclades** stay cut. The earlier cut removed all ten Cycladic entries;
+on review only four of them fail.
+
+**The small Cyclades go because they physically do not fit, not on quality.**
+**Naxos is five hours from Milos via Paros**, and the Skopelitis reaches
+Donousa only Mon/Wed/Sat. Four 25s, **no 26, no trek** — the only region on
+the list with nothing above 25 and nothing to climb down. *(They verified
+strongly and deserve their own week in September: Koufonisia's "golden sand
+and turquoise, shallow water" is the mechanism stated outright, and the
+Skopelitis is one of only three year-round services found in the whole sweep.)*
+
+**Milos and Kimolos stay because they attach for almost nothing.**
+**Heraklion–Milos: 1–2 crossings a day in October, 4.5–5 hrs, from €35.**
+**Pollonia–Kimolos: 30 minutes, year-round, no extra flight.**
+*(Chania–Milos is about one sailing a week October–May, so it must go via
+Heraklion.)*
+
+### THE 15
+
+| | Score | Region | |
+|---|---|---|---|
+| **Domata** | **26** | Crete | Discovery 10 · no road · charter from Sougia |
+| **Marmara** | **26** | Crete | Aradena gorge · iron ladders · pale marble |
+| **Trypiti** | **26** | Crete | Same boat · τιρκουάζ outright |
+| **Polyaigos** | **26** | Milos | Largest uninhabited island in the Aegean |
+| Pefki | 25 | Crete | Free boat stop |
+| Glyka Nera | 25 | Crete | 30-min walk · springs through the seabed |
+| Gavdos | 25 | Crete | Overnight · southernmost point of Europe |
+| Kedrodasos | 25 | Crete | Cedars onto the beach |
+| Karoumes | 25 | Crete | Gorge or sea only |
+| Atherina | 25 | Crete | *"The secret beach with the turquoise water"* |
+| Kleftiko | 25 | Milos | Swim through white arches and sea caves |
+| Tsigrado | 25 | Milos | **A rope and a ladder down a crack. No path** |
+| Papafragas | 25 | Milos | **You swim inside the rock** |
+| Agioklima | 25 | Kimolos | Mt Sklavos path · **50°C spring at the water's edge** |
+| Mavrospilia | 25 | Kimolos | 30 min on foot · the all-white rocks |
+
+**15 entries · 4 of Europe's eleven 26s · 7 treks · 2 regions · 1 ferry.**
+
+### What fits in nine nights
+
+| | Entries done | 26s | Weather buffer |
+|---|---|---|---|
+| **Crete alone** | **8** | **3** | **Yes — Wed 29 Oct** |
+| **Crete 6 nights + Milos/Kimolos 3** | **12** | **4** | **None** |
+
+**The trade is a risk call, not a research one.** Crete alone keeps Wednesday
+29 October free to re-try Domata if the sea is wrong; the split week spends it
+on the Heraklion drive and the ferry. **Without the buffer, one bad Tuesday
+loses Domata 26 permanently — and Domata is the only Discovery 10 in Europe
+whose water you can swim in.**
+
+**The reply from Sougia decides it.** A confirmed charter means the buffer is
+insurance rather than necessity, and Milos becomes affordable.
+
+### THE FUNNEL, FINAL
+
+**Every water body in Europe → 97 at 25+ across Greece, Turkey and Cyprus →
+44 reachable → 35 after a double-count → 29 → 25 → 21 verified → 19 Greek →
+15 in two regions.**
