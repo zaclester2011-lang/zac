@@ -319,3 +319,70 @@ in east Crete.**
 5. **Sitia, 2 nights (1–2 Nov).**
 6. **Atherina's turning** — 300 m past the church of Agioi Saranta at Kalami,
    then a walk beside a dry ravine. Unverified on the ground.
+
+---
+
+# ALL NINE — THE PALEOCHORA SOLUTION
+
+**Supersedes the eight-entry plan above. Gavdos is back in and costs nothing.**
+
+**The key fact: Gavdos sails from PALEOCHORA on Mon · Tue · Wed in October**
+*(08:30 Mon and Tue, 08:00 Wed)* — **and Paleochora is 45 minutes from
+Kedrodasos.** Every earlier version had those two at opposite ends of the
+week, which is why Gavdos always cost a 25. **Based at Paleochora they share a
+day's drive, and you then ride the coastal ferry east instead of driving back
+north.**
+
+| | Base | | Water |
+|---|---|---|---|
+| **Fri 24 Oct** | Chania | Fly London → Chania. **Seitan Limania** 30 min east, then drive southwest | *Seitan Limania 24* |
+| Sat 25 | **Paleochora** | 45 min out and back. **Clocks change tonight → sunset ~17:20** | **Kedrodasos 25** |
+| Sun 26 | Paleochora | **SPARE — the Gavdos weather buffer** | *Elafonissi: look, do not swim — cut on Water 6* |
+| **Mon 27** | **Gavdos** | **08:30 from Paleochora. Overnight** | **Gavdos 25 + Cape Tripiti** *(1 hr on foot from Vatsiana, three sea arches, southernmost point of Europe)* |
+| Tue 28 | Paleochora | Return sailing | — |
+| **Wed 29** | **→ Sougia** | **Ferry 08:30. THE SOUGIA CHARTER** | **Domata 26 · Trypiti 25 · Pefki 25** |
+| Thu 30 | **→ Loutro** | Coastal ferry east | **Glyka Nera 25** |
+| Fri 31 | Sfakia | **Aradena gorge.** **LAST FERRY DAY** | **Marmara 26** |
+| **Sat 1 Nov** | **→ Sitia** | Drive ~4h15 *(1h15 to Rethymno, ~3h on the A90)* | **Atherina 25** |
+| Sun 2 Nov | Sitia | ~1 hr out | **Karoumes 25** |
+| **Mon 3 Nov** | | **Richtis walk**, then Sitia → Heraklion 2.5 hrs, fly | *Richtis* |
+
+**Nights: Chania 1 · Paleochora 3 · Gavdos 1 · Sfakia/Loutro 3 · Sitia 2 = 10.**
+
+## WHY IT WORKS WHERE THE OTHERS DID NOT
+
+| | |
+|---|---|
+| **Paleochora pairs Kedrodasos with Gavdos** | 45 minutes apart. The trade that killed Gavdos in every earlier draft disappears |
+| **Gavdos is Mon–Tue, not 30–31 Oct** | **Three days of slack behind it.** The last-ferry-day stranding risk is gone |
+| **You move east by boat, not by road** | Paleochora → Sougia → Agia Roumeli → Loutro → Sfakion. **There is no road along this coast — that is the whole point of the ferry** |
+| **Domata keeps two retries** | Wednesday, with Thursday and Friday swappable. **Glyka Nera and Marmara are both flexible; the Aradena descent needs no boat on the way down** |
+| **Sunday 26 is a genuine buffer** | If Monday's Gavdos sailing looks wrong, Tuesday and Wednesday also sail from Paleochora |
+
+## TWO THINGS TO VERIFY BEFORE BOOKING
+
+**1 · The Paleochora → Gavdos RETURN days.** The outbound is confirmed as
+Mon/Tue/Wed from Paleochora in October. **The return pattern is not in hand.**
+If it sails back only on certain days you could be on Gavdos longer than one
+night. **Ask ANENDYK directly — this is the single unknown that could break
+the plan.**
+
+**2 · Marmara on Friday 31 October**, the last ferry day. If the Loutro boat
+does not run you walk the coast path back to Loutro instead of taking the
+boat. **Harder, not stranded.**
+
+## THE NINE
+
+| | Score | |
+|---|---|---|
+| **Domata** | **26** | Charter from Sougia · **Discovery 10** · no road, no building |
+| **Marmara** | **26** | Aradena gorge · iron ladders · pale marble shallows |
+| Trypiti (Sougia) | 25 | Same charter · gorge mouth at Voukilasi |
+| Pefki | 25 | Third stop on the same charter — free |
+| Glyka Nera | 25 | 30-min walk from Loutro · springs through the seabed |
+| **Gavdos + Cape Tripiti** | 25 | **Overnight from Paleochora.** 90 residents · **three sea arches at the southern edge of Europe, on foot only** |
+| Kedrodasos | 25 | 45 min from Paleochora · cedars onto the beach |
+| Atherina | 25 | *"The secret beach with the turquoise water"* |
+| Karoumes | 25 | Gorge or sea only · no village path |
+
+**All nine. Two 26s. Four bases. One flight in, one out.**
