@@ -1,19 +1,21 @@
-# CRETE COMPLETE — 24 October to 3 November 2026
+# WEST CRETE — 24 October to 3 November 2026
 
 **Status: PLANNED FROM RESEARCH — nothing booked. Dates fixed. 10 nights.**
 
-> **The goal: every one of Crete's nine water bodies at 25+, including both
-> of its 26s.** It fits, with a weather buffer and two retry windows
-> for the only entry that has no alternative route in.
+> **THE FINAL PLAN IS AT THE BOTTOM OF THIS FILE.** Everything between here
+> and there is the decision trail: nine entries, then eight, then the east
+> removed for rest days, then Milos weighed and rejected. **Read the last
+> section first.**
 
 | | |
 |---|---|
 | **Travellers** | Zac (15), James (48), Jacob (13) |
-| **Flights** | **In CHANIA, out HERAKLION** — open-jaw, London only |
-| **Car** | **One-way hire, Heraklion drop** |
-| **Bases** | **Chania 2 nights · Chora Sfakion or Loutro 6 · Sitia 2** |
-| **Water bodies at 25+** | **9 — all of Crete** |
+| **Flights** | **In and out of CHANIA — direct, London only** |
+| **Bases** | **Paleochora 4 nights · Gavdos 1 · Chora Sfakion / Loutro 3 · Chania 2** |
+| **Water bodies at 25+** | **7** |
 | **26s** | **2 — Domata · Marmara** |
+| **Hard days** | **1 — the Aradena gorge** |
+| **Rest days** | **3, plus a half day** |
 | **Sea** | **24°C on the south coast — the Libyan Sea, sheltered by the island** |
 | **Flights quoted** | **£1,150, three people** |
 
@@ -386,3 +388,101 @@ boat. **Harder, not stranded.**
 | Karoumes | 25 | Gorge or sea only · no village path |
 
 **All nine. Two 26s. Four bases. One flight in, one out.**
+
+---
+---
+
+# ✅ THE FINAL PLAN — WEST CRETE, 7 WATER BODIES, GAVDOS KEPT
+
+**Supersedes everything above.** The east is removed for rest days. Milos and
+Kimolos are weighed and rejected. **Gavdos stays, conditionally.**
+
+| | Base | Day | Water | Load |
+|---|---|---|---|---|
+| **Fri 24 Oct** | → **Paleochora** | Fly London → Chania. **Seitan Limania** 30 min east, then drive southwest ~1h30 | *Seitan Limania 24* | Easy |
+| Sat 25 | Paleochora | 45 min out and back. **Clocks change tonight → sunset ~17:20** | **Kedrodasos 25** | Easy |
+| **Sun 26** | Paleochora | **Ferry 08:30 → Sougia. THE CHARTER. Back 18:25** | **Domata 26 · Trypiti 25 · Pefki 25** | **Boat day — you sit down** |
+| **Mon 27** | **Gavdos** | **08:30 from Paleochora. Overnight.** Cape Tripiti walk | **Gavdos 25 + Cape Tripiti** | Moderate |
+| Tue 28 | Paleochora | Return sailing, afternoon free | — | **Half day** |
+| **Wed 29** | Paleochora | **REST** — *and the Domata retry if Sunday blew* | — | **🛋 OFF** |
+| Thu 30 | → **Sfakia** | **Drive ~3 hrs via Chania** *(no south-coast road)*. Afternoon ferry to Loutro | **Glyka Nera 25** | Moderate |
+| **Fri 31** | Sfakia | **THE ARADENA GORGE.** 2–3 hrs down, iron ladders in the narrows, boat back from Loutro. **LAST FERRY DAY** | **Marmara 26** | **🥾 THE hard day** |
+| **Sat 1 Nov** | **Loutro** | **REST** — a village with no road connecting it to anywhere | — | **🛋 OFF** |
+| **Sun 2 Nov** | → Chania | Easy drive back, Chania old town | — | **🛋 OFF** |
+| **Mon 3 Nov** | | **Fly Chania → London, direct** | — | — |
+
+## THE SEVEN
+
+| | Score | |
+|---|---|---|
+| **Δώματα / Domata** | **26** | **Discovery 10 — the only one in Europe whose water you can swim.** No road, no building. Charter from Sougia |
+| **Μάρμαρα / Marmara** | **26** | **Pale marble shallows.** The Aradena gorge is the only way to earn it |
+| Τρυπητή / Trypiti | 25 | Same charter · gorge mouth at Voukilasi |
+| Πεύκη / Pefki | 25 | Third stop on the same charter — **free** |
+| Γλυκά Νερά / Glyka Nera | 25 | 30-min walk from Loutro · **springs well up through the shingle seabed** |
+| **Γαύδος + Ακρωτήρι Τρυπητής** | 25 | **Overnight. Cape Tripiti — three natural sea arches at the southernmost point of Europe, an hour on foot from Vatsiana, no other way in** |
+| Κεδρόδασος / Kedrodasos | 25 | 45 min from Paleochora · **cedars growing onto the beach** |
+
+**Free:** Seitan Limania 24 · Agiofarago 24 · Agios Pavlos 24 · Loutro 24.
+
+## GAVDOS — KEPT, BUT CONDITIONAL ON ONE PHONE CALL
+
+**208 residents** *(2021 census — an earlier figure of ~90 in this file was
+wrong)*. **One ATM, at Karave port. One post office and one medical clinic,
+both at Kastri. No road to most of the island. Most of its rainfall comes in
+autumn and winter.**
+
+**Four searches, including in Greek, found nothing about what is open on
+Gavdos in late October.** That silence is itself the finding: the island's
+economy is a summer rooms-and-camping scene at Sarakiniko and Agios Ioannis,
+and by the 27th it has largely packed up.
+
+> **The risk is not the ferry. It is arriving to find nothing open.**
+> Phone the municipality or the Karave port office and ask plainly whether
+> rooms and a taverna are operating on 27–28 October. **If the answer is
+> vague, do not go.**
+
+**The fallback is already built in:** Wednesday 29 is a rest day at
+Paleochora. **Drop Gavdos and you lose one 25 and gain two quiet days in the
+southwest. The other six are untouched.**
+
+## WHY WEST CRETE BEAT MILOS + KIMOLOS
+
+| | **West Crete** | **Milos + Kimolos** |
+|---|---|---|
+| Water bodies | **7** | 6 |
+| **26s** | **2** | **1** |
+| Discovery 10 | **Domata** | none |
+| Hard days | 1 | **0** |
+| Sea, late Oct | **24°C, sheltered** | 23°C, open Aegean |
+| Flights | **Direct Chania, £1,150** | Via Athens both ways |
+| Beds | **Cheapest in the archive** | **£800 quoted** |
+| **Worst case if a boat fails** | **6 entries, both 26s intact** — Domata has **3 operators, 2 ports and a retry day** | **3 entries, no 26** — Polyaigos and Kleftiko are **one boat, one operator**, and Kimolos' November ferry is unconfirmed |
+
+**That last row is the decision. Crete's bad day costs one beach. Milos' bad
+day costs its only 26 and half the trip.**
+
+**Milos' honest advantage: no hard days at all, and Tsigrado's rope-and-ladder
+and swimming inside Papafragas are the two best things to *do* on the whole
+shortlist.** If the gorge is ruled out, that advantage becomes decisive —
+**take the Aradena day away and West Crete is 6 entries and one 26, at which
+point Milos competes.**
+
+## THE LOAD-BEARING QUESTION
+
+**Ask James directly whether he wants a 2–3 hour gorge descent with iron
+ladders bolted into the rock.** Marmara is the second 26 and the gorge is the
+only way to earn it — **you can reach it by boat from Loutro, but then it is
+just a beach.**
+
+## SEND / PHONE NOW
+
+1. **The charter.** **meletistaxisougia@gmail.com** · **soygiacruises@hotmail.com**
+   — *"A charter from Sougia to Domata and Trypiti, the morning of Sunday 26
+   October 2026, three people. What does it cost, and will you go?"*
+   **Worth a 26. Nothing can replace it.**
+2. **ANENDYK** — the **Paleochora → Gavdos return days** in late October.
+   The outbound is Mon/Tue/Wed; the return pattern is not in hand.
+3. **Gavdos** — **is anything open on 27–28 October.**
+4. **Chania return for three** — confirm the £1,150 is still there.
+5. **Base: Chora Sfakion or Loutro** for 30–31 Oct and 1 Nov.
