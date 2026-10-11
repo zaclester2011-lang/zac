@@ -285,3 +285,56 @@ Agios Pavlos · Lykos.**
 
 **Eight at 25+ and four at 24, from one hotel, in three and a half days —
 and half of the 25+ come off a single boat out of Sougia.**
+
+---
+
+## 🏝 GAVDOS — BACK ON THE LIST, CONDITIONAL
+
+**Gavdos + Cape Tripiti — 25.** On the list to be decided on, not planned
+around.
+
+| | |
+|---|---|
+| **The window** | **Thu 29 – Fri 30 October, from Chora Sfakion.** 10:30 out, 14:30 back. *(Sfakion sails Thu–Sun; Paleochora Mon–Wed)* |
+| **What it costs** | **2 of your 6 days, and the entire weather margin.** 1h30 drive, 2 hrs of sea, overnight, 2 hrs back, 1h30 drive |
+| **What it buys** | **Cape Tripiti — three natural sea arches at the southernmost point of Greece and of Europe, 7 km south of Karave, on foot only, about an hour from Vatsiana over rough rock.** Plus the island: 208 residents, no road to most of it |
+| **⚠️ THE UNRESOLVED QUESTION** | **Whether anything is open on 27–30 October.** Four searches including Greek found nothing. **One ATM, at Karave. One post office and one clinic, at Kastri. A summer rooms-and-camping economy at Sarakiniko and Agios Ioannis** |
+
+**Phone the municipality or the Karave port office. Ask plainly: are rooms and
+a taverna operating on 29–30 October? If the answer is vague, don't go.**
+
+**Cape Tripiti is the closest thing in Crete to Domata's Discovery 10 — a
+place you can only arrive at on foot, at the edge of the continent. It is also
+the entry with the most unknowns attached. Both are true.**
+
+---
+
+## 🌴 PREVELI — SCORED AS A RIVER-AND-SEA DAY: 23
+
+**Re-scored on the right question.** As one water body it was 21; as a day
+that includes both the freshwater lagoon and the sea, it is 23.
+
+| | | |
+|---|---|---|
+| **Discovery** | **7** | **350–470 steps down the cliff, no road to the beach.** In late October the crowds and the parking problem are gone |
+| **Colour** | **8** | **The Megalopotamos runs green-clear under hundreds of *Phoenix theophrasti*; the sea is Libyan blue.** Extraordinary as a scene — but a river mouth, so no turquoise. **Colour measures the water, not the setting** |
+| **Water** | **8** | **The reframing earns this point.** As one body, the cold river and shelly bottom were a flaw. **As a pair they are the point: warm Libyan sea and a cool freshwater lagoon you can swim up, in the same place** |
+
+**Also on the record:** a **2010 fire destroyed about 70% of the palm forest
+and it had regenerated naturally by 2011**. The palm is **not** unique to
+Crete or Europe — it also grows on Amorgos, Halki and Anafi, with its largest
+concentration at Vai. **Swim shoes are advisable: rocky, shelly bottom.**
+
+**2h15 each way — outside the two-hour radius, and the only thing against it.**
+
+### WHERE IT SITS
+
+| | Score | |
+|---|---|---|
+| **Agiofarago** | **24** | 3 km gorge, 20–30 min in, the Goumenospilio cave with light falling through its roof. **~2h30** |
+| **Ilingas** | **24** | Turquoise, caves, 100 m path. **1h30 — and two swim-only coves 80 m and 180 m east, possibly 25s** |
+| **Λουτρό · Αγία Ρουμέλη · Άγιος Παύλος · Λυκός** | **24** | **All free on the Chora Sfakion ferry** |
+| **Preveli, as a river-and-sea day** | **23** | **The best experience of the non-scoring group** |
+| **Lissos** | **23** | Asklepion, theatre, Roman baths, a mosaic — €4 boat from Sougia |
+| Triopetra | **20–21** | *Down from 23: paved road, rooms, tavernas, umbrellas. Megali is west-facing with frequent swell; **Mikri (Koumantó) is the sheltered half*** |
+| Kalypso (Plakias) | **unresolved** | **One TripAdvisor source only** — *"very clear water"*, people jump off rocks, *"access is hard"*. No Greek source, no sand type, no route. **~2h30** |
