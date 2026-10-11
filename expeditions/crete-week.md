@@ -338,3 +338,69 @@ concentration at Vai. **Swim shoes are advisable: rocky, shelly bottom.**
 | **Lissos** | **23** | Asklepion, theatre, Roman baths, a mosaic — €4 boat from Sougia |
 | Triopetra | **20–21** | *Down from 23: paved road, rooms, tavernas, umbrellas. Megali is west-facing with frequent swell; **Mikri (Koumantó) is the sheltered half*** |
 | Kalypso (Plakias) | **unresolved** | **One TripAdvisor source only** — *"very clear water"*, people jump off rocks, *"access is hard"*. No Greek source, no sand type, no route. **~2h30** |
+
+---
+---
+
+# 🔒 CRETE CLOSED — the final sweep
+
+**Every gap named in the audit has been searched in Greek. Nothing new reaches
+25. One earlier score was wrong and is withdrawn.**
+
+## ⚠️ WITHDRAWN — Vlychadia was not a 24
+
+**It is in Lasithi, not Chania** — a small seaside settlement near Skinias,
+reached from Neapoli, **~2h45 from Stalos.** And the beach itself: *"quite
+wild and rocky, and **swimming is rather dangerous when there are waves**."*
+**Water 6 — cut.**
+
+**The better beach next to it is Avlaki**, which locals also call Vlichadia:
+*"at the exit of the Skinias gorge, **secluded**, with crystal-clear waters."*
+**23.**
+
+**The early "Vlychadia 24" in this project is withdrawn. It was not
+supportable.**
+
+## ⭐ GAVDOS IS A CLUSTER, NOT ONE ENTRY
+
+**This materially changes the two-day maths in its favour.**
+
+| | Score | |
+|---|---|---|
+| **Ακρωτήρι Τρυπητής / Cape Tripiti** | *(within the 25)* | Three natural sea arches, **southernmost point of Europe, on foot only** |
+| **Άγιος Ιωάννης / Agiannis** | **24** | **The island's most famous beach — fine golden sand and sea cedars**, named for the chapel on the hill above. **Bus from Karave, or under an hour's walk from Sarakiniko.** Unorganised, one taverna nearby, crystal-clear water |
+| **Λαβράκας / Lavrakas** | **24–25?** ⚠ | ***"One of the most isolated beaches on the island"*** — west of Agiannis, **a half-hour walk.** **No colour description found in any source — cannot be scored properly** |
+| **Ποταμός / Potamos** | **24–25?** ⚠ | **At the mouth of a small gorge, about a two-hour hike.** **Same problem — no colour description** |
+| **Σαρακήνικο / Sarakiniko** | **22** | Vast golden sand ending in **dunes with cedars. One of only two beaches on the island reachable by car**, with 1–2 tavernas and rooms |
+
+> **Two days on Gavdos buys Cape Tripiti, a 24, and two probable 24–25s — not
+> a single 25.** That is a different proposition from the one that was cut
+> earlier in this file. **It still rests on whether anything is open.**
+
+## THE GAPS, SCORED
+
+| | Score | |
+|---|---|---|
+| **Ξερόκαμπος / Xerokampos** | **22** | 47 km south of Sitia, 103 km from Agios Nikolaos — **~4 hrs from Stalos.** Argilos with its clay and mud baths, Vourlias bay with its sand lilies, **Alatsolimni, a natural sea lake that dries out in summer.** **Repeatedly described as shallow, with no shade, and no turquoise claim in any source** |
+| **Καλυψώ / Kalypso** *(Plakias)* | **~23–24** ⚠ | **Identified at last: "the famous pirate fjord", described as a natural wonder, reached by an uphill path from the end of the Plakias road.** Very clear water; visitors jump off the rocks. **Still no colour or depth detail — the last unresolved entry in Crete** |
+| **Σχοινάρια / Schinaria** | **22** | *"The divers' favourite beach."* More isolated than the rest of the cluster; 2.5 km road from Lefkogia |
+| **Δαμνόνι / Damnoni · Αμμούδι** | **21** | **Blue-green water, coarse off-white sand**, a short dirt road, tavernas. *Mikro Ammoudi is a naturist beach* |
+| **Σούδα / Souda** | **20** | **Sheltered when the north wind blows.** Small hotels, a few tavernas, organised with sunbeds, rich marine life for snorkelling |
+| **Πλακιάς / Plakias main** | **✗** | **One of Crete's largest beaches, with showers along its whole length and extensive parking** |
+| **Ανύδρι / Anidri · Γιαλισκάρι / Gialiskari** | **unresolved** | **Three searches produced nothing beyond "reached from the coastal road east of Paleochora". Recorded as permanently unresolved rather than guessed** |
+
+## WHAT IS NOW COMPLETE
+
+**Searched in Greek and scored:** the entire Paleochora–Chora Sfakion coast ·
+both northern peninsulas *(Akrotiri, Rodopos)* · the eastern Sfakia road ·
+the far southwest · east Lasithi · Xerokampos · the Plakias cluster · Gavdos ·
+and the famous sixteen.
+
+**Nothing at 25+ exists in Crete beyond what is already on this list.**
+
+| | |
+|---|---|
+| **At 25+** | **9** *(11 with the two Ilingas coves)* |
+| **26s** | **2 — Domata, Marmara** |
+| **Withdrawn in this sweep** | **1 — Vlychadia** |
+| **Still unresolved** | **2 — Kalypso's colour, and Anidri/Gialiskari** |
