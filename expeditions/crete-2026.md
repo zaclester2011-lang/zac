@@ -1,5 +1,9 @@
 # WEST CRETE — 24 October to 3 November 2026
 
+> ## ➡️ THE OPERATIVE PLAN IS NOW `crete-week.md`
+> **Booked: Cretan Dream Resort & Spa, Stalos · 25 Oct – 1 Nov · 7 nights.**
+> This file is the research and decision trail that produced it.
+
 **Status: PLANNED FROM RESEARCH — nothing booked. Dates fixed. 10 nights.**
 
 > **THE FINAL PLAN IS AT THE BOTTOM OF THIS FILE.** Everything between here
