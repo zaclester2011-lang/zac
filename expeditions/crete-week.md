@@ -232,3 +232,56 @@ I searched describes any of them.** Ask Meletis or the boatman on the day.
 
 **Four days and a half for ten entries at 24+, both 26s, from one hotel.
 That leaves a day and a half spare out of six — which is the weather margin.**
+
+---
+
+## THE LAST GAP CLOSED — the four unscored path-and-boat beaches
+
+**All four scored. One is a new 25 and it is free on a boat already booked.**
+
+### ⭐ Σεντόνι / Sentoni — 25 · NEW
+
+| | | |
+|---|---|---|
+| **Discovery** | **9** | **No road of any kind.** Boat from Sougia, or the E4 — **the hike from Sougia is 4–5 hours** |
+| **Colour** | **8** | Pebble, and **βαθιά καταγάλανα νερά** — deep blue rather than turquoise. No pale shallow shelf |
+| **Water** | **8** | Deep and clear |
+
+**Position: about 15 minutes east of the Trypiti gorge mouth — so it is on the
+charter route.** Same boat, same morning. *(There is a cistern with running
+water at the Trypiti gorge exit.)*
+
+> **THE SOUGIA CHARTER NOW DELIVERS FOUR: Domata 26 · Trypiti 25 · Sentoni 25
+> · Pefki 25. One morning, one fee, a 26 and three 25s — the best-value day
+> in the whole archive.**
+>
+> **Add Sentoni to the email.**
+
+### The three that fail
+
+| | Score | Why |
+|---|---|---|
+| **Άγιος Αντώνιος (Χαρέι)** | **22** | 2.5 km east of Sougia. **No infrastructure in the wider area**, unorganised, used by campers, fishermen and nudists. Boat or a 2-hr E4 hike — **Discovery 8.** But **rocks and pebbles under pines (Colour 7)**, and **brackish thermal springs nearby make the water "πολύ δροσερά" — very cool (Water 7).** Glyka Nera's mechanism without its shelter |
+| **Φοίνικας / Phoenix** | **~21** | **700 m west of Loutro — a 15-minute walk.** A small **settlement** with buildings, and **a road, poor but a road, up to Livaniana.** Pebble, blue, calm. **Discovery 6** |
+| **Ανύδρι · Γιαλισκάρι** | **~21** ⚠ | **Reached from the coastal road east of Paleochora**, which caps Discovery at once. **Insufficient data to score properly — recorded as unresolved rather than guessed** |
+
+---
+
+# ✅ FINAL — 8 AT 25+ WITHIN TWO HOURS OF CHANIA
+
+| | Score | Day |
+|---|---|---|
+| **Δώματα / Domata** | **26** | ① The Sougia charter |
+| **Τρυπητή / Trypiti** | 25 | ① same boat |
+| **Σεντόνι / Sentoni** | 25 | ① same boat |
+| **Πεύκη / Pefki** | 25 | ① same boat |
+| **Μάρμαρα / Marmara** | **26** | ② Aradena gorge, or the Loutro boat |
+| **Γλυκά Νερά / Glyka Nera** | 25 | ② same ferry day |
+| **Κεδρόδασος / Kedrodasos** | 25 | ③ The southwest |
+| **Σεϊτάν Λιμάνια / Seitan Limania** | 25 | Half day, 45 min |
+
+**Plus at 24, all free on the Chora Sfakion ferry: Loutro · Agia Roumeli ·
+Agios Pavlos · Lykos.**
+
+**Eight at 25+ and four at 24, from one hotel, in three and a half days —
+and half of the 25+ come off a single boat out of Sougia.**
