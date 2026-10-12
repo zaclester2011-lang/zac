@@ -497,3 +497,41 @@ certainly landing-restricted, the Gioura and Piperi pattern)* ·
 
 **Four of the fifteen come off one boat out of Sougia. Four more are on Gavdos
 footpaths. Both 26s are within 40 km of each other on the south coast.**
+
+---
+
+## ⚠️ ARITHMETIC CORRECTION — the 25+ count is 10, not 15
+
+**Four totals in this file did not match their own components.** Corrected:
+
+| | D·C·W | Was | **Is** |
+|---|---|---|---|
+| **Δώματα / Domata** | 10·**8**·8 | 26 | **26** — *but the Colour was printed as 9, which sums to 27. **No source anywhere describes Domata's water colour**, so Colour 8 is the honest figure and the total stands* |
+| **Πεύκη / Pefki** | 8·8·8 | 25 | **24** |
+| **Κεδρόδασος / Kedrodasos** | 8·8·8 | 25 | **24** |
+| **Γλυκά Νερά / Glyka Nera** | 7·8·8 | 25 | **23** |
+
+**None of them leaves the trip** — Pefki is a free third stop on the charter,
+Kedrodasos is the southwest day, Glyka Nera is a 30-minute walk on a ferry day
+already booked. **But the count is 10 at 25+, not 15.**
+
+### THE TEN
+
+**Domata 26 · Marmara 26 · Trypiti 25 · Sentoni 25 · Seitan Limania 25 ·
+Cape Tripiti 25 · Lavrakas 25 · Lakkoudi 25 · Potamos 25 · Preveli 25**
+
+### What the corrected ranking reveals
+
+| | |
+|---|---|
+| **Only three entries hold a Colour 9** | **Marmara's pale marble · Seitan Limania's white rock · Preveli's palms** *(on the experience reading)* |
+| **Six of the ten score Discovery 9 or 10** | Domata, Marmara, Sentoni, Cape Tripiti, Lavrakas, Lakkoudi, Potamos |
+| **Four of the ten are on Gavdos** | More than the Sougia charter delivers |
+
+> **This is a Discovery archive, not a Colour one.** Seven of the ten sit at
+> Colour 8. **What makes the list good is that almost nothing on it has a
+> road** — and the one place in Europe where pale shallow rock and genuine
+> isolation coincide is Marmara, which is why it is the only clean 26 on the
+> island.
+
+**The booked itinerary is now in `crete-itinerary.md`.**
