@@ -404,3 +404,96 @@ and the famous sixteen.
 | **26s** | **2 — Domata, Marmara** |
 | **Withdrawn in this sweep** | **1 — Vlychadia** |
 | **Still unresolved** | **2 — Kalypso's colour, and Anidri/Gialiskari** |
+
+---
+---
+
+# 🔒 CRETE AND GAVDOS — FINAL. 15 AT 25+
+
+**Everything nameable has been searched in Greek. This supersedes all earlier
+counts.**
+
+## THE 26s — 2
+
+| | D·C·W | Access |
+|---|---|---|
+| **Δώματα / Domata** | **10**·9·8 | **Charter from Sougia.** No road, no building |
+| **Μάρμαρα / Marmara** | 9·**9**·8 | **Aradena gorge, iron ladders**, or a 10-min boat from Loutro. **Pale marble** |
+
+## MAINLAND CRETE — 7 at 25
+
+| | D·C·W | Drive from Stalos |
+|---|---|---|
+| **Τρυπητή / Trypiti** | 9·8·8 | 1h20 — same charter. *Cliffs shade it; go late morning* |
+| **Σεντόνι / Sentoni** | **9**·8·8 | 1h20 — same charter. **No road of any kind** |
+| **Πεύκη / Pefki** | 8·8·8 | 1h20 — same charter, **free** |
+| **Γλυκά Νερά / Glyka Nera** | 7·8·8 | 1h30 + ferry. **Springs through the seabed** |
+| **Σεϊτάν Λιμάνια / Seitan Limania** | 8·**9**·8 | **45 min** |
+| **Κεδρόδασος / Kedrodasos** | 8·8·8 | 1h50. **Cedars onto the sand** |
+| **Πρέβελη / Preveli** | 8·**9**·8 | 2h15. **470 steps. Freshwater palm lagoon *and* the Libyan Sea** |
+
+## GAVDOS — 4 at 25, 2 at 24
+
+| | D·C·W | Access |
+|---|---|---|
+| **Τρυπητή / Cape Tripiti** | 9·8·8 | **Korfos path: 4.2 km, difficulty 2/5.** Three sea arches, southernmost point of Europe |
+| **Λαβράκας / Lavrakas** | **9**·8·8 | 20–30 min on foot. Salt pan behind it, no shade |
+| **Ποταμός / Potamos** | **9**·8·8 | 2-hr footpath from Ampelos. **Brown-terracotta sand, blue-green water** |
+| **Λακούδι / Lakkoudi** | **9**·8·8 | **Rough path, then a steep ravine descent** |
+| Σταυρολίμνη / Stavrolimni | 9·**7**·8 = **24** | *Cut by a clay-bearing stream* |
+| Πύργος / Pyrgos | 9·8·**7** = **24** | *Cut by reddish sand and shallow water* |
+
+**The west-coast footpath links Agiannis → Lavrakas → Stavrolimni → Pyrgos in
+one morning.** Agiannis ~22 *(five minutes from the car, tavernas and rooms)*,
+Sarakiniko 22, Fetife ~21, Bo ~22 *(rocky, no sand)*, Korfos ~22.
+
+## THE ASTEROUSIA — swept, and unscorable
+
+**Crete's wildest south-facing coast has the right geology and no sources.**
+
+| | |
+|---|---|
+| **Βαθύ / Vathy** | **Gorge mouth near Cape Lithino. Sandy, deserted, completely unorganised, reached by a difficult dirt road or by sea. Discovery 9 — and not one source describes the water.** ⚠️ dirt road voids insurance |
+| **Τρεις Εκκλησιές** | *"One of the most isolated areas in Crete, with some of the island's most beautiful beaches, **many accessible only by boat**"* — **and it names none of them.** The three it does name are dirt-road. Central beach ~21–22 |
+| **Μάρτσαλο / Martsalo** | ~22–23. Rough path or boat from Kaloi Limenes. ⚠️ *"the water can be churned up by wind and boats"* |
+| **Λέντας** ~21 · **Καλοί Λιμένες** ~20 | *"One of the very few coastal areas of the Asterousia reachable by asphalt road"* |
+
+> **This is the Strofades problem: a regional claim of boat-only beauty that
+> names nothing. The same claim dissolved into 24s on the Karpaz when the
+> beaches were finally named. Unscorable, not unscored.**
+
+## TWO STRUCTURAL FINDINGS
+
+**1 · Why Gavdos has four 25s and no 26.** Its sand is **golden, reddish or
+brown-terracotta — never white.** Blue-green water over warm-coloured sand
+caps at **Colour 8**. **Marmara earns Colour 9 from pale marble; Gavdos has no
+pale rock anywhere on it.** Every Gavdos beach scores **Discovery 9** and
+**Colour 8** — it is access-rich and colour-poor, the exact inverse of
+Crete's south coast.
+
+**2 · Sediment is the most consistent colour-killer in this archive.** Clay at
+Stavrolimni and at Argilos · churned water at Martsalo · peat in Borneo · the
+Everglades' tannins · river silt at the Acheloos, the Nestos and the Evros
+deltas. **Across three continents, suspended sediment has cut more entries
+than temperature.**
+
+## WHAT REMAINS GENUINELY UNSCORABLE
+
+**Vathy and the Tris Ekklisies boat beaches** *(Discovery 9, no colour data)* ·
+**Gavdos' west-coast cliff beaches and Diana** · **Gavdopoula** *(migratory
+birds, and **Mediterranean sea turtles and monk seals nest there** — almost
+certainly landing-restricted, the Gioura and Piperi pattern)* ·
+**Anidri and Gialiskari** *(three searches, nothing)* · **Fetifes' water** ·
+**the two Ilingas coves** *(one source)*.
+
+## FINAL COUNT
+
+| | |
+|---|---|
+| **26s** | **2** |
+| **25s** | **13** |
+| **TOTAL AT 25+** | **15** *(17 with the Ilingas coves)* |
+| At 24 | Ilingas · Loutro · Agia Roumeli · Agios Pavlos · Lykos · Stavrolimni · Pyrgos · Agiofarago · Balos *(walked in)* |
+
+**Four of the fifteen come off one boat out of Sougia. Four more are on Gavdos
+footpaths. Both 26s are within 40 km of each other on the south coast.**
