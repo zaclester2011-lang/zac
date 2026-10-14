@@ -146,3 +146,56 @@ hours before the charter could spoil three of them at once.
 **Elafonissi rules** *(1 km from Kedrodasos)*: **park 500–600 m out, stay
 outside the fenced vegetation, and taking sand is illegal under Law 1650/86.**
 The pink is only at the waterline, and it is fading because people take it.
+
+---
+
+## 📌 COUNT CORRECTED — 13 AT 25+
+
+**Two corrections after re-checking, both upward.**
+
+### Πεύκη / Pefki — back to 25
+
+I had given it **Discovery 8** while giving **Sentoni 9** for *"no road of any
+kind"* — **and Pefki is a boat-only stop on the same roadless Selino coast.**
+Being inconsistent between two beaches on the same stretch was an error.
+**9·8·8 = 25.**
+
+### The two Ilingas coves — confirmed 25s, and they are free
+
+**Three Greek sources now agree:** Ilingas is **essentially three pebble
+beaches**, ~2 km west of Chora Sfakion, and **the two more deserted ones are
+accessible only through the water — by swimming about 80 m, or by boat.**
+
+> *"Swim about 80 m heading east towards Chora Sfakion. Once you pass the
+> steep rocks you reach the second beach, and another 100 m separates you from
+> the third."* **One source gives 80 m and 180 m — budget for the longer
+> figure.**
+
+| | | |
+|---|---|---|
+| **Discovery** | **8** | **No land access of any kind.** Held at 8, not 9, because they sit **80 m from a beach with a taverna, sunbeds and rooms** — the same cap applied to Kleftiko |
+| **Colour** | **9** | Same bay as Ilingas: ***"clear, deep turquoise"*** — turquoise from clarity over pale pebble rather than a shallow shelf |
+| **Water** | **8** | Deep, good snorkelling, **and the bay is sheltered from the meltemi** |
+
+**⚠️ You pass steep rocks on the crossing, and every source describing it is a
+summer source. Look from Ilingas first. If there is any sea running, do not
+swim it.**
+
+### Still below — and still in the trip
+
+**Κεδρόδασος / Kedrodasos 24** *(8·8·8 — end of the tarmac plus a 10–15 min
+walk, and no source calls its water turquoise)* · **Γλυκά Νερά / Glyka Nera
+23** *(7·8·8 — a 30-minute flat walk from a village, with a taxi boat as an
+alternative)*. **Both remain on the itinerary.**
+
+### THE THIRTEEN
+
+**Domata 26 · Marmara 26 · Trypiti 25 · Sentoni 25 · Pefki 25 ·
+Seitan Limania 25 · Preveli 25 · Cape Tripiti 25 · Lavrakas 25 ·
+Lakkoudi 25 · Potamos 25 · Ilingas cove 2 — 25 · Ilingas cove 3 — 25**
+
+### WEDNESDAY 28 IS NOW THE BIGGEST DAY OF THE TRIP
+
+**Marmara 26 · two Ilingas coves at 25 · Agios Pavlos 24 · Loutro 24 ·
+Lykos 24 · Agia Roumeli 24 · Glyka Nera 23** — **one ferry ticket, one car
+park, and a 100 m path.**
