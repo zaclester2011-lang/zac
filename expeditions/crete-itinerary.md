@@ -37,7 +37,7 @@ needs more.
 | | Base | Day | Water |
 |---|---|---|---|
 | **Mon 26** | → Stalos | **Land 13:00. Car by 13:45, then 20 min across Akrotiri** — the airport and the beach are on the same peninsula. Hotel by 17:00 | **Seitan Limania 25** |
-| **Tue 27** | Stalos | **1h20 to Sougia. THE CHARTER** | **Domata 26 · Trypiti 25 · Sentoni 25 · Pefki 24** |
+| **Tue 27** | Stalos | **1h20 to Sougia. THE CHARTER** | **Domata 26 · Trypiti 25 · Sentoni 24** |
 | **Wed 28** | Stalos | **1h30 to Chora Sfakion, ferry in.** *Park at Sfakion, taxi up to Aradena, walk down, boat to Loutro, ferry back — the car is waiting* | **Marmara 26 · Glyka Nera 23** *(+ Loutro, Ilingas, Agios Pavlos, Lykos, Agia Roumeli — five 24s, one ticket)* |
 | **Thu 29** | **Gavdos** | **10:30 out of Chora Sfakion. Overnight.** Walk west from Agiannis | **Cape Tripiti 25 · Lavrakas 25 · Lakkoudi 25** |
 | **Fri 30** | → Stalos | **14:30 back.** *Potamos in the morning if the time allows* | **Potamos 25** |
@@ -74,7 +74,6 @@ Preveli and Agiofarago while delivering you to Heraklion.
 | **Domata** | **26** | **10**·8·8 | **Discovery 10 — the only one in Europe.** No road, no building |
 | **Marmara** | **26** | 9·**9**·8 | **Pale marble shallows, imposing white rocks** |
 | **Trypiti** | 25 | 9·8·8 | Gorge mouth at Voukilasi. *Cliff-shaded — go late morning* |
-| **Sentoni** | 25 | **9**·8·8 | **No road of any kind.** 15 min east of Trypiti |
 | **Seitan Limania** | 25 | 8·**9**·8 | Knife-cut fjord in white rock, 10-min steep descent |
 | **Cape Tripiti** | 25 | 9·8·8 | **4.2 km path from Korfos, difficulty 2/5. Three sea arches at the southernmost point of Europe** |
 | **Lavrakas** | 25 | **9**·8·8 | 20–30 min on foot. Salt pan behind it, no shade |
@@ -82,7 +81,8 @@ Preveli and Agiofarago while delivering you to Heraklion.
 | **Potamos** | 25 | **9**·8·8 | 2-hr footpath from Ampelos. Brown-terracotta sand |
 | **Preveli** | 25 | 8·**9**·8 | **470 steps. Swim the palm-lined freshwater lagoon *and* the Libyan Sea** |
 
-**At 24, all free or nearly:** Pefki *(third charter stop)* · Kedrodasos ·
+**At 24, all free or nearly:** **Sentoni** *(500 m past Trypiti, same boat —
+see the Greek verification below)* · Kedrodasos ·
 Loutro · Ilingas · Agios Pavlos · Lykos · Agia Roumeli · Agiofarago.
 
 **Also on the Gavdos footpath:** Stavrolimni 24 · Pyrgos 24 — **Agiannis →
@@ -96,7 +96,7 @@ Lavrakas → Stavrolimni → Pyrgos is one continuous coastal walk.**
 
 > **meletistaxisougia@gmail.com** · **soygiacruises@hotmail.com**
 >
-> *"A charter from Sougia to **Domata, Trypiti, Sentoni and Pefki**, the
+> *"A charter from Sougia to **Domata, Trypiti and Sentoni**, the
 > morning of **Tuesday 27 October 2026**, three people, with **Saturday 31
 > October** as a weather fallback. What does it cost, and will you go?
 > Could you collect us at Domata if we walk in from Sougia along the E4?
@@ -297,3 +297,60 @@ Tsounoplaka crossing *"which needs a guide or local knowledge."*
 > **Can you meet us at Trypiti**, then take us to **Sentoni and Domata** and
 > back to Sougia? **Tuesday 27 October 2026**, three people, with **Saturday
 > 31 October** as a weather fallback. What does it cost?"*
+
+---
+
+## 🔎 SENTONI VERIFIED IN GREEK — 25 → 24
+
+**Asked directly: is Sentoni turquoise? No source says so.** Sentoni was the
+tenth entry carrying an unverified score, and like the nine before it, it fell
+when read in Greek.
+
+| Source | What it actually says |
+|---|---|
+| Elizabeth Estate Agency | *«Η όμορφη παραλία Σεντόνι διαθέτει **βότσαλο** και **βαθιά καταγάλανα** νερά»* — pebble, and **deep, intensely blue** water |
+| thisiscrete.gr | *«**βαθιά, κρυστάλλινα** νερά του Λιβυκού Πελάγους»*, below *«απόκρημνους βράχους και ψηλά πρανή»* — deep, crystalline; sheer rock and high scree slopes |
+| cretanbeaches.gr | Pebble; **the neighbouring Trypiti's bottom is rocky** |
+
+**The word is καταγάλανα, not τιρκουάζ.** Greek has a specific word for
+turquoise water and uses it freely — Cape Tripiti on Gavdos got its 25 on
+exactly that word. **Nobody applies it to Sentoni.** What they apply is
+*βαθιά* — deep — three times over.
+
+**That is the mechanism, not a quibble.** Turquoise is shallow water over pale
+rock. Sentoni is **deep water over pebble and rock, under sheer cliffs** — the
+same profile that took Delfinia from 26 to 21 and Sougia's Trypiti from 26 to
+25. Deep clear water off a pebble shore reads navy and bottle-green, which is
+beautiful and is not what this trip is scored on.
+
+**Colour 8 → 7. 9·7·8 = 24.** It survives the weak-link rule by exactly one
+point.
+
+### It also barely counts as a separate place
+
+*«Το Σεντόνι βρίσκεται στο **ακρωτήρι της Τρυπητής**»* — Sentoni is on the cape
+of Trypiti, **500 m east of it.** Scoring them as two entries was always
+generous; one is a gorge mouth, the other is the pebble bank round the headland
+from it, in the same body of water.
+
+**Sentoni stays in the day and leaves the list.** It is on the way, it costs
+nothing, and you will swim it — but it is not one of the places this trip is
+built around.
+
+**Count: 14 → 13 at 25+.**
+
+**Thirteen:** Domata 26 · Marmara 26 · Trypiti 25 · Seitan Limania 25 ·
+Ilingas cove 2 — 25 · Ilingas cove 3 — 25 · Preveli 25 · Cape Tripiti 25 ·
+Lavrakas 25 · Lakkoudi 25 · Potamos 25 · Karoumes 25 · Atherina 25.
+*(Karoumes and Atherina are 3h30 east and out of range — eleven on the trip.)*
+
+### The pattern is now ten for ten
+
+**Every entry scored from English sources and re-read in Greek has fallen.
+Every Greek-verified entry has held or improved.** Ten tested, ten fell:
+Delfinia, Serifos ×4, Vlychadia, Seitan Limania's crowding penalty, Pefki,
+Sentoni. **Verification is the filter that should run first**, and the only
+remaining unverified figure in the whole plan is **Domata's Colour 8**, which
+is a placeholder because no source on earth has described that water.
+
+**You settle that one by standing in it.**
