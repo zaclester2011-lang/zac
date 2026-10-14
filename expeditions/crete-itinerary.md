@@ -10,7 +10,7 @@
 | **Back** | **EZY8216 · Tue 3 Nov · Heraklion 14:10 → Gatwick 16:15** |
 | **Hotel** | **Cretan Dream Resort & Spa, Stalos** — 7 km west of Chania, 50 m from the beach |
 | **Car** | **ONE-WAY: Chania pickup → Heraklion drop.** Yaris Cross or similar |
-| **At 25+** | **10 — including both of Crete's 26s** |
+| **At 25+** | **8 after full Greek verification — see the verification pass at the foot of this file. Seven are in range** |
 | **Sea** | **24°C on the south coast** — the Libyan Sea, sheltered by the island |
 
 ---
@@ -354,3 +354,151 @@ remaining unverified figure in the whole plan is **Domata's Colour 8**, which
 is a placeholder because no source on earth has described that water.
 
 **You settle that one by standing in it.**
+
+---
+
+# 🔬 THE FULL VERIFICATION PASS — ALL THIRTEEN IN GREEK
+
+**Every entry at 25+ read in Greek, one at a time. Three were cut, two fell
+below 25, seven held, and one went up.** The headline: **Domata's placeholder
+Colour resolved, and it resolved against us — Europe no longer has a 27
+contender at all.** And **Seitan Limania is closed by order.**
+
+## ❌ CUT — three
+
+### Δώματα / Domata — 26 → CUT
+
+**The placeholder is settled.** cretanbeaches.gr carries a structured colour
+field for every beach in Crete. **For Domata it reads «Βαθύ μπλε» — deep
+blue.** The prose is worse:
+
+> *«ψιλό πεντακάθαρο **βότσαλο**… **καταγάλανα** νερά, **συνήθως όμως θολά**…
+> λόγω **υπόγειων πηγών γλυκού νερού**»*
+
+**Fine pebble, deep blue, and usually MURKY — permanently, from underground
+freshwater springs.** travel.gr adds **grey**: *fine pebbles in tones of grey*,
+*almost untouched grey sand*.
+
+**Both rules fire at once.** Grey substrate caps Colour, and the murk is the
+sediment rule — the filter that has cut more entries than temperature across
+three continents. This murk is not weather. It is **structural**: the springs
+run all year, and freshwater over saltwater is a permanent haze.
+
+**Colour 8 → 6. Water 8 → 7.** `10·6·7 = 23` — **and cut outright by the
+weak-link rule.**
+
+> **Europe has no possible 27.** Domata was the only candidate, and it was a
+> candidate only because nobody had described the water. Now somebody has.
+> **The one unverified figure in the plan was the one holding up the ceiling.**
+
+### Πόταμος / Potamos — 25 → CUT
+
+> *«Η άμμος έχει χρώμα **πορτοκαλί λόγω του αργίλου**»* — orange sand, **from
+> clay.** Another: *«λόγω των **αργιλωδών πετρωμάτων** της περιοχής»*.
+> And: *«η παραλία έχει **συχνά κύμα** λόγω του προσανατολισμού της»*.
+
+**Clay, plus frequent waves to stir it.** That is exactly what cut Stavrolimni
+and Argilos. **Colour 6, Water 7. Cut.**
+
+### Σεϊτάν Λιμάνια / Seitan Limania — 25 → CLOSED BY ORDER
+
+**Not a scoring question. An access ban.**
+
+| | |
+|---|---|
+| **When** | **9–10 April 2026.** Rockfall and a landslide |
+| **What** | **BOTH paths shut** — the old one *and* the new one the municipality built. Civil Protection taped them off |
+| **How long** | *«μέχρι νεωτέρας»* — **until further notice.** Pending inspection and restoration |
+| **Worse** | One report: *«**υποχωρεί** το μονοπάτι — **επικίνδυνη ρωγμή** απαιτεί ταχεία παρέμβαση»* — the path is **subsiding**, a dangerous crack needs urgent work |
+| **Reopened?** | **No announcement found.** Six months on |
+
+**Check Δήμος Χανίων before Monday — but do not build the day on it.**
+This removes the whole justification for Monday's routing.
+
+## 📉 FELL BELOW 25 — two
+
+**Πρέβελη / Preveli 25 → 24.** *«**γαλαζοπράσινα** νερά»* — blue-green, never
+τιρκουάζ — and the lagoon is *«**παγωμένα**, με κρυστάλλινη διαύγεια»*:
+**freezing.** Colour 9 → 8. The palm forest and the freshwater lagoon are
+genuinely extraordinary; **the water is not what this trip scores.** Stays on
+Sunday 1 Nov — it is en route and nothing competes there.
+
+**Αθερίνα / Atherina 25 → 23.** *«Η πρόσβαση είναι **σχετικά εύκολη** μέσω του
+παραλιακού δρόμου Ιεράπετρας–Γούδουρα»*, with a dirt road **stopping just above
+the east end.** That is road access. **Discovery 9 → 7.** It was out of range
+anyway.
+
+## ✅ HELD — seven
+
+| | | Why it survived the Greek |
+|---|---|---|
+| **Μάρμαρα / Marmara** | **26** | **Confirmed outright.** The turquoise is sourced to its cause: *light reflecting off the **white limestone** rocks.* Foot or boat only |
+| **Τρυπητή / Trypiti** | 25 | *κρυστάλλινα*, rocky bottom, cliff-shaded. Already corrected down from 26; holds at 25 |
+| **Ίλιγκας cove 2** | 25 | *«**λευκό βότσαλο**»* — white pebble, the pale substrate. And confirmed: *«δύο μικρότερες… 80 μέτρα ανατολικά, φτάνουν **μόνο με κολύμβηση ή με βάρκα**»* |
+| **Ίλιγκας cove 3** | 25 | Same. **Swim-access-only is why these two score 25 and the main Ilingas scores 24** — the main one has sunbeds and a canteen set in the rock |
+| **Τρυπητή ακρωτήρι / Cape Tripiti** | 25 | **τιρκουάζ**, sourced. Three sea arches, 4.2 km path from Korfos |
+| **Λακκούδι / Lakkoudi** | 25 | *«κρυστάλλινα και καταγάλανα, και **η διαύγειά τους αποδίδεται στα άσπρα βότσαλα του βυθού**»* — **the clarity is attributed to the white pebbles of the seabed.** The mechanism, named |
+| **Καρούμες / Karoumes** | 25 | Two Greek headlines carry **τιρκουάζ** in the title. 1½-hr walk down the Chochlakies gorge, water in it most of the year |
+
+*A note on Lakkoudi: one aggregator lists it with a **Blue Flag**. Ignore that
+— Blue Flag requires lifeguards and facilities, and this beach has no road.
+It is a template artefact.*
+
+## 📈 WENT UP — one
+
+### Λαβράκας / Lavrakas — 25 → **26**
+
+**The first entry in the whole audit to improve.** travel.gr:
+
+> *«**τιρκουάζ**, πολύ καθαρά νερά και **ψιλή άμμο**»*, and the water is
+> **«ρηχά»** — shallow.
+
+**Turquoise, fine sand, shallow — the three-part mechanism stated explicitly in
+one sentence**, which is more than Marmara's own page manages. Backed by
+*crystal waters and golden sand*, cedar and pine woodland for shade, a
+freshwater well in the sand, and no facilities at all.
+
+**Colour 8 → 9. `9·9·8 = 26`.**
+
+---
+
+## THE EIGHT AT 25+, AFTER VERIFICATION
+
+| | Score | D·C·W | |
+|---|---|---|---|
+| **Marmara** | **26** | 9·**9**·8 | Turquoise off white limestone. Aradena gorge or boat |
+| **Lavrakas** *(Gavdos)* | **26** | 9·**9**·8 | **Turquoise, fine sand, shallow — all three sourced** |
+| **Trypiti** | 25 | 9·8·8 | Gorge mouth. **Reachable on foot — 3½ hrs from Sougia** |
+| **Ilingas cove 2** | 25 | **9**·8·8 | Swim 80 m east from Ilingas. White pebble |
+| **Ilingas cove 3** | 25 | **9**·8·8 | Same swim. Caves in the rock |
+| **Cape Tripiti** *(Gavdos)* | 25 | 9·8·8 | Three sea arches, southernmost point of Europe |
+| **Lakkoudi** *(Gavdos)* | 25 | **9**·8·8 | White seabed. Path through pine, descent of a ravine |
+| **Karoumes** | 25 | **9**·8·8 | **3h30 east — OUT OF RANGE** |
+
+**Seven in range. Three of them are on Gavdos — and one of those is now a 26.**
+
+---
+
+## WHAT THIS DOES TO THE WEEK
+
+**1 · Gavdos is now the best day of the trip, not the optional one.**
+It holds **a 26 and two 25s** — three of the seven. It used to be written as
+*"dropping Gavdos costs one 25 and nothing else."* **That is no longer true.**
+**The unanswered Gavdos phone call is now the most important outstanding action
+in the plan by a wide margin.**
+
+**2 · The Sougia charter may not be worth chartering.** Its anchor was Domata.
+With Domata cut and Sentoni at 24, the boat buys **one 25 — Trypiti — which you
+can reach on foot in 3½ hours anyway.** Walking Sougia → Trypiti and back is a
+cleaner Tuesday, it earns the water properly, and it saves €60–100 and the
+single most weather-fragile commitment in the week. **Still worth one email**,
+because the boat is also the fallback if the E4 is too much for Jacob.
+
+**3 · Monday has lost its reason.** The 13:00 landing was routed across
+Akrotiri purely for Seitan Limania, **and the path is shut.** Monday becomes a
+drive to Stalos and the hotel beach — which, after a 07:05 Gatwick departure,
+is not the worst outcome.
+
+**4 · Thirteen → eight.** And the pattern now reads **thirteen tested,
+six fallen, one risen.** Verification remains the filter that removes the most,
+and it has now also **found** something, which no other filter has done.
