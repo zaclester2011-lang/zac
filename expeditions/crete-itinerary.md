@@ -228,3 +228,72 @@ Preveli 25 · Cape Tripiti 25 · Lavrakas 25 · Lakkoudi 25 · Potamos 25
 
 > **If east Crete ever gets its own trip, it is Karoumes 25, Atherina 25 and
 > the Richtis gorge from a base at Sitia.**
+
+---
+
+## ❌ WITHDRAWN — Pefki was never on this coast
+
+**Πεύκοι / Pefki is a village at 420 m altitude in east Crete** — about 30 km
+from Ierapetra, 7 km from Makry Gialos, with its own gorge. **Lasithi, not
+Selino. There is no beach of that name on the south Chania coast.**
+
+**Three independent negatives:**
+
+| | |
+|---|---|
+| **Google Maps** | Shows nothing where it was placed |
+| **All three boat operators** | Meletis lists *Domata, Trypiti, Marmara, Lykos, Gavdos*; Sougia Cruises lists *Domata, Trypiti, Lissos, Agios Antonios*; Yannis lists *Lissos, Anidri, Agios Antonios, Trypiti, Domata.* **None lists Pefki** |
+| **A Greek search** | Places Pefki firmly in Lasithi |
+
+**It entered in an early round and was never verified.** That is the same
+category that produced **Delfinia, Vlychadia and the Serifos four** — and
+**every unverified entry in this project has eventually fallen. Nine for
+nine.**
+
+**At 25+: 15 → 14. The Sougia charter delivers three, not four.**
+
+### THE FOURTEEN
+
+**Domata 26 · Marmara 26 · Trypiti 25 · Sentoni 25 · Seitan Limania 25 ·
+Ilingas cove 2 — 25 · Ilingas cove 3 — 25 · Preveli 25 · Cape Tripiti 25 ·
+Lavrakas 25 · Lakkoudi 25 · Potamos 25 · Karoumes 25 · Atherina 25**
+
+**Twelve on the trip. Karoumes and Atherina out of range at 3h30 east.**
+
+---
+
+## 🥾 TUESDAY 27 — THE REVISED SOUGIA DAY
+
+**Walk in, boat out.** Better than the original plan, and it skips the one
+genuinely dangerous section.
+
+| | |
+|---|---|
+| **07:00** | Leave Stalos |
+| **08:20** | **Sougia. Park and walk east on the E4** |
+| **~12:00** | **Τρυπητή / Trypiti 25 — arrived on foot. 3½ hours**, past Lissos and Agios Antonios |
+| **~12:30** | **Boat meets you at Trypiti** |
+| **13:00** | **Σεντόνι / Sentoni 25** — 15 min east, on the way |
+| **~13:45** | **ΔΩΜΑΤΑ 26** — *and the only possible 27 in Europe* |
+| **~16:00** | Back at Sougia *(Lissos 23 and Agios Antonios 22 are optional stops)* |
+| **~17:30** | Stalos, before dark |
+
+**Why this beats walking the whole way:** the hard section of the E4 is
+**Poikilassos → Domata**, described as *"among the most tiring and difficult
+stretches in Crete"* — a 25-minute descent to the Tripiti gorge bed, a steep
+crossing, and **an indistinct path climbing to the slope rim.** **Sougia →
+Trypiti is the graded-easier half at 3½ hours, and it ends at a 25.**
+
+**Why not the Tripiti gorge itself:** *"no road reaches the gorge's
+entrance."* You get there from Omalos via the Gigilos path — **3 hours to the
+col, an almost vertical climb** — then **8½–9 hours of descent**, usually
+**two days**, camping at the col or the ruined mitato of Tzatzimos at 1,480 m,
+**with no water in the gorge**, a dangerous passage at the entrance, and the
+Tsounoplaka crossing *"which needs a guide or local knowledge."*
+
+### The email, revised
+
+> *"We will walk the E4 from Sougia and reach **Trypiti** around midday.
+> **Can you meet us at Trypiti**, then take us to **Sentoni and Domata** and
+> back to Sougia? **Tuesday 27 October 2026**, three people, with **Saturday
+> 31 October** as a weather fallback. What does it cost?"*
