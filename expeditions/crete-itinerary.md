@@ -199,3 +199,32 @@ Lakkoudi 25 · Potamos 25 · Ilingas cove 2 — 25 · Ilingas cove 3 — 25**
 **Marmara 26 · two Ilingas coves at 25 · Agios Pavlos 24 · Loutro 24 ·
 Lykos 24 · Agia Roumeli 24 · Glyka Nera 23** — **one ferry ticket, one car
 park, and a 100 m path.**
+
+---
+
+## ✅ THE ARCHIVE COUNT IS 15 — correcting my own bookkeeping
+
+**I had been quoting the itinerary count as the archive count.** Two genuine
+25s sit outside day-trip range and were dropped from the plan, then wrongly
+dropped from the total as well.
+
+| | Score | D·C·W | Why it is not in the plan |
+|---|---|---|---|
+| **Καρούμες / Karoumes** | **25** | **9**·8·8 | **Gorge or sea only — no path from any village.** Kato Zakros, 1 hr from Sitia, **~3h30 from Stalos** |
+| **Αθερίνα / Atherina** | **25** | 8·**9**·8 | *"The **secret** beach of Crete with the **turquoise** water — completely unorganised."* Between Goudouras and Kapsa Monastery, **~3h30 and ~2 hrs beyond Heraklion** |
+
+**Neither fits even the eastward drive on 1–2 November.** They are 25s that
+this trip will not reach.
+
+### THE FIFTEEN AT 25+
+
+**On the trip — 13:** Domata 26 · Marmara 26 · Trypiti 25 · Sentoni 25 ·
+Pefki 25 · Seitan Limania 25 · Ilingas cove 2 — 25 · Ilingas cove 3 — 25 ·
+Preveli 25 · Cape Tripiti 25 · Lavrakas 25 · Lakkoudi 25 · Potamos 25
+
+**Out of range — 2:** Karoumes 25 · Atherina 25
+
+**Eleven of the thirteen are inside two hours of the hotel.**
+
+> **If east Crete ever gets its own trip, it is Karoumes 25, Atherina 25 and
+> the Richtis gorge from a base at Sitia.**
