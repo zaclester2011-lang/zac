@@ -502,3 +502,97 @@ is not the worst outcome.
 **4 · Thirteen → eight.** And the pattern now reads **thirteen tested,
 six fallen, one risen.** Verification remains the filter that removes the most,
 and it has now also **found** something, which no other filter has done.
+
+---
+
+## ↩️ DOMATA RESTORED TO 26 — the murk is seasonal and I cut it out of season
+
+**Zac was right.** The photographs disagree with each other — turquoise in
+some, cobalt in others — and the reason is the time of year. **I penalised
+Domata's Colour for a seasonal defect without checking the season.**
+
+### The inconsistency was mine
+
+Earlier in this audit, **Discovery scores penalised for crowding were all
+re-scored upward**, because crowding is seasonal and late October empties out.
+Seitan Limania went 24 → 25 on exactly that reasoning, Agia Roumeli 23 → 24,
+Balos 22 → 23–24.
+
+**The murk at Domata is seasonal in precisely the same way, and I did not apply
+the same correction.** One filter, applied to one category and not the other.
+
+### Why late October is the best case, not the worst
+
+The murk is not dirt and not sediment. Every source traces it to one cause:
+**«υπόγειων πηγών γλυκού νερού»** — *underground freshwater springs.* It is a
+freshwater lens hazing the saltwater.
+
+**Crete's rain falls between roughly October and April. May to September is
+effectively rainless.** Karst spring discharge follows that recharge with a
+lag, so **the springs are at or near their annual minimum at the end of the dry
+season — which is exactly your window.** You arrive on 26 October, before the
+autumn rains have put anything back into the Lefka Ori aquifer.
+
+**The weakest freshwater plume of the year.** *(Reasoned from Crete's rainfall
+pattern — I could not find a published discharge figure for these particular
+springs, so this is mechanism, not measurement.)*
+
+### The murk is also one source, repeated
+
+| Source | Water |
+|---|---|
+| neakriti.gr | *«καταγάλανα νερά»* **in its own headline** — the murk is a line in the body |
+| ekriti.gr | *«Η ειδυλλιακή παραλία των Σφακίων με τα **καταγάλανα** νερά»* |
+| travel.gr | *«**γαλανά** νερά»* |
+| elizabethestateagency | *transparent, deep-blue* |
+| cretanbeaches | *«καταγάλανα… **συνήθως όμως θολά**»*; colour field **«Βαθύ μπλε»** |
+
+**Two sites mention murk. Four put clear blue water in the headline.** I had
+built a cut on the minority reading of one line.
+
+### Restored
+
+**Colour 6 → 8. Water 7 → 8. `10·8·8 = 26`.**
+
+**Colour stays at 8, not 9, for the one reason that is not seasonal: the
+substrate is grey.** *Fine pebbles in tones of grey*, *grey sand.* Grey is
+pale enough for turquoise in shallow clear water — it is far from basalt — but
+nobody has written **τιρκουάζ** about Domata, so 8 remains the honest figure.
+
+*For scale: Marmara holds Colour 9 with «fine **dark** pebbles», because the
+turquoise there is sourced to the white limestone cliffs above it. Domata sits
+under the same Lefka Ori limestone. **8 may be the conservative call.***
+
+> ### Europe's only possible 27 is back open
+> Discovery 10 is sourced and unarguable. Water 8 is standard for the Libyan
+> Sea in late October. **Colour is the one open figure in the entire archive,
+> and you settle it by standing in it.**
+
+### What this does NOT rescue
+
+**Potamos stays cut.** Its problem is **orange sand from clay** — a property of
+the rock, not the calendar — and *«συχνά κύμα λόγω του προσανατολισμού της»*,
+frequent waves from its orientation, which if anything get **worse** later in
+the autumn. Nothing seasonal to credit.
+
+**Preveli stays at 24.** It fell on **Colour** — *γαλαζοπράσινα*, never
+τιρκουάζ — and that is not a seasonal reading either.
+
+---
+
+## 🔟 THE LIST, CLOSURES PARKED — TEN AT 25+
+
+| | Score | D·C·W | |
+|---|---|---|---|
+| **ΔΩΜΑΤΑ** | **26** | **10**·8·8 | **Discovery 10, the only one in Europe. The one open Colour in the archive — and the only road to a 27** |
+| **Μάρμαρα / Marmara** | **26** | 9·**9**·8 | Turquoise off white limestone, sourced |
+| **Λαβράκας / Lavrakas** | **26** | 9·**9**·8 | **Gavdos.** τιρκουάζ + ψιλή άμμος + ρηχά, all three stated |
+| **Σεϊτάν Λιμάνια** | 25 | 8·**9**·8 | *Path taped off since April — check Δήμος Χανίων* |
+| **Τρυπητή / Trypiti** | 25 | 9·8·8 | 3½ hrs on foot from Sougia |
+| **Ίλιγκας cove 2** | 25 | **9**·8·8 | Swim 80 m east of Ilingas |
+| **Ίλιγκας cove 3** | 25 | **9**·8·8 | Same swim |
+| **Τρυπητή ακρωτήρι / Cape Tripiti** | 25 | 9·8·8 | **Gavdos.** Three sea arches |
+| **Λακκούδι / Lakkoudi** | 25 | **9**·8·8 | **Gavdos.** White seabed, named as the cause |
+| **Καρούμες / Karoumes** | 25 | **9**·8·8 | **3h30 east — out of range** |
+
+**Three 26s. Nine in range. The Tuesday charter has its anchor back.**
