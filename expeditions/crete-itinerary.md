@@ -596,3 +596,50 @@ the autumn. Nothing seasonal to credit.
 | **Καρούμες / Karoumes** | 25 | **9**·8·8 | **3h30 east — out of range** |
 
 **Three 26s. Nine in range. The Tuesday charter has its anchor back.**
+
+---
+
+## 🔴 RED BEACH / Κόκκινη Άμμος, Matala — 23 → 21
+
+**The dark-substrate rule, stated out loud by the source itself.**
+
+> *«Χαρακτηριστικό της… είναι η αφράτη **κεραμιδοκόκκινη άμμος** που προέρχεται
+> από τα κοκκινωπά εδάφη της περιοχής»*
+>
+> *«Τα χρώματα της θάλασσας, **λόγω της άμμου**, αποκτούν ένα υπέροχο
+> **πρασινογάλαζο** χρώμα»*
+
+**Terracotta-red sand from the region's red soils — and the sea takes its
+green-blue colour BECAUSE OF that sand.** The causal chain written down:
+*substrate → water colour.*
+
+This is the rule that cut **Aspes** (*the black beach of the Asterousia*),
+**Pyrgos** and **Potamos** on Gavdos, and **Seixal** on Madeira. Everywhere
+else I inferred it. **Here the guide states it.** Red sand gives
+*πρασινογάλαζο* — green-blue, olive-tinged. Genuinely beautiful. **Not
+turquoise, and it cannot be**, because turquoise needs a pale floor.
+
+### The other two scores
+
+**Discovery 7.** It is **800 m from Matala**, one of the most famous beaches in
+Crete. 15–25 min over the Kastri hill with some scrambling and a steep final
+descent — a real little walk — **but there are umbrellas and a canteen on the
+sand**, a boat runs from Matala harbour, and protothema lists it among
+*«τις έξι καλύτερες παραλίες γυμνιστών στον κόσμο»* — **the six best nudist
+beaches in the world.** Nothing on that list is hidden.
+
+**Water 7.** *«ευάλωτη στους **δυτικούς ανέμους** που πνέουν **συχνά** στην
+περιοχή»* — exposed to the west winds, which blow often. Wind-driven chop over
+fine red sand is the sediment problem again.
+
+**`7·7·7 = 21.`** It clears the weak-link rule with nothing to spare.
+
+### Consequence
+
+**Monday 2 November is Agiofarago 24, outright.** Red Beach was carried in the
+itinerary as the alternative on that day; at 21 against 24 it is not a
+contender. **A 3 km gorge walk ending at the Goumenospilio cave beats a
+famous nudist beach with a canteen, by three points.**
+
+*Keep Red Beach as a 20-minute curiosity if you are standing in Matala anyway —
+the colour is worth seeing precisely because it is the wrong colour.*
