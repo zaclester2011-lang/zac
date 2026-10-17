@@ -2357,3 +2357,103 @@ able to sit there.
 4. **Whether under-18s may be aboard** — assumed yes, but confirm
 5. **Ask Sougia Cruises both questions in one message:** the Lissos–Domata
    charter price, *and* what self-drive out of Chora Sfakion would cost
+
+---
+
+# ❌ GAVDOS IS OFF — DECIDED. The week gets better.
+
+**Zac's call: no Gavdos.** The unanswerable question — whether a single room or
+taverna is open on an island of 208 people — is now moot, and **Thursday and
+Friday come back free.**
+
+## What leaves
+
+| | |
+|---|---|
+| **Λακκούδι** | **18** |
+| **Τρυπητή ακρωτήρι** | 17 |
+| **Λαβράκας** | 16 |
+| **Πύργος** | 16 |
+| *Also gone:* | Φετιφές 15 · Άγιος Ιωάννης 15 · Σαρακήνικο · Πόταμος · Σταυρολίμνη · Ντιάνα |
+
+**22 in reach → 18. Three 18s → two.** **Domata and Marmara** now carry the
+trip.
+
+## ✅ What it buys — two free days, and they are worth more than Gavdos was
+
+**Gavdos cost a ferry out, an overnight with nothing confirmed, a ferry back at
+14:30 that killed Friday afternoon, and a hard stop on 31 October. Two clean
+days out of Stalos beat that.**
+
+### **Thursday 29 — SELF-DRIVE BOAT FROM CHORA SFAKION**
+
+**The best-value day now available, and the one the hired boat was made for.**
+
+| | Score | |
+|---|---|---|
+| **Ίλιγκας cove 2** | **17** | **Anchor off and swim in — the only way in** |
+| **Ίλιγκας cove 3** | **17** | Same. Caves in the rock |
+| **Γλυκά Νερά** | **17** | Turquoise over white pebble, shore and seabed |
+| **Ίλιγκας main** | **16** | τιρκουάζ, white pebble |
+| *Περβολάκι* | *15* | *The quiet alternative to Glyka Nera, 1 km from Loutro* |
+| *Λυκός* | *15* | *By Loutro, ~5 km* |
+
+**Four scored entries, three of them 17s, all within 3 km of a harbour**, with
+Loutro halfway along. **€110 for 8–9 hours, no licence, James drives.** Nothing
+else in the week returns three 17s in one sheltered day.
+
+### **Friday 30 — KEDRODASOS + ELAFONISSI** *(southwest, 1h50)*
+
+**Κεδρόδασος 16** — **«Λευκή άμμος»** and **«Ρηχά»** on its own page, inside a
+Natura 2000 juniper forest. **Park at Elafonissi and walk the coast path in**,
+because its own access field reads **Χωματόδρομος.** **Elafonissi** next door
+for the pink sand — cut on Discovery, in the week anyway.
+
+## ⚖️ THE ONE REMAINING CHOICE: Saturday 31
+
+**Saturday is the LAST FERRY DAY of the season. It is use-it-or-lose-it.**
+
+| | | |
+|---|---|---|
+| **ΜΠΑΛΟΣ 16** | 7·**9** | Northwest, 1h15. **Local taxi up the 8 km track from Kalyviani** — their vehicle, their insurance. **The lagoon James asked for** |
+| **ΑΓΙΟΣ ΠΑΥΛΟΣ 16** | 8·8 | **Needs the Agia Roumeli ferry — only possible on or before the 31st.** Byzantine chapel on the sand, Selouda pine forest, boat or a many-hour walk only |
+
+**Recommendation: Balos.** Three reasons —
+**①** James asked for it in his own words, and he has sat through a lot of this.
+**②** Balos' Colour 9 is observed and confirmed; **Agios Pavlos' 8 rests on
+«ασημένια και καφετιά άμμο» — silver *and brown* sand — plus «ισχυρό κύμα λόγω
+των ανέμων»**, strong wave from the wind, which late October makes worse.
+**③** Saturday is also the **charter weather-retry day.** If Tuesday blew out,
+Saturday becomes Domata, and Balos is the thing you drop — **not an 18.**
+
+**Agios Pavlos is the one 16 that leaves the schedule.** Worth saying plainly
+rather than pretending it fits.
+
+---
+
+# 📋 THE FINAL WEEK — 18 IN REACH, 17 SCHEDULED
+
+| Day | | Water |
+|---|---|---|
+| **Mon 26** | Land 13:00 → Akrotiri → Stalos | **Seitan Limania 17** ⚠️ *path* |
+| **Tue 27** | **Sougia. Walk west to Lissos, boat east** | **DOMATA 18 · Trypiti 17 · Lissos 16 · Agios Antonios 16 · Sentoni 16** |
+| **Wed 28** | **Chora Sfakion. Taxi to Aradena, walk the gorge down** | **MARMARA 18** |
+| **Thu 29** | **Self-drive boat, Chora Sfakion** | **Ilingas 2 — 17 · Ilingas 3 — 17 · Glyka Nera 17 · Ilingas main 16** *(+ Perivolaki, Lykos)* |
+| **Fri 30** | Southwest, 1h50 | **Kedrodasos 16** *(+ Elafonissi)* |
+| **Sat 31** | **Northwest — or the charter retry** | **Balos 16** |
+| **Sun 1 Nov** | → Rethymno / Plakias | **Preveli 16** *(sea only)* |
+| **Mon 2 Nov** | → Heraklion, via the Odigitria Monastery | **Vathy 16 · Agiofarago 16 · Martsalo 16** |
+| **Tue 3 Nov** | Heraklion. Fly 14:10 | — |
+
+**Two 18s · five 17s · eleven 16s.**
+
+## The three things to book now — and Gavdos is no longer one of them
+
+1. **The Sougia charter** — collect at **Lissos ~10:00**, then Trypiti, Sentoni,
+   **Domata by midday**, Tuesday 27, Saturday 31 as the fallback
+2. **The self-drive boat at Chora Sfakion** for Thursday 29 — ask Sougia
+   Cruises the same message
+3. **The one-way car**, Chania 26 Oct → Heraklion 3 Nov
+
+**And one phone call that still matters: Δήμος Χανίων, on the Seitan Limania
+path.** It is a 17 twenty minutes from the aircraft.
