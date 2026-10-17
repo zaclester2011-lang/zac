@@ -2079,3 +2079,108 @@ Kapetaniana, or 10 km from Vasiliki.** Deep, grey, and catered. **Not 16, and
 
 **Wednesday carries six, Tuesday five, Monday 2 November three.**
 **Nothing in the archive is now unchecked or unscored.**
+
+---
+
+# 🗺 HOW TO GET TO DOMATA — consolidated
+
+**No road. No building. Inside the Lefka Ori National Park.** Its access field
+reads **«Βάρκα, Περπάτημα»** — boat, walking. That is the whole list.
+
+## ✅ THE PLAN: walk in, boat out
+
+**This is the one that earns it and still fits the daylight.**
+
+| | |
+|---|---|
+| **07:00** | Leave Stalos |
+| **08:20** | **Sougia.** Park and start east on the E4 |
+| ~09:30 | **Λισσός 16** — the Asklepieion is 10 min off the path |
+| ~10:30 | **Άγιος Αντώνιος 16** |
+| **~12:00** | **ΤΡΥΠΗΤΗ 17** — arrived on foot, 3½ hrs |
+| **~12:30** | **The boat meets you at Trypiti** |
+| 13:00 | **ΣΕΝΤΟΝΙ 16** — 500 m east, on the way |
+| **~13:45** | **ΔΩΜΑΤΑ 18** |
+| ~16:00 | Back at Sougia |
+| ~17:30 | Stalos, before dark |
+
+**Why this shape:** it puts you in Domata's water at **13:45, inside the
+11:00–14:30 colour window**, it skips the one brutal section of the E4, and
+**you arrive at Trypiti on your own legs** rather than stepping off a boat all
+day. Five entries in one day.
+
+## ☎️ THE BOAT — three operators, two ports
+
+| | |
+|---|---|
+| **Sougia Taxi Meletis** *(Meletis Nempavlakis)* | **meletistaxisougia@gmail.com** · **+30 694 085 9860** · Papaderou St, Sougia Selinou 73009 |
+| **Sougia Cruises** | **soygiacruises@hotmail.com** · **+30 693 407 8684** · **+30 697 322 0472** |
+| **Yannis Paterakis** *(wooden caïque)* | **+30 697 322 0472** |
+
+**Meletis runs both the road taxi and the water taxi**, serves **Domata,
+Trypiti, Marmara, Lykos and Gavdos**, and also works **out of Agia Roumeli**.
+**Sougia Cruises** covers **Domata, Trypiti, Lissos, Agios Antonios**.
+**Yannis** covers **Lissos, Anidri, Agios Antonios, Trypiti, Domata**.
+**All three list Domata. If one won't go, ask the next.**
+
+**Price anchor: Sougia → Trypiti was €40 in October 2020. Budget €60–100 for
+the BOAT, not per person.**
+
+> **Use Viber or WhatsApp, not email.** A Greek boatman in October answers a
+> message, not an inbox. Install both before you fly.
+
+**What to send:**
+> *"We will walk the E4 from Sougia and reach **Trypiti** around midday on
+> **Tuesday 27 October 2026**. **Can you meet us at Trypiti**, then take us to
+> **Sentoni and Domata** and back to Sougia? Three people. **Saturday 31
+> October** as a weather fallback. What does it cost?"*
+
+**Season:** every operator says **April to October, "when the sea conditions
+allow."** **31 October is inside the window**, which is why Saturday is the
+retry and why the charter goes early in the week.
+
+## 🥾 THE ALTERNATIVES, AND WHY THEY LOSE
+
+**① All the way on foot from Sougia — 4–5 hrs EACH WAY.**
+8–10 hours of walking in a **9h50 daylight window** (sunrise ~07:30, sunset
+17:20), **no water, no shade**, T4 with route-finding. **Does not fit as a
+round trip.** The killer is the last stretch: Greek sources call
+**Poikilassos → Domata *«από τα πιο κοπιαστικά και δύσκολα κομμάτια στην
+Κρήτη»*** — a 25-minute descent to the Tripiti gorge bed, a steep crossing, and
+*«αχνό μονοπάτι που ανεβαίνει προς το χείλος της απότομης πλαγιάς»*: an
+indistinct path climbing toward the rim.
+
+**② From Agia Roumeli.** The daily ANENDYK ferry reaches Agia Roumeli, and
+**Meletis works out of there too.** Domata is west along the coast. **This is
+the backup if Sougia falls through** — but it costs you the walk-in and the
+five-entry day.
+
+**③ Down the Tripiti gorge — ruled out.** *«Κανένας δρόμος δεν φτάνει στην
+είσοδο του φαραγγιού»*. Access is **3 hrs from Omalos up a near-vertical
+Gigilos climb**, then **8½–9 hours of descent** — **normally done over two
+days**, camping at the col or the ruined mitato of Tzatzimos at 1,480 m.
+**No water in the gorge**, a dangerous entrance passage, and the **Tsounoplaka
+crossing *"which needs a guide or local knowledge."***
+
+**④ Down the Klados gorge — ruled out.** *«Το πιο αδιάβατο και άγριο φαράγγι
+της Κρήτης»* — ropes and a guide, **42 waterfalls**, 12–14 hrs from Kokkinovari
+*(itself 5 hrs from Omalos)*, 13–20 hrs from Omalos. **Not on the mountaineering
+clubs' programmes.**
+
+## 📋 ON THE DAY
+
+**Domata is two beaches** split by a rock outcrop — the western one is the E4
+arrival, **the smaller eastern one you reach by swimming a few metres.** Swim
+across; that is the whole point of going.
+
+**Check the night before:** **Windy** · **Poseidon System, poseidon.hcmr.gr**
+*(Greece's official marine service — wave height is what cancels a sailing)* ·
+**meteo.gr**. **Boats are off the water by about 16:30.**
+
+**Take:** all your water *(there is none at Domata; the nearest is a cistern at
+the Trypiti gorge mouth)*, food, shade, and **Google Maps downloaded offline** —
+signal drops on the south coast.
+
+> **And look at the water.** Domata's Colour 8 is the only unread figure in the
+> archive. **No source on earth has described it. If it is turquoise, you are
+> standing in Europe's only 19.**
