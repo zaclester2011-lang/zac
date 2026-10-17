@@ -1325,3 +1325,105 @@ Opposite corners — they cannot share a day.** And the week is full:
 
 **Make the call. If rooms are vague, the fallback is not a downgrade — it is
 Balos, two 25s and a lagoon.**
+
+---
+
+# 🔢 CRETE RESCORED OUT OF 20 — DISCOVERY · COLOUR
+
+**Water is dropped for Crete. It is a freshwater category.**
+
+## Why this is the right call
+
+**Water was adding a constant, not a judgement.** Of 33 entries scored, the
+overwhelming majority sat at **Water 8** — because the Libyan Sea is 24°C in
+late October and sheltered by the island's own mass. **A category where
+everything scores the same discriminates between nothing.**
+
+**Mapping:** old **25 → 17/20**. Old **26 → 18/20**. The weak-link rule stands:
+**below 7 in either category is cut**, and it now bites harder with only two.
+
+---
+
+## 🥇 18 / 20 — THE TOP THREE
+
+| | D · C | |
+|---|---|---|
+| **ΔΩΜΑΤΑ** | **10 · 8** | **Discovery 10 — nothing else in Europe has it.** No road, no building, no scheduled boat. **Colour is still the one unread figure** |
+| **ΜΑΡΜΑΡΑ** | 9 · **9** | **Turquoise off white limestone, observed.** Reached down the **Aradena gorge**, four hours under Greece's highest bridge |
+| **ΛΑΚΚΟΥΔΙ** | 9 · **9** | **Gavdos.** Hidden and turquoise — **«Κανονικό» depth, sand, white pebbles on the seabed.** The only entry whose own fields spell out the mechanism |
+
+## 🥈 17 / 20 — SIX MORE
+
+| | D · C | |
+|---|---|---|
+| **Τρυπητή** | 9 · 8 | **Possible 18.** Held one back for its rocky seabed and cliff shade. Swim it late morning and decide |
+| **Τρυπητή ακρωτήρι** | 9 · 8 | Gavdos. τιρκουάζ attested. Three sea arches at Europe's southern tip |
+| **Ίλιγκας cove 2** | 9 · 8 | **Reachable only by swimming.** λευκό βότσαλο |
+| **Ίλιγκας cove 3** | 9 · 8 | Same |
+| **Σεϊτάν Λιμάνια** | 8 · **9** | **Caribbean colour.** *⚠️ Path closed since April* |
+| **Καρούμες** | 9 · 8 | *Out of range — 3h30 east* |
+
+## 16 / 20 — and three of these are the real winners of the change
+
+| | D · C | |
+|---|---|---|
+| **Γλυκά Νερά** | 7 · **9** | **⬆ The biggest gainer.** It was held down entirely by cold spring water — **which was never a sea-colour question.** Turquoise over white pebble, shore and seabed |
+| **Άγιος Αντώνιος** | **9** · 7 | **⬆** Penalised for *«very cold»* springs. **One day of human use a year** — the chapel's feast, 2 July |
+| **Λαβράκας** | **9** · 7 | Gavdos. Blond sand, shallow, but γαλάζιο not τιρκουάζ |
+| **Σεντόνι** | **9** · 7 | Deep, pebble. Pass it on the boat |
+| **Κεδρόδασος** | 8 · 8 | **Λευκή άμμος + Ρηχά**, in a Natura 2000 juniper forest |
+| **Άγιος Παύλος** | 8 · 8 | **Colour is a placeholder — no source describes it.** Byzantine chapel on the sand, pine forest, spring |
+| **Πρέβελη** | 8 · 8 | *See the freshwater note below — Preveli scores twice* |
+
+## 15 / 20
+**Αγιοφάραγγο** 8·7 · **Λισσός** 8·7 ⬆ *(was held down by southerly exposure)* ·
+**Λυκός** 8·7 · **Ίλιγκας main** 7·8
+
+## 14 / 20
+**Λουτρό** 7·7 · **Αγία Ρουμέλη** 7·7 · **Κόκκινη Άμμος** 7·7
+
+## ❌ Cut by the weak-link rule
+**Μπάλος** *(D6 — dirt track and tour boats)* · **Ελαφονήσι** *(D5 — car park)* ·
+**Σχοινάρια** *(D6 — organised, dive schools)* · **Πόταμος** *(C6 — orange clay)* ·
+**Καλυψώ** · **Σούδα**
+
+> **Balos and Elafonissi are cut by the rule and still in the week.** James
+> wants lagoons and that is a good enough reason. **The scoring measures one
+> thing; a holiday is allowed to measure others.**
+
+---
+
+## 💧 WHERE WATER STILL APPLIES — the freshwater entries
+
+**Water survives as a category, just not for the sea.** These are scored out of
+30 because fresh water is the point of them:
+
+| | |
+|---|---|
+| **Πρέβελη** | **The only entry on both lists.** 16/20 as a sea beach — and as a **river-and-sea day** it keeps Water: a palm-lined freshwater lagoon you swim, meeting the Libyan Sea. *The lagoon is cold; that is now a scored fact rather than a penalty on the beach* |
+| **Λίμνη Κουρνά** | The lake. Freshwater throughout |
+| **Ρίχτης** | Forest walk, waterfall, swimmable gorge to the sea |
+| **Κουρταλιώτικο** | Gorge and waterfall, swimmable |
+
+**This is also the cleanest resolution of the Domata problem.** Its murk was
+**freshwater springs bleeding into the sea** — a freshwater phenomenon scored
+against a saltwater beach. **Removing Water removes the double count**, and
+Domata's remaining question is purely what colour the water is.
+
+---
+
+# 📊 THE RANKING, EVERYTHING AT A GLANCE
+
+**18:** Domata · Marmara · Lakkoudi
+**17:** Trypiti · Cape Tripiti · Ilingas 2 · Ilingas 3 · Seitan Limania ·
+*(Karoumes, out of range)*
+**16:** Glyka Nera · Agios Antonios · Lavrakas · Sentoni · Kedrodasos ·
+Agios Pavlos · Preveli
+**15:** Agiofarago · Lissos · Lykos · Ilingas main
+**14:** Loutro · Agia Roumeli · Red Beach
+
+**Nine at 17+, eight in range — the same nine as the old 25+ list.** The
+ranking barely reordered, **which is the proof that Water was carrying no
+information.** What changed is that **Glyka Nera, Agios Antonios and Lissos
+stopped being punished for cold or windy water that was never about colour or
+difficulty at all.**
