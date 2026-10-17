@@ -643,3 +643,105 @@ famous nudist beach with a canteen, by three points.**
 
 *Keep Red Beach as a 20-minute curiosity if you are standing in Matala anyway —
 the colour is worth seeing precisely because it is the wrong colour.*
+
+---
+
+# 🧹 THE 24s SWEPT IN GREEK — two up, four down, one unknowable
+
+**The first sweep run looking for upgrades rather than cuts.** It found two,
+and it cost four. Seven candidates; Sentoni and Preveli were verified earlier
+this session, and Stavrolimni and Pyrgos are already capped on clay and
+terracotta, so they were not re-run.
+
+## 📈 UP — two new 25s
+
+### Κεδρόδασος / Kedrodasos — 24 → **25**
+
+**The Lavrakas sentence again, almost word for word:**
+
+> *«τα νερά… **τιρκουάζ** και καθαρά»* · *«η θάλασσα είναι **ρηχή** και συνήθως
+> ήρεμη»* · *«**λευκή, ψιλή άμμος**»*
+
+**Turquoise, shallow, white fine sand — the three-part mechanism stated
+outright.** Around it, a **110-stremma forest of sea junipers reaching the
+shore**, a **Natura 2000 priority habitat**, and no infrastructure of any kind.
+
+**Colour 8 → 9. `8·9·8 = 25`.** Discovery stays 8: it is a **500 m path from a
+parking area**, and Elafonissi — one of the most visited beaches in Crete — is
+1 km up the coast. *Some sources stress the rock as much as the sand; the
+turquoise, the shallows and the white sand are each carried by more than one.*
+
+### Αγιοφάραγγο / Agiofarago — 24 → **25**
+
+Three Greek outlets run near-identical headlines: **«Η παραλία με τα πιο ήρεμα
+και πεντακάθαρα νερά»** — *the calmest and cleanest water* — and
+**«γαλαζοπράσινα νερά σαν διαμάντι»**, *like a diamond*. **τιρκουάζ** appears
+repeatedly, with one source saying the water *«μοιάζει σχεδόν εξωπραγματικό»*,
+almost unreal. Fine pebble, usually calm, under steep overhanging rock.
+
+**Colour 8 → 9. `8·9·8 = 25`.** Discovery stays 8 — a 20–30 minute gorge walk
+from a car park, and caïques come from **three** harbours.
+
+**Both were already in the itinerary.** Kedrodasos on Saturday 31 October,
+Agiofarago on Monday 2 November. **Nothing needs rerouting — two days just got
+better than they were written.**
+
+## 📉 DOWN — four
+
+| | | Why |
+|---|---|---|
+| **Λυκός / Lykos** | 24 → **23** | **«black-grey pebbles»**, no τιρκουάζ anywhere, *no shade at all*. Evidence is thin and partly borrowed from Marmara's page — flagged, not firm |
+| **Ίλιγκας main / Ilingas** | 24 → **23** | **τιρκουάζ** is there, but **«βαθιά θάλασσα»** and **«πολλές ξαπλώστρες και ομπρέλες… πολυσύχναστη»** — many sunbeds, crowded, plus a taverna on the sand. Discovery 7 for the infrastructure, which is permanent |
+| **Λουτρό / Loutro** | 24 → **22** | **«καθαρά νερά που έχουν βαθύ πράσινο χρώμα»** — **deep green.** And it is a village: tavernas, rooms, boats and canoes for hire, *«θυμίζουν κυκλαδίτικο νησί»* |
+| **Αγία Ρουμέλη / Agia Roumeli** | 24 → **22** | **«μαύρα βότσαλα και καταγάλανα βαθιά νερά»** — **black pebbles.** Another: **«λεπτή σκούρα άμμος»**, fine dark sand. The dark-substrate rule, and it nearly cuts outright |
+
+## ⚪ UNKNOWABLE — one
+
+**Άγιος Παύλος / Agios Pavlos — holds at 24.** Everything about the place
+checks out: *«χοντρή άμμος»*, the **Selouda pine forest**, a **Byzantine church
+standing almost on the sand** beside **a spring running with White Mountains
+water**, 50–60 min on an easy coastal path from Agia Roumeli, **no bus and no
+car.** But on the water itself: **nothing.** No colour word in any source.
+**The second entry in the archive, after Domata, whose Colour is a placeholder
+rather than a reading.**
+
+---
+
+## ⚖️ A CONSISTENCY CHECK I ALMOST GOT WRONG
+
+Ilingas' page says the water is **«αρκετά κρύο λόγω των πηγών που εκβάλλουν στη
+θάλασσα»** — quite cold, from springs discharging into the sea. My first
+instinct was to push **Ilingas coves 2 and 3 down to 24** on it, since they sit
+80 m away in the same embayment.
+
+**That is the Domata argument in reverse, and it has to run the same way in both
+directions.** Springs are at their **annual minimum at the end of the dry
+season**, and the Libyan Sea is at its **warmest**. If that reasoning restored
+Domata, it protects the Ilingas coves.
+
+**Coves 2 and 3 hold at 25.** Their Water stays 8. *(Glyka Nera stays at 23 —
+it has umbrellas, and its springs are the whole point of the name.)*
+
+---
+
+# ✅ TWELVE AT 25+ — ELEVEN IN RANGE
+
+| | Score | D·C·W | Day |
+|---|---|---|---|
+| **ΔΩΜΑΤΑ** | **26** | **10**·8·8 | Tue 27 — *and the only road to a 27* |
+| **Μάρμαρα / Marmara** | **26** | 9·**9**·8 | Wed 28 |
+| **Λαβράκας / Lavrakas** | **26** | 9·**9**·8 | **Thu 29 — Gavdos** |
+| **Σεϊτάν Λιμάνια** | 25 | 8·**9**·8 | Mon 26 — *check the path* |
+| **Τρυπητή / Trypiti** | 25 | 9·8·8 | Tue 27 — on foot |
+| **Ίλιγκας cove 2** | 25 | **9**·8·8 | Wed 28 |
+| **Ίλιγκας cove 3** | 25 | **9**·8·8 | Wed 28 |
+| **Τρυπητή ακρωτήρι** | 25 | 9·8·8 | **Thu 29 — Gavdos** |
+| **Λακκούδι / Lakkoudi** | 25 | **9**·8·8 | **Thu 29 — Gavdos** |
+| **Κεδρόδασος** | 25 | 8·**9**·8 | **Sat 31 — NEW** |
+| **Αγιοφάραγγο** | 25 | 8·**9**·8 | **Mon 2 Nov — NEW** |
+| **Καρούμες / Karoumes** | 25 | **9**·8·8 | *3h30 east — out of range* |
+
+**Three 26s. Every day of the week now carries at least one 25.**
+
+**And verification's record is now 20 entries tested: 14 fell, 3 rose, 3 held.**
+It is the only filter in the audit that both removes and finds.
