@@ -1985,3 +1985,97 @@ so it was nineteen.** With Agiofarago and Lissos it is **twenty-one.**
 
 **Tuesday and Wednesday carry five each. Nothing in the week is now a filler
 day.**
+
+---
+
+# ✅ THE DEFINITIVE LIST — 22 IN REACH AT 16+
+
+**Two last Asterousia entries checked. One joins.**
+
+### ⭐ Μάρτσαλο / Martsalo — NEW at **16** (9 · 7)
+
+> *«κρυστάλλινα, **γαλαζοπράσινα** νερά και **φοίνικες**»* — crystalline
+> blue-green water and **palm trees.** *«η θάλασσα είναι σχεδόν πάντα πολύ
+> ήρεμη»* — almost always very calm. **Unorganised, no facilities.**
+
+**Access: asphalt to the Odigitria Monastery, then a difficult dirt road, then
+30–40 minutes through the Martsalioti gorge.** Boats from four harbours, all
+seasonal. **Discovery 9.** Colour 7 — the same page also gives *«βαθιά μπλε
+νερά που βαθαίνουν απότομα»*, deep blue dropping off steeply, over pebble and
+large stones.
+
+**And it sits between Kefali and Agiofarago, off the same monastery road.**
+*«Ερημίτες ζούσαν στις σπηλιές του — τα φαράγγια ήταν και είναι ασκηταριά της
+Μονής Οδηγήτριας»* — hermits lived in its caves, and these gorges are still
+hermitages of the monastery.
+
+> **Monday 2 November now holds THREE 16s off one road: Vathy · Agiofarago ·
+> Martsalo.** Two is comfortable, three is ambitious — **Agiofarago and
+> Martsalo are the two walks; Vathy needs the longest drive.**
+
+### ❌ Τρυπητή στα Αστερούσια — **15** (8 · 7)
+
+**The third Trypiti, now scored.** «Χρώμα νερού: **Γαλάζιο**», «**γκρίζο λεπτό
+βότσαλο**» — grey fine pebble — **«καταγάλανα δροσερά και βαθιά νερά»**, and
+**«θα βρείτε φαγητό»**: there is food on the beach. **Dirt road access from
+Kapetaniana, or 10 km from Vasiliki.** Deep, grey, and catered. **Not 16, and
+2½–3 hrs from Stalos.**
+
+---
+
+# 📋 THE TABLE — EVERY ENTRY AT 16+, VERIFIED
+
+| # | Beach | Score | D · C | Day | Access |
+|---|---|---|---|---|---|
+| 1 | **ΔΩΜΑΤΑ** | **18** | **10**·8 | **Tue 27** | Boat from Sougia, or walk to Trypiti and be met. No road, no building |
+| 2 | **ΜΑΡΜΑΡΑ** | **18** | 9·**9** | **Wed 28** | **Aradena gorge, 4 hrs.** Or 90 min from Loutro, or boat |
+| 3 | **ΛΑΚΚΟΥΔΙ** | **18** | 9·**9** | **Thu 29** | Gavdos — 1 km S of Korfos, pine path then a ravine |
+| 4 | **Τρυπητή** *(Sfakia)* | **17** | 9·8 | **Tue 27** | 3½ hrs E on the E4 from Sougia. *Possible 18* |
+| 5 | **Τρυπητή ακρωτήρι** | **17** | 9·8 | **Thu 29** | Gavdos — 4.2 km from Korfos. The **Kamarelles** arches |
+| 6 | **Ίλιγκας cove 2** | **17** | 9·8 | **Wed 28 / Fri 30** | **Swim 80 m E of Ilingas.** No other way |
+| 7 | **Ίλιγκας cove 3** | **17** | 9·8 | **Wed 28 / Fri 30** | Same swim. Caves |
+| 8 | **Σεϊτάν Λιμάνια** | **17** | 8·**9** | **Mon 26** | 20 min from the airport. ⚠️ **Path closed since April** |
+| 9 | **Γλυκά Νερά** | **17** | 8·**9** | **Wed 28 / Fri 30** | 30 min on foot from Sfakion, or 5–7 min boat |
+| 10 | **Άγιος Αντώνιος** | **16** | **9**·7 | **Tue 27** | 2 hrs E on the E4, or boat. **Used one day a year** |
+| 11 | **Λαβράκας** | **16** | **9**·7 | **Thu 29** | Gavdos — 20–30 min from Agiannis, partly through shallow sea |
+| 12 | **Πύργος** | **16** | **9**·7 | **Thu 29** | Gavdos — 6 km NW of Karave. Path *«πολύ δύσκολη»* |
+| 13 | **Σεντόνι** | **16** | **9**·7 | **Tue 27** | From the boat, 500 m E of Trypiti. Don't linger |
+| 14 | **Αγιοφάραγγο** | **16** | **9**·7 | **Mon 2 Nov** | 20–30 min down the gorge. **Goumenospilio cave** |
+| 15 | **Λισσός** | **16** | **9**·7 | **Tue 27** | 90–120 min over the pass. **The Asklepieion** |
+| 16 | **Μάρτσαλο** ⭐ | **16** | **9**·7 | **Mon 2 Nov** | Monastery road, dirt, then **30–40 min gorge.** Palms |
+| 17 | **Κεδρόδασος** | **16** | 8·8 | **Sat 31** | **Park at Elafonissi**, walk the coast path |
+| 18 | **Άγιος Παύλος** | **16** | 8·8 | **Wed 28** | 50–60 min E of Agia Roumeli. Chapel on the sand |
+| 19 | **Πρέβελη** | **16** | 8·8 | **Sun 1 Nov** | 470 steps. **Sea only — lagoon fails the gate** |
+| 20 | **Βαθύ** | **16** | 8·8 | **Mon 2 Nov** | Monastery road, then dirt west. **τιρκουάζ** |
+| 21 | **Ίλιγκας main** | **16** | 8·8 | **Wed 28 / Fri 30** | 20–40 min walk from Chora Sfakion |
+| 22 | **Μπάλος** | **16** | 7·**9** | **Fri 30** | **Local taxi up the 8 km track from Kalyviani** |
+| — | *Καρούμες* | *17* | *9·8* | — | ***3h30 east — OUT OF RANGE*** |
+
+**22 in reach · 23 at 16+ in total · three 18s · six 17s · thirteen 16s.**
+
+## Just below — 15
+Λυκός · Κόκκινη Άμμος · Παχιά Άμμος *(Ornio)* · **Τρυπητή Αστερουσίων** ·
+Άγιος Ιωάννης *(Gavdos)* · Φετιφές
+
+## ❌ Cut on the weak link — below 7 in a category
+**Ελαφονήσι** D5 · **Σχοινάρια** D6 · **Τρεις Εκκλησιές** D6 ·
+**Ανύδρι/Γιαλισκάρι** D6 · **Σαρακήνικο** D6 · **Πόταμος** C6 ·
+**Σταυρολίμνη** C6 · **Άσπες** C6 · **Καλυψώ** · **Σούδα** · **Δαμνόνι**
+**Gate-removed:** Preveli lagoon · Kournas · Richtis · Kourtaliotiko
+**Unscoreable:** Ντιάνα *(one anecdote exists)* · **Γαυδοπούλα** *(wildlife)*
+
+## 📅 By day — final
+
+| Day | Count | |
+|---|---|---|
+| **Mon 26** | 1 | Σεϊτάν Λιμάνια 17 |
+| **Tue 27** | **5** | Δώματα 18 · Τρυπητή 17 · Άγιος Αντώνιος 16 · Λισσός 16 · Σεντόνι 16 |
+| **Wed 28** | **6** | Μάρμαρα 18 · Ίλιγκας 2 & 3 — 17+17 · Γλυκά Νερά 17 · Άγιος Παύλος 16 · Ίλιγκας main 16 |
+| **Thu 29** | **4** | Λακκούδι 18 · Τρυπητή ακρωτήρι 17 · Λαβράκας 16 · Πύργος 16 |
+| **Fri 30** | 1 | Μπάλος 16 *(or the Sfakion coves if Gavdos is dropped)* |
+| **Sat 31** | 1 | Κεδρόδασος 16 |
+| **Sun 1 Nov** | 1 | Πρέβελη 16 |
+| **Mon 2 Nov** | **3** | Βαθύ 16 · Αγιοφάραγγο 16 · Μάρτσαλο 16 |
+
+**Wednesday carries six, Tuesday five, Monday 2 November three.**
+**Nothing in the archive is now unchecked or unscored.**
