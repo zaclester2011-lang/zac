@@ -866,3 +866,131 @@ research, and never were:
 > **Colour 8 on Domata is the last unread figure in the archive, and the only
 > road to a 27 in Europe. Nobody has ever written down what that water looks
 > like. You will see it on Tuesday 27 October.**
+
+---
+
+# ⚠️ THE 24s SWEEP IS REVERSED — ALL THREE UPGRADES WERE WRONG
+
+**Zac: "lavrakas isnt turquoise." He was right, and pulling that thread undid
+the entire previous section.** Three upgrades, three errors, one of them a
+mistake I had already written the warning for.
+
+## 1 · Lavrakas 26 → 25 — the turquoise belonged to another beach
+
+The τιρκουάζ sentence came from travel.gr's **«Οι ωραιότερες παραλίες στη
+Γαύδο»** — a listicle covering **five** beaches. Read beach by beach:
+
+| Beach | Water | Sand |
+|---|---|---|
+| Άι Γιάννης | *(none given)* | ψιλή άμμο |
+| **Λαυρακάς** | **«Διάφανα» · «καταγάλανα»** | ψιλή άμμο |
+| **Ποταμός** | **«ΤΙΡΚΟΥΑΖ πεντακάθαρα»** | ψιλή άμμο |
+| Τρυπητή | *(none given)* | άμμο / βότσαλο |
+| **Σαρακήνικο** | — | **«ΡΗΧΑ»**, χρυσή ψιλή άμμο |
+
+**The τιρκουάζ is Potamos — the entry I cut for orange clay sand. The ρηχά is
+Sarakiniko.** Three beaches' attributes spliced into one sentence and credited
+to a fourth. **The same error as the three Trypitis.**
+
+Lavrakas' own page: **«Χρώμα νερού: Γαλάζιο» · «Τύπος: Άμμος», «με ξανθή άμμο»
+· «Βάθος: Ρηχά»**. Blond sand and shallow water are real and keep it at a solid
+**Colour 8** — but *καταγάλανα* and *γαλάζιο* are the words that cost Sentoni a
+point. **`9·8·8 = 25`.**
+
+**And the claim it supported was false: there was never a "first entry to
+improve."**
+
+## 2 · Agiofarago 25 → 23 — I fell for a trap I had just documented
+
+| | |
+|---|---|
+| **Χρώμα νερού** | **«Βαθύ μπλε»** |
+| **Τύπος** | «Ψιλό βότσαλο» |
+| **Βάθος** | **«Βαθιά»** |
+| τιρκουάζ on the page | **No** |
+| The prose | **«πεντακάθαρα νερά»** — *clarity*, not colour |
+
+**Deep blue, deep, pebble — the Sentoni profile exactly, so Colour 7 by
+consistency.** I had raised it on headlines calling it *«η παραλία με τα πιο
+ήρεμα και πεντακάθαρα νερά»*.
+
+> **One section earlier I wrote: "Clarity is not colour… Turquoise is not clean
+> water. It is white floor." I wrote the rule and broke it in the same sweep.**
+
+`8·7·8 = 23.`
+
+## 3 · Kedrodasos 25 → 24 — right mechanism, wrong word
+
+**«Χρώμα νερού: Γαλαζοπράσινο» · «Τύπος: Λευκή άμμος, Βράχια κατά τόπους» ·
+«Βάθος: Ρηχά»** — and **no τιρκουάζ on the page.**
+
+**White sand and shallow water are confirmed on its own dedicated page**, which
+is better evidence than most entries carry, so this is a genuine **Colour 8**.
+It is simply not a 9. `8·8·8 = 24.`
+
+**Practical note from the same fields: «Πρόσβαση: Χωματόδρομος».** The parking
+is up a dirt road, **which the hire car's insurance does not cover.** Park at
+**Elafonissi** and walk the coast path in.
+
+---
+
+## 🧭 THE RULE THIS FORCES — score Colour from the structured field
+
+**Three failures, one cause: I read colour out of prose and headlines.**
+
+Prose mixes **clarity** with **colour**. Headlines sell. Listicles misattribute
+between beaches. **cretanbeaches carries a structured «Χρώμα νερού» field for
+every beach in Crete, and it is the only consistent colour source in existence
+for this coast.**
+
+> **From here: Colour is scored from the structured field, or from τιρκουάζ
+> attested on a dedicated single-beach page with a stated mechanism. Nothing
+> else counts.**
+
+**What survives that test:** Marmara's 9 *(turquoise attested and sourced to the
+white limestone)* · Cape Tripiti's 8 *(τιρκουάζ, dedicated page)* · Lakkoudi's
+8 *(«η διαύγειά τους αποδίδεται στα άσπρα βότσαλα του βυθού»)* · the Ilingas
+coves' 8 *(λευκό βότσαλο)* · Lavrakas' and Kedrodasos' 8 *(structured fields:
+blond and white sand, both «Ρηχά»)*.
+
+### The uncomfortable part: it points at Domata
+
+**Domata's structured field is «Βαθύ μπλε» — the same value that just put
+Agiofarago at Colour 7** — over **ψιλό βότσαλο**, with grey sand and grey
+pebble in the prose.
+
+**Applied strictly, Domata is Colour 7, and `10·7·8 = 25`, not 26.**
+
+It is held at **8** on two grounds, both stated rather than hidden:
+**the seasonal argument** *(the spring murk is at its annual minimum in your
+week, and the field may well have been set from a summer photograph)*, and
+**Discovery 10**, which no other entry in Europe has.
+
+> **This is now the single weakest figure in the archive, and it is still the
+> only road to a 27. Nobody has written down what that water looks like. On
+> Tuesday 27 October you will be the source.**
+
+---
+
+# 📉 TEN AT 25+ — NINE IN RANGE
+
+| | Score | D·C·W | Day |
+|---|---|---|---|
+| **DOMATA** | **26** | **10**·8·8 | Tue 27 — *Colour 8 is contested; see above* |
+| **MARMARA** | **26** | 9·**9**·8 | Wed 28 — *the only Colour 9 that survives the new rule* |
+| **Lavrakas** | 25 | 9·8·8 | Thu 29 — Gavdos |
+| **Seitan Limania** | 25 | 8·**9**·8 | Mon 26 — *path closed since April; check* |
+| **Trypiti** | 25 | 9·8·8 | Tue 27 — on foot |
+| **Ilingas cove 2** | 25 | **9**·8·8 | Wed 28 |
+| **Ilingas cove 3** | 25 | **9**·8·8 | Wed 28 |
+| **Cape Tripiti** | 25 | 9·8·8 | Thu 29 — Gavdos |
+| **Lakkoudi** | 25 | **9**·8·8 | Thu 29 — Gavdos |
+| **Karoumes** | 25 | **9**·8·8 | *out of range* |
+
+**Two 26s. Kedrodasos 24 and Agiofarago 23 stay in the week** — Saturday and
+Monday 2 November have nothing better, and a 24 you can reach is worth more
+than a 26 you cannot.
+
+**Verification, honestly tallied: 28 entries tested — 18 fell, 0 rose,
+10 held.** It has never once found an upgrade. **Every single entry that has
+ever moved has moved downward.**
