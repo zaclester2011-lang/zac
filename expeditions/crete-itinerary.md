@@ -2270,3 +2270,90 @@ being asked to run past his own harbour.** Say so plainly — it may add to the
 price, and **€60–100 for the boat** was the anchor before this change.
 
 **All three operators list both Lissos and Domata**, so any of them can do it.
+
+---
+
+# 🚤 RUNNING OUR OWN BOAT — yes, but not to Domata
+
+## ✅ THE LAW: it is allowed
+
+| | |
+|---|---|
+| **Engine** | **30 HP or less needs NO licence.** Above that you need an ICC or equivalent |
+| **Driver** | **Must be 18+.** **That means James only** — Zac is 15, Jacob 13 |
+| **Distance** | **Sources conflict: one says 3 nm from the coast, another claims up to 12 nm.** Unresolved, and every source is a rental company's own marketing page. **Ask the Λιμεναρχείο** |
+| **Paperwork** | ID, a deposit, the agreement signed by the driver, and a short briefing |
+
+## 🎯 AND SOUGIA CRUISES RENTS THEM — the same operator
+
+**The outfit you were going to email for the charter also does licence-free
+self-drive**, departing Sougia:
+
+> **8–9 hours · up to 6 people · from €110 · no licence · you choose your own
+> stops**
+
+**Against a €60–100 skippered charter, that is comparable money for a whole day
+of freedom instead of a fixed run.** *(Rodanthi Boats at Kokkinos Pyrgos, far
+to the east, also rents 30 HP licence-free.)*
+
+## ❌ WHY NOT FOR DOMATA
+
+**Five reasons, and the fourth is the one that matters.**
+
+**1 · There is no shelter for the entire run.** Sougia → Domata is roughly
+**6 nautical miles of cliff coast with no harbour, no quay, no landing, no road
+and no phone signal.** If the engine stops you are drifting under a 700 m wall
+in the Libyan Sea. **It is the single most committing stretch of water on the
+trip, which is exactly why its Discovery is 10.**
+
+**2 · A 30 HP boat has almost no sea-state tolerance.** The whole plan already
+turns on **Windy and the Poseidon System** because **wave height is what
+cancels a sailing.** Late October brings afternoon wind to this coast. A caïque
+copes; a small rental does not.
+
+**3 · Landing at Domata is a beach landing through swell onto pebble.** No
+jetty, no quay. **Local skippers do it routinely. A first-timer risks the boat,
+and the deposit.**
+
+**4 · The boatman's judgement is most of what you are buying.** A Sougia
+skipper **will refuse to go** when the sea is wrong, and he is right. **Rent
+the boat yourself and that decision becomes James's** — on unfamiliar water,
+unlicensed, with a 15-year-old and a 13-year-old aboard, on the one day the
+whole trip is built around. **For €60–100, the skipper is the cheapest thing in
+the plan.**
+
+**5 · Availability is unconfirmed.** The self-drive service is advertised as
+daily, but **nothing confirms it runs in late October.**
+
+## ✅ WHERE A SELF-DRIVE BOAT IS THE RIGHT CALL — Friday 30, out of Chora Sfakion
+
+**This is a genuinely good idea on the sheltered side.** Everything here sits
+**1–5 km from a harbour**, with villages, a ferry route and other boats in
+sight the whole time:
+
+| | Score | Distance from Chora Sfakion |
+|---|---|---|
+| **Ίλιγκας cove 2** | **17** | ~2 km — *and you can anchor off and swim in, which is the only way in* |
+| **Ίλιγκας cove 3** | **17** | ~2 km |
+| **Γλυκά Νερά** | **17** | ~3 km |
+| **Ίλιγκας main** | **16** | ~2 km |
+| **Λυκός** | *15* | ~5 km, by Loutro |
+
+**Three 17s and a 16 in one easy day, in the lee of the coast, with Loutro
+halfway along if anything goes wrong.** **If Gavdos falls through, this is what
+Friday becomes** — and a hired boat is better than a taxi-boat here, because
+**the Ilingas coves can only be entered from the water** and you want to be
+able to sit there.
+
+> **The rule: hire your own boat where there is a harbour to run back to.
+> Pay a skipper where there is not.**
+
+## 📋 TO VERIFY BEFORE BOOKING
+
+1. **Λιμεναρχείο Χανίων** — the real permitted zone for a licence-free rental
+   *(the 3 nm vs 12 nm question)*
+2. **Does the rental run in late October**, and out of which harbour
+3. **What the insurance covers**, and the deposit
+4. **Whether under-18s may be aboard** — assumed yes, but confirm
+5. **Ask Sougia Cruises both questions in one message:** the Lissos–Domata
+   charter price, *and* what self-drive out of Chora Sfakion would cost
