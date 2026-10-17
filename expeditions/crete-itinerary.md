@@ -1637,3 +1637,113 @@ and it strengthens the Gavdos case considerably over the Balos alternative.
 **And the Asterousia is no longer a one-stop detour.** Vathy 16 + Agiofarago 15
 share the Odigitria Monastery approach, which makes **Monday 2 November a real
 day** rather than a drive to the airport hotel.
+
+---
+
+# ✔️ THE OUTSTANDING CHECKS — ALL FIVE CLOSED
+
+**No entry joins or leaves. Three citations were wrong, one placeholder is now
+earned, and the archive has no unchecked scores left.**
+
+## ❌ Σταυρολίμνη — CUT, and comprehensively
+
+> *«Ένα ρυάκι που ξεκινά από τον Άγιο Νικόλαο καταλήγει στη Σταυρολίμνη και
+> μεταφέρει **αργιλώδες χώμα** μέχρι την ακτή»* — a stream carries **clay soil**
+> down to the shore.
+>
+> *«Από τον Απρίλιο έως τον Μάιο, όταν ο άργιλος είναι ακόμα νωπός, μπορείτε να
+> κάνετε **λασποθεραπεία** δωρεάν»* — **free mud therapy** while the clay is
+> still wet.
+
+**It is a mud beach. That is its advertised attraction.** And **no source in
+any language describes its water colour** — because the clay is the story.
+**Colour 6. Cut, and not a 16.**
+
+## ⚠️ Τρυπητή ακρωτήρι / Cape Tripiti — 17 holds, but my citation was false
+
+**I had been scoring it on "τιρκουάζ attested on a dedicated page." Its
+dedicated page does not contain the word.**
+
+| | |
+|---|---|
+| **Χρώμα νερού** | **«Βαθύ μπλε, Γαλάζιο»** |
+| **Τύπος** | Άμμος, Βότσαλο, Βράχια κατά τόπους |
+| **Βάθος** | **«Κανονικό»** |
+| τιρκουάζ | **No** |
+
+**It holds at Colour 8 on the mechanism instead, which is sound:
+«Κανονικό» depth — not βαθιά — with «Στο ανατολικό της κομμάτι έχει άμμο»,
+sand in the eastern part, and Γαλάζιο alongside the deep blue.**
+
+*The arches have a name: **«τις τρεις μεγάλες φυσικές καμάρες, τις
+Καμαρέλλες»** — the Kamarelles, at the eastern end of the beach.*
+
+**9 · 8 = 17.** Same number, honest basis.
+
+## ✅ Άγιος Παύλος — the placeholder is RESOLVED, and it earns its 8
+
+**The only entry on the list whose Colour was a guess. No longer:**
+
+> *«η θάλασσα του Λιβυκού σ' αυτήν την παραλία σχηματίζει **αλλεπάληλους
+> χρωματισμούς σ' όλες τις αποχρώσεις του Μπλε, γαλάζιου, πράσινου ακόμη και
+> του άσπρου**»* — the Libyan Sea here forms successive gradations through
+> **every shade of blue, light blue, green and even white.**
+>
+> And a hiking blog: **«κρυστάλλινα γαλαζοπράσινα νερά».**
+
+**Sand: «χοντρή ασημένια και καφετιά άμμο»** — coarse **silver and brown**
+sand. **The silver supports the 8; the brown is why it is not a 9.**
+
+**Access confirmed: «ο μόνος δυνατός τρόπος για να έρθετε εδώ είναι με βάρκα ή
+με πολύωρη πεζοπορία»** — boat or a many-hour walk, nothing else. Surrounded by
+**the Selouda pine forest**, with the chapel on the sand. *One caveat:
+«η θάλασσα έχει **ισχυρό κύμα** λόγω των ανέμων» — it takes strong wave from
+the wind.* **8 · 8 = 16, now earned rather than assumed.**
+
+*⚠️ **Two beaches share this name.** The maresud page describes **a different
+Agios Pavlos near Agia Galini** — «βαθιά πράσινα νερά», rocky bottom. **Ours is
+the Sfakia/Selouda one**, 3 km east of Agia Roumeli. This is the second time
+that confusion has had to be corrected.*
+
+## 📉 Φετιφές / Fetifes — 15, not 16
+
+**The mechanism is there and the access is not.** Its profile is **sandy,
+shallow, γαλάζιο** — which is a better recipe than several entries above it —
+**but «υπάρχει ταβέρνα δίπλα της»**, a taverna beside it, and **a car reaches
+the Agios Ioannis end of the trail.** *(It also usually takes some wave.)*
+**Discovery 7. 7 · 8 = 15.**
+
+## ❓ Ντιάνα / Diana — unscoreable, permanently
+
+**The only fact that exists about this beach in any language:** it is named
+after a visit by **Princess Diana's yacht, with Dodi Al-Fayed.** No sand, no
+water, no access route, no photograph with a caption. **Four searches across
+two languages have produced one anecdote.**
+
+**Recorded as unscoreable rather than unscored.** *(**Γαυδοπούλα** remains
+excluded on wildlife grounds — monk seals breed and turtles nest there.)*
+
+---
+
+# 🔒 THE ARCHIVE IS CLOSED — EIGHTEEN AT 16+, SEVENTEEN IN RANGE
+
+**Every score now rests on either a structured field, an attested colour word,
+or a stated mechanism. Nothing is left on prose, a headline, or a guess.**
+
+**18:** ΔΩΜΑΤΑ 10·8 · ΜΑΡΜΑΡΑ 9·9 · ΛΑΚΚΟΥΔΙ 9·9
+**17:** Τρυπητή 9·8 · Τρυπητή ακρωτήρι 9·8 · Ίλιγκας cove 2 9·8 ·
+Ίλιγκας cove 3 9·8 · Σεϊτάν Λιμάνια 8·9 · *(Καρούμες 9·8, out of range)*
+**16:** Γλυκά Νερά 7·9 · Άγιος Αντώνιος 9·7 · Λαβράκας 9·7 · Πύργος 9·7 ·
+Σεντόνι 9·7 · Κεδρόδασος 8·8 · Άγιος Παύλος 8·8 · Πρέβελη 8·8 · Βαθύ 8·8
+
+**The one figure that remains genuinely unknown is Δώματα's Colour**, because
+**no source on earth has described that water** — not a database field, not a
+headline, not a blog. **It is the only road to a 19, and you resolve it by
+standing in it on Tuesday 27 October.**
+
+## Nothing left to research. Two things left to do.
+
+1. **Phone Gavdos.** It now holds **five of the eighteen** — Lakkoudi 18,
+   Cape Tripiti 17, Lavrakas 16, Pyrgos 16, and Fetifes 15 — **four of them on
+   one footpath west of Agiannis.** The densest cluster in the archive.
+2. **Email Sougia.** Domata is the only 18 you cannot walk to.
