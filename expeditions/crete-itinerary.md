@@ -1427,3 +1427,102 @@ ranking barely reordered, **which is the proof that Water was carrying no
 information.** What changed is that **Glyka Nera, Agios Antonios and Lissos
 stopped being punished for cold or windy water that was never about colour or
 difficulty at all.**
+
+---
+
+# 🌡 WATER IS A GATE, NOT A SCORE — 21.5°C, AND IT CUTS THE FRESHWATER
+
+**Corrected.** Water was never a quality score. It asks two things:
+**is there enough water to swim in, and is it above 21.5°C?**
+**Below 21.5°C is an automatic removal.**
+
+**I had been using it as a deduction, which was wrong twice over** — wrong in
+kind, and wrong in where I pointed it.
+
+## ✅ PASS — the Libyan Sea, comfortably
+
+**South coast, late October: 23–24°C.** The White Mountains shelter it, so the
+south runs **2–3°C warmer than the north and holds its heat 2–3 weeks longer.**
+One account of the last week of October reports **25–26°C in sheltered
+south-coast bays.**
+
+**Every south-coast and Gavdos entry clears the gate with 1.5–2.5°C to spare:**
+Domata · Marmara · Trypiti · Sentoni · both Ilingas coves · Glyka Nera ·
+Lakkoudi · Cape Tripiti · Lavrakas · Agios Pavlos · Agiofarago · Lissos ·
+Agios Antonios · Kedrodasos · Elafonissi · Preveli *(the sea)*.
+
+## ⚠️ MARGINAL — and it is the two you asked for
+
+**North coast, October: average 22°C**, one station giving **23.2°C with a
+range of 21–25.6°C.** **The average is for the whole month, and the sea falls
+through October — so late October sits at the bottom of that range, around
+21–22°C.**
+
+| | |
+|---|---|
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | **Akrotiri — north coast.** On or just under the gate |
+| **ΜΠΑΛΟΣ** | **Kissamos — north coast.** Same. *Shallow lagoon water warms faster in sun, which may save it* |
+
+**These are the only two entries in the plan the gate threatens — and they are
+the two with the colour you want.** *(Figures are from commercial and
+satellite-modelled sources, not measurements. **Check a live reading in the
+week before you fly**: seatemperature.net, or the Poseidon System at
+poseidon.hcmr.gr, which is Greece's official marine service.)*
+
+**The rest of the plan is south-coast and immune.**
+
+## ❌ REMOVED BY THE GATE — the freshwater, all of it
+
+**This is where the gate bites, and it is the opposite of where I had been
+applying it.**
+
+| | Temperature | |
+|---|---|---|
+| **Πρέβελη — the LAGOON** | **~18°C or below** | *«the inflowing mountain river is **much colder** than the sea»*; Greek sources call it **«παγωμένα»**. **REMOVED as a swim** |
+| **Λίμνη Κουρνά** | 18–24°C seasonal | *«18°C in spring to 24°C in late summer»*, plus **cool spring currents through the surface even in summer.** Shallow, so it sheds heat fast. **Late October: fails or marginal** |
+| **Ρίχτης** | Spring-fed, shaded | **Removed** |
+| **Κουρταλιώτικο** | Spring-fed, shaded | **Removed** |
+
+**Cretan groundwater sits around 15–18°C year round.** A shaded gorge pool fed
+by a spring **cannot reach 21.5°C in any month.**
+
+> ### The real conclusion
+> **In late October Crete, the Water gate removes freshwater and passes
+> seawater.** The category is not dead weight at all — **it deletes an entire
+> class of destination**, and I had spent the session using it to shave points
+> off beaches instead.
+>
+> **Preveli survives as a beach, not as a lagoon.** Walk down the 470 steps,
+> look at the palm forest and the river mouth — **and swim in the sea.**
+
+## 🔧 Three penalties I now have to withdraw
+
+**These were scored down for cold spring water. Under the gate, the sea body
+they sit in passes at 23–24°C, and a localised spring plume is not what you
+swim in.**
+
+| | |
+|---|---|
+| **Γλυκά Νερά** | Penalised twice for *«αρκετά κρύα λόγω των πηγών»*. **The gate passes it.** 7·9 = **16** stands on its merits |
+| **Άγιος Αντώνιος** | Penalised for *«very cold»* springs. **Passes.** 9·7 = **16** |
+| **ΔΩΜΑΤΑ** | **The big one.** I cut it outright over spring murk, then restored it with a seasonal argument. **Neither was necessary** — spring discharge is a *freshwater* phenomenon and the gate handles it. **Domata's only remaining question is its colour.** 10·8 = **18** |
+
+---
+
+# 📊 THE RANKING STANDS — /20, GATE APPLIED
+
+**18:** **ΔΩΜΑΤΑ** 10·8 · **ΜΑΡΜΑΡΑ** 9·9 · **ΛΑΚΚΟΥΔΙ** 9·9
+**17:** Τρυπητή 9·8 · Τρυπητή ακρωτήρι 9·8 · Ίλιγκας cove 2 9·8 ·
+Ίλιγκας cove 3 9·8 · **Σεϊτάν Λιμάνια 8·9 ⚠️ gate** · *(Καρούμες, out of range)*
+**16:** Γλυκά Νερά 7·9 · Άγιος Αντώνιος 9·7 · Λαβράκας 9·7 · Σεντόνι 9·7 ·
+Κεδρόδασος 8·8 · Άγιος Παύλος 8·8 · Πρέβελη 8·8 *(sea only)*
+**15:** Αγιοφάραγγο · Λισσός · Λυκός · Ίλιγκας main
+**14:** Λουτρό · Αγία Ρουμέλη · Κόκκινη Άμμος
+
+**Weak link (below 7):** Μπάλος *(D6, **and the gate** ⚠️)* · Ελαφονήσι *(D5)* ·
+Σχοινάρια *(D6)* · Πόταμος *(C6)*
+
+**Gate-removed:** **Preveli lagoon · Lake Kournas · Richtis · Kourtaliotiko**
+
+**One new item for the pre-flight list: a live sea-temperature reading for the
+north coast.** It decides Seitan Limania, which is 20 minutes from the aircraft.
