@@ -1177,3 +1177,151 @@ of prose that was describing clarity. **Clear is not turquoise, and the south
 coast of Crete is spectacularly clear and deep blue.**
 
 **Verification, final: 33 entries tested — 24 fell, 0 rose, 9 held.**
+
+---
+
+# 👁 PHOTOGRAPHIC EVIDENCE OVERRIDES THE FIELD — NINE AT 25+, THREE 26s
+
+**Zac looked the water up. I was reading a one-word database field.** His
+evidence is better, and the corrections stand.
+
+## I over-corrected, and here is the proof
+
+**Marmara's field reads «Γαλαζοπράσινο, Βαθύ μπλε» — two values at once.**
+**The field itself concedes the water varies**, and an editor picked one view,
+on one day, from one angle. I swung from prose (too loose, mixes clarity with
+colour) to a single field (too rigid, flattens a range to a word).
+
+> **The standard is: the photographic record, plus a mechanism that explains
+> it. The structured field is corroboration, not the verdict.**
+
+**And the same logic already restored Domata** — a field set from a summer
+visit, when the springs run hardest. I applied that reasoning to Domata and
+then forgot it for everything else.
+
+## Corrections accepted
+
+### Μάρμαρα → **26** restored
+
+**No restaurant — sunbeds.** My Discovery penalty was built on a taverna
+reference that is wrong for the beach itself. **Discovery 9.**
+
+**And you are walking the Aradena gorge to get there** — four hours, under
+Greece's highest bridge at 138 m, descending a gorge to the sea. **That is
+earned by any standard**, and it is the single best piece of walking in the
+week.
+
+**Colour 9 — extremely turquoise, observed.** The mechanism is there: white
+limestone cliffs, caves you swim into. `9·9·8 = 26.`
+
+### Λακκούδι → **26**
+
+**Hidden and turquoise, observed — and the mechanism backs it harder than any
+other entry on Gavdos:**
+
+| | |
+|---|---|
+| **Βάθος** | **«Κανονικό»** — ***normal, not βαθιά.*** The only south-coast entry whose own field does not say deep |
+| **Τύπος** | **Άμμος** + ψιλό βότσαλο — sand, not bare pebble |
+| The seabed | **«άσπρα βότσαλα»** — **white pebbles** |
+| Access | Βάρκα, Περπάτημα — pine path, then down a ravine |
+
+**Shallow + sand + white floor = turquoise.** The field said *Βαθύ μπλε* while
+the three fields beside it described the exact recipe for turquoise. **I should
+have caught that contradiction myself.** `9·9·8 = 26.`
+
+### Σεϊτάν Λιμάνια → **25** restored
+
+**Caribbean-like colour, observed.** **Colour 9.** `8·9·8 = 25.`
+*⚠️ Path still closed since April — check Chania council in the week before you
+fly.*
+
+### Τρυπητή → **25**, probably 26
+
+**"Like Marmara" — same coast, same limestone, same gorge-mouth geology.**
+Accepted as probable. **Held at Colour 8 rather than 9 for one reason only:**
+its own page adds **«βραχώδη βυθό»** and cliff shade for much of the day, which
+Marmara does not have. **Swim it late morning and it may well be a 26 — you
+will be able to tell on the day.** `9·8·8 = 25.`
+
+### Γλυκά Νερά → **24**
+
+**Turquoise, observed.** **Colour 9.** Its white pebble shore *and seabed*
+support it. Discovery stays 7 — umbrellas, a taverna built on a rock, 30
+minutes on foot or 5 by boat. `7·9·8 = 24.`
+
+### Σεντόνι → **23**, and off the stop list
+
+**Agreed, down.** Deep, pebble, 500 m from Trypiti and effectively the same
+water. **Pass it on the boat; don't spend the day on it.**
+
+---
+
+## 🏝 THE LAGOONS GO IN REGARDLESS — James gets his wish
+
+**"aahh I love lagoons."** These are in the week because the family wants them,
+**not because they score**, and that is the correct reason:
+
+| | Score | Note |
+|---|---|---|
+| **Μπάλος / Balos** | 23 | **Take a LOCAL TAXI up the 8 km track from Kalyviani** — their vehicle, their insurance. The hire car's cover dies at the tarmac |
+| **Ελαφονήσι / Elafonissi** | 22 | **Pink sand, shallow turquoise.** You may walk on the pink; you may not cross the fenced vegetation or take sand *(Law 1650/86)*. Proper car park |
+| **Πρέβελη / Preveli** | 24 | **470 steps.** Swim the palm-lined freshwater lagoon *and* the Libyan Sea. The lagoon is cold |
+
+**Elafonissi and Kedrodasos are 1 km apart** — one day, both, and Kedrodasos is
+the quiet half of it. **Park at Elafonissi and walk the coast path**, because
+Kedrodasos' own access field reads **Χωματόδρομος.**
+
+---
+
+# 📋 NINE AT 25+ — EIGHT IN RANGE
+
+| | Score | D·C·W | Day |
+|---|---|---|---|
+| **ΔΩΜΑΤΑ** | **26** | **10**·8·8 | Tue 27 |
+| **ΜΑΡΜΑΡΑ** | **26** | 9·**9**·8 | **Wed 28 — via the Aradena gorge** |
+| **ΛΑΚΚΟΥΔΙ** | **26** | 9·**9**·8 | Thu 29 — Gavdos |
+| **Τρυπητή** | 25 | 9·8·8 | Tue 27 — *possible 26* |
+| **Σεϊτάν Λιμάνια** | 25 | 8·**9**·8 | Mon 26 |
+| **Ίλιγκας cove 2** | 25 | **9**·8·8 | Wed/Fri |
+| **Ίλιγκας cove 3** | 25 | **9**·8·8 | Wed/Fri |
+| **Τρυπητή ακρωτήρι** | 25 | 9·8·8 | Thu 29 — Gavdos |
+| **Καρούμες** | 25 | **9**·8·8 | *out of range* |
+
+**Plus:** Preveli 24 · Glyka Nera 24 · Lavrakas 24 · Kedrodasos 24 ·
+Agios Pavlos 24 · Balos 23 · Agiofarago 23 · Elafonissi 22.
+
+---
+
+## ⚠️ THE ONE REAL CLASH IN THE WEEK: Balos vs Gavdos
+
+**Balos is northwest (Kissamos); Elafonissi and Kedrodasos are southwest.
+Opposite corners — they cannot share a day.** And the week is full:
+
+| | |
+|---|---|
+| Mon 26 | Land 13:00 → **Seitan Limania** |
+| Tue 27 | Sougia → **Trypiti + Domata** |
+| Wed 28 | **Aradena gorge → Marmara**, boat to Loutro, ferry back |
+| Thu 29 | **Gavdos** — overnight |
+| Fri 30 | Back 14:30. **Sfakion is 1h30 from Stalos — the afternoon is gone** |
+| Sat 31 | **Elafonissi + Kedrodasos.** Last ferry day |
+| Sun 1 Nov | → Plakias. **Preveli** |
+| Mon 2 Nov | → Heraklion. **Agiofarago** |
+
+**Balos has no slot while Gavdos holds Thursday and Friday.**
+
+> **So the Gavdos phone call now decides between two packages:**
+>
+> **GAVDOS** — Lakkoudi **26** + Cape Tripiti 25 + Lavrakas 24, on an island of
+> 208 people with no confirmation anything is open.
+>
+> **BALOS + THE SFAKION COVES** — Balos 23 *(the lagoon James wants)* on
+> Thursday, and **Ilingas coves 2 and 3 — two 25s** — plus Glyka Nera 24 on
+> Friday, all on tarmac with no ferry risk.
+>
+> **Gavdos wins on score by a single point. Balos wins on certainty, on
+> James, and it hands back two 25s that are currently squeezed.**
+
+**Make the call. If rooms are vague, the fallback is not a downgrade — it is
+Balos, two 25s and a lagoon.**
