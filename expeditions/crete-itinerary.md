@@ -1747,3 +1747,117 @@ standing in it on Tuesday 27 October.**
    Cape Tripiti 17, Lavrakas 16, Pyrgos 16, and Fetifes 15 — **four of them on
    one footpath west of Agiannis.** The densest cluster in the archive.
 2. **Email Sougia.** Domata is the only 18 you cannot walk to.
+
+---
+
+# 🍂 THE LATE-OCTOBER AUDIT — what I applied, and what I missed
+
+**Zac asked whether the dates are built in: colour changing, and the place
+being far emptier. Partly. And I applied the seasonal argument in one direction
+only, which was wrong.**
+
+## ✅ What was correctly applied
+
+**Crowding is seasonal, so Discovery was re-scored for an empty week.**
+Seitan Limania, Agia Roumeli and Balos all had summer-crowd penalties removed
+earlier. **Permanent access difficulty stays; crowding does not.**
+
+**Freshwater springs are at their annual minimum** at the end of a rainless
+May–September, so the murk at Domata, Glyka Nera, Agios Antonios and Ilingas is
+at its weakest of the year. **And the Water gate now handles that properly.**
+
+**Boat traffic has stopped**, which removes the churned-sediment and
+diesel-sheen complaints at Preveli and Balos.
+
+## ❌ WHAT I MISSED: the sun is low, and that works against turquoise
+
+**Crete sits at 35°N. Midday sun elevation:**
+
+| | Solar elevation at noon |
+|---|---|
+| Late June | **≈ 78°** |
+| **Late October** | **≈ 42°** |
+
+**Turquoise is light that has gone down through the water, bounced off a pale
+floor and come back up.** At 42° a far greater share of the light **reflects off
+the surface** instead of entering it, and what does enter travels a longer
+slant path. **Less bottom-return means less turquoise and more mirror.**
+
+**And every structured «Χρώμα νερού» field was almost certainly set from a
+summer photograph — high sun, maximum colour.** So the fields are the *best*
+case, not the average.
+
+> **This cuts against my own Domata argument.** I used seasonality to *restore*
+> Domata's Colour and never asked whether the same season dims it. **Both are
+> true: the springs run weakest and the sun sits lowest.** They partly cancel.
+> **Domata holds at 8 — but as a genuinely uncertain 8, not a quietly
+> optimistic one.**
+
+### Worse for the cliff beaches specifically
+
+**A 42° sun cannot clear a 600–700 m cliff for long.** Trypiti is already
+described as **cliff-shaded much of the day** — in late October that shadow is
+longer and arrives earlier. **The same applies to Domata, Marmara, Lykos and
+Glyka Nera**, all of which sit under big south-coast walls.
+
+### And the sea is rougher, not calmer
+
+**Late October is windier than summer**, which works against the entries that
+already take wave: **Agios Pavlos** *(«ισχυρό κύμα λόγω των ανέμων»)* ·
+**Fetifes** · **Red Beach** *(west winds)* · **Lissos** *(southerlies)* ·
+**Potamos** *(«συχνά κύμα»)*. **Wind-stirred fine sediment is the main colour
+risk of your week — not temperature.**
+
+---
+
+## ⏰ THE ACTIONABLE CONSEQUENCE: an 11:00–14:30 colour window
+
+**With the sun topping out at 42° and setting at ~17:20, the turquoise window
+is roughly 11:00 to 14:30.** Outside it, a cliff-bound south-coast beach reads
+dark and mirrored however clear the water is.
+
+**Check against the plan:**
+
+| | |
+|---|---|
+| **Tue 27 — Trypiti ~12:00, Sentoni 13:00, Domata ~13:45** | ✅ **Dead centre of the window.** Keep it exactly as written |
+| **Wed 28 — Marmara after a 4-hr gorge descent** | ⚠️ **Leave at first light.** Starting at 07:30 puts you on the sand by 11:30; a 09:00 start puts you there at 13:00 with the light already going |
+| **Thu 29 — Gavdos** | ✅ **Lakkoudi, Lavrakas and Pyrgos are low-cliff and open to the sky** — the least shade-affected entries on the list |
+| **Sat 31 — Kedrodasos** | ✅ Open dune coast, no cliff. Fine all day |
+
+---
+
+## 📈 THE EMPTINESS RE-SCORES — three up, and Balos returns
+
+**Sunbeds and umbrella concessions are not operating in late October. Where my
+Discovery penalty was for a seasonal concession rather than permanent
+infrastructure, it has to come off.**
+
+| | Was | Now | Why |
+|---|---|---|---|
+| **ΜΠΑΛΟΣ / Balos** | **CUT** at D6 | **7 · 9 = 16** | **Cut for a dirt track *and tour boats*. The Gramvousa excursions are finishing as you arrive.** What is left is an 8 km track you may not legally drive and a lagoon with nobody on it. **Balos is back on the list — and it is the one James asked for** |
+| **Γλυκά Νερά** | 7 · 9 = 16 | **8 · 9 = 17** | The umbrella concession is closed; the taverna on the rock is the only permanent thing. **30 min on foot from Sfakion** |
+| **Ίλιγκας main** | 7 · 8 = 15 | **8 · 8 = 16** | Penalised as **«πολυσύχναστη»** — *crowded*. **That is purely seasonal.** The taverna stays, the crowd does not |
+| **Κεδρόδασος** | 8 · 8 = 16 | **8 · 8 = 16** | Unchanged — its 500 m path and dirt-road access are permanent, not seasonal |
+
+**Elafonissi stays at D5.** Its car park and boardwalk are permanent, and the
+crowd was never the main problem.
+
+---
+
+# 📊 REVISED — TWENTY IN REACH AT 16+
+
+**18:** ΔΩΜΑΤΑ 10·8 *(uncertain 8)* · ΜΑΡΜΑΡΑ 9·9 · ΛΑΚΚΟΥΔΙ 9·9
+**17:** Τρυπητή 9·8 · Τρυπητή ακρωτήρι 9·8 · Ίλιγκας cove 2 9·8 ·
+Ίλιγκας cove 3 9·8 · Σεϊτάν Λιμάνια 8·9 · **Γλυκά Νερά 8·9 ⬆**
+**16:** Άγιος Αντώνιος 9·7 · Λαβράκας 9·7 · Πύργος 9·7 · Σεντόνι 9·7 ·
+Κεδρόδασος 8·8 · Άγιος Παύλος 8·8 · Πρέβελη 8·8 · Βαθύ 8·8 ·
+**Μπάλος 7·9 ⬆⬆** · **Ίλιγκας main 8·8 ⬆**
+
+**Three 18s · six 17s · eleven 16s. Twenty in reach**, plus Karoumes out of
+range.
+
+> **The single most useful line in this section:** **be in the water between
+> 11:00 and 14:30 on the cliff beaches.** The dates give you an empty coast and
+> a 23–24°C sea, and they take away three hours of good light at each end of
+> the day.
