@@ -994,3 +994,89 @@ than a 26 you cannot.
 **Verification, honestly tallied: 28 entries tested — 18 fell, 0 rose,
 10 held.** It has never once found an upgrade. **Every single entry that has
 ever moved has moved downward.**
+
+---
+
+# ❌ LAVRAKAS 24 — asked twice, and the second time was the right answer
+
+**The first correction was half a correction.** Zac said *"lavrakas isnt
+turquoise"*, I dropped the 9 and left Colour at 8, and the entry stayed on the
+list. He said it again. He was right again.
+
+## Four dedicated sources, zero τιρκουάζ
+
+| Source | Water | Sand |
+|---|---|---|
+| **cretanbeaches** *(structured field)* | **«Γαλάζιο»** | **«ξανθή άμμο»** |
+| travel.gr | «διάφανα» · «καταγάλανα» | «ψιλή άμμο» |
+| **discovercrete** *(dedicated page)* | **«διάφανα νερά»** | **«ξανθή άμμο»** |
+| **ruralgreece** | **«κρυστάλλινα νερά»** | **«χρυσή άμμο»** |
+
+**Every source reaches for clarity — διάφανα, κρυστάλλινα, πεντακάθαρα — and
+the only colour word any of them gives is plain γαλάζιο.**
+*(The single γαλάζιος on the discovercrete page describes **Stavrolimni**, not
+Lavrakas — the misattribution trap again, in the same article.)*
+
+## The deciding fact: the sand is blond, not white
+
+**ξανθή** and **χρυσή** — blond and golden. **Not λευκή.**
+
+**Golden sand under shallow clear water reads pale aquamarine or plain blue.
+Turquoise requires a white floor.** This is precisely why **Kedrodasos keeps
+Colour 8** — its own page states **«Λευκή άμμος»** — and why Lavrakas cannot
+have it.
+
+**And the shallow field makes the case stronger, not weaker.** Lavrakas has the
+full mechanism *except* a white floor: fine sand, shallow water, famously clear.
+**If that produced turquoise, four sources would have said so. They say
+γαλάζιο.** The output is reported directly, and it is not turquoise.
+
+**Colour 8 → 7. `9·7·8 = 24`.**
+
+## Where Lavrakas has been this session
+
+**25 → 26 → 25 → 24.** Not one of those moves came from new facts about the
+beach. **All four came from how I was reading it** — a listicle misattribution,
+then a half-correction, then the consistency rule applied properly.
+
+## The cost: Gavdos loses its anchor
+
+**I wrote that Gavdos was "now the best day of the trip, not the optional
+one." That is no longer true, and it was only ever true because of this
+error.**
+
+**Gavdos now holds two 25s: Cape Tripiti and Lakkoudi.** Which reframes the
+decision honestly:
+
+> **An overnight on an island of 208 residents, with no confirmation that a
+> single room or taverna is open, a ferry that stops on 31 October, and no
+> return pattern in hand — for two 25s.**
+
+**Still worth the phone call.** Cape Tripiti is τιρκουάζ on a dedicated page
+with three sea arches at the southernmost point of Europe, and Lakkoudi's
+clarity is attributed to white seabed pebbles — both survive the structured-field
+rule cleanly. **But if the answer about rooms is vague, dropping Gavdos now
+costs two 25s, not a 26 and two 25s, and Saturday absorbs the day easily.**
+
+---
+
+# 📉 NINE AT 25+ — EIGHT IN RANGE
+
+| | Score | D·C·W | Day |
+|---|---|---|---|
+| **DOMATA** | **26** | **10**·8·8 | Tue 27 — *Colour contested; strictly a 25* |
+| **MARMARA** | **26** | 9·**9**·8 | Wed 28 — *the only surviving Colour 9* |
+| **Seitan Limania** | 25 | 8·**9**·8 | Mon 26 — *path closed since April* |
+| **Trypiti** | 25 | 9·8·8 | Tue 27 — on foot |
+| **Ilingas cove 2** | 25 | **9**·8·8 | Wed 28 |
+| **Ilingas cove 3** | 25 | **9**·8·8 | Wed 28 |
+| **Cape Tripiti** | 25 | 9·8·8 | Thu 29 — Gavdos |
+| **Lakkoudi** | 25 | **9**·8·8 | Thu 29 — Gavdos |
+| **Karoumes** | 25 | **9**·8·8 | *out of range* |
+
+**Clarity words have now caused three of my errors — Agiofarago, Schinaria's
+near-miss, and Lavrakas twice.** Added to the rule:
+
+> **διάφανα, κρυστάλλινα, πεντακάθαρα and βαθιά describe clarity and depth.
+> They are not colour evidence, in either direction. Only τιρκουάζ or the
+> structured «Χρώμα νερού» field is.**
