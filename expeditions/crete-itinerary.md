@@ -1526,3 +1526,114 @@ swim in.**
 
 **One new item for the pre-flight list: a live sea-temperature reading for the
 north coast.** It decides Seitan Limania, which is 20 minutes from the aircraft.
+
+---
+
+# 📋 EVERYTHING AT 16+ /20 — THE COMPLETE CRETE LIST
+
+**16+/20 is exactly the old 24+/30**, so this list is wider than anything shown
+before. **The six entries carried as "Discovery 9, no colour data" have now
+been resolved: two join the list, two are cut, two remain open.**
+
+## ⭐ NEW AT 16 — two found
+
+### Βαθύ / Vathy, Asterousia — **8 · 8 = 16**
+
+> *«**τιρκουάζ** νερά κάτω από τα άγρια Αστερούσια»* — **turquoise**, under the
+> wild Asterousia mountains. Called *«μια γαλάζια όαση»*, a blue oasis.
+
+**Access: drive to the Odigitria Monastery, then a dirt road west toward
+Kefali — «μακρύς και σκονισμένος», long and dusty.** No infrastructure.
+**The hire car's insurance dies at that dirt, so you walk the last stretch —
+which is what earns Discovery 8.**
+
+> **And here is the find: the Odigitria Monastery is the SAME approach as
+> Agiofarago.** Vathy and Agiofarago are neighbours. **Monday 2 November can
+> do both on the way to Heraklion** — a 16 and a 15 for one detour.
+
+### Πύργος / Pyrgos, Gavdos — **9 · 7 = 16**
+
+> *«Οι αμμόλοφοι κρύβουν **σμαραγδένια** νερά»* — **the dunes hide emerald
+> water**, with *«εξαιρετική διαύγεια»*.
+
+**Emerald counts — it is half of what this whole project is looking for.**
+Colour held at 7 rather than 8 because the sand is **«ψιλή και κοκκινωπή»**,
+fine and **reddish**, and red substrate is real. **Discovery 9:** two sandy
+coves split by rock behind earthen cliffs, 6 km northwest of Karave,
+*«μια παραλία για λίγους»* — a beach for the few — with a path called very
+difficult and boat access easier.
+
+**It sits on the same roadless Gavdos coast as Lavrakas and Stavrolimni, west
+of Agiannis.**
+
+## ❌ CUT — two I had wrong
+
+| | | |
+|---|---|---|
+| **Τρεις Εκκλησιές** | **D 6** | I was carrying this at Discovery 9. **Wrong — it is a settlement on an asphalt road**, 10 km from Paranymfoi, with **καφενεία, ταβέρνες and rooms.** Χρώμα νερού: Γαλάζιο, deep water. **Cut on the weak link** |
+| **Ανύδρι / Γιαλισκάρι** | **D 6** | Also carried at 9. **Wrong — «fully organized with a taverna», umbrellas and sunbeds, a shared car park**, 3 km from Paleochora |
+
+## ❓ STILL OPEN — two
+
+**Σταυρολίμνη** *(Gavdos)* — Discovery 9 on the same roadless walk as Lavrakas
+and Pyrgos, and one source does attach **«γαλάζιος»** to it. **But it was cut
+for clay, and clay is a Colour 6.** If the clay reading is wrong it is a 16.
+**You will walk past it on the Agiannis coastal path — look.**
+
+**Φετίφες · Ντιάνα** *(Gavdos)* — no colour data in any language.
+*(**Γαυδοπούλα** stays excluded — monk seals breed and turtles nest there.)*
+
+---
+
+# 🏆 THE COMPLETE LIST — EIGHTEEN AT 16+, SEVENTEEN IN RANGE
+
+## 18 / 20
+| | D · C | Day |
+|---|---|---|
+| **ΔΩΜΑΤΑ** | **10** · 8 | Tue 27 |
+| **ΜΑΡΜΑΡΑ** | 9 · **9** | Wed 28 — Aradena gorge |
+| **ΛΑΚΚΟΥΔΙ** | 9 · **9** | Thu 29 — Gavdos |
+
+## 17 / 20
+| | D · C | Day |
+|---|---|---|
+| **Τρυπητή** | 9 · 8 | Tue 27 — *possible 18* |
+| **Τρυπητή ακρωτήρι** | 9 · 8 | Thu 29 — Gavdos |
+| **Ίλιγκας cove 2** | 9 · 8 | Wed 28 / Fri 30 |
+| **Ίλιγκας cove 3** | 9 · 8 | Wed 28 / Fri 30 |
+| **Σεϊτάν Λιμάνια** | 8 · **9** | Mon 26 |
+| *Καρούμες* | 9 · 8 | *out of range* |
+
+## 16 / 20
+| | D · C | Day |
+|---|---|---|
+| **Γλυκά Νερά** | 7 · **9** | Wed 28 / Fri 30 |
+| **Άγιος Αντώνιος** | **9** · 7 | Tue 27 — on the Sougia walk |
+| **Λαβράκας** | **9** · 7 | Thu 29 — Gavdos |
+| **Πύργος** ⭐ | **9** · 7 | Thu 29 — Gavdos |
+| **Σεντόνι** | **9** · 7 | Tue 27 — from the boat |
+| **Κεδρόδασος** | 8 · 8 | Sat 31 |
+| **Άγιος Παύλος** | 8 · 8 | Wed 28 |
+| **Πρέβελη** | 8 · 8 | Sun 1 Nov — *sea only* |
+| **Βαθύ** ⭐ | 8 · 8 | **Mon 2 Nov — with Agiofarago** |
+
+## Just below — 15 / 20
+**Αγιοφάραγγο** 8·7 · **Λισσός** 8·7 · **Λυκός** 8·7 · **Ίλιγκας main** 7·8
+
+## ❌ Cut on the weak link *(below 7 in a category)*
+**Μπάλος** D6 · **Ελαφονήσι** D5 · **Σχοινάρια** D6 · **Τρεις Εκκλησιές** D6 ·
+**Ανύδρι/Γιαλισκάρι** D6 · **Πόταμος** C6 · **Σταυρολίμνη** C6? ·
+**Καλυψώ** · **Σούδα** · **Άσπες** *(μαύρη χοντρή άμμος)*
+
+---
+
+## What the complete list shows
+
+**Gavdos now holds five of the eighteen** — Lakkoudi **18**, Cape Tripiti 17,
+Lavrakas 16, Pyrgos 16, and Stavrolimni possibly 16. **Four of them on one
+coastal footpath west of Agiannis.** That is the densest cluster in the archive
+and it strengthens the Gavdos case considerably over the Balos alternative.
+
+**And the Asterousia is no longer a one-stop detour.** Vathy 16 + Agiofarago 15
+share the Odigitria Monastery approach, which makes **Monday 2 November a real
+day** rather than a drive to the airport hotel.
