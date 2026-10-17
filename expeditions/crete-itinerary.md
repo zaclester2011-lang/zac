@@ -2184,3 +2184,89 @@ signal drops on the south coast.
 > **And look at the water.** Domata's Colour 8 is the only unread figure in the
 > archive. **No source on earth has described it. If it is turquoise, you are
 > standing in Europe's only 19.**
+
+---
+
+# 🔄 TUESDAY REVISED — LISSOS → SOUGIA → TRYPITI → DOMATA
+
+**Zac's order, and it works — because the boat picks you up at Lissos rather
+than at Sougia.** That one change turns the wrong-direction problem into an
+advantage.
+
+## ✅ THE DAY
+
+| | |
+|---|---|
+| **07:00** | Leave Stalos |
+| **08:20** | **Sougia.** Park the car and walk **west** |
+| **08:30 – 09:45** | **ΛΙΣΣΟΣ 16** — 1h15 on foot, **no road reaches it.** Swim, then **the Asklepieion**, the theatre, the Roman baths and the mosaic, ten minutes up the valley |
+| **~10:00** | **THE BOAT COLLECTS YOU AT LISSOS** and runs east, past Sougia |
+| ~10:45 | **ΤΡΥΠΗΤΗ 17** |
+| ~11:15 | **ΣΕΝΤΟΝΙ 16** |
+| **12:00 – 13:30** | **ΔΩΜΑΤΑ 18** — *and the only possible 19 in Europe* |
+| ~14:30 | Back at Sougia |
+| ~16:00 | Stalos, with the whole evening left |
+
+**Five entries. One 18, one 17, three 16s.**
+
+## Why this beats what I had written
+
+**1 · Domata gets the best light of the day.** 12:00–13:30 is the **centre** of
+the 11:00–14:30 window, not the edge of it. At 42° solar elevation under a
+700 m cliff, **ninety minutes of margin is the difference between turquoise and
+a dark mirror** — and Domata's Colour is the one figure you are going there to
+settle.
+
+**2 · Two hours of slack appear.** Back at Sougia by 14:30 instead of 16:00.
+**A Greek boatman in late October is weather-dependent and not always punctual**
+— this version survives a late start; the old one did not.
+
+**3 · You still arrive somewhere on foot, at a place with no road.** Lissos is
+walked, not delivered. And **the Asklepieion is the single most interesting
+thing on the whole list** — a healing sanctuary people crossed the island to
+reach, which you get to by walking to it, the way they did.
+
+**4 · It is a far better day for Jacob.** 1h15 on a coastal path, then a boat
+for the rest, home by four — against four hours of rough E4 in the heat.
+**Given he is already irritated, this is the version that keeps him on side.**
+
+## ⚖️ WHAT IT COSTS — be clear about this
+
+**You give up the 3½-hour E4 walk east to Trypiti.** That was the "earned" part
+of the old plan, and it was the second-best piece of walking in the week after
+the Aradena gorge.
+
+**You cannot have both.** The arithmetic:
+
+> Lissos out and back on foot = **2h30.** Back at Sougia 11:00. **Plus 3½ hrs
+> east = Trypiti at 14:30, Domata at 15:30** — past the light, and up against
+> **boats off the water by 16:30.** It does not fit.
+
+**So Tuesday is a choice between two walks:**
+
+| | |
+|---|---|
+| **Walk LISSOS** *(this plan)* | 1h15 · roadless · an Asklepieion at the end · Domata in perfect light · home early |
+| **Walk TRYPITI** *(the old plan)* | 3½ hrs · T-graded E4 · the harder, better walk · Domata at 13:45 · Lissos dropped or squeezed |
+
+**Recommendation: take Zac's order.** **The Aradena gorge on Wednesday is
+already four hours of serious walking** — the week does not need two big walks
+on consecutive days, and **Wednesday's is the better of the two.** Spend
+Tuesday's effort on Lissos and bank the daylight for Domata.
+
+## ✉️ THE EMAIL, CORRECTED — the pickup point has changed
+
+> **meletistaxisougia@gmail.com** · **soygiacruises@hotmail.com**
+> *(and **Viber**: +30 694 085 9860 · +30 693 407 8684 · +30 697 322 0472)*
+>
+> *"Three of us walk from Sougia to **Lissos** early on **Tuesday 27 October
+> 2026**. **Could you collect us at Lissos at about 10:00**, then take us east
+> to **Trypiti, Sentoni and Domata**, and back to Sougia? We would like to be
+> at **Domata around midday.** **Saturday 31 October** as a weather fallback.
+> What does it cost?"*
+
+**Note for the boatman: Lissos is west of Sougia and the rest is east, so he is
+being asked to run past his own harbour.** Say so plainly — it may add to the
+price, and **€60–100 for the boat** was the anchor before this change.
+
+**All three operators list both Lissos and Domata**, so any of them can do it.
