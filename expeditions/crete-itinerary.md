@@ -745,3 +745,124 @@ it has umbrellas, and its springs are the whole point of the name.)*
 
 **And verification's record is now 20 entries tested: 14 fell, 3 rose, 3 held.**
 It is the only filter in the audit that both removes and finds.
+
+---
+
+# 🧹 THE 19–23 BAND SWEPT — AND THE LIST IS CLOSED AT TWELVE
+
+**Nothing below 24 reaches 25.** One entry moved up a point, one moved down,
+two held — and the sweep turned up **the single best demonstration of the
+scoring method in the whole archive.**
+
+## Why this was predictable — the arithmetic
+
+A 23 needs **+2** to make the list; a 22 needs **+3**. That means one category
+moving two points, or two moving one each, on an entry already read once.
+
+**But look at what the twelve have in common: ten of them score Discovery 9 or
+10.** Not one entry in the entire archive has reached 25 with road access.
+
+**The 19–23 band is almost entirely road-reachable or organised** — sunbeds,
+tavernas, a car park, a dive school, a tour boat. **Its ceiling is structural,
+not a matter of unread sources.** So this sweep was run on the five entries in
+the band with a roadless or near-roadless profile, and the rest were left
+where they are, for the reason stated rather than for want of looking.
+
+## 📈 Άγιος Αντώνιος (Χαρέι) — 22 → 23
+
+**Discovery was underscored.** *«δεν υπάρχει καμία υποδομή στην ευρύτερη
+περιοχή»* — **no infrastructure in the wider area at all** — reached by boat or
+**a two-hour walk from Sougia on the E4**, and the chapel beside it is
+celebrated on **2 July, «the only day people usually gather there.»**
+
+**One day of human use a year. Discovery 7 → 9.**
+
+Colour and Water stay at 7: the shore is **rock and pebble**, the water merely
+*blue* and **«very cold, attributed to the springs»** — and a spot the locals
+call **Λίμνες has brackish mineral springs with elevated radon.**
+`9·7·7 = 23.`
+
+## 📉 Λισσός / Lissos — 23 → 22
+
+cretanbeaches' structured fields settle it: **«Χρώμα νερού: Γαλάζιο. Τύπος
+παραλίας: Βότσαλο»** — water colour *blue*, type *pebble*, and the prose adds
+**coarse** pebble, no facilities, and **exposure to southerly winds.**
+`8·7·7 = 22.`
+
+**Lissos stays in the week regardless, and not for the water.** The
+**Asklepieion is ten minutes from the sand** — a sanctuary where the sick came
+from across Crete for the healing baths — plus a theatre, Roman baths and a
+mosaic, on a **€4 scheduled boat** from Sougia. **It is a ruin you swim at, and
+it should be scored as neither.**
+
+## ⏸ Γλυκά Νερά / Glyka Nera — holds at 23
+
+*«cool **blue-green** water, pebbles on the shore and the seabed»*, umbrellas
+and sunbeds on part of it, **a small taverna built on a rock**, 30 minutes on
+foot from Sfakia or **5–7 minutes by boat.** The Times of London put it in
+Europe's top twenty, which is the opposite of what Discovery rewards.
+*Also on file: the beach was once **evacuated over landslide fears** after a
+4.9 earthquake near Paleochora.* `7·8·8 = 23.`
+
+## 🏆 Σχοινάρια / Schinaria — holds at 22, and proves the whole method
+
+**The most striking fact in the sweep, and it changes nothing about the score.**
+
+> **«το ρεκόρ διαύγειας νερού στα 40 μέτρα»** — horizontal visibility
+> **routinely over 40 metres**, and *«σε πολλές περιπτώσεις μπορεί κανείς να
+> βλέπει τον βυθό χωρίς μάσκα»* — in many cases you can see the bottom with no
+> mask at all. Carried by **Skai, protothema, flash and pentapostagma.**
+> Crete's dive schools are based there.
+
+**Schinaria has the clearest water on the island. Its Colour is 7.**
+
+Because: **«γαλαζοπράσινα, με βραχώδη βυθό»** and **«ψιλή, γκριζωπή άμμος με
+χαλίκι»** — blue-green over a **rocky** bottom and **greyish** sand. Organised
+with sunbeds and a taverna. `6·7·9 = 22.`
+
+> ### Clarity is not colour
+> **This is the cleanest proof of the substrate rule in the archive.** Red
+> Beach confounds the two — red sand makes the water both green and opaque.
+> **Schinaria isolates them.** Forty metres of visibility over grey rock still
+> reads blue-green, never turquoise.
+>
+> **Turquoise is not clean water. It is white floor.** Water 9 and Colour 7 in
+> the same entry is the proof, and it is why **Domata's grey pebble keeps it at
+> Colour 8 no matter how clear the springs run in late October.**
+
+## The rest of the band, and why they stay
+
+**Road-reachable or organised, so capped below 25 by Discovery before colour is
+even considered:** Σαρακήνικο 22 *(road, one of only two on Gavdos reachable by
+vehicle)* · Σούδα 20 *(hotels, tavernas, sunbeds)* · Δαμνόνι 21 *(dirt road,
+tavernas)* · Κόκκινη Άμμος 21 · Καλυψώ 20 *(a luxury hotel and a dive school on
+the sand)* · Λυκός 23 · Ίλιγκας main 23 · Λουτρό 22 · Αγία Ρουμέλη 22
+*(all four swept in Greek in the previous section)*.
+
+**Out of range at 3–4 hours:** Ξερόκαμπος 22 · Τρεις Εκκλησιές · Ανύδρι ·
+Γιαλισκάρι.
+
+**Μπάλος 23–24 stays on the table as a want, not a score.** James said
+*"aahh I love lagoons"*, and a lagoon is what it is. **Take a local taxi up the
+8 km track from Kalyviani** — their vehicle, their insurance — because the hire
+car's cover dies at the tarmac.
+
+---
+
+# 🔒 THE ARCHIVE IS CLOSED AT TWELVE
+
+**Three 26s · nine 25s · eleven in range.**
+
+**Verification's final record: 25 entries tested — 15 fell, 4 rose, 6 held.**
+Across six filters, it removed the most and it is the only one that ever
+*added*. **It should have run first.**
+
+**Nothing further is worth sweeping.** The two things still outstanding are not
+research, and never were:
+
+1. **Phone Gavdos** — three of the twelve are there, one of them a 26
+2. **Email Sougia** — Domata, the only 26 you cannot walk to
+
+> **Colour 8 on Domata is the last unread figure in the archive, and the only
+> road to a 27 in Europe. Nobody has ever written down what that water looks
+> like. You will see it on Tuesday 27 October.**
