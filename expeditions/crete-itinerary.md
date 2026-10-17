@@ -1080,3 +1080,100 @@ near-miss, and Lavrakas twice.** Added to the rule:
 > **διάφανα, κρυστάλλινα, πεντακάθαρα and βαθιά describe clarity and depth.
 > They are not colour evidence, in either direction. Only τιρκουάζ or the
 > structured «Χρώμα νερού» field is.**
+
+---
+
+# 🧨 THE STRUCTURED-FIELD AUDIT — FIVE AT 25+, AND A GEOLOGICAL REASON
+
+**Zac asked "so marmara is 27". It is not. Checking why collapsed most of the
+list**, because Marmara's Colour 9 was the one score I had never tested against
+my own rule — it came from a paraphrase of English reviewer comments.
+
+## Every structured field, read at last
+
+| | Χρώμα νερού | Τύπος | Βάθος | τιρκουάζ | Colour |
+|---|---|---|---|---|---|
+| **Μάρμαρα** | **Γαλαζοπράσινο, Βαθύ μπλε** | Βότσαλο | **Βαθιά** | **No** | 9 → **7** |
+| **Τρυπητή** | **Γαλάζιο** | Ψιλό βότσαλο + βράχια | **Βαθιά** | **No** | 8 → **7** |
+| **Λακκούδι** | **Βαθύ μπλε** | Άμμος, ψιλό βότσαλο | Κανονικό | **No** | 8 → **7** |
+| **Λαβράκας** | **Γαλάζιο** | Άμμος *(ξανθή)* | **Ρηχά** | **No** | 8 → **7** |
+| **Σεϊτάν Λιμάνια** | **Γαλαζοπράσινο** | Βότσαλο/άμμος | — | **No** | 9 → **8** |
+| **Κεδρόδασος** | Γαλαζοπράσινο | **Λευκή άμμος** | **Ρηχά** | No | **8** ✓ |
+| **Δώματα** | **Βαθύ μπλε** | Ψιλό βότσαλο *(grey)* | — | **No** | **8** *(contested)* |
+
+### The three that collapse hardest
+
+**Μάρμαρα 26 → 23.** The mechanism I credited does not exist: the page says
+**«τον πολύχρωμο λείο βράχο»** — ***multicoloured*** smooth rock, not white
+limestone. And it carries **«μια αρκετά δημοφιλής ταβέρνα που καλό είναι να
+κλείσετε τραπέζι πριν πάτε»** — *book a table in advance* — plus umbrellas
+under Υποδομές. **A beach you reserve a table at is not Discovery 9.**
+`8·7·8 = 23.`
+
+**Τρυπητή 25 → 24.** Γαλάζιο, **βαθιά**, **«βραχώδη βυθό»** — rocky seabed.
+*Its page also calls Sentoni «Πεύκος», which closes an old loose end: **Pefki
+was never a phantom village in Lasithi — it was Sentoni's second name.** It
+still correctly left the list, as a duplicate rather than a ghost.*
+
+**Λακκούδι 25 → 24.** The sentence I built its 8 on reads **«Τα κρυστάλλινα,
+διαυγή και καταγάλανα νερά της οφείλονται στα άσπρα βότσαλα»** — the white
+pebbles cause the **clarity**. The colour is **Βαθύ μπλε**. *Clarity again, for
+the fourth time.*
+
+---
+
+## 🪨 THE REAL FINDING: IN CRETE, TURQUOISE AND DISCOVERY CANNOT COINCIDE
+
+**This is not bad luck in the sources. It is geology, and it explains every
+result above at once.**
+
+**Crete's roadless south coast is limestone cliff falling straight into deep
+water, with pebble shores.** No road reaches it *because* the mountains drop
+into the sea — which is the same fact that makes the water **deep**. Deep water
+over pebble reads **Βαθύ μπλε**. Every single entry: Domata, Marmara, Trypiti,
+Sentoni, Agiofarago, Lakkoudi, Lykos, Agia Roumeli, Loutro. **All Βαθύ μπλε or
+Γαλάζιο, all βαθιά.**
+
+**Crete's turquoise is in shallow white-sand lagoons in the far west** —
+**Elafonissi, Balos, Kedrodasos** — which exist precisely because the land is
+*low and flat* there. **And low flat land is where roads go.** Car parks, tour
+boats, Discovery 5–8.
+
+> **The thing that makes a beach unreachable is the same thing that makes its
+> water deep blue. The thing that makes water turquoise is the same thing that
+> lets a road reach it.**
+
+**This is the Europe-wide finding — *Colour 9–10 behind Discovery 9–10 never
+coincide* — now proven inside a single island, with a mechanism.** It is not a
+sourcing problem that more searching would fix.
+
+---
+
+# ✅ FIVE AT 25+ — FOUR IN RANGE
+
+**Only entries whose Colour survives the structured-field rule.**
+
+| | Score | D·C·W | Why the Colour stands |
+|---|---|---|---|
+| **ΔΩΜΑΤΑ** | **26** | **10**·8·8 | **Discovery 10, unique in Europe.** Colour 8 held on the seasonal argument, not on the field — *strictly a 25* |
+| **Ίλιγκας cove 2** | 25 | **9**·8·8 | **τιρκουάζ attested on the Ilingas page**, with **λευκό βότσαλο.** Swim-only access |
+| **Ίλιγκας cove 3** | 25 | **9**·8·8 | Same |
+| **Τρυπητή ακρωτήρι** | 25 | 9·8·8 | **τιρκουάζ** on a dedicated page. Three sea arches, Gavdos |
+| **Καρούμες** | 25 | **9**·8·8 | **τιρκουάζ in two dedicated article headlines.** *Out of range* |
+
+**At 24, and all still in the week:** Trypiti · Lakkoudi · Lavrakas ·
+Seitan Limania · Kedrodasos · Agios Pavlos · Preveli · Sentoni.
+**At 23:** Marmara · Agiofarago · Glyka Nera.
+
+## What this changes about the trip: almost nothing
+
+**Every one of these places is still a cliff-locked beach you reach by boat,
+by swimming, or on a three-hour walk, in 24°C water, in an empty week.** The
+walking, the gorges, the ferry, the charter, the caves at Marmara, the chapel
+on the sand at Agios Pavlos — **all unchanged.**
+
+**What changed is the labels.** The 25+ list was inflated by reading colour out
+of prose that was describing clarity. **Clear is not turquoise, and the south
+coast of Crete is spectacularly clear and deep blue.**
+
+**Verification, final: 33 entries tested — 24 fell, 0 rose, 9 held.**
