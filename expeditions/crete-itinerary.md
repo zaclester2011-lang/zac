@@ -1861,3 +1861,127 @@ range.
 > 11:00 and 14:30 on the cliff beaches.** The dates give you an empty coast and
 > a 23–24°C sea, and they take away three hours of good light at each end of
 > the day.
+
+---
+
+# 🔁 THE SEASONAL LENS RUN ACROSS EVERYTHING — two up, two new ones fail
+
+## ⬆️ UP TO 16 — two, both because their boats stop
+
+### Αγιοφάραγγο / Agiofarago — 15 → **16**
+
+**Its access field reads «Χωματόδρομος, Βάρκα, Περπάτημα».** Both soft options
+close: **the caïques from Matala, Agia Galini and Kalous Limenes are seasonal**,
+and **the hire car's insurance stops where the dirt begins**, which lengthens
+the walk. **What is left in late October is the gorge on foot. Discovery 8 → 9.**
+Colour stays 7 — Βαθύ μπλε, Βαθιά, ψιλό βότσαλο. `9·7 = 16.`
+
+> **Monday 2 November is now a real day: Vathy 16 + Agiofarago 16, sharing the
+> Odigitria Monastery approach.** Two 16s for one detour on the way to the
+> airport.
+
+### Λισσός / Lissos — 15 → **16**
+
+**The €4 scheduled boat from Sougia is an April-to-October service, finishing as
+you arrive.** Without it there is **no road at all** — 90–120 minutes on foot
+over the pass. **Discovery 8 → 9.** Colour stays 7 *(«Χρώμα νερού: Γαλάζιο»,
+coarse pebble, open to southerlies)*. `9·7 = 16.`
+
+> **And Tuesday becomes the fullest day of the week: Lissos 16 · Agios Antonios
+> 16 · Trypiti 17 · Sentoni 16 · Domata 18 — five entries on one walk-and-boat
+> day**, with the **Asklepieion** ten minutes off the path at Lissos, where the
+> sick came from across Crete for the healing baths.
+
+## ⬆️ Κόκκινη Άμμος / Red Beach — 14 → 15
+Canteen, umbrellas and the Matala boat are all seasonal; **the Kastri hill walk
+is not.** Discovery 7 → 8. **Colour stays 7 — red sand is permanent.** Still
+not 16.
+
+## ❌ THE TWO NEW CANDIDATES — both fail
+
+### Άγιος Ιωάννης / Agiannis, Gavdos — **~15, and it is the famous one**
+
+**Everything looked right: shallow water, dune sand, a Natura 2000 cedar
+habitat, no lifeguard, no organised facilities.** Then:
+
+| | |
+|---|---|
+| Access | **Boat, ή ΛΕΩΦΟΡΕΙΟ από το λιμάνι της Καραβέ** — **a BUS from Karave port** |
+| Facilities | *«nearest tavernas a short walk away»* |
+| Fame | **Ranked 2nd best beach in the world by the Discovery Channel** |
+| Sand | Golden to blond — and one source says **shading toward terracotta** |
+| Water | **Γαλαζοπράσινο**, shallow |
+
+**A bus goes there. Discovery 7.** `7·8 = 15.`
+
+> **This is the archive's own logic confirming itself: Agiannis is the famous
+> one with the bus, and Lavrakas is the beach you walk 20–30 minutes past it
+> to reach.** The walk is the whole difference, and it is worth a point.
+
+### Παχιά Άμμος / Ornio, Asterousia — **15**
+
+*«μικρά βότσαλα και **σκούρα μπλε** νερά»* — small pebbles, **dark blue** water,
+inside **a carob forest.** Reached by a short dirt road west of Tris Ekklisies,
+then *«αφήνεις το αυτοκίνητο και περπατάς ένα μικρό μονοπάτι»* with a rocky,
+awkward descent. **Discovery 8, Colour 7.** `8·7 = 15.`
+
+*Worth knowing: **caretta turtles nest on its shoreline.** Nesting is May–August,
+so late October is clear — but tread carefully above the tideline.*
+
+## ❌ Checked and still cut — the penalties are permanent, not seasonal
+
+| | |
+|---|---|
+| **Ελαφονήσι** D5 | Paved road, **large car park, boardwalk.** The crowd was never the main problem |
+| **Τρεις Εκκλησιές** D6 | **Asphalt road** into a settlement with cafés, tavernas and rooms |
+| **Σχοινάρια** D6 | A road to the sand. Dive schools are seasonal; the road is not |
+| **Ανύδρι/Γιαλισκάρι** D6→7 | Car park permanent. `7·7 = 14` |
+| **Σαρακήνικο** *(Gavdos)* | **One of only two beaches on the island reachable by vehicle**, plus camping and tavernas |
+| **Λουτρό · Αγία Ρουμέλη** | **Villages.** Permanent by definition |
+| **Πόταμος · Σταυρολίμνη · Άσπες · Καλυψώ** | **Substrate or buildings — neither has a season** |
+
+---
+
+## ➗ An arithmetic correction
+
+**I said "twenty in reach" last time. The 16-band held ten entries, not eleven,
+so it was nineteen.** With Agiofarago and Lissos it is **twenty-one.**
+
+# 📊 TWENTY-ONE IN REACH AT 16+
+
+| 18 | 17 | 16 |
+|---|---|---|
+| **ΔΩΜΑΤΑ** 10·8 | Τρυπητή 9·8 | Άγιος Αντώνιος 9·7 |
+| **ΜΑΡΜΑΡΑ** 9·9 | Τρυπητή ακρωτήρι 9·8 | Λαβράκας 9·7 |
+| **ΛΑΚΚΟΥΔΙ** 9·9 | Ίλιγκας cove 2 9·8 | Πύργος 9·7 |
+| | Ίλιγκας cove 3 9·8 | Σεντόνι 9·7 |
+| | Σεϊτάν Λιμάνια 8·9 | **Αγιοφάραγγο 9·7 ⬆** |
+| | Γλυκά Νερά 8·9 | **Λισσός 9·7 ⬆** |
+| | | Κεδρόδασος 8·8 |
+| | | Άγιος Παύλος 8·8 |
+| | | Πρέβελη 8·8 |
+| | | Βαθύ 8·8 |
+| | | Ίλιγκας main 8·8 |
+| | | Μπάλος 7·9 |
+
+**3 · 6 · 12 = 21 in reach**, plus Καρούμες 17 out of range. **Twenty-two at
+16+ in total.**
+
+**Just below, at 15:** Λυκός · Κόκκινη Άμμος · Παχιά Άμμος · Άγιος Ιωάννης
+*(Gavdos)* · Φετιφές.
+
+## By day
+
+| | |
+|---|---|
+| **Mon 26** | Σεϊτάν Λιμάνια **17** |
+| **Tue 27** | **FIVE** — Δώματα 18 · Τρυπητή 17 · Λισσός 16 · Άγιος Αντώνιος 16 · Σεντόνι 16 |
+| **Wed 28** | **FIVE** — Μάρμαρα 18 · Γλυκά Νερά 17 · Ίλιγκας coves 17+17 · Άγιος Παύλος 16 *(+ Ίλιγκας main 16)* |
+| **Thu 29** | **FOUR** — Λακκούδι 18 · Τρυπητή ακρωτήρι 17 · Λαβράκας 16 · Πύργος 16 |
+| **Fri 30** | Μπάλος **16** *(if Gavdos is dropped, this is its slot)* |
+| **Sat 31** | Κεδρόδασος **16** |
+| **Sun 1 Nov** | Πρέβελη **16** |
+| **Mon 2 Nov** | **TWO** — Βαθύ 16 · Αγιοφάραγγο 16 |
+
+**Tuesday and Wednesday carry five each. Nothing in the week is now a filler
+day.**
