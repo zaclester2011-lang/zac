@@ -2570,3 +2570,87 @@ scheduled — nothing left over.**
 > **paleochorarentaboat.gr · paleochoradiscover.com** — and ask **Sougia
 > Cruises** for a quote on the same route, since they already serve Domata,
 > Trypiti, Lissos and Agios Antonios and are closer to base.
+
+---
+
+# 🎯 THE COLOUR FLOOR IS WRONG — it should be 8, not 7
+
+**Zac: "fournoti isnt turquoise." It is scored at Colour 7, which is precisely
+the not-turquoise mark. But the observation exposes something structural.**
+
+## The project's own words
+
+> *"hidden beaches where we can be almost alone in a **TURQUOISE** sea we feel
+> we earned."*
+
+**Three criteria. The weak-link rule is set at 7 in every category — but
+Colour 7 MEANS "not turquoise."** So the rule currently admits entries that
+fail the one thing the whole archive is named for.
+
+**Six entries on the list are Colour 7, carried entirely by Discovery 9:**
+
+| | D · C | What its Colour 7 actually says |
+|---|---|---|
+| **Φουρνωτή** | 9 · 7 | **Grey sand. No water description exists in any language** |
+| **Σεντόνι** | 9 · 7 | **Βαθιά, βότσαλο, καταγάλανα** — deep blue over pebble |
+| **Λισσός** | 9 · 7 | **«Χρώμα νερού: Γαλάζιο»**, coarse pebble, wind-exposed |
+| **Άγιος Αντώνιος** | 9 · 7 | Rock and pebble, *«very cold»*, merely blue |
+| **Αγιοφάραγγο** | 9 · 7 | **Βαθύ μπλε · Βαθιά · ψιλό βότσαλο** |
+| **Μάρτσαλο** | 9 · 7 | *γαλαζοπράσινα* but **«βαθιά μπλε, βαθαίνουν απότομα»** |
+
+**Every one is a place you work hard to reach in order to swim in ordinary
+blue water.** They are superb coastline. **They are not what the trip is for.**
+
+**And Fournoti's 7 is the weakest figure in the archive** — a placeholder on an
+entry with grey sand and no colour source at all, which is exactly the state
+Agios Pavlos was in before its 8 was earned.
+
+## 🔧 THE FIX: require Colour 8
+
+**Discovery stays at 7. Colour floors at 8.** One line, and the list becomes
+what it was always meant to be.
+
+### ✅ THIRTEEN IN REACH, EVERY ONE WITH CONFIRMED COLOUR
+
+| # | Beach | Score | D · C | Day | The colour evidence |
+|---|---|---|---|---|---|
+| 1 | **ΔΩΜΑΤΑ** | **18** | **10**·8 | Tue 27 | *The one unread figure — you settle it* |
+| 2 | **ΜΑΡΜΑΡΑ** | **18** | 9·**9** | **Tue + Wed** | **Turquoise, observed. White limestone** |
+| 3 | **Τρυπητή** | **17** | 9·8 | Tue 27 | *Marmara-like — possible 18* |
+| 4 | **Γλυκά Νερά** | **17** | 8·**9** | Tue 27 | **Turquoise over white pebble, shore and seabed** |
+| 5 | **Ίλιγκας cove 2** | **17** | 9·8 | Thu 29 | **τιρκουάζ · λευκό βότσαλο.** Swim-only |
+| 6 | **Ίλιγκας cove 3** | **17** | 9·8 | Thu 29 | Same |
+| 7 | **Σεϊτάν Λιμάνια** | **17** | 8·**9** | Mon 26 | **Caribbean colour, observed** ⚠️ *path* |
+| 8 | **Άγιος Παύλος** | **16** | 8·8 | Tue 27 | **«όλες τις αποχρώσεις του Μπλε, γαλάζιου, πράσινου ακόμη και του άσπρου»** |
+| 9 | **Βαθύ** | **16** | 8·8 | Mon 2 Nov | **τιρκουάζ** — *«μια γαλάζια όαση»* |
+| 10 | **Κεδρόδασος** | **16** | 8·8 | Fri 30 | **«Λευκή άμμος» + «Ρηχά»** on its own page |
+| 11 | **Ίλιγκας main** | **16** | 8·8 | Thu 29 | **τιρκουάζ, λευκό βότσαλο** |
+| 12 | **Πρέβελη** | **16** | 8·8 | Sun 1 Nov | *γαλαζοπράσινα.* **Sea only** |
+| 13 | **Μπάλος** | **16** | 7·**9** | Sat 31 | **The lagoon. Shallow white sand** |
+| — | *Καρούμες* | *17* | *9·8* | — | *τιρκουάζ in two headlines. **Out of range*** |
+
+**Two 18s · five 17s · six 16s. Four Colour 9s. Nothing below 8.**
+
+### ❌ WHAT LEAVES — six, and none of them leaves the week
+
+**Fournoti · Sentoni · Lissos · Agios Antonios · Agiofarago · Martsalo**
+
+**They are all still stops on days you are already making:** Fournoti, Sentoni,
+Lissos and Agios Antonios are on Tuesday's boat route; Agiofarago and Martsalo
+are the Monday 2 November gorge walks off the monastery road.
+
+> **They stop being reasons to go somewhere and become things you see on the
+> way. That is the correct demotion, not a cut.**
+
+**And Lissos keeps its real value regardless: the Asklepieion, the theatre, the
+Roman baths and the mosaic. It was always a ruin you swim at, scored as
+neither.**
+
+## The shape of the honest list
+
+**Of the thirteen, eleven have turquoise or blue-green attested, or white sand
+or white pebble named as the cause.** The exceptions are **Domata**, whose
+water nobody has described, and **Preveli**, which is γαλαζοπράσινα.
+
+**And the two 18s remain the two that matter: one you cannot earn and one you
+can.**
