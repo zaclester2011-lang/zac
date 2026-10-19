@@ -2799,3 +2799,113 @@ reachable only by swimming.**
 
 > **Everything on this list is now either turquoise on the record, or — in
 > Domata's single case — the one water in Europe nobody has ever described.**
+
+---
+
+# ↩️ PREVELI RESTORED — 12 IN REACH
+
+**Not on colour. On landform.** A **palm-lined freshwater lagoon running into
+the Libyan Sea**, with **470 steps down a cliff** to reach it and **the second
+largest palm forest in Crete** behind it. *γαλαζοπράσινα* is honest, and the
+place is still extraordinary.
+
+**It joins Balos and Elafonissi as wanted for what it IS, not what colour it
+is** — and that is a legitimate category. **Swim the sea; the lagoon fails the
+21.5°C gate.**
+
+| | Score | D · C | Day |
+|---|---|---|---|
+| **ΔΩΜΑΤΑ** | **18** | **10**·8 | Tue 27 |
+| **ΜΑΡΜΑΡΑ** | **18** | 9·**9** | Tue + Wed |
+| **Τρυπητή** | **17** | 9·8 | Tue 27 |
+| **Γλυκά Νερά** | **17** | 8·**9** | Tue 27 |
+| **Ίλιγκας cove 2** | **17** | 9·8 | Thu 29 |
+| **Ίλιγκας cove 3** | **17** | 9·8 | Thu 29 |
+| **Σεϊτάν Λιμάνια** | **17** | 8·**9** | Mon 26 ⚠️ |
+| **Κεδρόδασος** | **16** | 8·8 | Fri 30 |
+| **Ίλιγκας main** | **16** | 8·8 | Thu 29 |
+| **Βαθύ** | **16** | 8·8 | Mon 2 Nov |
+| **ΜΠΑΛΟΣ** | **16** | 7·**9** | Sat 31 |
+| **ΠΡΕΒΕΛΗ** | **16** | 8·8 | Sun 1 Nov |
+
+**Two 18s · five 17s · five 16s. Every day of the week carries one.**
+
+---
+
+# 🗑 THE REMOVAL LEDGER — everything cut, and why
+
+## ❌ By decision — GAVDOS *(4 at 16+)*
+**Λακκούδι 18** *(9·9)* · **Τρυπητή ακρωτήρι 17** *(9·8)* ·
+**Λαβράκας 16** *(9·7)* · **Πύργος 16** *(9·7)*
+*Also: Φετιφές 15 · Άγιος Ιωάννης 15 · Σαρακήνικο · Πόταμος · Σταυρολίμνη ·
+Ντιάνα · Γαυδοπούλα*
+**Reason: 208 residents, nothing confirmed open, a ferry that stops 31 October.**
+
+## ❌ Colour 7 — NOT TURQUOISE, carried by Discovery 9 alone *(6)*
+| | | |
+|---|---|---|
+| **Φουρνωτή** | 9·7 | **Grey sand. No water description in any language** |
+| **Σεντόνι** | 9·7 | **Βαθιά · βότσαλο · καταγάλανα** |
+| **Λισσός** | 9·7 | **«Χρώμα νερού: Γαλάζιο»**, coarse pebble, southerlies |
+| **Άγιος Αντώνιος** | 9·7 | Rock and pebble, *«very cold»*, merely blue |
+| **Αγιοφάραγγο** | 9·7 | **Βαθύ μπλε · Βαθιά · ψιλό βότσαλο** |
+| **Μάρτσαλο** | 9·7 | γαλαζοπράσινα, but *«βαθιά μπλε, βαθαίνουν απότομα»* |
+
+## ❌ Failed the turquoise test at 16 *(1)*
+**Άγιος Παύλος** 8·8 — the water is *«όλες τις αποχρώσεις του Μπλε, γαλάζιου,
+πράσινου ακόμη και του άσπρου»*, **but the sand is «ασημένια και ΚΑΦΕΤΙΑ» —
+silver and BROWN.**
+
+## ❌ Out of range *(3h30+ east)*
+**Καρούμες 17** *(τιρκουάζ attested — the one that hurts)* · **Αθερίνα** ·
+**Ξερόκαμπος** · **Φαράγγι Περβολακίων / Καψά**
+
+## ❌ Weak link — below 7 in a category
+| | | |
+|---|---|---|
+| **Ελαφονήσι** | **D5** | Paved road, large car park, boardwalk |
+| **Σχοινάρια** | **D6** | A road to the sand. **40 m visibility — the clearest water in Crete, and Colour 7 over grey rock** |
+| **Τρεις Εκκλησιές** | **D6** | Asphalt into a village with cafés, tavernas, rooms |
+| **Ανύδρι / Γιαλισκάρι** | **D6** | *"Fully organized with a taverna"*, car park |
+| **Πόταμος** *(Gavdos)* | **C6** | **«πορτοκαλί λόγω του αργίλου»** — orange, from clay |
+| **Σταυρολίμνη** | **C6** | **A stream carries clay soil down. Free mud therapy** |
+| **Άσπες** | **C6** | **«μαύρη χοντρή άμμος»** — the black beach of the Asterousia |
+| **Καλυψώ** · **Σούδα** · **Δαμνόνι** | | Hotels, sunbeds, dive schools, tavernas |
+
+## ❌ At 15 — one point short
+**Λυκός** 8·7 *(black-grey pebble)* · **Κόκκινη Άμμος** 8·7 *(**κεραμιδοκόκκινη
+άμμος** — the one page that states the mechanism: red sand → πρασινογάλαζο)* ·
+**Παχιά Άμμος / Όρνιο** 8·7 · **Τρυπητή Αστερουσίων** 8·7 *(«θα βρείτε φαγητό»)* ·
+**Περβολάκι** 8·7 · **Άγιος Ιωάννης** *(Gavdos — **a BUS goes there**, and the
+Discovery Channel called it 2nd best in the world)*
+
+## ❌ At 14
+**Λουτρό** 7·7 *(«βαθύ πράσινο», a village)* · **Αγία Ρουμέλη** 7·7
+*(«μαύρα βότσαλα», «λεπτή σκούρα άμμος»)*
+
+## ❌ Removed by the 21.5°C GATE — all freshwater
+**Πρέβελη, THE LAGOON** *(~18°C — the river is «much colder than the sea»)* ·
+**Λίμνη Κουρνά** *(18–24°C, shallow, cool spring currents)* · **Ρίχτης** ·
+**Κουρταλιώτικο** — *Cretan groundwater sits at 15–18°C year round. **A shaded
+gorge pool cannot reach 21.5°C in any month.***
+
+## ❌ Unscoreable
+**Ντιάνα** — the only fact that exists is that it is named after **Princess
+Diana's yacht visiting with Dodi Al-Fayed.** · **Γαυδοπούλα** — **monk seals
+breed and turtles nest.**
+
+---
+
+## 🌍 And earlier, before Crete alone: whole regions
+
+**Turkey** · **the Cyclades** *(Milos and Kimolos reinstated, then dropped)* ·
+**the Mani** *(Delfinia fell 26 → 21 on «dark sand and fine pebble», showers
+and a canteen — the Mani went from six entries and a 26 to zero)* ·
+**Serifos ×4** *(iron skarn — dark rock)* · **Madeira** *(Seixal — basalt)* ·
+**Florida and Miami** *(the Everglades — tannins)* · **Komodo** · **LA**
+
+> ### The whole archive in one line
+> **Verification tested 33 entries. 24 fell. Nine held. None ever rose.**
+> **The single most destructive filter was reading the Greek — it removed more
+> than access, geography, temperature and season combined, and it should have
+> run first.**
