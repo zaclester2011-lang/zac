@@ -3313,3 +3313,112 @@ you were going to spend driving to a Heraklion airport hotel.**
 > **Μαύρη Παραλία 18 and Σκιαδάκι 17 need Tsoutsouras or Maridaki**, which is a
 > second boat and probably a day too far — **but Mavri Paralia is an 18, and
 > the only 18 in Crete you have not yet found a way to reach.**
+
+---
+
+# 🥾 THE ASTEROUSIA IS A HIKING REGION — I had it wrong
+
+**Zac: "we can walk aspes and those four." Right about three of the four, and
+the one I was most wrong about is a 17.**
+
+## ✅ ΚΑΜΙΝΑΚΙ 17 — walkable, and it is a serious gorge
+
+> **The Περβολιανό gorge** *(also Περβόλα / Γεροντζός)* **ends AT Kaminaki
+> beach.**
+>
+> | | |
+> |---|---|
+> | **Length** | **~4 km** |
+> | **Time** | **2½ hrs down · 3 hrs back up** |
+> | **Grade** | *«δεν συνιστάται για αρχάριους πεζοπόρους»* — **not for beginners.** *«η διαδρομή μέσα στο φαράγγι δεν είναι ιδιαίτερα οργανωμένη και απαιτεί προσοχή»* — unorganised, requires care, **for experienced hikers** |
+> | **Character** | *«ένα από τα λιγότερο γνωστά φαράγγια της περιοχής, με άγριο και αυθεντικό χαρακτήρα»* |
+> | **Bypass** | The gorge can be skirted at the side with careful walking to reach its lower part near the sea |
+
+**This is the Aradena gorge's equal.** A 4 km unorganised gorge descent to a
+white-pebble cove with no road — **and I had it filed as "boat only."**
+
+## ✅ ΣΚΙΑΔΑΚΙ 17 — walkable, **60 minutes from Kalami**
+*(The shade warning stands: it is named for it, and your sun is at 42°.)*
+
+## ⚠️ ΜΑΥΡΗ ΠΑΡΑΛΙΑ 18 — walkable, but not by you
+*«Οι πεζοπόροι με εμπειρία μπορούν να φτάσουν μέσω φαραγγιών, αλλά αυτό απαιτεί
+**άριστη γνώση του πεδίου** και καλή φυσική κατάσταση»* — **expert knowledge of
+the ground.** That is the Klados-gorge warning in a different voice. **Boat it,
+or leave it.**
+
+## ❌ ΑΣΠΕΣ 18 — this one I cannot give you
+**Every source, including cretanbeaches directly: «Η πρόσβαση στην παραλία είναι
+σχεδόν αδύνατη με τα πόδια, προσεγγίζεται ΜΟΝΟ με σκάφος.»** **Boat from Tris
+Ekklisies. That is its Discovery 10.**
+
+---
+
+# ⭐ AND A FIND: THE ASTEROUSIA TRAILS
+
+**A real, signed network — 11 waymarked routes** *(of 16 in the project)*
+**built by the Δήμος Γόρτυνας, all inside the Natura 2000 Asterousia area.**
+Named routes include **Kofinas summit – Limnia – Koudoumas monastery**,
+**Kapetaniana – Kofinas**, **Volacha**, and **Koudoumas via the Kataraktis
+gorge**.
+
+> ## ROUTE 6 — THE ELIGIA GORGE
+> *«Μία από τις πιο απαιτητικές αλλά και εντυπωσιακές διαδρομές του δικτύου»* —
+> **difficulty HIGH, REQUIRES VIA FERRATA GEAR, signage complete, and it ends
+> at ΕΛΙΓΙΑ BEACH.**
+
+**A via-ferrata gorge that finishes on a beach is the purest "earned" entry
+imaginable, and it is not in the archive at all.** **Eligia needs grading.**
+
+---
+
+# 📊 THE HIKING COUNT, REVISED — from ONE to FIVE
+
+| | Hike | |
+|---|---|---|
+| **1** | **Aradena gorge → Μάρμαρα 18** | **4 hrs**, under the 138 m bridge |
+| **2** | **Περβολιανό gorge → Καμινάκι 17** | **4 km · 2½ h down, 3 h up.** Not for beginners |
+| **3** | **E4 east → Τρυπητή 17** | **3½ hrs** *— if you walk it instead of boating* |
+| **4** | **Sougia → Λισσός 16** | **1h15 each way**, no road |
+| **5** | **Kalami → Σκιαδάκι 17** | **60 min** ⚠️ *shaded all day* |
+| *6* | *Eligia gorge → **Ελιγιά*** | ***Via ferrata, HIGH.** Ungraded — say the word* |
+
+**Plus seven short walks:** Αγιοφάραγγο 20–30 min · Ίλιγκας main 20–40 min ·
+Πρέβελη 470 steps · Μπάλος 20–30 min · Σεϊτάν Λιμάνια 15 min · Βαθύ ·
+Κεδρόδασος. **Plus two swim-ins:** the Ίλιγκας coves.
+
+**Boat-only, no alternative: Δώματα · Άσπες · Μαύρη Παραλία.** *Three of the
+four 18s — which is exactly what Discovery 10 means.*
+
+---
+
+## ⚠️ BUT THE PLANNING NOW BREAKS PROPERLY
+
+**Monday 2 November cannot hold a 3-hour gorge climb back out AND the drive to
+Heraklion AND a 14:10 flight the next morning.** And the Pervoliano gorge is
+**2½ down plus 3 back up — a full day on its own.**
+
+**The Asterousia now contains:**
+**Άσπες 18 · Μαύρη Παραλία 18 · Καμινάκι 17 · Σκιαδάκι 17 · Βαθύ 16 ·
+Αγιοφάραγγο 16**, a signed 11-route trail network, and **an ungraded
+via-ferrata gorge ending on a beach.**
+
+> ### It is not a day. It is a second base.
+>
+> **The honest options:**
+>
+> **① Move the last THREE nights south** — Kalous Limenes, Tsoutsouras or
+> Lentas from **Sat 31**. Gives Sun/Mon two full Asterousia days: **one boat
+> morning (Aspes 18 + Kaminaki 17 by sea)** and **one gorge day (Pervoliano
+> down to Kaminaki, or Agiofarago + Vathy)**. Costs you **Balos** on the 31st.
+>
+> **② Keep the week as planned and accept the Asterousia is a separate trip.**
+> **Two 18s, two 17s and a trail network left on the table** — but the Chania
+> side still holds Domata 18, Marmara 18 and five 17s.
+>
+> **③ Split it: Monday 2 November does the BOAT only** *(Aspes + Kaminaki, 1 km
+> apart, from Tris Ekklisies)*, **not the gorges.** Two entries including an
+> 18, no 3-hour climb, and Heraklion is 1h30–2h away for the morning flight.
+>
+> **Recommendation: ③ this year, ① if you can move the booking.** The
+> Pervoliano gorge and Eligia are worth their own trip, and **you now know they
+> exist**, which is the thing that was missing.
