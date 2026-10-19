@@ -3422,3 +3422,95 @@ via-ferrata gorge ending on a beach.**
 > **Recommendation: ③ this year, ① if you can move the booking.** The
 > Pervoliano gorge and Eligia are worth their own trip, and **you now know they
 > exist**, which is the thing that was missing.
+
+---
+
+# 🪢 ΕΛΙΓΙΑ GRADED — Discovery 8, Colour unknown. It does NOT make the list.
+
+## ⚠️ FIRST: there are TWO Eligia gorges
+
+**The three-Trypiti trap again, and this one would have been a bad error.**
+
+| | |
+|---|---|
+| **Φαράγγι Ελιγιά / Βαλαχά — ΑΣΤΕΡΟΥΣΙΑ** | The Asterousia Trails route, south of Heraklion. **The one Zac found** |
+| **Φαράγγι Ελυγιάς — ΣΦΑΚΙΑ, Χανιά** | A different gorge entirely, filed under western Crete |
+
+**The dramatic numbers belong to the SFAKIA one:** *«από το καταφύγιο
+Καλλέργη… μετά από **5 ώρες** πεζοπορίας»*, then *«από το Ποτάμι μέχρι τη
+θάλασσα μέσα από την κοίτη παίρνει **6 ώρες**»*, and *«θα χρειαστείτε έναν
+**έμπειρο οδηγό** και **2 μέρες** ελεύθερες»*. **None of that is the
+Asterousia route.** I would have attributed a two-day guided expedition to a
+day walk.
+
+## The Asterousia route — the via ferrata is real
+
+> *«ένα ιδιαίτερα **τεχνικό και εκτεθειμένο πέρασμα δίπλα σε κατακόρυφο
+> βράχο**, όπου για την ασφάλεια των πεζοπόρων έχει τοποθετηθεί **συρματόσχοινο
+> Via Ferrata**»* — a technical, exposed passage beside a vertical rock, with a
+> via ferrata cable fitted.
+
+**Needs harness, descender and helmet, plus relevant experience — but
+explicitly NO canyoning technique.** **Thalori at Kapetaniana runs two via
+ferrata routes there**, so there is a local operator and gear. You can descend
+the gorge to the beach, **or** stay on the via ferrata, which circles the
+mountain and returns you to the top.
+
+*(Route numbering is inconsistent — one source calls it 6, another 7, because
+the network is 11 Asterousia routes drawn from a 16-route project. Get the GPX
+from Δήμος Γόρτυνας.)*
+
+## ❌ But the beach does not qualify, for two reasons
+
+### 1 · Discovery is 8, not 9 — there is an easy back door
+
+> **A hiking log: the route follows a dirt road to the settlement of ΑΓΙΟΣ
+> ΙΩΑΝΝΗΣ and its beach, and «from there Eligia beach is 10–15 MINUTES further
+> east.»**
+
+**The via ferrata is one way of arriving, not the only way.** A dirt road plus
+a quarter-hour coastal walk is **Discovery 8** — the same as Kedrodasos and
+Vathy. *(The dirt road is beyond the hire car's insurance, which lengthens the
+walk and is why it is 8 rather than 7.)*
+
+**Discovery scores how hard the place is to REACH, not the hardest route
+somebody has invented to it.** Marmara keeps its 9 because boat and gorge are
+both genuinely committing; Eligia has a fifteen-minute option.
+
+### 2 · There is no colour evidence at all — and what exists is the clarity trap
+
+**The only description found:** *«ένα ήσυχο, απομονωμένο καταφύγιο με **πολύ
+καθαρά νερά**»* — a quiet, isolated refuge with **very clear water.**
+
+> **That is CLARITY, not colour — the precise trap Schinaria exposed.**
+> Schinaria has **40 metres of visibility and a Colour of 7**, because its
+> floor is grey. **"Very clear" tells you nothing about turquoise.**
+
+**And no source names the substrate — not sand, not pebble, not a colour.**
+**Eligia's Colour is a placeholder, like Domata's.**
+
+### **Verdict: Ελιγιά — D8 · C unknown. Not on the list.**
+
+*If its water turns out turquoise it is a 16. Nobody has written it down, and
+unlike Domata there is no 10 behind it to make the gamble worth a day.*
+
+---
+
+## ✅ What Eligia IS worth
+
+**The via ferrata itself, as an activity rather than a beach.**
+
+**Thalori, Kapetaniana** — the agrotourism village that runs it — also sits at
+the trailhead for **Kofinas summit**, the **Kataraktis gorge to Koudoumas
+monastery**, and mountain biking. **It is the natural base if the Asterousia
+ever becomes its own trip.**
+
+> **For an apprehensive 13-year-old, a signed via ferrata with a cable, a
+> harness and a helmet, run by a local operator, may be the single best thing
+> on this entire list — and it has nothing to do with the colour of the
+> water.**
+
+**The hiking count stands at five**, with Eligia as a sixth day out that scores
+nothing and might be the most fun.
+
+**The list is unchanged: EIGHTEEN at 16+, four 18s.**
