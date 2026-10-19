@@ -2457,3 +2457,116 @@ rather than pretending it fits.
 
 **And one phone call that still matters: Δήμος Χανίων, on the Seitan Limania
 path.** It is a 17 twenty minutes from the aircraft.
+
+---
+
+# 🚢 THE PALEOCHORA TOUR — six entries, both 18s, one day
+
+**Zac found it. It is real**, run by **paleochorarentaboat.gr** and
+**paleochoradiscover.com**, and the published route carries one more stop than
+the name he gave:
+
+> **Paleochora – Tripiti – Domata – Fournoti – Agios Pavlos – Marmara – Loutro
+> – ΓΛΥΚΑ ΝΕΡΑ – Paleochora**
+
+| | |
+|---|---|
+| **Duration** | **6–7 hrs** (private) · **7–8 hrs, start 09:00–10:00** (one listing, routing via Sougia) · **6–10 hrs** (semi-private) |
+| **Price** | **Semi-private from €110** · **private from €490**, another says €600 *(ignore the €2,750 — that is a different premium operator)* |
+| **Lunch** | A stop at **Loutro** for food or coffee |
+| **Pickup** | **Can be arranged from Sougia or Elafonisi** on request |
+
+## ⭐ FOURNOTI — a new entry, and it scores 16
+
+**Φουρνωτή, on the west side of Agia Roumeli**, right beside Kalogeros beach.
+
+> **«γκρίζα άμμο και βοτσαλάκι»** — grey sand and small pebble. Isolated,
+> **«επιρρεπής στους νότιους ανέμους»** — exposed to southerly winds.
+> **A pine forest above the shore, and «μια εντυπωσιακή μεγάλη σπηλιά στο μέσο
+> της παραλίας» — an impressive large CAVE in the middle of the beach, for
+> natural shade.**
+
+**Discovery 9** — no road, boat or the long E4; it sits on the roadless stretch
+between Agia Roumeli and Domata. **Colour 7** — grey sand, and **no source
+describes its water.** `9·7 = 16.`
+
+*Also useful: the tour's own copy calls Domata **"an untouched GRAY-SAND
+beach."** That is a third independent confirmation of the grey substrate — and
+it is why Domata's Colour sits at 8 and not 9.*
+
+## 📊 WHAT ONE DAY DELIVERS
+
+| | | |
+|---|---|---|
+| **ΔΩΜΑΤΑ** | **18** | |
+| **ΜΑΡΜΑΡΑ** | **18** | *"dramatic white rock formations and sea caves"* |
+| **Τρυπητή** | **17** | At the gorge exit |
+| **Γλυκά Νερά** | **17** | |
+| **Φουρνωτή** ⭐ | **16** | |
+| **Άγιος Παύλος** | **16** | *"Byzantine chapel by the sea"* |
+| *Λουτρό* | *14* | *Lunch* |
+
+**Six scored entries. BOTH 18s. And it solves Agios Pavlos**, which had no slot
+once Gavdos went and the Agia Roumeli ferry fell out of the plan.
+
+## ⚠️ THE COST — and it is not money
+
+**This is the single most efficient day available, and the least earned thing
+in the whole plan.**
+
+**You would arrive at Domata and Marmara by boat, sitting down.** No walk west
+to Lissos. **No Aradena gorge** — four hours under Greece's highest bridge, the
+best piece of walking in the week, which Zac specifically chose and which
+Jacob was promised caves at the end of.
+
+**That is the Domata-versus-Marmara question again, in a sharper form:
+Discovery measures how hard a place is to reach; "earned" measures how hard
+YOU worked. This tour maximises the first and zeroes the second.**
+
+## ✅ RECOMMENDATION — take it, and keep the gorge
+
+**Tuesday 27: the tour. Wednesday 28: walk the Aradena gorge to Marmara
+anyway.**
+
+**Seeing Marmara from the water on Tuesday and then arriving at it on foot on
+Wednesday is not a waste — it is the best possible version.** You get the
+caves, the white rock and the turquoise twice, once delivered and once earned,
+**and the second time you will have walked down a gorge to reach something you
+already know is worth it.**
+
+**This also keeps Thursday's self-drive day intact** — Glyka Nera is now
+covered, so Thursday becomes the two **Ilingas coves (17 + 17)**, which can
+*only* be entered by swimming, plus Ilingas main 16.
+
+### The revised week
+
+| Day | | Water |
+|---|---|---|
+| **Mon 26** | Land 13:00 → Akrotiri | Seitan Limania **17** |
+| **Tue 27** | **THE PALEOCHORA TOUR.** Leave Stalos 07:00 *(Paleochora is 1h40–2h)* | **ΔΩΜΑΤΑ 18 · ΜΑΡΜΑΡΑ 18 · Trypiti 17 · Glyka Nera 17 · Fournoti 16 · Agios Pavlos 16** |
+| **Wed 28** | **Sfakion → taxi to Aradena → walk the gorge down** | **Marmara on foot** — the walk of the week |
+| **Thu 29** | **Self-drive from Chora Sfakion** | **Ilingas 2 — 17 · Ilingas 3 — 17 · Ilingas main 16** *(+ Perivolaki, Lykos)* |
+| **Fri 30** | Southwest | Kedrodasos **16** *(+ Elafonissi)* |
+| **Sat 31** | Northwest | Balos **16** |
+| **Sun 1 Nov** | → Plakias | Preveli **16** |
+| **Mon 2 Nov** | → Heraklion | Vathy **16** · Agiofarago **16** · Martsalo **16** |
+
+**19 in reach at 16+ · two 18s · five 17s · twelve 16s. Every one of them
+scheduled — nothing left over.**
+
+## ❓ THREE THINGS TO ASK BEFORE BOOKING
+
+1. **Does it run on 27 October?** **This is the whole question.** Excursion
+   boats on this coast stop between **10 and 20 October**; **private charters
+   run later, "when the sea conditions allow."** **Ask for the private or
+   semi-private, not a scheduled departure.**
+2. **Does it LAND, or only cruise past?** The copy says *stops*, but confirm
+   **you get into the water at Domata and Marmara** — otherwise the day is
+   worth nothing to you.
+3. **Can they pick up at SOUGIA?** They offer it on request. **Sougia is 1h20
+   from Stalos against Paleochora's 1h40–2h, and it is halfway along the
+   route** — that is 40–80 minutes of driving saved at each end.
+
+> **paleochorarentaboat.gr · paleochoradiscover.com** — and ask **Sougia
+> Cruises** for a quote on the same route, since they already serve Domata,
+> Trypiti, Lissos and Agios Antonios and are closer to base.
