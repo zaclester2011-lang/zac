@@ -3187,3 +3187,129 @@ Heraklion.**
 > Two of the three are black sand. That is the mechanism in one sentence: the
 > most unreachable coast in Crete is unreachable because it is collapsing
 > cliff, and collapsing cliff makes a dark floor.**
+
+---
+
+# 🔆 THE DARK-SUBSTRATE RULE WAS MEASURING THE WRONG THING
+
+**Zac has now said twice that Aspes, Skiadaki and Mavri Paralia are turquoise.
+He has looked at them. I was reading the word for the sand. Those are not the
+same measurement, and the distinction is the whole error.**
+
+## What actually sets water colour
+
+**The SUBMERGED floor — not the beach above the waterline.**
+
+**My rule has been reading «μαύρη άμμος» on the shore and deducting from the
+water.** But a beach's material and its seabed are two different surfaces.
+**The Asterousia is LIMESTONE country** — that is why its cliffs collapse into
+caves with *rectangular* sides, and why **«Άσπες» means landslide.** **Dark
+coarse sand at the waterline is collapsed cliff debris sitting in front of a
+pale limestone shelf.**
+
+### The distinction I should have been drawing
+
+| | |
+|---|---|
+| **Kills turquoise** | **Clay and soil** — they enter the water column and stay suspended. **Potamos** *(«πορτοκαλί λόγω του αργίλου»)*, **Stavrolimni** *(a stream carrying clay)*, **Red Beach** *(«κεραμιδοκόκκινη άμμος» from the region's red SOILS — and its own page states the causal chain)* |
+| **Does NOT** | **Coarse rock fragments on a pale shelf.** Black pebble lies still. **The water above a limestone floor stays turquoise, and the dark beach makes it look MORE vivid, not less** |
+
+**And Mavri Paralia's own headline says exactly this, which I dismissed as
+vague:** **«Μαύρη άμμος, σπηλιές και ΧΡΩΜΑΤΙΣΤΑ νερά»** — black sand, caves,
+and **COLOURED water.** *That is precisely how you would describe vivid
+turquoise seen against black sand. The contrast is the point of the sentence.*
+
+**I also have to withdraw the line I wrote one section ago** — *"two of the
+three Discovery 10s are black sand and cannot be turquoise."* **That was the
+error stated as a conclusion.**
+
+---
+
+# 📈 REGRADED — TWO NEW 18s
+
+## ⚫ ΑΣΠΕΣ — **10 · 8 = 18**
+
+**Discovery 10:** boat only, *«σχεδόν αδύνατη με τα πόδια»*, one of the most
+isolated and trackless parts of the Asterousia, 4 km east of Tris Ekklisies,
+**visitors mooring to the rock**, cliffs with **rectangular-sided caves**, and
+*«αξίζει να έχετε μαζί σας ένα κουτάλι για να μαζέψετε αλάτι από τις γούβες»*
+— bring a spoon for the salt in the rock pools.
+
+**Colour 8 — turquoise observed, over a limestone shelf, read against black
+sand.** γαλαζοπράσινα is already in the Greek. **`10·8 = 18.`**
+
+## ⚫ ΜΑΥΡΗ ΠΑΡΑΛΙΑ — **10 · 8 = 18**
+
+**Discovery 10:** **no road network at all**, boat from **Tsoutsouras or
+Maridaki**, or through the gorges *«απαιτεί άριστη γνώση του πεδίου»* — expert
+knowledge of the ground. **Caves.** Called *«η πιο καλά κρυμμένη παραλία του
+νησιού»* — the best-hidden beach on the island.
+
+**Colour 8 — «χρωματιστά νερά», observed turquoise. `10·8 = 18.`**
+
+## 🌑 ΣΚΙΑΔΑΚΙ — **9 · 8 = 17**, with a hard warning
+
+**I accept the water is turquoise. I am not conceding the light.**
+
+**Colour 8 on your evidence. Discovery 9** *(a 60-minute walk from Kalami
+exists, unlike Aspes)*. `9·8 = 17.`
+
+> **⚠️ But «Σκιαδάκι» means "LITTLE SHADE", and «ψηλοί γκρεμοί την περιβάλλουν,
+> δίνοντας φυσική σκιά ΟΛΗ ΤΗΝ ΗΜΕΡΑ» — high cliffs shade it all day.**
+>
+> **Turquoise is light returning off a pale floor. In late October the sun tops
+> out at 42° over Crete and cannot clear a high cliff.** Photographs of it
+> turquoise were almost certainly taken under a June sun at 78°. **This is a
+> seasonal warning, not a colour dispute: Skiadaki is a 17 in July and may read
+> dark grey-green on your day.** **Of the whole archive it is the single entry
+> most damaged by your dates.**
+
+---
+
+# 🏆 EIGHTEEN AT 16+ — FOUR 18s
+
+| Score | |
+|---|---|
+| **18** | **ΔΩΜΑΤΑ** 10·8 · **ΜΑΡΜΑΡΑ** 9·9 · **ΑΣΠΕΣ** 10·8 ⭐ · **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** 10·8 ⭐ |
+| **17** | Τρυπητή 9·8 · Γλυκά Νερά 8·9 · Ίλιγκας cove 2 9·8 · Ίλιγκας cove 3 9·8 · Σεϊτάν Λιμάνια 8·9 · **Καμινάκι** 9·8 · **Σκιαδάκι** 9·8 ⚠️ |
+| **16** | Λισσός 9·7 · Αγιοφάραγγο 9·7 · Κεδρόδασος 8·8 · Ίλιγκας main 8·8 · Βαθύ 8·8 · Μπάλος 7·9 · Πρέβελη 8·8 |
+
+**Four 18s · seven 17s · seven 16s. Plus Ελαφονήσι, wanted.**
+
+---
+
+# ⚠️ AND THIS BREAKS THE ITINERARY — the Asterousia is now the best region
+
+**Count what is in that one stretch of coast:**
+
+| | |
+|---|---|
+| **ΑΣΠΕΣ** | **18** |
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | **18** |
+| **ΚΑΜΙΝΑΚΙ** | **17** |
+| **ΣΚΙΑΔΑΚΙ** | **17** ⚠️ shade |
+| **ΒΑΘΥ** | **16** |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | **16** |
+
+**SIX entries including two 18s, in one roadless stretch south of Heraklion —
+all reachable from Tris Ekklisies, Tsoutsouras or Maridaki.**
+
+**The Chania side holds: Domata 18, Marmara 18, and five 17s. The Asterousia
+holds two 18s and two 17s.** **These are now the two centres of the trip, and
+they are at opposite ends of the island — and the Asterousia sits on the day
+you were going to spend driving to a Heraklion airport hotel.**
+
+> ## The recommendation this forces
+> **Move the last two nights to the Asterousia — Kalous Limenes, Tsoutsouras or
+> Lentas — instead of Heraklion.**
+>
+> **Sun 1 Nov:** Preveli 16 on the drive east, overnight south
+> **Mon 2 Nov:** **a boat from Tris Ekklisies: ΑΣΠΕΣ 18 + ΚΑΜΙΝΑΚΙ 17**, 1 km
+> apart — *the black cove and the white cove, named after each other* — plus
+> **Αγιοφάραγγο 16** and **Βαθύ 16** by road off the Odigitria track
+> **Tue 3 Nov:** Heraklion is **1h30–2h** from there. **The flight is 14:10.**
+> It works
+>
+> **Μαύρη Παραλία 18 and Σκιαδάκι 17 need Tsoutsouras or Maridaki**, which is a
+> second boat and probably a day too far — **but Mavri Paralia is an 18, and
+> the only 18 in Crete you have not yet found a way to reach.**
