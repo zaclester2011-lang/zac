@@ -3597,3 +3597,89 @@ occupying a line in every table for a fortnight.
 **Scheduled: 15.** Still without a slot: **Μαύρη Παραλία 18** *(Tsoutsouras
 harbour — a second boat day)* and **Σκιαδάκι 17** *(remote, and shaded all day
 under a 42° sun)*.
+
+---
+
+# 🥾 THE PERVOLIANO GORGE IS IN — KAMINAKI 17, EARNED
+
+**«WE CAN WALK THE GORGE.» Then it is scheduled. Here is what it takes and what
+it costs.**
+
+## The walk
+
+> **Περβολιανό φαράγγι** *(also Περβόλα / Γεροντζός)* — **~4 km, ending AT
+> Kaminaki beach.** **2½ hrs down · 3 hrs back up = 5½ hrs on foot.**
+> *«Δεν συνιστάται για αρχάριους πεζοπόρους»* · *«δεν είναι ιδιαίτερα
+> οργανωμένη και απαιτεί προσοχή»* — **unorganised, requires care.**
+> *«Άγριο και αυθεντικό χαρακτήρα.»*
+>
+> **It can also be skirted at the side** with careful walking to reach the lower
+> gorge near the sea — **the escape route if the bed is too much for Jacob.**
+
+**At the bottom: ΚΑΜΙΝΑΚΙ 17 — «Άσπρη Παραλία», the White Beach**, named in
+contrast to the black one a kilometre east. White pebble, usually calm, no
+infrastructure, no road.
+
+## ⚠️ But it will not fit from Plakias
+
+**The arithmetic:** Plakias → Tris Ekklisies is **2–2½ hrs** on mountain roads.
+Start walking 10:30, at the beach 13:00, back up by **17:00** — and **sunset is
+17:20.** **You would be climbing out in the dark.**
+
+## ✅ THE FIX — move Sunday night east, and use Tuesday morning
+
+| Day | | |
+|---|---|---|
+| **Sun 1 Nov** | **Πρέβελη 16** in the morning, **then drive east to an Asterousia base** — Pyrgos, Charakas, Lentas or Tris Ekklisies itself | **1** |
+| **Mon 2 Nov** | **THE PERVOLIANO GORGE.** Start **08:00** · down by **10:30** · **swim 11:00–13:00, inside the colour window** · back up by **16:00** | **ΚΑΜΙΝΑΚΙ 17** |
+| **Tue 3 Nov** | **ΑΓΙΟΦΑΡΑΓΓΟ 16 at first light** — 07:00 away, 25 min down the gorge, swimming by 08:15, out by 09:30. **Heraklion by 11:00. Flight 14:10** | **1** |
+
+**That is the gorge AND Agiofarago — a 17 earned on 5½ hours of foot, and a 16
+on the morning of the flight.**
+
+### What it costs: **ΒΑΘΥ 16 drops.**
+**Vathy sits on the Odigitria road with Agiofarago, and Tuesday morning only has
+room for one.** **Agiofarago wins it** — 9·7 against 8·8, a proper gorge rather
+than a dirt track, and **the Goumenospilio cave above the chapel, where the
+hermits met once a year.**
+
+## 🚫 And one thing I will say once: not Mavri Paralia's gorge
+
+**Μαύρη Παραλία 18 is the only 18 left without a route, and the gorge is not
+it.** *«Οι πεζοπόροι με εμπειρία μπορούν να φτάσουν μέσω φαραγγιών, αλλά αυτό
+απαιτεί **άριστη γνώση του πεδίου** και καλή φυσική κατάσταση.»*
+
+**«Άριστη γνώση του πεδίου» — expert knowledge of the ground — is the same
+phrase that ruled out the Klados and Tripiti gorges.** It means *you cannot
+navigate it from a description.* **With a 13-year-old and no local guide, no.**
+**Boat it from Tsoutsouras on another trip, or leave it.**
+
+---
+
+# 📋 THE FINAL WEEK — 15 SWIMS, SIX SERIOUS HIKES
+
+| Day | Base | | At 16+ |
+|---|---|---|---|
+| **Mon 26** | → Stalos | Land 13:00, 20 min across Akrotiri | **Σεϊτάν Λιμάνια 17** ⚠️ |
+| **Tue 27** | Stalos | **The Paleochora tour**, away 07:00 | **ΔΩΜΑΤΑ 18 · ΜΑΡΜΑΡΑ 18 · Τρυπητή 17 · Γλυκά Νερά 17 · Λισσός 16** |
+| **Wed 28** | Stalos | **Taxi to Aradena, walk the gorge down — 4 hrs** | **Μάρμαρα, earned** |
+| **Thu 29** | Stalos | **Self-drive boat from Chora Sfakion** | **Ίλιγκας 2 — 17 · Ίλιγκας 3 — 17 · Ίλιγκας main 16** |
+| **Fri 30** | Stalos | Southwest 1h50. Park at Elafonissi, walk in | **Κεδρόδασος 16** + Ελαφονήσι |
+| **Sat 31** | Stalos | Northwest 1h15, local taxi up the track | **ΜΠΑΛΟΣ 16** *(or charter retry)* |
+| **Sun 1 Nov** | **→ Asterousia** | 470 steps, then drive east | **ΠΡΕΒΕΛΗ 16** |
+| **Mon 2 Nov** | Asterousia | **THE PERVOLIANO GORGE — 5½ hrs** | **ΚΑΜΙΝΑΚΙ 17** |
+| **Tue 3 Nov** | → home | **Agiofarago at first light**, Heraklion, fly 14:10 | **ΑΓΙΟΦΑΡΑΓΓΟ 16** |
+
+## 🥾 SIX SERIOUS HIKES
+**① Aradena gorge → Marmara, 4 hrs ② Pervoliano gorge → Kaminaki, 5½ hrs
+③ Agiofarago gorge ④ Preveli, 470 steps ⑤ Kedrodasos coast path
+⑥ Balos descent** — plus the **two Ilingas coves, reachable only by swimming.**
+
+## 📊 FIFTEEN SWIMS AT 16+
+**Two 18s · four 17s · five 16s scheduled**, out of seventeen in the archive.
+
+**Left behind: ΜΑΥΡΗ ΠΑΡΑΛΙΑ 18** *(no route)*, **ΣΚΙΑΔΑΚΙ 17** *(shaded all
+day)*, **ΒΑΘΥ 16** *(no room on the flight morning)*.
+
+> **One booking change makes it work: Sunday 1 November south of Heraklion, not
+> at Plakias and not at the airport.**
