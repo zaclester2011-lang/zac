@@ -2909,3 +2909,105 @@ and a canteen — the Mani went from six entries and a 26 to zero)* ·
 > **The single most destructive filter was reading the Greek — it removed more
 > than access, geography, temperature and season combined, and it should have
 > run first.**
+
+---
+
+# 📌 ZAC'S CALLS APPLIED — FOURTEEN IN REACH
+
+| Call | Done |
+|---|---|
+| *"lissos looks good"* | **Λισσός 16 RESTORED** |
+| *"keep agiofarrago"* | **Αγιοφάραγγο 16 RESTORED** |
+| *"agios antonios is out of reach"* | **Out** — 2 hrs each way on the E4 east of Sougia, and the tour no longer stops there |
+| *"martsalo is a worse agiofarrago"* | **Out.** Correct — same monastery road, same gorge format, and Martsalo's own page gives *«βαθιά μπλε, βαθαίνουν απότομα»* |
+| *"elafonnisi is in with kedrodosas"* | **In, paired on Friday.** 1 km apart |
+| *"aspes… its in"* | **In as a wanted entry — and its grade was wrong** |
+
+**Lissos and Agiofarago are both Colour 7, so they come in on judgement, not on
+the turquoise test** — the same standing as Preveli. **That is a legitimate
+override: it is your list.**
+
+## 🖤 ΑΣΠΕΣ — I had the sand right and the grade badly wrong
+
+**The sand:** every source agrees — **«σκούρα, σχεδόν μαύρη και χοντρόκοκκη»**,
+dark, almost black, coarse. One adds that **«το σκούρο χρώμα της άμμου είναι
+σχετικά σπάνιο φαινόμενο στις παραλίες των Αστερουσίων»** — rare for the
+region. **The "white" in Άσπρες is the CLIFFS, not the sand. Colour 6 stands.**
+
+**The grade:** I had this at the bottom of the cut list. **It belongs at the
+top.**
+
+> *«Η πρόσβαση στην παραλία είναι **σχεδόν αδύνατη με τα πόδια**, προσεγγίζεται
+> **μόνο με σκάφος**»* — access on foot almost impossible, **boat only.**
+> In *«μια από τις πιο απομονωμένες και δύσβατες περιοχές των Αστερουσίων
+> Όρεων»*. **Οι επισκέπτες δένουν τις βάρκες τους στα βράχια** — visitors tie
+> their boats to the rocks. High cliffs with **caves whose sides are
+> rectangular.** And: **«αξίζει να έχετε μαζί σας ένα κουτάλι για να μαζέψετε
+> αλάτι από τις γούβες»** — bring a spoon to gather salt from the rock pools.
+> Called **«η πιο καλά κρυμμένη παραλία της νότιας Κρήτης.»**
+
+### **DISCOVERY 10 — the second one in the archive, equal to Domata.**
+
+**`10 · 6 = 16`, cut only by the colour floor.** No road, no path, no
+infrastructure, boat access only — **the identical profile that gives Domata
+its 10, on the opposite end of the island.**
+
+**In as a wanted entry, like Elafonissi: admitted for what it is.**
+*A black-sand cove under rectangular caves where you moor to the rock and
+collect salt — that is worth a morning whatever the water does.*
+
+**⚠️ Logistics:** **4 km east of Tris Ekklisies, 58 km south of Heraklion.**
+Boat from **Tris Ekklisies or Tsoutsouras** *(one source mentions a day-trip
+caïque from Tsoutsouras)*. **It needs its own boat, and Monday 2 November
+already has Vathy and Agiofarago off the monastery road — which is west of
+Tris Ekklisies. Realistically Aspes is a separate trip, or it replaces Vathy.**
+
+---
+
+# 🏆 THE LIST — FOURTEEN AT 16+ IN REACH
+
+| # | Beach | Score | D · C | Day |
+|---|---|---|---|---|
+| 1 | **ΔΩΜΑΤΑ** | **18** | **10**·8 | **Tue 27** |
+| 2 | **ΜΑΡΜΑΡΑ** | **18** | 9·**9** | **Tue + Wed** |
+| 3 | **Τρυπητή** | **17** | 9·8 | **Tue 27** |
+| 4 | **Γλυκά Νερά** | **17** | 8·**9** | **Tue 27** |
+| 5 | **Ίλιγκας cove 2** | **17** | 9·8 | **Thu 29** |
+| 6 | **Ίλιγκας cove 3** | **17** | 9·8 | **Thu 29** |
+| 7 | **Σεϊτάν Λιμάνια** | **17** | 8·**9** | **Mon 26** ⚠️ |
+| 8 | **Λισσός** | **16** | **9**·7 | **Tue 27** — *ask the boat to stop* |
+| 9 | **Αγιοφάραγγο** | **16** | **9**·7 | **Mon 2 Nov** |
+| 10 | **Κεδρόδασος** | **16** | 8·8 | **Fri 30** |
+| 11 | **Ίλιγκας main** | **16** | 8·8 | **Thu 29** |
+| 12 | **Βαθύ** | **16** | 8·8 | **Mon 2 Nov** |
+| 13 | **ΜΠΑΛΟΣ** | **16** | 7·**9** | **Sat 31** |
+| 14 | **ΠΡΕΒΕΛΗ** | **16** | 8·8 | **Sun 1 Nov** |
+
+**Two 18s · five 17s · seven 16s.**
+
+## ➕ In the week, cut on the weak link, wanted anyway
+| | | |
+|---|---|---|
+| **ΕΛΑΦΟΝΗΣΙ** | D**5**·C9 | **Friday, with Kedrodasos — 1 km apart.** Pink sand, shallow turquoise. *You may walk on the pink; you may not cross the fenced vegetation or take sand (Law 1650/86)* |
+| **ΑΣΠΕΣ** | D**10**·C6 | **Boat only from Tris Ekklisies or Tsoutsouras.** The archive's second Discovery 10 |
+
+## 📅 THE WEEK
+
+| Day | | |
+|---|---|---|
+| **Mon 26** | Land 13:00 → Akrotiri | **Σεϊτάν Λιμάνια 17** |
+| **Tue 27** | **The Paleochora tour** | **ΔΩΜΑΤΑ 18 · ΜΑΡΜΑΡΑ 18 · Τρυπητή 17 · Γλυκά Νερά 17 · Λισσός 16** |
+| **Wed 28** | Aradena gorge on foot | **Μάρμαρα, earned** |
+| **Thu 29** | Self-drive, Chora Sfakion | **Ίλιγκας 2 — 17 · Ίλιγκας 3 — 17 · Ίλιγκας main 16** |
+| **Fri 30** | Southwest, 1h50 | **Κεδρόδασος 16 + Ελαφονήσι** |
+| **Sat 31** | Northwest, 1h15 | **ΜΠΑΛΟΣ 16** *(or the charter retry)* |
+| **Sun 1 Nov** | → Plakias | **ΠΡΕΒΕΛΗ 16** |
+| **Mon 2 Nov** | → Heraklion, via Odigitria | **Αγιοφάραγγο 16 · Βαθύ 16** *(Aspes needs its own boat)* |
+
+**Tuesday carries five, including both 18s. Thursday three. Fourteen at 16+
+plus two wanted — sixteen swims in eight days.**
+
+> **Add one line to the charter email: "Could you also stop at LISSOS?"**
+> It is 3 km west of Sougia, directly on the Paleochora–Trypiti leg, and the
+> **Asklepieion** — where the sick came from across Crete for the healing
+> waters — is ten minutes up the valley from the sand.
