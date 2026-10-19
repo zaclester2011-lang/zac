@@ -3094,3 +3094,96 @@ Tsoutsouras** *(a day-trip caïque reportedly runs from Tsoutsouras)*.
 **Neither Skiadaki nor Aspes changes the 16+ count: both compute to 16 and both
 fail the colour floor. Aspes earns its place on Discovery 10 regardless.
 Skiadaki does not, because it is in shadow.**
+
+---
+
+# 🏔 THE ASTEROUSIA FOUR — and KAMINAKI is a 17
+
+**Zac had the cluster right and one location wrong. All FOUR are in the same
+Asterousia stretch — Aspes included.** Every source puts Aspes **58 km south
+of Heraklion, 4 km east of Tris Ekklisies, and 1 km east of Kaminaki.**
+
+**West to east along the coast: Σκιαδάκι — Μαύρη Παραλία — Καμινάκι — Άσπες.**
+All boat-access from **Tris Ekklisies, Tsoutsouras or Maridaki.**
+
+## ⭐ ΚΑΜΙΝΑΚΙ — **9 · 8 = 17.** A new entry, and the name is the evidence
+
+> **It is also called «ΑΣΠΡΗ ΠΑΡΑΛΙΑ» — WHITE BEACH — and the sources state
+> the name exists to distinguish it from «the nearby BLACK beach at Aspes,
+> which has dark pebbles and lies 1 km east.»**
+
+**That resolves my etymology error completely.** I had assumed Άσπες meant
+white and the sand contradicted it. **Wrong twice over: Άσπες means
+*landslide*, and the WHITE beach is Kaminaki, next door.** **The two are a
+named pair, defined against each other by the colour of their floors.**
+
+| | |
+|---|---|
+| **Where** | **58 km south of Heraklion**, at the mouth of the **Perivolianou gorge**, southeast foothills of the Asterousia |
+| **Port** | **Tris Ekklisies, 3 km west** |
+| **Access** | *«Η πρόσβαση γίνεται κυρίως από τη θάλασσα, καθώς η περιοχή και το φαράγγι είναι πολύ τραχιά και μακριά από οποιοδήποτε οδικό δίκτυο»* — **mainly by sea; the area and the gorge are very rugged and far from any road network** |
+| **Beach** | **Pebble.** Water listed as γαλάζιο. **Usually calm and secluded** |
+
+**Discovery 9** — boat-first, no road network, a rugged gorge behind it; one
+below Aspes only because Aspes' own page calls walking *«σχεδόν αδύνατη»*.
+
+**Colour 8 — on the strongest substrate signal in the archive: the beach is
+NAMED WHITE, in explicit contrast to a black beach 1 km away.** That is the
+same mechanism as Lakkoudi's *άσπρα βότσαλα* and the Ilingas coves' *λευκό
+βότσαλο* — **but here the locals put it in the name.**
+
+### `9 · 8 = 17` — joining Trypiti, Glyka Nera, the Ilingas coves and Seitan Limania.
+
+## ❌ ΜΑΥΡΗ ΠΑΡΑΛΙΑ — **10 · 6 = 16**, cut on the colour floor
+
+**Between Skiadaki and Kaminaki, in the heart of the Asterousia.**
+
+| | |
+|---|---|
+| **Access** | **No road network at all.** Boat from **Tsoutsouras or Maridaki.** *«Οι πεζοπόροι με εμπειρία μπορούν να φτάσουν μέσω φαραγγιών, αλλά αυτό απαιτεί **άριστη γνώση του πεδίου** και καλή φυσική κατάσταση»* — through the gorges, needing **expert knowledge of the ground** |
+| **Discovery** | **10.** The archive's third |
+| **Colour** | **It is called ΜΑΥΡΗ ΠΑΡΑΛΙΑ — BLACK BEACH.** One headline: *«Μαύρη άμμος, σπηλιές και χρωματιστά νερά»* — black sand, caves, **"coloured" water**, which over a black floor means banded deep blue and green |
+
+**Colour 6. Cut on the floor — for the same reason as Aspes, Potamos and Red
+Beach.** *A third Discovery 10 that cannot be turquoise.*
+
+## ❌ ΣΚΙΑΔΑΚΙ — **9 · 6 = cut.** Shaded all day, as graded
+## ❌ ΑΣΠΕΣ — **10 · 6 = 16**, cut on the floor. **Stays as a wanted entry**
+
+---
+
+## 🚤 ONE BOAT, THE WHOLE CLUSTER
+
+**Kaminaki 17 and Aspes are 1 km apart, both 3–4 km from Tris Ekklisies
+harbour. Mavri Paralia and Skiadaki lie west, toward Tsoutsouras and Maridaki.**
+
+> **A single morning's boat from Tris Ekklisies delivers KAMINAKI 17 + ASPES —
+> a white-pebble cove and a black-sand cove one kilometre apart, named after
+> each other.** Add **Vathy 16** and **Αγιοφάραγγο 16** by road off the
+> Odigitria track and that is **four in a day.**
+
+**⚠️ But it is 2½–3 hrs from Stalos.** Monday 2 November already carries
+Agiofarago and Vathy and ends at Heraklion for the flight. **Adding a boat
+charter to that day is ambitious — this cluster may be the argument for
+spending the last night near Tsoutsouras or Kalous Limenes rather than
+Heraklion.**
+
+---
+
+# 📋 FIFTEEN AT 16+ IN REACH
+
+| Score | |
+|---|---|
+| **18** | **ΔΩΜΑΤΑ** 10·8 · **ΜΑΡΜΑΡΑ** 9·9 |
+| **17** | Τρυπητή 9·8 · Γλυκά Νερά 8·9 · Ίλιγκας cove 2 9·8 · Ίλιγκας cove 3 9·8 · Σεϊτάν Λιμάνια 8·9 · **ΚΑΜΙΝΑΚΙ 9·8 ⭐** |
+| **16** | Λισσός 9·7 · Αγιοφάραγγο 9·7 · Κεδρόδασος 8·8 · Ίλιγκας main 8·8 · Βαθύ 8·8 · Μπάλος 7·9 · Πρέβελη 8·8 |
+
+**Two 18s · six 17s · seven 16s.**
+
+**Plus wanted, cut on the weak link:** **Ελαφονήσι** D5·C9 · **Άσπες** D10·C6
+
+> **The archive now holds three Discovery 10s — Δώματα, Άσπες and Μαύρη
+> Παραλία — and only Domata's water has any chance of being turquoise.
+> Two of the three are black sand. That is the mechanism in one sentence: the
+> most unreachable coast in Crete is unreachable because it is collapsing
+> cliff, and collapsing cliff makes a dark floor.**
