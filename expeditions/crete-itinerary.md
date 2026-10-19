@@ -3011,3 +3011,86 @@ plus two wanted — sixteen swims in eight days.**
 > It is 3 km west of Sougia, directly on the Paleochora–Trypiti leg, and the
 > **Asklepieion** — where the sick came from across Crete for the healing
 > waters — is ten minutes up the valley from the sand.
+
+---
+
+# 🔍 SKIADAKI vs ASPES — two beaches, 1.6 km apart
+
+**Not the same place.** Sources blur them because both are boat-access coves in
+the same remote stretch of the Asterousia, but they are distinct.
+
+## ✏️ First, a correction to my own guess
+
+**I assumed «Άσπρες» meant "white" and the sand contradicted the name.
+Wrong on the etymology:**
+
+> **«Άσπες» comes from the Greek for a MOUNTAIN COLLAPSE — a landslide — after
+> the sliding cliffs of the area.**
+
+**The name was never about colour.** The dark sand and the name agree perfectly;
+it was my assumption that was wrong. *(It is also listed as **Aspes/Mavri** —
+Μαύρη, "black" — on some sites, which says it plainly.)*
+
+## 🖤 ΑΣΠΕΣ — **D10 · C6 = 16**, cut on the colour floor
+
+**Confirmed as graded last turn. Discovery 10 — the archive's second, equal to
+Domata:** boat only, *«σχεδόν αδύνατη με τα πόδια»*, one of the most isolated
+and trackless parts of the Asterousia, 4 km east of Tris Ekklisies, visitors
+mooring to the rock. **Colour 6 on dark, almost black, coarse sand.**
+
+**Stays IN as a wanted entry** — admitted for what it is, like Elafonissi.
+
+## 🌑 ΣΚΙΑΔΑΚΙ — **D9 · C6 = cut**, and the reason is the name itself
+
+| | |
+|---|---|
+| **Where** | **At the exit of the Kakoperatos gorge**, 66 km south of Heraklion, 10 km south of Achendrias |
+| **Beach** | **Fine pebble.** No organisation of any kind |
+| **Access** | **By sea, or ~60 minutes on foot from the neighbouring Kalami beaches** |
+| **Name** | **«Σκιαδάκι» means "LITTLE SHADE"** |
+| **The killer** | **«ψηλοί γκρεμοί την περιβάλλουν, δίνοντας φυσική σκιά ΟΛΗ ΤΗΝ ΗΜΕΡΑ»** — high cliffs give natural shade **all day** |
+| **Water colour** | **No data in any language** |
+
+**Discovery 9** — not 10, because unlike Aspes there *is* a walking route, an
+hour from Kalami. *(It may be the same cove as **Petrigiari**, or adjacent —
+sources disagree.)*
+
+### Why Colour 6, and why this one is not borderline
+
+**A cove shaded all day cannot be turquoise. Turquoise is light that enters the
+water, reflects off a pale floor and returns.** In late October the sun tops
+out at **42°** over Crete — **that is exactly the geometry that cannot clear a
+high cliff.** The beach is *named* for the fact that light never reaches it.
+
+**Trypiti loses a point for shading part of the day. Skiadaki is shaded all of
+it.** Pebble floor, no colour record, permanent shadow — **Colour 6. Cut.**
+
+> **Lit, it would be a 16. It is not lit. That is its defining feature and the
+> locals named it after that.** *(It is a superb spot for a hot August
+> afternoon, which is the opposite of your week.)*
+
+## ➕ But together they are one boat trip
+
+**Aspes and Skiadaki are 1.6 km apart**, both reached from **Tris Ekklisies or
+Tsoutsouras** *(a day-trip caïque reportedly runs from Tsoutsouras)*.
+
+> **If you ever do an Asterousia boat morning, it is one hire for both** — and
+> you would add **Vathy 16** and **Agiofarago 16** by road the same day off the
+> Odigitria Monastery track. **That is the shape of a proper Asterousia day,
+> and it is 2½–3 hrs from Stalos, so it belongs to Monday 2 November or to a
+> different trip.**
+
+---
+
+# 📋 UNCHANGED — FOURTEEN AT 16+ IN REACH
+
+**ΔΩΜΑΤΑ 18 · ΜΑΡΜΑΡΑ 18 · Τρυπητή 17 · Γλυκά Νερά 17 · Ίλιγκας cove 2 — 17 ·
+Ίλιγκας cove 3 — 17 · Σεϊτάν Λιμάνια 17 · Λισσός 16 · Αγιοφάραγγο 16 ·
+Κεδρόδασος 16 · Ίλιγκας main 16 · Βαθύ 16 · Μπάλος 16 · Πρέβελη 16**
+
+**Plus wanted, cut on the weak link:** **Ελαφονήσι** *(D5·C9)* ·
+**Άσπες** *(D10·C6)*
+
+**Neither Skiadaki nor Aspes changes the 16+ count: both compute to 16 and both
+fail the colour floor. Aspes earns its place on Discovery 10 regardless.
+Skiadaki does not, because it is in shadow.**
