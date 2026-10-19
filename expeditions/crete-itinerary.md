@@ -2654,3 +2654,89 @@ water nobody has described, and **Preveli**, which is γαλαζοπράσινα
 
 **And the two 18s remain the two that matter: one you cannot earn and one you
 can.**
+
+---
+
+# 💎 TURQUOISE OR NOTHING — NINE IN REACH
+
+**Zac: "they all have to be turquoise." Colour 8 was not strict enough —
+it let blue-green over dark rock through. The test is now the word itself.**
+
+## The rule
+
+**✅ COUNTS:** **τιρκουάζ** attested · **observed by you** · or
+**γαλαζοπράσινο with a pale substrate NAMED** — white sand, white pebble, or
+shallow. *The substrate is what makes blue-green read as turquoise instead of
+olive.*
+
+**❌ DOES NOT:** **γαλάζιο** *(plain blue)* · **καταγάλανα** · **βαθύ μπλε** ·
+and blue-green over a **dark, rocky or deep** bottom.
+
+---
+
+# ✅ THE NINE
+
+| # | Beach | Score | D · C | Day | The evidence |
+|---|---|---|---|---|---|
+| 1 | **ΜΑΡΜΑΡΑ** | **18** | 9·**9** | **Tue + Wed** | **Turquoise, observed.** Caused by the **white limestone** cliffs |
+| 2 | **Γλυκά Νερά** | **17** | 8·**9** | **Tue 27** | **Turquoise, observed.** **White pebble — shore AND seabed** |
+| 3 | **Ίλιγκας cove 2** | **17** | 9·8 | **Thu 29** | **«τιρκουάζ νερά» · «λευκό βότσαλο».** Swim-in only |
+| 4 | **Ίλιγκας cove 3** | **17** | 9·8 | **Thu 29** | Same. Caves in the rock |
+| 5 | **Σεϊτάν Λιμάνια** | **17** | 8·**9** | **Mon 26** | **Caribbean, observed.** γαλαζοπράσινο ⚠️ *path closed* |
+| 6 | **Κεδρόδασος** | **16** | 8·8 | **Fri 30** | **«Λευκή άμμος» + «Ρηχά»** on its own page — **the clearest mechanism on the list** |
+| 7 | **Ίλιγκας main** | **16** | 8·8 | **Thu 29** | **τιρκουάζ · λευκό βότσαλο** |
+| 8 | **Βαθύ** | **16** | 8·8 | **Mon 2 Nov** | **«τιρκουάζ νερά»** — *«μια γαλάζια όαση»* |
+| 9 | **ΜΠΑΛΟΣ** | **16** | 7·**9** | **Sat 31** | **«λευκή άμμος και τα ανοιχτόχρωμα τιρκουάζ νερά»**, Natura 2000. *«ρηχά, πεντακάθαρα και **ζεστά**»* |
+| — | *Καρούμες* | *17* | *9·8* | — | *τιρκουάζ in two headlines. **Out of range*** |
+
+**One 18 · four 17s · four 16s. Every single one has the word.**
+
+*Balos footnote: one source notes **«ο βυθός είναι λασπώδης»** in places and
+that shallow water favours microorganisms. Its 9 stands on white sand and
+attested turquoise — but it is a lagoon, not open sea.*
+
+## ⏸ HELD, NOT CUT — DOMATA 18
+
+**Domata is the only entry in the archive whose water has never been
+described** — not a field, not a headline, not a blog. **It is unknown, not
+disproven**, and that is a different thing from Trypiti's Γαλάζιο.
+
+> **It stays on Tuesday because you are going regardless. If the water is
+> turquoise, it re-enters at 18 — and at Discovery 10 it becomes the only
+> possible 19 in Europe. You are the source.**
+
+## ❌ REMOVED — not turquoise
+
+| | | |
+|---|---|---|
+| **Τρυπητή** | *17* | **«Χρώμα νερού: Γαλάζιο» · «Βαθιά» · «βραχώδη βυθό».** *"Like Marmara" was an inference; its own page disagrees* |
+| **Άγιος Παύλος** | *16* | All shades of blue, green and white — **but the sand is «ασημένια και ΚΑΦΕΤΙΑ»**, silver and **brown** |
+| **Πρέβελη** | *16* | **γαλαζοπράσινα at a river mouth with no pale substrate named** |
+| *Previously* | | Φουρνωτή · Σεντόνι · Λισσός · Άγιος Αντώνιος · Αγιοφάραγγο · Μάρτσαλο |
+
+**All nine removals stay in the week as things you pass.** Preveli's palm
+forest and freshwater lagoon are still extraordinary — **they are simply not
+turquoise, and now the list says so.**
+
+---
+
+## 📅 THE WEEK, RESHAPED BY THE RULE
+
+| Day | | At 16+ |
+|---|---|---|
+| **Mon 26** | Land 13:00 → Akrotiri | **Σεϊτάν Λιμάνια 17** |
+| **Tue 27** | **The Paleochora tour** | **ΜΑΡΜΑΡΑ 18 · Γλυκά Νερά 17** *(+ Δώματα, pending your eyes)* |
+| **Wed 28** | **Aradena gorge on foot** | **Μάρμαρα again — earned this time** |
+| **Thu 29** | **Self-drive, Chora Sfakion** | **Ίλιγκας 2 — 17 · Ίλιγκας 3 — 17 · Ίλιγκας main 16** |
+| **Fri 30** | Southwest, 1h50 | **Κεδρόδασος 16** *(+ Elafonissi)* |
+| **Sat 31** | Northwest, 1h15 | **ΜΠΑΛΟΣ 16** |
+| **Sun 1 Nov** | → Plakias | *Preveli — the palm forest, not the list* |
+| **Mon 2 Nov** | → Heraklion | **Βαθύ 16** *(+ Agiofarago, Martsalo on the way)* |
+
+> ### Thursday is now the most valuable day of the week
+> **Three of the nine are in the Ilingas cluster, and Glyka Nera is a fourth —
+> four of nine within 3 km of Chora Sfakion harbour.** The €110 self-drive boat
+> has become the best-value booking in the plan, **and two of them cannot be
+> reached any other way than by swimming to them.**
+
+**Nine confirmed turquoise. One unknown that might be the best of all.**
