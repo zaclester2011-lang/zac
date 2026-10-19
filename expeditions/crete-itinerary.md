@@ -2740,3 +2740,62 @@ turquoise, and now the list says so.**
 > reached any other way than by swimming to them.**
 
 **Nine confirmed turquoise. One unknown that might be the best of all.**
+
+---
+
+# ✅ CORRECTED — TURQUOISE TEST APPLIES TO THE 16s ONLY · ELEVEN IN REACH
+
+**Clarified: the turquoise requirement is the entry test for the 16 band, not a
+re-filter of the whole list.** The 17s and 18s stand as scored.
+**Karoumes is removed outright** — 3h30 east, it was never going to happen.
+
+**Domata returns at 18 and Trypiti at 17.**
+
+| # | Beach | Score | D · C | Day | |
+|---|---|---|---|---|---|
+| 1 | **ΔΩΜΑΤΑ** | **18** | **10**·8 | **Tue 27** | **Discovery 10 — nothing else in Europe.** No road, no building. *Its Colour is the one unread figure in the archive* |
+| 2 | **ΜΑΡΜΑΡΑ** | **18** | 9·**9** | **Tue + Wed** | **Turquoise off white limestone, observed.** By sea Tuesday, **down the Aradena gorge Wednesday** |
+| 3 | **Τρυπητή** | **17** | 9·8 | **Tue 27** | Gorge mouth at Voukilasi. **Swim it late morning** — it shades early |
+| 4 | **Γλυκά Νερά** | **17** | 8·**9** | **Tue 27** | **Turquoise over white pebble, shore and seabed** |
+| 5 | **Ίλιγκας cove 2** | **17** | 9·8 | **Thu 29** | **Reachable only by swimming.** λευκό βότσαλο |
+| 6 | **Ίλιγκας cove 3** | **17** | 9·8 | **Thu 29** | Same swim. Caves in the rock |
+| 7 | **Σεϊτάν Λιμάνια** | **17** | 8·**9** | **Mon 26** | **Caribbean colour.** 20 min from the aircraft ⚠️ *path closed since April* |
+| 8 | **Κεδρόδασος** | **16** | 8·8 | **Fri 30** | **«Λευκή άμμος» + «Ρηχά».** Natura 2000 juniper forest |
+| 9 | **Ίλιγκας main** | **16** | 8·8 | **Thu 29** | **τιρκουάζ · λευκό βότσαλο** |
+| 10 | **Βαθύ** | **16** | 8·8 | **Mon 2 Nov** | **«τιρκουάζ νερά»** — *«μια γαλάζια όαση»* |
+| 11 | **ΜΠΑΛΟΣ** | **16** | 7·**9** | **Sat 31** | **«λευκή άμμος και ανοιχτόχρωμα τιρκουάζ νερά»** |
+
+**Two 18s · five 17s · four 16s. ELEVEN.**
+
+## ❌ The 16s that failed the turquoise test
+
+| | |
+|---|---|
+| **Άγιος Παύλος** | The water is *«όλες τις αποχρώσεις του Μπλε, γαλάζιου, πράσινου ακόμη και του άσπρου»* — **but the sand is «ασημένια και ΚΑΦΕΤΙΑ», silver and BROWN** |
+| **Πρέβελη** | **γαλαζοπράσινα at a river mouth, with no pale substrate named** |
+| *Earlier, at Colour 7* | Φουρνωτή · Σεντόνι · Λισσός · Άγιος Αντώνιος · Αγιοφάραγγο · Μάρτσαλο |
+| **Καρούμες** | **Removed outright — 3h30 east** |
+
+**All eight stay in the week as things you pass**, and two of them are still
+worth the detour on their own terms: **Lissos for the Asklepieion**, and
+**Preveli for the palm forest and the freshwater lagoon** — which is
+extraordinary, and is not turquoise, and the list now says both.
+
+## 📅 THE WEEK
+
+| Day | | At 16+ |
+|---|---|---|
+| **Mon 26** | Land 13:00 → Akrotiri → Stalos | **Σεϊτάν Λιμάνια 17** |
+| **Tue 27** | **The Paleochora tour** *(leave 07:00)* | **ΔΩΜΑΤΑ 18 · ΜΑΡΜΑΡΑ 18 · Τρυπητή 17 · Γλυκά Νερά 17** |
+| **Wed 28** | **Taxi to Aradena, walk the gorge down** | **Μάρμαρα on foot — the walk of the week** |
+| **Thu 29** | **Self-drive boat, Chora Sfakion** | **Ίλιγκας 2 — 17 · Ίλιγκας 3 — 17 · Ίλιγκας main 16** |
+| **Fri 30** | Southwest, 1h50 | **Κεδρόδασος 16** *(+ Elafonissi)* |
+| **Sat 31** | Northwest, 1h15 | **ΜΠΑΛΟΣ 16** *— or the charter retry if Tuesday blew* |
+| **Sun 1 Nov** | → Rethymno / Plakias | *Preveli — the palm forest* |
+| **Mon 2 Nov** | → Heraklion, via Odigitria | **ΒαθΥ 16** *(+ Agiofarago, Martsalo on the way)* |
+
+**Tuesday carries four, including both 18s. Thursday carries three, two of them
+reachable only by swimming.**
+
+> **Everything on this list is now either turquoise on the record, or — in
+> Domata's single case — the one water in Europe nobody has ever described.**
