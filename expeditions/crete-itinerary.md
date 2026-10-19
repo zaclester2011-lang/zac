@@ -3514,3 +3514,86 @@ ever becomes its own trip.**
 nothing and might be the most fun.
 
 **The list is unchanged: EIGHTEEN at 16+, four 18s.**
+
+---
+
+# 🥾 ARE THE FOUR EASTS WALKABLE? — three yes, one no
+
+| | Walkable? | |
+|---|---|---|
+| **ΑΣΠΕΣ 18** | **❌ NO** | *«σχεδόν αδύνατη με τα πόδια, προσεγγίζεται **ΜΟΝΟ με σκάφος**»* — boat from Tris Ekklisies. **Every source. This is its Discovery 10** |
+| **ΚΑΜΙΝΑΚΙ 17** | **✅ YES** | **The Περβολιανό gorge ends at the beach.** ~4 km · **2½ hrs down, 3 hrs up** · not for beginners · unorganised, requires care. *Can also be skirted at the side to reach the lower gorge* |
+| **ΑΓΙΟΦΑΡΑΓΓΟ 16** | **✅ YES** | **20–30 min down the gorge** from the car park — and **the hire car's insurance stops where the dirt begins**, so the walk is longer than that |
+| **ΒΑΘΥ 16** | **✅ YES** | Dirt road west past Odigitria. **Same insurance rule, so you walk the last stretch** — *distance from the tarmac is not stated anywhere, so treat it as unquantified* |
+
+## ⚠️ But the four do not share a day — they are two separate sub-regions
+
+**This is the thing that decides Monday.**
+
+| | |
+|---|---|
+| **EASTERN Asterousia** | **Τρεις Εκκλησιές** *(via Paranymfoi, ~60 km south of Heraklion)* — the harbour for **Άσπες** and **Καμινάκι**, and the foot of the **Περβολιανό gorge** |
+| **WESTERN Asterousia** | **Μονή Οδηγήτριας** *(near Kalous Limenes)* — the approach for **Αγιοφάραγγο** and **Βαθύ** |
+
+**Separate approach roads, joined only by winding mountain tracks. One day gets
+you one side, not both.**
+
+## The three honest options for Monday 2 November
+
+**① THE BOAT — Άσπες 18 + Καμινάκι 17** *(1 km apart, Tris Ekklisies)*
+**Two entries, an 18 and a 17, and Aspes is unobtainable any other way.**
+**Delivered, not earned.**
+
+**② THE GORGE — Καμινάκι 17 on foot**
+**Περβολιανό: 2½ down, 3 up — 5½ hrs. A full day for one entry**, and the
+biggest walk in the east. **Earned, but Aspes is lost.**
+
+**③ THE ROAD WALKS — Αγιοφάραγγο 16 + Βαθύ 16** *(Odigitria side)*
+**Two entries, two moderate walks, one road. Earned. But two 16s against an
+18 and a 17.**
+
+> ### Recommendation: ①, the boat.
+> **Aspes is the only Discovery 10 in Crete you can actually get to** — Domata
+> needs a different boat on the other side of the island, and Mavri Paralia has
+> no route at all. **An 18 you can only arrive at by sea is worth more than two
+> 16s you can walk to**, and the week already holds **five serious hikes**
+> including the Aradena gorge.
+>
+> **If Jacob has had enough of walking by 2 November — and after eight days he
+> may have — the boat is also the kinder day.**
+
+---
+
+# 🗑 ΚΑΡΟΥΜΕΣ — REMOVED PERMANENTLY
+
+**Deleted from the archive, not parked.**
+
+**Καρούμες 17** *(9·8)* — **τιρκουάζ attested in two Greek headlines**, a 1½-hr
+walk down the Chochlakies gorge which holds water most of the year, fine
+pebble, calm, east-facing.
+
+**Why it goes:** **Palekastro is 2 hours BEYOND Heraklion**, 29 km southeast of
+Sitia. Add 1½ hrs down the gorge and 1½ back. **Against a 14:10 flight on
+3 November it was never possible from any base in this plan**, and it has been
+occupying a line in every table for a fortnight.
+
+> **It is a genuine 17 and it belongs to a different trip — east Crete from a
+> Sitia or Makry Gialos base, together with Αθερίνα, Ρίχτης and the Κάψα
+> gorge.** **Logged there and struck from here.**
+
+---
+
+# 📋 SEVENTEEN AT 16+ — Karoumes struck
+
+| Score | West | East |
+|---|---|---|
+| **18** | **ΔΩΜΑΤΑ** 10·8 · **ΜΑΡΜΑΡΑ** 9·9 | **ΑΣΠΕΣ** 10·8 · **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** 10·8 |
+| **17** | Τρυπητή · Γλυκά Νερά · Ίλιγκας cove 2 · Ίλιγκας cove 3 · Σεϊτάν Λιμάνια | Καμινάκι · Σκιαδάκι |
+| **16** | Λισσός · Ίλιγκας main · Κεδρόδασος · Μπάλος | Αγιοφάραγγο · Βαθύ |
+| **16** | **Πρέβελη** *(middle — Rethymno)* | |
+
+**Four 18s · seven 17s · six 16s = SEVENTEEN.** Plus **Ελαφονήσι**, wanted.
+
+**Scheduled: 15.** Still without a slot: **Μαύρη Παραλία 18** *(Tsoutsouras
+harbour — a second boat day)* and **Σκιαδάκι 17** *(remote, and shaded all day
+under a 42° sun)*.
