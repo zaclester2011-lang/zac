@@ -5011,3 +5011,92 @@ back — the car is waiting. Leave at first light.**
 **Two big walks:** Aradena 4 hrs · Pervoliano 5½ hrs
 **Two swim-ins:** Ilingas coves 2 and 3
 **One boat that cannot be substituted:** Domata
+
+---
+---
+
+# 📆 THE ARRANGEMENT — clusters into days
+
+**Nine days. Six full-day clusters, three half-days. It fits exactly — with one
+consequence worth knowing, flagged at the bottom.**
+
+| | | Cluster | At 26+ |
+|---|---|---|---|
+| **MON 26** | Land 13:00 → Akrotiri → Stalos | **⑤** | **Σεϊτάν Λιμάνια 26** |
+| **TUE 27** | **Σούγια — THE BOAT** | **①** | **ΔΩΜΑΤΑ 28 · Τρυπητή 26 · Λισσός 26 · Άγιος Αντώνιος 26 · Σεντόνι 26** |
+| **WED 28** | **Αράδαινα gorge, 4 hrs** *(splits)* | **②b** | **ΜΑΡΜΑΡΑ 27** |
+| **THU 29** | Χώρα Σφακίων, on foot | **②a** | **Ίλιγκας cove 2 — 27 · cove 3 — 27 · Ίλιγκας main 26 · Γλυκά Νερά 26** |
+| **FRI 30** | Southwest, 1h50 | **③** | **Τα Κολπάκια 26 · Κεδρόδασος 26** *(+ Βουλόλιμνη 24, Ελαφονήσι 24)* |
+| **SAT 31** | Northwest, 1h15 | **④** | **ΜΠΑΛΟΣ 26** |
+| **SUN 1 NOV** | **Πρέβελη, then drive east** | **⑥** | **ΠΡΕΒΕΛΗ 26** |
+| **MON 2 NOV** | **Περβολιανό gorge, 5½ hrs** *(splits)* | **⑧** | **ΚΑΜΙΝΑΚΙ 27** |
+| **TUE 3 NOV** | First light, then fly 14:10 | **⑦** | **ΑΓΙΟΦΑΡΑΓΓΟ 26** *(+ Βαθύ 26 if quick)* |
+
+### **18 of 19 at 26+. Only Σκιαδάκι misses — all-day shade, which your dates make worse.**
+
+---
+
+## 🛏 WHERE YOU SLEEP
+
+| | |
+|---|---|
+| **26–31 Oct** | **Cretan Dream, Stalos** — 6 nights. Covers clusters ①–⑤ |
+| **1 Nov** | **Eastern Asterousia — Πύργος, Χαράκας or Τρεις Εκκλησιές.** *Must be this side: the gorge needs an 08:00 start* |
+| **2 Nov** | **Move west — Μάταλα or Καλοί Λιμένες.** *Puts Agiofarago 25 minutes away on flight morning* |
+
+> **Two eastern bases, one night each. That is the price of getting both
+> Asterousia clusters — they sit on different roads.**
+>
+> **Simpler alternative: both nights at ΜΑΤΑΛΑ** *(a proper town — hotels,
+> restaurants, good for Grace)*. **Then Monday becomes Αγιοφάραγγο 26 + Βαθύ 26
+> and you lose Καμινάκι 27 and the Pervoliano gorge.** **17 instead of 18, one
+> base instead of two, and no big second walk.** Your call.
+
+---
+
+## 🌬 THE ONE CONSEQUENCE: there is no spare day at Stalos
+
+**Five full-day clusters (①, ②a, ②b, ③, ④) into five Stalos days (Tue–Sat).
+Exactly fits. No slack.**
+
+**And the Sougia boat is the only weather-dependent thing in the week.**
+
+> ### The rule: THE BOAT TAKES THE FIRST CALM MORNING.
+> **Check Windy and poseidon.hcmr.gr the night before, every night.** If Tuesday
+> is rough, **swap it with Wednesday** — the Aradena gorge is a walk and does
+> not care about the sea. **Keep swapping until the boat goes.**
+>
+> **The walks are weather-tolerant. The boat is not. So the boat floats, and
+> the walks fill whatever is left.**
+>
+> **If it never goes: you lose Domata 28 and four 26s.** That is the single
+> biggest risk in the plan, and it is why the boat sits on day two rather than
+> day six.
+
+---
+
+## 🥾 WHICH DAYS SPLIT
+
+| | |
+|---|---|
+| **WED 28** | **Aradena gorge, 4 hrs**, rough ground, no shade, no water |
+| **MON 2** | **Pervoliano gorge, 5½ hrs**, unorganised, *«not for beginners»* |
+
+**Everything else works for all five.** **Two cars means nobody has to opt out
+of the holiday to opt out of a gorge** — car two gets Chania, the harbour and
+the spa on the Wednesday.
+
+**Neither gorge needs booking.** Aradena needs a taxi arranged that morning;
+Pervoliano needs nothing. **You decide at breakfast.**
+
+---
+
+## ⏰ TIMING THAT MATTERS, DAY BY DAY
+
+| | |
+|---|---|
+| **Tue 27** | **Domata 12:55–14:30** — the centre of the colour window. **Trypiti late morning**, it shades early |
+| **Wed 28** | **Leave at first light.** 07:30 start = Marmara by 11:30. A 09:00 start arrives with the light already going |
+| **Fri 30** | **Kedrodasos ~13:15** — inside the window, and it is the one with white sand |
+| **Mon 2** | **Away 08:00 · swim 11:00–13:00 · out by 16:00.** Sunset 17:20 |
+| **Tue 3** | **07:00 away, swimming 08:15, Heraklion 11:00, fly 14:10** |
