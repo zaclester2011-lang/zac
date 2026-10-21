@@ -4402,3 +4402,86 @@ Marmara 27 is 8 km west by your own boat.**
 > **This is the answer to the boat question. Not a tour, not a skipper — a
 > 30 hp boat from Sfakia harbour at nine in the morning, four of the
 > seventeen in a day, and nobody telling you when to leave.**
+
+---
+
+# 🔵 ΔΩΜΑΤΑ — COLOUR 8. **28.** The archive's highest.
+
+**«Domata is turquoise by the sand — very very turquoise in fact.»**
+
+## Why this is not the error I just apologised for
+
+**The Mavri Paralia failure was accepting a bare assertion about a beach named
+BLACK BEACH with no colour source in any language, and building a theory to
+justify it. This is different in kind.**
+
+**The claim is localised — "by the sand" — and it resolves a split that was
+already sitting in my own evidence and which I mishandled:**
+
+| Source | Substrate |
+|---|---|
+| Elizabeth Estate | **«γκρίζα αμμουδιά»** — grey **SAND** |
+| travel.gr | *"almost untouched grey **sand**"* |
+| The tour operator | *"untouched gray-**sand** beach"* |
+| cretanbeaches | **«ψιλό βότσαλο»** — fine **PEBBLE** · field: **Βαθύ μπλε** |
+| thisiscrete | ψιλό βότσαλο · **«βαθιά» νερά** |
+
+**I logged "three say sand, two say pebble" as sources disagreeing. They were
+not disagreeing. Domata has both, and the water over each reads differently.**
+
+> **«Βαθύ μπλε» is the field's answer for the WATER BODY — which is the deep
+> part. Zac is describing the SHALLOW MARGIN over fine grey sand. Both are
+> correct.**
+>
+> **This is exactly the reconciliation I got right at Voulolimni — "half
+> turquoise, half light blue" — and then failed to apply here, two sections
+> later.**
+
+### **ΔΩΜΑΤΑ = 10 · 8 · 10 = 28.**
+
+## And why it is 8 and not 9 — stated now, so it does not move again
+
+**Colour 9 in this archive requires turquoise across the water body over a pale
+floor.** Marmara had it withdrawn on exactly that test. Domata fails it on two
+facts that are not observational:
+
+**1 · The cliffs are «ΚΡΟΚΑΛΟΠΑΓΗ» — conglomerate.** Grey-brown cemented
+pebble. **The sand that margin sits on is ground-down conglomerate, so it is
+GREY, not white.** Grey sand gives a greener, duller turquoise than white sand
+does — real, but not Balos and not Kedrodasos.
+
+**2 · Every source that describes the water body says deep blue**, and
+**thisiscrete says «βαθιά»** outright. **The turquoise is the edge, not the
+bay.**
+
+> **8 is also where I had it before I over-corrected to 7. This restores my own
+> earlier reading on better grounds — it does not invent a new high.**
+>
+> **It will not go to 9, and 29 and 30 are not available. If the water looks
+> like Balos when you stand in it, that is a conversation to have in November
+> with your own eyes as the source — not now.**
+
+---
+
+# 🏆 THE ARCHIVE — ONE 28, FOUR 27s, TWELVE 26s
+
+| | /30 | D·C·W |
+|---|---|---|
+| **ΔΩΜΑΤΑ** | **28** | **10**·8·**10** |
+| **ΜΑΡΜΑΡΑ** | **27** | 9·8·10 |
+| **ΚΑΜΙΝΑΚΙ** | **27** | 9·8·10 |
+| **Ίλιγκας cove 2** | **27** | 9·8·10 |
+| **Ίλιγκας cove 3** | **27** | 9·8·10 |
+| **26 ×12** | | Τρυπητή · Λισσός · Αγιοφάραγγο · Σκιαδάκι · Γλυκά Νερά · Σεϊτάν Λιμάνια · Ίλιγκας main · Κεδρόδασος · Κολπάκια Ελαφονησίου · Βαθύ · Πρέβελη · Μπάλος |
+
+**Seventeen at 26+. Domata stands alone at the top.**
+
+## What it changes about the boat question: a little
+
+**Domata is now the archive's single highest entry, and it is the one place
+that is sensibly reached only with a skipper** — the walk does not fit
+daylight, and the Sougia self-drive is 6 nm of unsheltered cliff coast ending
+in a beach landing.
+
+> **Two hours and €60–100 with Meletis or Yannis, out of Sougia, now buys the
+> best water on the list.** **Everything else stays on your feet.**
