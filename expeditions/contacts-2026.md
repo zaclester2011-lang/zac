@@ -125,3 +125,53 @@ cancels a sailing)* · **meteo.gr** *(the forecast Greeks use)* ·
 **Ferryhopper** · **Google Maps with Crete and Milos downloaded offline**
 *(signal drops on the south coast and in the gorges)* · **Organic Maps** for
 dirt tracks and footpaths.
+
+---
+
+# ⛵ SELF-DRIVE BOAT HIRE — WHERE TO SCOUT
+
+**The harbour you hire from decides which beaches you can reach. Go to the
+operator's own site for the TERMS; the aggregators only show you what exists.**
+
+## 🥇 ΣΟΥΓΙΑ — the only harbour that reaches ΔΩΜΑΤΑ 28
+*(Domata 7 km east · Trypiti 5 km east · Lissos 3 km west)*
+
+| | |
+|---|---|
+| **sougiacruises.gr** | **Start here.** Advertises rentals *"with or without a boat driving licence"* and lists **Domata, Trypiti, Agia Roumeli** as destinations. **soygiacruises@hotmail.com · +30 693 407 8684 · +30 697 322 0472** |
+| **creteboattrips.com/activities/sougia-rent-a-boat** | "Sougia Boat Rental" — licence-free, **Creta Mare 550, seats 6**, full instructions and safety briefing. Lists **Domata, Trypiti, Loutro** |
+| **sougiataxi.com/sougia-boat-cruises** | **Vittorakis Sougia Taxi** — with or without a licence, *or* a driver |
+| **taxi-sougia.com/sougia-cruises** | Meletis' side of the same operation. **meletistaxisougia@gmail.com · +30 694 085 9860** |
+
+## 🥈 ΧΩΡΑ ΣΦΑΚΙΩΝ — three 27s and two 26s
+*(Ilingas coves 2 km · Glyka Nera 3 km · Loutro 5 km · Marmara 8 km)*
+
+| | |
+|---|---|
+| **notosmare.com** | **Rent a boat Chania & Sfakia.** Licence-free **Kreta Mare, up to 6**, from **Sfakia / Marathi / Kolymvari**, **€210**. Reviewers praise the training as detailed |
+| | *The Sfakia licence-free boats are **max 4 people** per one listing, and run **09:00 to sunset.** ~**€95 low season** — October qualifies* |
+
+## 🥉 Other harbours
+| | |
+|---|---|
+| **paleochorarentaboat.gr** · **paleochoradiscover.com** | **Paleochora.** 30 hp, 5.5 m Prestige 550, 5 passengers, **from €180**. Further west — longer run to everything |
+| **rodanthirentboat.gr** | **Kokkinos Pyrgos**, east. 30 hp licence-free, **€130–190**, safety briefing and route guidance. *Only useful if you base in the Asterousia* |
+
+## 📊 Aggregators — for comparing, not for booking
+**clickandboat.com** · **samboat.com** · **nautal.com** · **scansail.com** ·
+**sailo.com**
+*They list inventory and rough prices. **None of them states a range limit, a
+beaching clause or an insurance excess** — which is exactly what you need to
+know. Always close the deal with the operator.*
+
+## ❗ THE FIVE QUESTIONS — ask every operator the same thing
+
+> *"Do you rent **self-drive without a licence in late October**?
+> **Can a self-drive rental reach Domata, 7 km east — or is there a distance
+> limit?**
+> Can we **anchor off and swim ashore** there?
+> **What engine**, and is a licence required?
+> What does the **insurance and deposit** cover?"*
+
+**Send it on VIBER or WHATSAPP, not email.** **Get the Domata answer in
+writing before building Tuesday on it.**
