@@ -4176,3 +4176,51 @@ booking of any kind.**
 
 **The archive stands at EIGHTEEN at 26+, with Βουλόλιμνη 25 and Ελαφονήσι 24
 immediately below it — both in the week.**
+
+---
+
+# 🔧 ΒΟΥΛΟΛΙΜΝΗ, SETTLED — **7 · 7 · 10 = 24**
+
+**«The lagoon is just light blue.»** **Colour 8 → 7, and that is final.**
+
+**The sources had it right all along.** **Not one of them uses τιρκουάζ,
+γαλαζοπράσινο or σμαραγδένιο for Voulolimni** — the only water words available
+were *"calm and clear."* **I raised it to 8 off a misreading of "half
+turquoise/light blue," which was describing a range, not the pool.**
+
+**«Light blue» is γαλάζιο, and γαλάζιο is Colour 7 on this scale** — exactly
+where **Λισσός** *(«Χρώμα νερού: Γαλάζιο»)*, **Αγιοφάραγγο** *(Βαθύ μπλε)* and
+**Σεντόνι** *(καταγάλανα)* sit.
+
+**Discovery 7 stands** *(unmarked, no facilities, but ten minutes from the main
+road with a deck and boat moorings)*. **Water 10 stands.**
+
+### **ΒΟΥΛΟΛΙΜΝΗ = 24. Below the line, not cut. No longer moving.**
+
+## It keeps its place in Friday on its own merits
+
+**Light blue water does not change the two things that earned it the stop:**
+
+| | |
+|---|---|
+| **The fish** | *«The most amount of fish life of any beach they visited on Crete.»* **A rock wall with a narrow sea mouth concentrates what swims in. It is a natural aquarium** |
+| **The shelter** | **It stays calm when the open sea is rough** — the bad-weather fallback for the whole southwest, when Kedrodasos and the coves are blown out |
+
+**Masks and water shoes. The bottom is rock.**
+
+---
+
+# 📋 THE LINE, FINAL
+
+**At 26+ — EIGHTEEN** · **Μαρμάρα 28 · Μαύρη Παραλία 28** · six more at 27 ·
+eight at 26 *(including **the Elafonissi coves**)*
+
+**Immediately below, and in the week anyway:**
+| | | |
+|---|---|---|
+| **Βουλόλιμνη** | **24** | 7·7·10 — the aquarium, and the bad-weather plan |
+| **Ελαφονήσι** | **24** | 5·9·10 — **cut on Discovery**, walked through on Friday |
+
+**Friday 30 October: ΒΟΥΛΟΛΙΜΝΗ 24 → Χρυσοσκαλίτισσα → ΕΛΑΦΟΝΗΣΙ 24 →
+THE COVES 26 → ΚΕΔΡΟΔΑΣΟΣ 26.** **One road, one footpath, four swims, no
+bookings.**
