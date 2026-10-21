@@ -4627,3 +4627,65 @@ most of any day.
 **Σεντόνι 26** is also on that run, 500 m from Trypiti — *«βαθιά, βότσαλο,
 καταγάλανα»*, so it is a two-minute look rather than a stop. **Take it if the
 sea is flat and you are ahead of schedule — it is free.**
+
+---
+
+# 🛡 BUILT TO WORK WITHOUT KNOWING
+
+**Zac has met Grace once. So the plan must not depend on knowing what she and
+her friend are up for.**
+
+## Only ONE thing in the week needs deciding in advance
+
+| | Decide when? |
+|---|---|
+| **Tuesday's boat** | **IN ADVANCE** — it is a booking, with a seat count |
+| **Aradena gorge, Wed** | **ON THE MORNING.** The only booking is a taxi from Chora Sfakion up to Aradena, arranged that day |
+| **Pervoliano gorge, Mon 2** | **ON THE MORNING.** No booking of any kind |
+| Everything else | **Drive and walk. Nothing booked** |
+
+> **The gorges need no commitment. You can look round the breakfast table and
+> see who is coming.** That is worth knowing — it means the awkward question
+> never has to be asked at all.
+
+## So: book the SKIPPERED CAÏQUE. It is the only choice that is right either way.
+
+**I argued for three turns that you should drive yourselves. With an unknown
+group, that advice is wrong.**
+
+| | Self-drive | **Skippered caïque** |
+|---|---|---|
+| **If all five enjoy it** | Cheaper per head | Fine |
+| **If two of them hate it** | **Stuck with them in a 5.5 m open boat for 7 hours, no toilet, nowhere to go** | **They simply don't come — and the price is the same, because it is per BOAT** |
+| Comfort | Open, loaded, slow, wet in any swell | **Bigger, more stable, shade, nobody concentrating for 7 hours** |
+| Cost | €110–180 for the boat | **€60–100 for 2–3 hrs; ask for a half day** |
+
+### **A per-boat price means the skipper costs you nothing if the group shrinks. That is the whole argument.**
+
+**Ask Yannis Paterakis or Meletis for a half day:**
+**Σούγια → Άγιος Αντώνιος 26 → Τρυπητή 26 → ΔΩΜΑΤΑ 28 → Λισσός 26 → Σούγια.**
+**Four entries, no driving, works with three aboard or five.**
+
+> **And he is the only person who can tell you what Domata's water does before
+> you see it.** *«Τι χρώμα έχει το νερό στα Δώματα;»*
+
+## 💡 One cheap thing that makes the rest easy
+
+**Put a Chania old-town dinner early in the week — Monday or Tuesday evening.**
+Venetian harbour, 7 km from Stalos.
+
+**If Grace and her friend get one proper evening out at the start, sitting out a
+four-hour gorge on the Wednesday is an easy, cheerful decision rather than a
+negotiation.** It costs you nothing from the eighteen.
+
+---
+
+## The reassurance that is actually true
+
+**This plan is unusually robust, and not by luck: almost nothing is booked.**
+
+**Two boats and a car.** Everything else — the gorges, the Elafonissi walk,
+Balos, Preveli, Kedrodasos, the Asterousia — **is decided on the morning, by
+whoever wants to go.**
+
+**Eighteen entries at 26+. None of them cares who is standing in the water.**
