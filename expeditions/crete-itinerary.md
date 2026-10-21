@@ -3951,3 +3951,83 @@ sub-regions, plus **Αγιοφάραγγο + Βαθύ** on the Odigitria road.
 > **Cost: ΜΠΑΛΟΣ 26 — James's lagoon.** **Gain: a 28, a 27 and a 26.**
 >
 > **That is the last real decision in the plan, and it is not mine to make.**
+
+---
+
+# 🏖 THE ELAFONISSI → KEDRODASOS COVES — **8 · 8 · 10 = 26**
+
+**Rated as a class, because nobody has named them individually.**
+
+## What is there
+
+> **«μικρές, ερημικές παραλίες με γαλαζοπράσινα νερά»** — small, deserted
+> beaches with **blue-green** water. *"Small isolated coves with spectacular
+> waters appear on your way all the time."* *"Small sea caves and hidden spots
+> that offer secluded retreats from the sun and wind."*
+
+**The walk:** **~1 km, 20–45 minutes**, starting **at the tiny Elafonissi
+harbour near the east end of the beach** *(or east of the beach by the trailer
+resort)*. **Marked by poles and piles of rocks** — *«το μονοπάτι δεν είναι
+εύκολο να εντοπιστεί»*, not easy to spot. Uneven, with some rock scrambling.
+Through the **first cedars and dunes**, Libyan Sea the whole way.
+**No food, no water. Natura 2000.**
+
+## The grading
+
+| | | |
+|---|---|---|
+| **Discovery 8** | | 20–45 min on foot from Elafonissi's car park, on a half-marked path with scrambling. **Same as Kedrodasos at the far end of it.** *Elafonissi is one of the busiest beaches in Crete — and in late October it is empty anyway* |
+| **Colour 8** | | **γαλαζοπράσινα attested**, over the **white sand and smooth rock** of this coast *(Kedrodasos: «λευκή άμμος και λείοι βράχοι»)*. **Not 9 — no source writes τιρκουάζ for the coves specifically** |
+| **Water 10** | | Same sea |
+
+### **26 — exactly level with Kedrodasos.**
+
+## 🔑 And this is the real point
+
+**Elafonissi is cut on Discovery 5 — a paved road, a car park and a boardwalk.
+Walk twenty minutes east and the same water scores 26.**
+
+> **Friday stops being "Kedrodasos plus Elafonissi."** It becomes **a 1 km
+> coastal walk through a juniper forest, past a string of unnamed blue-green
+> coves with sea caves, ending at Kedrodasos** — and you have Elafonissi's pink
+> sand at the start of it.
+>
+> **That is the best-shaped day in the week after Tuesday and Wednesday, and it
+> needs no boat, no charter and no phone call.**
+
+## ❓ One unresolved thing on that coast
+
+**ΒΟΥΛΟΛΙΜΝΗ / Voulolimni** — listed as **a lagoon-type feature nearby**, with
+**no description and no stated position** relative to the path. *«Λίμνη» in the
+name means lake or pool.* **Four searches have not placed it. Look for it on
+the day** — a lagoon on that white-sand coast would be worth finding.
+
+---
+
+# 📋 EIGHTEEN DOABLE AT 26+
+
+| # | Beach | **/30** | D·C·W | Day |
+|---|---|---|---|---|
+| 1 | **MARMARA** | **28** | 9·**9**·10 | **Tue 27 + Wed 28** |
+| 2 | **MAVRI PARALIA** | **28** | **10**·8·10 | *needs a day* |
+| 3 | **DOMATA** | **27** | **10**·7·10 | **Tue 27** |
+| 4 | **Seitan Limania** | **27** | 8·**9**·10 | **Mon 26** |
+| 5 | **Trypiti** | **27** | 9·8·10 | **Tue 27** |
+| 6 | **Glyka Nera** | **27** | 8·**9**·10 | **Tue 27** |
+| 7 | **Ilingas cove 2** | **27** | 9·8·10 | **Thu 29** |
+| 8 | **Ilingas cove 3** | **27** | 9·8·10 | **Thu 29** |
+| 9 | **KAMINAKI** | **27** | 9·8·10 | **Mon 2 Nov** |
+| 10 | **SKIADAKI** | **27** | 9·8·10 | *needs a day* |
+| 11 | **Lissos** | **26** | **9**·7·10 | **Tue 27** |
+| 12 | **Ilingas main** | **26** | 8·8·10 | **Thu 29** |
+| 13 | **Kedrodasos** | **26** | 8·8·10 | **Fri 30** |
+| 14 | **⭐ THE ELAFONISSI COVES** | **26** | 8·8·10 | **Fri 30** |
+| 15 | **BALOS** | **26** | 7·**9**·10 | **Sat 31** |
+| 16 | **PREVELI** | **26** | 8·8·10 | **Sun 1 Nov** |
+| 17 | **AGIOFARAGO** | **26** | **9**·7·10 | **Tue 3 Nov** |
+| 18 | **VATHY** | **26** | 8·8·10 | **Tue 3 Nov** |
+
+**Two 28s · eight 27s · eight 26s = EIGHTEEN. Sixteen scheduled.**
+
+*(Elafonissi itself: 5·9·10 = 24, cut on Discovery, walked through at the start
+of Friday.)*
