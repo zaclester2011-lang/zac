@@ -4485,3 +4485,74 @@ in a beach landing.
 
 > **Two hours and €60–100 with Meletis or Yannis, out of Sougia, now buys the
 > best water on the list.** **Everything else stays on your feet.**
+
+---
+
+# ⛵ TUESDAY 27 — SELF-DRIVE FROM SOUGIA, FIVE ABOARD
+
+**Sougia is the right harbour: it is the only one within reach of Domata, and
+the Creta Mare 550 seats SIX.**
+
+## The day
+
+| | |
+|---|---|
+| **07:00** | Leave Stalos |
+| **08:20** | **Σούγια.** Paperwork, briefing, fuel — **allow 45 minutes with five people** |
+| **~09:15** | Away. **West first, 3 km** |
+| **09:35–10:20** | **ΛΙΣΣΟΣ 26.** Swim, then **the Asklepieion** ten minutes up the valley |
+| **~11:00** | **ΤΡΥΠΗΤΗ 26** — 5 km east of Sougia. **Late morning is deliberate: it shades early** |
+| ~12:10 | *Σεντόνι* — 500 m on. Pass it, or two minutes |
+| **12:30–14:00** | **ΔΩΜΑΤΑ 28.** **7 km east of Sougia. Dead centre of the 11:00–14:30 colour window** |
+| **~14:45** | Back at Sougia · boat in by 15:30 |
+| **~17:00** | Stalos. **Sunset 17:20** |
+
+**Three scored entries including the archive's highest, under your own power,
+for about €110–180 — €22–36 a head.**
+
+## ⚠️ What FIVE aboard actually changes about the boat
+
+**This is the part nobody's listing mentions.**
+
+**1 · It will be slower and wetter than you expect.** **Five people are
+350–400 kg.** A 30 hp engine on a 5.5 m hull with that load **will plane
+poorly or not at all.** Budget **35–40 minutes each way to Domata**, not the
+20–25 I quoted for three. *The schedule above already allows for it.*
+
+**2 · Water is the heaviest thing you carry, and there is none anywhere on
+that coast.** **Five people × 3 litres = 15 litres = 15 kg.** *(The only fresh
+water out there is a cistern at the Trypiti gorge mouth.)*
+
+**3 · Shade.** The Sfakion boats are advertised with a sunshade; **Sougia's is
+unconfirmed. Ask.** Five people on an open boat for six hours need it even in
+late October.
+
+**4 · Freeboard.** Fully loaded, a small boat sits low. **If there is any swell
+at all, it is wet and uncomfortable — and that is your signal to turn round,
+not to push on.**
+
+## ❗ Still unconfirmed, and still the thing that decides it
+
+> **Get these in writing before Tuesday depends on it:**
+> **① Does a self-drive rental reach Domata, 7 km east, or is there a distance
+> limit? ② May you anchor off and swim ashore there? ③ Is it running in late
+> October? ④ What engine, and does it need a licence? ⑤ Insurance and deposit.**
+>
+> **Viber or WhatsApp.** **soygiacruises@hotmail.com · +30 693 407 8684 ·
+> +30 697 322 0472** · also **sougiacruises.gr** and
+> **creteboattrips.com/activities/sougia-rent-a-boat**
+
+**Fallback if the answer is no or vague: the same three stops with a skipper,
+€60–100 for two hours — but with five of you plus a skipper that is 6 of 6, at
+capacity.**
+
+## 📌 And one thing I will not plan around until you tell me
+
+**Who the other two are** — because it decides **two days only**: the
+**Aradena gorge, 4 hrs** and the **Pervoliano gorge, 2½ down and 3 up,
+«not recommended for beginners», unorganised, requires care.**
+
+**Group pace is the slowest member.** Fit adults and nothing changes. **Anyone
+younger than Jacob or not a walker, and the Pervoliano gorge comes out** —
+Kaminaki 27 reverts to a boat stop from Tris Ekklisies and Monday 2 November
+rebuilds around Agiofarago and Vathy.
