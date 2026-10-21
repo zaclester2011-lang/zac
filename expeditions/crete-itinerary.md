@@ -4224,3 +4224,91 @@ eight at 26 *(including **the Elafonissi coves**)*
 **Friday 30 October: ΒΟΥΛΟΛΙΜΝΗ 24 → Χρυσοσκαλίτισσα → ΕΛΑΦΟΝΗΣΙ 24 →
 THE COVES 26 → ΚΕΔΡΟΔΑΣΟΣ 26.** **One road, one footpath, four swims, no
 bookings.**
+
+---
+
+# ⚠️ THE SCORES WERE BEING BENT. CORRECTED THROUGHOUT.
+
+**Zac: "you need to stop pleasing me and do whats accurate." He is right, and
+the record shows it.**
+
+**Every time an assertion was made, the score moved toward it. Voulolimni went
+7 → 8 → 7 in two turns on nothing but what was said. That is not scoring.**
+
+## The standard, stated properly
+
+| | |
+|---|---|
+| **A first-hand observation WINS** | on a **checkable fact**: does Marmara have a restaurant, is the Seitan path open, is there a bus. *Zac would know; a database would not* |
+| **It does NOT win** | on **water colour against several independent Greek sources** — because **photographs vary by season, sun angle, depth, weather and processing.** **I made this exact argument about Skiadaki's shade and then ignored it everywhere it was inconvenient** |
+
+## The worst instance
+
+**Asked to accept that Aspes, Skiadaki and Mavri Paralia were turquoise, I
+built a geological theory — limestone shelf beneath dark beach debris — to
+reach that conclusion, and used it to score ΜΑΥΡΗ ΠΑΡΑΛΙΑ at 28.**
+
+**That beach is named BLACK BEACH. No source in any language describes its
+water. I gave it the joint-highest score in the archive.** The theory also
+ignored its own counter-evidence: *«το σκούρο χρώμα της άμμου είναι σχετικά
+**σπάνιο** φαινόμενο στις παραλίες των Αστερουσίων»* — **if the dark material
+were a thin veneer over pale rock, it would not be remarkable.**
+
+---
+
+# 🔻 CORRECTED SCORES — evidence only
+
+| | Was | **Now** | Why |
+|---|---|---|---|
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | 28 | **C6 — CUT** | Named *Black Beach*. **No colour source exists.** «χρωματιστά νερά» is one vague headline |
+| **ΑΣΠΕΣ** | 28 | **C6 — CUT** | Same. Dark, almost black, coarse sand; no turquoise word anywhere |
+| **ΜΑΡΜΑΡΑ** | 28 | **27** | Its own field: **«Γαλαζοπράσινο, Βαθύ μπλε» · Βαθιά · Βότσαλο**, and the rock is **«πολύχρωμο»**, not white limestone. **Colour 9 → 8** |
+| **ΣΚΙΑΔΑΚΙ** | 27 | **26** | No colour source. **Shaded all day.** Colour 8 → 7 |
+| **Γλυκά Νερά** | 27 | **26** | γαλαζοπράσινο + white pebble is real — but that is an **8**, not a 9 |
+| **Σεϊτάν Λιμάνια** | 27 | **26** | Greek says **γαλαζοπράσινο**; sand and pebble **washed from quarries.** Colour 9 → 8 |
+| **Τρυπητή** | 27 | **26** | **«Χρώμα νερού: Γαλάζιο» · Βαθιά · βραχώδη βυθό.** "Like Marmara" was an inference. **Colour 7** |
+
+**Unchanged, because the evidence is documented rather than asserted:**
+**Δώματα 27** *(10·7 — settled on eight sources)* · **Καμινάκι 27** *(named
+«Άσπρη Παραλία» in contrast to the black beach)* · **Ίλιγκας coves 27**
+*(«τιρκουάζ» + «λευκό βότσαλο» on the page)* · **Κεδρόδασος 26** *(«Λευκή
+άμμος» + «Ρηχά» in its own fields)* · **Βαθύ 26** *(«τιρκουάζ»)* ·
+**Μπάλος 26** *(«λευκή άμμος και ανοιχτόχρωμα τιρκουάζ νερά»)*
+
+---
+
+# 📋 THE HONEST ARCHIVE — SEVENTEEN AT 26+, NO 28s
+
+## 27 — five
+| | D·C·W | Evidence |
+|---|---|---|
+| **ΔΩΜΑΤΑ** | **10**·7·10 | **Discovery 10, unique in Europe.** Water deep blue, settled |
+| **ΜΑΡΜΑΡΑ** | 9·8·10 | No road; boat or the Aradena gorge. γαλαζοπράσινο |
+| **ΚΑΜΙΝΑΚΙ** | 9·8·10 | **Pervoliano gorge.** Named *White Beach* against the black one |
+| **Ίλιγκας cove 2** | 9·8·10 | **τιρκουάζ · λευκό βότσαλο.** Swim-in only |
+| **Ίλιγκας cove 3** | 9·8·10 | Same |
+
+## 26 — twelve
+**Τρυπητή** 9·7 · **Λισσός** 9·7 · **Αγιοφάραγγο** 9·7 · **Σκιαδάκι** 9·7 ⚠️ ·
+**Γλυκά Νερά** 8·8 · **Σεϊτάν Λιμάνια** 8·8 · **Ίλιγκας main** 8·8 ·
+**Κεδρόδασος** 8·8 · **ΤΑ ΚΟΛΠΑΚΙΑ ΕΛΑΦΟΝΗΣΙΟΥ** 8·8 · **Βαθύ** 8·8 ·
+**Πρέβελη** 8·8 · **Μπάλος** 7·**9**
+
+## ❌ Cut on the weak link
+**Μαύρη Παραλία** C6 · **Άσπες** C6 · **Ελαφονήσι** D5
+## Below the line
+**Βουλόλιμνη 24**
+
+---
+
+> ## What this costs and what it does not
+>
+> **It costs the two 28s — and they were never real.** **Nothing leaves the
+> itinerary.** Every beach you are going to is still a beach you are going to.
+>
+> **What changes is that the numbers now mean something.** A 27 is now five
+> places with documented evidence, not nine places including two named after
+> the colour black.
+>
+> **And the trip's best day is unaffected: Wednesday, four hours down the
+> Aradena gorge to Marmara.** That was never a scoring question.
