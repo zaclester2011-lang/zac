@@ -4689,3 +4689,198 @@ Balos, Preveli, Kedrodasos, the Asterousia — **is decided on the morning, by
 whoever wants to go.**
 
 **Eighteen entries at 26+. None of them cares who is standing in the water.**
+
+---
+---
+
+# 🇬🇷 THE ITINERARY — CONSOLIDATED
+## 26 October – 3 November 2026 · five travellers
+
+| | |
+|---|---|
+| **Who** | **Zac 15 · James 48 · Jacob 13 · Grace · Grace's friend** |
+| **Out** | **EZY8223 · Mon 26 Oct · Gatwick 07:05 → Chania 13:00** ⚠️ *two extra seats still to buy* |
+| **Back** | **EZY8216 · Tue 3 Nov · Heraklion 14:10 → Gatwick 16:15** |
+| **Base 1** | **Cretan Dream Resort & Spa, Stalos** — 6 nights, 26–31 Oct ⚠️ *rooms for five* |
+| **Base 2** | **Asterousia** — 1 and 2 November ⚠️ *to book* |
+| **Cars** | **TWO small cars**, Chania → Heraklion one-way ⚠️ *to book* |
+| **Sea** | **23–24°C south coast** · **sunset 17:20 all week** · **colour window 11:00–14:30** |
+
+---
+
+## MON 26 OCT — land, and a 26 for free
+**Land 13:00 · cars by 13:45 · 20 min across Akrotiri**
+
+**🏊 ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ 26** — a knife-cut fjord in white rock, **15-minute steep
+descent.** The airport and the beach are on the same peninsula. **Path
+confirmed open.**
+
+**Stalos by 17:00. Dinner in Chania old town — Venetian harbour, 7 km.**
+*Do this on night one: it sets the week up with everyone happy.*
+
+---
+
+## TUE 27 OCT — THE BOAT DAY. Four entries, one of them the best on the list
+**Stalos 07:00 → Σούγια 08:20 (1h20)**
+
+**Skippered caïque — Yannis Paterakis or Meletis. €60–100 per BOAT, so it
+costs the same whether three go or five.**
+
+| | | |
+|---|---|---|
+| 09:20–10:10 | **ΛΙΣΣΟΣ 26** | 3 km west. **The Asklepieion** — where the sick came from across Crete — ten minutes up the valley |
+| 10:40–11:20 | **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ 26** | 2.5 km east. **No infrastructure anywhere near. Used one day a year** |
+| 11:40–12:30 | **ΤΡΥΠΗΤΗ 26** | Gorge mouth. **Late morning deliberately — it shades early** |
+| ~12:40 | *ΣΕΝΤΟΝΙ 26* | *500 m on. Two minutes, or pass* |
+| **12:55–14:30** | **🏆 ΔΩΜΑΤΑ 28** | **No road, no building, Discovery 10.** **Ninety minutes in the best light of the day** |
+
+**Sougia 15:15 · Stalos 17:00, in the light.**
+**Ask the skipper: «Τι χρώμα έχει το νερό στα Δώματα;»** *He is the only person
+who can answer the archive's last open question.*
+
+---
+
+## WED 28 OCT — THE WALK OF THE WEEK *(splits)*
+**Stalos → Χώρα Σφακίων 1h30 · taxi up to Αράδαινα**
+
+**🥾 THE ARADENA GORGE → ΜΑΡΜΑΡΑ 27 — four hours**, under **Greece's highest
+bridge at 138 m**. Turquoise off white limestone, **caves you swim into.**
+**Boat out to Loutro, ferry back — the car is waiting at Sfakion.**
+
+> **Park at Chora Sfakion, not Anopoli, or you strand the car.**
+> **Leave at first light: a 07:30 start puts you on the sand by 11:30.**
+> **This is the day to split. Car two: Chania, the harbour, the spa.**
+
+---
+
+## THU 29 OCT — FOUR ENTRIES, ON FOOT AND BY SWIMMING
+**Stalos → Χώρα Σφακίων 1h30**
+
+| | | |
+|---|---|---|
+| **ΙΛΙΓΚΑΣ main 26** | **20–40 min on foot** | τιρκουάζ, white pebble |
+| **🏆 ΙΛΙΓΚΑΣ cove 2 — 27** | **Swim 80 m east** | **No other way in** |
+| **🏆 ΙΛΙΓΚΑΣ cove 3 — 27** | Same swim | Caves in the rock |
+| **ΓΛΥΚΑ ΝΕΡΑ 26** | **30 min on foot** from Sfakion | Turquoise over white pebble |
+
+**No boat needed. The two 27s are a swim, not a charter.**
+*Optional upgrade: the €95 self-drive from Sfakia harbour, max 6, 09:00–sunset
+— adds Loutro for lunch and Marmara as a weather fallback.*
+
+---
+
+## FRI 30 OCT — ONE ROAD, ONE FOOTPATH, FOUR SWIMS
+**Southwest, 1h50**
+
+| | | |
+|---|---|---|
+| ~09:30 | **ΒΟΥΛΟΛΙΜΝΗ 24** | **A natural saltwater crater** — rock walls, narrow sea mouth. *"The most fish life of any beach on Crete."* **Masks and water shoes** |
+| ~10:15 | **Μονή Χρυσοσκαλίτισσας** | 500 m away |
+| ~11:00 | **ΕΛΑΦΟΝΗΣΙ 24** | **Pink sand.** Walk on it; **do not cross the fencing or take sand — Law 1650/86** |
+| 11:45–13:00 | **ΤΑ ΚΟΛΠΑΚΙΑ 26** | **1 km east from the little harbour.** Poles and rock piles, sea caves, *γαλαζοπράσινα* |
+| ~13:15 | **ΚΕΔΡΟΔΑΣΟΣ 26** | **«Λευκή άμμος» + «Ρηχά»** in a Natura 2000 juniper forest |
+
+**Park at Elafonissi and walk in — Kedrodasos' own access is a dirt road.**
+**Voulolimni is the bad-weather plan for this whole day: it stays calm when the
+coast is blown out.**
+
+---
+
+## SAT 31 OCT — the lagoon James asked for
+**Northwest, 1h15 to Καλυβιανή**
+
+**🏊 ΜΠΑΛΟΣ 26** — *«λευκή άμμος και τα ανοιχτόχρωμα τιρκουάζ νερά»*, Natura
+2000, **shallow and warm.**
+
+> **Take a LOCAL TAXI up the 8 km track. Their vehicle, their insurance.**
+> **Your hire cover dies where the tarmac does.** Five people may need two runs.
+
+**Last night at Stalos.**
+
+---
+
+## SUN 1 NOV — east, with a cliff staircase on the way
+**Check out · Stalos → Πρέβελη ~1h45**
+
+**🏊 ΠΡΕΒΕΛΗ 26** — **470 steps down the cliff.** Palm forest, the freshwater
+lagoon meeting the Libyan Sea. **Swim the SEA: the lagoon is ~18°C and fails
+the 21.5° gate.**
+
+**Then drive east into the Asterousia. ~2h.** *Rethymno old town is on the way
+if you want the civilised stop.*
+
+---
+
+## MON 2 NOV — THE SECOND GORGE *(splits)*
+**🥾 THE ΠΕΡΒΟΛΙΑΝΟ GORGE → 🏆 ΚΑΜΙΝΑΚΙ 27**
+
+**4 km · 2½ hrs down, 3 hrs up.** *«Δεν συνιστάται για αρχάριους»* —
+unorganised, requires care, **«άγριο και αυθεντικό χαρακτήρα».** **It can be
+skirted at the side if the bed is too much.**
+
+**At the bottom: «ΑΣΠΡΗ ΠΑΡΑΛΙΑ», the White Beach** — named against the black
+one a kilometre east. **Away 08:00, swim 11:00–13:00, out by 16:00.**
+
+**Then move west to Kalous Limenes or Matala for the night.**
+
+---
+
+## TUE 3 NOV — one last gorge, then home
+**🏊 ΑΓΙΟΦΑΡΑΓΓΟ 26 at first light** — 07:00 away, **25 min down the gorge**,
+swimming by 08:15. **The Goumenospilio cave above the chapel, where the hermits
+met once a year.**
+*If you are quick: **ΒΑΘΥ 26** on the same Odigitria road.*
+
+**Heraklion by 11:00. Fly 14:10.**
+
+---
+
+# 📊 THE SCORECARD
+
+**NINETEEN at 26+ · EIGHTEEN scheduled**
+
+| | |
+|---|---|
+| **28** | **ΔΩΜΑΤΑ** |
+| **27** | **ΜΑΡΜΑΡΑ · ΚΑΜΙΝΑΚΙ · ΙΛΙΓΚΑΣ cove 2 · ΙΛΙΓΚΑΣ cove 3** |
+| **26 ×14** | Τρυπητή · Λισσός · Άγιος Αντώνιος · Σεντόνι · Αγιοφάραγγο · Σκιαδάκι* · Γλυκά Νερά · Σεϊτάν Λιμάνια · Ίλιγκας main · Κεδρόδασος · Κολπάκια Ελαφονησίου · Βαθύ · Πρέβελη · Μπάλος |
+| **Below, in the week** | Βουλόλιμνη 24 · Ελαφονήσι 24 |
+
+*\*Σκιαδάκι 26 is the only one without a day — 60 min from Kalami, and shaded
+all day under a 42° sun.*
+
+## 🥾 TWO BIG WALKS, FIVE SHORT ONES, TWO SWIM-INS
+**Aradena 4 hrs · Pervoliano 5½ hrs** · Agiofarago · Preveli's 470 steps ·
+Kedrodasos coast path · Balos descent · Seitan Limania descent ·
+**the Ilingas coves, 80 m of open water**
+
+---
+
+# ✅ TO BOOK — in this order
+
+| | |
+|---|---|
+| **1 🔴** | **TWO MORE FLIGHT SEATS.** Most expensive line in the trip and rising weekly. **Today** |
+| **2** | **TWO SMALL CARS**, Chania 26 Oct → Heraklion 3 Nov. *Narrow roads beat one big vehicle, and it lets the group split* |
+| **3** | **Rooms for five at Cretan Dream, 26–31 Oct** · confirm **spa and restaurant run to 1 November** |
+| **4** | **The Sougia caïque, Tue 27** — Yannis **+30 697 322 0472** · Meletis **+30 694 085 9860** · **Viber, not email.** Ask for **Lissos, Agios Antonios, Trypiti, Domata**, and **31 Oct as the weather fallback** |
+| **5** | **Two Asterousia nights, 1 and 2 Nov.** *Matala or Agia Galini are the comfortable option with longer drives; Pyrgos or Tris Ekklisies are closer to the gorge and much smaller* |
+| **6** | **The Balos taxi from Kalyviani** — five people, possibly two runs |
+| **7** | *Optional: the €95 Sfakia self-drive for Thursday* |
+
+## 📌 FIVE THINGS THAT DECIDE DAYS
+
+**① Tarmac only.** Cretan hire insurance **excludes unpaved roads entirely**,
+including full-damage waivers. GPS trackers, €300 penalties, full liability.
+**A 4×4 does not restore cover.** **Where the road turns to dirt, that is the
+car park.**
+**② Sunset 17:20.** Gorges start at first light. Boats off the water by 16:30.
+**③ The colour window is 11:00–14:30** — the sun tops out at **42°** and cannot
+clear a 700 m cliff outside it.
+**④ No Uber, no Bolt, no FREENOW in western Crete.** **Chania dispatch: Taxi
+18300.** FREENOW covers Heraklion only.
+**⑤ Check Windy AND the Poseidon System (poseidon.hcmr.gr) the night before
+every boat day.** Wave height is what cancels a sailing.
+
+> **Two boats and two cars are the only commitments. Every walk, every swim and
+> every gorge is decided on the morning, by whoever wants to go.**
