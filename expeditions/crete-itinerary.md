@@ -4102,3 +4102,77 @@ the best fish on Crete — and not a single booking required.**
 
 **The list stands at EIGHTEEN at 26+.** Voulolimni is logged at 23, cut on
 Discovery, and in the week on merit.
+
+---
+
+# 🔵 ΒΟΥΛΟΛΙΜΝΗ REGRADED — **7 · 8 · 10 = 25**
+
+**Zac has looked at it: «rocks creating a HALF turquoise/light blue circle.»**
+
+## That observation is self-confirming
+
+**"Half" is the tell.** The sources say the pool **«δεν έχει παραλία»** — no
+beach — and **the seabed drops off steeply**, with the bottom described as
+**rocky OR sandy**, which I read as sources disagreeing.
+
+**They were not disagreeing. They were describing different halves of the same
+pool.** **The shallow sandy half reads turquoise; the deep half reads blue.**
+A crater joined to the sea by a narrow opening will have exactly that
+geometry — a shelf on one side, depth on the other.
+
+**Zac's photograph and the Greek text agree completely once you stop treating
+the pool as uniform.**
+
+**Colour 7 → 8.** *Not 9 — by his own account only half of it reads turquoise.*
+
+## And Discovery was too harsh — 6 → 7
+
+**I cut it at Discovery 6 and that was unfair on comparison.**
+
+| | |
+|---|---|
+| **Μπάλος** | **Discovery 7** — and it is world-famous, has an 8 km dirt track and **tour boats landing on it** |
+| **Βουλόλιμνη** | **Unmarked. No kiosk, no sunbeds, no umbrellas, no lifeguard. You have to know it is there** |
+
+**Voulolimni is less discoverable than Balos, and I had it a point lower.**
+The deck and the boat moorings are real, and **ten minutes from the main road
+is ten minutes from the main road** — so it does not reach 8. **Discovery 7.**
+
+### **7 · 8 · 10 = 25. Not cut — just below the line.**
+
+**It clears the weak-link rule now. It simply does not reach 26**, and that is
+a fairer answer than "cut."
+
+---
+
+## It stays in Friday, and it has the strongest single claim on the day
+
+**A rock-walled saltwater crater, half turquoise, with a narrow opening to the
+sea — and one reviewer calling it «the most amount of fish life of any beach
+they visited on Crete.»**
+
+> **The geometry explains the fish and the colour at once: the wall keeps the
+> water still, the narrow mouth concentrates what swims in, and the shallow
+> shelf lights up turquoise. It is a natural aquarium.**
+
+**Take masks. Take water shoes — the bottom is rock.** **And it is the
+bad-weather fallback for the whole southwest**, because it stays calm when
+Kedrodasos and the coves are blown out.
+
+---
+
+## 📋 FRIDAY, FINAL
+
+| | | |
+|---|---|---|
+| **~09:30** | **ΒΟΥΛΟΛΙΜΝΗ 25** | The sunken pool. **Snorkel it** |
+| **~10:15** | Μονή Χρυσοσκαλίτισσας | 500 m away |
+| **~11:00** | **ΕΛΑΦΟΝΗΣΙ 24** | Pink sand |
+| **11:45–13:00** | **THE COVES 26** | 1 km east, poles and rock piles, sea caves |
+| **~13:15** | **ΚΕΔΡΟΔΑΣΟΣ 26** | White sand, shallow, juniper forest |
+
+**Two 26s, a 25 and a 24 in one day, on one road and one footpath, with no
+booking of any kind.**
+
+**The archive stands at EIGHTEEN at 26+, with Βουλόλιμνη 25 and Ελαφονήσι 24
+immediately below it — both in the week.**
