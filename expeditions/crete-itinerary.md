@@ -4031,3 +4031,74 @@ the day** — a lagoon on that white-sand coast would be worth finding.
 
 *(Elafonissi itself: 5·9·10 = 24, cut on Discovery, walked through at the start
 of Friday.)*
+
+---
+
+# 🕳 ΒΟΥΛΟΛΙΜΝΗ FOUND — and I had it in the wrong place
+
+## What it is
+
+> **«Βουλόλιμνη» means "SUNKEN LAGOON."** A **natural saltwater pool — a
+> crater carved into the rocky coastline, connected to the open sea by a narrow
+> opening.** *«Τα βράχια το περιβάλλουν και σχηματίζουν τοίχο»* — the rocks
+> surround it and form a wall, **making it a natural swimming pool.**
+>
+> **It stays calm when the open sea is rough.**
+
+## ❌ My error: it is NOT between Elafonissi and Kedrodasos
+
+**It is 500 m NORTHWEST of the Chrysoskalitissa Monastery**, ~70 km southwest
+of Chania — and **Elafonissi is a few kilometres SOUTHEAST of that monastery.**
+
+**So Voulolimni is on the far side of Elafonissi from Kedrodasos.** The coast
+runs: **Βουλόλιμνη → Χρυσοσκαλίτισσα → *(a few km SE)* → Ελαφονήσι →
+*(1 km on foot east)* → Κεδρόδασος.** I had it on the walking path. It is on
+the road.
+
+## The grading — **6 · 7 · 10 = 23. Cut on the weak link.**
+
+| | |
+|---|---|
+| **Discovery 6** | **«Unmarked», but reachable «in under 10 minutes from the main road.»** Used as **a mooring for small boats**, and visitors sit *"on the available **deck**."* **A roadside natural pool is not a hidden cove.** Below 7 — cut |
+| **Colour 7** | **No colour word in any source.** *"Calm and clear"* is **clarity**, the familiar trap. Bottom described as rocky or sandy — sources disagree. **No beach, and the seabed drops off steeply** |
+| **Water 10** | Same sea, and exceptionally sheltered |
+
+**It does not make the list, and the figure is honest rather than harsh: it is
+ten minutes from a road with a deck on it.**
+
+---
+
+## ✅ But it earns two places in the week anyway
+
+### 1 · It may be the best snorkelling on the island
+> **One reviewer: «the most amount of fish life of any beach they visited on
+> Crete.»** **A rock-walled saltwater crater with a narrow sea opening is
+> exactly the geometry that concentrates fish.**
+>
+> **For Jacob with a mask, that may beat half the scored list.** *Bring water
+> shoes — the bottom is rock.*
+
+### 2 · It is the southwest's BAD-WEATHER FALLBACK
+**It stays calm when the open sea is rough**, it is **ten minutes from the main
+road**, and **Kedrodasos and the coves are exposed.** **If Friday blows out,
+this is where that day goes.**
+
+---
+
+## 📅 FRIDAY 30 OCTOBER, REBUILT PROPERLY
+
+**The geography now runs in one clean line, northwest to southeast:**
+
+| | |
+|---|---|
+| **~09:30** | **ΒΟΥΛΟΛΙΜΝΗ** — the sunken pool. Snorkel it. *Unmarked; 10 min off the road* |
+| **~10:15** | **ΜΟΝΗ ΧΡΥΣΟΣΚΑΛΙΤΙΣΣΑΣ**, 500 m away — *"the monastery of the golden step"* |
+| **~11:00** | **ΕΛΑΦΟΝΗΣΙ** *(24)* — the pink sand. **You may walk on the pink; you may not cross the fenced vegetation or take sand (Law 1650/86)** |
+| **11:45–13:00** | **THE COVES — 26.** Walk east from the little harbour, 1 km, poles and rock piles. *«μικρές, ερημικές παραλίες με γαλαζοπράσινα νερά»*, sea caves |
+| **~13:15** | **ΚΕΔΡΟΔΑΣΟΣ 26** — **«Λευκή άμμος» + «Ρηχά»**, in the juniper forest. **Inside the 11:00–14:30 colour window** |
+
+**One drive southwest, one 1 km walk, two 26s, a monastery, a pink beach and
+the best fish on Crete — and not a single booking required.**
+
+**The list stands at EIGHTEEN at 26+.** Voulolimni is logged at 23, cut on
+Discovery, and in the week on merit.
