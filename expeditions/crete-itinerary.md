@@ -5226,3 +5226,74 @@ day** — so **Day A: the Pervoliano gorge. Day B: Agiofarago + Vathy.**
 shaded all day.*
 
 **Groups 1, 2 and 7 hold 14 of the 19 between them.**
+
+---
+
+# 🏝 GROUP 8 · ΓΑΥΔΟΣ
+**Not on this trip — dropped by decision. Logged as a region.**
+
+| | | Access |
+|---|---|---|
+| **ΛΑΚΚΟΥΔΙ** | **27** | 1 km S of Korfos. Pine path, then down a ravine |
+| **ΤΡΥΠΗΤΗ ΑΚΡΩΤΗΡΙ** | **27** | 4.2 km from Korfos. **The three Καμαρέλλες arches, southernmost point of Europe** |
+| **ΛΑΒΡΑΚΑΣ** | **26** | 20–30 min from Agiannis, partly **through shallow sea** |
+| **ΠΥΡΓΟΣ** | **26** | 6 km NW of Karave. *«μια παραλία για λίγους»* — **σμαραγδένια water, reddish sand** |
+| *ΦΕΤΙΦΕΣ* | *25* | Sandy, shallow, γαλάζιο — but **a taverna beside it** and a car reaches the trail end |
+| *ΑΓΙΟΣ ΙΩΑΝΝΗΣ* | *25* | **A BUS goes there.** Discovery Channel called it 2nd best in the world |
+
+**Cut:** **ΠΟΤΑΜΟΣ** *(C6 — «πορτοκαλί λόγω του αργίλου», orange from clay)* ·
+**ΣΤΑΥΡΟΛΙΜΝΗ** *(C6 — a stream brings clay down; free mud therapy)* ·
+**ΣΑΡΑΚΗΝΙΚΟ** *(D6 — one of only two beaches on the island reachable by
+vehicle)*
+**Unscoreable:** ΝΤΙΑΝΑ *(the only fact in existence is that it is named after
+Princess Diana's yacht)* · **ΓΑΥΔΟΠΟΥΛΑ** *(monk seals breed, turtles nest)*
+
+### **FOUR at 26+ — level with Group 7.**
+
+## ⚠️ And a correction I owe, unprompted
+
+**ΛΑΚΚΟΥΔΙ was 28. It is 27.**
+
+**Its Colour 9 came from "lakoudi looks hidden and turquoise" — which is
+exactly the class of score I corrected on Marmara, Glyka Nera, Seitan Limania,
+Skiadaki and Trypiti.** Applying the same standard:
+
+| | |
+|---|---|
+| **Χρώμα νερού** | **«Βαθύ μπλε»** |
+| Prose | **«καταγάλανα»** |
+| Substrate | **«άσπρα βότσαλα»** — white pebbles, and **«Βάθος: Κανονικό»** |
+| τιρκουάζ | **Not on the page** |
+
+**White pebble and normal depth is a real mechanism — that earns Colour 8.
+There is no turquoise word, so it does not earn 9.** `9·8·10 = 27.`
+
+**Consistency applied without being asked. Gavdos has no 28.**
+
+## Why it is not on this trip
+**208 residents. The ferry stops 31 October. Four searches in two languages
+found nothing about what is open in late October** — the island's economy is a
+summer rooms-and-camping scene. **Dropped, correctly.**
+
+> **Groups 7 and 8 together hold EIGHT entries at 26+, two Discovery 10s, a via
+> ferrata gorge, three sea arches and the southernmost point of Europe.**
+> **That is the next trip, and it is a better one than the leftovers of this
+> one.**
+
+---
+
+# 🔢 THE EIGHT GROUPS
+
+| Group | Main region | Water bodies at 26+ |
+|---|---|---|
+| **1** | **Σούγια / Σέλινο** | **ΔΩΜΑΤΑ 28** · Τρυπητή 26 · Σεντόνι 26 · Λισσός 26 · Άγιος Αντώνιος 26 |
+| **2** | **Σφακιά** | **ΜΑΡΜΑΡΑ 27** · Ίλιγκας cove 2 — 27 · cove 3 — 27 · Ίλιγκας main 26 · Γλυκά Νερά 26 |
+| **3** | **Νοτιοδυτικά / Ελαφονήσι** | Τα Κολπάκια 26 · Κεδρόδασος 26 |
+| **4** | **Κίσσαμος / Γραμβούσα** | **ΜΠΑΛΟΣ 26** |
+| **5** | **Ακρωτήρι** | Σεϊτάν Λιμάνια 26 |
+| **6** | **Ρέθυμνο** | **ΠΡΕΒΕΛΗ 26** |
+| **7** | **ΑΣΤΕΡΟΥΣΙΑ** | **ΚΑΜΙΝΑΚΙ 27** · Αγιοφάραγγο 26 · Βαθύ 26 · Σκιαδάκι 26 |
+| **8** | **ΓΑΥΔΟΣ** *(not this trip)* | **Λακκούδι 27 · Τρυπητή ακρωτήρι 27** · Λαβράκας 26 · Πύργος 26 |
+
+**THIS TRIP: 19 at 26+ across Groups 1–7, 18 scheduled.**
+**THE ARCHIVE: 23 at 26+ across all eight.**
