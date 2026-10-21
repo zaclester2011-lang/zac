@@ -5100,3 +5100,129 @@ Pervoliano needs nothing. **You decide at breakfast.**
 | **Fri 30** | **Kedrodasos ~13:15** — inside the window, and it is the one with white sand |
 | **Mon 2** | **Away 08:00 · swim 11:00–13:00 · out by 16:00.** Sunset 17:20 |
 | **Tue 3** | **07:00 away, swimming 08:15, Heraklion 11:00, fly 14:10** |
+
+---
+---
+
+# 🔢 THE SEVEN GROUPS
+**19 entries at 26+ · Asterousia consolidated as one**
+
+---
+
+## GROUP 1 · ΣΟΥΓΙΑ
+**Base: Stalos, 1h20 · ONE BOAT, ONE DAY · €60–100 skippered / €110–180 self-drive**
+
+| | | |
+|---|---|---|
+| **ΔΩΜΑΤΑ** | **28** | 7 km E. **Boat only** |
+| **ΤΡΥΠΗΤΗ** | **26** | 5 km E. *Shades early — late morning* |
+| **ΣΕΝΤΟΝΙ** | **26** | 5.5 km E. Two minutes, or pass |
+| **ΛΙΣΣΟΣ** | **26** | 3 km **W**. The Asklepieion |
+| **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ** | **26** | 2.5 km E. Used one day a year |
+
+**FIVE ENTRIES, ONE BOAT. The richest single day in the week — and the only
+weather-dependent one.**
+
+---
+
+## GROUP 2 · ΣΦΑΚΙΑ
+**Base: Stalos, 1h30 · TWO DAYS**
+
+| | | |
+|---|---|---|
+| **ΜΑΡΜΑΡΑ** | **27** | **🥾 Aradena gorge, 4 hrs** — *its own day* |
+| **ΙΛΙΓΚΑΣ cove 2** | **27** | **Swim 80 m east. Only way in** |
+| **ΙΛΙΓΚΑΣ cove 3** | **27** | Same swim |
+| **ΙΛΙΓΚΑΣ main** | **26** | 20–40 min on foot |
+| **ΓΛΥΚΑ ΝΕΡΑ** | **26** | 30 min on foot |
+
+**FIVE ENTRIES — three of them 27s. The highest-scoring group.**
+**Day A: the gorge. Day B: the walk and the swim.**
+
+---
+
+## GROUP 3 · ΝΟΤΙΟΔΥΤΙΚΑ / ΕΛΑΦΟΝΗΣΙ
+**Base: Stalos, 1h50 · ONE DAY · one road, one footpath**
+
+| | | |
+|---|---|---|
+| **ΤΑ ΚΟΛΠΑΚΙΑ** | **26** | 1 km walk east from the harbour |
+| **ΚΕΔΡΟΔΑΣΟΣ** | **26** | Far end of the same walk |
+| *ΒΟΥΛΟΛΙΜΝΗ* | *24* | **Saltwater crater. Best fish on Crete. Calm when all else is blown out** |
+| *ΕΛΑΦΟΝΗΣΙ* | *24* | Pink sand, car park |
+
+**Park at Elafonissi and walk in.**
+
+---
+
+## GROUP 4 · ΚΙΣΣΑΜΟΣ
+**Base: Stalos, 1h15 · ONE DAY**
+
+| | | |
+|---|---|---|
+| **ΜΠΑΛΟΣ** | **26** | **Local taxi up the 8 km track**, then a descent |
+
+⚠️ **Opposite corner from Group 3. Cannot share a day.**
+
+---
+
+## GROUP 5 · ΑΚΡΩΤΗΡΙ
+**20 min from Chania airport · HALF A DAY — free on arrival**
+
+| | | |
+|---|---|---|
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | **26** | 15-min steep descent. **Path open** |
+
+---
+
+## GROUP 6 · ΡΕΘΥΜΝΟ
+**HALF A DAY — on the drive east**
+
+| | | |
+|---|---|---|
+| **ΠΡΕΒΕΛΗ** | **26** | **470 steps.** Swim the sea; the lagoon fails the gate |
+
+---
+
+## GROUP 7 · ΤΑ ΑΣΤΕΡΟΥΣΙΑ — the big one
+**NEEDS ITS OWN BASE · TWO DAYS · ~1h from Heraklion**
+
+| | | Approach road |
+|---|---|---|
+| **ΚΑΜΙΝΑΚΙ** | **27** | **Τρεις Εκκλησιές.** 🥾 **Pervoliano gorge, 2½ down / 3 up** — or 3 km by boat |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | **26** | **Οδηγήτρια.** 25 min down the gorge. Goumenospilio cave |
+| **ΒΑΘΥ** | **26** | **Οδηγήτρια.** Dirt road west, then walk |
+| **ΣΚΙΑΔΑΚΙ** | **26** | **Καλάμι.** 60 min on foot ⚠️ *all-day shade* |
+
+**FOUR ENTRIES ON TWO ROADS.** **Τρεις Εκκλησιές and Οδηγήτρια do not share a
+day** — so **Day A: the Pervoliano gorge. Day B: Agiofarago + Vathy.**
+
+> ### And Group 7 is the one that justifies a return trip
+> **Also in it, outside the 26+ list:** **ΑΣΠΕΣ** *(Discovery **10**, cut on
+> Colour 6 — boat only, moor to the rock, salt in the rock pools)* ·
+> **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** *(Discovery **10**, cut on Colour 6)* · **ΕΛΙΓΙΑ**
+> *(**a signed VIA FERRATA gorge ending on a beach** — ungraded, Colour unknown,
+> run by Thalori at Kapetaniana)* · the **ASTEROUSIA TRAILS**, 11 waymarked
+> routes · Παχιά Άμμος 15 · Τρυπητή Αστερουσίων 15.
+>
+> **Two Discovery 10s and a via ferrata in one region. That is a different
+> holiday, and it is worth one.**
+
+---
+
+# 📊 GROUPS → DAYS
+
+| Group | Days | At 26+ |
+|---|---|---|
+| **5 · Ακρωτήρι** | **Mon 26** *(half)* | **1** |
+| **1 · Σούγια** | **Tue 27** | **5** |
+| **2 · Σφακιά** | **Wed 28 + Thu 29** | **5** |
+| **3 · Ελαφονήσι** | **Fri 30** | **2** |
+| **4 · Κίσσαμος** | **Sat 31** | **1** |
+| **6 · Ρέθυμνο** | **Sun 1** *(half)* | **1** |
+| **7 · Αστερούσια** | **Mon 2 + Tue 3** *(half)* | **3 of 4** |
+
+**TOTAL: 18 of 19.** *Σκιαδάκι is the only miss — Group 7's third road, and
+shaded all day.*
+
+**Groups 1, 2 and 7 hold 14 of the 19 between them.**
