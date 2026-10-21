@@ -3846,3 +3846,108 @@ minimum.**
 **Fourteen swims. Two 28s, six 27s, six 26s. Six serious hikes including a
 4-hour gorge and a 5½-hour gorge. Two coves reachable only by swimming. And one
 water in Europe that nobody has ever described.**
+
+---
+
+# ⚖️ ΔΩΜΑΤΑ — FINALISED AT COLOUR 7. IT IS A 27, NOT A 28.
+
+**Asked to settle it accurately or not at all. It can be settled, and the
+answer is a downgrade.**
+
+## Eight sources. Zero turquoise.
+
+| Source | Water |
+|---|---|
+| **cretanbeaches** *(structured field)* | **«Χρώμα νερού: Βαθύ μπλε»** · Τύπος: Βότσαλο, Ψιλό βότσαλο |
+| cretanbeaches *(prose)* | «καταγάλανα νερά, συνήθως όμως θολά» |
+| **thisiscrete** | «πεντακάθαρα, **ΒΑΘΙΑ** νερά και ψιλό βότσαλο» |
+| ekriti | «καταγάλανα νερά» *(headline)* |
+| neakriti | «καταγάλανα νερά» *(headline)* |
+| travel.gr | «**γαλανά** νερά» · *fine pebbles in tones of **grey*** |
+| Elizabeth Estate | «**γκρίζα αμμουδιά** και διάφανα, **καταγάλανα** νερά» |
+| The tour operator | *"untouched **gray-sand** beach"* |
+
+**No source in any language uses τιρκουάζ, γαλαζοπράσινο or σμαραγδένιο.**
+*(The search's own conclusion: "I did not find a source that uses the exact
+terms turquoise or emerald. The sources consistently say blue.")*
+
+## And the decisive fact is geological
+
+> **«Τα ψηλά βράχια είναι ΚΡΟΚΑΛΟΠΑΓΗ»** — **the high cliffs are CONGLOMERATE.**
+> And the name itself: *«δώματα» are the natural stepped surfaces formed by
+> **sediment** and weathering on the slopes.*
+
+**This is the opposite of the Asterousia correction.** There, limestone cliffs
+collapse in front of a **pale limestone shelf**, so black beach sand sits over
+a white floor — which is why Aspes and Mavri Paralia are turquoise.
+
+**At Domata the cliffs are conglomerate — cemented pebble — and they shed GREY
+pebble and GREY sand onto the shore.** **The submerged floor is the same grey
+conglomerate.** **There is no pale shelf under it.**
+
+**Grey floor + deep water close in + eight sources saying blue = Colour 7.**
+
+## Consistency check
+
+**Colour 7 is where every comparable entry sits:** Σεντόνι *(βαθιά, βότσαλο,
+καταγάλανα)* · Αγιοφάραγγο *(Βαθύ μπλε, Βαθιά, ψιλό βότσαλο)* · Λισσός
+*(Γαλάζιο, coarse pebble)*. **Domata has the identical profile. Scoring it 8
+was special pleading for the archive's favourite.**
+
+### **ΔΩΜΑΤΑ = 10 · 7 · 10 = 27.**
+
+## What this means, honestly
+
+**Zac's own read was *"turquoise in some and cobalt in others."* The sources
+name the cobalt.** **The 29 and the 30 are off the table** — and **Discovery 10
+and Water 10 are untouched and unarguable.**
+
+> **Domata remains the most inaccessible water in Europe that you can swim.
+> It is simply deep blue, not turquoise. That is worth going for, and it is no
+> longer worth pretending about.**
+>
+> **Μάρμαρα is now the highest-scoring water on the trip at 28 — and it is the
+> one you walk four hours down a gorge to reach.** *That is a better story than
+> the one I was telling.*
+
+---
+
+# ➕ THE THREE ADDED · ΑΣΠΕΣ REMOVED · SEVENTEEN DOABLE
+
+| # | Beach | **/30** | D·C·W | Day | Walk |
+|---|---|---|---|---|---|
+| 1 | **ΜΑΡΜΑΡΑ** | **28** | 9·**9**·10 | **Tue + Wed** | **Aradena gorge, 4 hrs** |
+| 2 | **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | **28** | **10**·8·10 | **Asterousia** | ⚠️ *boat — gorge needs expert knowledge* |
+| 3 | **ΔΩΜΑΤΑ** | **27** | **10**·7·10 | **Tue 27** | Boat |
+| 4 | **Σεϊτάν Λιμάνια** | **27** | 8·**9**·10 | **Mon 26** | 15-min descent |
+| 5 | **Τρυπητή** | **27** | 9·8·10 | **Tue 27** | Boat |
+| 6 | **Γλυκά Νερά** | **27** | 8·**9**·10 | **Tue 27** | *(30 min on foot if you prefer)* |
+| 7 | **Ίλιγκας cove 2** | **27** | 9·8·10 | **Thu 29** | **Swim-in** |
+| 8 | **Ίλιγκας cove 3** | **27** | 9·8·10 | **Thu 29** | **Swim-in** |
+| 9 | **ΚΑΜΙΝΑΚΙ** | **27** | 9·8·10 | **Mon 2 Nov** | **Pervoliano gorge, 5½ hrs** |
+| 10 | **ΣΚΙΑΔΑΚΙ** | **27** | 9·8·10 | **Asterousia** | **60 min from Kalami** ⚠️ *shaded* |
+| 11 | **Λισσός** | **26** | **9**·7·10 | **Tue 27** | *1h15 on foot if you prefer* |
+| 12 | **Ίλιγκας main** | **26** | 8·8·10 | **Thu 29** | 20–40 min |
+| 13 | **Κεδρόδασος** | **26** | 8·8·10 | **Fri 30** | Coast path from Elafonissi |
+| 14 | **ΜΠΑΛΟΣ** | **26** | 7·**9**·10 | **Sat 31** | Descent from the track |
+| 15 | **ΠΡΕΒΕΛΗ** | **26** | 8·8·10 | **Sun 1 Nov** | **470 steps** |
+| 16 | **ΑΓΙΟΦΑΡΑΓΓΟ** | **26** | **9**·7·10 | **Tue 3 Nov** | 25 min down the gorge |
+| 17 | **ΒΑΘΥ** | **26** | 8·8·10 | **Tue 3 Nov** | Walk from the tarmac ⚠️ *distance unrecorded* |
+
+**Two 28s · eight 27s · seven 26s = SEVENTEEN. Άσπες removed.**
+
+## ⚠️ But three Asterousia entries need THREE days, not two
+
+**Μαύρη Παραλία** *(Tsoutsouras boat)*, **Σκιαδάκι** *(Kalami, 60 min)* and the
+**Περβολιανό gorge** *(5½ hrs, Tris Ekklisies)* are three separate
+sub-regions, plus **Αγιοφάραγγο + Βαθύ** on the Odigitria road.
+
+> ### The trade
+> **Leave Stalos on SATURDAY 31 instead of Sunday 1.** Three Asterousia nights:
+> **Sat** — drive east, **Πρέβελη 26** en route · **Sun** — **Μαύρη Παραλία 28**
+> by boat from Tsoutsouras + **Σκιαδάκι 27** · **Mon** — the **Περβολιανό
+> gorge → Καμινάκι 27** · **Tue** — **Αγιοφάραγγο 26 + Βαθύ 26**, then fly
+>
+> **Cost: ΜΠΑΛΟΣ 26 — James's lagoon.** **Gain: a 28, a 27 and a 26.**
+>
+> **That is the last real decision in the plan, and it is not mine to make.**
