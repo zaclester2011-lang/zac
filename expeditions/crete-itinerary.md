@@ -3683,3 +3683,87 @@ day)*, **ΒΑΘΥ 16** *(no room on the flight morning)*.
 
 > **One booking change makes it work: Sunday 1 November south of Heraklion, not
 > at Plakias and not at the airport.**
+
+---
+
+# ✅ SEITAN LIMANIA IS OPEN — the last caveat clears
+
+**The path has reopened.** Both routes were shut from 9–10 April 2026 after
+rockfall and a subsiding path, with no reopening announced. **Confirmed open —
+the warning comes off.**
+
+**Σεϊτάν Λιμάνια 17** *(8·9)* — **Caribbean colour, 15-minute steep descent,
+20 minutes from the aircraft door.** Chania airport and the beach are both on
+Akrotiri. **Monday 26 October earns a 17 for no driving at all.**
+
+*(Still worth a glance at Δήμος Χανίων the week before — it is a subsiding
+cliff path, not a road.)*
+
+**Also correcting my own count: last turn I wrote "fifteen swims." It is
+FOURTEEN.**
+
+---
+
+# 🏁 EVERYTHING DOABLE AT 16+ — FOURTEEN
+
+| # | Beach | Score | D · C | Day | How |
+|---|---|---|---|---|---|
+| 1 | **ΔΩΜΑΤΑ** | **18** | **10**·8 | **Tue 27** | The tour. **No road, no building.** *Its colour is the archive's one unread figure — you settle it* |
+| 2 | **ΜΑΡΜΑΡΑ** | **18** | 9·**9** | **Tue 27 + Wed 28** | **By sea, then down the Aradena gorge on foot.** Turquoise off white limestone |
+| 3 | **Σεϊτάν Λιμάνια** | **17** | 8·**9** | **Mon 26** | **20 min from the plane.** 15-min steep descent. **OPEN** |
+| 4 | **Τρυπητή** | **17** | 9·8 | **Tue 27** | The tour. **Swim it late morning** — it shades early. *Possible 18* |
+| 5 | **Γλυκά Νερά** | **17** | 8·**9** | **Tue 27** | The tour. Turquoise over white pebble, shore **and** seabed |
+| 6 | **Ίλιγκας cove 2** | **17** | 9·8 | **Thu 29** | **Anchor off and swim in. The only way** |
+| 7 | **Ίλιγκας cove 3** | **17** | 9·8 | **Thu 29** | Same swim. Caves in the rock |
+| 8 | **ΚΑΜΙΝΑΚΙ** | **17** | 9·8 | **Mon 2 Nov** | **The Pervoliano gorge — 5½ hrs.** «Άσπρη Παραλία», the White Beach |
+| 9 | **Λισσός** | **16** | **9**·7 | **Tue 27** | **The Asklepieion**, ten minutes up the valley |
+| 10 | **Ίλιγκας main** | **16** | 8·8 | **Thu 29** | 20–40 min from Chora Sfakion |
+| 11 | **Κεδρόδασος** | **16** | 8·8 | **Fri 30** | **«Λευκή άμμος» + «Ρηχά».** Park at Elafonissi, walk in |
+| 12 | **ΜΠΑΛΟΣ** | **16** | 7·**9** | **Sat 31** | Local taxi up the 8 km track, then the descent |
+| 13 | **ΠΡΕΒΕΛΗ** | **16** | 8·8 | **Sun 1 Nov** | **470 steps.** Sea only — the lagoon fails the gate |
+| 14 | **ΑΓΙΟΦΑΡΑΓΓΟ** | **16** | **9**·7 | **Tue 3 Nov** | **First light**, 25 min down the gorge. **Goumenospilio cave** |
+| + | *Ελαφονήσι* | *D5·C9* | | *Fri 30* | *Wanted. Pink sand, 1 km from Kedrodasos* |
+
+**Two 18s · six 17s · six 16s = FOURTEEN.**
+
+## ❌ The three left in the archive
+
+| | | |
+|---|---|---|
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | **18** | **No route.** Tsoutsouras harbour, or a gorge needing *«άριστη γνώση του πεδίου»* |
+| **ΣΚΙΑΔΑΚΙ** | 17 | **Named for its all-day shade**, under a 42° sun |
+| **ΒΑΘΥ** | 16 | Loses the flight morning to Agiofarago |
+
+---
+
+# 📅 THE WEEK
+
+| Day | Base | | Water |
+|---|---|---|---|
+| **Mon 26** | → Stalos | Land 13:00, 20 min across Akrotiri | **Σεϊτάν Λιμάνια 17** |
+| **Tue 27** | Stalos | **The Paleochora tour**, away 07:00 | **ΔΩΜΑΤΑ 18 · ΜΑΡΜΑΡΑ 18 · Τρυπητή 17 · Γλυκά Νερά 17 · Λισσός 16** |
+| **Wed 28** | Stalos | **Taxi to Aradena, walk down — 4 hrs** | **Μάρμαρα, earned** |
+| **Thu 29** | Stalos | **Self-drive boat, Chora Sfakion** | **Ίλιγκας 2 — 17 · Ίλιγκας 3 — 17 · Ίλιγκας main 16** |
+| **Fri 30** | Stalos | Southwest 1h50 | **Κεδρόδασος 16 + Ελαφονήσι** |
+| **Sat 31** | Stalos | Northwest 1h15 | **ΜΠΑΛΟΣ 16** *(or the charter retry)* |
+| **Sun 1 Nov** | **→ Asterousia** | 470 steps, then drive east | **ΠΡΕΒΕΛΗ 16** |
+| **Mon 2 Nov** | Asterousia | **THE PERVOLIANO GORGE, 5½ hrs** | **ΚΑΜΙΝΑΚΙ 17** |
+| **Tue 3 Nov** | → home | Agiofarago at first light, Heraklion, **fly 14:10** | **ΑΓΙΟΦΑΡΑΓΓΟ 16** |
+
+## 🥾 SIX SERIOUS HIKES
+**Aradena gorge 4 hrs · Pervoliano gorge 5½ hrs · Agiofarago gorge ·
+Preveli 470 steps · Kedrodasos coast path · Balos descent** — **plus two coves
+reachable only by swimming.**
+
+---
+
+# 📌 NOTHING LEFT TO RESEARCH. SIX THINGS TO BOOK.
+
+| | |
+|---|---|
+| **1** | **The Paleochora tour, Tue 27.** Ask three things: **does it run on the 27th** *(private, not scheduled)*, **does it LAND at Domata and Marmara**, **can it collect at Sougia** *(1h20 from Stalos against Paleochora's 1h40–2h)*. Add: *"and can you stop at Lissos?"* |
+| **2** | **The self-drive boat at Chora Sfakion, Thu 29.** ~€110, 8–9 hrs, no licence, **James drives.** Same operator |
+| **3** | **The one-way car:** Chania ~13:30 Mon 26 → **Heraklion drop Tue 3 Nov** |
+| **4** | **🔴 THE 1 NOVEMBER NIGHT — south of Heraklion.** Pyrgos, Charakas, Lentas or Tris Ekklisies. **Not Plakias, not the airport.** *This single change buys Kaminaki 17 and Agiofarago 16* |
+| **5** | **Cretan Dream: SIX nights, 26–31 October**, checking out on 1 November. Confirm the restaurant runs that late |
+| **6** | **The Balos taxi from Kalyviani** — their vehicle, their insurance. **Your hire car's cover dies at the tarmac** |
