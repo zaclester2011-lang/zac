@@ -4556,3 +4556,74 @@ capacity.**
 younger than Jacob or not a walker, and the Pervoliano gorge comes out** —
 Kaminaki 27 reverts to a boat stop from Tris Ekklisies and Monday 2 November
 rebuilds around Agiofarago and Vathy.
+
+---
+
+# ⏱ EIGHT-HOUR RENTAL — ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ COMES BACK
+
+## What the extra hours do NOT buy: more coast
+
+**The limits are not the rental. They are the light and the drive home.**
+
+**Domata must be swum between 11:00 and 14:30** *(42° sun, 700 m cliffs)*, and
+**Sougia → Stalos is 1h20 on a mountain road with sunset at 17:20.** Going
+further east — Fournoti and Agios Pavlos are 12–17 km out — would cost 2½ hours
+underway and put you on that road in the dark.
+
+## What they DO buy: a 26 I wrote off on the wrong grounds
+
+> **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ (ΧΑΡΕΙ) 26** *(9·7·10)* — **2.5 km east of Sougia.**
+>
+> **Zac cut it as "out of reach" — and that was right for the 2-hour E4 walk.
+> By boat it is TEN MINUTES.** *«Δεν υπάρχει καμία υποδομή στην ευρύτερη
+> περιοχή»* — no infrastructure in the wider area at all — and the chapel
+> beside it is celebrated **on 2 July, the only day anyone gathers there.**
+> **One day of human use a year.**
+
+**It was never a distance problem. It was a walking problem, and you now have a
+boat.**
+
+---
+
+# 📅 TUESDAY 27 — FOUR ENTRIES, HOME IN DAYLIGHT
+
+| | | |
+|---|---|---|
+| **07:00** | Leave Stalos | |
+| **08:20** | **Σούγια** — paperwork, briefing, fuel. **45 min for five** | |
+| **09:00** | Away **west, 3 km** | |
+| **09:20–10:10** | **ΛΙΣΣΟΣ** | **26** · the Asklepieion, 10 min up the valley |
+| **10:40–11:20** | **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ** | **26** · 2.5 km east. Nobody there |
+| **11:40–12:30** | **ΤΡΥΠΗΤΗ** | **26** · gorge mouth. **Shade has cleared** |
+| ~12:40 | *Σεντόνι* | *500 m on — two minutes or pass* |
+| **12:55–14:30** | **ΔΩΜΑΤΑ** | **28** · **ninety minutes in the best light of the day** |
+| **15:15** | Back at Sougia · boat in ~15:45 | **6h45 of your 8** |
+| **17:05** | Stalos, **in the light** | |
+
+### **Λισσός 26 · Άγιος Αντώνιος 26 · Τρυπητή 26 · ΔΩΜΑΤΑ 28 — four scored entries, one of them the highest in the archive.**
+
+## Why 6h45 and not 8
+
+**The 1h15 of unused rental is deliberate slack**, and you will want it:
+
+| | |
+|---|---|
+| **The boat will be slow** | **350–400 kg on a 30 hp hull.** If it does 8 knots instead of 12, the whole day stretches by 40 minutes and still works |
+| **The briefing may overrun** | Five people, paperwork, a safety walkthrough |
+| **Swell may force a turnaround** | **If Domata is off, you still have Lissos, Agios Antonios and Trypiti** — three 26s and a day that stands on its own |
+| **You may simply not want to leave Domata** | **Ninety minutes is the plan. You have room for two hours** |
+
+> **This is the whole argument against the tour, in one line: a tour gives
+> Domata thirty minutes on someone else's clock. You now have ninety, and the
+> option of more.**
+
+---
+
+## 📊 The week now holds EIGHTEEN at 26+
+
+**Agios Antonios rejoins the scheduled list.** Tuesday carries **four**, the
+most of any day.
+
+**Σεντόνι 26** is also on that run, 500 m from Trypiti — *«βαθιά, βότσαλο,
+καταγάλανα»*, so it is a two-minute look rather than a stop. **Take it if the
+sea is flat and you are ahead of schedule — it is free.**
