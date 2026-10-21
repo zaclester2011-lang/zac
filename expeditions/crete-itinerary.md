@@ -4884,3 +4884,130 @@ every boat day.** Wave height is what cancels a sailing.
 
 > **Two boats and two cars are the only commitments. Every walk, every swim and
 > every gorge is decided on the morning, by whoever wants to go.**
+
+---
+---
+
+# 🗂 PLANNING SHEET — EVERYTHING, BY CLUSTER
+**No days assigned. Grouped by what shares a trip, so you can build the week.**
+
+---
+
+## ① ΣΟΥΓΙΑ — ONE BOAT, FIVE ENTRIES
+**1h20 from Stalos · €60–100 skippered · €110–180 self-drive (seats 6, 8 hrs)**
+
+| | | From Sougia | Also on foot |
+|---|---|---|---|
+| **ΔΩΜΑΤΑ** | **28** | **7 km E · boat only** | *E4 4–5 hrs each way — does not fit daylight* |
+| **ΤΡΥΠΗΤΗ** | **26** | 5 km E · 15 min | 3½ hrs on the E4 |
+| **ΣΕΝΤΟΝΙ** | **26** | 5.5 km E · 500 m past Trypiti | — |
+| **ΛΙΣΣΟΣ** | **26** | 3 km **W** · 10 min | **1h15 on foot.** The Asklepieion |
+| **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ** | **26** | 2.5 km E · 10 min | 2 hrs on the E4 |
+
+⏰ **Domata needs 11:00–14:30. Trypiti shades early — late morning.**
+**Lissos is WEST; everything else is EAST.**
+
+---
+
+## ② ΧΩΡΑ ΣΦΑΚΙΩΝ — TWO SEPARATE DAYS
+**1h30 from Stalos**
+
+### ②a The walking cluster — no boat needed
+| | | |
+|---|---|---|
+| **ΙΛΙΓΚΑΣ cove 2** | **27** | **Swim 80 m east of Ilingas main. Only way in** |
+| **ΙΛΙΓΚΑΣ cove 3** | **27** | Same swim. Caves |
+| **ΙΛΙΓΚΑΣ main** | **26** | **20–40 min on foot** from Chora Sfakion |
+| **ΓΛΥΚΑ ΝΕΡΑ** | **26** | **30 min on foot**, or 5–7 min by boat |
+
+*Optional: €95 Sfakia self-drive, max 6, 09:00–sunset — adds Loutro for lunch*
+
+### ②b Marmara — a day on its own
+| | | |
+|---|---|---|
+| **ΜΑΡΜΑΡΑ** | **27** | **🥾 ARADENA GORGE, 4 HRS**, under the 138 m bridge · or 90 min from Loutro · or 8 km by boat |
+
+**Park at Chora Sfakion, taxi up to Aradena, walk down, boat to Loutro, ferry
+back — the car is waiting. Leave at first light.**
+
+---
+
+## ③ ΣΟΥΘΩΕΣΤ / ΕΛΑΦΟΝΗΣΙ — ONE ROAD, ONE FOOTPATH
+**1h50 from Stalos. All four in sequence, northwest → southeast**
+
+| | | |
+|---|---|---|
+| **ΒΟΥΛΟΛΙΜΝΗ** | *24* | **A saltwater crater.** 10 min off the road, 500 m NW of Chrysoskalitissa. **Best fish on Crete. Calm when everything else is blown out** |
+| **ΕΛΑΦΟΝΗΣΙ** | *24* | Pink sand, car park. **Don't cross the fencing or take sand** |
+| **ΤΑ ΚΟΛΠΑΚΙΑ** | **26** | **1 km walk east** from the little harbour. Poles and rock piles, sea caves |
+| **ΚΕΔΡΟΔΑΣΟΣ** | **26** | Far end of that same walk. **Λευκή άμμος + Ρηχά** |
+
+**Park at Elafonissi** — Kedrodasos' own access is a dirt road.
+
+---
+
+## ④ ΚΙΣΣΑΜΟΣ / ΜΠΑΛΟΣ — alone
+**1h15 from Stalos**
+
+| | | |
+|---|---|---|
+| **ΜΠΑΛΟΣ** | **26** | **Local taxi up the 8 km track**, then a descent. *Five may need two runs* |
+
+⚠️ **Opposite corner of the island from Elafonissi. Cannot share a day with ③.**
+
+---
+
+## ⑤ ΑΚΡΩΤΗΡΙ — free on the landing day
+| | | |
+|---|---|---|
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | **26** | **20 min from Chania airport**, 15-min steep descent. Both on the same peninsula |
+
+---
+
+## ⑥ ΡΕΘΥΜΝΟ — on the drive east
+| | | |
+|---|---|---|
+| **ΠΡΕΒΕΛΗ** | **26** | **470 steps.** 1h45 from Stalos. **Swim the SEA — the lagoon is ~18°C and fails the gate** |
+
+*Rethymno old town is the civilised stop on this leg.*
+
+---
+
+## ⑦ WESTERN ΑΣΤΕΡΟΥΣΙΑ — the Odigitria Monastery road
+**~1h15 from Heraklion · needs an Asterousia or Matala base**
+
+| | | |
+|---|---|---|
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | **26** | **25 min down the gorge.** The Goumenospilio cave |
+| **ΒΑΘΥ** | **26** | Dirt road west past the monastery, then walk. *Distance unrecorded* |
+
+**Both off the same road. One short morning does both.**
+
+---
+
+## ⑧ EASTERN ΑΣΤΕΡΟΥΣΙΑ — Τρεις Εκκλησιές
+**~1h from Heraklion. ⚠️ A DIFFERENT approach road from ⑦ — they do not share a day**
+
+| | | |
+|---|---|---|
+| **ΚΑΜΙΝΑΚΙ** | **27** | **🥾 ΠΕΡΒΟΛΙΑΝΟ GORGE — 4 km, 2½ down, 3 up.** *Not for beginners, unorganised.* **Skirtable at the side.** Or **3 km by boat from Tris Ekklisies** |
+| **ΣΚΙΑΔΑΚΙ** | **26** | **60 min from Kalami**, or boat ⚠️ **named for its ALL-DAY SHADE — the one entry your dates work hardest against** |
+
+---
+
+# ⏰ THE SIX CONSTRAINTS
+
+**1 · Sunset 17:20.** Gorges start at first light; boats off the water by 16:30
+**2 · Colour window 11:00–14:30.** A 42° sun cannot clear a 700 m cliff outside it
+**3 · ③ and ④ are opposite corners.** Two separate days
+**4 · ⑦ and ⑧ are separate roads.** Two separate days
+**5 · ①–⑥ work from Stalos. ⑦ and ⑧ need an eastern base**
+**6 · Tarmac only.** **Where the road turns to dirt, that is the car park** — insurance excludes unpaved entirely, and a 4×4 does not change it
+
+# 📊 THE TOTALS
+**ONE 28 · FOUR 27s · FOURTEEN 26s = NINETEEN** · plus **Voulolimni 24** and
+**Elafonissi 24** in the week
+
+**Two big walks:** Aradena 4 hrs · Pervoliano 5½ hrs
+**Two swim-ins:** Ilingas coves 2 and 3
+**One boat that cannot be substituted:** Domata
