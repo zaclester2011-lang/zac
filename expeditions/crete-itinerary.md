@@ -4312,3 +4312,93 @@ were a thin veneer over pale rock, it would not be remarkable.**
 >
 > **And the trip's best day is unaffected: Wednesday, four hours down the
 > Aradena gorge to Marmara.** That was never a scoring question.
+
+---
+
+# ⛵ SELF-DRIVE, NO SKIPPER — IT EXISTS, AND FROM THE RIGHT HARBOUR
+
+## The four operators
+
+| Harbour | | |
+|---|---|---|
+| **ΧΩΡΑ ΣΦΑΚΙΩΝ** | **30 hp, no licence** · pickup and return **09:00 to sunset** · **max 4 people** | **~€95 low season, €263 high** — October is low |
+| **ΣΟΥΓΙΑ** *(Sougia Cruises)* | Self-drive, licence-free | **~€110, 8–9 hrs, up to 6** |
+| **ΠΑΛΑΙΟΧΩΡΑ** *(Rent A Boat / Discover)* | 30 hp, 5.5 m Prestige 550, 5 passengers | **from €180** |
+| **ΚΟΚΚΙΝΟΣ ΠΥΡΓΟΣ** *(Rodanthi)* | 30 hp, no licence, **safety briefing and local route guidance** | **€130–190** |
+
+## 🔑 The finding: Chora Sfakion's own suggested range includes Marmara
+
+> **The operator's own words: *"explore the southern coast to **Agia Roumeli,
+> Agios Pavlos, Marmara Beach, Loutro**."***
+
+**That is a ~20 km western range, named by the people renting you the boat.**
+It is far wider than I had assumed, and it means a self-drive day out of Chora
+Sfakion reaches:
+
+| | | from Sfakion |
+|---|---|---|
+| **Ίλιγκας coves 2 & 3** | **27 · 27** | ~2 km |
+| **Ίλιγκας main** | **26** | ~2 km |
+| **Γλυκά Νερά** | **26** | ~3 km |
+| **Λουτρό** | | ~5 km |
+| **ΜΑΡΜΑΡΑ** | **27** | **~8 km — on their own list** |
+| Άγιος Παύλος · Αγία Ρουμέλη | | 15–20 km |
+
+**Three 27s and two 26s, under your own power, for about €95–190.**
+
+## And Domata? From Sougia, not Sfakion.
+
+**Chora Sfakion → Domata is ~25 km, beyond the operator's stated range.**
+**Sougia → Domata is ~10 km, with Trypiti at 5 km on the way.**
+
+**If you want to drive yourself to Domata, you hire at Sougia.** It is the only
+harbour close enough.
+
+> **Honest on the risk, without forbidding it:** it is **6 nautical miles of
+> cliff coast with no harbour, no landing and no phone signal**, and the
+> arrival is **a beach landing through swell**. But **6 nm in settled morning
+> weather with James at the helm is not reckless.**
+>
+> **The rules: go at first light when it is glassy · check Windy AND the
+> Poseidon System the night before · tell the operator exactly where you are
+> going — and if he says no, that is your answer, because he knows the water.**
+
+---
+
+## ⚠️ FOUR THINGS TO CONFIRM BEFORE PAYING
+
+**1 · The 30 hp licence question is genuinely unclear.** One guide states a
+licence is required **"when the motor is 30 hp or more"** — which would make
+the 30 hp boats everyone advertises **licence-REQUIRED.** And an Agia Galini
+listing advertises a **60 hp** boat as licence-free, which cannot be right.
+**Get it in writing from the operator, and ask the Λιμεναρχείο if in doubt.**
+
+**2 · The range limit.** **No source anywhere states how far a licence-free
+rental may go.** Sfakion's suggested route list implies ~20 km, **but that is
+marketing, not a permit.** Ask directly.
+
+**3 · Insurance and the deposit** — what is covered, what a grounding costs.
+
+**4 · Max 4 persons** on the licence-free Sfakia boats. **You are three. Fine
+— but it confirms these are small craft.**
+
+---
+
+## 📌 WHAT THIS DOES TO THE WEEK
+
+**Thursday was already the self-drive day. It now gets bigger.**
+
+| **Thu 29 — CHORA SFAKION, YOUR OWN BOAT** | |
+|---|---|
+| **Ίλιγκας cove 2 — 27** | Anchor off, swim in |
+| **Ίλιγκας cove 3 — 27** | Same |
+| **Ίλιγκας main — 26** | |
+| **Γλυκά Νερά — 26** | |
+| *Λουτρό* | Lunch, 5 km on |
+
+**And it gives Wednesday a weather fallback: if the Aradena gorge is off,
+Marmara 27 is 8 km west by your own boat.**
+
+> **This is the answer to the boat question. Not a tour, not a skipper — a
+> 30 hp boat from Sfakia harbour at nine in the morning, four of the
+> seventeen in a day, and nobody telling you when to leave.**
