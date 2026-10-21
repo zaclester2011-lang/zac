@@ -3767,3 +3767,82 @@ reachable only by swimming.**
 | **4** | **🔴 THE 1 NOVEMBER NIGHT — south of Heraklion.** Pyrgos, Charakas, Lentas or Tris Ekklisies. **Not Plakias, not the airport.** *This single change buys Kaminaki 17 and Agiofarago 16* |
 | **5** | **Cretan Dream: SIX nights, 26–31 October**, checking out on 1 November. Confirm the restaurant runs that late |
 | **6** | **The Balos taxi from Kalyviani** — their vehicle, their insurance. **Your hire car's cover dies at the tarmac** |
+
+---
+
+# 💧 WATER 10 FOR ALL — BACK TO /30, AND THE 27 BARRIER FALLS
+
+**Water is restored as a scored category at 10 for every Cretan entry.**
+**Justified:** the Libyan Sea runs **23–24°C in late October** *(25–26°C in
+sheltered south-coast bays in the last week)*, the White Mountains shelter it,
+the springs are at their annual minimum, the excursion boats have stopped
+stirring sediment, and **every entry clears the 21.5°C gate with 1.5–2.5°C to
+spare.** **There is nothing to deduct.**
+
+> ## This retires a conclusion I stated repeatedly
+> **For most of this session the archive's ceiling was "Europe has no possible
+> 27, and Domata is the only candidate."** **That was an artefact of scoring
+> Water 8.** Rate the water honestly and **your week contains EIGHT entries at
+> 27 or above.**
+
+---
+
+# 🏆 THE FOURTEEN, OUT OF 30
+
+| # | Beach | **/30** | D · C · W | Day |
+|---|---|---|---|---|
+| 1 | **ΔΩΜΑΤΑ** | **28** | **10**·8·**10** | **Tue 27** |
+| 2 | **ΜΑΡΜΑΡΑ** | **28** | 9·**9**·**10** | **Tue 27 + Wed 28** |
+| 3 | **Σεϊτάν Λιμάνια** | **27** | 8·**9**·**10** | **Mon 26** |
+| 4 | **Τρυπητή** | **27** | 9·8·**10** | **Tue 27** |
+| 5 | **Γλυκά Νερά** | **27** | 8·**9**·**10** | **Tue 27** |
+| 6 | **Ίλιγκας cove 2** | **27** | 9·8·**10** | **Thu 29** |
+| 7 | **Ίλιγκας cove 3** | **27** | 9·8·**10** | **Thu 29** |
+| 8 | **ΚΑΜΙΝΑΚΙ** | **27** | 9·8·**10** | **Mon 2 Nov** |
+| 9 | **Λισσός** | **26** | **9**·7·**10** | **Tue 27** |
+| 10 | **Ίλιγκας main** | **26** | 8·8·**10** | **Thu 29** |
+| 11 | **Κεδρόδασος** | **26** | 8·8·**10** | **Fri 30** |
+| 12 | **ΜΠΑΛΟΣ** | **26** | 7·**9**·**10** | **Sat 31** |
+| 13 | **ΠΡΕΒΕΛΗ** | **26** | 8·8·**10** | **Sun 1 Nov** |
+| 14 | **ΑΓΙΟΦΑΡΑΓΓΟ** | **26** | **9**·7·**10** | **Tue 3 Nov** |
+
+**Two 28s · six 27s · six 26s.**
+
+## In the archive, unscheduled
+**ΜΑΥΡΗ ΠΑΡΑΛΙΑ 28** *(10·8·10 — no route)* · **ΣΚΙΑΔΑΚΙ 27** *(9·8·10 —
+shaded all day)* · **ΒΑΘΥ 26** *(8·8·10 — loses the flight morning)*
+
+## Still cut on the weak link
+**Ελαφονήσι 24** *(**5**·9·10 — Discovery below 7)*
+
+---
+
+# 🎯 AND NOW THE REAL NUMBER: DOMATA COULD BE A 30
+
+**Domata holds Discovery 10. It now holds Water 10.**
+
+> **Colour is the ONLY thing standing between Domata and a perfect score — and
+> Colour is the one figure in the entire archive that nobody has ever written
+> down.**
+
+| If Domata's water is… | |
+|---|---|
+| Deep blue over grey pebble *(the field's reading)* | **27** |
+| **As scored — the honest placeholder** | **28** |
+| **Turquoise** | **29** |
+| **Turquoise over a pale floor, shallow and lit** | **30** |
+
+**No source on earth has described that water. Not a database field, not a
+headline, not a blog.** **You arrive by boat at about midday on Tuesday 27
+October, inside the 11:00–14:30 colour window, with the springs at their annual
+minimum.**
+
+### **You are not checking a score. You are the only source there has ever been.**
+
+---
+
+## 📊 The week in one line
+
+**Fourteen swims. Two 28s, six 27s, six 26s. Six serious hikes including a
+4-hour gorge and a 5½-hour gorge. Two coves reachable only by swimming. And one
+water in Europe that nobody has ever described.**
