@@ -6262,3 +6262,96 @@ cruise — the last sailing of the season, which cannot move.**
 3. Does the 3-hour route reach **ΚΑΜΙΝΑΚΙ, ΒΑΛΑ, ΑΣΠΕΣ and ΠΙΚΡΟΒΛΥΧΑΔΑ**?
 4. **Price**, skippered vs «without a captain»?
 5. **Is ΑΣΠΕΣ the same beach as ΜΑΥΡΗ ΠΑΡΑΛΙΑ?** — one guide publishes them as one
+
+---
+
+# 🔍 FULL AUDIT OF THE EAST — ARE THEY REAL, AND ARE THEY GRADED RIGHT?
+
+**Requested after the Αλυκαπούντα failure. Every eastern entry checked for its
+own page and its own structured field.**
+
+## ✅ EVERY COLOUR GRADE IS CORRECT
+
+| Beach | Own page | Structured field | Graded | |
+|---|---|---|---|---|
+| **ΑΣΠΕΣ** | ✅ `aspes-black-beach` | **Deep blue** | 7 | ✓ |
+| **ΚΑΜΙΝΑΚΙ** | ✅ | **Blue** | 7 | ✓ |
+| **ΒΑΛΑ** | ✅ | **Blue** | 7 | ✓ |
+| **ΚΑΤΑΡΤΙ** | ✅ | **Blue** | 7 | ✓ |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | ✅ | **Deep blue** | 7 | ✓ |
+| **ΜΑΡΤΣΑΛΟ** | ✅ | **Deep blue** | 7 | ✓ |
+| **ΣΚΙΑΔΑΚΙ** | ✅ | **Deep blue** | 7 | ✓ |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | ✅ | **Deep blue** | 7 | ✓ |
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | ✅ *(no fields)* | *«crystal blue»* prose | 7 | ✓ |
+
+> **EVERY eastern entry is Colour 7, every one confirmed on its own page. There is
+> NO turquoise anywhere on the Asterousia coast.** No inflation found.
+
+## ⚠️ TWO ENTRIES ARE NOT REAL AS LOGGED
+
+### ΜΑΥΡΗ ΠΑΡΑΛΙΑ — probably ΑΣΠΕΣ under a second name
+
+| Evidence | |
+|---|---|
+| cretanbeaches | **NO PAGE for Μαύρη Παραλία.** Άσπες is slugged **`aspes-black-beach`** and its prose says **«the majestic black beach»** |
+| cretelocals | publishes **«ΑΣΠΕΣ (ΜΑΥΡΗ) beach»** — one page, both names, **4 km east of Τρεις Εκκλησιές** |
+| cretanbeaches | gives Άσπες as **4 km east of Τρεις Εκκλησιές** — **the same figure** |
+| Salty Trips | call Άσπες **«the Black Beach»** and list **no Μαύρη Παραλία** |
+
+> **Four sources point one way. ΜΑΥΡΗ ΠΑΡΑΛΙΑ has been carried as a distinct
+> entry all week and most likely is not one.** Only thisiscrete separates them,
+> placing it between Σκιαδάκι and Καμινάκι. **Operator to settle it.**
+
+### ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ — in the wrong place
+
+| Source | Puts it |
+|---|---|
+| **Άγιος Νικήτας page** | **ΚΑΛΑΜΙ 300 m west, by St. Anthony's chapel** — the EASTERN end |
+| **rental-center-crete** | *«the **Agios Antonios palm grove**»* — within a few km of **ΣΚΙΑΔΑΚΙ** |
+| **Salty Trips** | *«between the **Κουδουμάς** monastery and **Άγιος Ιωάννης**»* — the WESTERN end |
+
+> **Either two beaches share the saint's name, or I merged them. UNRESOLVED — no
+> further scoring until settled.**
+
+## 🔴 THE REAL FINDING — THE ACCESS GRADES WERE WRONG
+
+| Beach | I claimed | Its own page says |
+|---|---|---|
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | **4-hour easy footpath** | **«Accessibility: Dirt track, Walking»** — a **rough dirt road ~15 km from ΑΧΕΝΤΡΙΑΣ**, then **230 STEPS** down from the monastery. **The 4-hour footpath appears NOWHERE on its own page** |
+| **ΜΑΡΤΣΑΛΟ** | a walk | **drive the «poor dirt track» from ΟΔΗΓΗΤΡΙΑ**, park at the gorge mouth, **then 2 km on foot** + 15–20 min through palm groves |
+| **ΣΚΙΑΔΑΚΙ** | ~1 hour from Καλάμι | **«Access is by boat»** |
+
+**Standing rule: «Where the road turns to dirt, that is the car park»** — Cretan
+rental insurance excludes unpaved roads outright, **and a 4×4 does not restore
+cover.**
+
+> **«SIX AT 26 ON FOOT» WAS WRONG.**
+>
+> **The Asterousia is a dirt-road coast, and our own insurance rule removes most
+> of the walk-ins. THE BOAT IS NOT A LUXURY THERE — IT IS THE WAY IN.**
+>
+> **This reverses what I wrote two sections ago and makes the Salty Trips message
+> MORE important, not less.**
+
+**Note on Άγιος Νικήτας:** the 4-hour **ΤΣΟΥΤΣΟΥΡΑΣ → ΜΑΡΙΔΑΚΙ → ΑΓΙΟΣ ΝΙΚΗΤΑΣ**
+footpath came from a different source and may well be real — **but it is not on
+the beach's own page, and after tonight that is not good enough to plan a day
+on.** Must be confirmed independently.
+
+## 🆕 A SECOND OPERATOR — the eastern boat is no longer a single point of failure
+
+> **`exclusiveadventures.gr` — «Crete boat trip to ΑΣΠΕΣ and lunch in
+> ΚΕΡΑΤΟΚΑΜΠΟΣ»**
+
+**A published Άσπες route from a different company.** Κερατόκαμπος is east of
+Τσούτσουρας, so this is the same coast from the other end. **Ask both.**
+
+## 📊 WHAT THE AUDIT CHANGES
+
+| | |
+|---|---|
+| **Colour grades** | **unchanged — all nine correct** |
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | likely **not a separate beach** — pending the operator |
+| **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ** | **location disputed** — frozen |
+| **Walkable at 26 in the Asterousia** | **ΑΓΙΟΦΑΡΑΓΓΟ confirmed. The rest need a dirt-road drive or a boat.** |
+| **The eastern boat** | **upgraded from optional to the way in** — and now **two operators** |
