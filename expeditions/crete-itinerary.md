@@ -6355,3 +6355,98 @@ on.** Must be confirmed independently.
 | **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ** | **location disputed** — frozen |
 | **Walkable at 26 in the Asterousia** | **ΑΓΙΟΦΑΡΑΓΓΟ confirmed. The rest need a dirt-road drive or a boat.** |
 | **The eastern boat** | **upgraded from optional to the way in** — and now **two operators** |
+
+---
+
+# 🔵 THE TURQUOISE SWEEP — EAST CONFIRMED, WEST PARTLY DONE
+
+## ✅ EAST: THERE IS NO TURQUOISE. CONFIRMED.
+
+**All nine structured fields read Deep blue or Blue. Not one reads Turquoise.**
+
+**Two apparent counter-claims, both resolved against turquoise:**
+
+| Claim | Resolution |
+|---|---|
+| A listicle: **ΚΑΜΙΝΑΚΙ has «shallow turquoise water»** | **The same source says «steep CLAY cliffs».** Clay suspends in the water column and **kills** turquoise — our own substrate rule. **And its own field says Blue.** |
+| **ΤΡΥΠΗΤΗ (Αστερούσια): «dark pebbles and crystalline blue-green water»** | **γαλαζοπράσινο over DARK pebble** — the rule requires a **pale** substrate. **Stays 7.** |
+
+> **VERDICT: the Asterousia is a deep-blue coast. Dramatic, clear, cave-riddled —
+> and NOT turquoise. Zac's rule applies: if the competition is immense, the east
+> does not justify itself on colour.**
+
+## 🔄 WEST: ONE UP, TWO OUT
+
+### ⬆️ ΚΕΔΡΟΔΑΣΟΣ 26 → **27** — a genuine Colour 9
+
+| Field | Value |
+|---|---|
+| **Sea water color** | **TURQUOISE** ✅ |
+| **Depth** | **SHALLOW** ✅ |
+| **Sand type** | **WHITE SAND**, rocks in places ✅ |
+| Accessibility | Dirt track, **Walking** — **the E4 crosses the beach** |
+
+> **The complete mechanism: turquoise field + shallow + white sand.**
+> **ΚΕΔΡΟΔΑΣΟΣ `8 · 9 · 10` = 27.**
+>
+> **It joins ΜΠΑΛΟΣ and ΕΛΑΦΟΝΗΣΙ as a Cretan Colour 9 — and unlike them it has
+> no coach park, only the E4 footpath.**
+
+### ⬇️ ΓΛΥΚΑ ΝΕΡΑ 26 → **25** — out of the 26s
+
+| Field | Value |
+|---|---|
+| **Sea water color** | **DEEP BLUE** |
+| **Depth** | **Deep** |
+| **Sand type** | Pebbles |
+
+Prose: **«deep blue water color and nice pebbles»**. **ΓΛΥΚΑ ΝΕΡΑ `8·7·10` = 25.**
+
+> ⚠️ **AND A WATER-GATE RISK:** *«Sea water is generally **cold because of the
+> springs, even in midsummer**»* — fresh water gushes **up through the pebbles**.
+> **In late October this may fall below the 21.5 °C gate, which would cut it
+> outright.** To be checked.
+
+### ⬇️ ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ (ΣΤΕΦΑΝΟΥ) 26 → **25** — out of the 26s
+
+| Field | Value |
+|---|---|
+| **Sea water color** | **DEEP BLUE** |
+| **Depth** | **Deep** |
+| **Sand type** | Fine Pebbles |
+
+Other sources split — one says **Turquoise**, another **Dark blue**, and
+crete.direct says *«pale aquamarine to deep cobalt within metres»* over **coarse
+gravel and flat rock, no sand.** **The field decides: Colour 7.**
+
+> **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ `8·7·10` = 25 — and Group 6 therefore disappears**, since it
+> was that group's only entry.
+
+## ⚠️ NOT YET VERIFIED — THE SWEEP IS UNFINISHED
+
+**I could not find the cretanbeaches slugs for these. Their grades still rest on
+older evidence and must not be treated as audited:**
+
+**ΔΩΜΑΤΑ · ΙΛΙΓΚΑΣ main + coves 2 and 3 · ΕΛΑΦΟΝΗΣΙ coves · ΒΑΘΥ · ΓΡΑΜΒΟΥΣΑ ·
+ΠΡΕΒΕΛΗ · ΤΡΥΠΗΤΗ (west) · ΣΕΝΤΟΝΙ · ΛΙΣΣΟΣ**
+
+> 🔴 **ΔΩΜΑΤΑ IS THE URGENT ONE.** No cretanbeaches page was found for it, and the
+> one source located describes **«azure blue, often veiled in a gentle haze
+> caused by underground freshwater springs»** — **haze from springs is the
+> opposite of turquoise.** Our 28 rests on **Zac's own observation** that it is
+> turquoise by the sand, against sources that say deep blue. **It must be
+> audited before the trip is built around it.**
+
+## 📊 RUNNING COUNT
+
+| | |
+|---|---|
+| **Before this sweep** | 22 at 26+ |
+| **ΚΕΔΡΟΔΑΣΟΣ** | 26 → **27** *(stays in)* |
+| **ΓΛΥΚΑ ΝΕΡΑ** | 26 → **25** *(out)* |
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | 26 → **25** *(out)* |
+| **NOW** | **20 at 26+** |
+
+**Cretan Colour 9s, complete list: ΜΠΑΛΟΣ · ΕΛΑΦΟΝΗΣΙ · ΚΕΔΡΟΔΑΣΟΣ · ΦΑΛΑΣΑΡΝΑ ·
+ΒΟΥΛΙΣΜΑ** — and of those, **ΜΠΑΛΟΣ and ΚΕΔΡΟΔΑΣΟΣ are the only two that survive
+Discovery.**
