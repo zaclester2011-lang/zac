@@ -6526,3 +6526,118 @@ new scale the gap is 9 vs 5 — a cliff.**
 
 > **Does the substrate caveat survive? It now decides whether a beach exists at
 > all.** Pending Zac.
+
+---
+
+# 🔄 THE METHOD CORRECTED, AND THE EAST RE-RUN
+
+## THE ERROR IN THE METHOD
+
+**I was treating cretanbeaches' structured «Χρώμα νερού» as a verdict. It is ONE
+WORD FOR A WHOLE BAY.** For a beach with a deep channel and a shallow pale edge,
+that word picks the body of water and **throws the shore away.**
+
+> **THE SHORE IS WHERE WE SWIM.** This is exactly what Zac said about ΔΩΜΑΤΑ —
+> *«turquoise by the sand»* — and I resisted it twice.
+
+## THE REPLACEMENT: PREPONDERANCE + MECHANISM
+
+**A colour grade needs all three:**
+1. **Several INDEPENDENT sources** naming the colour
+2. **on pages about THAT beach** *(not a neighbour's page — the Αλυκαπούντα failure)*
+3. **a physical mechanism that permits it** *(a substrate that is not stated to be dark)*
+
+**The field becomes one vote, not the verdict.**
+**The discriminator is whether the substrate colour is STATED.**
+
+## ⬅️ WEST, CORRECTED
+
+| Beach | Evidence | New |
+|---|---|---|
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | several guides **turquoise** · one **«milky-turquoise»** · *«a narrow fjord-like cove cut into **WHITE LIMESTONE** cliffs»* · field dissents · pebble colour disputed | **`8·9·10` = 27** ✅ |
+| **ΓΛΥΚΑ ΝΕΡΑ** | **«γαλαζοπράσινα δροσερά νερά»** · **«κρυστάλινο-πράσινο χρώμα»** · field Βαθύ μπλε | **`8·9·10` = 27** ✅ ⚠️ **water-gate risk — cold from the springs** |
+
+## ➡️ EAST, RE-RUN — THREE OF FOUR RESTORED
+
+### ✅ ΑΓΙΟΦΑΡΑΓΓΟ `9 · 9 · 10` = 28
+
+| Source | Says |
+|---|---|
+| exploringgreece **headline** | **«1,5 χλμ. ψιλό βοτσαλάκι και ΤΙΡΚΟΥΑΖ νερά»** |
+| second | *turquoise waters that look completely fake* |
+| third | *turquoise waters of the Libyan* |
+| cretanbeaches field | Deep blue — **the lone outlier** |
+
+**Fine pebble, in a limestone gorge. Substrate colour NOT stated as dark.**
+**AND ITS WALK IS THE ONE THAT WAS CONFIRMED — 40 min, easy, flat gorge floor.**
+
+> **The single best outcome of the re-run: a 28 on an easy 40-minute walk.**
+
+### ✅ ΜΑΡΤΣΑΛΟ `9 · 9 · 10` = 28
+
+> **patris.gr: «Κρυστάλλινα, ΓΑΛΑΖΟΠΡΑΣΙΝΑ νερά και φοίνικες!»**
+
+Field Βαθύ μπλε; another καταγάλανα. **Blue-green attested on a dedicated
+article.** **Access better than logged: 20–40 min on foot through the gorge from
+ΜΟΝΗ ΟΔΗΓΗΤΡΙΑΣ**, several sources agreeing · caïque from Καλοί Λιμένες or Μάταλα.
+
+### ✅ ΑΓΙΟΣ ΝΙΚΗΤΑΣ `9 · 9 · 10` = 28 — colour only
+
+> cretazine: **«το βοτσαλάκι και τα βαθιά ΓΑΛΑΖΟΠΡΑΣΙΝΑ νερά»**
+> second: **«πεντακάθαρα ΠΡΑΣΙΝΑ νερά»**
+> its own prose: *«crystal clear and **deep green** waters»*
+
+**Three say green or blue-green; only the field says deep blue.**
+
+> ⚠️ **ACCESS UNCHANGED AND STILL BAD: 15 km rough χωματόδρομος from ΑΧΕΝΤΡΙΑΣ,
+> then 230 STEPS through the monastery.** The insurance rule makes the dirt road a
+> no. **Restored on colour, blocked on access** unless the Τσούτσουρας footpath
+> checks out. *(Nudism forbidden — it is a working monastery.)*
+
+### ❌ ΣΚΙΑΔΑΚΙ — HELD AT COLOUR 5. NEEDS ZAC'S SATELLITE READ
+
+| Source | Says |
+|---|---|
+| **neakriti** | the pebble is **ΛΕΥΚΟ — WHITE** ✅ a pale substrate |
+| **ruralgreece** | the water is **«βαθιά καταγάλανα»** — deep, deep blue |
+| **anywhere** | **NO source names τιρκουάζ or γαλαζοπράσινο** |
+
+> **White floor + deep-blue water is the one combination the method cannot
+> resolve.** The substrate says the shallow edge should go turquoise; every actual
+> colour word says it does not.
+>
+> 🔭 **ZAC: this is the one to read off the satellite tile. If the shore strip is
+> pale, ΣΚΙΑΔΑΚΙ is a 9 and a 28.**
+
+### ❌ ΑΣΠΕΣ — STAYS CUT, AND IT IS CONSISTENT
+
+**Άσπες' own page DOES say «vivid turquoise».** Overridden on one ground: the
+substrate is **«μαύρο χαλικάκι»** — **explicitly black. Turquoise over black is
+physically impossible.**
+
+> **The test is whether the substrate colour is STATED.**
+> **ΑΓΙΟΦΑΡΑΓΓΟ: not stated, limestone gorge → attested turquoise STANDS.**
+> **ΑΣΠΕΣ: stated, and black → it FALLS.**
+> **Same test, opposite results, no thumb on the scale.**
+
+## 📊 RUNNING STATE
+
+| At 28 | Access |
+|---|---|
+| **ΑΓΙΟΦΑΡΑΓΓΟ** `9·9·10` | ✅ **40 min, easy** |
+| **ΜΑΡΤΣΑΛΟ** `9·9·10` | ✅ **20–40 min from Οδηγήτρια** |
+| **ΚΕΔΡΟΔΑΣΟΣ** `8·10·10` | ✅ **the E4 crosses it** |
+| **ΜΑΡΜΑΡΑ** `9·9·10` | ✅ boat or walk from Λουτρό |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** `9·9·10` | ⚠️ 15 km dirt + 230 steps |
+| ΚΑΜΙΝΑΚΙ · ΒΑΛΑ · ΠΙΚΡΟΒΛΥΧΑΔΑ `10·8·10` | ⚠️ boat only |
+
+| At 27 | |
+|---|---|
+| **ΜΠΑΛΟΣ** `7·10·10` | the cruise |
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** `8·9·10` | steep path |
+| **ΓΛΥΚΑ ΝΕΡΑ** `8·9·10` | ⚠️ temperature |
+| **ΚΑΤΑΡΤΙ** `9·8·10` | on foot |
+
+> 🔴 **ΔΩΜΑΤΑ STILL UNAUDITED — and under the corrected method its «turquoise by
+> the sand» is now the KIND of evidence the method accepts, not the kind it
+> dismisses.** Next job.
