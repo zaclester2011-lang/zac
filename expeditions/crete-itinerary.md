@@ -5762,3 +5762,75 @@ keeps them as **two distinct coves**. So either there are two black beaches on o
 > **Group 8 ΑΣΤΕΡΟΥΣΙΑ gains ΚΑΤΑΡΤΙ 27 and ΜΑΡΤΣΑΛΟ 26 — and both are walks,
 > so neither needs the boat, the weather or an operator's season.**
 > **Advance bookings for the week: still TWO.**
+
+---
+
+# 🔬 THE STRUCTURED FIELD, AT LAST — AND IT SETTLES ASPES
+
+cretanbeaches.com resolved on the `.com` domain. **The one source I trust most
+was reachable all along and I had it logged as unavailable.**
+
+## ASPES — the structured field contradicts its own prose
+
+| Field | Value |
+|---|---|
+| **Sea water color** | **DEEP BLUE** |
+| **Depth** | **Deep** |
+| **Sand type** | **Pebbles** |
+| **Accessibility** | **BOAT** |
+
+**And the prose on the same page says: «The colors of the sea have a vivid
+turquoise color».**
+
+> **The page contradicts itself.** The standing rule decides it: **score from the
+> structured field, never from prose.** And the prose names **no mechanism** —
+> the substrate is black pebble, and the field itself says Deep blue.
+
+> **ASPES HOLDS AT `10 · 7 · 10` = 27.** The 6→7 correction was right. **It does
+> not go to 8.** Had I scored the prose I would have had it at 9 and been wrong
+> by two.
+
+**It is also confirmed as a black beach** — *«The majestic black beach of
+Aspes»*, English and Greek slugs both carrying *black* — **but the page never
+uses the name Mavri Paralia.**
+
+## THE NAMING QUESTION, RESOLVED AS FAR AS IT CAN BE
+
+cretanbeaches gives **ΣΚΙΑΔΑΚΙ 1.6 km** and **ΚΑΜΙΝΑΚΙ 3.1 km** from Άσπες, with
+no compass bearing. thisiscrete places **ΜΑΥΡΗ ΠΑΡΑΛΙΑ between Σκιαδάκι and
+Καμινάκι**.
+
+> **Best reading: two distinct black coves on one 5 km stretch** — Άσπες, which
+> *is* nicknamed the black beach, and Μαύρη Παραλία, which carries the name
+> outright. **Not the same place.** Still worth confirming with the operator.
+
+## 🆕 ΠΙΚΡΟΒΛΥΧΑΔΑ `10 · 7 · 10` = 27 — but we cannot reach it
+
+| | |
+|---|---|
+| **Water** | *«The bottom has pebbles and crystal blue waters»* — **clarity plus γαλάζιο, Colour 7** |
+| **Where** | **Cape Αλυκαπούντα**, near **Εθιά** — *«one of the most inaccessible parts of the Asterousia»* |
+| **Setting** | **dark limestone** into the sea forming a narrow gorge in the water, **sea caves both sides** — snorkel gear advised |
+| **On foot** | the **ancient Αλυκεβρά path**, down a **steep canyon with technical descents.** The page says the distance and altitude gap from the nearest road make **walking in rare** |
+| **By boat** | **boats must stop offshore — «access to the beach is possible only by swimming»** |
+
+> **Discovery 10. And a technical canyon descent or a boat-plus-swim.** Same
+> category as Άσπες: **a 27 we have no way to stand on.**
+
+## THE REST OF THE EASTERN STRETCH
+
+| Beach | Score | Verdict |
+|---|---|---|
+| **ΚΡΥΓΙΑ ΒΛΥΧΑΔΑ** | `7·6·10` = 23 | ❌ **«σκουρόχρωμα βράχια και ψιλό σκούρο βοτσαλάκι»** — dark rock, fine dark pebble, **Colour 6.** Water only **γαλάζιο**. **Χωματόδρομος from Τρεις Εκκλησιές**, and **no shade at any hour** |
+| **ΤΡΑΓΟΠΙΑΣΤΗ** | n/a | **Not a beach** — the **sea caves with πολύχρωμα βράχια at Κρυγιά Βλυχάδα's eastern end.** A snorkel feature, and a good one |
+| **ΒΟΙΔΟΜΑΤΗΣ** | **ungraded** | page exists, not yet read |
+| **ΤΡΑΦΟΥΛΑΣ** | **ungraded** | new name — at the exit of the **Φαράγγι Πηδηματού** |
+| **ΛΑΡΙΔΑ · ΓΚΑΪΔΑΡΟΥ ΠΗΔΟΣ · ΑΛΙΚΕΣ** | **ungraded** | **no source in any language.** Named only as *«with your own boat you can go to»* |
+
+## 📊 WHERE THAT LEAVES IT
+
+> **DOABLE at 26+: 23** — unchanged, because every new find is boat-only.
+> **Scoring 26+ but unreachable: ΑΣΠΕΣ 27 · ΠΙΚΡΟΒΛΥΧΑΔΑ 27 · ΜΑΥΡΗ ΠΑΡΑΛΙΑ 26**
+> *(the last cut on Colour 6 as well)*
+> **Lesson re-learned: the prose would have given Άσπες a 9. The structured field
+> gave it a 7. Score the field.**
