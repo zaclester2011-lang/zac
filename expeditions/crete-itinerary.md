@@ -6087,3 +6087,70 @@ one push with five people.** Either start from the **Άγιος Νικήτας**
 *(15 km of dirt — the insurance rule says no)*, or walk in and out from
 Τσούτσουρας and **take Σκιαδάκι only if the clock allows.** **Decide on the
 morning.**
+
+---
+
+# ❌ ΑΛΥΚΑΠΟΥΝΤΑ DOES NOT EXIST — THE 28 IS WITHDRAWN
+
+**Corrected by Zac. He is right, and the signals were already in front of me:**
+the direct `alykapounda-beach` URL **404'd**, and a Greek search for
+**«Αλυκαπούντα»** returned **nothing at all**. I logged both and scored anyway.
+
+## What is actually there
+
+| | |
+|---|---|
+| **ΑΛΥΚΑΠΟΥΝΤΑ** | **a CAPE, not a beach** — *«Cape of Alykapounta»*, sheltering the bay on its **eastern** side |
+| **The beach** | **ΒΑΛΑ (Vala)** — 58 km S of Heraklion, ~1 km from Καμινάκι, in **Αλυκεβρά bay** |
+| **ΑΛΥΚΕΒΡΑ** | **a spring area east of the cape — with NO BEACH** |
+
+## ΒΑΛΑ — the structured field
+
+| Field | Value |
+|---|---|
+| **Sea water color** | **BLUE** |
+| **Depth** | **Normal** |
+| **Sand type** | Pebbles |
+| **Accessibility** | **BOAT** |
+
+**Prose on its own page: «clear blue waters»** and *«very close to an impressive
+**Δ-shaped underwater cave**»*. **The word turquoise does not appear on it
+anywhere.**
+
+> **ΒΑΛΑ `10 · 7 · 10` = 27 — boat only.**
+
+## 🔴 HOW THE ERROR HAPPENED — THE SAME FAILURE, ONE TURN LATER
+
+The *«amazing turquoise water color»* and *«strikingly turquoise»* I scored are
+**prose on the ΚΑΜΙΝΑΚΙ page, describing an unnamed neighbour 700 m east.** I
+then:
+
+1. **invented a beach name** out of the cape that shelters it
+2. **scored it 8 on that prose** — **one section after** correcting Άσπες from 9
+   to 7 for exactly that, and writing *«score the field, never the prose»*
+3. **called it «the best colour evidence on the coast»** and built it into the
+   plan as a **28, joint highest in the archive**
+4. **used it to argue the Τσούτσουρας boat was the trip's second most valuable
+   message**
+
+> **The rule was not the problem. I wrote the rule, quoted the rule, and then did
+> not apply it to my own find — because the find was exciting.** That is the
+> precise failure Zac named earlier as pleasing rather than being accurate, and
+> it survived being named.
+
+## 📊 THE TALLY, CORRECTED
+
+> **The archive has ONE 28: ΔΩΜΑΤΑ `10·8·10`.** As it did before I invented a
+> rival for it.
+>
+> **DOABLE at 26+: 22** — unchanged, since neither Αλυκαπούντα nor Βάλα was ever
+> walkable.
+>
+> **Behind the Τσούτσουρας boat:** **ΒΑΛΑ 27 · ΑΣΠΕΣ 27 · ΠΙΚΡΟΒΛΥΧΑΔΑ 27 ·
+> ΚΑΜΙΝΑΚΙ 27 · ΜΑΥΡΗ ΠΑΡΑΛΙΑ 26** — **four 27s and no 28.** Still worth one
+> WhatsApp. **No longer worth the billing I gave it.**
+
+**Standing check added, from this failure:** before any score is entered, the
+beach must have **its own page** and **its own structured field.** Prose on a
+neighbour's page is **not** evidence about a beach — **and a beach with no page
+of its own may not be a beach.**
