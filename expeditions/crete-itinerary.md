@@ -6450,3 +6450,79 @@ older evidence and must not be treated as audited:**
 **Cretan Colour 9s, complete list: ΜΠΑΛΟΣ · ΕΛΑΦΟΝΗΣΙ · ΚΕΔΡΟΔΑΣΟΣ · ΦΑΛΑΣΑΡΝΑ ·
 ΒΟΥΛΙΣΜΑ** — and of those, **ΜΠΑΛΟΣ and ΚΕΔΡΟΔΑΣΟΣ are the only two that survive
 Discovery.**
+
+---
+
+# 🔢 COLOUR RESCALED BY ZAC — AND IT IS A CLIFF
+
+| Greek | English | **NEW** | *(was)* |
+|---|---|---|---|
+| **τιρκουάζ** | turquoise | **10** | *9* |
+| **γαλαζοπράσινο** | blue-green | **9** | *8* |
+| **γαλάζιο** | plain blue | **8** | *7* |
+| **βαθύ μπλε / καταγάλανα** | deep blue | **5** | *7* |
+
+> **The weak-link rule cuts anything below 7. DEEP BLUE IS NOW 5 — so every
+> deep-blue beach is CUT OUTRIGHT, whatever else it scores.**
+
+## ❌ CUT ON COLOUR 5 — seven confirmed
+
+| Beach | Was | Now |
+|---|---|---|
+| **ΑΣΠΕΣ** | 27 | **CUT** |
+| **ΣΚΙΑΔΑΚΙ** | 26 | **CUT** |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | 26 | **CUT** |
+| **ΜΑΡΤΣΑΛΟ** | 26 | **CUT** |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | 26 | **CUT** |
+| **ΓΛΥΚΑ ΝΕΡΑ** | 25 | **CUT** |
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | 25 | **CUT** |
+
+> **FIVE OF THE SIX ΑΣΤΕΡΟΥΣΙΑ WALK-INS ARE GONE** — including Αγιοφάραγγο, the
+> only one whose walk was actually confirmed. **Group 8 is effectively dissolved.**
+
+## ⬆️ PROMOTED
+
+| Beach | D·C·W | Now | Access |
+|---|---|---|---|
+| **ΚΕΔΡΟΔΑΣΟΣ** | `8·10·10` | **28** | **ON FOOT — the E4 crosses the beach** |
+| **ΜΑΡΜΑΡΑ** | `9·9·10` | **28** | boat or walk from Λουτρό · **γαλαζοπράσινο leads its field** |
+| **ΚΑΜΙΝΑΚΙ** | `10·8·10` | **28** | boat only |
+| **ΒΑΛΑ** | `10·8·10` | **28** | boat only |
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | `10·8·10` | **28** | boat + swim · ⚠️ **colour from prose, not a field** |
+| **ΜΠΑΛΟΣ** | `7·10·10` | **27** | the Κίσσαμος cruise |
+| **ΚΑΤΑΡΤΙ** | `9·8·10` | **27** | **ON FOOT** |
+
+> **ΚΕΔΡΟΔΑΣΟΣ is now the best thing in Crete reachable on foot** — a Colour 10
+> field, Shallow, White Sand, and no coach park.
+
+## 🔴 ΔΩΜΑΤΑ IS NOW EXISTENTIAL
+
+**ΔΩΜΑΤΑ has NO verified structured field.** The one source found says *«azure
+blue, often veiled in a gentle haze caused by underground freshwater springs»*.
+
+> **If its field reads Deep blue, ΔΩΜΑΤΑ IS CUT AT COLOUR 5 — and the whole
+> ΣΟΥΓΙΑ boat day goes with it**, the trip's centrepiece and its only
+> time-critical rental. **ΤΡΥΠΗΤΗ, ΣΕΝΤΟΝΙ and ΛΙΣΣΟΣ are unverified and sit on
+> the same boat.**
+>
+> **An hour ago this was a loose end. Under this scale it is the entire plan.**
+
+## ⚠️ NO FINAL LIST YET — ELEVEN UNVERIFIED
+
+**ΔΩΜΑΤΑ · ΙΛΙΓΚΑΣ main + coves 2 and 3 · ΕΛΑΦΟΝΗΣΙ coves · ΒΑΘΥ · ΓΡΑΜΒΟΥΣΑ ·
+ΠΡΕΒΕΛΗ · ΣΕΝΤΟΝΙ · ΛΙΣΣΟΣ · ΤΡΥΠΗΤΗ (west)**
+
+**On this scale each one is now either a 28 or a cut, with nothing in between.**
+**Guessing them would repeat the Αλυκαπούντα failure.**
+
+## ❓ ONE RULE DECISION FOR ZAC
+
+**Standing rule: «γαλαζοπράσινο counts only where a pale substrate is named»** —
+otherwise it drops a grade. **That rule was built when the gap was 8 vs 7. On the
+new scale the gap is 9 vs 5 — a cliff.**
+
+**It would cut ΤΡΥΠΗΤΗ (Αστερούσια)** — *«crystalline blue-green water»* over
+**dark pebbles** — **from 9 to 5 on a substrate technicality.**
+
+> **Does the substrate caveat survive? It now decides whether a beach exists at
+> all.** Pending Zac.
