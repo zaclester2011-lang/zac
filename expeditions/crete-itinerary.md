@@ -5834,3 +5834,101 @@ no compass bearing. thisiscrete places **ΜΑΥΡΗ ΠΑΡΑΛΙΑ between Σκ�
 > *(the last cut on Colour 6 as well)*
 > **Lesson re-learned: the prose would have given Άσπες a 9. The structured field
 > gave it a 7. Score the field.**
+
+---
+
+# 📋 THE FULL SALTY TRIPS LIST, SCORED FROM THE STRUCTURED FIELD
+
+**Having just caught Άσπες on prose, I held my own new finds to the same test.
+Two of them failed it.**
+
+## ⬇️ ΚΑΤΑΡΤΙ 27 → 26 — my own find, corrected down
+
+| Field | Value |
+|---|---|
+| **Sea water color** | **BLUE** |
+| **Depth** | **Deep** |
+| **Sand type** | Pebbles |
+| **Accessibility** | **Boat, Walking** |
+
+The **σμαραγδένια** (emerald) came from **thalori.com prose** — the same class of
+source that would have given Άσπες a 9. The field says **Blue**. The white pebble
+is real *(«white pebbles and clear deep sea»)*, but **clear is not colour** and
+the water is **Deep**.
+
+> **ΚΑΤΑΡΤΙ `9 · 7 · 10` = 26.** Down one. **Walking confirmed** — from **Άγιος
+> Ιωάννης** or from **Τρυπητή beach, 2.5 km west.**
+
+## ⬇️ ΚΑΜΙΝΑΚΙ 27 → 26 — and its walk is now in doubt
+
+| Field | Value |
+|---|---|
+| **Sea water color** | **BLUE** |
+| **Depth** | **Normal** ✅ |
+| **Sand type** | Pebbles |
+| **Accessibility** | Boat, Walking |
+
+**The page never states the pebble colour.** My Colour 8 came from the name
+**«the White Beach»** and from Salty Trips' marketing, not from a source. Field
+says **Blue**.
+
+> **ΚΑΜΙΝΑΚΙ `9 · 7 · 10` = 26.** Normal depth is in its favour; it still does not
+> earn an 8 on a field that says Blue.
+
+> ⚠️ **ACCESS WARNING:** the prose says *«Access to the beach is possible mainly
+> through sea»* — **the gorge is hard to descend and the beach is far from the
+> nearest road** — which **contradicts the Walking field.** Nearest harbour
+> **Τρεις Εκκλησιές, ~3 km west.** **This must be resolved before Καμινάκι is
+> counted as a walk.**
+
+## ⭐ NEW — ΑΛΥΚΑΠΟΥΝΤΑ `9 · 8 · 10` = 27
+
+**700 m east of Καμινάκι, on Αλυκεβρά bay, sheltered by Cape Αλυκαπούντα.**
+
+| | |
+|---|---|
+| **cretanbeaches** | **«its amazing turquoise water color»** |
+| **creteinfo** | **«strikingly turquoise»** · a **Delta-shaped sea cave** |
+| **Substrate** | pebble |
+| **Sea** | **usually calm** — the cape shelters it |
+| **Crowds** | quiet · nudism-friendly |
+| **Access** | **boat or on foot** · snorkelling and spearfishing |
+
+> **Two independent sources say TURQUOISE outright** — the best colour evidence
+> anywhere on this coast, and better than Άσπες, Καμινάκι or Κατάρτι.
+>
+> **Colour 8, not 9:** it has **no structured field of its own** *(it sits inside
+> the Καμινάκι page)* and **no pale substrate is named.** The mechanism is
+> shelter and calm water, which is real but is not a white shelf.
+>
+> ⚠️ **Same access doubt as Καμινάκι** — it is the next cove along.
+
+## THE COMPLETE LIST — ALL 14 SALTY TRIPS ENTRIES
+
+| Beach | D·C·W | Total | Access | Verdict |
+|---|---|---|---|---|
+| **ΑΛΥΚΑΠΟΥΝΤΑ** ⭐ | `9·8·10` | **27** | boat / foot ⚠️ | ✅ **NEW — best colour on the coast** |
+| **ΑΣΠΕΣ** | `10·7·10` | **27** | **Boat** | ⚠️ unreachable on foot |
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | `10·7·10` | **27** | boat **+ swim** | ⚠️ unreachable |
+| **ΚΑΤΑΡΤΙ** | `9·7·10` | **26** | **foot ✅** from Άγ. Ιωάννης / Τρυπητή | ✅ **IN** |
+| **ΚΑΜΙΝΑΚΙ** | `9·7·10` | **26** | foot ⚠️ *disputed* | ✅ in, **access to confirm** |
+| **ΣΚΙΑΔΑΚΙ** | `9·7·10` | **26** | foot — Κακοπέρατος gorge | ✅ **IN** |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | `9·7·10` | **26** | **foot, 40 min, easy** | ✅ **IN** |
+| **ΜΑΡΤΣΑΛΟ** | `9·7·10` | **26** | foot — pairs with Αγιοφάραγγο | ✅ **IN** |
+| **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ** | `9·7·10` | **26** | foot — three bays | ✅ **IN** |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | `9·7·10` | **26** | **foot, 4 h, easy** | ✅ **IN** |
+| **ΜΑΡΙΔΑΚΙ** | `7·6·10` | 23 | dirt road | ❌ **dark pebble — Colour 6** |
+| **ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ** | `5·7·10` | 22 | tarmac | ❌ settlement · *145 m waterfall worth the stop* |
+| **ΧΡΥΣΗ** | `2·9·10` | 21 | daily ferry | ❌ **real Colour 9, Discovery 2** |
+| **ΤΣΟΥΤΣΟΥΡΑΣ** | `3·6·10` | 19 | tarmac | ❌ *«fairly developed touristic place»* — **it is the harbour** |
+| **ΜΟΝΗ ΚΟΥΔΟΥΜΑ** | — | — | dirt road | ❌ working monastery, c. 1280 |
+| **SFAKIA SEA CAVE** | n/a | n/a | boat | ⚠️ **not a beach — a cave, and an activity** |
+
+## 📊 THE TALLY
+
+> **DOABLE at 26+: 24** *(23 + Αλυκαπούντα)* — **with two access flags**
+> **ΑΛΥΚΑΠΟΥΝΤΑ 27 and ΚΑΜΙΝΑΚΙ 26 both need their walk confirmed**
+> **Unreachable but scoring 26+: ΑΣΠΕΣ 27 · ΠΙΚΡΟΒΛΥΧΑΔΑ 27 · ΜΑΥΡΗ ΠΑΡΑΛΙΑ 26**
+>
+> **Tonight the field cost me two of my own upgrades and gave back one better
+> entry. That is the rule working.**
