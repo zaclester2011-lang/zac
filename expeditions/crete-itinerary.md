@@ -6641,3 +6641,36 @@ physically impossible.**
 > 🔴 **ΔΩΜΑΤΑ STILL UNAUDITED — and under the corrected method its «turquoise by
 > the sand» is now the KIND of evidence the method accepts, not the kind it
 > dismisses.** Next job.
+
+---
+
+# ➕ ΑΓΙΟΣ ΠΑΥΛΟΣ ADDED TO GROUP 3 (ΣΦΑΚΙΑ)
+
+**Confirmed as the Sfakia Άγιος Παύλος**, not the Rethymno/Τριόπετρα one — it
+appears throughout the archive alongside **Λουτρό, Ίλιγκας, Λυκός and Αγία
+Ρούμελη**, all on the Χώρα Σφακίων ferry run, on the **E4 between Αγία Ρούμελη
+and Λουτρό**, with its Byzantine chapel standing on the sand.
+
+> **ΑΓΙΟΣ ΠΑΥΛΟΣ `8 · 8 · 10` = 26** — restored to the list at Zac's instruction.
+
+**It had been held out by the turquoise rule**, not by its score. **Zac is
+judging colour manually, so the exclusion is withdrawn and the entry stands at
+its number.**
+
+## GROUP 3 · ΣΦΑΚΙΑ — as it now reads *(original scale)*
+
+| Beach | D·C·W | Total | Colour evidence | Access |
+|---|---|---|---|---|
+| **ΙΛΙΓΚΑΣ cove 2** | `9·8·10` | **27** | **λευκό βότσαλο** vs field **Βαθύ μπλε** | walk + **swim 80 m east** |
+| **ΙΛΙΓΚΑΣ cove 3** | `9·8·10` | **27** | same | walk + swim 80 m |
+| **ΑΓΙΟΣ ΠΑΥΛΟΣ** | `8·8·10` | **26** | ⚠️ **not yet verified — for Zac's read** | **E4 on foot** from Αγία Ρούμελη or Λουτρό · or the ferry |
+| **ΙΛΙΓΚΑΣ main** | `8·8·10` | **26** | as the coves | 20–40 min from Χώρα Σφακίων |
+| **ΓΛΥΚΑ ΝΕΡΑ** | `8·8·10` | **26** | γαλαζοπράσινα · κρυστάλινο-πράσινο · field **Βαθύ μπλε** | boat or coastal path |
+
+> **Group 3 now holds FIVE entries at 26+, four of them on one walk from Χώρα
+> Σφακίων and the fifth on the same ferry.** It is the densest group in the plan
+> and needs **no booking at all.**
+
+**Also on that single ferry ticket, below 26:** ΛΟΥΤΡΟ · ΛΥΚΟΣ · ΑΓΙΑ ΡΟΥΜΕΛΗ.
+
+**Archive total at 26+: 33** *(32 + Άγιος Παύλος)*.
