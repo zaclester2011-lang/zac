@@ -5932,3 +5932,84 @@ says **Blue**.
 >
 > **Tonight the field cost me two of my own upgrades and gave back one better
 > entry. That is the rule working.**
+
+---
+
+# ⭐ ΑΛΥΚΑΠΟΥΝΤΑ — RATED PROPERLY: `10 · 8 · 10` = 28
+
+**Up from 27. It is now level with ΔΩΜΑΤΑ — the joint highest score in the
+archive.** And the thing that lifted it is the thing that puts it out of reach.
+
+## Where it is
+
+> *«A striking beach with turquoise waters and a unique **Δ-shaped sea cave** can
+> be found **700 m east of Kaminaki**. The beach is nestled in the embrace of
+> **Alykevra Bay**, at the **Sfakidia** location, and is **well-shielded by Cape
+> Alykapounda**»*
+
+## Colour 8 — and why not 9
+
+| Evidence | |
+|---|---|
+| cretanbeaches | **«its amazing turquoise water color»** |
+| creteinfo | **«strikingly turquoise»** |
+| Substrate | **pebble — no pale floor named** |
+| Mechanism | **sheltered by the cape, usually calm** |
+
+**Two independent sources say turquoise outright.** That is better colour evidence
+than Άσπες *(whose own field says Deep blue)*, than Καμινάκι *(Blue)* and than
+Κατάρτι *(Blue)*.
+
+> **It stays at 8, not 9, for two stated reasons:** it has **no structured
+> «Sea water color» field of its own** — it sits inside the Καμινάκι page — and
+> **no pale substrate is named.** Shelter and calm are a real mechanism, but they
+> are not a white shelf. **Every Colour 9 in Crete has a named pale floor.**
+
+## Discovery 10 — raised, and the reason is brutal
+
+> *«access by foot is **almost impossible** as it requires **long hours of hiking
+> in rugged terrain**, so **the boat is almost the only way to reach**»*
+
+**That is a Discovery 10.** Only ΑΣΠΕΣ, ΠΙΚΡΟΒΛΥΧΑΔΑ and ΜΑΥΡΗ ΠΑΡΑΛΙΑ share it.
+
+> **ΑΛΥΚΑΠΟΥΝΤΑ `10 · 8 · 10` = 28 — BOAT ONLY.**
+> **The best colour evidence on the Asterousia coast, and we cannot walk to it.**
+
+## ⬇️ AND IT TAKES ΚΑΜΙΝΑΚΙ WITH IT
+
+The same sources settle Καμινάκι's disputed walk, and not in our favour:
+
+| Source | Says |
+|---|---|
+| cretanbeaches prose | **«the gorge is very hard to descend and the beach is too far from the nearest road»** |
+| another guide | *«requires some effort, either by boat or through a **challenging hike**»* |
+| a third | **«The Asterousia coast beaches (Aspes, Kaminaki) are the exceptions and are BOAT-ONLY»** |
+| crete.pl | headline: **«Kaminaki Beach inaccessible»** |
+| one dissenting guide | *«Accessible by foot, boat, or car to nearby village»* |
+
+> **Verdict: the «Walking» field is contradicted by its own page's prose and by
+> three other sources.** What exists is **a long rough descent of the Περβολιανό
+> gorge, not a trail.**
+>
+> **ΚΑΜΙΝΑΚΙ `10 · 7 · 10` = 27 — moved to BOAT-ONLY.** Discovery raised to 10 on
+> the same evidence that removes the walk.
+
+## ⚠️ THIS BREAKS THE MONDAY PLAN
+
+**Monday was the Περβολιανό gorge to ΚΑΜΙΝΑΚΙ.** That gorge is now described as
+**very hard to descend** by its own guide and the beach as **inaccessible** by
+another. **With a 13-year-old, Monday needs rebuilding.**
+
+**ΣΚΙΑΔΑΚΙ is at the exit of the ΚΑΚΟΠΕΡΑΤΟΣ gorge and is still listed as a walk
+— that is the likelier Monday.** To be confirmed.
+
+## 📊 REVISED TALLY
+
+| | |
+|---|---|
+| **DOABLE at 26+** | **22** *(was 24 — Καμινάκι out, Αλυκαπούντα never in)* |
+| **Scoring 26+, boat only** | **ΑΛΥΚΑΠΟΥΝΤΑ 28 · ΑΣΠΕΣ 27 · ΠΙΚΡΟΒΛΥΧΑΔΑ 27 · ΚΑΜΙΝΑΚΙ 27 · ΜΑΥΡΗ ΠΑΡΑΛΙΑ 26** |
+
+> **FIVE entries at 26+ now sit behind one boat from Τσούτσουρας — and one of
+> them is a 28.** That changes the Salty Trips WhatsApp from a curiosity into
+> **the second most valuable message of the whole trip.**
