@@ -5441,3 +5441,73 @@ sunbeds and tavernas.**
 > and Sfakia at five each — and three of its five are behind dirt roads your
 > insurance will not cover.** **The Asterousia keeps making the same argument:
 > it is a trip, not a day.**
+
+---
+
+# 🚢 HOW TO REACH ΓΡΑΜΒΟΥΣΑ — and it fixes Saturday
+
+## ✅ THE SEASON ENDS 31 OCTOBER. That is your Saturday.
+
+| Operator | Departure | Season |
+|---|---|---|
+| **Cretan Daily Cruises** | **10:35 daily from Kissamos** | **through 31 October** — their own price page lists **16 Sep–31 Oct** as a season band |
+| **Balos Travel** | **10:35**, back ~17:50 | **«until 31/10»** |
+| **Blue Cruises** | **10:50 out, 16:20 back from Balos** | *end date not stated* |
+| DanEri Yachts | 08:30 full day · 16:00 sunset | *not stated* |
+
+> **You are not near the end of the season. You are ON the last day of it.**
+
+## 💰 Shared tickets, not a charter
+
+| | For five |
+|---|---|
+| **Shared seat, Kissamos** | **€24–45 each = €120–225 for all five** ✅ |
+| Private yacht + skipper *(Balos, Gramvousa, Falasarna, max 9)* | fuel, drinks, snorkel gear, snacks included |
+| Private RIB, 6–8 hrs, up to 8 | **€950–1,300** |
+| 7 m RIB + skipper, 3–6 hrs | **€480–550** |
+| Private from **Falasarna** port, 4–6 hrs | **from €650** |
+
+**Take the shared ticket.** And it is **a large catamaran or ferry, not a 5.5 m
+open rental** — **toilets, shade, food, a deck to sit on.** After Tuesday's
+small boat, this is the comfortable boat day, which matters with five.
+
+## 🔑 AND IT SOLVES THREE PROBLEMS AT ONCE
+
+> **The route does ΓΡΑΜΒΟΥΣΑ then ΜΠΑΛΟΣ from the sea — so it bypasses the
+> Kalyviani dirt track completely.**
+>
+> **① No insurance problem** — you never touch the 8–12 km of dirt
+> **② No local taxi to arrange**, and no two runs for five people
+> **③ It ADDS a 26** — Gramvousa was unreachable any other way
+>
+> **Saturday goes from one 26 by taxi to TWO 26s and a shipwreck by boat.**
+
+## 📅 SATURDAY 31 OCTOBER
+
+| | |
+|---|---|
+| **~09:15** | Leave Stalos. **Kissamos port ~50–60 min** |
+| **10:35** | Sail *(or 10:50 with Blue Cruises)* |
+| **~11:45** | **ΓΡΑΜΒΟΥΣΑ 26** — the **«ΔΗΜΗΤΡΙΟΣ Π.»** wreck half-submerged **100 m offshore, swimmable** · the **Venetian fortress at 137 m**, steps up from the chapel of Άγιοι Απόστολοι |
+| **~13:30–16:00** | **ΜΠΑΛΟΣ 26** — *«λευκή άμμος και ανοιχτόχρωμα τιρκουάζ νερά»*, shallow and warm. **Inside the colour window** |
+| **~17:50** | Kissamos · **Stalos by 19:00** *(dark, but a main road — not a track)* |
+
+*Many of these routes also stop at **Φαλάσαρνα**, which is a large organised
+beach and does not score — but it is free on the ticket.*
+
+## ⚠️ THE ONE RISK, AND THE FALLBACK
+
+**It is the final sailing of the season. There is no next day.** If it is
+cancelled for weather or low numbers, **Gramvousa is gone — it is an island.**
+
+**But Balos survives the cancellation:** the **Kalyviani track and a local taxi
+still work**, which is exactly how Saturday was planned before this. **You lose
+a 26, not the day.**
+
+> **Book it now rather than on arrival.** It is the last sailing, five seats, and
+> **cheap enough that losing the money is nothing against losing the day.**
+
+---
+
+**Group 5 · Κίσσαμος / Γραμβούσα — ΜΠΑΛΟΣ 26 · ΓΡΑΜΒΟΥΣΑ 26**
+**This trip, Groups 1–8: 21 at 26+ · The archive: 25**
