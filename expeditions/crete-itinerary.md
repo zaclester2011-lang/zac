@@ -5685,3 +5685,80 @@ pale floor Μαύρη Παραλία has not got.**
 > **THE BOOKABLE PLAN IS UNCHANGED: 21 at 26+ across Groups 1–8.**
 > **Advance bookings for the whole week: TWO — Σούγια Tuesday 27, Κίσσαμος
 > Saturday 31.** Everything else is decided on the morning.
+
+---
+
+# 🆕 THE SALTY TRIPS BEACH LIST — TWO NEW ENTRIES, BOTH ON FOOT
+
+*The operator's own list of the Asterousia beaches it serves, scored.*
+
+## ⭐ ΚΑΤΑΡΤΙ `9 · 8 · 10` = 27 — NEW, AND WALKABLE
+
+> **«το λευκό βότσαλο σε συνδυασμό με τα σμαραγδένια νερά, είναι ονειρικό»**
+> — white pebble combined with emerald waters — thalori.com
+
+| | |
+|---|---|
+| **Mechanism** | **λευκό βότσαλο** — the pale floor, named |
+| **Colour word** | **σμαραγδένια** (emerald) — not τιρκουάζ |
+| **Access** | **footpath from ΤΡΥΠΗΤΗ, ~1h10** · or by boat |
+| **Where** | 73 km S of Heraklion, foot of **Ακρωτήρι Οξά**, at a gorge mouth |
+| **Character** | *«πολύ μικρή και απομονωμένη»* · **«βότσαλο και καθαρά βαθιά νερά»**, closed in by cliffs |
+
+**Colour 8, not 9:** emerald is a colour word over a named pale substrate — the
+same standing as γαλαζοπράσινο-with-a-pale-floor — but the water is **βαθιά**,
+and only **τιρκουάζ** on a dedicated page earns 9.
+
+## ΜΑΡΤΣΑΛΟ `9 · 7 · 10` = 26 — NEW, AND WALKABLE
+
+**«πεντακάθαρα, καταγάλανα νερά»** that deepen abruptly, over **μεγάλα
+βότσαλα**. Unorganised. Foot or boat only. Chapel of **Παναγία Μαρτσαλιανή**.
+
+**Colour 7:** **καταγάλανα is deep blue, not turquoise.** One blogger records the
+water as unimpressive on a windy day — logged, because it is honest.
+
+> **It pairs with ΑΓΙΟΦΑΡΑΓΓΟ on one walk — which is why the operator lists them
+> as a single entry, «Agiofaraggo - Martsalo».**
+
+## THE REST OF THE LIST
+
+| Beach | Score | Verdict |
+|---|---|---|
+| **ΚΑΤΑΡΤΙ** | `9·8·10` = **27** | ✅ **NEW — IN, on foot** |
+| **ΜΑΡΤΣΑΛΟ** | `9·7·10` = **26** | ✅ **NEW — IN, on foot** |
+| ΚΑΜΙΝΑΚΙ | `9·8·10` = **27** | ✅ already in — **«the White Beach»**, Pervolian gorge exit |
+| ΑΓΙΟΦΑΡΑΓΓΟ | `9·7·10` = **26** | ✅ already in |
+| ΣΚΙΑΔΑΚΙ | `9·7·10` = **26** | ✅ already in — **Kakoperatos gorge exit** |
+| ΑΓΙΟΣ ΝΙΚΗΤΑΣ | `9·7·10` = **26** | ✅ already in — chapel on a rock, **1640** |
+| ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ | `9·7·10` = **26** | ✅ already in — **three bays** |
+| ΑΣΠΕΣ | `10·7·10` = **27** | ⚠️ boat only |
+| **ΜΑΡΙΔΑΚΙ** | `7·6·10` = 23 | ❌ **«σκούρο βότσαλο»** — dark pebble, **Colour 6**. Taverna nearby and a **χωματόδρομος** |
+| **ΧΡΥΣΗ** | `2·9·10` = 21 | ❌ genuinely turquoise, **but daily ferries from Ierapetra**, hundreds of visitors, marked paths. Also 2h30 away |
+| **ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ** | `5·7·10` = 22 | ❌ tarmac, settlement, **«κάποια καφενεία»**. The harbour, not a target — **but the Αμπάς gorge waterfall at 145 m and the vultures are worth the stop** |
+| **ΜΟΝΗ ΚΟΥΔΟΥΜΑ** | — | ❌ dirt road to a working monastery *(founded c. 1280)*. No colour source, and Discovery is gone regardless |
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | **UNGRADED** | ⚠️ **no source in any language.** Nearby **ΚΡΥΓΙΑ ΒΛΥΧΑΔΑ** has **«σκούρα βότσαλα»** — dark — so I expect the same, **but that is a guess and is labelled one** |
+| **SFAKIA SEA CAVE** | n/a | Not a beach — a **cave**, and an activity. Worth doing from the boat |
+
+## ❓ THE UNRESOLVED NAME PROBLEM
+
+**Their list has no ΜΑΥΡΗ ΠΑΡΑΛΙΑ — and it calls ΑΣΠΕΣ «the Black Beach».**
+
+| Source | Says |
+|---|---|
+| **Salty Trips** | Καμινάκι is **«the White Beach»**, *«in close proximity to the **Black Beach (Aspes)**»* |
+| **thisiscrete** | **ΜΑΥΡΗ ΠΑΡΑΛΙΑ lies between ΣΚΙΑΔΑΚΙ and ΚΑΜΙΝΑΚΙ** |
+| **cretanbeaches** | **ΣΚΙΑΔΑΚΙ 1.6 km**, **ΑΣΠΕΣ 4 km east** of Τρεις Εκκλησιές |
+
+Those give a sequence of **ΣΚΙΑΔΑΚΙ → ΜΑΥΡΗ ΠΑΡΑΛΙΑ → ΚΑΜΙΝΑΚΙ → ΑΣΠΕΣ**, which
+keeps them as **two distinct coves**. So either there are two black beaches on one
+5 km stretch, or the operator uses the generic name for Άσπες.
+
+> **Unresolved. Either way, ΜΑΥΡΗ ΠΑΡΑΛΙΑ is not a stop they advertise** — so it
+> stays a named question on the WhatsApp, which it already was.
+
+## 📈 THE PLAN NOW
+
+> **23 water bodies at 26+ across Groups 1–8** *(was 21)*
+> **Group 8 ΑΣΤΕΡΟΥΣΙΑ gains ΚΑΤΑΡΤΙ 27 and ΜΑΡΤΣΑΛΟ 26 — and both are walks,
+> so neither needs the boat, the weather or an operator's season.**
+> **Advance bookings for the week: still TWO.**
