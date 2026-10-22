@@ -6013,3 +6013,77 @@ another. **With a 13-year-old, Monday needs rebuilding.**
 > **FIVE entries at 26+ now sit behind one boat from Τσούτσουρας — and one of
 > them is a 28.** That changes the Salty Trips WhatsApp from a curiosity into
 > **the second most valuable message of the whole trip.**
+
+---
+
+# 🚫 ΜΑΥΡΗ ΠΑΡΑΛΙΑ — DEFINITIVE: BOAT ONLY, NO EXCEPTIONS
+
+**Checked in both languages. Four sources, no dissent.**
+
+| Source | Verdict |
+|---|---|
+| **thisiscrete** | *«η περιοχή είναι απόκρημνη και **στερείται οδικού δικτύου**»* — **no road network.** By sea from **Τσούτσουρας** or **Μαριδάκι**. For walkers: *«**εξαιρετικά δύσβατα** μονοπάτια και φαράγγια, **μόνο για πολύ έμπειρους**»* |
+| **greece.com** | **accessible only by sea**, from Τρεις Εκκλησιές |
+| **moregreece** | **only accessible by boat** — Τρεις Εκκλησιές or Τσούτσουρας |
+| **Everything else** | every hike or track in the results belongs to **another beach** — Σκιαδάκι, Τρυπητή, Μένιες |
+
+**No dirt road. No waymarked path. No GPS track published anywhere.**
+
+## ⚠️ AND IT MAY NOT BE A SEPARATE BEACH AT ALL
+
+**cretelocals publishes it as «ΑΣΠΕΣ (ΜΑΥΡΗ) beach»** — one page, both names,
+**4 km east of Τρεις Εκκλησιές**, which is exactly cretanbeaches' figure for
+Άσπες.
+
+> **So a guide treats them as the same cove — and we may have been scoring one
+> place twice.** Add it to the operator's questions.
+
+## 💡 WHY THIS CHANGES NOTHING
+
+**ΜΑΥΡΗ ΠΑΡΑΛΙΑ is the LEAST valuable entry behind that boat** — a Colour 6,
+already cut, with no colour word in any language. The same Τσούτσουρας boat
+reaches:
+
+| | |
+|---|---|
+| **ΑΛΥΚΑΠΟΥΝΤΑ** | **28** — turquoise attested twice |
+| **ΑΣΠΕΣ** | **27** |
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | **27** |
+| **ΚΑΜΙΝΑΚΙ** | **27** |
+| ΜΑΥΡΗ ΠΑΡΑΛΙΑ | 26 — **cut on Colour 6** |
+
+> **The question was never how to reach Μαύρη Παραλία. It is whether SALTY TRIPS
+> RUN IN EARLY NOVEMBER — and one yes delivers a 28 and three 27s, with Μαύρη
+> Παραλία free as the boat goes past.**
+
+---
+
+# ✅ MONDAY, REBUILT — AND IT IS BETTER THAN THE GORGE
+
+**Σκιαδάκι's walk is confirmed:**
+
+> *«δύσκολης πεζοπορίας **περίπου μίας ώρας** από τις παραλίες στο **Καλάμι**,
+> κοντά στον **Άγιο Νικήτα**»* — a hard hour from Καλάμι, near Άγιος Νικήτας
+>
+> English guide: *«adventurous souls could **trek for an hour west from the Agios
+> Nikitas Monastery**»*
+
+**And it CHAINS with what we already had:**
+
+| Leg | |
+|---|---|
+| **ΤΣΟΥΤΣΟΥΡΑΣ → ΜΑΡΙΔΑΚΙ → ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | **4 hours, graded EASY**, from a tarmac road |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ / ΚΑΛΑΜΙ → ΣΚΙΑΔΑΚΙ** | **~1 hour west, hard but walkable** |
+
+> **ONE WALK FROM TARMAC GETS ΑΓΙΟΣ ΝΙΚΗΤΑΣ 26 AND ΣΚΙΑΔΑΚΙ 26.**
+> **No gorge descent. No boat. No operator's season.**
+>
+> **This replaces the Περβολιανό gorge day, which collapsed when Καμινάκι's own
+> guide called that descent «very hard» and another called the beach
+> «inaccessible».** Monday is now the better day of the two.
+
+**Still to settle:** the full out-and-back is 4 h + 1 h each way — **too long as
+one push with five people.** Either start from the **Άγιος Νικήτας** end by road
+*(15 km of dirt — the insurance rule says no)*, or walk in and out from
+Τσούτσουρας and **take Σκιαδάκι only if the clock allows.** **Decide on the
+morning.**
