@@ -5297,3 +5297,68 @@ summer rooms-and-camping scene. **Dropped, correctly.**
 
 **THIS TRIP: 19 at 26+ across Groups 1–7, 18 scheduled.**
 **THE ARCHIVE: 23 at 26+ across all eight.**
+
+---
+
+# ❌ ΚΑΛΥΨΩ and ΛΙΓΚΡΕΣ — both cut on Discovery
+
+## ΛΙΓΚΡΕΣ / Ligres — **6 · 7 · 10 = 23. CUT (D6)**
+
+**40–51 km south of Rethymno, 7 km from Κεραμέ.** *«Η σχετικά δύσκολη πρόσβαση
+από τα αστικά κέντρα έχει κρατήσει την τουριστική ανάπτυξη σε ήπιους ρυθμούς.»*
+
+**But:** **«ασφαλτοστρωμένος δρόμος μέχρι το δυτικό τμήμα, όπου βρίσκονται και
+κάποια δωμάτια»** — **a paved road to it, with rooms and a taverna on site.**
+**Discovery 6** — the same profile as Τρεις Εκκλησιές and Ανύδρι, both cut.
+
+**Water:** **«βαθιά γαλάζια νερά»** · **«καθαρά, βαθιά»** · sand is
+**«χοντρόκοκκη»** / *golden with pebble*. **Deep, blue, coarse. Colour 7.**
+**Open to strong southerly winds.**
+
+> ### But go if you pass it, for one reason
+> **«Στο δυτικό άκρο υπάρχει ένας εντυπωσιακός καταρράκτης που ρίχνει το νερό
+> του απευθείας στην παραλία, και έχει νερό ΟΛΟ ΤΟΝ ΧΡΟΝΟ.»**
+>
+> **A waterfall falling straight onto the beach, running all year.** Nothing
+> else in the archive has that. **It does not score — the water is deep blue and
+> there is a road — but it is a remarkable thing to stand under.**
+> *(Τριόπετρα and its red rock are next door.)*
+
+## ΚΑΛΥΨΩ / Kalypso — **5 · 7 · 10 = 22. CUT (D5)**
+
+**31 km from Rethymno, between Πλακιάς and Πρέβελη. "The pirate fjord" — a
+narrow inlet ~100 m long between tall vertical cliffs**, a hideout 300 years
+ago. **The sand strip is about TWO METRES wide.**
+
+**Water: «γαλαζοπράσινα», crystal-clear and deep blue-green. Colour 7** — no
+pale substrate named, and it is a deep cliff-walled slot.
+
+**Killed by:** **«ένα τουριστικό συγκρότημα λειτουργεί στην παραλία, με
+ομπρέλες και ξαπλώστρες στημένες πάνω στα βράχια»** — **a resort on the beach,
+with sunbeds bolted to the rock.** Paved road access. **Discovery 5 — the same
+as Ελαφονήσι.**
+
+---
+
+# 🧭 THE REGIONAL FINDING: the Rethymno south coast has roads
+
+**Look at what has now been scored along that stretch:**
+
+| | | Cut on |
+|---|---|---|
+| **ΠΡΕΒΕΛΗ** | **26** | **SURVIVES** — *470 steps down a cliff* |
+| Σχοινάρια | 22 | **D6** — a road to the sand, dive schools. *40 m visibility and Colour 7* |
+| Λίγκρες | 23 | **D6** — paved road, rooms, taverna |
+| Καλυψώ | 22 | **D5** — a resort on the beach |
+| Δαμνόνι | — | **D6** — dirt road, tavernas, dive school, horse riding |
+
+> **Group 7 holds exactly ONE entry at 26+, and that is not bad luck.**
+>
+> **Plakias, Damnoni, Schinaria, Kalypso, Ligres and Triopetra are the most
+> developed stretch of the whole south coast** — asphalt, rooms, tavernas, dive
+> schools. **Every one of them is cut on Discovery, none on colour.**
+>
+> **Πρέβελη survives for one reason: 470 steps.** It is the only place on that
+> coast where the road stops at the top of a cliff.
+
+**No change to the list: 19 at 26+ across Groups 1–8, 23 across all nine.**
