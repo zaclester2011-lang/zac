@@ -5511,3 +5511,101 @@ a 26, not the day.**
 
 **Group 5 · Κίσσαμος / Γραμβούσα — ΜΠΑΛΟΣ 26 · ΓΡΑΜΒΟΥΣΑ 26**
 **This trip, Groups 1–8: 21 at 26+ · The archive: 25**
+
+---
+
+# 🔁 ΑΣΠΕΣ OUT · ΜΑΥΡΗ ΠΑΡΑΛΙΑ IN — and the correction that came first
+
+## ① The score correction, which stands whatever happens to the list
+
+I had **ΑΣΠΕΣ at Colour 6 on the grounds that no colour word existed for it in
+any language.** That was **false.** It exists, in Greek, in two independent
+places:
+
+| Source | Greek |
+|---|---|
+| travelstyle.gr | **«γαλαζοπράσινα νερά»** · headline **«χρωματιστά νερά»** |
+| newsbomb.gr | **«γαλαζοπράσινα νερά»** — same word, not quoting the other |
+
+> **ΑΣΠΕΣ: `10 · 7 · 10` = 27.** Up from 26. **It clears the weak link.**
+
+**Why it does not go higher.** The substrate is **«μαύρο χαλικάκι»** — black
+pebble. The standing rule is that **γαλαζοπράσινο counts only where a pale
+substrate is named.** A black floor is the darkest on the list. Blue-green over
+black pebble is real; it is not the Μπάλος shelf.
+
+**The correction is logged permanently.** The score was wrong, it is now right,
+and that does not depend on whether the beach stays on the list.
+
+## ② ΜΑΥΡΗ ΠΑΡΑΛΙΑ holds at Colour 6
+
+Its dedicated Greek page carries **no colour word at all:**
+
+> **«τα βαθιά, κρυστάλλινα νερά του Λιβυκού Πελάγους»** — deep, crystal-clear
+> **«πολύ σκούρο, σχεδόν μαύρο βότσαλο και την άμμο»** — almost black
+
+Neither **τιρκουάζ** nor **γαλαζοπράσινο** appears. That is the **ΣΧΙΝΑΡΙΑ
+pattern** — clarity and depth, no colour — and Σχινάρια holds **Colour 7** on a
+*grey* floor with the clearest water in Crete at 40 m. Μαύρη Παραλία's floor is
+blacker and its page claims less.
+
+> **ΜΑΥΡΗ ΠΑΡΑΛΙΑ: `10 · 6 · 10` = 26 — cut on the weak link.**
+
+**Gap admitted:** cretanbeaches.gr would not resolve, so the structured
+**«Χρώμα νερού»** field is missing for both. If it reads τιρκουάζ for Άσπες,
+Άσπες becomes a **28**, level with Δώματα.
+
+## ③ Neither can be walked to — ΟΧΙ, both are boats
+
+| | Land route | Verdict |
+|---|---|---|
+| **ΑΣΠΕΣ** | none · *«προσεγγίζεται ΜΟΝΟ με σκάφος»* | ❌ boat only |
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | no road network · only *«μέσω φαραγγιών»*, and that **«απαιτεί άριστη γνώση του πεδίου»** | ❌ boat only |
+
+**«Άριστη γνώση του πεδίου»** is the phrase that disqualified the **Κλάδος** and
+**Τρυπητή** gorges. It means no waymarks, no published track, and no one willing
+to put a time on it. **Not with a 13-year-old and no guide.**
+
+## ④ Why the boat is not worth chasing
+
+| | |
+|---|---|
+| **Harbour** | **ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ** or **ΤΣΟΥΤΣΟΥΡΑΣ** — ~70 km each way |
+| **Operator** | **none published, in any language** |
+| **Schedule, price, season** | **none published** |
+| **One source says** | *«Il faudra consulter les loueurs locaux sur place»* |
+
+Set against **ΔΩΜΑΤΑ 28** — three operators, two websites, a Viber number, and a
+published self-drive route. **Same day's effort, better water, actually
+bookable.**
+
+> **Discovery 10 and unarrangeable are the same fact.** The number that made
+> Άσπες attractive is the number that makes it impossible. I let the 10 pull for
+> two turns before weighing that.
+
+## ⑤ THE LIST AS IT NOW STANDS
+
+**ΑΣΠΕΣ `10·7·10` = 27 — REMOVED.** Not on colour; the colour was corrected
+upward. **Removed as unreachable on a plan made from England.**
+
+**ΜΑΥΡΗ ΠΑΡΑΛΙΑ `10·6·10` = 26 — carried in Group 8, shown not hidden.**
+
+> **Adding it back does not make it reachable.** It is the same harbour, the same
+> absent operator, and a worse Colour than the entry just removed. It sits in the
+> group as a named target for the **Asterousia nights of 1–2 November** — ask in
+> Τρεις Εκκλησιές, and go if a boat and the weather both exist.
+
+### Group 8 · ΤΑ ΑΣΤΕΡΟΥΣΙΑ
+
+| Water body | D·C·W | Access |
+|---|---|---|
+| **ΚΑΜΙΝΑΚΙ** | `9·8·10` = **27** | ✅ walk |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | `9·7·10` = **26** | ✅ 40 min, easy, flat gorge floor |
+| **ΣΚΙΑΔΑΚΙ** | `9·7·10` = **26** | ✅ walk |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | `9·7·10` = **26** | ✅ Τσούτσουρας–Μαριδάκι footpath, 4 h, easy |
+| **ΤΡΥΠΗΤΗ** *(Αστερούσια)* | `8·7·10` = **25** | ✅ walk |
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | `10·6·10` = **26** | ⚠️ **boat only, no operator** — opportunistic |
+
+> **The bookable plan is unchanged: 21 at 26+, Groups 1–8, every one of them
+> walkable, swimmable or on a boat we can reserve — and ONE advance booking in
+> the whole week (Σούγια, Tuesday 27).**
