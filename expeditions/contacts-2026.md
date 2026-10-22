@@ -175,3 +175,47 @@ know. Always close the deal with the operator.*
 
 **Send it on VIBER or WHATSAPP, not email.** **Get the Domata answer in
 writing before building Tuesday on it.**
+
+---
+
+# ⛵ ΤΣΟΥΤΣΟΥΡΑΣ — the harbour that reaches ΜΑΥΡΗ ΠΑΡΑΛΙΑ
+
+## 🥇 SALTY TRIPS — saltytrips.gr
+
+| | |
+|---|---|
+| **Departs** | **the small port in front of ΤΣΟΥΤΣΟΥΡΑΣ village** |
+| **WhatsApp / phone** | **+30 697 003 8388** *(same number for both)* |
+| **Booking** | saltytrips.gr/booking · saltytrips.gr/en/contact |
+| **Instagram** | **@saltytrips_** |
+| **Facebook** | profile.php?id=100091646223871 |
+| **Skippered** | ✅ **3-hour private cruise — Asterousia sea caves and swim stops** |
+| **Self-drive** | ✅ **«RIDE WITHOUT A CAPTAIN»** — listed, no detail published |
+| **Custom** | ✅ **«Design your own tour»** |
+| **Also runs** | full-day **ΧΡΥΣΗ** island |
+
+> **They have a dedicated page for ΑΣΠΕΣ** — saltytrips.gr/en/beaches/aspes-beach-5
+> — so these beaches are their working ground, not a favour to ask.
+
+**NOT published and must be asked:** season / does it run in **early November**
+· price · boat capacity *(we are five)* · whether the route reaches
+**ΜΑΥΡΗ ΠΑΡΑΛΙΑ** by name · whether a self-drive is permitted that far west.
+
+## 📏 The real distances from ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ *(corrected)*
+
+| Beach | From Tris Ekklisies |
+|---|---|
+| **ΣΚΙΑΔΑΚΙ** | **1.6 km** |
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | between Σκιαδάκι and Καμινάκι |
+| **ΑΣΠΕΣ** | **4 km east** — *not 8–10 km as previously logged* |
+
+**Tsoutsouras is the harbour with a contactable operator. Tris Ekklisies is the
+nearer slipway but has only «κάποια καφενεία» and no published boat.**
+
+## ❓ ASK SALTY TRIPS ON WHATSAPP
+
+1. Do you run in the **first week of November 2026**?
+2. Can you take **five** on one boat?
+3. Does a 3-hour cruise reach **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** — between Σκιαδάκι and Καμινάκι?
+4. Price, skippered vs **«without a captain»**?
+5. If self-drive — is there a **range limit**, and may we beach it?

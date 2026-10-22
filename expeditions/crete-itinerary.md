@@ -5609,3 +5609,79 @@ upward. **Removed as unreachable on a plan made from England.**
 > **The bookable plan is unchanged: 21 at 26+, Groups 1–8, every one of them
 > walkable, swimmable or on a boat we can reserve — and ONE advance booking in
 > the whole week (Σούγια, Tuesday 27).**
+
+---
+
+# ✅ FINALISED — HOW WE REACH ΜΑΥΡΗ ΠΑΡΑΛΙΑ AND ΓΡΑΜΒΟΥΣΑ
+
+## ① ΓΡΑΜΒΟΥΣΑ 26 — SETTLED, BOOK IT
+
+> **The Kissamos day cruise, Saturday 31 October — the last sailing of the season.**
+
+| | |
+|---|---|
+| **Operators** | **Cretan Daily Cruises 10:35** · **Balos Travel 10:35, back ~17:50 «until 31/10»** · **Blue Cruises 10:50 / 16:20** |
+| **Cost** | **shared seat €24–45 each = €120–225 for five** |
+| **Boat** | large catamaran or ferry — **toilets, shade, food, deck** |
+| **Gets us** | **ΓΡΑΜΒΟΥΣΑ 26 + ΜΠΑΛΟΣ 26** and the **ΔΗΜΗΤΡΙΟΣ Π.** wreck |
+
+**It bypasses the Kalyviani dirt track entirely** — so no insurance exposure, no
+local taxi, and no two runs for five people. **No alternative exists:**
+Gramvousa is an island and this is the season's final sailing. **If it is
+cancelled, Balos still survives by the track and a taxi — we lose a 26, not the
+day.**
+
+> **ACTION: book five seats now. Nothing else this week is this time-critical.**
+
+## ② ΜΑΥΡΗ ΠΑΡΑΛΙΑ 26 — NO LONGER UNREACHABLE
+
+**I was wrong that no operator is published.** There is one, in the right
+harbour, with its own page for these beaches.
+
+| **SALTY TRIPS** | saltytrips.gr |
+|---|---|
+| **Departs** | **the small port at ΤΣΟΥΤΣΟΥΡΑΣ** |
+| **WhatsApp / phone** | **+30 697 003 8388** |
+| **Booking** | saltytrips.gr/booking |
+| **Instagram** | **@saltytrips_** |
+| **Skippered** | **3-hour private cruise — Asterousia sea caves + swim stops** |
+| **Self-drive** | **«RIDE WITHOUT A CAPTAIN»** — offered, no detail published |
+| **Custom** | **«Design your own tour»** |
+
+**And the distances were wrong too — it is far tighter than I had it:**
+
+| Beach | From ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ |
+|---|---|
+| **ΣΚΙΑΔΑΚΙ** | **1.6 km** |
+| **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** | between Σκιαδάκι and Καμινάκι |
+| **ΑΣΠΕΣ** | **4 km east** — *not 8–10 km* |
+
+> **The whole cluster sits inside about 5 km.** A **three-hour** cruise covers it
+> comfortably — which is why their standard trip is three hours, not a day.
+
+**Still unknown, and all five must be asked on WhatsApp:**
+
+1. **Does it run in the first week of November?** — the single question that decides it
+2. Can one boat take **five**?
+3. Does the route reach **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** by name?
+4. Price, and skippered vs without a captain?
+5. If self-drive — **range limit**, and may we beach it?
+
+**Window: 1–2 November, the Asterousia nights.** Tsoutsouras sits at the eastern
+end of that coast, so it does not fight the Σούγια boat or the Κίσσαμος cruise.
+
+## ⚠️ WHAT THIS DOES AND DOES NOT CHANGE
+
+**It fixes the access. It does not change the water.**
+
+> **ΜΑΥΡΗ ΠΑΡΑΛΙΑ stays `10 · 6 · 10` = 26, cut on the weak link.** Its page
+> carries **no colour word in any language** — only **«βαθιά, κρυστάλλινα»** over
+> **«σχεδόν μαύρο βότσαλο»**. Clear water on a black floor reads as ink, not
+> turquoise. **Reachable now, still not what the trip is hunting.**
+
+**Καμινάκι `9·8·10` = 27 is one kilometre away, on foot, with white pebble — the
+pale floor Μαύρη Παραλία has not got.**
+
+> **THE BOOKABLE PLAN IS UNCHANGED: 21 at 26+ across Groups 1–8.**
+> **Advance bookings for the whole week: TWO — Σούγια Tuesday 27, Κίσσαμος
+> Saturday 31.** Everything else is decided on the morning.
