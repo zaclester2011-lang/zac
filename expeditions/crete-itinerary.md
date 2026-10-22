@@ -5362,3 +5362,82 @@ as Ελαφονήσι.**
 > coast where the road stops at the top of a cliff.
 
 **No change to the list: 19 at 26+ across Groups 1–8, 23 across all nine.**
+
+---
+
+# 🆕 THREE GRADED — TWO REACH 26
+
+## ⭐ ΑΓΙΟΣ ΝΙΚΗΤΑΣ — **9 · 7 · 10 = 26** · GROUP 8, ΑΣΤΕΡΟΥΣΙΑ
+
+**This is the gap I spotted in a URL and never closed. It is a 26.**
+
+| | |
+|---|---|
+| **Where** | **65 km south of Heraklion** |
+| **Access** | **A rough DIRT ROAD, 15 km, from Αχεντριάς**, ending at the **Άγιος Νικήτας monastery** — **then through the monastery and down ~200–230 STEPS** |
+| **Beach** | **Pebble**, not sand. **Unorganised. Camping not permitted** |
+| **Water** | *«πεντακάθαρα **πράσινα** νερά»* · *«καθαρά, **βαθιά**»* · Cretazine: **deep and blue-green** |
+| **Also** | **A second pebble beach east**, split off by a large rock |
+
+**Discovery 9** — a monastery at the end of 15 km of dirt, then 200 steps.
+**Colour 7** — pebble, deep, green. **No τιρκουάζ.**
+
+> ### ⚠️ But the hire car cannot legally get there
+> **15 km of dirt road is 15 km beyond your insurance** — and 15 km each way on
+> foot is not a day. **It is a scored 26 that is effectively unreachable this
+> trip** unless you accept the risk or find a local vehicle.
+>
+> **Worth knowing: ΣΚΙΑΔΑΚΙ is in the same locality**, 10 km south of
+> Αχεντριάς. **The Achendrias dirt road serves both.** If you ever solve the
+> vehicle, that road delivers **two 26s.**
+
+## ⭐ ΚΟΛΟΚΥΘΑ — **8 · 8 · 10 = 26** *(possibly 27)* · OUT OF RANGE
+
+**A small cove on the islet opposite the Spinalonga peninsula, 12 km north of
+Agios Nikolaos, by Elounda.**
+
+> **Visitors: «white sand and very clear, SHALLOW TURQUOISE water.»**
+> **Turquoise + shallow + white sand — all three.**
+
+**Access on foot from Elounda:** east along the shore, **across the Poros canal
+cut by the French in 1897**, past the **Agios Loukas chapel**, then a coastal
+path — **the last 10–15 min over rocky ground with no shade.** Unorganised, no
+facilities, limited parking.
+
+**Colour 8, not 9** — the turquoise rests on **visitor description, not a
+structured field.** *That is the same test that took Marmara from 9 to 8. If
+cretanbeaches' «Χρώμα νερού» says τιρκουάζ, it is a 27.*
+
+**Discovery 8** — a proper walk, no road to the cove. *⚠️ Tour boats land there
+midday in season; they have stopped by late October.*
+
+**⚠️ 2h30–3h from Stalos, 1h15 from Heraklion. Lasithi — out of range**, same
+bucket as Karoumes and Atherina.
+
+## ❌ ΒΟΥΛΙΣΜΑ / Voulisma (Istron) — **5 · 9 · 10 = 24. CUT (D5)**
+
+**«Η πιο διάσημη της περιοχής»** — the most famous beach in the area. **White
+sand, «τροπικά γαλαζοπράσινα νερά», Colour 9** — and **a road, a car park,
+sunbeds and tavernas.**
+
+**Discovery 5. Identical to Ελαφονήσι: a 9 for colour, cut on the road.**
+
+---
+
+# 📊 UPDATED
+
+| | |
+|---|---|
+| **Group 8 · ΑΣΤΕΡΟΥΣΙΑ** | now **FIVE** at 26+ — **Καμινάκι 27 · Αγιοφάραγγο 26 · Βαθύ 26 · Σκιαδάκι 26 · ΑΓΙΟΣ ΝΙΚΗΤΑΣ 26** *(+ Μαύρη Παραλία, cut)* |
+| **NEW · Group 10 · ΛΑΣΙΘΙ / ΜΙΡΑΜΠΕΛΛΟ** | **ΚΟΛΟΚΥΘΑ 26** *(out of range)* |
+
+**THIS TRIP, Groups 1–8: 20 at 26+ · 18 scheduled**
+*(Σκιαδάκι and Άγιος Νικήτας both sit behind the Achendrias dirt road)*
+
+**THE ARCHIVE, all ten groups: 25 at 26+**
+**One 28 · six 27s · eighteen 26s**
+
+> **Group 8 is now the largest group in the archive at five, ahead of Sougia
+> and Sfakia at five each — and three of its five are behind dirt roads your
+> insurance will not cover.** **The Asterousia keeps making the same argument:
+> it is a trip, not a day.**
