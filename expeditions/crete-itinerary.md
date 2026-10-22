@@ -6154,3 +6154,111 @@ then:
 beach must have **its own page** and **its own structured field.** Prose on a
 neighbour's page is **not** evidence about a beach — **and a beach with no page
 of its own may not be a beach.**
+
+---
+
+# ⛵ THE EASTERN BOAT TRIP — CAN WE DO IT?
+
+**Yes in principle. Three specific obstacles, and all three are one phone call.**
+
+## What SALTY TRIPS actually have — their published fleet
+
+| Boat | Length | Engine | Takes five? |
+|---|---|---|---|
+| **Olympic 720 Cruiser** | not stated — **the big one** | not stated | **probably the only one that does** |
+| Poseidon Blue Water 185 | **5.6 m** | **30–60 HP** Yamaha | marginal |
+| Compass 150cc | **4.5 m** | 30–40 HP | **no** |
+| Olympic 450cc | **4.5 m** | 30–40 HP | **no** |
+
+**New contact: `info@saltytrips.gr`.** Their booking form's departure field reads
+**«Ierapetra Tsoutsouras»** — **Τσούτσουρας is a listed departure point**, not an
+inference.
+
+## ① CAPACITY — we are five
+
+**A 4.5 m open boat does not comfortably take five**, so two of the four are out.
+That leaves the **Poseidon at 5.6 m** *(marginal)* and the **Olympic 720
+Cruiser**, which is almost certainly the boat required — **and the bigger boat is
+likelier to be skippered-only.**
+
+## ② THE ENGINE THRESHOLD — if we want to drive
+
+**Greek licence-free hire: 30 HP or less, driver 18+.** So **James drives, not
+Zac.** But the Poseidon is **30–60 HP** and the small hulls **30–40 HP** —
+**anything above 30 needs a licence none of us holds.**
+
+> **FIVE PEOPLE AND SELF-DRIVE ARE PROBABLY MUTUALLY EXCLUSIVE HERE.** Self-drive
+> only works on a hull at exactly 30 HP, and those are the 4.5 m boats that will
+> not take five.
+>
+> **Recommendation: take the big boat with a skipper, and keep the self-drive
+> ambition for ΣΟΥΓΙΑ, where it is already a published route.**
+
+## ③ THE SEASON — the only question that can kill it
+
+**Their booking page is blank date fields.** No calendar, no month list, nothing
+on November. **Unresolvable from England.**
+
+## 🗺️ WHY THE EAST MERGES AND THE WEST DOES NOT
+
+**Eastern cluster — all within ~5–8 km of ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ, ΤΣΟΥΤΣΟΥΡΑΣ at the end:**
+
+| Beach | Score | Currently |
+|---|---|---|
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | 26 | **a 4-hour walk** |
+| **ΣΚΙΑΔΑΚΙ** | 26 | 1 h from Καλάμι |
+| ΜΑΥΡΗ ΠΑΡΑΛΙΑ | 26 | boat only — **cut on Colour 6** |
+| **ΚΑΜΙΝΑΚΙ** | **27** | boat only |
+| **ΒΑΛΑ** | **27** | boat only |
+| **ΑΣΠΕΣ** | **27** | boat only |
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | **27** | boat **+ swim in** |
+
+> **Seven entries, four of them 27s, on one three-hour cruise — and it DELETES
+> the nine-hour Άγιος Νικήτας out-and-back that did not fit anyway.**
+
+**Western cluster — ΑΓΙΟΦΑΡΑΓΓΟ, ΜΑΡΤΣΑΛΟ, ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ, ΚΑΤΑΡΤΙ — is 30 km+
+further west**, nearer Καλοί Λιμένες and Μάταλα. **Different departure, and it
+would be absurd to spend boat money on Αγιοφάραγγο, a flat 40-minute walk.**
+**These four stay on foot.**
+
+## 🔁 IS IT A REPEAT OF TUESDAY? NO — IF IT IS SOLD AS THE CAVE DAY
+
+| | **Tuesday · ΣΟΥΓΙΑ** | **Sunday · ΤΣΟΥΤΣΟΥΡΑΣ** |
+|---|---|---|
+| **Length** | **8 hours** | **3 hours** |
+| **Water** | pale limestone, turquoise | **dark coves, black pebble** |
+| **The point** | **ΔΩΜΑΤΑ 28** under a 600–700 m cliff | **CAVES** |
+
+**The caves are the whole distinction, and I had been underselling them:** the
+**Δ-shaped underwater cave** at Βάλα · the **πολύχρωμα sea caves at
+ΤΡΑΓΟΠΙΑΣΤΗ** · caves both sides of **ΠΙΚΡΟΒΛΥΧΑΔΑ** with snorkel gear
+specifically advised · **swim-through caves between ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ and ΜΟΝΗ
+ΚΟΥΔΟΥΜΑ**. **Σούγια has none of this.**
+
+**And they are five days apart** — Tue 27 and Sun 1. Repetition bites on adjacent
+days; these are not adjacent.
+
+> **CONDITION: Sunday stays at THREE HOURS and is the cave-and-snorkel day. If
+> the only offer is longer, DROP IT** — four dark-water 27s are not worth an
+> eight-hour repeat.
+
+---
+
+# 🔴 LIVE ERROR FIXED — THE FALLBACK CLASH
+
+**I logged Tuesday's weather fallback as 31 October. 31 October IS the Κίσσαμος
+cruise — the last sailing of the season, which cannot move.**
+
+| | |
+|---|---|
+| ❌ **NOT 31 Oct** | the cruise, and **Γραμβούσα is an island** — no second chance |
+| ❌ **NOT Mon 2 Nov** | that would put boats on the 1st **and** 2nd — **the repetition problem, exactly** |
+| ✅ **FALLBACK: WED 28 or THU 29 OCTOBER** | both currently free |
+
+## ❓ THE FIVE QUESTIONS FOR SALTY TRIPS — `+30 697 003 8388` · `info@saltytrips.gr`
+
+1. **Do you run in the first week of November 2026?** — *the one that decides it*
+2. **Which boat takes FIVE?** Is the Olympic 720 Cruiser skippered only?
+3. Does the 3-hour route reach **ΚΑΜΙΝΑΚΙ, ΒΑΛΑ, ΑΣΠΕΣ and ΠΙΚΡΟΒΛΥΧΑΔΑ**?
+4. **Price**, skippered vs «without a captain»?
+5. **Is ΑΣΠΕΣ the same beach as ΜΑΥΡΗ ΠΑΡΑΛΙΑ?** — one guide publishes them as one
