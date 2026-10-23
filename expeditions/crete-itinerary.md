@@ -6674,3 +6674,83 @@ its number.**
 **Also on that single ferry ticket, below 26:** ΛΟΥΤΡΟ · ΛΥΚΟΣ · ΑΓΙΑ ΡΟΥΜΕΛΗ.
 
 **Archive total at 26+: 33** *(32 + Άγιος Παύλος)*.
+
+---
+
+# 🎨 THE WATER AUDIT — MEASURED FROM PHOTOGRAPHS, NOT ADJECTIVES
+
+**Method, after Zac asked for exact shades.** Google Maps user photos are
+**unreachable** — the Maps page is 226 KB of HTML with **zero photo URLs**;
+they are injected by JavaScript. **But cretanbeaches hosts its own photographs**
+at `/images/stories/beaches/…`, and those can be downloaded and **measured**.
+
+**Pipeline** *(`expeditions/water-sampler.py`)*: fetch the beach page → pull its
+photos → drop the top 30% of frame (sky) → reject rock, sand, skin and
+vegetation → cluster the remaining water pixels → report each cluster's **hex**
+and its share, **palest first.**
+
+> **Palest first matters: the pale cluster is the SHALLOW SHORE STRIP and the
+> dark cluster is the OPEN WATER. Those are different numbers, and the single
+> structured field only ever reported one of them.** That was the error.
+
+## 🔴 TWO REVERSALS, BOTH VISUALLY CONFIRMED
+
+### ΑΣΠΕΣ IS TURQUOISE. I WAS WRONG.
+
+**I looked at the photograph.** Vivid green-turquoise over a pale floor, the
+black pebble only a **narrow strip at the waterline**. Its own page said *«vivid
+turquoise»* and **I overrode it with a substrate argument the picture refutes.**
+
+| | |
+|---|---|
+| **Measured** | **#1898A7 · #0C97A7 · #0B8898** — all **TURQUOISE** |
+| Shore band | **#308276 · #2E7776** — turquoise/emerald |
+
+### ΔΩΜΑΤΑ HAS THE TURQUOISE BAND. ZAC WAS RIGHT.
+
+**A brilliant pale cyan band hugs the shingle, then deep blue offshore.**
+
+| | |
+|---|---|
+| **Shore band** | **#91D8F7** — pale, bright |
+| Mid | **#68ACE9 · #73A3EF** |
+| Body | **#0B5082** |
+
+> **AND THE MECHANISM WAS BACKWARDS.** The **«θολά»** — the milky haze from the
+> underground freshwater springs — is **what CREATES that opaque bright cyan.**
+> I had logged the haze as the thing that killed the colour.
+
+## 📊 MEASURED SHADES
+
+| Beach | Palest (shore) | Body | Reading |
+|---|---|---|---|
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | **#03D0EB** | #028ABA | **vivid cyan — field said Deep blue, field is WRONG** |
+| **ΚΕΔΡΟΔΑΣΟΣ** | **#058695** | #056474 | **turquoise throughout** |
+| **ΑΣΠΕΣ** | **#1898A7** | #2B6476 | **turquoise** |
+| **ΔΩΜΑΤΑ** | **#91D8F7** | #0B5082 | **pale cyan at the sand** |
+| **ΒΑΛΑ** | **#3D8694** | #1B4D75 | turquoise → blue |
+| **ΣΚΙΑΔΑΚΙ** | **#85AB95** | #739989 | **emerald — NOT deep blue** |
+| **ΒΑΘΥ (Αστ.)** | #4F6362 | #3F6064 | dark turquoise |
+| **ΚΑΜΙΝΑΚΙ** | #97ABCD | #1A5375 | pale blue → blue-green |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | #0575BD | — | blue-green |
+| **ΚΑΤΑΡΤΙ** | #658496 | #3E4F62 | blue-green → dark |
+| **ΜΑΡΤΣΑΛΟ** | #62A9FE | #3275CF | plain blue |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | #6188CC | — | pale plain blue |
+| **ΓΛΥΚΑ ΝΕΡΑ** | #025396 | — | plain blue |
+| **RED BEACH** | #6196BB | #637495 | blue-green |
+| **ΓΡΑΜΒΟΥΣΑ** | #194B75 | — | plain blue |
+| **ΜΠΑΛΟΣ** | #86ADA7 | — | turquoise *(sampler under-reads the lagoon)* |
+
+## ⚠️ CONFIDENCE — WHAT IS AND IS NOT VERIFIED
+
+| | |
+|---|---|
+| **Eyes on the photograph** | **ΑΣΠΕΣ · ΔΩΜΑΤΑ · ΜΠΑΛΟΣ** — trust fully |
+| **Measured only** | the rest — **trust the hue, not the lightness.** Old, hazy or cloudy photos pull the numbers dark, and some pages' photos still leak sky |
+| **No photos on the page** | **ΜΑΡΜΑΡΑ · ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ (Κουδουμάς)** |
+| **No cluster above threshold** | **ΛΙΣΣΟΣ** |
+| **Not yet run** | ΙΛΙΓΚΑΣ ×3 · ΠΡΕΒΕΛΗ · ΕΛΑΦΟΝΗΣΙ · ΠΙΚΡΟΒΛΥΧΑΔΑ · ΣΕΝΤΟΝΙ · ΤΡΥΠΗΤΗ · ΑΓ. ΠΑΥΛΟΣ · ΛΥΚΟΣ · ΠΕΡΙΒΟΛΑΚΙ · the four Gavdos |
+
+> **The two beaches I was most confident about in TEXT — Άσπες cut on black
+> pebble, Δώματα cut on grey sand and haze — are the two the PHOTOGRAPHS
+> reverse. Every colour grade taken from a one-word field is now suspect.**
