@@ -7095,3 +7095,31 @@ paler and duller — scored **9**. **ΓΡΑΜΒΟΥΣΑ #D8F0FD** scored **7** w
 ΒΑΘΥ · ΚΑΜΙΝΑΚΙ · ΒΑΛΑ · ΠΙΚΡΟΒΛΥΧΑΔΑ · ΣΚΙΑΔΑΚΙ · ΚΑΤΑΡΤΙ · ΜΑΡΤΣΑΛΟ ·
 ΑΓΙΟΦΑΡΑΓΓΟ · ΑΓ. ΝΙΚΗΤΑΣ · ΑΓ. ΑΝΤΩΝΙΟΣ ×2 · ΠΕΡΙΒΟΛΑΚΙ · ΛΥΚΟΣ · RED BEACH ·
 ΠΑΧΙΑ ΑΜΜΟΣ · ΤΡΥΠΗΤΗ (Αστ.) · the four Γαύδος · ΜΑΥΡΗ ΠΑΡΑΛΙΑ
+
+## ΙΛΙΓΚΑΣ main — **D 8 · C 6 · W 10 = 24 — ❌ CUT**
+## ΙΛΙΓΚΑΣ cove 2 — **D 9 · C 8 · W 10 = 27** ✅
+## ΙΛΙΓΚΑΣ cove 3 — **D 9 · C 8 · W 10 = 27** ✅
+## ΓΛΥΚΑ ΝΕΡΑ — **D 8 · C 7 · W 10 = 25 — ❌ falls below the line**
+## ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ — **D 8 · C 8 · W 10 = 26** ✅
+
+**ΙΛΙΓΚΑΣ:** field **«Βαθύ μπλε»** vs **«λευκό βότσαλο»** · *«3 παραλίες
+απίστευτης ομορφιάς»* · the coves *«80 μέτρα ανατολικά, φτάνουν **μόνο με
+κολύμβηση ή με βάρκα**»*.
+> **The main beach and its coves split by TWO POINTS on Zac's eye — 6 against 8.**
+> **The 80 m swim east is worth three points of total score.**
+
+**ΓΛΥΚΑ ΝΕΡΑ:** ⚠️ **cut on total, not on the weak link** — and it still carries
+the unresolved **21.5 °C water-gate risk**, the sea being cold year-round from
+the springs gushing up through the pebbles.
+
+**ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ:** judged with the guide photo **#03D0EB** shown against five
+user photos at **#345979 · #66A7A5 · #3A4C64 · #024396** — **the clearest case in
+the archive of a guide out-vividding reality, and Zac scored it with both in
+front of him.**
+
+### GROUP 3 · ΣΦΑΚΙΑ — AFTER JUDGEMENT
+| | |
+|---|---|
+| **ΙΛΙΓΚΑΣ cove 2 · cove 3** | **27 each** ✅ |
+| ΑΓΙΟΣ ΠΑΥΛΟΣ | pending |
+| ΙΛΙΓΚΑΣ main 24 · ΓΛΥΚΑ ΝΕΡΑ 25 | **CUT** |
