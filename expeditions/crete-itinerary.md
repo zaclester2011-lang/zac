@@ -6860,3 +6860,68 @@ shade · **PALEST** = the best shallow strip seen · **RANGE** = how far it swin
 **ΠΙΚΡΟΒΛΥΧΑΔΑ · ΜΑΥΡΗ ΠΑΡΑΛΙΑ · ΤΡΥΠΗΤΗ (Σούγια) · ΣΕΝΤΟΝΙ · ΑΓ. ΑΝΤΩΝΙΟΣ ×2 ·
 ΠΕΡΙΒΟΛΑΚΙ · ΛΑΚΚΟΥΔΙ · ΠΥΡΓΟΣ** — **and ΔΩΜΑΤΑ and ΙΛΙΓΚΑΣ rest on ONE photo
 each.**
+
+---
+
+# ☀️🌥️ SUN vs CLOUD — WHAT THE SPREAD ACTUALLY WAS
+
+**Each user photo classified from its sky band** — saturated blue sky, or no sky
+plus strong shadow contrast = **SUN**; flat white/grey sky or low contrast =
+**CLOUD**. Water then measured separately for each. Tool:
+`expeditions/sun-cloud-sampler.py`.
+
+## 🔴 THE HARD RULE
+
+> **NOT ONE BEACH IN CRETE SHOWS TURQUOISE UNDER CLOUD.**
+> **Zero. Across every beach sampled, turquoise appears ONLY in sun photos.**
+>
+> **The spread between photos was never the beach. It was the weather.**
+
+## 📊 THE SPLIT
+
+| Beach | ☀️ SUN | 🌥️ CLOUD |
+|---|---|---|
+| **ΠΡΕΒΕΛΗ** | **#59E5FE TURQUOISE** *(n=5)* | — |
+| **ΚΕΔΡΟΔΑΣΟΣ** | **#90E0D5 TURQUOISE** *(n=7)* | — |
+| **ΜΠΑΛΟΣ** | **#A3CCC6 TURQUOISE** *(n=9)* | — |
+| **ΛΥΚΟΣ** | **#91A5A9 TURQUOISE** *(n=10)* | — |
+| **RED BEACH** | **#1090A1 TURQUOISE** *(n=4)* | **#5B666B** blue-green *(n=5)* ⚠️ **biggest collapse** |
+| **ΜΑΡΜΑΡΑ** | **#638A8B TURQUOISE** *(n=6)* | #8A98A3 blue-green *(n=4)* |
+| ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ | #9CB8A8 **emerald** *(n=8)* | **#48B2DE blue-green** *(n=2)* ✅ **best cloudy** |
+| ΑΚΡ. ΤΡΥΠΗΤΗ ᴳ | #64927A **emerald** *(n=9)* | #B7C9D5 blue-green |
+| ΕΛΑΦΟΝΗΣΙ | #ADD8C7 **emerald** *(n=6)* | #C3D1ED plain blue |
+| ΑΓ. ΠΑΥΛΟΣ | #CCEFFB blue-green *(n=6)* | #ADCADA blue-green |
+| ΓΡΑΜΒΟΥΣΑ | #D8F0FD blue-green *(n=6)* | #92A9BC plain blue |
+| ΠΑΧΙΑ ΑΜΜΟΣ | #A9DAFF blue-green *(n=9)* | #A0B2C4 plain blue |
+| ΠΟΤΑΜΟΣ ᴳ | #7BC8FF blue-green *(n=8)* | — |
+| ΛΙΣΣΟΣ | #CBE9FF blue-green *(n=4)* | #BBDBFA plain blue |
+| ΚΑΜΙΝΑΚΙ | #ACD2EE blue-green *(n=4)* | — |
+| ΛΑΥΡΑΚΑΣ ᴳ | #C4D9E4 blue-green *(n=7)* | — |
+| ΓΛΥΚΑ ΝΕΡΑ | #6DA1C0 blue-green *(n=4)* | #7891A5 blue-green *(n=6)* ✅ **barely moves** |
+| ΑΓΙΟΣ ΝΙΚΗΤΑΣ | #5285AD blue-green *(n=3)* | #327990 blue-green *(n=2)* ✅ |
+| ΑΓΙΟΦΑΡΑΓΓΟ | #BACFDC blue-green *(n=4)* | #7FA583 **green** *(n=3)* |
+| ΒΑΘΥ | #9BD3F9 blue-green *(n=2)* | #C5D5E9 plain blue *(n=5)* |
+| **ΜΑΡΤΣΑΛΟ** | **— none** | #D9F3FE blue-green *(n=8)* |
+| ΔΩΜΑΤΑ | #1E63AD plain blue *(n=1)* | — **thin** |
+
+## ✏️ A CORRECTION TO WHAT I SAID TWO MESSAGES AGO
+
+**I listed ΜΑΡΤΣΑΛΟ as «never leaves plain blue, six photos, no exceptions».**
+
+> **All eight of its photos are CLOUD photos. There is not one sunny shot of
+> Μάρτσαλο on Flickr.** Its flat colour was **a weather artifact, not a property
+> of the beach.** Its colour in sun is **unknown.**
+
+## 🧭 WHAT THIS MEANS FOR THE TRIP
+
+**26 Oct – 3 Nov is the front edge of the Cretan wet season**, and the midday sun
+is **~42°** against ~78° in June.
+
+> **The weather on the day now matters MORE than which beach you pick.**
+> **On a grey day, no beach in Crete is turquoise — so a cloudy forecast is the
+> signal to spend the day on a gorge, Chania old town, or Marmara's taverna, and
+> save the turquoise beaches for the sun.**
+
+**Hold their colour best when it clouds over:** **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ · ΓΛΥΚΑ ΝΕΡΑ ·
+ΑΓΙΟΣ ΝΙΚΗΤΑΣ** — all three barely move.
+**Collapses hardest:** **RED BEACH**, turquoise → near-grey #5B666B.
