@@ -6970,3 +6970,34 @@ majestic black beach of Aspes»* · travelstyle **«γαλαζοπράσινα �
 >
 > **My record: cut on the black-pebble argument, then reversed on sight of the
 > photographs. Two positions. Replaced by the verdict above.**
+
+## ΤΡΥΠΗΤΗ (Σφακιά) — **D 9 · C 7 · W 10 = 26** ✅ ZAC'S CALL
+## ΣΕΝΤΟΝΙ / ΠΕΥΚΟΣ — **D 9 · C 6 · W 10 = 25 — ❌ CUT on the weak link**
+
+**Photos supplied separately** — the two sets live in different folders on the
+site *(`…/tripitibeachsfakia/` and `…/tripitibeachsfakia/sendoni/`)*, so the
+earlier merged set was my download colliding on filenames. **9 Trypiti photos ·
+all 10 Sentoni photos.**
+
+**Text — ΣΕΝΤΟΝΙ:** *«Η όμορφη παραλία Σεντόνι διαθέτει βότσαλο και **βαθιά
+καταγάλανα** νερά»* · *«Δυτικά της παραλίας υπάρχουν απομονωμένοι ορμίσκοι με
+βότσαλο και η έξοδος του φαραγγιού της Τρυπητής»*. **Second name «Πεύκος»** —
+this is what resolved the phantom "Pefki" earlier in the archive.
+
+**Text — ΤΡΥΠΗΤΗ:** **no water-colour sentence anywhere on the page.** Only the
+gorge mouth and the pebble.
+
+**Earlier measurements for both WITHDRAWN** — taken from the merged page with sky
+leaking through the filter, which is why everything read uniformly pale.
+
+> **ΣΕΝΤΟΝΙ IS THE FIRST ENTRY CUT UNDER THE NEW PROCESS**, and it is cut on
+> Zac's own reading of the photographs.
+
+### THE ΣΟΥΓΙΑ BOAT DAY NOW
+
+| | |
+|---|---|
+| **ΔΩΜΑΤΑ** | **28** ✅ |
+| **ΤΡΥΠΗΤΗ** | **26** ✅ |
+| ΣΕΝΤΟΝΙ | **25 — CUT** |
+| ΛΙΣΣΟΣ · ΑΓ. ΑΝΤΩΝΙΟΣ · ΠΕΡΙΒΟΛΑΚΙ | **colour pending** |
