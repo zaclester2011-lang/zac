@@ -7167,3 +7167,48 @@ dated **June 2026**.
 
 > **14 at 26+ outside Γαύδος and τα Αστερούσια. Six cut. Every one judged by Zac
 > from photographs and sources, not by me.**
+
+## ΑΓΙΟΣ ΠΑΥΛΟΣ (Σφακιά) — **D 8 · C 7 · W 10 = 25 — ❌ below the line**
+## ΜΑΡΜΑΡΑ — **REVISED to D 9 · C 8 · W 10 = 27** *(was Colour 7 = 26)*
+
+**ΑΓΙΟΣ ΠΑΥΛΟΣ judged on 3 photographs — the entire verified supply.** Its
+cretanbeaches page is **indexed but 404s**, so **no guide photos exist.** Six
+further Flickr photos under `agiospavlos,crete` were **withheld**, because a
+second Άγιος Παύλος near Τριόπετρα in Ρέθυμνο shares the name and the tag does
+not separate them. On the **E4 between Αγία Ρούμελη and Λουτρό**, Byzantine
+chapel on the sand.
+
+**ΜΑΡΜΑΡΑ revised upward by Zac on a second look** — 7 → 8. **It is now the
+joint-highest-scoring entry reachable without a boat charter**, on the Λουτρό
+ferry or down the Αράδενα gorge.
+
+---
+
+# ✅ OUTSIDE ΓΑΥΔΟΣ AND ΤΑ ΑΣΤΕΡΟΥΣΙΑ — COMPLETE
+
+| Score | Beach | D·C·W | Access |
+|---|---|---|---|
+| **28** | **ΔΩΜΑΤΑ** | `10·8·10` | Σούγια boat |
+| **27** | **ΑΣΠΕΣ** | `10·7·10` | boat only |
+| **27** | **ΛΙΣΣΟΣ** | `9·8·10` | boat or 1h15 walk |
+| **27** | **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ (Σούγια)** | `9·8·10` | boat or 2h walk |
+| **27** | **ΜΑΡΜΑΡΑ** | `9·8·10` | Λουτρό ferry / Αράδενα gorge |
+| **27** | **ΙΛΙΓΚΑΣ cove 2** | `9·8·10` | walk + 80 m swim |
+| **27** | **ΙΛΙΓΚΑΣ cove 3** | `9·8·10` | walk + 80 m swim |
+| **27** | **ΕΛΑΦΟΝΗΣΙ coves** | `8·9·10` | road + wade |
+| **27** | **ΚΕΔΡΟΔΑΣΟΣ** | `8·9·10` | **the E4 crosses it** |
+| **26** | **ΤΡΥΠΗΤΗ (Σφακιά)** | `9·7·10` | boat or E4 |
+| **26** | **ΠΕΡΙΒΟΛΑΚΙ** | `8·8·10` | |
+| **26** | **ΠΡΕΒΕΛΗ** | `8·8·10` | **470 steps** |
+| **26** | **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | `8·8·10` | steep path |
+| **26** | **ΜΠΑΛΟΣ** | `7·9·10` | Κίσσαμος cruise |
+
+**CUT — 7:** ΑΓΙΟΣ ΠΑΥΛΟΣ 25 · ΓΛΥΚΑ ΝΕΡΑ 25 · ΓΡΑΜΒΟΥΣΑ 25 · ΛΥΚΟΣ 25 ·
+ΣΕΝΤΟΝΙ 25 · ΙΛΙΓΚΑΣ main 24 · ΒΑΘΥ 24
+**UNGRADED:** ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ *(shares Περιβολάκι's page)*
+**Reference:** *Baia di Ieranto `7·7·10` = 24*
+
+> **14 at 26+, every one judged by Zac from the photographs and the sources.**
+> **ΣΟΥΓΙΑ alone now holds FOUR: ΔΩΜΑΤΑ 28, ΛΙΣΣΟΣ 27, ΑΓ. ΑΝΤΩΝΙΟΣ 27,
+> ΤΡΥΠΗΤΗ 26 — which makes Tuesday's boat the best-value day in the week by a
+> distance.**
