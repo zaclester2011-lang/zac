@@ -7017,3 +7017,15 @@ leaking through the filter, which is why everything read uniformly pale.
 
 > **Note on ΕΛΑΦΟΝΗΣΙ: Discovery 8 is for the COVES south towards Κεδρόδασος.**
 > The main beach has a car park, sunbeds and coaches and would be a **5**.
+
+## ΠΡΕΒΕΛΗ — **D 8 · C 8 · W 10 = 26** ✅ ZAC'S CALL
+
+**First set rejected by Zac — «they werent sea photos».** Correct: the page holds
+**24 images** and the ones I led with were the **palm gorge and the freshwater
+lagoon**, which is the famous picture but is **river water, not the sea being
+scored.** Re-filtered by green dominance in frame *(>35% green = gorge/lagoon)*
+and resent **9 sea-only frames**, including a **half-underwater shot showing the
+pale pebble floor and the colour it produces.**
+
+> **Lesson logged: filter the photo set by SUBJECT before sending, not just by
+> how much water is in frame.**
