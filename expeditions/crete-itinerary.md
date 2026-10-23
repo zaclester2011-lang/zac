@@ -7434,3 +7434,39 @@ told me to apply them. These are MY calls overriding his.**
 > **ΑΓΙΟΦΑΡΑΓΓΟ at 27 is now the best thing in the Asterousia with a confirmed
 > walk**, which materially strengthens that region.
 > **ΑΚΡΩΤΗΡΙ disappears as a group** — Σεϊτάν Λιμάνια was its only entry.
+
+---
+
+# ⬆️ THE SEVENS REVISITED — I AGREE ON FIVE, NOT ON FOUR
+
+**Zac: «the sevens that are similar to asterousia put up to 8 … only do it if u
+agree with me».** Test applied — **the same one the Asterousia 8s had to pass:
+blue-green or turquoise attested in MORE THAN ONE independent source, or a pale
+floor visible in the photographs.**
+
+## ✅ AGREED — raised to 8
+
+| Beach | Now | Why it passes |
+|---|---|---|
+| **ΙΛΙΓΚΑΣ cove 2** | **27** | **«λευκό βότσαλο»** attested · and Zac's own first reading was 8 before he revised down |
+| **ΙΛΙΓΚΑΣ cove 3** | **27** | same |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | **27** | **γαλαζοπράσινα · πράσινα · deep green — THREE sources.** Identical evidence class to ΜΑΡΤΣΑΛΟ and ΑΓ. ΑΝΤΩΝΙΟΣ, both already 8. **My own 7 was inconsistent** |
+| **ΓΛΥΚΑ ΝΕΡΑ** | **26** ✅ back in | **«γαλαζοπράσινα δροσερά νερά»** + **«κρυστάλινο-πράσινο»** · measured blue-green in **both sun and cloud** · ⚠️ **the 21.5 °C spring-water gate is still unresolved** |
+| **RED BEACH** | **26** ✅ back in | measured **#1090A1 TURQUOISE** in sun across 4 photos · ⚠️ **collapses to #5B666B in cloud — the biggest swing in the archive** |
+| **ΛΥΚΟΣ** | **26** ✅ back in | **palest reaches TURQUOISE #91A5A9 across ten photos**, typical blue-green · borderline, but it passes |
+
+## ❌ NOT AGREED — held at 7
+
+| Beach | Why it fails the test |
+|---|---|
+| **ΤΡΥΠΗΤΗ (Σφακιά)** | **its page carries NO water-colour sentence at all.** The only evidence is Zac's own eye, which said 7. Raising it would be inflation, not evidence |
+| **ΤΡΥΠΗΤΗ (Λέντας)** | **«dark pebbles»** stated outright. Dark substrate is the one thing that has consistently held colour down |
+| **ΓΡΑΜΒΟΥΣΑ** | measured across six photos, the range **never reaches turquoise in any of them** — deep → plain → blue-green only |
+| **ΑΓΙΟΣ ΠΑΥΛΟΣ** | **only 3 verified photos exist** and its guide page 404s. **Not a judgement that it is worse — the evidence is too thin to move it** |
+
+## 🧮 ARITHMETIC CORRECTION
+
+**I said the archive fell to «26 at 26+» when Γλυκά Νερά was cut. Wrong — it was
+already cut and had never been in the 27.** The count was 27.
+
+> **AFTER THESE CHANGES: 30 at 26+ — five 28s, EIGHTEEN 27s, seven 26s.**
