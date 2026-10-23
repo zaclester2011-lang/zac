@@ -6925,3 +6925,29 @@ is **~42°** against ~78° in June.
 **Hold their colour best when it clouds over:** **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ · ΓΛΥΚΑ ΝΕΡΑ ·
 ΑΓΙΟΣ ΝΙΚΗΤΑΣ** — all three barely move.
 **Collapses hardest:** **RED BEACH**, turquoise → near-grey #5B666B.
+
+---
+
+# ⚖️ COLOUR NOW SET BY ZAC FROM THE EVIDENCE
+
+**New process, after too many reversals from me:** for each beach I send **every
+photograph** and **every text source verbatim**, and **Zac sets the Colour.**
+I supply evidence and Discovery. I do not score colour.
+
+## ΔΩΜΑΤΑ — **D 10 · C 8 · W 10 = 28** ✅ ZAC'S CALL
+
+**Evidence supplied:** 12 photographs *(11 cretanbeaches, 1 Flickr user photo;
+20 available in total)* · structured field **«Βαθύ μπλε»** · neakriti
+*«ψιλό πεντακάθαρο βότσαλο και καταγάλανα νερά, συνήθως όμως **θολά** λόγω
+υπόγειων πηγών γλυκού νερού»* · a second guide *«σχεδόν απάτητη **γκρίζα**
+αμμουδιά και διάφανα, καταγάλανα νερά»* · an English blog *«azure blue, often
+veiled in a gentle haze»* · **no source in any language uses τιρκουάζ or
+γαλαζοπράσινο.**
+
+**Measured:** shore **#91D8F7** · mid #68ACE9 · body **#0B5082** · the one user
+photo **#1E63AD**.
+
+> **ΖAC'S VERDICT: Colour 8 — γαλάζιο tier. ΔΩΜΑΤΑ = 28.**
+>
+> **My own record on this beach: scored 8, then cut to 5, then restored. Three
+> positions in one session. The verdict above replaces all of them.**
