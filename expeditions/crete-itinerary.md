@@ -7029,3 +7029,69 @@ pale pebble floor and the colour it produces.**
 
 > **Lesson logged: filter the photo set by SUBJECT before sending, not just by
 > how much water is in frame.**
+
+## ΛΙΣΣΟΣ — **D 9 · C 8 · W 10 = 27** ✅
+## ΜΑΡΜΑΡΑ — **D 9 · C 7 · W 10 = 26** ✅
+## ΓΡΑΜΒΟΥΣΑ — **D 8 · C 7 · W 10 = 25 — ❌ falls below the line**
+
+**ΛΙΣΣΟΣ:** 10 photos — **the entire supply** *(6 guide, all shot on one January
+day in winter light, + 4 Flickr)*. Field **«Γαλάζιο»**, *«ερημική, παντελώς
+ανοργάνωτη, με πολύ **χοντρό βότσαλο**»*.
+**ΜΑΡΜΑΡΑ:** 7 user photos — **its guide page holds no photographs at all.**
+Field **«Γαλαζοπράσινο, Βαθύ μπλε»**, depth **Βαθιά**, rock **«πολύχρωμο»**.
+**ΓΡΑΜΒΟΥΣΑ:** 9 sea frames of 37 — ⚠️ **some of that page is ΑΓΡΙΑ ΓΡΑΜΒΟΥΣΑ**,
+the wild islet the cruise does not land on.
+
+---
+
+# 📍 THE CALIBRATION POINT — ΒΑΙΑ DI IERANTO = **7**
+
+**Zac has stood in it. That makes it the one score on the board grounded in a
+memory rather than a photograph, and every other number can be read against it.**
+
+**Honest limits recorded:** I could **not** source water-level photographs of
+Ieranto. There is **no road** — it is a **6 km walk down from Nerano** — so
+effectively every published image is from the clifftop path ~200 m above or from
+a boat offshore. I checked two of the best myself: a clifftop tower and an aerial
+of the whole headland. **My earlier Ieranto figures (#92C3EA, #89B5A8) are
+WITHDRAWN** — they came from the Flickr `ieranto` tag, whose top-ranked "sea"
+shot was **a washing line with Capri's Faraglioni behind it.**
+
+**Text that does hold:** *«una piccola spiaggia di **ciottoli bianchi** e acqua
+trasparente»* · *«acqua color **turchese**»* · Posidonia meadows · Punta
+Campanella marine reserve. **White pebble, limestone, no river mouth — the
+ΜΠΑΛΟΣ / ΚΕΔΡΟΔΑΣΟΣ mechanism, not the ΔΩΜΑΤΑ one.**
+
+## 🏆 THE BOARD, READ AGAINST IERANTO
+
+| | Colour | vs Ieranto |
+|---|---|---|
+| **ΚΕΔΡΟΔΑΣΟΣ · ΕΛΑΦΟΝΗΣΙ coves · ΜΠΑΛΟΣ** | **9** | **two better** |
+| **ΔΩΜΑΤΑ · ΛΙΣΣΟΣ · ΠΡΕΒΕΛΗ** | **8** | **one better** |
+| **ΑΣΠΕΣ · ΜΑΡΜΑΡΑ · ΤΡΥΠΗΤΗ · ΓΡΑΜΒΟΥΣΑ** | **7** | **the same** |
+| ΣΕΝΤΟΝΙ | 6 | worse |
+
+## ⚠️ ONE THING I CANNOT DO
+
+**Zac's scale is NOT predictable from my hex values.** The evidence:
+**ΠΡΕΒΕΛΗ #59E5FE** — bright cyan — scored **8**, while **ΚΕΔΡΟΔΑΣΟΣ #90E0D5** —
+paler and duller — scored **9**. **ΓΡΑΜΒΟΥΣΑ #D8F0FD** scored **7** while
+**ΛΙΣΣΟΣ #CBE9FF**, almost the same value, scored **8**.
+
+> **He is reading the whole scene — how much of the bay is shallow and pale, what
+> the floor is doing, the overall impression — not a single swatch. So I can
+> supply evidence and Discovery, and I must NOT predict his colours.**
+
+## 📊 SCORED SO FAR — 12 of ~37
+
+| 28 | **ΔΩΜΑΤΑ** `10·8·10` |
+|---|---|
+| **27** | **ΑΣΠΕΣ** `10·7·10` · **ΛΙΣΣΟΣ** `9·8·10` · **ΕΛΑΦΟΝΗΣΙ coves** `8·9·10` · **ΚΕΔΡΟΔΑΣΟΣ** `8·9·10` |
+| **26** | **ΤΡΥΠΗΤΗ** `9·7·10` · **ΜΑΡΜΑΡΑ** `9·7·10` · **ΠΡΕΒΕΛΗ** `8·8·10` · **ΜΠΑΛΟΣ** `7·9·10` |
+| **CUT** | ΣΕΝΤΟΝΙ 25 · ΓΡΑΜΒΟΥΣΑ 25 |
+| *reference* | *Baia di Ieranto — Colour 7* |
+
+**Still to judge:** ΙΛΙΓΚΑΣ ×3 · ΓΛΥΚΑ ΝΕΡΑ · ΑΓ. ΠΑΥΛΟΣ · ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ ·
+ΒΑΘΥ · ΚΑΜΙΝΑΚΙ · ΒΑΛΑ · ΠΙΚΡΟΒΛΥΧΑΔΑ · ΣΚΙΑΔΑΚΙ · ΚΑΤΑΡΤΙ · ΜΑΡΤΣΑΛΟ ·
+ΑΓΙΟΦΑΡΑΓΓΟ · ΑΓ. ΝΙΚΗΤΑΣ · ΑΓ. ΑΝΤΩΝΙΟΣ ×2 · ΠΕΡΙΒΟΛΑΚΙ · ΛΥΚΟΣ · RED BEACH ·
+ΠΑΧΙΑ ΑΜΜΟΣ · ΤΡΥΠΗΤΗ (Αστ.) · the four Γαύδος · ΜΑΥΡΗ ΠΑΡΑΛΙΑ
