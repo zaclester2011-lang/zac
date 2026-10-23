@@ -7123,3 +7123,47 @@ front of him.**
 | **ΙΛΙΓΚΑΣ cove 2 · cove 3** | **27 each** ✅ |
 | ΑΓΙΟΣ ΠΑΥΛΟΣ | pending |
 | ΙΛΙΓΚΑΣ main 24 · ΓΛΥΚΑ ΝΕΡΑ 25 | **CUT** |
+
+## ΒΑΘΥ / ΣΤΟΜΙΟ — **D 8 · C 6 · W 10 = 24 — ❌ CUT on the weak link**
+## ΛΥΚΟΣ — **D 8 · C 7 · W 10 = 25 — ❌ below the line**
+## ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ / ΧΑΡΕΙ (Σούγια) — **D 9 · C 8 · W 10 = 27** ✅
+## ΠΕΡΙΒΟΛΑΚΙ — **D 8 · C 8 · W 10 = 26** ✅
+
+**ΒΑΘΥ:** confirmed as the **SOUTHWEST Vathy near Χρυσοσκαλίτισσα**, not the
+Asterousia beach of the same name — **I had conflated the two earlier.**
+**ΛΥΚΟΣ:** tavernas and rooms on site, which is what caps Discovery.
+**ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ:** 2.5 km east of Σούγια, calm bay among pines, **no
+infrastructure**, boat or a 2-hour walk. **Confirmed a DIFFERENT beach from the
+Asterousia Άγιος Αντώνιος — I had merged them, and that was wrong.** Photos
+dated **June 2026**.
+**ΠΕΡΙΒΟΛΑΚΙ:** shares its page with **ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ**, the neighbouring cove —
+**ungraded, and a genuine extra on the same walk if wanted.**
+
+---
+
+# 📊 EVERYTHING OUTSIDE ΓΑΥΔΟΣ AND ΤΑ ΑΣΤΕΡΟΥΣΙΑ — JUDGED
+
+| Score | Beach | D·C·W |
+|---|---|---|
+| **28** | **ΔΩΜΑΤΑ** | `10·8·10` |
+| **27** | **ΑΣΠΕΣ** | `10·7·10` |
+| **27** | **ΛΙΣΣΟΣ** | `9·8·10` |
+| **27** | **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ (Σούγια)** | `9·8·10` |
+| **27** | **ΙΛΙΓΚΑΣ cove 2** | `9·8·10` |
+| **27** | **ΙΛΙΓΚΑΣ cove 3** | `9·8·10` |
+| **27** | **ΕΛΑΦΟΝΗΣΙ coves** | `8·9·10` |
+| **27** | **ΚΕΔΡΟΔΑΣΟΣ** | `8·9·10` |
+| **26** | **ΤΡΥΠΗΤΗ (Σφακιά)** | `9·7·10` |
+| **26** | **ΜΑΡΜΑΡΑ** | `9·7·10` |
+| **26** | **ΠΕΡΙΒΟΛΑΚΙ** | `8·8·10` |
+| **26** | **ΠΡΕΒΕΛΗ** | `8·8·10` |
+| **26** | **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | `8·8·10` |
+| **26** | **ΜΠΑΛΟΣ** | `7·9·10` |
+
+**CUT:** ΓΛΥΚΑ ΝΕΡΑ 25 · ΓΡΑΜΒΟΥΣΑ 25 · ΛΥΚΟΣ 25 · ΣΕΝΤΟΝΙ 25 ·
+ΙΛΙΓΚΑΣ main 24 · ΒΑΘΥ 24
+**PENDING:** ΑΓΙΟΣ ΠΑΥΛΟΣ *(page 404s)* · ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ *(ungraded)*
+**Reference:** *Baia di Ieranto 7·7·10 = 24*
+
+> **14 at 26+ outside Γαύδος and τα Αστερούσια. Six cut. Every one judged by Zac
+> from photographs and sources, not by me.**
