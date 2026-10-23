@@ -6951,3 +6951,22 @@ photo **#1E63AD**.
 >
 > **My own record on this beach: scored 8, then cut to 5, then restored. Three
 > positions in one session. The verdict above replaces all of them.**
+
+## ΑΣΠΕΣ — **D 10 · C 7 · W 10 = 27** ✅ ZAC'S CALL
+
+**Evidence supplied:** 12 of 26 cretanbeaches photographs · **NO Flickr user
+photos exist** — everything is from the guide, which matters given the Σεϊτάν
+Λιμάνια finding.
+
+**Text:** field **«Deep blue · Deep · Pebbles · Boat»** — **contradicted by its
+own prose, «The colors of the sea have a vivid turquoise color»** and *«The
+majestic black beach of Aspes»* · travelstyle **«γαλαζοπράσινα νερά»**, substrate
+**«μαύρο χαλικάκι»** · newsbomb independently **«γαλαζοπράσινα νερά»** ·
+**Άσπες = mountain collapse**, not "white".
+
+**Measured:** **#1898A7 · #0C97A7 · #0B8898** · shore band #308276 · deeper #2B6476.
+
+> **ZAC'S VERDICT: Colour 7. ΑΣΠΕΣ = 27, and it clears the weak-link rule.**
+>
+> **My record: cut on the black-pebble argument, then reversed on sight of the
+> photographs. Two positions. Replaced by the verdict above.**
