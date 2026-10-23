@@ -7336,3 +7336,13 @@ November.** `+30 697 003 8388` · `info@saltytrips.gr`
 
 > **The Asterousia holds the most quality and the least certainty. Nine entries
 > at 26+, and only ONE of them has a walk I can stand behind.**
+
+## ΣΑΡΑΚΗΝΙΚΟ (Γαύδος) — **D 6 · C 7 · W 10 = 23 — ❌ CUT**
+## ΚΟΡΦΟΣ (Γαύδος) — **D 6 · C 7 · W 10 = 23 — ❌ CUT**
+
+**Both die on Discovery, not colour.** Σαρακήνικο is Gavdos' best-known beach —
+**cedars to the sand, tavernas, rooms, campers** — and Κορφός has a taverna and
+rooms by the settlement. **On Gavdos that is as developed as it gets.** Even a
+Colour 9 would leave them at 25.
+
+**PENDING:** ΦΕΤΙΦΕΣ *(D7)* · ΑΓΙΑΝΝΗΣ *(D7)* · ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ *(D8)*
