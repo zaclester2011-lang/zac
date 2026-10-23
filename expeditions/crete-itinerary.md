@@ -7295,3 +7295,44 @@ pebbles and clear deep sea»*, thalori *«σμαραγδένια»* — **and it
 **ΜΑΡΤΣΑΛΟ at 27 on the guide photographs** — the only sunny evidence that
 exists, every Flickr photo of it being cloudy. **My earlier «never leaves plain
 blue» was a lighting artifact and is now definitively wrong.**
+
+## ΤΑ ΑΣΤΕΡΟΥΣΙΑ — JUDGED (5–11 of 11)
+
+**Zac handed these back to me, so I scored them — four by LOOKING at the
+photographs, three inferred. Flagged which is which.**
+
+| Beach | D·C·W | Total | Basis |
+|---|---|---|---|
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | `10·8·10` | **28** | **viewed** · vivid turquoise in the rock slot, pale floor visible · **CONFIRMED by Zac** |
+| **ΒΑΛΑ** | `10·8·10` | **28** | **viewed** · clean bright turquoise over pale rock · **CONFIRMED by Zac** |
+| **ΚΑΜΙΝΑΚΙ** | `9·8·10` | **27** | **viewed** · the **«White Beach»** name is earned |
+| **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ (Κουδουμάς)** | `9·8·10` | **27** | **viewed** · half-underwater, vivid emerald-turquoise over dark reef |
+| **ΑΓΙΟΣ ΝΙΚΗΤΑΣ** | `9·7·10` | **26** | inferred |
+| **ΤΡΥΠΗΤΗ (Λέντας)** | `8·7·10` | **25** | ❌ inferred · dark pebbles |
+| **RED BEACH (Μάταλα)** | `8·7·10` | **25** | ❌ inferred · **collapses to near-grey in cloud** |
+
+> **THE CLAY-CLIFF CLAIM ABOUT ΚΑΜΙΝΑΚΙ DOES NOT SURVIVE THE PHOTOGRAPH.** The
+> beach is unmistakably **white pebble** with a turquoise band over it. That
+> listicle, which I had used to argue the colour down, was simply wrong.
+
+# 🏆 ΤΑ ΑΣΤΕΡΟΥΣΙΑ — COMPLETE: NINE AT 26+, THE LARGEST GROUP IN THE ARCHIVE
+
+| 28 | **ΠΙΚΡΟΒΛΥΧΑΔΑ** `10·8·10` · **ΒΑΛΑ** `10·8·10` |
+|---|---|
+| **27** | **ΑΣΠΕΣ** `10·7·10` · **ΣΚΙΑΔΑΚΙ** `9·8·10` · **ΜΑΡΤΣΑΛΟ** `9·8·10` · **ΚΑΜΙΝΑΚΙ** `9·8·10` · **ΑΓ. ΑΝΤΩΝΙΟΣ** `9·8·10` |
+| **26** | **ΑΓΙΟΦΑΡΑΓΓΟ** `9·7·10` · **ΑΓ. ΝΙΚΗΤΑΣ** `9·7·10` |
+| **CUT** | ΚΑΤΑΡΤΙ 25 · ΤΡΥΠΗΤΗ 25 · RED BEACH 25 |
+
+## 🔴 AND THE ACCESS PROBLEM NOW BITES HARDEST HERE
+
+**FOUR of the five top scorers are BOAT-ONLY** — ΠΙΚΡΟΒΛΥΧΑΔΑ, ΒΑΛΑ, ΚΑΜΙΝΑΚΙ,
+ΑΣΠΕΣ — **behind SALTY TRIPS at Τσούτσουρας, who have not confirmed they run in
+November.** `+30 697 003 8388` · `info@saltytrips.gr`
+
+| Walkable, confirmed | **ΑΓΙΟΦΑΡΑΓΓΟ 26** — 40 min, easy, flat |
+|---|---|
+| Walk disputed | ΣΚΙΑΔΑΚΙ 27 *(own page says boat)* · ΜΑΡΤΣΑΛΟ 27 *(dirt track first)* · ΑΓ. ΝΙΚΗΤΑΣ 26 *(15 km dirt + 230 steps)* · ΑΓ. ΑΝΤΩΝΙΟΣ 27 |
+| **Boat only** | **ΠΙΚΡΟΒΛΥΧΑΔΑ 28 · ΒΑΛΑ 28 · ΚΑΜΙΝΑΚΙ 27 · ΑΣΠΕΣ 27** |
+
+> **The Asterousia holds the most quality and the least certainty. Nine entries
+> at 26+, and only ONE of them has a walk I can stand behind.**
