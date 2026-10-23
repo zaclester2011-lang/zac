@@ -7001,3 +7001,19 @@ leaking through the filter, which is why everything read uniformly pale.
 | **ΤΡΥΠΗΤΗ** | **26** ✅ |
 | ΣΕΝΤΟΝΙ | **25 — CUT** |
 | ΛΙΣΣΟΣ · ΑΓ. ΑΝΤΩΝΙΟΣ · ΠΕΡΙΒΟΛΑΚΙ | **colour pending** |
+
+## ΜΠΑΛΟΣ — **D 7 · C 9 · W 10 = 26** ✅ ZAC'S CALL
+## ΕΛΑΦΟΝΗΣΙ coves — **D 8 · C 9 · W 10 = 27** ✅ ZAC'S CALL
+## ΚΕΔΡΟΔΑΣΟΣ — **D 8 · C 9 · W 10 = 27** ✅ ZAC'S CALL
+
+**Evidence supplied:** 8 guide + 4 user photos (Μπάλος) · 8 + 3 (Ελαφονήσι) ·
+8 + 3 (Κεδρόδασος) — guide photos and Flickr user photos **side by side**.
+
+| | Text | Measured |
+|---|---|---|
+| **ΜΠΑΛΟΣ** | **«λευκή άμμος και ανοιχτόχρωμα τιρκουάζ νερά»** | guide #86ADA7 · users #0068D7 → #3898B4 → #8AA19B ⚠️ **sampler under-reads the white lagoon as glare** |
+| **ΕΛΑΦΟΝΗΣΙ** | field **Turquoise · Shallow** · **pink sand** from crushed shell | sun #ADD8C7 · cloud #C3D1ED |
+| **ΚΕΔΡΟΔΑΣΟΣ** | field **Turquoise · Shallow · White Sand** — **the only entry where all three parts of the mechanism are stated** · **the E4 crosses the beach** | #90E0D5 · #058695 · #056474 |
+
+> **Note on ΕΛΑΦΟΝΗΣΙ: Discovery 8 is for the COVES south towards Κεδρόδασος.**
+> The main beach has a car park, sunbeds and coaches and would be a **5**.
