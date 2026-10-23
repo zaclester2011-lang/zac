@@ -7212,3 +7212,17 @@ ferry or down the Αράδενα gorge.
 > **ΣΟΥΓΙΑ alone now holds FOUR: ΔΩΜΑΤΑ 28, ΛΙΣΣΟΣ 27, ΑΓ. ΑΝΤΩΝΙΟΣ 27,
 > ΤΡΥΠΗΤΗ 26 — which makes Tuesday's boat the best-value day in the week by a
 > distance.**
+
+## ΙΛΙΓΚΑΣ coves 2 and 3 — **REVISED to D 9 · C 7 · W 10 = 26 each** *(were Colour 8 = 27)*
+
+**ΕΛΑΦΟΝΗΣΙ coves unchanged at `8·9·10` = 27.**
+
+> **Ίλιγκας now reads: main CUT at 24, both coves at 26.** The 80 m swim east is
+> still worth **two points** of total score over the main beach.
+
+### THE 26+ LIST OUTSIDE ΓΑΥΔΟΣ AND ΤΑ ΑΣΤΕΡΟΥΣΙΑ — 14, REVISED
+
+| 28 | **ΔΩΜΑΤΑ** `10·8·10` |
+|---|---|
+| **27** | **ΑΣΠΕΣ** `10·7·10` · **ΛΙΣΣΟΣ** `9·8·10` · **ΑΓ. ΑΝΤΩΝΙΟΣ (Σούγια)** `9·8·10` · **ΜΑΡΜΑΡΑ** `9·8·10` · **ΕΛΑΦΟΝΗΣΙ coves** `8·9·10` · **ΚΕΔΡΟΔΑΣΟΣ** `8·9·10` |
+| **26** | **ΙΛΙΓΚΑΣ cove 2** `9·7·10` · **ΙΛΙΓΚΑΣ cove 3** `9·7·10` · **ΤΡΥΠΗΤΗ** `9·7·10` · **ΠΕΡΙΒΟΛΑΚΙ** `8·8·10` · **ΠΡΕΒΕΛΗ** `8·8·10` · **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** `8·8·10` · **ΜΠΑΛΟΣ** `7·9·10` |
