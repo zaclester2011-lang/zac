@@ -7226,3 +7226,45 @@ ferry or down the Αράδενα gorge.
 |---|---|
 | **27** | **ΑΣΠΕΣ** `10·7·10` · **ΛΙΣΣΟΣ** `9·8·10` · **ΑΓ. ΑΝΤΩΝΙΟΣ (Σούγια)** `9·8·10` · **ΜΑΡΜΑΡΑ** `9·8·10` · **ΕΛΑΦΟΝΗΣΙ coves** `8·9·10` · **ΚΕΔΡΟΔΑΣΟΣ** `8·9·10` |
 | **26** | **ΙΛΙΓΚΑΣ cove 2** `9·7·10` · **ΙΛΙΓΚΑΣ cove 3** `9·7·10` · **ΤΡΥΠΗΤΗ** `9·7·10` · **ΠΕΡΙΒΟΛΑΚΙ** `8·8·10` · **ΠΡΕΒΕΛΗ** `8·8·10` · **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** `8·8·10` · **ΜΠΑΛΟΣ** `7·9·10` |
+
+---
+
+# 🏝️ ΓΑΥΔΟΣ JUDGED — AND IT IS THE STRONGEST CLUSTER IN THE ARCHIVE
+
+| Beach | D·C·W | Total | |
+|---|---|---|---|
+| **ΛΑΚΚΟΥΔΙ** | `9·9·10` | **28** | **«άσπρα βότσαλα»** vs field Βαθύ μπλε · **no user photos exist** |
+| **ΑΚΡ. ΤΡΥΠΗΤΗ** | `9·9·10` | **28** | **southernmost point of Europe** · sand east · depth **Κανονικό** |
+| **ΛΑΥΡΑΚΑΣ** | `9·8·10` | **27** | **ξανθή/χρυσή** sand, not white · zero τιρκουάζ in 4 sources |
+| **ΠΟΤΑΜΟΣ** | `9·8·10` | **27** | widest measured range on the island |
+| **ΠΥΡΓΟΣ** | `9·8·10` | **27** | **no colour source in any language** — judged on photographs alone |
+| ΑΓΙΑΝΝΗΣ | `7·?·10` | — | **ungraded** |
+
+**Judged against late-afternoon light:** Λαυράκας and Πύργος were shot ~17:00–18:00
+in June, Αγιάννης at 16:00. **Only Τρυπητή and Ποταμός were photographed near
+midday.** Zac scored the first two at 8 **in spite of** that handicap.
+
+## ⚖️ THE COMPARISON THAT NOW MATTERS
+
+| | 28 | 27 | 26 | total at 26+ |
+|---|---|---|---|---|
+| **Everything else** *(Σούγια, Σφακιά, SW, Κίσσαμος, Ακρωτήρι, Ρέθυμνο)* | **1** | **6** | **7** | **14** |
+| **ΓΑΥΔΟΣ ALONE** | **2** | **3** | 0 | **5** |
+
+> **ΓΑΥΔΟΣ holds TWO of the archive's THREE 28s.**
+> **Every Gavdos entry scores 27 or better — no other group comes close on
+> average.** Σούγια's four run 28·27·27·26; Gavdos' five run 28·28·27·27·27.
+
+## 🔴 SO THE «OWN TRIP» RULING HAS TO BE RE-EXAMINED
+
+**It was held out all week on access, before any of it was judged.** Now:
+
+| For | Against |
+|---|---|
+| **5 entries at 27+**, the densest quality in the archive | **4–5 h ferry round trip + a night** |
+| **ΑΓΙΑΝΝΗΣ → ΛΑΥΡΑΚΑΣ → ΣΤΑΥΡΟΛΙΜΝΗ → ΠΥΡΓΟΣ is ONE continuous coastal walk** — three of the five on a single day's walking | **late-October ANENDYK schedule thins to a couple of sailings a week** |
+| Two 28s, equal to ΔΩΜΑΤΑ | **real risk of being weathered in** — 2 of 9 days committed, possibly more |
+
+> **This is now a genuine trade, not an obvious exclusion.** Two days on Gavdos
+> buys **five entries at 27+**; the same two days on Crete buy perhaps four at
+> 26–27. **The ferry risk, not the water, is the only argument left against it.**
