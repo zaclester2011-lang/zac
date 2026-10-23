@@ -7268,3 +7268,30 @@ midday.** Zac scored the first two at 8 **in spite of** that handicap.
 > **This is now a genuine trade, not an obvious exclusion.** Two days on Gavdos
 > buys **five entries at 27+**; the same two days on Crete buy perhaps four at
 > 26–27. **The ferry risk, not the water, is the only argument left against it.**
+
+---
+
+# ΤΑ ΑΣΤΕΡΟΥΣΙΑ — JUDGED (1–4 of 11)
+
+| Beach | D·C·W | Total | |
+|---|---|---|---|
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | `9·7·10` | **26** | ✅ **and its 40-min flat walk is the only confirmed one in the block** |
+| **ΣΚΙΑΔΑΚΙ** | `9·8·10` | **27** | ✅ |
+| **ΚΑΤΑΡΤΙ** | `9·6·10` | **25** | ❌ **CUT on the weak link** |
+| **ΜΑΡΤΣΑΛΟ** | `9·8·10` | **27** | ✅ |
+
+## TWO FINDINGS WORTH KEEPING
+
+**ΣΚΙΑΔΑΚΙ'S CONTRADICTION RESOLVED UPWARD.** Its sources split **«λευκό
+βότσαλο»** against **«βαθιά καταγάλανα»**, and **no source anywhere called it
+turquoise.** On the photographs Zac scored it **8 — the pale floor won.**
+**I had held it at Colour 5 and flagged it as unresolvable from text. It is a 27.**
+
+**ΚΑΤΑΡΤΙ FELL DESPITE WHITE PEBBLES.** Field **Blue · Deep**, prose *«white
+pebbles and clear deep sea»*, thalori *«σμαραγδένια»* — **and it scored 6.**
+> **White pebble is NOT sufficient on its own: Σκιαδάκι's white floor carried it
+> to 8, Κατάρτι's to 6. The difference is DEPTH — Κατάρτι's field reads Deep.**
+
+**ΜΑΡΤΣΑΛΟ at 27 on the guide photographs** — the only sunny evidence that
+exists, every Flickr photo of it being cloudy. **My earlier «never leaves plain
+blue» was a lighting artifact and is now definitively wrong.**
