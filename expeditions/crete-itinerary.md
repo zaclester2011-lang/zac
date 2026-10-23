@@ -7406,3 +7406,31 @@ does not cost the day.
 
 > **28 at 26+. Five 28s. Every one judged from photographs and sources — nineteen
 > by Zac's own eye, the rest by me with the basis recorded.**
+
+---
+
+# ⚖️ FIVE DISAGREEMENTS, APPLIED AT ZAC'S INSTRUCTION
+
+**Asked whether I opposed any of his ratings, I named five, each by one point. He
+told me to apply them. These are MY calls overriding his.**
+
+| Beach | Zac | **Mine** | Now | Reason |
+|---|---|---|---|---|
+| **ΑΣΠΕΣ** | 7 | **8** | **28** ⬆️ | I looked at it: vivid green-turquoise **#1898A7** over a pale floor, black pebble only a strip at the waterline. Brighter than Λισσός or Μάρμαρα, both scored 8 |
+| **ΠΡΕΒΕΛΗ** | 8 | **9** | **27** ⬆️ | measured **#59E5FE — the most vivid cyan in the dataset**, above Κεδρόδασος and Μπάλος, both 9 · half-underwater frame shows emerald over pale pebble · ⚠️ only n=2 sunny photos |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | 7 | **8** | **27** ⬆️ | **τιρκουάζ in 3 independent sources incl. a headline**, only cretanbeaches dissenting — the strongest turquoise text on the Asterousia coast · **and it is the one beach there with a confirmed walk** |
+| **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | 8 | **7** | **25 ❌ CUT** ⬇️ | guide photo **#03D0EB** vs five user photos at **#345979 · #66A7A5 · #3A4C64 · #024396** — **the clearest case of a guide out-vividding reality in the whole archive** |
+| **ΛΑΚΚΟΥΔΙ** | 9 | **8** | **27** ⬇️ | its own field reads **Βαθύ μπλε**; only «άσπρα βότσαλα» argues up. **Every other 9 has turquoise or shallow in its field.** No user photos exist — guide only |
+
+## 📊 THE ARCHIVE AFTER THE OVERRIDES — **27 at 26+**
+
+| **28** *(five)* | **ΔΩΜΑΤΑ** · **ΠΙΚΡΟΒΛΥΧΑΔΑ** · **ΒΑΛΑ** · **ΑΣΠΕΣ** · **ΑΚΡ. ΤΡΥΠΗΤΗ** ᴳ |
+|---|---|
+| **27** *(fifteen)* | ΛΙΣΣΟΣ · ΑΓ. ΑΝΤΩΝΙΟΣ (Σούγια) · ΜΑΡΜΑΡΑ · ΣΚΙΑΔΑΚΙ · ΜΑΡΤΣΑΛΟ · ΚΑΜΙΝΑΚΙ · ΑΓ. ΑΝΤΩΝΙΟΣ (Κουδ.) · **ΑΓΙΟΦΑΡΑΓΓΟ** · **ΠΡΕΒΕΛΗ** · **ΛΑΚΚΟΥΔΙ** ᴳ · ΛΑΥΡΑΚΑΣ ᴳ · ΠΟΤΑΜΟΣ ᴳ · ΠΥΡΓΟΣ ᴳ · ΕΛΑΦΟΝΗΣΙ coves · ΚΕΔΡΟΔΑΣΟΣ |
+| **26** *(seven)* | ΤΡΥΠΗΤΗ · ΑΓ. ΝΙΚΗΤΑΣ · ΙΛΙΓΚΑΣ cove 2 · ΙΛΙΓΚΑΣ cove 3 · ΠΕΡΙΒΟΛΑΚΙ · ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ · ΜΠΑΛΟΣ |
+
+> **ΓΑΥΔΟΣ now has ONE 28, not two** — **ΑΚΡ. ΤΡΥΠΗΤΗ is the only 28 in the
+> archive reachable on foot.**
+> **ΑΓΙΟΦΑΡΑΓΓΟ at 27 is now the best thing in the Asterousia with a confirmed
+> walk**, which materially strengthens that region.
+> **ΑΚΡΩΤΗΡΙ disappears as a group** — Σεϊτάν Λιμάνια was its only entry.
