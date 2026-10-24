@@ -7718,3 +7718,40 @@ sailing — and ΜΠΑΛΟΣ with it.**
 | ΜΑΡΜΑΡΑ · ΚΙΣΣΑΜΟΣ · ΑΚΡΩΤΗΡΙ · ΡΕΘΥΜΝΟ | 1 each |
 
 **Everything now sits within reach of two bases — Stalos and the Asterousia.**
+
+---
+
+# ✅ ΜΠΑΛΟΣ ADDED TO THE DEFINITES · ΣΑΜΑΡΙΑ RULED OUT
+
+## THE DEFINITES — six fixtures
+
+| # | Fixture | Water | Day |
+|---|---|---|---|
+| **1** | **THE ΣΟΥΓΙΑ BOAT** 🔴 | **ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26** | Tue 27 |
+| **2** | **ΜΑΡΜΑΡΑ** | **27** | Wed 28 |
+| **3** | **ΓΛΥΚΑ ΝΕΡΑ** | **26** | Wed 28 — same ferry |
+| **4** | **ΕΛΑΦΟΝΗΣΙ coves** | **27** | Thu 29 |
+| **5** | **ΜΠΑΛΟΣ** 🔴 | **26** | **Sat 31 — the season's LAST SAILING** |
+| **6** | **ΠΡΕΒΕΛΗ** | **27** | Sun 1 Nov, en route east |
+
+> **Eight water bodies locked across FIVE days — and they still carry four more
+> for nothing:** ΚΕΔΡΟΔΑΣΟΣ 27 *(1 km from Ελαφονήσι on the E4)* · ΙΛΙΓΚΑΣ coves
+> 27+27 and ΛΥΚΟΣ 26 *(same Χώρα Σφακίων day as Μάρμαρα and Γλυκά Νερά)*.
+>
+> **≈ twelve entries from six decisions.**
+
+**TWO OF THE SIX ARE TIME-CRITICAL:** 🔴 **the Σούγια boat** and 🔴 **the
+Κίσσαμος cruise, which has no second date.**
+
+## ΣΑΜΑΡΙΑ — ruled out by Zac
+
+**Recorded for the file:** season **1 May – 31 October**, so it would have been
+possible only Mon 26 – Sat 31. **A closure notice exists for 15 Oct 2026, and one
+unconfirmed report has both entrances shut from 1 Oct 2026 after severe weather.**
+
+**It does not fit the scale at all:** **Discovery 3** *(ticketed gate, coaches,
+the most-walked trail in Greece)* · **no sea to judge** · and it **fails the
+water gate outright** — cold mountain freshwater, and **swimming is forbidden in
+the National Park.**
+
+> **Not a water body. Ruled out.**
