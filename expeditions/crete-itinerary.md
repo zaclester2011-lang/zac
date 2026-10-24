@@ -7841,3 +7841,50 @@ end of this one. **The scores stand; they are banked.**
 > **Nothing scoring 26+ remains between Ρέθυμνο and Heraklion once the
 > Αστερούσια is out.** Options: a Ρέθυμνο night and a slow drive east · or
 > Μάταλα/Κόκκινη Άμμος as a single stop · or simply two easy days.
+
+---
+
+# ➕ ΛΙΣΤΗΣ ADDED TO ΤΑ ΑΣΤΕΡΟΥΣΙΑ — **D 8 · C 8 · W 10 = 26**
+
+**ΛΙΣΤΗΣ / «ο Ληστής» — the bandit**, after a robber said to have lived in the
+caves in the cliff above it. **62–69 km SE of Heraklion, between ΚΑΣΤΡΙ and
+ΤΣΟΥΤΣΟΥΡΑΣ, just west of ΚΕΡΑΤΟΚΑΜΠΟΣ — the EASTERN end of the Asterousia, and
+10 km from the harbour the Salty Trips boat would leave from.**
+
+**Discovery 8** — **on foot only**, a steep descent from the road above, or walk
+east from Καμπούλα. **Completely unorganised**, no amenities, nearest food in
+Κερατόκαμπος. Quiet outside peak season.
+
+**Colour 8 — my call, from the photograph.** A strong clean blue body with a
+**pale turquoise fringe in the shallows over WHITE LIMESTONE**; the floor is
+visible through the near water. **Not 9**, because every 9 on this scale is
+turquoise *across the bay*, not only at the edge. **Not 7**, because it is
+plainly brighter and shallower-reading than Γραμβούσα or Τρυπητή.
+
+> ⚠️ **The photographs are dated 18 FEBRUARY — low winter sun. If 8 is wrong it
+> is wrong DOWNWARD;** October light would lift it. **8 is the conservative call.**
+
+**No source gives it a colour word and its structured fields come back empty** —
+this is judged on pictures alone.
+
+## 🏦 ΤΑ ΑΣΤΕΡΟΥΣΙΑ — BANKED FOR THE NEXT TRIP · **TEN ENTRIES**
+
+| Beach | D·C·W | | Access |
+|---|---|---|---|
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | `10·8·10` | **28** | boat + swim ashore |
+| **ΒΑΛΑ** | `10·8·10` | **28** | boat only |
+| **ΑΣΠΕΣ** | `10·8·10` | **28** | boat only |
+| ΣΚΙΑΔΑΚΙ | `9·8·10` | **27** | boat, or 1h from Καλάμι |
+| ΜΑΡΤΣΑΛΟ | `9·8·10` | **27** | 20–40 min from Οδηγήτρια |
+| ΚΑΜΙΝΑΚΙ | `9·8·10` | **27** | boat only in practice |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | `9·8·10` | **27** | **40 min, easy — the only confirmed walk** |
+| ΑΓ. ΝΙΚΗΤΑΣ | `9·8·10` | **27** | 15 km dirt + 230 steps |
+| **ΛΙΣΤΗΣ** | `8·8·10` | **26** | **on foot, steep descent from the road** |
+| RED BEACH | `8·8·10` | **26** | steep path from Μάταλα |
+
+**Also there, below the line:** ΚΑΤΑΡΤΙ 25 · ΤΡΥΠΗΤΗ Λέντας 25 ·
+**ΠΑΧΙΑ ΑΜΜΟΣ — still ungraded.**
+
+> **Three 28s, five 27s, two 26s. The strongest region in the archive, and the
+> one that needs its own week.**
+> **Going through it tonight.**
