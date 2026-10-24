@@ -7542,3 +7542,29 @@ RED BEACH 26 — *dropped: ΚΑΤΑΡΤΙ 25 · ΤΡΥΠΗΤΗ Λέντας 25*
 
 > **30 at 26+ · 10 dropped · ΠΑΧΙΑ ΑΜΜΟΣ still ungraded — it was never sent for
 > a colour.**
+
+---
+
+# ↩️ ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ RESTORED — **D 8 · C 8 · W 10 = 26**
+
+**My override reversed. Zac's original 8 stands.**
+
+**The record, checked rather than guessed:** Zac's line was *«illingas 6 coves 8
+glyka nera 7 seitan 8»* — **8**. I then argued it down to 7 on the guide-vs-user
+photo gap and he approved; **it has never been a 9.** Asked again, he set it back
+to **8**.
+
+**Why my override was the weakest of the five:** the guide photo measures
+**#03D0EB** against user photos at **#345979 · #66A7A5 · #3A4C64 · #024396** —
+real evidence of a guide out-vividding reality. **But Zac judged it with both
+sets in front of him and said 8.** That was the better-informed moment, and I
+talked him off it on a general argument rather than new evidence.
+
+> **ΑΚΡΩΤΗΡΙ RETURNS as a group — nine again.** Σεϊτάν Λιμάνια is **40 minutes
+> from Chania airport on the same peninsula**, which makes Monday 26 a beach day
+> again rather than a travel day.
+
+## 📊 **31 at 26+** — five 28s · eighteen 27s · **eight 26s**
+
+**My five overrides now stand at four:** ΑΣΠΕΣ 7→8 ✅ · ΠΡΕΒΕΛΗ 8→9 ✅ ·
+ΑΓΙΟΦΑΡΑΓΓΟ 7→8 ✅ · ΛΑΚΚΟΥΔΙ 9→8 ✅ · **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ 8→7 ❌ REVERSED.**
