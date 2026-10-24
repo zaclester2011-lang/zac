@@ -7786,3 +7786,58 @@ the National Park.**
 > **FRIDAY 30 IS THE ONLY SLACK IN THE WEEK.** Keep it empty until the Tuesday
 > forecast is known — **it is the Σούγια boat's fallback, and the Σούγια boat is
 > ΔΩΜΑΤΑ.**
+
+---
+
+# 📌 DEFINITE vs BACKUP — ΤΑ ΑΣΤΕΡΟΥΣΙΑ DEFERRED TO A LATER TRIP
+
+## ✅ DEFINITE — eight fixtures, ten water bodies
+
+| # | Fixture | Water | Day |
+|---|---|---|---|
+| **1** | **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | **26** | Mon 26 — 40 min from the airport |
+| **2** | **THE ΣΟΥΓΙΑ BOAT** 🔴 | **ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26** | Tue 27 |
+| **3** | **ΜΑΡΜΑΡΑ** | **27** | Wed 28 |
+| **4** | **ΑΓΙΟΣ ΠΑΥΛΟΣ** | **25** | Wed 28 — **on the way back** |
+| **5** | **ΓΛΥΚΑ ΝΕΡΑ** | **26** | Wed 28 — same ferry |
+| **6** | **ΕΛΑΦΟΝΗΣΙ coves** | **27** | Thu 29 |
+| **7** | **ΜΠΑΛΟΣ** 🔴 | **26** | Sat 31 — **the season's LAST SAILING** |
+| **8** | **ΠΡΕΒΕΛΗ** | **27** | Sun 1 Nov |
+
+**ΑΓΙΟΣ ΠΑΥΛΟΣ is a 25, not a 26+** — Zac's call to include it anyway, and the
+right one: it sits **on the Χώρα Σφακίων ferry line west of Λουτρό**, so the
+Wednesday boat passes it regardless. **It costs nothing to step off.**
+
+**Ferry order west from ΧΩΡΑ ΣΦΑΚΙΩΝ:** ΓΛΥΚΑ ΝΕΡΑ → ΛΟΥΤΡΟ → **ΜΑΡΜΑΡΑ** →
+ΛΥΚΟΣ → **ΑΓΙΟΣ ΠΑΥΛΟΣ** → Αγία Ρούμελη. **Out to Άγιος Παύλος, back through
+the rest.**
+
+## 🎒 BACKUP — in reach, not committed
+
+| Water | Score | Where it fits |
+|---|---|---|
+| **ΚΕΔΡΟΔΑΣΟΣ** | **27** | **1 km from Ελαφονήσι on the E4 — Thursday, free** |
+| **ΙΛΙΓΚΑΣ cove 2** | **27** | **Wednesday, free** — walk from Χ. Σφακίων + 80 m swim |
+| **ΙΛΙΓΚΑΣ cove 3** | **27** | **Wednesday, free** |
+| **ΛΥΚΟΣ** | **26** | **Wednesday, free** — same ferry |
+| ΠΕΡΙΒΟΛΑΚΙ | **26** | Friday 30 — one walk, two beaches |
+| ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ | **26** | Friday 30 — the same walk |
+
+> **Four of the six cost NOTHING — they are on days already committed.**
+> **Realistic total: FOURTEEN water bodies.**
+
+## ⏭️ ΤΑ ΑΣΤΕΡΟΥΣΙΑ — DEFERRED, NOT CUT
+
+**Nine entries held for a later trip:** **ΠΙΚΡΟΒΛΥΧΑΔΑ 28 · ΒΑΛΑ 28 · ΑΣΠΕΣ 28** ·
+ΣΚΙΑΔΑΚΙ 27 · ΜΑΡΤΣΑΛΟ 27 · ΚΑΜΙΝΑΚΙ 27 · ΑΓΙΟΦΑΡΑΓΓΟ 27 · ΑΓ. ΝΙΚΗΤΑΣ 27 ·
+RED BEACH 26.
+
+**Sound reasoning:** **three 28s there all need a boat nobody has confirmed runs
+in November** — and the region deserves its own week, not two tired days at the
+end of this one. **The scores stand; they are banked.**
+
+> 🔴 **CONSEQUENCE: MON 2 and TUE 3 NOV ARE NOW EMPTY.**
+> Sunday ends at Πρέβελη and the flight leaves **Heraklion 14:10 Tuesday**.
+> **Nothing scoring 26+ remains between Ρέθυμνο and Heraklion once the
+> Αστερούσια is out.** Options: a Ρέθυμνο night and a slow drive east · or
+> Μάταλα/Κόκκινη Άμμος as a single stop · or simply two easy days.
