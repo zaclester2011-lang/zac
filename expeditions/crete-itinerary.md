@@ -7568,3 +7568,70 @@ talked him off it on a general argument rather than new evidence.
 
 **My five overrides now stand at four:** ΑΣΠΕΣ 7→8 ✅ · ΠΡΕΒΕΛΗ 8→9 ✅ ·
 ΑΓΙΟΦΑΡΑΓΓΟ 7→8 ✅ · ΛΑΚΚΟΥΔΙ 9→8 ✅ · **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ 8→7 ❌ REVERSED.**
+
+---
+
+# 🗓️ THE FINAL ITINERARY — REBUILT FROM THE JUDGED SCORES
+
+**26 Oct – 3 Nov 2026 · five travellers · Water 10 throughout · 31 entries at 26+**
+
+| Day | Base | Plan | Water |
+|---|---|---|---|
+| **Mon 26** | → Stalos | **Land 13:00. Cars by 13:45, 20 min across Ακρωτήρι** — airport and beach on the same peninsula. Hotel by 17:00 | **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ 26** |
+| **Tue 27** | Stalos | **1h20 to ΣΟΥΓΙΑ. THE BOAT** 🔴 | **ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΑΓ. ΑΝΤΩΝΙΟΣ 27 · ΤΡΥΠΗΤΗ 26** |
+| **Wed 28** | Stalos | **1h30 to ΧΩΡΑ ΣΦΑΚΙΩΝ.** Walk to Ίλιγκας, **swim 80 m east** · ferry to Λουτρό for Μάρμαρα | **ΜΑΡΜΑΡΑ 27 · ΙΛΙΓΚΑΣ coves 27+27 · ΓΛΥΚΑ ΝΕΡΑ 26 · ΛΥΚΟΣ 26** |
+| **Thu 29** | Stalos | **1h50 southwest.** The E4 crosses Κεδρόδασος | **ΕΛΑΦΟΝΗΣΙ coves 27 · ΚΕΔΡΟΔΑΣΟΣ 27** |
+| **Fri 30** | Stalos | **ΠΕΡΙΒΟΛΑΚΙ + ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ — one walk, two beaches.** Or Chania old town if grey | **ΠΕΡΙΒΟΛΑΚΙ 26 · ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ 26** |
+| **Sat 31** | Stalos | **ΚΙΣΣΑΜΟΣ CRUISE — the season's LAST SAILING** 🔴 | **ΜΠΑΛΟΣ 26** |
+| **Sun 1 Nov** | → Αστερούσια | **Check out, drive ~3h east.** Οδηγήτρια → one path, two beaches | **ΑΓΙΟΦΑΡΑΓΓΟ 27 · ΜΑΡΤΣΑΛΟ 27** |
+| **Mon 2 Nov** | Αστερούσια | **ΤΣΟΥΤΣΟΥΡΑΣ BOAT if it runs** 🟡 · fallback: ΣΚΙΑΔΑΚΙ / ΑΓ. ΑΝΤΩΝΙΟΣ / RED BEACH | **ΠΙΚΡΟΒΛΥΧΑΔΑ 28 · ΒΑΛΑ 28 · ΑΣΠΕΣ 28 · ΚΑΜΙΝΑΚΙ 27** |
+| **Tue 3 Nov** | | **1h15 to Heraklion. Fly 14:10** | — |
+
+> **Without the Τσούτσουρας boat: 17 entries. With it: 21 — including all three
+> remaining 28s.**
+
+## 🏝️ THE ΓΑΥΔΟΣ VARIANT — swap Thursday and Friday
+
+| Swap out | Swap in |
+|---|---|
+| ΕΛΑΦΟΝΗΣΙ 27 · ΚΕΔΡΟΔΑΣΟΣ 27 | **ΑΚΡ. ΤΡΥΠΗΤΗ 28** ← the only 28 you can walk to |
+| ΠΕΡΙΒΟΛΑΚΙ 26 · ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ 26 | **ΛΑΚΚΟΥΔΙ 27 · ΛΑΥΡΑΚΑΣ 27 · ΠΟΤΑΜΟΣ 27 · ΠΥΡΓΟΣ 27** |
+| **lose 4** *(2×27, 2×26)* | **gain 5** *(1×28, 4×27)* — **and every one on foot** |
+
+**ΑΓΙΑΝΝΗΣ → ΛΑΥΡΑΚΑΣ → ΣΤΑΥΡΟΛΙΜΝΗ → ΠΥΡΓΟΣ is one continuous coastal walk.**
+
+> 🔴 **THE RISK THAT DECIDES IT: being weathered in costs SATURDAY'S CRUISE —
+> the last sailing of the season — and ΜΠΑΛΟΣ with it.** Late-October ANENDYK
+> thins to a couple of sailings a week. **It is the only thing in the week that
+> can strand you, and the flight leaves from the other end of the island.**
+>
+> **My call: take Γαύδος only if the forecast on Wednesday is settled for three
+> days.** Otherwise the west is the same quality with none of the exposure.
+
+## ☁️ THE WEATHER RULE — it outranks the list
+
+**Not one beach in Crete shows turquoise under cloud. Not one.** Sun at **42°**
+in late October against June's 78°.
+
+| Forecast | Do |
+|---|---|
+| **Sun** | the turquoise days — ΣΟΥΓΙΑ, ΚΕΔΡΟΔΑΣΟΣ, ΜΠΑΛΟΣ, the Τσούτσουρας boat |
+| **Cloud** | gorges · Chania old town · **ΜΑΡΜΑΡΑ's taverna** · ΓΛΥΚΑ ΝΕΡΑ and ΣΕΪΤΑΝ hold their colour best |
+| **Wind/swell** | **the Σούγια boat needs a calm sea more than a dry sky** — fallback **Wed 28 or Thu 29, NEVER the 31st** *(the cruise)* **or Mon 2** *(two boat days running)* |
+
+## ✅ BOOKINGS
+
+| 🔴 | **Two more flight seats** — EZY8223 / EZY8216 |
+|---|---|
+| 🔴 | **Κίσσαμος cruise, Sat 31** — €24–45 × 5 · **last sailing, no second chance** |
+| 🔴 | **Σούγια boat, Tue 27** — Yannis **+30 697 322 0472** · Meletis **+30 694 085 9860** · **Viber** |
+| 🟡 | **Salty Trips, Τσούτσουρας** — **+30 697 003 8388** · `info@saltytrips.gr` · *«do you run in the first week of November?»* |
+| 🟡 | **Two small cars** — Chania 26 Oct → Heraklion 3 Nov |
+| 🟡 | **Rooms for five**, Cretan Dream 26–31 · **two Asterousia nights 1–2 Nov** |
+
+## 👥 THE FIVE
+
+**Grace and her friend take the hotel on the hard days.** Both gorge days and the
+Σούγια boat are opt-in; **two cars make that frictionless.** The boat is priced
+**per boat**, so numbers do not change the cost.
+**Chania old town dinner early in the week** is what makes sitting one out easy.
