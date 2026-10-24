@@ -219,3 +219,57 @@ nearer slipway but has only «κάποια καφενεία» and no published b
 3. Does a 3-hour cruise reach **ΜΑΥΡΗ ΠΑΡΑΛΙΑ** — between Σκιαδάκι and Καμινάκι?
 4. Price, skippered vs **«without a captain»**?
 5. If self-drive — is there a **range limit**, and may we beach it?
+
+---
+
+## BALOS — getting there on foot (decision: drive + transfer + walk)
+
+Zac's call: drive to the nearest/cheapest parking, then take a vehicle to the
+nearest point, then walk in. Researched 24 Oct 2026.
+
+### Taxis will NOT drive the track
+The 8 km dirt road from Kalyviani is as closed to them as it is to our hire
+cars. A Tripadvisor answer: "no buses or taxis are going on the last 7-8 km of
+dirt road." The one Chania taxi firm that publishes a Balos page describes the
+dirt road only as something the reader drives themselves, and quotes no price
+for it. A cruise port guide adds that Kissamos has **no taxi rank** and limited
+availability, and advises pre-booking any return.
+
+Numbers, if we want to ring and ask anyway:
+
+| Operator | Number | Note |
+|---|---|---|
+| Taxi Service Kissamos | **+30 694 589 5102** | |
+| Radio Taxis Kissamos | **+30 284 250 1490** | listed 24 h |
+| Transfer Kissamos | **+30 694 905 1400** | publishes Kissamos -> Kaliviani **EUR 10** — the *village*, where asphalt ends |
+| Taxi Chania Crete | **+30 694 344 4744** | info@taxichaniacrete.gr / booking@taxichaniacrete.gr |
+
+### The vehicle that DOES do it — 4x4 off-road bus
+A licensed commercial operator runs the track daily from Kissamos town.
+
+- **Strata Tours** — "4x4 Low Cost Bus Transfer to Balos"
+  - stratatours.com/tour/4x4-low-cost-bus-transfer-to-balos/
+  - **EUR 27 pp** direct (EUR 41 via GetYourGuide — book direct)
+  - **Five = EUR 135**
+  - Departs Kissamos **08:00** or **09:30**
+  - 5–5.5 h round trip: **40 min on dirt road + 20 min walk down**
+  - **EUR 1** lagoon entrance paid separately
+  - Hire cars stay in Kissamos town
+
+So the shape is: **drive to Kissamos -> 4x4 bus over the track -> walk down.**
+Legal vehicle, no insurance problem, still arrive on foot.
+
+### UNCONFIRMED — one email to settle
+1. **Does it run Sat 31 October?** No source gives a season end date. The boat
+   cruise's last sailing was 31 Oct, so this coast is right at the edge.
+2. Is there a barrier at the car park once the operators stop?
+
+### Fallback if the season is over
+Option 3 — walk the whole peninsula from Kalyviani: **8–10 km, ~2.5–3 h each
+way**, plus the 20–40 min descent. A real day, and it would earn Balos
+**Discovery 8**.
+
+### Car park facts
+End of the 8 km gravel road. **EUR 3 per car** (not needed if we don't drive it).
+Car park to sand: **~2 km, 30–40 min down**, uphill on the way back (~20 min by
+the taxi firm's reckoning, 30–40 by the Kalyviani guide's).
