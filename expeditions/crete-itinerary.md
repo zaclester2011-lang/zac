@@ -7755,3 +7755,34 @@ water gate outright** — cold mountain freshwater, and **swimming is forbidden 
 the National Park.**
 
 > **Not a water body. Ruled out.**
+
+---
+
+# ✅ ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ ADDED — **SEVEN DEFINITES, SIX DAYS**
+
+| # | Fixture | Water | Day |
+|---|---|---|---|
+| **1** | **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ** | **26** | **Mon 26 — 40 min from the airport, same peninsula** |
+| **2** | **THE ΣΟΥΓΙΑ BOAT** 🔴 | **ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26** | Tue 27 |
+| **3** | **ΜΑΡΜΑΡΑ** | **27** | Wed 28 |
+| **4** | **ΓΛΥΚΑ ΝΕΡΑ** | **26** | Wed 28 — same ferry |
+| **5** | **ΕΛΑΦΟΝΗΣΙ coves** | **27** | Thu 29 |
+| **6** | **ΜΠΑΛΟΣ** 🔴 | **26** | **Sat 31 — the season's LAST SAILING** |
+| **7** | **ΠΡΕΒΕΛΗ** | **27** | Sun 1 Nov, en route east |
+
+> **NINE water bodies locked across SIX days.**
+> **Plus four free riders:** ΚΕΔΡΟΔΑΣΟΣ 27 · ΙΛΙΓΚΑΣ cove 2 27 · cove 3 27 ·
+> ΛΥΚΟΣ 26 — **≈ THIRTEEN entries from seven decisions.**
+
+## 📅 ONLY TWO DAYS LEFT TO ALLOCATE
+
+| Day | Base | Open options |
+|---|---|---|
+| **Fri 30 Oct** | Stalos | **ΠΕΡΙΒΟΛΑΚΙ 26 + ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ 26** *(one walk, two beaches)* · or Chania old town if grey · **or hold it as the Σούγια weather fallback** |
+| **Mon 2 Nov** | Αστερούσια | 🟡 **THE ΤΣΟΥΤΣΟΥΡΑΣ BOAT — ΠΙΚΡΟΒΛΥΧΑΔΑ 28 · ΒΑΛΑ 28 · ΑΣΠΕΣ 28 · ΚΑΜΙΝΑΚΙ 27** · fallback on foot: **ΑΓΙΟΦΑΡΑΓΓΟ 27 + ΜΑΡΤΣΑΛΟ 27** |
+
+**Tue 3 Nov** — 1h15 to Heraklion, **fly 14:10.**
+
+> **FRIDAY 30 IS THE ONLY SLACK IN THE WEEK.** Keep it empty until the Tuesday
+> forecast is known — **it is the Σούγια boat's fallback, and the Σούγια boat is
+> ΔΩΜΑΤΑ.**
