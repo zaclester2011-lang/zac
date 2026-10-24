@@ -7969,3 +7969,62 @@ village, and the site itself lists crowds as **quiet**. It is not a road beach.
 **The Sand + Normal depth combination is what produces the broad emerald shelf in
 the wide photograph** — and it is the only entry in the archive whose field reads
 **Sand** rather than pebble outside Ελαφονήσι and Κεδρόδασος.
+
+---
+
+# 🔧 THREE CHANGES — ΣΕΝΤΟΝΙ IN · ΓΡΑΜΒΟΥΣΑ OUT FOREVER · ΙΛΙΓΚΑΣ MERGED
+
+## ① ΣΕΝΤΟΝΙ joins the ΣΟΥΓΙΑ boat as a DEFINITE
+
+**The Tuesday boat now carries FOUR:**
+**ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26 · ΣΕΝΤΟΝΙ 25**
+
+**ΣΕΝΤΟΝΙ is a 25** — Colour 6, cut on the weak link. **Included anyway and
+rightly: it is 500 m east of Τρυπητή on a boat already paid for.** *«βότσαλο και
+βαθιά καταγάλανα νερά»* · second name **ΠΕΥΚΟΣ**.
+
+## ② ΓΡΑΜΒΟΥΣΑ — REMOVED PERMANENTLY
+
+**Struck from the archive, not held below the line.** `8·7·10` = 25 · across six
+photographs its range **never reached turquoise in any of them** — deep → plain →
+blue-green only.
+
+> **Saturday is now a ONE-BEACH day: ΜΠΑΛΟΣ 26 on the Κίσσαμος cruise.** The
+> ticket still stops at Γραμβούσα; **there is simply nothing there worth the
+> archive's time.**
+
+## ③ ΙΛΙΓΚΑΣ — main and both coves merged into ONE entry
+
+**ΙΛΙΓΚΑΣ: main 24 · cove 2 27 · cove 3 27** — treated as a single Wednesday
+unit, because **you walk across the main beach to reach the coves.** 20–40 min
+from Χώρα Σφακίων, then **80 m east by swimming or boat.**
+
+---
+
+# 📋 THE LISTS AS THEY NOW STAND
+
+## 🔒 PERMANENT — 8 fixtures · **ELEVEN water bodies**
+
+| Day | Fixture | Water |
+|---|---|---|
+| **Mon 26** | ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ | **26** |
+| **Tue 27** | **THE ΣΟΥΓΙΑ BOAT** 🔴 | **ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26 · ΣΕΝΤΟΝΙ 25** |
+| **Wed 28** | ΜΑΡΜΑΡΑ | **27** |
+| **Wed 28** | ΑΓΙΟΣ ΠΑΥΛΟΣ | 25 |
+| **Wed 28** | ΓΛΥΚΑ ΝΕΡΑ | **26** |
+| **Thu 29** | ΕΛΑΦΟΝΗΣΙ coves | **27** |
+| **Sat 31** | **ΜΠΑΛΟΣ** 🔴 | **26** |
+| **Sun 1** | ΠΡΕΒΕΛΗ | **27** |
+
+## 🟡 MAYBE — four of them free
+
+| Water | | Day | Cost |
+|---|---|---|---|
+| **ΚΕΔΡΟΔΑΣΟΣ** | **27** | Thu 29 | **free — 1 km from Ελαφονήσι** |
+| **ΙΛΙΓΚΑΣ** *(main + 2 coves)* | **24 · 27 · 27** | Wed 28 | **free — walk + 80 m swim** |
+| **ΛΥΚΟΣ** | **26** | Wed 28 | **free — same ferry** |
+| ΠΕΡΙΒΟΛΑΚΙ | **26** | Fri 30 | a day |
+| ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ | **26** | Fri 30 | the same walk |
+
+> **Realistic maximum: 17 water bodies.** 🟡 **ΠΑΧΙΑ ΑΜΜΟΣ 25** still parked.
+> 🔴 **MON 2 NOV remains empty.**
