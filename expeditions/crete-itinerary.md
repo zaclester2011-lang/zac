@@ -7937,3 +7937,35 @@ sampled the ΛΑΣΙΘΙ one, 100 km away. Those figures are WITHDRAWN.**
 > **THREE 28s · FIVE 27s · THREE 26s — eleven entries, the strongest region in
 > the archive.**
 > **Nothing in Crete is now ungraded.**
+
+---
+
+# 🟡 ΠΑΧΙΑ ΑΜΜΟΣ — **DISCOVERY 7 · `7·8·10` = 25 · HELD ON THE MAYBE**
+
+**Discovery verified and lowered from my unverified 8.** The page states:
+
+| Field | |
+|---|---|
+| **Accessibility** | **Dirt track** — *«There is a **short** dirt track heading to Pahia Ammos from the village»* |
+| **Crowds** | **Quiet** |
+| **Facilities** | **Food / water nearby** |
+| Position | *«Behind the big hill west of the settlement ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ»* |
+| Nearby | *«some primitive cottages with 2-3 small coves around»* in the wider Όρνιος area |
+| **Sand type** | **SAND** — not pebble · **Depth: Normal** · **Sea surface: usually calm** |
+| Also | **sea-turtle nesting point** · tree shade · nudism friendly · good snorkelling |
+
+**Why 7 not 8:** the track is **short** and runs **from a village with καφενεία**,
+with food and water listed as nearby. **ΚΕΔΡΟΔΑΣΟΣ (8)** is 15 min from the road
+with **nothing** around it; **ΛΙΣΤΗΣ (8)** is a steep descent with the nearest
+food several km away in Κερατόκαμπος. **A brief walk from a settlement is a 7.**
+
+**Why not 6:** **no asphalt to the sand**, **hidden behind a hill** from the
+village, and the site itself lists crowds as **quiet**. It is not a road beach.
+
+> **HELD ON THE MAYBE at Zac's instruction — not cut, not banked at 26+.**
+> **Group 8 stands at TEN confirmed entries.**
+> **The single number in dispute is Discovery: at 8 it is a 26 and back in.**
+
+**The Sand + Normal depth combination is what produces the broad emerald shelf in
+the wide photograph** — and it is the only entry in the archive whose field reads
+**Sand** rather than pebble outside Ελαφονήσι and Κεδρόδασος.
