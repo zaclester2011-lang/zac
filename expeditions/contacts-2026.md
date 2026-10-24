@@ -379,3 +379,82 @@ under cloud) Preveli on Sunday is not a 27, it is a gorge walk.
 Do not rebuild the week on this run. The two firm reads: **Thursday stays put**,
 and **Balos wants Friday morning** — which collides with Glyka Nera.
 **Re-run on 27 Oct** when the back half comes into range.
+
+---
+
+## IS THE SOUTH COAST ONE WEATHER? (Zac, 24 Oct) — measured, not reasoned
+Four points, same 08:00-13:00 window, same met.no run:
+**Sougia** 35.249/23.808 · **Marmara** 35.197/24.056 · **Loutro** 35.197/24.078
+· **Glyka Nera** 35.201/24.120. Sougia to Glyka Nera = **~28 km**.
+Tool: `expeditions/wind-southcoast.py`.
+
+### Direction — YES, effectively identical
+| Morning | Sougia | Marmara | Loutro | Glyka Nera |
+|---|---|---|---|---|
+| Mon 26 | SSW* | SSW* | SW* | SW* |
+| Tue 27 | ENE | SW* | NW | NW |
+| Wed 28 | NNE | N | N | N |
+| Thu 29 | NE | NW | NNW | NNW |
+| Fri 30 | E | WSW* | NW | NW |
+| Sat 31 | SSE* | SSW* | SSE* | SSE* |
+| Sun 1 | SSE* | SW* | N | N |
+| Mon 2 | E | SW* | SW* | SW* |
+
+`* = onshore (south sector 110-250 deg) -> swell onto the beach`
+One synoptic flow the length of it. Onshore at Sougia = broadly onshore at
+Glyka Nera.
+
+### Strength — NO, not on windy days
+Spread between the four points, per morning:
+
+| | spread | |
+|---|---|---|
+| **Fri 30** | **1.4 kn** | 1.6-2.9 — uniformly glass |
+| Tue 27 | 1.9 | |
+| Thu 29 | 2.9 | |
+| Mon 26 | 3.3 | |
+| Sat 31 | 3.9 | |
+| Mon 2 | 4.3 | |
+| **Sun 1** | **7.2** | Loutro 1.9 vs Sougia 9.1 |
+| **Wed 28** | **8.2** | Marmara 4.7 vs Loutro 12.8 |
+
+**Calm days are uniform; windy days are not.** The White Mountains make lees —
+on a N wind, 28 km of coast runs 4.7 kn at one spot and 12.8 at another.
+So "it is calm at Sougia" generalises. **"It is windy at Sougia" does not.**
+
+### Cloud — EMPHATICALLY NOT THE SAME. This is the one that bites.
+| Morning | Sougia | **Marmara** | Loutro | Glyka Nera |
+|---|---|---|---|---|
+| Mon 26 | 55% | 79% | 69% | 69% |
+| Tue 27 | **91%** | 88% | 97% | 97% |
+| Wed 28 | 47% | **94%** | 80% | 80% |
+| **Thu 29** | **15%** | **87%** | 48% | 48% |
+| Fri 30 | 59% | 98% | 98% | 98% |
+| Sat 31 | 100% | 100% | 99% | 99% |
+| Sun 1 | 85% | 95% | 95% | 95% |
+| Mon 2 | 30% | **94%** | 25% | 25% |
+
+**Thu 29: 15% at Sougia, 87% at Marmara, 28 km apart.** On Zac's scale those are
+different planets.
+
+**Marmara is the cloudiest point every single day** — 79, 88, 94, 87, 98, 100,
+95, 94. It sits at the mouth of Aradena gorge under the highest White Mountains,
+so orographic cloud is physically plausible. **CAVEAT: cannot rule out that the
+grid cell reports the mountain behind the beach rather than the shore.** One
+suspiciously consistent result from one model earns that caveat — do not cut
+Marmara on it.
+
+### TWO CONSEQUENCES
+1. **Tue 27 — the Sougia boat day — reads 88-97% cloud right across the coast.**
+   Day 3 out, moderately reliable. Domata 28, Lissos 27, Trypiti 26, Sentoni 25
+   are the trip's best single day and all sun-dependent. The fallback was already
+   Wed 28 or Thu 29 — and **Thu 29 at Sougia is 15%**.
+2. **Wed 28's Aradena walk ends at Marmara, which reads 94%.** Marmara's 27 came
+   from sun photos.
+
+**Thursday is now wanted by three things:** Elafonissi/Kedrodasos at 3%, Sougia
+at 15%, and it is the only clear morning in range.
+
+### Model limitation
+**met.no gives Loutro and Glyka Nera the same grid cell** — 4 km apart,
+identical numbers. It cannot separate them.
