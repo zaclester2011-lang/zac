@@ -7666,3 +7666,55 @@ of coast scored as a single entry**, not one beach.
 | 8 ΤΑ ΑΣΤΕΡΟΥΣΙΑ | **9** — ΠΙΚΡΟΒΛΥΧΑΔΑ 28 · ΒΑΛΑ 28 · ΑΣΠΕΣ 28 · ΣΚΙΑΔΑΚΙ 27 · ΜΑΡΤΣΑΛΟ 27 · ΚΑΜΙΝΑΚΙ 27 · ΑΓΙΟΦΑΡΑΓΓΟ 27 · ΑΓ. ΝΙΚΗΤΑΣ 27 · RED BEACH 26 |
 
 **Tuesday's Σούγια boat now carries three, not four.**
+
+---
+
+# ✅ THE DEFINITES — LOCKED BY ZAC
+
+| # | Fixture | Water | Day |
+|---|---|---|---|
+| **1** | **THE ΣΟΥΓΙΑ BOAT** 🔴 | **ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26** | Tue 27 |
+| **2** | **ΜΑΡΜΑΡΑ** | **27** | Wed 28 |
+| **3** | **ΓΛΥΚΑ ΝΕΡΑ** | **26** | Wed 28 — **same ferry** |
+| **4** | **ΕΛΑΦΟΝΗΣΙ coves** | **27** | Thu 29 |
+| **5** | **ΠΡΕΒΕΛΗ** | **27** | Sun 1 Nov, en route east |
+
+> **Seven water bodies locked, across FOUR days — and they drag four more along
+> for nothing:**
+>
+> **ΚΕΔΡΟΔΑΣΟΣ 27** is **1 km from Ελαφονήσι on the E4** · **ΙΛΙΓΚΑΣ coves 27+27
+> and ΛΥΚΟΣ 26 are on the SAME Χώρα Σφακίων day as Μάρμαρα and Γλυκά Νερά.**
+>
+> **Four fixed days ≈ eleven entries. That is the trip's spine.**
+
+# ❌ ΓΑΥΔΟΣ REMOVED
+
+**All five struck: ΑΚΡ. ΤΡΥΠΗΤΗ 28 · ΛΑΚΚΟΥΔΙ 27 · ΛΑΥΡΑΚΑΣ 27 · ΠΟΤΑΜΟΣ 27 ·
+ΠΥΡΓΟΣ 27.**
+
+**What it costs, stated plainly:**
+
+| | |
+|---|---|
+| **The only 28 reachable ON FOOT** | ΑΚΡ. ΤΡΥΠΗΤΗ. **All four remaining 28s now need a boat** |
+| **Five entries at 27+**, the best average of any region | gone |
+| **One continuous coastal walk** delivering three of them | gone |
+
+**What it buys:** **no ferry exposure.** Γαύδος was the only thing in the week
+that could strand five people two days from a flight out of Heraklion, and
+being weathered in would have cost **Saturday's cruise — the season's last
+sailing — and ΜΠΑΛΟΣ with it.**
+
+> **It was a genuine trade and the risk side is real. Removed at Zac's call.**
+
+## 📊 **24 at 26+** — four 28s · twelve 27s · eight 26s
+
+| Group | at 26+ |
+|---|---|
+| **ΤΑ ΑΣΤΕΡΟΥΣΙΑ** | **9** |
+| **ΣΦΑΚΙΑ** | **6** |
+| **ΣΟΥΓΙΑ** | **3** |
+| SOUTHWEST | 2 |
+| ΜΑΡΜΑΡΑ · ΚΙΣΣΑΜΟΣ · ΑΚΡΩΤΗΡΙ · ΡΕΘΥΜΝΟ | 1 each |
+
+**Everything now sits within reach of two bases — Stalos and the Asterousia.**
