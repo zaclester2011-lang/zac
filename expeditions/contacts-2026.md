@@ -316,3 +316,66 @@ Mitigations if we drive: slowest possible pace (nearly all damage is
 speed-related), check whether it has rained in the preceding days, and prefer
 the higher-clearance of the two hire cars. No insurance and no off-road
 recovery either way — that exposure is accepted knowingly.
+
+---
+
+## WIND + CLOUD FORECAST, trip week — run 24 Oct 2026, 13:17 UTC
+Source: **met.no** point forecasts (api.met.no locationforecast/2.0) for three
+coordinates. Tool: `expeditions/wind-forecast.py`. Window **08:00-13:00 local**
+(Athens = UTC+2 from 26 Oct), speeds in **knots**. "Onshore/offshore" is judged
+against each beach's own exposure sector, not a generic compass.
+
+Exposure sectors used: Elafonissi & Kedrodasos face W/SW -> onshore 200-350 deg.
+Balos opens west and north, worst NW -> onshore 250-010 deg.
+
+### Elafonissi (35.2708, 23.5392) and Kedrodasos (35.2756, 23.5633)
+
+| Morning | Elaf | Kedro | Dir | | Cloud |
+|---|---|---|---|---|---|
+| Mon 26 | 7.0 kn | 6.9 | SSW/SW | **onshore** | 36 / 38% |
+| Tue 27 | 14.8 | 11.5 | N | offshore | **98 / 97%** |
+| Wed 28 | 20.6 | 15.6 | NNE | offshore | 17 / 31% |
+| **Thu 29** | **8.7** | **6.8** | NNE | offshore | **3 / 11%** |
+| **Fri 30** | **3.1** | **1.9** | N/NNE | offshore | 26 / 38% |
+| Sat 31 | 18.7 | 12.8 | SE | offshore | **99 / 100%** |
+| Sun 1 | 11.7 | 7.0 | SSE | offshore | **99%** |
+| Mon 2 | 7.6 | 4.3 | W/WNW | **onshore** | 12 / 17% |
+
+**Thursday is already the right day and must not move.** 7-9 kn from the NNE —
+offshore on a west-facing coast, which flattens the water against the shore
+instead of piling it up — with **3% cloud at Elafonissi**. Best colour window of
+the week for these two. Friday is calmer on wind (glass) but cloudier.
+
+### Balos (35.5783, 23.5869)
+
+| Morning | Wind | Dir | | Cloud |
+|---|---|---|---|---|
+| Mon 26 | 11.5 kn | SW | offshore | 45% |
+| Tue 27 | 15.0 | N | **onshore** | 100% |
+| **Wed 28** | 22.2 | NE | offshore | **2%** |
+| Thu 29 | 9.5 | NE | offshore | 86% |
+| **Fri 30** | **1.6** | S | offshore | 38% |
+| Sat 31 | 8.2 | SSE | offshore | **99%** |
+| Sun 1 | 21.6 | SSW | offshore | 99% |
+| Mon 2 | 13.6 | W | **onshore** | 12% |
+
+**Fri 30 is the glass morning — 1.6 kn.** Wed 28 has the clearer sky (2%) but
+22 kn, which across that isthmus is the blowing-sand day even though NE is
+nowhere near the bad NW quarter. Nothing in the week puts Balos onshore except
+**Mon 2 Nov (W 266 deg)** — otherwise the sunniest day left.
+
+### Problem this surfaces
+**Sat 31 and Sun 1 Nov read 99-100% cloud at all three points.** Sunday is
+currently **Preveli 27**. Under the hard rule (no beach in Crete shows turquoise
+under cloud) Preveli on Sunday is not a 27, it is a gorge walk.
+
+### CONFIDENCE — read this before acting
+- **26-29 Oct**: days 2-5 out. Usable.
+- **31 Oct onward**: days 7-10. **Direction and cloud at that range are near
+  worthless.** Treat Sat and Sun as *unknown*, not as cloudy.
+- **Gusts came back empty on this endpoint — gusts were NOT checked.** Mean
+  speed and direction only.
+
+Do not rebuild the week on this run. The two firm reads: **Thursday stays put**,
+and **Balos wants Friday morning** — which collides with Glyka Nera.
+**Re-run on 27 Oct** when the back half comes into range.
