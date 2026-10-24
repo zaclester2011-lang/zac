@@ -1,0 +1,426 @@
+<title>The August Line</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --ink:      #10212B;
+    --ink-2:    #3A4E58;
+    --mid:      #667C86;
+    --faint:    #93A6AD;
+    --grid:     #C3D2D6;
+    --grid-2:   #DDE6E8;
+    --paper:    #EDF1F2;
+    --card:     #FFFFFF;
+    --go:       #2E7D5B;
+    --go-bg:    #DCEBE2;
+    --warn:     #B07A1E;
+    --warn-bg:  #F4EAD4;
+    --stop:     #A8402F;
+    --stop-bg:  #F5E1DC;
+    --equator:  #10212B;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ink:      #E6EDEF;
+      --ink-2:    #BCCCD1;
+      --mid:      #8798A0;
+      --faint:    #5B6D75;
+      --grid:     #2A3C44;
+      --grid-2:   #1D2C33;
+      --paper:    #0C161B;
+      --card:     #14232A;
+      --go:       #6FC095;
+      --go-bg:    #122C22;
+      --warn:     #DBA94E;
+      --warn-bg:  #2E2415;
+      --stop:     #E07C68;
+      --stop-bg:  #2E1913;
+      --equator:  #E6EDEF;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ink:      #E6EDEF;
+    --ink-2:    #BCCCD1;
+    --mid:      #8798A0;
+    --faint:    #5B6D75;
+    --grid:     #2A3C44;
+    --grid-2:   #1D2C33;
+    --paper:    #0C161B;
+    --card:     #14232A;
+    --go:       #6FC095;
+    --go-bg:    #122C22;
+    --warn:     #DBA94E;
+    --warn-bg:  #2E2415;
+    --stop:     #E07C68;
+    --stop-bg:  #2E1913;
+    --equator:  #E6EDEF;
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --ink:      #10212B;
+    --ink-2:    #3A4E58;
+    --mid:      #667C86;
+    --faint:    #93A6AD;
+    --grid:     #C3D2D6;
+    --grid-2:   #DDE6E8;
+    --paper:    #EDF1F2;
+    --card:     #FFFFFF;
+    --go:       #2E7D5B;
+    --go-bg:    #DCEBE2;
+    --warn:     #B07A1E;
+    --warn-bg:  #F4EAD4;
+    --stop:     #A8402F;
+    --stop-bg:  #F5E1DC;
+    --equator:  #10212B;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding-block: 44px 88px; padding-left: 20px; padding-right: 20px; }
+
+  /* ---------- HEAD ---------- */
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--mid);
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-family: 'Archivo', system-ui, sans-serif;
+    font-variation-settings: 'wdth' 112;
+    font-size: clamp(34px, 6vw, 56px);
+    font-weight: 600; line-height: 1.02;
+    letter-spacing: -0.02em; text-wrap: balance;
+  }
+
+  .stand {
+    font-size: clamp(16px, 2vw, 18px);
+    color: var(--ink-2); margin-top: 14px;
+    max-width: 62ch; text-wrap: balance;
+  }
+
+  .key {
+    display: flex; flex-wrap: wrap; gap: 8px 20px;
+    margin: 28px 0 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px; letter-spacing: 0.06em;
+  }
+  .key span { display: inline-flex; align-items: center; gap: 7px; color: var(--ink-2); }
+  .key i { width: 11px; height: 11px; border-radius: 2px; display: block; }
+  .k-go   { background: var(--go); }
+  .k-warn { background: var(--warn); }
+  .k-stop { background: var(--stop); }
+
+  /* ---------- CHART ---------- */
+
+  .chartwrap { overflow-x: auto; margin: 26px -20px 0; padding: 0 20px; }
+  .chart { min-width: 860px; border-top: 1px solid var(--grid); }
+
+  .band {
+    display: grid;
+    grid-template-columns: 116px repeat(5, 1fr);
+    border-bottom: 1px solid var(--grid-2);
+    align-items: stretch;
+  }
+  .band.equator { border-bottom: 2px solid var(--equator); }
+  .band.tropic  { border-bottom: 1px dashed var(--grid); }
+
+  .lat {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px; letter-spacing: 0.05em;
+    color: var(--mid); padding: 14px 14px 14px 0;
+    border-right: 1px solid var(--grid-2);
+    text-align: right; line-height: 1.35;
+  }
+  .lat b { display: block; color: var(--ink-2); font-weight: 600; font-size: 11px; }
+
+  .cell {
+    padding: 12px 10px;
+    border-right: 1px solid var(--grid-2);
+    display: flex; flex-direction: column; gap: 6px;
+    align-items: flex-start;
+  }
+  .cell:last-child { border-right: 0; }
+
+  .pin {
+    display: inline-block;
+    font-size: 12.5px; font-weight: 500;
+    padding: 4px 9px; border-radius: 3px;
+    line-height: 1.3;
+  }
+  .go   { background: var(--go-bg);   color: var(--go);   box-shadow: inset 2px 0 0 var(--go); }
+  .warn { background: var(--warn-bg); color: var(--warn); box-shadow: inset 2px 0 0 var(--warn); }
+  .stop { background: var(--stop-bg); color: var(--stop); box-shadow: inset 2px 0 0 var(--stop); text-decoration: line-through; text-decoration-thickness: 1px; }
+
+  .pin small {
+    display: block; font-family: 'IBM Plex Mono', monospace;
+    font-size: 9.5px; letter-spacing: 0.04em;
+    opacity: 0.78; text-decoration: none; margin-top: 1px;
+  }
+  .stop small { text-decoration: none; }
+
+  .lon {
+    display: grid;
+    grid-template-columns: 116px repeat(5, 1fr);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--faint);
+  }
+  .lon div { padding: 10px 10px 0; }
+  .lon div:first-child { padding: 0; }
+
+  /* ---------- SECTIONS ---------- */
+
+  section { margin-top: 64px; }
+
+  h2 {
+    font-family: 'Archivo', system-ui, sans-serif;
+    font-variation-settings: 'wdth' 110;
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 600; letter-spacing: -0.01em;
+    margin-bottom: 10px; text-wrap: balance;
+  }
+  .note { color: var(--mid); font-size: 14.5px; max-width: 64ch; margin-bottom: 24px; }
+
+  .cols {
+    display: grid; gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    background: var(--grid-2);
+    border: 1px solid var(--grid-2);
+  }
+  .col { background: var(--card); padding: 18px 16px; }
+  .col h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; letter-spacing: 0.12em;
+    text-transform: uppercase; margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .col h3 i { width: 10px; height: 10px; border-radius: 2px; display: block; }
+  .col.go-col h3   { color: var(--go); }
+  .col.warn-col h3 { color: var(--warn); }
+  .col.stop-col h3 { color: var(--stop); }
+
+  ul.list { list-style: none; display: grid; gap: 12px; }
+  ul.list li { font-size: 14px; color: var(--ink-2); }
+  ul.list b { color: var(--ink); font-weight: 600; display: block; }
+  ul.list em {
+    font-style: normal; font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px; letter-spacing: 0.04em; color: var(--mid);
+    display: block; margin-top: 1px;
+  }
+
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 500px; }
+  th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px; font-weight: 500;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--mid); text-align: left;
+    padding: 0 14px 9px 0; border-bottom: 1px solid var(--ink);
+  }
+  td { padding: 11px 14px 11px 0; border-bottom: 1px solid var(--grid-2); vertical-align: top; color: var(--ink-2); }
+  td:first-child { color: var(--ink); font-weight: 500; }
+  th.n, td.n {
+    text-align: right; padding-right: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    font-variation-settings: normal;
+    font-variant-numeric: tabular-nums; white-space: nowrap;
+  }
+  td.n { font-weight: 600; color: var(--go); }
+
+  footer {
+    margin-top: 68px; padding-top: 24px;
+    border-top: 2px solid var(--ink);
+    font-size: 14px; color: var(--mid); max-width: 66ch;
+  }
+  footer p + p { margin-top: 12px; }
+  footer b { color: var(--ink-2); }
+
+  @media (max-width: 640px) {
+    .cell { padding: 10px 7px; }
+    .lat { padding: 12px 9px 12px 0; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">August · Northern summer, austral winter</div>
+    <h1>The August Line</h1>
+    <p class="stand">In August the storm belt sits north of the equator and the southern tropics are in their dry season. Almost every August travel decision is really that one fact.</p>
+
+    <div class="key">
+      <span><i class="k-go"></i> Dry or settled</span>
+      <span><i class="k-warn"></i> Workable, with a catch</span>
+      <span><i class="k-stop"></i> Monsoon or cyclone season</span>
+    </div>
+  </header>
+
+  <div class="chartwrap">
+    <div class="chart">
+
+      <div class="band">
+        <div class="lat"><b>30°N +</b>Temperate north</div>
+        <div class="cell"><span class="pin warn">Florida<small>Springs fine · coast in hurricane season</small></span></div>
+        <div class="cell"><span class="pin go">Mediterranean<small>Hot, dry, calm sea</small></span></div>
+        <div class="cell"></div>
+        <div class="cell"><span class="pin stop">Okinawa<small>NW Pacific typhoon peak</small></span></div>
+        <div class="cell"><span class="pin warn">Hawaii<small>Central Pacific hurricane season</small></span></div>
+      </div>
+
+      <div class="band tropic">
+        <div class="lat"><b>10–30°N</b>Tropic of Cancer</div>
+        <div class="cell">
+          <span class="pin stop">Caribbean<small>Atlantic hurricane peak</small></span>
+          <span class="pin stop">Yucatán<small>Wet · hurricane season</small></span>
+        </div>
+        <div class="cell"><span class="pin stop">Cape Verde<small>Where Atlantic hurricanes form</small></span></div>
+        <div class="cell">
+          <span class="pin stop">Maldives<small>SW monsoon</small></span>
+          <span class="pin stop">Andaman coast<small>SW monsoon</small></span>
+        </div>
+        <div class="cell">
+          <span class="pin stop">Palawan<small>Habagat — full SW monsoon</small></span>
+          <span class="pin stop">Central Vietnam<small>Typhoon season</small></span>
+        </div>
+        <div class="cell"><span class="pin stop">Palau<small>Typhoon season</small></span></div>
+      </div>
+
+      <div class="band equator">
+        <div class="lat"><b>10°N – 10°S</b>Equatorial</div>
+        <div class="cell"><span class="pin go">Galápagos<small>Dry, cool, clear</small></span></div>
+        <div class="cell"><span class="pin warn">Seychelles<small>SE trades — dry but windy</small></span></div>
+        <div class="cell"></div>
+        <div class="cell">
+          <span class="pin go">E Philippines<small>Siargao, Bohol — in the rain shadow</small></span>
+          <span class="pin go">Sulawesi<small>Dry season</small></span>
+          <span class="pin warn">Raja Ampat<small>Rough seas · Wayag often unreachable</small></span>
+        </div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="band tropic">
+        <div class="lat"><b>10–30°S</b>Tropic of Capricorn</div>
+        <div class="cell">
+          <span class="pin go">Lençóis Maranhenses<small>Lagoons at their fullest</small></span>
+          <span class="pin go">Chapada Diamantina<small>Dry season</small></span>
+        </div>
+        <div class="cell">
+          <span class="pin go">Zanzibar · Pemba<small>Kusi — the dry half of the year</small></span>
+          <span class="pin go">Mozambique<small>Dry season</small></span>
+          <span class="pin go">Madagascar<small>Dry season</small></span>
+        </div>
+        <div class="cell"></div>
+        <div class="cell">
+          <span class="pin go">Sumba · Flores<small>Dry season</small></span>
+          <span class="pin go">Bali · Lombok<small>Dry, but peak crowds</small></span>
+        </div>
+        <div class="cell">
+          <span class="pin go">Vanuatu<small>Dry · cyclones are Nov–Apr</small></span>
+          <span class="pin go">Fiji · Samoa · Tonga<small>Dry season</small></span>
+          <span class="pin go">French Polynesia<small>Dry season</small></span>
+        </div>
+      </div>
+
+      <div class="band">
+        <div class="lat"><b>20–30°S</b>Southern subtropics</div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell">
+          <span class="pin go">Kimberley · Ningaloo<small>The dry. Whale sharks to Aug</small></span>
+          <span class="pin go">Queensland<small>Dry season</small></span>
+        </div>
+        <div class="cell"><span class="pin go">Cook Islands<small>Dry season</small></span></div>
+      </div>
+
+      <div class="lon">
+        <div></div>
+        <div>Americas</div>
+        <div>Atlantic · Africa</div>
+        <div>Indian Ocean</div>
+        <div>SE Asia</div>
+        <div>Pacific</div>
+      </div>
+
+    </div>
+  </div>
+
+  <section>
+    <h2>Why the line falls there</h2>
+    <p class="note">Three separate systems all peak north of the equator in August, and nothing equivalent runs in the south — the southern tropics are simply in winter.</p>
+
+    <div class="cols">
+      <div class="col stop-col">
+        <h3><i class="k-stop"></i>What shuts the north</h3>
+        <ul class="list">
+          <li><b>Atlantic hurricane season</b><em>Jun–Nov, peaks Aug–Sep</em>Caribbean, Bahamas, Yucatán, Florida coast, Belize</li>
+          <li><b>Southwest monsoon</b><em>Jun–Sep</em>Western India, Maldives, Andaman coast, western Malaysia, <b>Palawan</b></li>
+          <li><b>NW Pacific typhoons</b><em>Jul–Oct, peaks Aug–Sep</em>Okinawa, Taiwan, Palau, central Vietnam, northern Philippines</li>
+        </ul>
+      </div>
+      <div class="col go-col">
+        <h3><i class="k-go"></i>What opens the south</h3>
+        <ul class="list">
+          <li><b>Austral winter</b><em>May–Oct</em>The South Pacific cyclone season is Nov–Apr — August is its opposite</li>
+          <li><b>Kusi, the SE monsoon</b><em>Jun–Oct</em>Dry across East Africa. Cooler, breezier, but dry</li>
+          <li><b>The Australian dry</b><em>May–Oct</em>Kimberley, Ningaloo, Queensland at their best</li>
+        </ul>
+      </div>
+      <div class="col warn-col">
+        <h3><i class="k-warn"></i>The three with a catch</h3>
+        <ul class="list">
+          <li><b>Raja Ampat</b><em>Wind shift, rough seas</em>Not rain — access. Wayag can be unreachable, and Wayag is the point</li>
+          <li><b>Seychelles</b><em>SE trades</em>Dry but persistently windy, and the sea is cooler</li>
+          <li><b>Florida</b><em>Springs vs coast</em>The springs hold 20–22°C all year and don't care. The coast is in hurricane season</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The best water that's actually open</h2>
+    <p class="note">Scored on discovery, colour and swimmability, out of ten each. Six of the world's nine highest-scoring water bodies are shut in August — these are what's left.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Water body</th><th>Region</th><th class="n">/30</th></tr></thead>
+        <tbody>
+          <tr><td>Riri Blue Hole</td><td>Vanuatu — Espiritu Santo</td><td class="n">28</td></tr>
+          <tr><td>Matevulu Blue Hole</td><td>Vanuatu — Espiritu Santo</td><td class="n">28</td></tr>
+          <tr><td>Blue Lagoon, Labengki</td><td>SE Sulawesi</td><td class="n">28</td></tr>
+          <tr><td>Misali Island</td><td>Pemba</td><td class="n">29</td></tr>
+          <tr><td>Vumawimbi Beach</td><td>Pemba</td><td class="n">29</td></tr>
+          <tr><td>Tumbatu Island</td><td>Unguja</td><td class="n">28</td></tr>
+          <tr><td>Maupiti</td><td>French Polynesia</td><td class="n">28</td></tr>
+          <tr><td>Lençóis Maranhenses</td><td>Maranhão, Brazil</td><td class="n">27</td></tr>
+          <tr><td>Weekuri Lagoon · Tanggedu Falls</td><td>Sumba</td><td class="n">27</td></tr>
+          <tr><td>Sohoton Cove</td><td>Bucas Grande, Philippines</td><td class="n">27</td></tr>
+          <tr><td>Labuan Cermin</td><td>East Kalimantan</td><td class="n">27</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Niue is not on this chart, though its water is the clearest on earth.</b> Air New Zealand drops to one flight a week from 19 October 2026 — Saturdays only, from Auckland. A trip there can be exactly seven days, or fourteen, and nothing else.</p>
+    <p><b>Amber is not a soft red.</b> Raja Ampat in August is dry and warm; the problem is that the wind shifts and the sea gets up, so boats can't reach the far islands. You would get there and not get to Wayag.</p>
+    <p><b>Positions are by latitude and longitude, not coastline.</b> This is a seasonal chart rather than a map — the point is the horizontal band the storms occupy, which is what actually decides an August trip.</p>
+  </footer>
+
+</div>
