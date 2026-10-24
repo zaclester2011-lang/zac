@@ -273,3 +273,46 @@ way**, plus the 20–40 min descent. A real day, and it would earn Balos
 End of the 8 km gravel road. **EUR 3 per car** (not needed if we don't drive it).
 Car park to sand: **~2 km, 30–40 min down**, uphill on the way back (~20 min by
 the taxi firm's reckoning, 30–40 by the Kalyviani guide's).
+
+### WIND — the thing that actually decides Balos (Zac, 24 Oct)
+Zac: "balos is very windy." Correct, and it bears on the colour, not just comfort.
+
+e-meteo.gr (a weather site, not a travel blog): **the lagoon opens west and
+north and is worst affected by north-west wind** — the prevailing direction on
+that coast. Supporting:
+
+- Wind **builds through the afternoon**; mornings are reliably calmest.
+- The **isthmus by the canteen** funnels it worst. The inner lagoon is shallow
+  and reported "clear water, no waves" on good days.
+- Strong days: blowing sand, strong shore currents.
+- One boat-rental operator calls Balos "exposed and frequently rough water" and
+  puts it **off-limits to their hire boats**.
+
+**Why it hits the score.** Balos' **Colour 9** came entirely from flat-water
+photos — mirror-calm shallows over white sand. Chop breaks the surface and
+stirs the sand, and the cyan goes grey-green. Same mechanism as the cloud rule,
+arriving by a different route. **A windy Balos is not a 26.**
+
+### CONSEQUENCE: Balos comes off Saturday
+Dropping the cruise removed the week's only hard deadline (the 31 Oct last
+sailing). Balos is therefore **movable to any day** and should be the
+**forecast-chosen day** — the flattest, clearest morning of the week, at first
+light.
+
+### And that flips drive-vs-bus
+
+| | |
+|---|---|
+| 4x4 bus | fixed date, fixed 08:00/09:30 departure, fixed return. Booked for the 31st and blown out = day lost. |
+| Drive ourselves | pick the morning, go at first light, leave when the wind gets up. |
+
+**Wind flips it to driving.** Not because the track got safer, but because an
+exposed NW-facing lagoon demands the freedom to choose the morning, and the bus
+cannot give it. The standing rule ("where the road turns to dirt, that is the
+car park") bends **once**, for a documented reason, on the one beach where
+timing decides whether we see the thing at all.
+
+Mitigations if we drive: slowest possible pace (nearly all damage is
+speed-related), check whether it has rained in the preceding days, and prefer
+the higher-clearance of the two hire cars. No insurance and no off-road
+recovery either way — that exposure is accepted knowingly.
