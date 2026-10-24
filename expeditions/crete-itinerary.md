@@ -7635,3 +7635,34 @@ in late October against June's 78°.
 Σούγια boat are opt-in; **two cars make that frictionless.** The boat is priced
 **per boat**, so numbers do not change the cost.
 **Chania old town dinner early in the week** is what makes sitting one out easy.
+
+---
+
+# ❌ BOTH ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ ENTRIES REMOVED — at Zac's instruction
+
+| Removed | Was | Group |
+|---|---|---|
+| **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ (Σούγια)** | `9·8·10` = 27 | Group 1 — **4 → 3** |
+| **ΑΓΙΟΣ ΑΝΤΩΝΙΟΣ (Κουδουμάς)** | `9·8·10` = 27 | Group 8 — **10 → 9** |
+
+**Both had live cretanbeaches pages and photographs**, so neither was an
+Αλυκαπούντα-style invention. **The doubts that were raised and remain unresolved:**
+
+**ΣΟΥΓΙΑ** — its own URL is `agios-antonios-charei-sougia` and **every image
+filename reads `chania_charei_`. The beach may actually be ΧΑΡΕΙ**, with the
+saint's name attached by me from a listing.
+
+**ΚΟΥΔΟΥΜΑΣ** — Salty Trips describe it as *«three bays»*. **It may be a stretch
+of coast scored as a single entry**, not one beach.
+
+> **Neither doubt was settled. Removed rather than carried on an uncertain name
+> — the opposite error to Αλυκαπούντα, and the safer one.**
+
+## 📊 **29 at 26+** — five 28s · sixteen 27s · eight 26s
+
+| Group | now |
+|---|---|
+| 1 ΣΟΥΓΙΑ | **3** — ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26 |
+| 8 ΤΑ ΑΣΤΕΡΟΥΣΙΑ | **9** — ΠΙΚΡΟΒΛΥΧΑΔΑ 28 · ΒΑΛΑ 28 · ΑΣΠΕΣ 28 · ΣΚΙΑΔΑΚΙ 27 · ΜΑΡΤΣΑΛΟ 27 · ΚΑΜΙΝΑΚΙ 27 · ΑΓΙΟΦΑΡΑΓΓΟ 27 · ΑΓ. ΝΙΚΗΤΑΣ 27 · RED BEACH 26 |
+
+**Tuesday's Σούγια boat now carries three, not four.**
