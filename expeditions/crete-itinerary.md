@@ -8028,3 +8028,54 @@ from Χώρα Σφακίων, then **80 m east by swimming or boat.**
 
 > **Realistic maximum: 17 water bodies.** 🟡 **ΠΑΧΙΑ ΑΜΜΟΣ 25** still parked.
 > 🔴 **MON 2 NOV remains empty.**
+
+---
+
+# 🥾 ΑΡΑΔΕΝΑ ADDED · ΓΛΥΚΑ ΝΕΡΑ SPLIT OUT · ΠΕΡΙΒΟΛΑΚΙ + ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ REMOVED
+
+## THE ΑΡΑΔΕΝΑ WALK — verified
+
+**One-way descent: 7.5 km, 2½–3 hours.** **Do NOT walk back up — the return
+climb is 3–4 hours.** The 15 km / 7h43 "hard, alpine experience recommended"
+ratings on some sites are for **LOOP** versions, a different walk.
+
+**The logistics that make it work:** **park at ΧΩΡΑ ΣΦΑΚΙΩΝ → taxi up to
+ΑΡΑΔΕΝΑ → walk down → boat from ΜΑΡΜΑΡΑ to ΛΟΥΤΡΟ → ferry back to Χώρα Σφακίων.
+The car is waiting.** **ΜΑΡΜΑΡΑ is reachable only on foot or by boat taxi**, so
+the boat out is not optional.
+
+⚠️ **A METAL LADDER descends a large boulder blocking the gorge.** Reviewers
+report an alternative path ~0.5 mi in that avoids it. **Worth knowing before
+meeting it with a 13-year-old.**
+⚠️ **The ΒΑΡΔΙΝΟΓΙΑΝΝΗΣ BRIDGE at Αραδένα is 138 m high** — the drive in crosses it.
+
+## ❌ ΠΕΡΙΒΟΛΑΚΙ 26 and ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ 26 — REMOVED
+
+**Struck at Zac's instruction.** *(Three adjacent coves — Small Perivolaki,
+Large Perivolaki, Timios Stavros — 2.5 km west of Χώρα Σφακίων on the E4, foot
+or boat only.)*
+
+# 📅 THE WEEK
+
+| Day | | Water |
+|---|---|---|
+| **Mon 26** | Ακρωτήρι | **ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ 26** |
+| **Tue 27** | **ΣΟΥΓΙΑ BOAT** 🔴 | **ΔΩΜΑΤΑ 28 · ΛΙΣΣΟΣ 27 · ΤΡΥΠΗΤΗ 26 · ΣΕΝΤΟΝΙ 25** |
+| **Wed 28** | **ΑΡΑΔΕΝΑ GORGE** | **ΜΑΡΜΑΡΑ 27** |
+| **Thu 29** | Southwest | **ΕΛΑΦΟΝΗΣΙ coves 27 · ΚΕΔΡΟΔΑΣΟΣ 27** |
+| **Fri 30** | **THE ΓΛΥΚΑ ΝΕΡΑ WALK** | **ΙΛΙΓΚΑΣ 24 + 27 + 27 · ΓΛΥΚΑ ΝΕΡΑ 26** |
+| **Sat 31** | **ΚΙΣΣΑΜΟΣ CRUISE** 🔴 | **ΜΠΑΛΟΣ 26** |
+| **Sun 1 Nov** | → east | **ΠΡΕΒΕΛΗ 27** |
+| **Mon 2 Nov** | — | **EMPTY** |
+| **Tue 3 Nov** | | fly **14:10** Heraklion |
+
+> **TWELVE water bodies across seven days.**
+
+## ⚠️ TWO OPEN ITEMS
+
+🔴 **THE WEEK IS FULL — the ΣΟΥΓΙΑ fallback has nowhere to go.** If Tuesday
+blows out on swell it must **displace Αραδένα, Ελαφονήσι or the Γλυκά Νερά
+walk.** **That is the cost of adding the gorge.**
+
+🟡 **STILL HOMELESS: ΛΥΚΟΣ 26 · ΑΓΙΟΣ ΠΑΥΛΟΣ 25** — both **west of ΛΟΥΤΡΟ**, so
+they need the ferry to run further west on Wednesday or Friday.
