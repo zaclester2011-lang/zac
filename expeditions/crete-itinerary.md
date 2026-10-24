@@ -7888,3 +7888,52 @@ this is judged on pictures alone.
 > **Three 28s, five 27s, two 26s. The strongest region in the archive, and the
 > one that needs its own week.**
 > **Going through it tonight.**
+
+---
+
+# ➕ ΠΑΧΙΑ ΑΜΜΟΣ ADDED TO GROUP 8 — **D 8 · C 8 · W 10 = 26**
+
+**ΠΑΧΙΑ ΑΜΜΟΣ / ΟΡΝΙΟΣ, ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ** — the last ungraded candidate in the
+archive. **Everything is now scored.**
+
+**Colour 8 — my call, and it changed mid-way:**
+**The water-level shot, dated 23 OCTOBER — the same week as the trip — shows dark
+grey pebble and plain blue. On that alone it was a 7 and a cut.**
+**The wide shot overturns it: a BROAD emerald-turquoise shelf runs the whole
+length of the beach over pale grey sand**, shading to deep blue offshore. **Not a
+fringe like Δώματα's — a shelf wide enough to swim in.**
+**Not 9**, because the body is emphatically blue and the shore where you stand is
+dark pebble.
+
+## ⚠️ TWO CAVEATS ON THE RECORD
+
+**① DISCOVERY 8 IS UNVERIFIED AND MAY BE GENEROUS.** The wide shot shows **a
+building and a track**, and Παχιά Άμμος sits beside **ΤΡΕΙΣ ΕΚΚΛΗΣΙΕΣ, which has
+tarmac and καφενεία**. I set that 8 early in the week and never re-checked it.
+**At 6 or 7 this entry is cut.**
+
+**② FIVE BEACHES IN CRETE ARE CALLED ΠΑΧΙΑ ΑΜΜΟΣ** — Λασίθι, Παλαιόχωρα,
+Κεράμες, Αφρατιάς and this one. **My earlier Flickr measurement almost certainly
+sampled the ΛΑΣΙΘΙ one, 100 km away. Those figures are WITHDRAWN.**
+
+## 🏦 GROUP 8 · ΤΑ ΑΣΤΕΡΟΥΣΙΑ — **ELEVEN ENTRIES, BANKED**
+
+| Beach | D·C·W | | Access |
+|---|---|---|---|
+| **ΠΙΚΡΟΒΛΥΧΑΔΑ** | `10·8·10` | **28** | boat + swim ashore |
+| **ΒΑΛΑ** | `10·8·10` | **28** | boat only |
+| **ΑΣΠΕΣ** | `10·8·10` | **28** | boat only |
+| ΣΚΙΑΔΑΚΙ | `9·8·10` | **27** | boat, or 1h from Καλάμι |
+| ΜΑΡΤΣΑΛΟ | `9·8·10` | **27** | 20–40 min from Οδηγήτρια |
+| ΚΑΜΙΝΑΚΙ | `9·8·10` | **27** | boat only in practice |
+| **ΑΓΙΟΦΑΡΑΓΓΟ** | `9·8·10` | **27** | **40 min, easy — the only confirmed walk** |
+| ΑΓ. ΝΙΚΗΤΑΣ | `9·8·10` | **27** | 15 km dirt + 230 steps |
+| **ΛΙΣΤΗΣ** | `8·8·10` | **26** | on foot, steep descent from the road |
+| **ΠΑΧΙΑ ΑΜΜΟΣ** | `8·8·10` | **26** | ⚠️ **Discovery unverified** |
+| RED BEACH | `8·8·10` | **26** | steep path from Μάταλα |
+
+**Below the line there:** ΚΑΤΑΡΤΙ 25 · ΤΡΥΠΗΤΗ Λέντας 25
+
+> **THREE 28s · FIVE 27s · THREE 26s — eleven entries, the strongest region in
+> the archive.**
+> **Nothing in Crete is now ungraded.**
