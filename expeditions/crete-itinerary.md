@@ -7470,3 +7470,75 @@ floor visible in the photographs.**
 already cut and had never been in the 27.** The count was 27.
 
 > **AFTER THESE CHANGES: 30 at 26+ — five 28s, EIGHTEEN 27s, seven 26s.**
+
+---
+
+# 📉 DROPPED BY ZAC'S COLOUR — the six that were on the 26+ list and fell
+
+**These were all at 26+ on the pre-judgement scores. Zac's colour removed them.**
+
+| Beach | Was | Colour | Now | Group it left |
+|---|---|---|---|---|
+| **ΙΛΙΓΚΑΣ main** | 26 | **6** | **24** | Σφακιά — **its two coves stayed at 27** |
+| **ΒΑΘΥ / ΣΤΟΜΙΟ** | 26 | **6** | **24** | Southwest |
+| **ΚΑΤΑΡΤΙ** | 26 | **6** | **25** | Αστερούσια — white pebbles not enough against a **Deep** field |
+| **ΣΕΝΤΟΝΙ** | 26 | **6** | **25** | Σούγια — **it was on Δώματα's boat** |
+| **ΓΡΑΜΒΟΥΣΑ** | 26 | **7** | **25** | Κίσσαμος — **it was the cruise's second entry** |
+| **ΑΓΙΟΣ ΠΑΥΛΟΣ (Σφακιά)** | 26 | **7** | **25** | Σφακιά — judged on only **3 verified photos** |
+
+**Dropped then RESTORED:** **ΓΛΥΚΑ ΝΕΡΑ** 26 → 25 at Colour 7 → **back to 26** at
+Colour 8.
+
+> **FOUR OF THE SIX FELL ON A COLOUR 6** — under the weak-link rule that is an
+> outright cut, not a near miss. **Zac was not shaving them; he was saying the
+> water is not there.**
+
+## 💸 WHAT THE DROPS ACTUALLY COST
+
+| | |
+|---|---|
+| **ΓΡΑΜΒΟΥΣΑ** | **The real loss.** It was why the Κίσσαμος cruise delivered **two** entries. **Saturday is now a one-beach day for a boat ticket** |
+| **ΣΕΝΤΟΝΙ** | 500 m from Τρυπητή on the Σούγια boat — **a free extra on a day already paid for.** That day still holds four, so depth lost, not the day |
+| **The other four** | **cost nothing.** Ίλιγκας main is 80 m from two coves at 27 · Κατάρτι and Άγ. Παύλος were walk-ins in regions with plenty · Βαθύ was the weakest of three in the southwest |
+
+---
+
+# 🗺️ THE EIGHT GROUPS — FINAL, WITH DROPS SHOWN
+
+**Was nine. ΑΚΡΩΤΗΡΙ is gone — ΣΕΪΤΑΝ ΛΙΜΑΝΙΑ 25 was its only entry, cut on my
+own override.**
+
+### 1 · ΣΟΥΓΙΑ — 4 in
+**ΔΩΜΑΤΑ 28** · ΛΙΣΣΟΣ 27 · ΑΓ. ΑΝΤΩΝΙΟΣ 27 · ΤΡΥΠΗΤΗ 26 — *dropped: ΣΕΝΤΟΝΙ 25*
+**One boat. The only booking that cannot be improvised.**
+
+### 2 · ΜΑΡΜΑΡΑ — 1 in
+ΜΑΡΜΑΡΑ 27 — Λουτρό ferry or the Αράδενα gorge. *Nothing dropped.*
+
+### 3 · ΣΦΑΚΙΑ — 6 in
+ΙΛΙΓΚΑΣ cove 2 **27** · cove 3 **27** · ΓΛΥΚΑ ΝΕΡΑ 26 · ΛΥΚΟΣ 26 · ΠΕΡΙΒΟΛΑΚΙ 26 ·
+ΤΙΜΙΟΣ ΣΤΑΥΡΟΣ 26 — *dropped: ΙΛΙΓΚΑΣ main 24 · ΑΓ. ΠΑΥΛΟΣ 25*
+**Six entries, one car park, one ferry ticket, nothing to book.**
+
+### 4 · SOUTHWEST — 2 in
+ΕΛΑΦΟΝΗΣΙ coves 27 · ΚΕΔΡΟΔΑΣΟΣ 27 — *dropped: ΒΑΘΥ 24*
+
+### 5 · ΚΙΣΣΑΜΟΣ — 1 in
+ΜΠΑΛΟΣ 26 — *dropped: ΓΡΑΜΒΟΥΣΑ 25* · **last sailing 31 October**
+
+### 6 · ΡΕΘΥΜΝΟ — 1 in
+ΠΡΕΒΕΛΗ 27 — 470 steps.
+
+### 7 · ΤΑ ΑΣΤΕΡΟΥΣΙΑ — 10 in
+**ΠΙΚΡΟΒΛΥΧΑΔΑ 28 · ΒΑΛΑ 28 · ΑΣΠΕΣ 28** · ΣΚΙΑΔΑΚΙ 27 · ΜΑΡΤΣΑΛΟ 27 ·
+ΚΑΜΙΝΑΚΙ 27 · ΑΓ. ΑΝΤΩΝΙΟΣ 27 · **ΑΓΙΟΦΑΡΑΓΓΟ 27** · ΑΓ. ΝΙΚΗΤΑΣ 27 ·
+RED BEACH 26 — *dropped: ΚΑΤΑΡΤΙ 25 · ΤΡΥΠΗΤΗ Λέντας 25*
+**All three 28s need the Τσούτσουρας boat. ΑΓΙΟΦΑΡΑΓΓΟ is the only confirmed walk.**
+
+### 8 · ΓΑΥΔΟΣ — 5 in
+**ΑΚΡ. ΤΡΥΠΗΤΗ 28** · ΛΑΚΚΟΥΔΙ 27 · ΛΑΥΡΑΚΑΣ 27 · ΠΟΤΑΜΟΣ 27 · ΠΥΡΓΟΣ 27 —
+*dropped on Discovery: ΦΕΤΙΦΕΣ 25 · ΑΓΙΑΝΝΗΣ 24 · ΣΑΡΑΚΗΝΙΚΟ 23 · ΚΟΡΦΟΣ 23*
+**Every one on foot. ΑΚΡ. ΤΡΥΠΗΤΗ is the ONLY 28 in the archive reachable on foot.**
+
+> **30 at 26+ · 10 dropped · ΠΑΧΙΑ ΑΜΜΟΣ still ungraded — it was never sent for
+> a colour.**
