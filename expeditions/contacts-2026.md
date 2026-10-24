@@ -458,3 +458,71 @@ at 15%, and it is the only clear morning in range.
 ### Model limitation
 **met.no gives Loutro and Glyka Nera the same grid cell** — 4 km apart,
 identical numbers. It cannot separate them.
+
+---
+
+## CORRECTION: Marmara's cloud figure was the mountain, not the beach
+Zac: "its similar in chora sfakion to sougia." He was right and the section
+above was wrong. Tested by sampling the sea **2 km offshore** of each beach as a
+control, plus adding **Chora Sfakion** (35.2017/24.1372).
+
+Every point in the set reads **identically** at its beach cell and 2 km out —
+except Marmara:
+
+| Morning | Marmara **beach** | Marmara **2 km offshore** |
+|---|---|---|
+| Mon 26 | 79% | 69% |
+| Tue 27 | 88% | 97% |
+| Wed 28 | **94%** | **80%** |
+| Thu 29 | **87%** | **48%** |
+| Fri 30 | 98% | 98% |
+| Sat 31 | 100% | 99% |
+| Sun 1 | 95% | 95% |
+| **Mon 2** | **94%** | **25%** |
+
+69 points apart on Mon 2 Nov. Sougia's beach cell matches its own offshore cell
+**exactly** on all eight days (55/55, 91/91, 47/47, 15/15...), so Sougia is
+sound and it is specifically the Marmara cell that is contaminated by the White
+Mountains behind it.
+
+### RETRACTED
+- The Marmara cloud figures above.
+- The claim that Marmara is "the cloudiest point every single day."  It is not.
+- The implication that Wed 28's Aradena-to-Marmara day is a write-off. It is not.
+  **Marmara's 27 stands untouched.**
+
+### The eastern stretch is literally ONE weather cell
+Marmara-offshore, Loutro, Glyka Nera and Chora Sfakion return the **same**
+numbers, not similar ones: **69 · 97 · 80 · 48 · 98 · 99 · 95 · 25**.
+
+### Sougia vs Chora Sfakion — the two ends, ~30 km apart
+**Cloud:** similar on five of eight mornings (26, 27, 31, 1, 2). On the other
+three Sougia is the clearer end — Wed 47 vs 80, **Thu 15 vs 48**, Fri 59 vs 98.
+
+**Wind:**
+
+| | Sougia | Chora Sfakion |
+|---|---|---|
+| Mon 26 | 6.0 SSW | 9.2 SW |
+| Tue 27 | 4.1 ENE | 3.5 NW |
+| Wed 28 | 10.5 NNE | 12.8 N |
+| Thu 29 | 5.1 NE | 3.7 NNW |
+| Fri 30 | 2.9 E | 1.6 NW |
+| Sat 31 | 8.0 SSE | 6.0 SSE |
+| Sun 1 | **9.1 SSE** | **1.9 N** |
+| Mon 2 | **2.1 E** | **6.4 SW** |
+
+Within a few knots on six of eight; the two that diverge are the lee days
+already flagged.
+
+### VERDICT: treat it as one region
+The cloud gradient is **much smaller** than the previous section claimed — one
+bad grid cell was doing all the work. What survives is narrower and still
+useful: **Sougia is the clearer end whenever there is a gradient at all**, which
+is why **Thu 29 at Sougia (15%) remains the standout morning** on that coast.
+
+### METHOD RULE ADDED
+A coastal grid cell under a high massif can report the mountain's cloud, not the
+shore's. **Always sample a control point 2 km offshore before trusting a cloud
+figure for a beach with mountains behind it** — which on this trip is most of
+them.
