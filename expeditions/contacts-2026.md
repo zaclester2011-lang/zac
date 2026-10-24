@@ -526,3 +526,43 @@ A coastal grid cell under a high massif can report the mountain's cloud, not the
 shore's. **Always sample a control point 2 km offshore before trusting a cloud
 figure for a beach with mountains behind it** — which on this trip is most of
 them.
+
+---
+
+## BALOS ACCESS — DECIDED (Zac, 24 Oct): "lets just drive"
+**We drive our own cars the whole way to the Balos car park.** The 4x4 bus is
+dropped. No taxi leg. No peninsula walk.
+
+| | |
+|---|---|
+| Chania -> Kalyviani | asphalt, ~45 min. Village is the last tarmac. |
+| Kalyviani -> car park | **8 km dirt**, ~40 min at crawling pace |
+| Parking | **EUR 3 per car** |
+| Car park -> sand | **2 km, 30-40 min down**, uphill back |
+| Start | **first light** — wind builds through the afternoon |
+
+### Why driving beat the bus
+The bus (EUR 27pp / EUR 135 for five) is the safer vehicle but is a **fixed date
+with a fixed return**. Balos is a NW-facing lagoon whose colour lives or dies on
+a flat morning, so the freedom to pick the day is worth more than the cover.
+
+### Accepted knowingly
+**No insurance and no off-road recovery.** The risk is not a crash — it is a
+punctured tyre or cracked sump 8 km from tarmac with no recovery cover.
+Mitigations: crawl (nearly all damage there is speed-related), take the
+higher-clearance of the two hire cars, check it has not rained in the days
+before.
+
+**This is the only place on the trip the dirt-road rule bends.** Everywhere else
+"where the road turns to dirt, that is the car park" still holds.
+
+### Day
+**Sat 31 Oct, with Mon 2 Nov as the swap.** Both free now the cruise is gone;
+nothing else competes for them. Current readings for those two are day 7-9 out
+and not actionable (Sat 8 kn but 99% cloud; Mon 12% cloud but onshore W).
+**Decide Thu 29 Oct** — re-run `expeditions/wind-forecast.py`.
+
+### Still open — one email
+Whether the car park has a **barrier** once the operators stop for the season.
+Unconfirmed either way. Ask **Strata Tours** (stratatours.com); the same message
+that asks "do you still run on the 31st" answers this.
