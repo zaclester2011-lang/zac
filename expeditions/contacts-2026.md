@@ -711,3 +711,63 @@ the trip (5-7% at Balos, Elafonissi, Kedrodasos; 94% on the south coast) — but
 **Balos and Elafonissi are opposite corners, ~1h45 apart. Monday can be one or
 the other, not both.** If Monday is Balos, Monday night must be booked
 **central or east**, not Kissamos — it is 2.5 h to Heraklion.
+
+---
+
+## ARADENA — THE DAY PLAN (settled 25 Oct)
+
+### Why the car goes to Chora Sfakion
+The gorge is **one-way**, so the car must sit at the **end** of the route, and
+Chora Sfakion is the **only road-connected end point**.
+- **Loutro has no road at all** — nothing to park at.
+- **Finikas**, the nearest road to Loutro, is a **dirt road from Livaniana via
+  Anopoli**, "not suitable for all vehicles due to its rough condition", 24 km
+  from Chora Sfakion and close to an hour because it is so winding, then a rough
+  20-min path over the ridge. **Out** — insurance rule, for far less reward
+  than Balos.
+- Driving up to Aradena and parking there is strictly worse: you finish at
+  Chora Sfakion with the car 14 km up a mountain, needing a taxi when tired,
+  then driving the mountain road in fading light.
+
+### DEFAULT PLAN — taxi-boat unconfirmed
+| | |
+|---|---|
+| 07:10 | up |
+| 07:50 | leave the hotel |
+| 09:20 | **Chora Sfakion — park** (car stays all day) |
+| 09:30 | **taxi** -> Aradena, ~14 km via Anopoli, 25-30 min |
+| **10:00** | **Aradena.** Vardinogiannis bridge, 138 m |
+| 10:00-13:30 | **the gorge** — 7.5 km, published 2.5-3 h, allow 3.5. Metal ladder down the blocking boulder partway in; bypass path ~0.5 mi along |
+| **13:30** | **Marmara** — swim |
+| 14:30 | **coast path to Loutro**, ~1 h |
+| 15:30 | **Loutro** — 30 min in hand |
+| **16:00** | **ferry** -> Chora Sfakion, 20-30 min |
+| 16:30 | **car** |
+| ~17:10 | over the hairpins, still light (sunset **17:34**) |
+
+### IF THE TAXI-BOAT IS CONFIRMED
+Everything shifts one hour later: up 08:10, Aradena **11:00**, Marmara 14:30,
+boat out 15:30, Loutro 15:40, **same 16:00 ferry**. Trades a 60-min swim for the
+lie-in. **The ferry is the fixed point either way.**
+
+### NON-NEGOTIABLE
+- **The 16:00 ferry, never the 18:15.** The 18:15 lands 18:40 and puts us on
+  **18 hairpins and 3 tunnels in the dark** after a six-hour day. That drive is
+  the most dangerous thing in the week — more than the Balos track or the Seitan
+  scramble, because it is done tired.
+- **Carry all water** — none in the gorge.
+- **Proper shoes** — loose rock and a ladder, not a path.
+
+### WHICH DAY
+**Wed 28** reads 81% cloud on that coast — exactly why Aradena goes there; a
+gorge does not care and no clear morning is burned. **Tue 27** is worse still
+(93%) if we want it done early. **MUST be by Sat 31** — ferries stop.
+
+### TWO CALLS FIRST
+1. **Taxi, Chora Sfakion -> Aradena for 09:30.** Ask the ferry kiosk
+   **28250 91221** — in a village that size they know the driver.
+2. **Is the Marmara taxi-boat running?** ANENDYK **+30 28210 95511 / 95530**.
+   Same call confirms the Marmara-Loutro coast path.
+
+### Confirmed ferry times, Loutro -> Chora Sfakion, 19-31 Oct, daily
+**09:30 · 12:00 · 12:20 · 16:00 · 18:15** (Wed also 11:00). Crossing 20-30 min.
