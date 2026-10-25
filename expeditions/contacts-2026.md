@@ -612,3 +612,47 @@ A beach whose turquoise is a **shore band** needs photos *of the band*. A sample
 run over frames that are mostly deep or distant water will return the open-water
 hex and read as "never turquoise." **Check the water's share of the frame and
 whether a pale cluster appeared at all before concluding a beach lacks colour.**
+
+---
+
+## GLYKA NERA vs BAIA DI IERANTO (Zac, 25 Oct)
+Zac: "its better than baia di leranto isnt it." On his own scale he has already
+said so — **Ieranto 7, Glyka Nera 8**.
+
+### CANNOT be settled by photograph
+Tried three Flickr tag sets (`baiadiieranto`, `ieranto,mare`, `ieranto,sea`),
+14 downloads. Results: a cloudy clifftop view, a portrait of a woman, a sunset,
+and two Capri panoramas. **Nobody photographs the water at Ieranto** — they
+photograph the walk and the view across to Capri. Same failure mode as the
+washing-line shot that got the earlier Ieranto figures withdrawn.
+**No Ieranto water measurement exists and none is obtainable this way.**
+What follows is reasoning from substrate, not measurement.
+
+### The mechanism says Glyka Nera, clearly
+Ieranto's own best description is the giveaway: *"deep azure that shifts to
+**emerald green** near the rocks."* Emerald green sits in the hue band **below**
+turquoise on our classifier — the green side of the line. Zac's scale rewards
+cyan and penalises green.
+
+| | Ieranto | Glyka Nera |
+|---|---|---|
+| Bottom | **Posidonia seagrass meadow** across the bay (confirmed; patchy from old anchoring, 2026 replanting underway) | white pebble throughout |
+| Beach substrate | "golden sand and pebbles" | white pebble |
+| Freshwater | none | **springs rising through the shingle** |
+
+**Seagrass absorbs light; white pebble returns it.** A Posidonia meadow reads
+dark green-black from the surface, so shallows over it come back emerald, not
+turquoise. Golden sand pushes the return further toward green-yellow.
+
+And Glyka Nera has what Ieranto lacks entirely: **the freshwater haze that
+creates the opaque cyan band** — the Domata mechanism.
+
+Ieranto is a **clarity** beach (bottom visible several metres down, deep azure)
+— the διάφανα-vs-τιρκουάζ distinction again. Clear, but not the colour being
+scored.
+
+### THE CALIBRATION POINT — most valuable fact in the archive
+**Zac has been to Ieranto.** His **7** is therefore the only **first-hand ground
+truth** in the whole dataset; every other number, mine included, is read off
+photographs. Glyka Nera at 8 against an Ieranto he actually stood in is the most
+reliable anchor we have. **Anchor the scale to it, not the other way round.**
