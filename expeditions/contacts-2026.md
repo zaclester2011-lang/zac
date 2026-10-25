@@ -771,3 +771,62 @@ gorge does not care and no clear morning is burned. **Tue 27** is worse still
 
 ### Confirmed ferry times, Loutro -> Chora Sfakion, 19-31 Oct, daily
 **09:30 · 12:00 · 12:20 · 16:00 · 18:15** (Wed also 11:00). Crossing 20-30 min.
+
+---
+
+## ARADENA — FINAL TIMED PLAN (Zac: "i need an hour and a half swim")
+Built backwards from two fixed points: the **16:00 ferry** (the only option —
+see gap below) and a **90-minute swim** at Marmara. Three walkers: James, Zac,
+Jacob. Grace and friend are not doing the gorge.
+
+| | | |
+|---|---|---|
+| **07:15** | up | |
+| **08:00** | leave the hotel | allow **1h45** — Chania to Chora Sfakion is 71 km, last half mountain road |
+| **09:45** | **Chora Sfakion** | park **facing out, near the ferry ramp** |
+| **10:00** | **taxi -> Aradena** | 14 km via Anopoli, 25-30 min |
+| **10:15** | **Aradena — start down** | 138 m bridge at the top |
+| | *the gorge* | 7.5 km · ~2.5 h for three · ladder partway, bypass path exists |
+| **12:45** | **MARMARA** | |
+| **12:45-14:15** | **SWIM — 90 min** | the point of the day |
+| **14:15** | walk out | coast path to Loutro, ~1 h |
+| **15:15** | **Loutro** | **buy tickets immediately**, then sit down |
+| **16:00** | **ferry** | 20-30 min |
+| 16:20-16:30 | **car** | be first off |
+| ~16:55 | **hairpins done** | the only part that matters |
+| **17:10-17:20** | **VRYSES** | national road, lights, done |
+
+### Why there is no alternative ferry
+Loutro -> Chora Sfakion: **09:30 · 12:00 · 12:20 · 16:00 · 18:15**. A **3h40
+gap** between 12:20 and 16:00. The 12:20 would mean leaving Marmara ~11:20 —
+before we would even arrive. So it is **the 16:00 or the 18:15**, and the 18:15
+lands 18:40 and puts us on the hairpins in the dark. Nothing to trade.
+
+### Slack analysis
+**45 minutes spare at Loutro.** If the descent runs to 3 h **and** the coast
+path turns out to be 75 min — both soft numbers failing together — we reach
+Loutro 15:45 and still make the boat **with the full 90-minute swim intact**.
+The two unverified numbers are **2.5 h descent** and **1 h coast path**. The
+buffer exists precisely for them.
+
+### Vryses by 17:20 (Zac's checkpoint)
+Holds on a 20-min crossing, exact on a 30-min one. Protect it free: park facing
+out near the ramp, be first off the ferry, buy tickets at 15:15 not 15:55.
+**But Vryses is the comfort point, not the safety point** — the hairpins are
+cleared ~16:55 either way, 40 min before sunset. Missing 17:20 by five minutes
+costs nothing; missing the 16:00 ferry costs the day.
+
+### If the taxi-boat IS running
+Everything moves an hour later and the swim stays 90 min: up 08:15, Aradena
+11:15, Marmara 13:45, swim to 15:15, 10-min boat, Loutro 15:30, same ferry.
+**That phone call is worth an hour in bed.**
+
+### Grace and her friend
+**09:30 or 12:00 ferry Chora Sfakion -> Loutro.** Car-free harbour village,
+tavernas on the water. All meet at Loutro for the 16:00 back. Nobody waits in a
+hotel. **Keep them off the Glyka Nera path that day** or the separate Glyka Nera
+day is wasted.
+
+### Carry
+**All water — there is none in the gorge.** Proper shoes. Food for Marmara,
+nothing there either.
