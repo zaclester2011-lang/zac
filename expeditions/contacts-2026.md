@@ -830,3 +830,63 @@ day is wasted.
 ### Carry
 **All water — there is none in the gorge.** Proper shoes. Food for Marmara,
 nothing there either.
+
+---
+
+## 🔴 CORRECTION: the coast path to Loutro is a CLIFF TRAVERSE. Zac caught it.
+Zac: "it says we walk on the cliff face." **He is right, and I had the two paths
+backwards.** The exposure is on the **Marmara -> Lykos -> Loutro coast path** —
+which is the walk-out in **my** ferry plan — **not** on his Livaniana route.
+
+### What the sources say about the coast path
+- **Rother**: the passage between Marmara and Lykos is *"very demanding,
+  requiring surefootedness and a head for heights."*
+- *"The jagged clifftop path requires great care."*
+- *"A head for heights is an absolute necessity."*
+- **Chains** on the tricky section — one reviewer calls it a *"chain balcony."*
+- *"A portion of the carved staircase collapsed, making the descent a bit of an
+  exposed scramble."*
+- One walker afraid of heights managed it *"by turning the body to hug the
+  cliff, with rocks to hold"* — doable, but that says what kind of path it is.
+
+### What I had been saying
+I repeatedly called that coast path the **safe, reliable fallback** ("1 h, flat,
+obvious") and treated the Livaniana exit as the uncertain option. **It is the
+other way round.** The French account that warns about the gorge's delicate
+passages describes the Livaniana path as a *"carriageable track"* that *"posed
+no particular difficulty."*
+
+| | |
+|---|---|
+| Coast path -> Loutro -> ferry | cliff traverse, chains, collapsed staircase, head for heights — **after** a gorge descent, with a 13-year-old |
+| **Livaniana exit** | up the riverbed 30 min, right at the *Taverna Livaniana* sign, dirt track to the village. **"No particular difficulty."** |
+
+### NEW ORDER — Livaniana is the plan, not the fallback
+1. **Walk out to Livaniana.** No cliff, no boat, no timetable. ← **THE PLAN**
+2. **Water taxi Marmara -> Loutro** if running — its value is no longer saving
+   an hour, it is **skipping the cliff by sea**. Then the ferry.
+3. **The coast path** — only for those happy with chains and a scramble.
+   **Not with Jacob at the end of a six-hour day.**
+
+### Navigation note for the Livaniana exit
+The turnoff is ~30 min up the riverbed from Marmara, signed *Taverna Livaniana*,
+pointing right. **We pass it on the way DOWN**, ~30 min before reaching the
+beach. **Stop, look at it, photograph it** — then the exit is known before
+committing to the swim. Download **OsmAnd or Maps.me offline** beforehand.
+
+### Also corrected
+**The ladder bypass is NOT the gentle option.** *"Poorly maintained, covered in
+slippery gravel, with missing or unstable railings in places."* **Take the
+ladders.** I had said the opposite.
+
+### Also flagged
+One detailed account says the gorge is **better climbed than descended** — the
+delicate passages *"need less experience and concentration when climbing than
+descending."* Opens a no-booking loop: park Aradena -> down via Livaniana ->
+Marmara -> climb the gorge back. **14 km, 4 h 45 walking.**
+
+### STANDING LESSON
+**Zac pushed for the Livaniana route three times and I argued against it each
+time.** The reason it is right was something neither of us knew. When he keeps
+returning to an idea, check the thing I am assuming is safe, not just the thing
+he is proposing.
