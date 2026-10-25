@@ -566,3 +566,49 @@ and not actionable (Sat 8 kn but 99% cloud; Mon 12% cloud but onshore W).
 Whether the car park has a **barrier** once the operators stop for the season.
 Unconfirmed either way. Ask **Strata Tours** (stratatours.com); the same message
 that asks "do you still run on the 31st" answers this.
+
+---
+
+## RETRACTION: Glyka Nera is NOT weatherproof, and it IS close to turquoise
+Zac: "glyka nera is close to turquoise." He is right. Checked against the four
+photos on its own cretanbeaches page (wide bay shot, water-level over the
+pebbles, shore strip, the rocks). The wide shot shows a broad emerald-turquoise
+band running the whole bay against deep navy beyond.
+
+### Why both my measurements failed
+- **Flickr `glykanera` tag** — 5 photos -> `#AABAC6`. Weak tag, tiny sample.
+- **Its own page** — 4 photos, water only 34% of frame -> one cluster
+  `#025396`. That is the **open-water body**. The pale shore cluster never
+  surfaced because most frames are deep or distant water.
+
+Both sampled the wrong part of the sea. The turquoise at Glyka Nera is a
+**band**, and neither run caught it.
+
+### The mechanism I already had and failed to apply
+**Γλυκά Νερά = "sweet water" — freshwater springs rise through the shingle**;
+the sea is cold near them even in midsummer. That is **the exact Domata
+mechanism**, where we established the milky freshwater haze *creates* the opaque
+cyan band rather than killing it. Logged, then argued the opposite way here.
+
+### What the sources say
+cretanbeaches field: **deep blue, pebbles** — the same single-field collapse
+that has misled us before, naming the open water and ignoring the shore strip.
+*The Times of London* put it in Europe's best 20 (2003). Access: boat, or the
+path from Chora Sfakion (~30 min) / Loutro (~60 min).
+
+### RETRACTED
+"Glyka Nera is nearly weatherproof — deep white pebble, nothing to lose."
+**Wrong on both halves.** It has a real turquoise band, so it has as much to
+lose under cloud as anything else.
+
+### Consequence
+**Friday comes off the grey-day list.** The only genuine grey-day sinks are
+**Wed 28 (Aradena)** and **Sun 1 (Preveli gorge)** — two, not three.
+
+Zac's **colour 8** stands on the evidence.
+
+### METHOD RULE ADDED
+A beach whose turquoise is a **shore band** needs photos *of the band*. A sampler
+run over frames that are mostly deep or distant water will return the open-water
+hex and read as "never turquoise." **Check the water's share of the frame and
+whether a pale cluster appeared at all before concluding a beach lacks colour.**
