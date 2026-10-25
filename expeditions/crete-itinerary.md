@@ -8079,3 +8079,85 @@ walk.** **That is the cost of adding the gorge.**
 
 🟡 **STILL HOMELESS: ΛΥΚΟΣ 26 · ΑΓΙΟΣ ΠΑΥΛΟΣ 25** — both **west of ΛΟΥΤΡΟ**, so
 they need the ferry to run further west on Wednesday or Friday.
+
+---
+
+# INLAND WATER + TOP TREKS — researched 25 Oct 2026
+
+## THE TOP OF THE ARCHIVE
+**Domata — 28.** The ceiling, and **the only 28 we actually reach** (Thu 29, off
+the Sougia boat). Domata is **not a trek** — it is a beach landing through swell
+onto pebble.
+
+Also at 28: **Pikrovlychada · Vala · Aspes** (Asterousia, banked) and **Cape
+Tripiti** (Gavdos, removed on logistics). **Five entries at 28 in all of Crete.**
+
+## TOP TREKS TO HIDDEN WATER — ALL CRETE
+| | score | |
+|---|---|---|
+| **1 · Aradena gorge -> Marmara** | **27** | 🟢 **verified this week.** 7.5 km, 138 m bridge, the ladder. On foot or by boat only |
+| **2 · Odigitria -> Agiofarango** | **27** | 🟡 gorge walk to a hidden cove, chapel and cave at the bottom. The Asterousia's answer to Aradena |
+| **3 · Vatsiana -> Cape Tripiti** | **28** | 🟡 **southernmost point of Europe**, Gavdos. Highest beach in the archive |
+| **4 · Sougia -> Lissos** | **27** | 🟡 ~1.5 h over the headland to the ancient sanctuary. **We arrive by boat Thursday** |
+| **5 · Martsalo** | **27** | 🟡 Asterousia gorge to a cove under cliffs |
+
+🟢 verified · 🟡 **scored as a beach, NOT assessed as a walk.** Colour is known
+from photographs; **access, times and difficulty are unchecked** on all four.
+Do not treat the 🟡 rows as walk recommendations until the path is researched
+the way Aradena, Livaniana and the Marmara cliff were.
+
+## INLAND WATER — all four fail Zac's own scale
+Water = 10 was a convention for **sea** entries passing the 21.5 °C gate.
+Freshwater does not inherit it. Kourtaliotiko is measured at **14 °C**.
+
+| | D | C | W | total | |
+|---|---|---|---|---|---|
+| **Agiofarango** *(sea)* | **9** | **8** | **10** | **27** | ✅ |
+| Richtis | 8 | 6 | 5 | 19 | ❌ |
+| Kourtaliotiko | 7 | 6 | 4 | 17 | ❌ |
+| Preveli river | 5 | 5 | 6 | 16 | ❌ |
+| Sarakina | 8 | 3 | 3 | 14 | ❌ |
+
+**Every inland entry fails the weak-link rule on Water; three also fail on
+Colour.** The scale was built around *"almost alone in a turquoise sea"* — warm
+enough to stay in, bright enough to be worth reaching. Cretan gorge pools are
+**cold, small, shaded and seasonal**. A dip, not a swim.
+
+**Agiofarango passes only because it is sea.** Its Colour 8 is Zac's own rating
+from the Asterousia run.
+
+### Evidence, and what failed
+- **Sarakina** 🟢 — two Wikimedia Commons photos show the gorge **DRY**, gravel
+  bed, no water. The `#CEF6FC TURQUOISE` the sampler returned was **the sky in
+  the slot between the cliffs**. One Flickr photo shows a real pool: clear,
+  grey-green over tan rock. Sources conflict on water because it is **seasonal**
+  — late October after a Cretan summer is the wrong end of the year.
+- **Preveli river** 🟡 — one aerial: a flat **olive-green channel** behind the
+  palms. The turquoise in that frame is **the sea**, not the river.
+- **Kourtaliotiko / Richtis** 🔴 — **no water photograph obtained at all.** The
+  Flickr tag returned a chapel and a footpath; the stone-cairn shot for Richtis
+  had the **sea** behind it. Wikimedia Commons returned zero results for both.
+  **Their 6s are reasoning, not measurement**, and carry none of the weight of a
+  6 taken off a photograph.
+
+### Reasoning behind the two guesses
+Both are **deep plunge pools at the base of a fall, in shade, over limestone**,
+with year-round flow. That profile normally reads **dark blue-green or
+bottle-green**, not cyan — a deep shaded pool absorbs rather than returns light,
+the same mechanism that sinks a deep sea beach. The turquoise freshwater of
+Plitvice or Krka comes from **dissolved calcium carbonate precipitating in
+travertine systems**; Crete's gorges are limestone but described as clear water
+over tan rock. **Hypothesis, not evidence.**
+
+## CONCLUSION
+**Nothing new enters.** Every walk worth doing in Crete ends at the sea, because
+the sea is where the colour is. The gorges are **how you reach the water, not
+destinations in themselves**.
+
+We do **#1** and arrive at **#4** by boat. The other three — Agiofarango,
+Martsalo, Cape Tripiti — are a **southern Crete / Gavdos trip**, already half
+researched in this file.
+
+### TOOL ADDED
+`expeditions/commons-sampler.py` — pulls labelled photos from Wikimedia Commons
+by search term. Built because Flickr tags failed completely on inland subjects.
