@@ -952,3 +952,49 @@ about Wednesday specifically: tired after a 2.5 h descent · a 13-year-old movin
 fast to keep up · late in the day · **the chains' current state genuinely
 unknown** · and a free alternative exists. Any one alone would be fine; all five
 together, no. Fresh, without Jacob, liking heights — it would be a yes.
+
+---
+
+## MONDAY 26 OCT — SEITAN LIMANIA, final (forecast issued 25 Oct 19:17 UTC)
+
+### The window: 15:00–16:30
+| | cloud | wind | |
+|---|---|---|---|
+| 13:00 | 46% | 14.4 kn W | light showers |
+| 14:00 | 66% | 15.2 kn W | |
+| **15:00** | **17%** | 15.0 kn W | **fair** |
+| **16:00** | **9%** | 15.6 kn WSW | showers after |
+| 17:00 | 70% | 15.0 kn SW | showers |
+| 18:00 | 40% | 11.9 kn S | |
+
+Air **19 °C**. Wind 15 kn but **W/WSW = offshore for a NE-facing inlet**, so the
+water inside will be flat. The clear window lines up with our arrival.
+
+### Getting there
+**Chania airport is ON Akrotiri — same peninsula as Seitan.** Follow signs for
+**Chordaki**, then Seitan Limania. **15–20 min**, not the 30–40 the guides quote
+from Chania town.
+Land 13:00 -> bags + car hire -> away 14:00-14:15 -> **car park ~14:30 ->
+beach ~14:50.**
+
+### Parking
+**Limited, and the slope is serious.** One guide: **set the handbrake and wedge
+stones under the tyres** — steep enough to roll a car. Overflow parking on the
+straight stretch before the main area.
+
+### The descent
+**15–20 min down, ~20 back up.** Stone steps, compacted earth, loose gravel and
+rock, dropping steeply to the water. **No shade, fully exposed.**
+**Path starts to your RIGHT as you face the sea from the car park**, by the
+small iconostasis.
+**Trainers, not flip-flops** — every source says it. There were **accidents in
+2021**, after which the council reportedly installed rails; accounts now
+conflict ("rudimentary, not reliable" / "no handrails"). **Assume no handrail.**
+
+### Two cautions for the day
+1. **Showers at 13:00 and again from ~16:30.** We arrive just after one — **the
+   rock will be wet going down.**
+2. **Be climbing out by 16:30.** Sunset 17:34, but it is a deep narrow inlet and
+   shades over well before that — and the next shower lands about then.
+
+**Nothing at the beach**: no taverna, no water, no shade. Carry it down.
