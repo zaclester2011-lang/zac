@@ -656,3 +656,58 @@ scored.
 truth** in the whole dataset; every other number, mine included, is read off
 photographs. Glyka Nera at 8 against an Ieranto he actually stood in is the most
 reliable anchor we have. **Anchor the scale to it, not the other way round.**
+
+---
+
+## THE PLAN, SETTLED (Zac, 25 Oct): two fixed days, forecast decides the rest
+Field card (phone): **https://claude.ai/artifact/K1B4FkKvdgbNkxVfSEHuXQ**
+
+### Fixed
+- **Mon 26 — Seitan Limania.** Land 13:00, on the sand ~15:00. Showers
+  14:00-16:00, wet rock on the descent. **Up by 16:30.**
+- **Thu 29 — Sougia boat**: Domata · Lissos · Trypiti · Sentoni.
+  2-9 kn, **6% cloud at 14:00**. Back in Sougia by 16:30.
+
+### HARD DEADLINES that override "read the forecast"
+1. **Sunset 17:34.** Clocks went back 25 Oct — every afternoon is an hour
+   shorter than it feels. (I had this wrong by an hour; Zac caught it.)
+2. **ANENDYK boats stop 31 Oct.** Published timetable runs 14-31 Oct 2026 and
+   then nothing until spring; winter is "a skeleton schedule, most of Loutro
+   closes." **Aradena MUST happen by Sat 31** — it needs the Marmara->Loutro
+   boat and the Loutro ferry. **Glyka Nera is exempt**: walk it from Chora
+   Sfakion, 30 min, no boat. Confirm: Chora Sfakion kiosk **28250 91221**.
+
+### The rule for every other day
+| morning cloud | go to | why |
+|---|---|---|
+| **under 30%** | **Balos · Elafonissi · Kedrodasos** | shallow over bright sand — these need the beam |
+| **30-60%** | **Glyka Nera · Marmara · Ilingas coves** | white pebble, turquoise in a band, holds in broken sun |
+| **over 60%** | **Aradena · Preveli palm gorge** | walking days, the only things that do not care about light |
+
+**Two rules that do the work:**
+- **Never spend a clear morning on a gorge.** You can walk it under cloud; you
+  cannot get the colour back.
+- **Never drive the Balos track on a grey morning.** 8 km of dirt each way for a
+  pale paddle is the worst trade of the week.
+
+### How to check
+Windy **Cloud layer as a map**, never a town icon (we measured 15% and 48% at
+opposite ends of one 28 km coast). Compare **ECMWF vs ICON-EU** — agree, trust
+it; disagree, coin flip. **meteo.gr** for the 2 km Greek model, the only
+high-res one covering Crete. **Morning only, day before** — our own run moved
+50 points overnight.
+
+### Still to book before flying
+- Two flight seats EZY8223 / EZY8216
+- Two cars (**Suzuki Vitara** + cheapest second), Chania 26 Oct -> **Heraklion**
+  3 Nov
+- **Sougia boat Thursday** — Yannis +30 697 322 0472 / Meletis +30 694 085 9860,
+  Viber
+- **Rooms 31 Oct - 2 Nov** (Cretan Dream covers 26-31 only)
+
+### Open decision that blocks the rooms
+Flight is **Heraklion 14:10 Tue 3 Nov**. Mon 2 Nov is the clearest morning of
+the trip (5-7% at Balos, Elafonissi, Kedrodasos; 94% on the south coast) — but
+**Balos and Elafonissi are opposite corners, ~1h45 apart. Monday can be one or
+the other, not both.** If Monday is Balos, Monday night must be booked
+**central or east**, not Kissamos — it is 2.5 h to Heraklion.
