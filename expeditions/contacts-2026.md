@@ -890,3 +890,65 @@ Marmara -> climb the gorge back. **14 km, 4 h 45 walking.**
 time.** The reason it is right was something neither of us knew. When he keeps
 returning to an idea, check the thing I am assuming is safe, not just the thing
 he is proposing.
+
+---
+
+## WEDNESDAY — TWO VERSIONS, ZAC'S CALL (25 Oct)
+
+### EASY DAY — nothing to book, nothing to fail
+Park **Livaniana** (tarmac) -> walk down ~1 h -> **Marmara**, swim -> walk back
+up ~1 h -> drive home.
+**2 hours walking for a beach scoring 27.** No cab, no boat, no ferry, no cliff,
+no ladder, no deadline. Leaves most of Wednesday free.
+
+### GORGE DAY — depends where we park
+The gorge comes out at **Marmara**. Getting from Marmara to Loutro is either the
+**water taxi (unconfirmed)** or the **cliff path (ruled out)**. So:
+
+| | park | exit | needs |
+|---|---|---|---|
+| **A — Zac's** | **Chora Sfakion** | water taxi -> 16:00 ferry | **the taxi-boat running** |
+| **B** | **Livaniana** | walk up the riverbed to the car | **nothing** |
+
+**A is the nicer drive** — Chora Sfakion sits on the road home; Livaniana is
+~30 min further up the mountain each way. **B cannot fail.**
+Same cab either way, just from a different village.
+
+### THE CALL DECIDES WHERE WE PARK
+**Hora Sfakion agency 28250 91221, 08:00-18:00.** Three questions:
+1. **Is the Marmara water taxi still running?**
+2. **Can you book a cab to Aradena** (from Chora Sfakion or Livaniana)?
+3. **Is the gorge open?** (Cretan gorges close after rockfall.)
+
+- Running -> **Plan A**, Chora Sfakion, cab, gorge, boat, 16:00 ferry, car.
+- Not running -> **Plan B**, park Livaniana, walk out.
+
+### REAL WALKING TIMES TO MARMARA — there is no 15-minute option
+| from | |
+|---|---|
+| **Livaniana** | **~1 h** down, ~1 h up |
+| Lykos | just under 1 h — **via the cliff** |
+| Loutro | 1.5 h — **via the cliff** |
+| Aradena, through the gorge | 2.5 h |
+| water taxi from Loutro | ~10 min, **if running** |
+
+**The 15 minutes was the CAB figure** (Livaniana -> Aradena by road), not a path.
+Logged because setting off expecting 15 minutes is how people get caught out.
+
+### MARMARA–LYKOS CLIFF PATH — researched, verdict NO
+Evidence conflicts and is recorded honestly.
+**Against:** Tripadvisor — *don't unless "very experienced and no issues with
+heights/vertigo; the stretch between Marmara and Lykos is really difficult."*
+Rother — *"very demanding, requiring surefootedness and a head for heights."*
+AllTrails — *"steep climbs, rocky exposed last segment."* One walker — *"a
+portion of the carved staircase collapsed… an exposed scramble."*
+**For:** AllTrails — *"always wide and safe, new chains being installed"*, and
+someone *"deathly afraid of heights was fine."* West-Crete — *"looks worse in
+the photo than in reality"*, and notes a less scenic alternative for those who
+dislike heights.
+
+**It is a walking path, not a climb, and ordinary people do it.** The NO is
+about Wednesday specifically: tired after a 2.5 h descent · a 13-year-old moving
+fast to keep up · late in the day · **the chains' current state genuinely
+unknown** · and a free alternative exists. Any one alone would be fine; all five
+together, no. Fresh, without Jacob, liking heights — it would be a yes.
