@@ -8161,3 +8161,64 @@ researched in this file.
 ### TOOL ADDED
 `expeditions/commons-sampler.py` — pulls labelled photos from Wikimedia Commons
 by search term. Built because Flickr tags failed completely on inland subjects.
+
+---
+
+# 🟢 DAY 1 — MON 26 OCT, SEITAN LIMANIA. FIRST-HAND REPORT (Zac)
+
+Landed **13:10**, at the car park **15:15** — wrong turns at the start cost
+~45 min against my 14:30 estimate. **Lesson: add navigation slack to every
+first-time drive.** Party of six: James driving, Zac navigating, Jacob, Grace
+and **Paige** (friend's name, first recorded) in the back.
+*"The road down was amazing and the twists and turns were nothing I have ever
+seen before."*
+
+## ⭐ SEITAN LIMANIA — COLOUR 8 → **8.5**
+**Rated in person, in drizzle.** The first beach in the archive scored from
+photographs **and then visited.** It went **UP** half a point.
+
+### 🔴 THIS BREAKS THE HARD RULE
+The standing rule — *"not one beach in Crete shows turquoise under cloud"* —
+came from measuring hundreds of photographs with `sun-cloud-sampler.py`.
+**Zac stood in it in the rain and rated it 8.5**, above his own sunny-photo
+rating of 8.
+
+**First-hand beats the sampler.** The rule is **overstated**. Beaches written
+down on cloud may be better than the numbers said. Do not use the no-turquoise-
+under-cloud rule to cut anything again without flagging this entry.
+*(Measured cyan off its own page: `#03D0EB` / `#02CDE5` — brightest in the
+archive after Preveli. The photos were not flattering it.)*
+
+## ⭐ WATER TEMPERATURE — gate validated
+*"The sea is great temperature even on the north in the rain."*
+**Late October, north coast, raining — and the water was fine.** The 21.5 °C
+gate and **Water = 10 across the board** are confirmed in the field. Temperature
+will not limit anything this week, and the **south coast will be warmer still**.
+
+## THE TWO PATHS — source conflict RESOLVED
+Guidebooks disagreed on which is easier. **Settled on the ground:**
+- **LEFT = harder.** (Follow the fence, switchbacks, no chains.)
+- **RIGHT = steeper**, but chained — the one to hold onto.
+
+**They went DOWN the harder left and UP the steeper right, to do both.**
+**Descent took 10 minutes** — matches the inalto hiking report exactly
+(0.33 km, 50 m, ~10 min). Our access numbers are landing.
+
+## 🔴 GRACE AND PAIGE — heights
+**Turned back ~20 steps in, on the exposure.** Taken back to the car; the three
+went down alone.
+
+Exactly what the guides meant by *"a head for heights is an absolute
+necessity."* **Settles Wednesday:** Aradena is not for them, and the
+**Loutro plan is now clearly right** — the 09:30 or 12:00 ferry from Chora
+Sfakion gives them a car-free harbour village and a proper day, instead of a
+car park or a hotel.
+
+## The day itself
+Drizzling on arrival. Looked from the top, went down, **~20 minutes in the
+water**. Zac **jumped off a cliff into the sea** and swam several hundred metres
+out. Walked out up the steep right-hand path.
+
+⚠️ **Safety note raised once:** several hundred metres out, alone, late October,
+with an offshore wind, is a long way back on a cramp. Swim with someone for the
+rest of the week.
