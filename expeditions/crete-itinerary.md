@@ -8222,3 +8222,46 @@ out. Walked out up the steep right-hand path.
 ⚠️ **Safety note raised once:** several hundred metres out, alone, late October,
 with an offshore wind, is a long way back on a cramp. Swim with someone for the
 rest of the week.
+
+## SEITAN — FINAL, FROM THE GROUND
+**Discovery 8 · Colour 8.5 · Water 10 = 26.5**
+
+Zac held **Discovery at 8** despite calling it the best experience of his life
+and better than Baia di Ieranto on discovery — scored honestly against a car
+park 15 min from the airport. **Experience ≠ Discovery score.** Good calibration;
+keep it.
+
+### 🔴 NEW FACT: Seitan is DEEP, and shelves away fast
+*"It was really deep and it went deep quick."* Deep enough to jump off a cliff
+into. **This is not a shallow wade.**
+
+### THE CLOUD RULE BROKE TWICE IN TWO MESSAGES — stop reducing it to one variable
+1. Original rule: *"no beach in Crete shows turquoise under cloud."* **Broken**
+   by Zac rating it 8.5 in drizzle.
+2. My repair: *"deep goes grey, shallow over white rock holds — Seitan is a
+   shallow slot."* **Also broken** — Zac: it is deep.
+
+### What his own photo actually shows
+In the first frame, taken **from the clifftop**, the open sea beyond the
+headland is **flat grey** and the inlet, **in the same shot under the same
+cloud**, is **turquoise**.
+
+**Most of that contrast is VIEWING ANGLE, not depth.**
+- Looking **steeply down** into the inlet, you see *through* the surface, into
+  the water.
+- Looking **almost flat across** the open sea at the horizon, the surface acts
+  as a mirror and returns the grey sky.
+
+Same water, same cloud, different geometry.
+
+**This also explains the Elafonissi low-sun problem** logged earlier: a west-
+facing beach at 16:00 has the sun at ~18°, shallow angle in and shallow angle
+out — nearly all reflection, very little penetration.
+
+### STANDING CORRECTION
+**Depth, substrate, shelter AND viewing angle all matter, and the shape of each
+place decides which dominates.** Seitan is deep, white-walled, enclosed, and
+viewed from above — and it holds its colour under full cloud.
+Do not cut any beach on a one-variable cloud rule again. The archive already
+had a counter-example it ignored: **Katarti (white pebble, Deep) scored 6 but
+Seitan (white, deep) scores 8.5.**
