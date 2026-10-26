@@ -8265,3 +8265,52 @@ viewed from above — and it holds its colour under full cloud.
 Do not cut any beach on a one-variable cloud rule again. The archive already
 had a counter-example it ignored: **Katarti (white pebble, Deep) scored 6 but
 Seitan (white, deep) scores 8.5.**
+
+## 🔴 CLASSIFIER FLAW — found 26 Oct, affects the whole archive
+Zac, correcting my reading of his own photo: *"it wasn't emerald, it was
+turquoise in at the shore then light blue for the rest."*
+
+**Two errors, both mine:**
+
+1. **Wrong band labels.** His photo was taken **from the water**, so the bottom
+   of the frame is the water around *him*, not the shore. I treated it as the
+   shallow edge. **The turquoise shore strip was behind the camera and was never
+   measured.**
+
+2. **THE CLASSIFIER NAMES HUES AS IF SATURATION DID NOT EXIST.** It called
+   hue 167° "emerald" at **saturation 0.28**. At that saturation it is not
+   emerald — emerald means a *saturated* green. A 170° hue at sat 0.28 reads to
+   the eye as **pale blue**, exactly as Zac described.
+
+**This flaw has been running all week, across every beach.** Anything
+desaturated will have come back "emerald" or "green" when the eye would see
+pale blue or grey-blue. **Never quote a shade name from the sampler again
+without the saturation beside it.**
+
+### THE CORRECT RECORD — Seitan, first-hand
+> **Turquoise at the shore · light blue for the rest · sand almost white.**
+
+Near-white sand -> turquoise where shallow at the shore -> light blue over the
+deeper water behind. **Substrate, depth and distance, all three.** This is the
+palest-first principle working exactly as designed; what was wrong was the
+**naming**, not the structure.
+
+### CALIBRATION ANCHOR — Zac's own photo, drizzle, ~16:00
+| band | hex | hue | **sat** |
+|---|---|---|---|
+| around him, mid-inlet | `#78A69F` | 171° | **0.28** |
+| nearer the camera | `#77A59B` | 167° | **0.28** |
+| under the cliff wall (shaded) | `#606D5E` | 112° | **0.14** |
+
+**Official page photos of the same water: `#03D0EB`, hue 192°, sat 0.99.**
+**The promotional shots are ~3.5× more saturated than the real thing.**
+
+Zac said this before any measuring began: *"sometimes they exaggerate the
+turquoise to make people go there."* **He was right, and this is the number.**
+*(Caveat: `#03D0EB` was bright sun from above, his was drizzle at 16:00. Some of
+the gap is light. Not a factor of 3.5.)*
+
+**ANCHOR: hue ~169°, sat 0.28, overcast = Zac's 8.5.** Treat any sampler result
+at sat 0.9 as sun plus a saturation slider, not as what we will see.
+Note also: **shaded water drops to olive, sat 0.14, thirty metres away inside
+the same inlet.** Geometry beats any single rule.
