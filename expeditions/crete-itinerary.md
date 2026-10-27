@@ -8361,3 +8361,69 @@ nowhere near Seitan Limania yesterday."*
 little harbour at the east end of Elafonissi beach.** It is the genuinely hidden
 one — the entry that would actually have competed with Seitan on Discovery.
 **Keep it for a spare afternoon.**
+
+---
+
+# ⚙️ SYSTEM CHANGE — 27 Oct 2026. SCORING MOVES TO /20
+**Zac: "From now everything out of 20, start now, not Crete."**
+
+## The change
+**Discovery /10 + Colour /10 = /20.**
+**WATER IS NOW A GATE, NOT A SCORE:** *is the water body big enough to swim in?*
+Pass or cut. **Weak-link rule unchanged: below 7 in either, cut regardless.**
+**The 28+ tier becomes 18+.**
+
+**Why:** sea water scored 10 every single time. A constant carries no
+information — it was a gate pretending to be a number.
+
+## 🔴 CRETE IS NOT RESCORED
+**Crete stays on /30.** It is a closed archive; rescoring it would break every
+comparison already recorded in this file. **All Crete entries above remain /30.
+Everything scored from 27 Oct onward is /20.**
+
+## 🔴 CORRECTION — I had the Water criterion wrong all along
+I had written Water up as a **temperature gate (21.5 °C)** and used it to fail
+the Cretan inland pools, reasoning from Kourtaliotiko being 14 °C.
+
+**Zac's actual rule: "water is just — is the water body big enough to swim in."**
+
+So Kourtaliotiko and Sarakina do **not** fail on cold. They fail because they
+are **plunge pools, not swims.** Same verdict, wrong reason recorded.
+The temperature reasoning in the inland-water section above is **superseded**.
+
+---
+
+# 🏝️ COOK ISLANDS — first entries on the /20 scale
+Researched 27 Oct 2026. Sea, so the Water gate passes for all.
+
+| | **D** | **C** | **/20** | confidence |
+|---|---|---|---|---|
+| **Suwarrow** | **10** | **9** | **19** | 🟡 colour from 7 Flickr photos, range reached turquoise, palest `#67A694` |
+| **Palmerston** | **10** | **9** | **19** | 🔴 **colour INFERRED from geology — zero photographs exist** |
+| **Penrhyn (Tongareva)** | **9** | **9** | **18** | 🔴 **colour INFERRED — zero photographs exist** |
+| Manihiki | 7 | 8 | 15 | airstrip, inhabited, black-pearl farms |
+| **Aitutaki / One Foot** | **4** | **10** | — | ❌ **CUT on weak link** |
+
+### Discovery evidence
+- **Suwarrow** — uninhabited but for caretakers (Jun–Oct), **not an official port
+  of entry**, reachable only *"via yacht or on the extremely infrequent cargo
+  ship."* National park.
+- **Palmerston** — ~60 residents, all descended from one man. **No pass into the
+  lagoon**; boats anchor outside the reef, officials come out, weekdays only.
+  *"Absolutely no tourism industry."*
+- **Penrhyn** — northernmost island, largest lagoon in the Cooks, *"isolated
+  community rarely visited by outsiders."* Cargo ship.
+
+### ⭐ AITUTAKI HOLDS THE ONLY COLOUR 10 IN EITHER ARCHIVE — AND IT IS CUT
+*"The clearest blue water we've ever seen"* · *"count coral heads in 2 metres"*
+· *"pale turquoise in the shallows to vivid cobalt at the reef edge."*
+**Nothing in Crete ever reached 10.** But it is the main tourist activity in the
+country with daily lagoon cruises — **Discovery 4, cut on the weak link**, on
+exactly the ground Elafonissi fell short on the same day.
+
+### ⚠️ EVIDENCE WARNING
+**My sampler returned Aitutaki as "green"** — the lagoon every source calls the
+most beautiful on earth. When a tool contradicts evidence that strong, **the
+tool is wrong**, so its numbers were not used for the atolls either.
+**Palmerston and Penrhyn rest entirely on Discovery with colour unmeasured.**
+That is Alykapounda territory. **Treat as candidates, not entries.**
