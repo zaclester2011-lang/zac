@@ -8314,3 +8314,50 @@ the gap is light. Not a factor of 3.5.)*
 at sat 0.9 as sun plus a saturation slider, not as what we will see.
 Note also: **shaded water drops to olive, sat 0.14, thirty metres away inside
 the same inlet.** Geometry beats any single rule.
+
+---
+
+# 🟢 DAY 2 — TUE 27 OCT, ELAFONISSI. FIRST-HAND (Zac)
+
+## ⭐ ELAFONISSI — Discovery 5 → **6** · Colour **9** (confirmed) · Water 10 = **25**
+*"It is soo pink and defo colour 9, it was turquoise and you can stand up 100
+metres out. It wasn't hidden at all though, it just felt like a normal beach."*
+
+**Below Seitan's 26.5, and Zac said so before doing the arithmetic.** Second day
+running where his gut and his own scoring agree without adjustment.
+
+### ⭐ THE COLOUR METHOD IS WORKING — DISCOVERY IS THE WEAK HALF
+| | predicted from photos | first-hand | |
+|---|---|---|---|
+| Seitan | Colour 8 | **8.5** | +0.5 |
+| Elafonissi | Colour 9 | **9** | **exact** |
+| Seitan | Discovery 8 | 8 | held |
+| Elafonissi | Discovery 5 | **6** | **+1** |
+
+**Colour — Zac's half, scored from photographs — is accurate to within half a
+point twice. Discovery — my half, scored from access descriptions — has already
+moved once.** If anything needs auditing before the rest of the week, it is
+**Discovery**, which has never been audited at all.
+
+### Why it is a 9 — the OPPOSITE mechanism to Seitan
+*"You can stand up 100 metres out."* Ankle-deep over pink-white sand, so almost
+all the light goes down, hits sand and returns. **Maximum return, minimum water
+column.**
+
+**Seitan is deep and shelves away fast**, and gets its turquoise from white
+walls plus the steep angle you look down into it.
+
+**Two completely opposite mechanisms, identical result.** More evidence against
+any single-variable rule — see the cloud-rule corrections from Day 1.
+
+## The day
+Explored the islet and **hiked to the top**. Did **not** take the coast path to
+Kedrodasos. *"The drive was amazing. Full of twists and turns and epic mountain
+views. We stopped off and just took pictures and called our mum. A great day but
+nowhere near Seitan Limania yesterday."*
+
+### 🟡 KEDRODASOS STILL UNVISITED
+**It is the 27, it has no road, and it is ~40 min along the cave path from the
+little harbour at the east end of Elafonissi beach.** It is the genuinely hidden
+one — the entry that would actually have competed with Seitan on Discovery.
+**Keep it for a spare afternoon.**
