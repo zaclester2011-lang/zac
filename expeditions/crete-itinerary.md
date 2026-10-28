@@ -8427,3 +8427,55 @@ most beautiful on earth. When a tool contradicts evidence that strong, **the
 tool is wrong**, so its numbers were not used for the atolls either.
 **Palmerston and Penrhyn rest entirely on Discovery with colour unmeasured.**
 That is Alykapounda territory. **Treat as candidates, not entries.**
+
+---
+
+# 🏖️ NORTH COAST CRETE — scored on /60, 28 Oct 2026
+Researched on the rainy day. **W/20 (sea = 10) · D/20 · C/20. Weak link = 14.**
+
+| | **W** | **D** | **C** | **/60** | weak link | colour evidence |
+|---|---|---|---|---|---|---|
+| **Limnionari** | 10 | **18** | 14 | **42** | ✅ scrapes | 🔴 one line of travel prose |
+| **Chironisia** | 10 | **18** | 12 | 40 | ❌ cut | 🟢 **measured** — 43% water in frame, `#6089BB` plain blue |
+| **Katholiko bay** | 10 | 13 | **16** | **39** | ✅ **passes** | ⭐ **Zac's rating** |
+| Menies / Diktynna | 10 | 16 | 13 | 39 | ❌ cut | 🔴 sources contradict |
+| Skotini | 10 | 16 | 12 | 38 | ❌ cut | ⚠️ 11% water in frame, may be sky |
+| Agios Vasilios | 10 | 14 | 12 | 36 | ❌ cut | ⚠️ same page as Skotini |
+
+## Findings
+**Only two clear the weak link: Limnionari and Katholiko** — and **Katholiko is
+the better evidenced**, because its 16 is Zac's judgement and Limnionari's 14 is
+me reading one line of travel copy at face value.
+
+**Chironisia is the only sound measurement on the coast and it is plain blue.**
+
+### ⭐ SEITAN IS THE NORTH COAST'S ONE TURQUOISE
+**Seitan: 10 · 16 · 17 = 43** (verified, first-hand).
+**Every north-coast candidate scores below it, and the entire gap is colour —
+17 against 12.** On Discovery they compete and two of them win: Chironisia and
+Limnionari both reach 18 because they are boat-only, where Seitan has a car park.
+
+**There is no second Seitan on this coast.** These are places with good access
+stories and ordinary water.
+
+### Access notes
+- **Chironisia, Limnionari** — private boat only.
+- **Menies / Diktynna** — **23 km dirt road** from Rodopos, or 4x4, or boat.
+  Sources conflict on colour: *"crystal-clear turquoise"* vs *"pebbles and deep
+  blue waters."*
+- **Skotini** — 20–25 min from the Agia Marina chapel at Ravdoucha toward
+  Nopigia, then veer off and descend past **old iron-ore workings** and a **cave
+  where goats shelter**. *"A bit tricky — good shoes, be prepared for some
+  scrambling."* Drive in is **paved**.
+- **Agios Vasilios** — shares one cretanbeaches page with Skotini (same
+  Lykos/Finikas problem). *"Ascend a very bad dirt road on foot, then down to the
+  beach."* **Restored chapel of Saint Basil stands on the sand.**
+- **Katholiko bay** — on foot from **Gouverneto monastery**: Bear Cave
+  (Arkoudiotissa) ~15–20 min, ruined **Katholiko monastery** ~20 min more, then
+  down the gorge to the bay. **2–3 h return.** Splits well — Grace and Paige can
+  do the cave and turn back.
+
+### ⚠️ Pages that 404 on cretanbeaches
+**Limnionari, Menies/Diktynna and Katholiko bay have no page.** Their colour is
+prose or judgement, never measurement. The 404 is the Alykapounda signal —
+recorded so nobody later mistakes those numbers for measured ones.
