@@ -998,3 +998,52 @@ conflict ("rudimentary, not reliable" / "no handrails"). **Assume no handrail.**
    shades over well before that — and the next shower lands about then.
 
 **Nothing at the beach**: no taverna, no water, no shade. Carry it down.
+
+---
+
+## 🔵 THURSDAY 29 OCT — THE SOUGIA BOAT. AGREED PLAN
+Forecast issued 28 Oct 11:19 UTC.
+
+### The window is 08:00–10:30, and that is the whole day
+| | boat coast | Sougia |
+|---|---|---|
+| 07:00 | 39% | 45% |
+| **08:00** | **25%** | 23% |
+| **09:00** | **12% clear sky** | **19%** |
+| **10:00** | **21%** | 62% |
+| 11:00 | 64% | **100%, rain** |
+| 13:00 | 88%, **14 kn** | 82%, showers |
+| 14:00 | 76%, **17 kn** | 90% |
+
+**After 11:00 the colour is gone for the day**, and the wind builds from 7 kn to
+17 kn by 14:00.
+
+### THE PLAN — 09:30 departure, seven hours, back 16:30
+Zac's call, and it works **because of the running order**, not the start time.
+
+**🔴 DO DOMATA FIRST. RUN EAST, COME BACK WEST.**
+- **ΔΩΜΑΤΑ 28** — the highest score of the trip — is **~15 km east of Sougia**,
+  about 30 min. Leave 09:30, **be there by 10:00, inside the 21% window.**
+- **ΤΡΥΠΗΤΗ / ΣΕΝΤΟΝΙ** ~8 km east — on the way back.
+- **ΛΙΣΣΟΣ is 2 km from Sougia** — next door. **Do it LAST**, on the way in,
+  whatever the sky is doing.
+
+**Spend the clear hour on the best beach, not the nearest one.** Costs nothing.
+
+### Ask on the call
+1. **Earliest departure** — 09:30 agreed, but say why if they offer later.
+2. **Domata · Lissos · Trypiti · Sentoni by name**, and **east first**.
+3. **Price and numbers** — it is a boat, so **Grace and Paige can come**. No
+   scrambling.
+4. **The Domata landing** — a beach landing through swell onto pebble. What
+   footwear, do bags stay aboard?
+5. **The afternoon wind** — is seven hours comfortable at 17 kn, and does the
+   Domata landing get harder later? **If the skipper says shorter, take his word.**
+
+### Logistics
+**Chania → Sougia ~70 km, 1h15–1h30** through the Agia Irini gorge.
+09:30 boat -> leave Chania ~07:45. Sunrise 06:50, so it is light the whole way.
+**Fuel the car tonight.** Pack: water and food for everyone (**no facilities at
+any of the four**), dry bag, shoes for pebble landings, sun cream.
+
+**Yannis +30 697 322 0472 · Meletis +30 694 085 9860 — Viber**
