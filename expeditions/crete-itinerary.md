@@ -8589,3 +8589,49 @@ caps its Discovery at 13.
 photograph to confirm the subject.** The sampler cannot tell a Cretan cove from
 a Peloponnesian village, a dry gorge from the sky, or a beach from a man on a
 staircase. **Look first, then measure.**
+
+---
+
+# ❌ CONSOLIDATION — CHIRONISIA, LIMNIONARI AND MENIES ARE ONE PLACE
+**Zac, 28 Oct: "remove it it doesnt exist. also chironisio and menies are the
+same thing."** He is right, and the page URLs prove it:
+
+- `chironisia-beach-**at-menies**`
+- `limnionari-beach-at-agios-georgios-**menies**`
+
+**All three are Menies bay.** Chironisia is the cove just before it; Limnionari
+sits at the mouth of the Agios Georgios gorge just south of it.
+
+**I was scoring one bay three times** — 52 + 50 + 50 — which inflated the north
+coast list by two entries. **Same failure family as Lykos/Finikas, the two
+Vathys and the two Agios Antonios.** It also explains why all three measured
+plain-blue-ish: **it is the same water.**
+
+## ✅ ONE ENTRY REPLACES THREE
+**ΜΕΝΙΕΣ / MENIES — 20 · 16 · 14 = 50** 🟢 measured from the one verified frame
+(pale grey-white pebble, caves in the cliff, hue 180° / sat 0.26).
+**Limnionari and Chironisia are removed as separate entries.**
+
+*Note for the record: Limnionari does have its own cretanbeaches page, so by the
+standing rule it is a real named beach — it is simply not a separate
+destination.*
+
+### Access, corrected
+I had recorded Limnionari as **"boat only" — that was wrong.** Its own listing
+includes **Walking**: there is a route down the **Agios Georgios gorge**, which
+starts south of the deserted monastery of Saint George at Menies. But
+*"access through the gorge is demanding and arduous"*, it is **unmarked**, and
+the gorge head is **at the end of the 23 km dirt road**. Two problems stacked.
+
+**By sea:** 8 nautical miles from **Kolymvari**, 15 from Chania Old Port, 35–40
+min by fast boat. **Licence-free bareboat rentals exist** — one day from
+Kolymvari would cover the whole bay under your own steam.
+
+## 🏖️ NORTH COAST — FINAL, TWO ENTRIES
+| | W | D | C | **/60** |
+|---|---|---|---|---|
+| **Menies** | 20 | 16 | 14 | **50** |
+| **Katholiko bay** | 20 | 13 | 16 | **49** |
+
+**Seitan 53 (verified) beats both.** The north coast has one turquoise and we
+have already swum in it.
