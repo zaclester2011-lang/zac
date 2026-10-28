@@ -8526,3 +8526,66 @@ have zero photographs anywhere.
 
 **⭐ Aitutaki holds the only perfect Colour 20 in either archive, and the weak
 link still throws it out.**
+
+---
+
+# 🔬 NORTH COAST — VERIFICATION PASS, 28 Oct 2026
+Every colour score re-checked by **viewing the photographs**, not just reading
+the sampler. Two of six were built on pictures of the wrong thing.
+
+## ❌ REMOVED — SKOTINI and AGIOS VASILIOS
+**Colour withdrawn and both entries removed from the list.**
+
+The Flickr tag `skotini` returned **a mountain village with pine forest and
+red-tiled roofs** — mainland Greece, not the Cretan coast. **All eight photos
+contaminated.** The earlier `#86A2B8 blue-green` reading measured a different
+place entirely.
+
+**Agios Vasilios goes with it**: it shares one cretanbeaches page with Skotini
+(the same Lykos/Finikas problem), so its 12 came from the same bad evidence.
+
+*Same failure family as Ieranto (washing line), Pachia Ammos (wrong island),
+Kourtaliotiko (a chapel and a footpath) and Sarakina (sky in a dry gorge).*
+**The tag is not the place.**
+
+## 🟠 MENIES — one usable photo in eight, and it is now measured
+The rest of the tag included **an elderly man standing on a staircase.**
+Measured from the single verified beach frame only:
+
+| | | hue | sat |
+|---|---|---|---|
+| band | `#7EA1B5` blue-green | 202° | 0.30 |
+| body | `#6F9696` turquoise | 180° | **0.26** |
+
+**Against Zac's Seitan anchor — hue 169°, sat 0.28, in drizzle — Menies reads
+sat 0.26 in bright sunshine.** Less saturated in far better light, therefore
+**below Seitan. Colour 14.**
+
+The photo also shows **pale grey-white pebble and caves in the cliff** — a
+genuinely good-looking cove.
+
+## 🟢 KATHOLIKO — the trail is VERIFIED
+One photo is the **waymarked signpost**:
+`ΑΓΙΟΣ ΓΕΩΡΓΙΟΣ 1.3 km · ΚΑΘΟΛΙΚΟ 4.2 km · ΑΡΚΟΥΔΟΣΠΗΛΙΟΣ 4.8 km ·
+ΜΟΝΗ ΓΟΥΒΕΡΝΕΤΟΥ 5.4 km`
+
+Working back from Gouverneto: **Bear Cave ≈ 0.6 km, Katholiko ≈ 1.2 km** —
+matching the guides exactly. It is a **signposted, waymarked trail**, which
+caps its Discovery at 13.
+**Colour remains unmeasured** — the only Katholiko photo was the signpost itself.
+
+## THE LIST AFTER VERIFICATION
+| | W | D | C | **/60** | evidence |
+|---|---|---|---|---|---|
+| **Limnionari** | 20 | 18 | 14 | **52** | 🔴 prose only — no photographs exist anywhere |
+| **Menies / Diktynna** | 20 | 16 | **14** | **50** | 🟢 **measured**, 1 verified frame |
+| **Chironisia** | 20 | 18 | 12 | **50** | 🟢 measured from its page, 43% water |
+| **Katholiko bay** | 20 | 13 | 16 | **49** | ⭐ Zac's colour · 🟢 trail verified |
+
+**Seitan 53 (verified) still beats all four.**
+
+## STANDING RULE ADDED
+**Never score a colour from a sampler result without viewing at least one
+photograph to confirm the subject.** The sampler cannot tell a Cretan cove from
+a Peloponnesian village, a dry gorge from the sky, or a beach from a man on a
+staircase. **Look first, then measure.**
