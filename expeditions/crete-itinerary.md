@@ -8479,3 +8479,50 @@ stories and ordinary water.
 **Limnionari, Menies/Diktynna and Katholiko bay have no page.** Their colour is
 prose or judgement, never measurement. The 404 is the Alykapounda signal —
 recorded so nobody later mistakes those numbers for measured ones.
+
+---
+
+# ⚙️ CORRECTION — WATER IS 20 FOR THE SEA, NOT 10
+**Zac, 28 Oct: "water is always 20 for the sea."** I had recorded it as 10/20.
+
+## This makes the conversion trivial
+Old: D/10 + C/10 + W/10, W always 10.
+New: D/20 + C/20 + W/20, W always **20**.
+**=> EVERY OLD SCORE SIMPLY DOUBLES.** (My earlier `(old × 2) − 10` is wrong and
+is superseded.)
+
+**Weak link stays 14/20. The top tier becomes 56+.**
+
+## CRETE, CONVERTED (×2)
+**ΔΩΜΑΤΑ 56** · Λισσός · Μάρμαρα · Κεδρόδασος · Πρέβελη · Αγιοφάραγγο **54**
+· **ΣΕΪΤΑΝ 53** ✓ verified · Μπάλος · Γλυκά Νερά **52** · **ΕΛΑΦΟΝΗΣΙ 50** ✓
+verified · Τρυπητή · Ίλιγκας coves · Λυκός **52** · Σεντόνι · Άγιος Παύλος **50**
+**Asterousia:** Πικροβλυχάδα · Βάλα · Άσπες **56**
+
+## NORTH COAST, RESTATED
+| | W | D | C | **/60** |
+|---|---|---|---|---|
+| **Limnionari** | 20 | 18 | 14 | **52** |
+| **Chironisia** | 20 | 18 | 12 | **50** |
+| **Katholiko** | 20 | 13 | **16** | **49** |
+| Menies | 20 | 16 | 13 | 49 |
+| Skotini | 20 | 16 | 12 | 48 |
+| Agios Vasilios | 20 | 14 | 12 | 46 |
+
+**Seitan 53 still beats every one of them.**
+
+## COOK ISLANDS, RESTATED
+| | W | D | C | **/60** |
+|---|---|---|---|---|
+| **Suwarrow** | 20 | **20** | 18 | **58** |
+| **Palmerston** | 20 | **20** | 18 | **58** |
+| **Penrhyn** | 20 | 18 | 18 | **56** |
+| Manihiki | 20 | 14 | 16 | 50 |
+| **Aitutaki / One Foot** | 20 | **8** | **20** | ❌ **CUT** — D8 below the 14 weak link |
+
+**Suwarrow and Palmerston at 58 are the highest anything has scored in either
+archive.** Colour on both is **inferred, not measured** — Palmerston and Penrhyn
+have zero photographs anywhere.
+
+**⭐ Aitutaki holds the only perfect Colour 20 in either archive, and the weak
+link still throws it out.**
