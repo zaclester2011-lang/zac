@@ -8635,3 +8635,56 @@ Kolymvari would cover the whole bay under your own steam.
 
 **Seitan 53 (verified) beats both.** The north coast has one turquoise and we
 have already swum in it.
+
+---
+
+# ⚙️⚙️ SYSTEM REVERTED TO /30 — 28 Oct 2026 (FINAL FOR NOW)
+**Zac: "you know what ate verything out of 10 again."**
+
+## 🔴 THIS IS THE CURRENT SYSTEM. IGNORE THE /20 AND /60 SECTIONS ABOVE.
+**Discovery /10 + Colour /10 + Water /10 = /30.**
+**Sea = Water 10, always. Weak link = 7. Top tier = 28+.**
+
+The scale changed three times on 28 Oct (/20 totals, then /60 with Water 20,
+then back). **Everything in this file above dated 27–28 Oct that uses /20 or /60
+is superseded.** The Crete archive was always /30 and **reverts untouched** —
+no conversion needed.
+
+## Converted back (halved from /60)
+### North coast
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| **Menies** | 10 | 8 | 7 | **25** | C7 exactly meets the weak link |
+| **Katholiko bay** | 10 | **6.5** | 8 | 24.5 | ❌ **CUT — D6.5 below 7** |
+
+**The revert flips the 1v1.** On /10, Katholiko fails the weak link: a
+signposted, waymarked trail 1.2 km from a monastery car park is not a 7.
+*(Chironisia and Limnionari remain removed — they are the same bay as Menies.)*
+
+### Cook Islands
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| **Suwarrow** | 10 | 10 | 9 | **29** | 🟡 7 photos |
+| **Palmerston** | 10 | 10 | 9 | **29** | 🔴 no photographs exist |
+| **Penrhyn** | 10 | 9 | 9 | **28** | 🔴 no photographs exist |
+| Manihiki | 10 | 7 | 8 | 25 | |
+| **Aitutaki / One Foot** | 10 | **4** | **10** | — | ❌ CUT. **Only Colour 10 in either archive** |
+
+### Crete — unchanged
+**Domata 28** · Lissos, Marmara, Kedrodasos, Preveli, Agiofarango **27** ·
+**Seitan 26.5** ✓ verified · Balos, Glyka Nera **26** · **Elafonissi 25** ✓
+verified · Asterousia: Pikrovlychada, Vala, Aspes **28**
+
+## KATHOLIKO — colour has NO evidence
+Six Flickr tag variants, Wikimedia Commons, and the cretanbeaches page 404s.
+**No photograph of the water exists anywhere reachable.** The `avlaki` frame
+that measured turquoise turned out to be **the monastery itself** — the stone
+bridge across the gorge — with no water in shot.
+**Zac's 8 is the only number on the board with nothing at all behind it.**
+
+## Verified hike — Gouverneto to Katholiko
+Signpost: `ΚΑΘΟΛΙΚΟ 4.2 km · ΑΡΚΟΥΔΟΣΠΗΛΙΟΣ 4.8 km · ΜΟΝΗ ΓΟΥΒΕΡΝΕΤΟΥ 5.4 km`
+From the monastery: **Bear Cave 0.6 km, Katholiko 1.2 km, the bay ~1.8–2 km.**
+**Cave + monastery return: 2–3 h. To the sea and back: 3–3.5 h.**
+Return is all uphill. Grace and Paige can do the Bear Cave at 600 m and turn
+back having seen the best of it.
