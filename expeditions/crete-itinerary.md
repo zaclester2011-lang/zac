@@ -8688,3 +8688,78 @@ From the monastery: **Bear Cave 0.6 km, Katholiko 1.2 km, the bay ~1.8–2 km.**
 **Cave + monastery return: 2–3 h. To the sea and back: 3–3.5 h.**
 Return is all uphill. Grace and Paige can do the Bear Cave at 600 m and turn
 back having seen the best of it.
+
+---
+
+# 🇨🇻 CAPE VERDE — FULL REGION SWEEP, 29 Oct 2026
+Scored on the current system: **D/10 + C/10 + W/10 = /30. Sea = Water 10.
+Weak link 7. Top tier 28+.**
+Fifteen beaches, ten islands. Colour measured with the Flickr sampler and
+**every reading checked by viewing the photographs**, per the standing rule.
+
+## THE TABLE
+| | island | **D** | **C** | **W** | **/30** | evidence |
+|---|---|---|---|---|---|---|
+| **Santa Luzia** | *uninhabited* | **10** | **?** | 10 | **—** | ☠️ unmeasurable · debris · permit |
+| **Fajã d'Água** | Brava | 8 | 7 | 10 | **25** | ferry-only island, often rough |
+| **Ponta Preta / Morro** | Maio | 8 | 7 | 10 | **25** | deserted, pale sand, west coast |
+| **Tarrafal de Monte Trigo** | Santo Antão | 8 | 6 | 10 | 24 | boat or long track |
+| **Carriçal** | São Nicolau | 8 | ? | 10 | — | 🔴 no photographs exist |
+| **Varandinha** | Boa Vista | 7 | 6 | 10 | 23 | 4x4; **Atlantic surf breaking** |
+| **Curralinho / Santa Monica** | Boa Vista | 6 | 7 | 10 | 23 | 4x4; hotel development mooted |
+| **São Francisco** | Santiago | 5 | 6 | 10 | 21 | track from Praia |
+| **Baía das Gatas** | São Vicente | 5 | 6 | 10 | 21 | |
+| **Buracona** | Sal | 4 | 7 | 10 | 21 | the "blue eye" — tourist stop |
+| **Praia Grande** | São Vicente | 4 | 6 | 10 | 20 | |
+| **Chaves** | Boa Vista | 4 | ? | 10 | — | 20 photos, **none usable** |
+| **Santa Maria / Ponta Preta** | Sal | 3 | 7 | 10 | 20 | package island |
+| **Tarrafal** | Santiago | 3 | 7 | 10 | 20 | town beach |
+| **Branco · Raso · Ilhéus do Rombo** | islets | **10** | ? | 10 | — | 🔴 no photos; strict reserves |
+
+## ⭐ VERDICT: CAPE VERDE HAS NO 27. ITS BEST IS 25.
+**Maio and Brava at 25 — Elafonissi-tier**, and Elafonissi is the one Zac called
+*"a normal beach."*
+
+**Colour measured plain blue to blue-green on every single island.** Where
+TURQUOISE appears it is in the range, never the typical. **Tarrafal's palest
+`#D7FFFF` is near-white — surf foam or sky, not water.**
+
+## 🔴 SANTA LUZIA — Discovery 10, and still not an entry
+Seven photographs, **not one usable shot of the water surface**: an underwater
+macro of a nudibranch, a hazy view of the island from São Vicente, a sunset
+silhouette — and one beach-level frame.
+
+**That frame shows the beach covered in marine debris** — fishing nets, rope,
+plastic drums, floats, buckets, the length of the strand line.
+
+**This is what windward Atlantic islands do.** They are debris traps: the
+current delivers the ocean's rubbish and nobody lives there to clear it. Same
+mechanism that makes Henderson Island the most plastic-polluted place on earth
+despite being uninhabited.
+
+### 🧭 NEW STANDING RULE
+**AN UNINHABITED ISLAND IS NOT AUTOMATICALLY PRISTINE.** Check for marine debris
+before scoring any windward, current-facing, uninhabited shore. Discovery 10
+does not imply a clean beach.
+
+Add the permit problem — one source says visits are **forbidden except to
+scientists and volunteers**, another describes guided NGO day trips — and Santa
+Luzia is an open question, not a destination.
+
+## ⭐ WHY THE CEILING IS LOWER HERE — THE REEF RULE
+**Cape Verde has no barrier reefs.** The Cook Islands reach 28–29 because a reef
+makes a **flat, shallow, sheltered lagoon over white coral sand.** Cape Verde is
+**open Atlantic**: Saharan sand gives pale beaches, but behind them is moving
+ocean with swell.
+
+**PALE SAND ALONE DOES NOT MAKE A 27. You need sand AND shallow AND still.**
+Cape Verde has one of the three.
+
+**This sharpens the global search: look for barrier-reef lagoons, not remote
+islands.** Remote volcanic islands are deep, dark and rough. The 27+ live where
+remoteness and a reef coincide.
+
+## Running global 27+ list
+**Cook Islands:** Suwarrow 29 · Palmerston 29 · Penrhyn 28 *(colour inferred)*
+**Crete:** Domata 28 · Pikrovlychada, Vala, Aspes 28 · Cape Tripiti 28 · ~15 at 27
+**Cape Verde:** none
