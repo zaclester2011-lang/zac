@@ -8671,7 +8671,8 @@ signposted, waymarked trail 1.2 km from a monastery car park is not a 7.
 | **Aitutaki / One Foot** | 10 | **4** | **10** | — | ❌ CUT. **Only Colour 10 in either archive** |
 
 ### Crete — unchanged
-**Domata 28** · Lissos, Marmara, Kedrodasos, Preveli, Agiofarango **27** ·
+**Domata 28** · Lissos, Marmara, Kedrodasos, Agiofarango **27** ·
+**Preveli 23** *(corrected 31 Oct — see below)* ·
 **Seitan 26.5** ✓ verified · Balos, Glyka Nera **26** · **Elafonissi 25** ✓
 verified · Asterousia: Pikrovlychada, Vala, Aspes **28**
 
@@ -8763,3 +8764,48 @@ remoteness and a reef coincide.
 **Cook Islands:** Suwarrow 29 · Palmerston 29 · Penrhyn 28 *(colour inferred)*
 **Crete:** Domata 28 · Pikrovlychada, Vala, Aspes 28 · Cape Tripiti 28 · ~15 at 27
 **Cape Verde:** none
+
+---
+
+# 🔴 PREVELI — DISCOVERY CORRECTED, 31 Oct 2026
+**Zac: "Is Preveli a hidden beach."**
+
+**No. And the file had it at Discovery 9, which was wrong.**
+
+| | W | D | C | **/30** |
+|---|---|---|---|---|
+| Preveli — as filed | 10 | **9** | 8 | **27** |
+| **Preveli — corrected** | 10 | **5** | 8 | **23** |
+
+## Why 5
+- A **signposted tarmac car park** above the gorge mouth, open to any hire car.
+- **Boat trips run to it** from Plakias and Agia Galini in season.
+- It is on the front of guidebooks and in every "best beaches in Crete" list.
+- The 470 steps are **effort, not obscurity.** A staircase with a handrail that
+  thirty people a day descend is not a discovery; it is an admission fee.
+
+**Discovery measures whether anyone else is there.** Preveli fails on its own
+terms. The palm forest and the freshwater river are genuinely worth seeing —
+that is a different claim from *hidden*, and the brief is hidden.
+
+## What this costs the list
+**Preveli drops out of the 27 tier entirely.** It no longer competes with
+Marmara, Lissos, Kedrodasos or Agiofarango, and it should not have been one of
+the three must-dos. **23 with a weak link of D5 would ordinarily be cut** —
+it survives on the list only as a thing you pass on the drive east.
+
+## 🟡 Standing flag — Discovery has never been audited
+Colour is Zac's and has been checked photograph by photograph. **Discovery is
+mine and has never had a verification pass.** It has now moved twice on
+first-hand or scrutiny grounds:
+
+| | filed | corrected | by |
+|---|---|---|---|
+| **Elafonissi** | 8 | **6** | Zac, on the ground — "it wasn't hidden at all" |
+| **Preveli** | 9 | **5** | Zac, asking the obvious question |
+
+**Both corrections went the same way: down.** Every famous-but-effortful beach
+in this archive is suspect on Discovery, and the suspicion is systematic, not
+incidental — I have been scoring the *walk* and calling it obscurity. The 27+
+tier needs re-reading against "would anyone else be there," which is a bigger
+job than one beach.
