@@ -8904,3 +8904,39 @@ reading than the per-spot test I had been asking for.
 **Status: confirmed.** The claim has been in this file for four months on the
 strength of the name and one guidebook line. It now has a measurement behind
 it, and the measurement is a comparison against our own verified data.
+
+---
+
+# 🔴 AGIOFARANGO — WRITTEN DOWN TO 26, 31 Oct 2026
+**Zac: "make it 26."**
+
+| | W | D | C | **/30** |
+|---|---|---|---|---|
+| Agiofarango — as filed | 10 | **9** | 8 | **27** |
+| **Agiofarango — corrected** | 10 | **8** | 8 | **26** |
+
+## Why, and this one is pre-emptive
+Not because anything new was found. **Because Discovery is my half and it is
+0 for 3** — Elafonissi 8→6, Preveli 9→5, Glyka Nera 8→7.5, every one of them
+corrected downward the moment it was checked against reality.
+
+A 9 that has never been stood in, from a scorer with that record, is a 9 that
+should be an 8. **The discount is applied before the visit rather than after
+it** — the first time a Discovery figure in this archive has been corrected
+without waiting for someone to catch it.
+
+**Agiofarango also carries a seasonal caveat:** boats run there in July and
+August. Its Discovery is a **November** figure. On 3 November the gorge is the
+only way in and nothing is sailing — which is what keeps it at 8 rather than
+lower.
+
+## Where it leaves the last two days
+| | | |
+|---|---|---|
+| **Marmara**, via Aradena | **27** | the highest reachable water left |
+| **Agiofarango** | **26** | ties Seitan's verified 26.5 within the error bar |
+
+**Agiofarango no longer clears Seitan.** It is now the second-best water of the
+trip on paper rather than the best, and the case for going is no longer the
+score — it is that the boats have stopped, the gorge is the only way in, and
+it is the emptiest sea available on the last morning.
