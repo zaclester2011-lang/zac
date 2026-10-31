@@ -8809,3 +8809,73 @@ in this archive is suspect on Discovery, and the suspicion is systematic, not
 incidental — I have been scoring the *walk* and calling it obscurity. The 27+
 tier needs re-reading against "would anyone else be there," which is a bigger
 job than one beach.
+
+---
+
+# ✅ DAY 3 VERIFIED — GLYKA NERA, Sat 31 Oct 2026
+**Third first-hand entry. Party of three — James, Zac, Jacob.**
+*(Grace and Paige had gone home.)*
+
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| Glyka Nera — filed | 10 | 8 | 8 | **26** | prediction |
+| **Glyka Nera — verified** | 10 | **7.5** | **8** | **25.5** | ✓ stood in it |
+
+## Colour — 8
+**Zac: "colour 7 but defo 8 in the sun and it is sunny most of the year so 8."**
+
+Observed **7** on the day. He rated the water's **capability**, not the single
+afternoon — the standing practice, and the right call for a beach that gets sun
+most of the year. **The prediction was 8. Off by nothing.**
+
+### Colour accuracy, three for three
+| | predicted | observed | error |
+|---|---|---|---|
+| Seitan Limania | 8 | **8.5** | +0.5 |
+| Elafonissi | 9 | **9** | **0** |
+| **Glyka Nera** | **8** | **8** | **0** |
+
+**Mean error 0.17 of a point across three beaches.** The photograph method
+holds. Colour is measurable from sampled photographs and Zac's conclusions
+from them have been right every time.
+
+## Discovery — 7.5, scored down by Zac himself
+**Zac: "discovery was great. Enjoyed the hike and appreciated it so much but
+in comparison a boat went their but didnt land and we shared it with 2 people
+and saw only 6 hikers so we shared 2hrs with 8 people at a beach. but in
+comparison a 10 is a long gorge to where no one is so id say 7.5."**
+
+### The count
+- **1 boat** arrived, did not land
+- **2 people** on the beach with them
+- **6 hikers** passing
+- **8 people over 2 hours**
+
+### Why this entry matters more than its score
+This was logged **hours after Preveli's Discovery was cut from 9 to 5** for
+exactly this failure — scoring the walk and calling it obscurity. Zac then
+applied the stricter standard **to his own beach, unprompted, against his own
+interest.** He could have kept the 26. He defined the anchor himself:
+
+> **A 10 is a long gorge to where no one is.**
+
+That is now the Discovery 10 definition in this archive. **Not effort. Absence.**
+
+## 🔴 Discovery — my half, and the scoreboard
+| | I filed | corrected to | by |
+|---|---|---|---|
+| Elafonissi | 8 | **6** | Zac, on the ground |
+| Preveli | 9 | **5** | Zac, asking the question |
+| **Glyka Nera** | **8** | **7.5** | **Zac, on his own beach** |
+
+**Three for three, all downward.** Colour — Zac's half — has been accurate to
+within half a point every time. Discovery — mine — has moved every time it has
+been checked. **The audit of the 27+ tier is no longer optional.**
+
+## The walk
+Chora Sfakion → Glyka Nera coast path, ~30 min. Drops on the path. White
+pebble, shelves fast. **Ilingas coves 2 and 3 not attempted** — they remain
+unverified at 27 each, reachable by an 80 m swim east off the main beach.
+
+🟡 **The freshwater springs are still unconfirmed.** The one detail in the file
+about this beach that nobody who has stood in it has ever reported back on.
