@@ -8879,3 +8879,28 @@ unverified at 27 each, reachable by an 80 m swim east off the main beach.
 
 🟡 **The freshwater springs are still unconfirmed.** The one detail in the file
 about this beach that nobody who has stood in it has ever reported back on.
+
+## ✅ THE FRESHWATER SPRINGS — CONFIRMED BY TEMPERATURE, 31 Oct 2026
+**Zac: "water was freezing but very refreshing feel."**
+
+Not felt as individual cold spots in the shingle — confirmed by something
+stronger, **a temperature contradiction that only the springs explain.**
+
+| | coast | weather | temperature |
+|---|---|---|---|
+| **Seitan Limania**, 27 Oct | **north** (Cretan Sea) | **drizzle** | *"great temperature"* |
+| **Glyka Nera**, 31 Oct | **south** (Libyan Sea) | **sun** | **freezing** |
+
+**That is the wrong way round.** The Libyan Sea is the warmer of Crete's two
+seas, and this was the sunnier of the two days. A south-coast beach in sun
+should not be colder than a north-coast beach in rain.
+
+**The springs are the only explanation.** *Glyka Nera* = "sweet water". Cold
+fresh groundwater rises through the white shingle and sits beneath the surface
+layer, dragging the whole bay down several degrees. The effect was large enough
+to be felt across the entire beach rather than in patches — which is a stronger
+reading than the per-spot test I had been asking for.
+
+**Status: confirmed.** The claim has been in this file for four months on the
+strength of the name and one guidebook line. It now has a measurement behind
+it, and the measurement is a comparison against our own verified data.
