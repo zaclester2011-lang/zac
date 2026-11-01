@@ -1047,3 +1047,66 @@ Zac's call, and it works **because of the running order**, not the start time.
 any of the four**), dry bag, shoes for pebble landings, sun cream.
 
 **Yannis +30 697 322 0472 · Meletis +30 694 085 9860 — Viber**
+
+---
+
+# 🥾 ARADENA → MARMARA — MONDAY 2 NOV 2026, IN RAIN
+**Zac's decision, reaffirmed twice against my advice: "we walk it in rain
+monday and we get a cab from livaniana to the car."**
+
+## The forecast it was taken against
+Computed with every hour counted exactly once *(an earlier run summed met.no's
+overlapping 6-hour windows and inflated these by ~4×, twice — corrected)*:
+
+| | Sun 1 | **Mon 2** | Tue 3 |
+|---|---|---|---|
+| Aradena gorge | 9 mm | **23.9 mm** | 7 mm |
+| Chora Sfakion | 9 mm | **29.9 mm** | 10 mm |
+| Agiofarango | 5 mm | 13 mm | **4 mm** |
+
+**Monday's load is front-loaded: 12 mm in 06:00–12:00, 6 mm from 12:00.**
+Hence a 10:00 start — behind the heaviest block, not inside it.
+
+## The plan
+| | |
+|---|---|
+| Leave base | **08:30** |
+| Car at the Aradena bridge | **10:00** |
+| Marmara | **13:00** |
+| Leave Marmara (1 h at the beach) | **14:00** |
+| Livaniana | **15:15** |
+| **Cab Livaniana → Aradena** | **15:40** |
+| Base | **17:10** |
+
+**Sunset 17:32 — nearly 2 h of daylight in hand.** The cab is what makes this
+work: it removes the 2-hour climb back up the gorge that killed the loop.
+
+## Arrange TODAY
+1. **Book the cab.** Few taxis in Sfakia; Livaniana is a hamlet. Driver's
+   mobile, **15:30 at Livaniana**, agreed fallback **16:30**. Confirm he will
+   drive up to Livaniana itself.
+2. **Check the Anopoli–Aradena road surface.** Dirt before the bridge = that
+   is the car park. The insurance rule stands.
+3. **No signal in the gorge.** Tell the driver; leave word where you have gone.
+
+## Hazards, in the order they bite
+1. **The ladders, not the flood.** Wet iron rungs and polished wet rock is the
+   real risk at 24 mm. One person at a time. **Take the ladders, NOT the
+   bypass** — the bypass is loose gravel with missing railings, worse in rain.
+2. **The commitment point.** Below the ladders you are going down, not back.
+   Decide at the bridge, looking at the riverbed.
+3. **Water in the bed — the hard rule: if it is RUNNING when you enter, turn
+   around.** Not trickling between stones. Running.
+
+## What to expect of the water
+**Marmara's 27 will not show on Monday.** The sea will be churned and the sky
+is 90%+ cloud. **Colour should not be scored from this visit** — the walk is
+the entry, and any colour figure taken in these conditions is a floor, not a
+reading.
+
+## 🟡 Dissent, recorded
+I advised against Monday on two grounds: 7+ hours of heavy rain landing on the
+White Mountains catchment before entry, with rain continuing during; and no dry
+window anywhere in the day. **Zac overrode it. James's call on the morning.**
+I was also wrong on the rain volume twice in the same conversation, which is
+part of why the override is reasonable.
