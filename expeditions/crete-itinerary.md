@@ -8940,3 +8940,61 @@ lower.
 trip on paper rather than the best, and the case for going is no longer the
 score — it is that the boats have stopped, the gorge is the only way in, and
 it is the emptiest sea available on the last morning.
+
+---
+
+# 🔴 MARMARA — 27 → 26, 1 Nov 2026
+**Zac: "is it still a 27 if we found the likos path."**
+
+**No.** The D9 rested on *"Aradena gorge or boat only."* That is false:
+
+- **Lykos is a 20-minute walk** from Marmara *(Wikiloc: 23 min moving)*.
+- Lykos is served by a **dirt track from Livaniana/Aradena** — rough, 4×4 — so
+  Marmara is **20 minutes from a vehicle, not 3 hours from one.**
+- Marmara has a **seasonal taverna on the beach** and an **in-season boat stop.**
+
+| | W | D | C | **/30** |
+|---|---|---|---|---|
+| Marmara — as filed | 10 | **9** | 8 | **27** |
+| **Marmara — corrected** | 10 | **8** | 8 | **26** |
+
+## 🔴 THE RULE THIS ESTABLISHES
+**Discovery measures the beach, not the route in.**
+**You cannot earn Discovery by choosing the hard approach.**
+
+That is precisely the Preveli error — 470 steps scored as obscurity. Walking
+the 3-hour gorge when a 20-minute path exists is the same mistake with better
+scenery. **The gorge is one way in, not the only way in.**
+
+D8 and not lower because in **November** the boats have stopped, the tavernas
+are shut and the track is 4×4. Same November-only 8 that Agiofarango carries.
+
+## Discovery corrections — now four, all downward
+| | filed | corrected | by |
+|---|---|---|---|
+| Elafonissi | 8 | **6** | Zac, on the ground |
+| Preveli | 9 | **5** | Zac, asking the question |
+| Glyka Nera | 8 | **7.5** | Zac, on his own beach |
+| **Marmara** | **9** | **8** | **Zac, finding the Lykos path** |
+
+**Four for four.** Every Discovery figure checked against reality has fallen.
+Agiofarango was discounted pre-emptively on the strength of that record.
+
+## 🏆 WHERE THE TRIP ACTUALLY STANDS
+| | | |
+|---|---|---|
+| **Seitan Limania** | **26.5** | ✓ **verified 27 Oct — day one** |
+| Marmara | 26 | |
+| Agiofarango | 26 | |
+| Glyka Nera | 25.5 | ✓ verified |
+| Elafonissi | 25 | ✓ verified |
+
+**Nothing left in Crete beats Seitan.** The best water of the trip was swum on
+the first afternoon, in drizzle, and Zac called it *"one of if not the best
+experiences of my life."* The score did not predict that and still doesn't.
+
+## 🟡 NEXT FOR THE SAME TREATMENT — Lissos 27
+Lissos is filed at 27 and is reached by a **marked path from Sougia**, plus
+boats in season. **It is the same shape as Marmara and has not been re-read.**
+Domata 28 is the only Cretan entry above 26 that may survive, and it was lost
+to the boat season ending.
