@@ -8998,3 +8998,58 @@ Lissos is filed at 27 and is reached by a **marked path from Sougia**, plus
 boats in season. **It is the same shape as Marmara and has not been re-read.**
 Domata 28 is the only Cretan entry above 26 that may survive, and it was lost
 to the boat season ending.
+
+---
+
+# 🔥 PREVELI BURNED — 29 JULY 2026. REMOVED.
+**Zac: "did preveli burn down in the summer and is it back to its
+beautifulness if so."**
+
+**Yes, and no.**
+
+## The fire
+**29 July 2026**, three months before our visit. It came down through the
+**Kourtaliotiko gorge** into the palm forest.
+- **~8,000 evacuated** across south Rethymno. **Two firefighters killed.**
+- **80+ people lifted off Preveli beach** by volunteers and the coast guard —
+  the fire trapped them on the shore.
+- The historic **Preveli Monastery was saved.**
+
+## The damage — sources split
+| | |
+|---|---|
+| ProtoThema | *"a significant section of the palm forest destroyed"* |
+| To Vima | *"large sections of the forest blackened"* |
+| GreekReporter | *"the core of the ancient palm grove escaped catastrophic destruction"* |
+| Officials | damaged, **not** completely destroyed |
+
+## Is it beautiful again? No — and it cannot be yet
+Cretan date palms are **fire-resistant** and regenerate from the inner growth
+point. After the **2010** fire the grove had *"totally and rapidly naturally
+re-generated"* within a year, and the Natural History Museum of Crete expects
+the same again — conditional on the groundwater staying healthy.
+
+**That is a timescale of years. We are three months in.** Blackened trunks and
+burnt ground cover, with green only beginning. **Tour operators are steering
+clients to Kalypso instead of Preveli for the 2026 season.**
+
+## ⚠️ Fake images
+Many circulating photos of a *"burned down Preveli"* have been identified as
+**AI-generated or recycled 2010 images.** Do not judge the site from social
+media in either direction.
+
+## ⚠️ Second hazard — burnt catchment + rain
+A fire-scarred gorge sheds water instead of absorbing it. **Kourtaliotiko lost
+its ground cover in July** and south Rethymno is forecast heavy rain on 2 Nov.
+**Fire-scarred gorges produce debris flows in exactly these conditions.**
+
+## VERDICT
+**Preveli is out for this trip, on three independent grounds:**
+1. **Discovery 5** — car park, boats, guidebook cover. Total **23**.
+2. **The river is a 16** — D5·C5·W6, a flat olive-green channel. The turquoise
+   in every aerial of it is **the sea, not the river.**
+3. **The palm forest, the one thing that justified going, burned in July** and
+   is three months into a multi-year recovery.
+
+*It had already fallen from 27 to 23 this week. The fire removes the remaining
+case entirely.*
