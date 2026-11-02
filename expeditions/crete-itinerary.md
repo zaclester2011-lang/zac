@@ -9198,3 +9198,30 @@ the evidence.**
 week.** The scores cannot separate them. Today is therefore a day decision, not
 a scoring one: Katholiko is 1.2 mm and 4–5 m/s at 40 minutes' drive; Balos is
 17.7 mm and Force 6 at 1 h 30.
+
+## 🏆 BALOS — COLOUR 9.5, 2 Nov 2026. HIGHEST IN THE CRETE ARCHIVE.
+**Zac: "colour 9.5" — "balos"** *(scored from the two verified frames sent to
+him: `balos_0` panorama, `balos_1` aerial).*
+
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| **Balos** | 10 | **6** | **9.5** | **25.5** | ❌ weak link, D6 |
+
+**9.5 beats Elafonissi's 9** — previously the highest Colour ever given to a
+Cretan water body, and verified on the ground.
+
+**And unlike most of this week's arguments, it is backed by measurement:**
+
+| | hue | **sat** |
+|---|---|---|
+| Lagoon shallows | 188° | **0.54** |
+| Open water | 196° | **0.69** |
+| *Zac's Seitan 8.5 anchor* | *169°* | *0.28* |
+
+**Roughly double the saturation of the photograph he scored 8.5.** The rating and
+the measurement agree, from two frames that survived a contaminated tag.
+
+**Balos is now the best Colour in Crete and still cut on Discovery 6** — a car
+park, a graded path and thirty rows of umbrellas in the aerial. **It is the
+clearest case in the archive of the weak-link rule doing its job:** the most
+beautiful water on the island, removed for not being hidden.
