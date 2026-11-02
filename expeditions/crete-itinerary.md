@@ -9113,3 +9113,67 @@ should be assumed unscoreable after heavy rain.**
 **No source anywhere has reported from Preveli since mid-August.** Zac was there
 on 1 November. **His description of the burnt grove would be the only current
 observation in existence** and has not yet been recorded here.
+
+---
+
+# ⚖️ BALOS vs KATHOLIKO — EVIDENCE PASS, 2 Nov 2026
+**Zac: "balos vs katholiko discovery colour look it up and report back to me."**
+
+## KATHOLIKO — fails on WATER, not just Discovery
+### 🔴 Swimming is prohibited
+- *"There is actually no beach and swimming is strictly prohibited."* The
+  trailhead sign places the bay inside **private monastery grounds**.
+- Visitors: *"not easy to get in and out"*; the bay is *"quite dangerous to
+  navigate for much of the year"*; one guide warns of **jellyfish**.
+- One travel site claims a rewarding swim, contradicting the rest. Several note
+  the rule is not respected in practice.
+
+**The Water question is "is the water body big enough to swim in."** An inlet
+with no beach, that you are not permitted to enter, fails it outright.
+
+### 🔴 Colour — SIXTH attempt, still zero evidence
+Wikimedia Commons returned four files for `Katholiko Crete`: **two of the
+monastery buildings, one gateway, and a 19th-century lithograph.** The
+`#7E8B98 plain blue` the sampler reported is **grey limestone cliff** — verified
+by eye. `Moni Katholiko`, `Gouverneto` and `Balos lagoon Crete` returned **zero
+results** each.
+
+**Flickr tag variants, Commons, and the cretanbeaches page have now all failed.
+No photograph of Katholiko's water exists anywhere reachable.** Colour 8 remains
+the only number in this archive with nothing at all behind it.
+
+### Discovery — lower than my 6.5
+**228 AllTrails reviews**, multiple Tripadvisor trip reports, five-plus blog
+guides with turn-by-turn directions. A waymarked trail from a monastery car
+park with that much coverage is **~6**, not 6.5.
+
+## BALOS — measured
+| | hue | **sat** | |
+|---|---|---|---|
+| Lagoon shallows | 188° | **0.54** | real turquoise |
+| Open water | 196° | **0.69** | strong blue |
+
+**Zac's Seitan 8.5 anchor measured sat 0.28. Balos is roughly double it.**
+
+🔴 **Flickr contamination — the `balos` tag is poisoned.** There is a **Balos
+Beach Hotel** in Kissamos. Of eight frames: **two genuine Balos**, two hotel
+**swimming pools**, one palm tree against a hotel wall, one airport selfie with
+beers. **The n=8 reading was worthless.** Only `balos_0` (panorama) and
+`balos_1` (aerial) are real, and all figures above come from those two.
+
+**Discovery 6** — the aerial shows ~30 rows of umbrellas, hundreds of people, a
+beached boat. Car park above, graded path down. Not hidden.
+
+## VERDICT
+| | W | D | C | |
+|---|---|---|---|---|
+| **Balos** | **10** | 6 | measured turquoise | **26** |
+| **Katholiko** | **fails — no beach, swimming prohibited** | ~6 | **no evidence** | **CUT** |
+
+**Balos wins on evidence, not on weather.** The Katholiko recommendation earlier
+on 2 Nov was a weather call (17.7 mm and Force 6 at Balos). On merit Katholiko
+collapses: a monastery ruin and a gorge, worth seeing, not worth swimming.
+
+## 🟡 Alternative on the same peninsula
+Hikers describe a **cove near Stavros**, on a separate trail, as *"perfect for a
+swim"* — same area, no monastery, no prohibition. **Unmeasured.**
