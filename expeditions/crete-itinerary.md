@@ -9053,3 +9053,63 @@ its ground cover in July** and south Rethymno is forecast heavy rain on 2 Nov.
 
 *It had already fallen from 27 to 23 this week. The fire removes the remaining
 case entirely.*
+
+---
+
+# ✅ DAY 4 VERIFIED — KOURTALIOTIKO + PREVELI, Sun 1 Nov 2026
+**Fourth first-hand entry. In heavy rain, the river massively overflowed.**
+
+**Zac: "i went to kourtalitiko and preveli it was very good discovery wise but
+colour was awful, as it was raining and the river massively overflowed."**
+**"preveli on a good day would be d7 c8 kourtalitiko would be d8 c7."**
+
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| **Preveli** *(scored for a good day)* | 10 | **7** | **8** | **25** | ✅ D7 exactly meets the weak link |
+| **Kourtaliotiko** | **4** | **8** | **7** | **19** | ❌ **CUT — Water gate** |
+
+## 🔴 PREVELI RESTORED: 23 → 25. MY D5 WAS WRONG.
+I cut it to **D5** on 31 Oct — car park, in-season boats, guidebook cover.
+**Zac stood in it and returned D7.** The place was empty.
+
+**This is the FIRST Discovery correction that has gone UP**, and it breaks a run
+of four consecutive downward corrections. The error was the mirror of my usual
+one: I had been scoring *effort* as obscurity, then over-corrected into treating
+*fame* as crowding. **Famous does not mean busy in November.**
+
+| | filed | corrected | direction |
+|---|---|---|---|
+| Elafonissi | 8 | 6 | ↓ |
+| Preveli | 9 → **5** | **7** | ↓ then **↑** |
+| Glyka Nera | 8 | 7.5 | ↓ |
+| Marmara | 9 | 8 | ↓ |
+
+## 🔴 THE RULE, NOW SETTLED
+**Zac scored Preveli "on a good day" — so Discovery scores the PLACE, not the
+weather on the day you happened to go.** An empty famous beach in a storm is
+still a famous beach; a crowded hidden cove on one August afternoon is still
+hidden. **Colour may be scored for capability (Glyka Nera, 1 Nov). Discovery is
+now scored the same way.** Both categories describe the place.
+
+## Kourtaliotiko — cut on Water, not on anything Zac scored
+**D8 and C7 both clear the weak link.** It fails on **Water 4**: Cretan gorge
+freshwater measures ~**14 °C** and does not inherit the sea's 10. The original
+brief was *"a turquoise sea we feel we earned"* — warm enough to stay in.
+**A dip, not a swim**, which in heavy rain is what it was.
+
+## Colour in rain — the third data point
+| | observed | capability | weather |
+|---|---|---|---|
+| Seitan Limania | 8.5 | 8.5 | drizzle |
+| Glyka Nera | 7 | **8** | cloud |
+| **Preveli / Kourtaliotiko** | **"awful"** | **8 / 7** | **heavy rain, river in flood** |
+
+**A river in flood destroys colour outright** — silt, not light. This is a
+different mechanism from cloud, which only dulls it. Seitan held 8.5 in drizzle
+because it is sea off rock with no river mouth. **Any beach at a river mouth
+should be assumed unscoreable after heavy rain.**
+
+## 🟡 STILL OUTSTANDING — the palm forest
+**No source anywhere has reported from Preveli since mid-August.** Zac was there
+on 1 November. **His description of the burnt grove would be the only current
+observation in existence** and has not yet been recorded here.
