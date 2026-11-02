@@ -9177,3 +9177,24 @@ collapses: a monastery ruin and a gorge, worth seeing, not worth swimming.
 ## 🟡 Alternative on the same peninsula
 Hikers describe a **cove near Stavros**, on a separate trail, as *"perfect for a
 swim"* — same area, no monastery, no prohibition. **Unmeasured.**
+
+## ⬆️ KATHOLIKO — ZAC OVERRULES, 2 Nov 2026
+**Zac: "you can swim in it and its colour 7.5."**
+
+**Water 10 restored, Colour 7.5 set.** Colour is Zac's category; 7.5 is a
+restrained figure for a water body with no photograph behind it, and the
+swimming prohibition is contradicted by multiple visitor accounts and by one
+guide calling it a rewarding swim. **The trailhead sign and the monastery
+grounds claim stand as recorded above — Zac's call overrides the verdict, not
+the evidence.**
+
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| **Katholiko** | 10 | **6.5** | **7.5** | **24** | ❌ weak link, D6.5 |
+| *(if D were 7)* | 10 | 7 | 7.5 | 24.5 | ✅ would pass |
+| **Balos** | 10 | **6** | ~8.5 | **26** | ❌ weak link, D6 |
+
+**Both fail the weak link on Discovery — mine, and I am 1 for 5 on it this
+week.** The scores cannot separate them. Today is therefore a day decision, not
+a scoring one: Katholiko is 1.2 mm and 4–5 m/s at 40 minutes' drive; Balos is
+17.7 mm and Force 6 at 1 h 30.
