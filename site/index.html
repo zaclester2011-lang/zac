@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Hidden Water Index</title>
+<meta name="description" content="Every place in a destination, scored on one published scale. Colour measured from photographs, not adjectives.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="top">
+    <div>
+      <h1>Hidden <em>Water</em> Index</h1>
+      <p class="sub">Every place in a destination, on one scale. Colour is measured from photographs &mdash; hue and saturation, not adjectives. Entries are scored, auto-drafted, or plainly marked unmeasured. Nothing is guessed.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="s-total">&mdash;</b><span>Places</span></div>
+      <div class="stat"><b id="s-scored">&mdash;</b><span>Verified</span></div>
+      <div class="stat"><b id="s-pic">&mdash;</b><span>With a photo</span></div>
+      <div class="stat"><b id="s-rev">0</b><span>Reviews</span></div>
+    </div>
+  </div>
+  <div class="method">
+    <span><b>Discovery</b> /10 &mdash; is anyone else there</span>
+    <span><b>Colour</b> /10 &mdash; measured</span>
+    <span><b>Water</b> /10 &mdash; sea is 10</span>
+    <span><b>Weak link</b> &mdash; below 7 in any category is cut</span>
+    <span><b>Auto&#8209;D</b> &mdash; drafted from place density, mean error 0.42</span>
+  </div>
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="t-dest" aria-selected="true" aria-controls="p-dest">Destinations</button>
+    <button role="tab" id="t-guides" aria-selected="false" aria-controls="p-guides">Guides</button>
+    <button role="tab" id="t-acc" aria-selected="false" aria-controls="p-acc">Accuracy</button>
+    <button role="tab" id="t-cov" aria-selected="false" aria-controls="p-cov">Coverage</button>
+  </nav>
+</header>
+
+<section id="p-dest" role="tabpanel" aria-labelledby="t-dest">
+  <div class="controls">
+    <div class="row"><span class="lab">Destination</span><span id="dests"></span></div>
+    <div class="row"><span class="lab">Category</span><span id="cats"></span></div>
+    <div class="row"><input type="search" id="q" placeholder="Or describe what you want &mdash; &ldquo;empty beach&rdquo;, &ldquo;rooftop bar&rdquo;, &ldquo;ancient&rdquo;"></div>
+    <div class="count" id="count">Loading index&hellip;</div>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="more" id="more"></div>
+  <p class="note"><b>Scored entries rank first.</b> Ten places carry a verified score because somebody went and measured them. Every other place carries an auto-drafted Discovery and no Colour at all &mdash; which is the state of every destination before the work is done, and the reason the index is worth building.</p>
+</section>
+
+<section id="p-guides" role="tabpanel" aria-labelledby="t-guides" hidden>
+  <div class="controls">
+    <div class="row"><span class="lab">Region</span><span id="gdests"></span></div>
+    <div class="count" id="gcount"></div>
+  </div>
+  <div class="grid" id="ggrid"></div>
+  <div class="more" id="gmore"></div>
+  <p class="note"><b>These are operators found in open map data, not customers.</b> They are the sales list: every tour operator, dive centre and travel service already working in each destination. Listings are sold once the index has traffic. At &pound;49 a month, 500 listings is &pound;294,000 a year.</p>
+</section>
+
+<section id="p-acc" role="tabpanel" aria-labelledby="t-acc" hidden>
+  <div class="controls"><span class="lab">Every prediction checked against the water</span></div>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Place</th><th>Category</th><th class="num">Predicted</th><th class="num">Observed</th><th class="num">Error</th></tr></thead>
+    <tbody id="acc"></tbody>
+  </table></div>
+  <p class="note"><b>Colour: four checks on the ground, mean error 0.125 of a point</b> &mdash; including one call made with no photograph of that water in existence, which landed exactly. <b>Discovery: six corrections, six wrong</b>, in both directions. The failure modes were scoring effort as obscurity, and scoring documentation as crowding. Neither is what Discovery measures.</p>
+  <div class="controls"><span class="lab">Automatic Discovery, calibrated against the six measured places</span></div>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Place</th><th class="num">Measured</th><th class="num">Auto</th><th class="num">Error</th></tr></thead>
+    <tbody id="auto"></tbody>
+  </table></div>
+  <p class="note"><b>Balos is where the automatic score fails, and the failure is instructive.</b> Density sees empty land and calls it remote. It cannot see four hundred people off the Kissamos boats. The automatic score measures <b>remoteness, not crowding</b> &mdash; and closing that gap is exactly what a review is for.</p>
+</section>
+
+<section id="p-cov" role="tabpanel" aria-labelledby="t-cov" hidden>
+  <div class="controls"><span class="lab">What is indexed, by category</span></div>
+  <div class="tblwrap"><table>
+    <thead><tr><th>Category</th><th class="num">Crete</th><th class="num">Zanzibar</th><th class="num">Verified</th><th class="num">Photos</th></tr></thead>
+    <tbody id="cov"></tbody>
+  </table></div>
+  <p class="note"><b>The same query covers the whole world.</b> Built from Overture Maps &mdash; the open map consortium &mdash; and Wikidata, filtered to two bounding boxes. Change the box, change the destination; nothing else in the pipeline changes.</p>
+  <p class="note"><b>Photographs are the hard part.</b> 104 places of 26,916 have a freely licensed photograph, because Wikidata only holds images of landmarks. No free source exists for an ordinary restaurant or hotel. The answer is the same as it is for Discovery: the people who go supply them.</p>
+</section>
+
+<footer>
+  Sources: <a href="https://overturemaps.org/" target="_blank" rel="noopener">Overture Maps</a> (ODbL / CDLA) &middot;
+  <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> (CC0) &middot;
+  photographs via Wikimedia Commons, each linked to its source &middot;
+  colour measured from public photographs
+</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
