@@ -9225,3 +9225,92 @@ the measurement agree, from two frames that survived a contaminated tag.
 park, a graded path and thirty rows of umbrellas in the aerial. **It is the
 clearest case in the archive of the weak-link rule doing its job:** the most
 beautiful water on the island, removed for not being hidden.
+
+---
+
+# ✅ DAY 5 VERIFIED — KATHOLIKO BAY, Mon 2 Nov 2026
+**The last water of the trip. Fifth first-hand entry.**
+**Zac: "we did katholiko" · "colour 7.5 discovery 8.5".**
+
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| Katholiko — as filed | 10 | **6.5** | 7.5 | 24 | ❌ was CUT |
+| **Katholiko — VERIFIED** | 10 | **8.5** | **7.5** | **26** | ✅ **passes** |
+
+## 🎯 THE BLIND COLOUR CALL WAS EXACT
+**Zac rated it 7.5 before going, with no photograph in existence** — Flickr tag
+variants, Wikimedia Commons and the cretanbeaches page had all failed, six
+attempts, and the one "blue" reading turned out to be grey limestone.
+
+**He came back with 7.5.**
+
+**First time in this archive that water has been rated sight-unseen and hit.**
+Colour is now **four for four** on the ground and **one for one** blind.
+
+| | predicted | observed | error |
+|---|---|---|---|
+| Seitan | 8 | 8.5 | +0.5 |
+| Elafonissi | 9 | 9 | 0 |
+| Glyka Nera | 8 | 8 | 0 |
+| **Katholiko** *(no photo at all)* | **7.5** | **7.5** | **0** |
+
+## 🔴 MY DISCOVERY WAS OUT BY TWO POINTS — THE WORST MISS OF THE TRIP
+I filed **6.5 and cut the beach**, reasoning from **228 AllTrails reviews**,
+Tripadvisor trip reports and five blog guides. **Zac returned 8.5.**
+
+**Same error as Preveli**: I read *documented* as *crowded*. A trail with 228
+logged reviews in summer has nobody on it in November, two kilometres past a
+ruined monastery, down a ravine. **Coverage is not company.**
+
+### Discovery — six corrections, six wrong
+| | I filed | corrected | |
+|---|---|---|---|
+| Elafonissi | 8 | 6 | ↓ |
+| Preveli | 9 → 5 | 7 | ↓ then ↑ |
+| Glyka Nera | 8 | 7.5 | ↓ |
+| Marmara | 9 | 8 | ↓ |
+| Balos | — | 6 | — |
+| **Katholiko** | **6.5** | **8.5** | **↑ by 2.0** |
+
+**Not one Discovery figure of mine has survived contact with the ground.**
+Colour — Zac's half — has never been wrong by more than half a point, including
+once with no photograph at all.
+
+---
+
+# 🏁 CRETE — FINAL, 26 Oct – 3 Nov 2026
+## Verified. Stood in, swum, scored on the ground.
+| | W | D | C | **/30** | |
+|---|---|---|---|---|---|
+| **1. Seitan Limania** | 10 | 8 | **8.5** | **26.5** | day one, in drizzle |
+| **2. Katholiko bay** | 10 | **8.5** | 7.5 | **26** | the last day |
+| **3. Glyka Nera** | 10 | 7.5 | 8 | **25.5** | the springs |
+| **4. Preveli** | 10 | 7 | 8 | **25** | river in flood |
+| **5. Elafonissi** | 10 | **6** | **9** | 25 | ❌ cut, D6 |
+| 6. Kourtaliotiko | **4** | 8 | 7 | 19 | ❌ cut, Water gate |
+
+## Reached on evidence only — never stood in
+**Agiofarango 26 · Marmara 26 · Balos 25.5** *(C9.5, best colour in Crete,
+cut on D6)* · Lissos ~26, Discovery never audited
+
+## Lost rather than beaten
+**Domata 28** — boat season ended 31 Oct ·
+**Pikrovlychada · Vala · Aspes 28** — unpaved tracks, insurance ·
+**Samaria** — closed for the season · **Preveli's palm forest** — burned 29 July
+
+## What the week actually proved
+**The photograph method works.** Four on-the-ground colour checks, mean error
+0.125 of a point, plus one exact call with no photograph at all.
+
+**The weak-link rule works.** It cut the two best colours in Crete — Balos 9.5
+and Elafonissi 9 — for not being hidden, which is precisely what it is for.
+
+**Discovery needs rebuilding from scratch.** Six corrections, six wrong, in both
+directions. The two failure modes: scoring *effort* as obscurity (Preveli's 470
+steps, Marmara's gorge), and scoring *documentation* as crowding (Katholiko's
+228 reviews). **Neither is what Discovery measures.** Zac's definition stands as
+the only sound one: **a long gorge to where no one is. Absence, not effort.**
+
+**And the best water was the first afternoon.** Seitan Limania, two hours after
+landing, in the rain, off a cliff — *"one of if not the best experiences of my
+life."* Nothing in the following eight days beat it.
