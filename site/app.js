@@ -276,16 +276,35 @@ function render() {
   DATA.forEach(r => { if (r[7] === dest && r[1] !== "guide") { counts.all++; counts[r[1]] = (counts[r[1]] || 0) + 1; } });
   chips($("dests"), DESTS, dest, v => { dest = v; shown = 48; render(); });
   chips($("cats"), CATS, cat, v => { cat = v; shown = 48; render(); }, counts);
+  chips($("sorts"), SORTS, sortBy, v => { sortBy = v; shown = 48; render(); });
   const term = q.trim();
   const P = term ? parseQuery(term) : null;
   const catFilter = c => cat === "all" || c === cat;
   const sc = SCORED.filter(p => p.d === dest).filter(p => catFilter(p.c))
     .filter(p => !P || scoredMatches(p, P)).sort((a, b) => tot(b) - tot(a));
-  const pl = DATA.filter(r => r[7] === dest && r[1] !== "guide")
+  let pl = DATA.filter(r => r[7] === dest && r[1] !== "guide")
     .filter(r => catFilter(r[1]))
     .filter(r => !P || rowMatches(r, P))
     .filter(r => !sc.some(p => p.n.toLowerCase() === r[0].toLowerCase()))
-    .sort((a, b) => (P && P.minD !== null ? b[11] - a[11] : 0));
+    .filter(r => sortBy !== "photo" || r[12])
+    .filter(r => sortBy !== "starred" || r[13]);
+  if (sortBy === "hidden" || (P && P.minD !== null)) pl.sort((a, b) => b[11] - a[11]);
+  else if (sortBy === "starred") pl.sort((a, b) => parseFloat(b[13]) - parseFloat(a[13]));
+  else {
+    pl.sort((a, b) => (b[4] - a[4]) || ((b[12] ? 1 : 0) - (a[12] ? 1 : 0)));
+    if (cat === "all") {                       // interleave so one category cannot fill the page
+      const buckets = {};
+      pl.forEach(r => (buckets[r[1]] = buckets[r[1]] || []).push(r));
+      const order = CATS.map(c => c[0]).filter(c => c !== "all" && buckets[c]);
+      const mixed = [];
+      for (let i = 0; mixed.length < pl.length; i++) {
+        let moved = false;
+        order.forEach(c => { if (buckets[c][i]) { mixed.push(buckets[c][i]); moved = true; } });
+        if (!moved) break;
+      }
+      pl = mixed;
+    }
+  }
   const g = $("grid"); g.innerHTML = "";
   sc.forEach(p => g.appendChild(scoredCard(p, imgFor(p.n, p.d))));
   pl.slice(0, Math.max(0, shown - sc.length)).forEach(r => g.appendChild(plainCard(r)));
