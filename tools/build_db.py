@@ -130,12 +130,22 @@ def insert_places(con, batch):
 # ---- Commons dumps -------------------------------------------------------
 
 def sql_rows(path, columns):
-    """Stream tuples out of a MediaWiki INSERT dump without loading it."""
+    """Stream tuples out of a MediaWiki INSERT dump without loading it.
+
+    These dumps put VALUES on its own line and the tuples on the lines after,
+    so keying off a line that begins with INSERT finds nothing. Track whether
+    we are inside a statement instead.
+    """
     value = re.compile(r"\(((?:[^()']|'(?:\\.|[^'\\])*')*)\)")
+    inside = False
     with gzip.open(path, "rt", encoding="utf-8", errors="replace") as fh:
         for line in fh:
-            if not line.startswith("INSERT INTO"):
+            if line.startswith("INSERT INTO"):
+                inside = True
+            if not inside:
                 continue
+            if line.rstrip().endswith(";"):
+                inside = False
             for m in value.finditer(line):
                 parts, cur, quoted, esc = [], [], False, False
                 for ch in m.group(1):
