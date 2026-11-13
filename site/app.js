@@ -268,7 +268,18 @@ TABS.forEach(([tb, pn]) => $(tb).addEventListener("click", () => {
 }));
 $("q").addEventListener("input", e => { q = e.target.value; shown = 48; render(); });
 
-loadReviews().then(() => fetch("data.json")).then(r => r.json()).then(j => {
+loadReviews()
+  .then(() => fetch("destinations.json").then(r => r.json()).catch(() => []))
+  .then(reg => {
+    reg.sort((a, b) => a.id - b.id);
+    DESTS = reg.map(d => [d.id, d.name]);
+    MIDLAT = []; reg.forEach(d => { MIDLAT[d.id] = (d.bbox[0] + d.bbox[2]) / 2; });
+    if (DESTS.length) dest = gdest = DESTS[0][0];
+    const el = document.getElementById("s-dest");
+    if (el) el.textContent = DESTS.length;
+    return fetch("data.json");
+  })
+  .then(r => r.json()).then(j => {
   DATA = j.r;
   $("s-total").textContent = fmt(DATA.length);
   $("s-scored").textContent = SCORED.length;
