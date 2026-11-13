@@ -146,6 +146,7 @@ const WORD_CAT = {
   guide:"guide", guides:"guide", tour:"guide", tours:"guide", operator:"guide",
   shop:"shop", shops:"shop", market:"shop", markets:"shop", shopping:"shop"
 };
+const WORD_HAS = {photo:"photo", photos:"photo", picture:"photo", pictures:"photo", starred:"stars", stars:"stars", star:"stars"};
 const WORD_QUIET = ["empty","hidden","quiet","remote","alone","secret","deserted","secluded",
                     "unspoilt","wild","undiscovered","peaceful","nobody"];
 const WORD_BUSY  = ["busy","popular","famous","lively","crowded","buzzing","known"];
@@ -154,18 +155,21 @@ const STOP = ["a","an","the","in","on","at","with","somewhere","some","place","p
 
 function parseQuery(term) {
   const words = term.toLowerCase().split(/[^a-z0-9']+/).filter(Boolean);
-  const cats = new Set(); let minD = null, maxD = null; const rest = [];
+  const cats = new Set(), has = new Set(); let minD = null, maxD = null; const rest = [];
   words.forEach(w => {
     if (STOP.includes(w)) return;
     if (WORD_CAT[w]) { cats.add(WORD_CAT[w]); return; }
+    if (WORD_HAS[w]) { has.add(WORD_HAS[w]); return; }
     if (WORD_QUIET.includes(w)) { minD = 7.5; return; }
     if (WORD_BUSY.includes(w)) { maxD = 5; return; }
     rest.push(w);
   });
-  return {cats, minD, maxD, words: rest, raw: term.trim()};
+  return {cats, has, minD, maxD, words: rest, raw: term.trim()};
 }
 function rowMatches(r, p) {
   if (p.cats.size && !p.cats.has(r[1])) return false;
+  if (p.has.has("photo") && !r[12]) return false;
+  if (p.has.has("stars") && !r[13]) return false;
   if (p.minD !== null && r[11] < p.minD) return false;
   if (p.maxD !== null && r[11] > p.maxD) return false;
   if (!p.words.length) return true;
@@ -173,6 +177,7 @@ function rowMatches(r, p) {
   return p.words.every(w => hay.includes(w));
 }
 function scoredMatches(x, p) {
+  if (p.has.size) return false;
   if (p.cats.size && !p.cats.has(x.c)) return false;
   if (p.minD !== null && x.D < p.minD) return false;
   if (p.maxD !== null && x.D > p.maxD) return false;
@@ -185,6 +190,8 @@ function describeQuery(p) {
   if (p.cats.size) bits.push([...p.cats].map(c => CATLAB[c] || c).join(", "));
   if (p.minD !== null) bits.push("Discovery " + p.minD + "+");
   if (p.maxD !== null) bits.push("Discovery " + p.maxD + " or under");
+  if (p.has.has("photo")) bits.push("with a photograph");
+  if (p.has.has("stars")) bits.push("with a star rating");
   if (p.words.length) bits.push('matching "' + p.words.join(" ") + '"');
   return bits.length ? "reading that as: " + bits.join(" \u00b7 ") : "";
 }
@@ -205,8 +212,8 @@ const tot = p => p.D + p.C + p.W;
 const weak = p => Math.min(p.D, p.C, p.W) < 7;
 function photoEl(url, name) {
   if (!url) return '<div class="nophoto"><span>No photograph yet</span></div>';
-  const src = url.replace("/wiki/Special:FilePath/", "/wiki/Special:FilePath/");
-  return '<img class="photo" loading="lazy" alt="' + esc(name) + '" src="' + esc(src) + '?width=640">';
+  return '<img class="photo" loading="lazy" alt="' + esc(name) + '" src="' + esc(url) + '">'
+    + '<div class="credit">Photograph taken nearby \u00b7 Wikimedia Commons</div>';
 }
 function sentence(r) {
   const kind = (r[6] || CATLAB[r[1]] || "place").toLowerCase();
@@ -250,7 +257,10 @@ function plainCard(r) {
     + '<p class="desc">' + esc(sentence(r)) + "</p>"
     + (r[8] ? '<a class="site" href="' + esc(r[8]) + '" target="_blank" rel="noopener">'
         + esc(r[8].replace(/^https?:\/\//, "").replace(/\/$/, "")).slice(0, 46) + "</a>" : "")
-    + '<div class="scores"><span class="sc" title="Drafted from place density, not measured">D ' + r[11] + " auto</span>"
+    + '<div class="scores">'
+    + (r[13] ? '<span class="sc" style="background:var(--ok-soft);color:var(--ok)" title="Star rating from OpenStreetMap">'
+        + esc(r[13]) + "\u2605</span>" : "")
+    + '<span class="sc" title="Drafted from place density, not measured">D ' + r[11] + " auto</span>"
     + '<span class="tag">' + (r[1] === "beach" ? "No colour measured" : "Colour unmeasured") + "</span></div></div>";
   a.querySelector(".bd").appendChild(revBlock(r[0], r[7], r[11]));
   return a;
