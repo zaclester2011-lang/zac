@@ -28,30 +28,37 @@ branch `main`, folder `/site`. The site is then live at
 | `index.html` | the page |
 | `style.css` | tokens and layout, light and dark |
 | `app.js` | rendering, filters, search, reviews |
-| `data.json` | 26,916 places across Crete and Zanzibar |
+| `data.json` | 81,537 places across Crete, Zanzibar and Sulawesi |
 
 ## The data
 
-| | Crete | Zanzibar |
-|---|---|---|
-| Hotels | 6,542 | 922 |
-| Restaurants | 6,083 | 277 |
-| Shops & markets | 5,453 | 187 |
-| Things to do | 3,038 | 245 |
-| Bars & clubs | 1,403 | 101 |
-| Beaches | 815 | 69 |
-| Indoor | 636 | 63 |
-| Guides & operators | 536 | 300 |
-| Adventures | 196 | 50 |
+| | Crete | Zanzibar | Sulawesi |
+|---|---|---|---|
+| Restaurants | 6,083 | 277 | 22,035 |
+| Things to do | 3,038 | 245 | 18,594 |
+| Hotels | 6,542 | 922 | 7,181 |
+| Shops & markets | 5,453 | 187 | — |
+| Bars & clubs | 1,403 | 101 | 2,493 |
+| Indoor | 636 | 63 | 1,807 |
+| Guides & operators | 536 | 300 | 1,420 |
+| Beaches | 815 | 69 | 961 |
+| Adventures | 196 | 50 | 130 |
+
+**81,537 places in total.** Sulawesi's shops are left out to keep the file servable;
+its full result was 174,718 places from a single query.
 
 Sources: **Overture Maps** (ODbL / CDLA) for places, **Wikidata** (CC0) for landmarks
 and photographs. Both are open-licensed and free. Attribution is in the page footer and
 must stay there.
 
-### Rebuilding or adding a destination
+### Adding a destination — how to find everywhere in the world
 
-The pipeline is one bounding-box query. Change the box, change the destination; nothing
-else changes. Overture holds roughly 60 million places worldwide.
+**The whole planet is 11.9 GB**, sixteen parquet files on a public S3 bucket, free and
+unauthenticated. You never download it: you query it by bounding box and take only what
+you want.
+
+Sulawesi was added by changing four numbers. One query returned **174,718 places in
+ninety seconds**. Any destination on earth is the same four numbers.
 
 ```python
 import duckdb, os

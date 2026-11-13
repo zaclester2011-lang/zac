@@ -35,12 +35,12 @@ const AUTO = [
   ["Seitan Limania","8","8.0","0"],["Katholiko","8.5","8.0","−0.5"],["Glyka Nera","7.5","7.5","0"],
   ["Preveli","7","7.0","0"],["Elafonissi","6","6.0","0"],["Balos","6","8.0","+2.0"]
 ];
-const DESTS = [[0,"Crete"],[1,"Zanzibar"]];
+const DESTS = [[0,"Crete"],[1,"Zanzibar"],[2,"Sulawesi"]];
 const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"],["food","Restaurants"],
   ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops & markets"]];
 const CATLAB = {beach:"Beach",food:"Restaurant",club:"Bar or club",todo:"Thing to do",
   indoor:"Indoor",hotel:"Hotel",shop:"Shop",guide:"Guide",adventure:"Adventure"};
-const MIDLAT = [35.24,-5.80];
+const MIDLAT = [35.24,-5.80,-2.00];
 
 let DATA = [], dest = 0, cat = "all", q = "", shown = 48, gshown = 36, gdest = 0, REV = {};
 const $ = id => document.getElementById(id);
@@ -146,7 +146,7 @@ function photoEl(url, name) {
 function sentence(r) {
   const kind = (r[6] || CATLAB[r[1]] || "place").toLowerCase();
   const art = /^[aeiou]/.test(kind) ? "An" : "A";
-  let s = art + " " + kind + (r[5] ? " in " + r[5] : (r[7] === 0 ? " in Crete" : " in Zanzibar")) + ".";
+  let s = art + " " + kind + (r[5] ? " in " + r[5] : (" in " + (DESTS[r[7]] ? DESTS[r[7]][1] : "the index"))) + ".";
   if (r[1] === "beach") {
     const side = r[2] >= MIDLAT[r[7]] ? "north" : "south";
     s = art + " " + kind + " on the " + side + " coast" + (r[5] ? " near " + r[5] : "")
