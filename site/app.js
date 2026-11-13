@@ -82,7 +82,7 @@ function revBlock(name, d, autoD) {
   const avg = f => list.length ? list.reduce((s, x) => s + (+x[f] || 0), 0) / list.length : null;
   const w = document.createElement("div"); w.className = "rev";
   const head = document.createElement("div"); head.className = "revline";
-  const mean = list.length ? ["D","C","W"].map(f => f + " " + avg(f).toFixed(1).replace(/\.0$/, "")).join("  ") : "";
+  const mean = list.length ? ["D","C"].map(f => f + " " + avg(f).toFixed(1).replace(/\.0$/, "")).join("  ") : "";
   head.innerHTML = "<span>" + (list.length
     ? list.length + (list.length === 1 ? " review · " : " reviews · ") + mean
     : "No reviews yet") + "</span>";
@@ -105,23 +105,88 @@ function revBlock(name, d, autoD) {
     const f = document.createElement("form"); f.className = "revform";
     f.innerHTML = '<div class="revrow">'
       + '<label>Discovery<input type="number" min="1" max="10" step="0.5" value="' + autoD + '" required></label>'
-      + '<label>Colour<input type="number" min="1" max="10" step="0.5" required></label>'
-      + '<label>Water<input type="number" min="1" max="10" step="0.5" required></label></div>'
+      + '<label>Colour<input type="number" min="1" max="10" step="0.5" required></label></div>'
       + '<textarea placeholder="What was it actually like? Walk time, access, whether anyone was there."></textarea>'
       + '<div class="act"><button type="submit">Post review</button><span class="msg"></span></div>';
     const msg = f.querySelector(".msg");
     if (!REVIEW_ENDPOINT) msg.textContent = "Saved in this browser only — no server yet.";
     f.onsubmit = async ev => {
       ev.preventDefault();
-      const [D, C, W] = [...f.querySelectorAll("input")].map(i => parseFloat(i.value));
+      const [D, C] = [...f.querySelectorAll("input")].map(i => parseFloat(i.value));
       const note = f.querySelector("textarea").value.trim().slice(0, 600);
       msg.textContent = "Saving…";
-      try { await saveReview({place:name, dest:d, D, C, W, note, at:new Date().toISOString()}); render(); }
+      try { await saveReview({place:name, dest:d, D, C, note, at:new Date().toISOString()}); render(); }
       catch (e) { msg.textContent = "Could not save (" + e.message + ")."; }
     };
     w.insertBefore(f, w.children[1] || null);
   };
   return w;
+}
+
+
+/* ---------- query parsing: turn plain words into filters ---------- */
+const WORD_CAT = {
+  beach:"beach", beaches:"beach", sand:"beach", sea:"beach", swim:"beach", swimming:"beach",
+  cove:"beach", lagoon:"beach", shore:"beach", coast:"beach", water:"beach", turquoise:"beach",
+  bar:"club", bars:"club", club:"club", clubs:"club", nightclub:"club", nightlife:"club",
+  pub:"club", drink:"club", drinks:"club", cocktail:"club", cocktails:"club", rooftop:"club",
+  eat:"food", food:"food", restaurant:"food", restaurants:"food", dinner:"food", lunch:"food",
+  breakfast:"food", taverna:"food", cafe:"food", coffee:"food", pizza:"food", seafood:"food",
+  hotel:"hotel", hotels:"hotel", stay:"hotel", sleep:"hotel", room:"hotel", rooms:"hotel",
+  resort:"hotel", villa:"hotel", hostel:"hotel", apartment:"hotel",
+  dive:"adventure", diving:"adventure", snorkel:"adventure", snorkelling:"adventure",
+  hike:"adventure", hiking:"adventure", trek:"adventure", kayak:"adventure", boat:"adventure",
+  sail:"adventure", sailing:"adventure", surf:"adventure", surfing:"adventure",
+  climb:"adventure", climbing:"adventure", adventure:"adventure", trail:"adventure",
+  museum:"indoor", gallery:"indoor", indoor:"indoor", inside:"indoor", rain:"indoor",
+  rainy:"indoor", cinema:"indoor", theatre:"indoor", spa:"indoor",
+  ancient:"todo", ruins:"todo", ruin:"todo", historic:"todo", history:"todo", temple:"todo",
+  castle:"todo", monastery:"todo", gorge:"todo", canyon:"todo", waterfall:"todo", cave:"todo",
+  viewpoint:"todo", view:"todo", mountain:"todo", archaeological:"todo", church:"todo",
+  guide:"guide", guides:"guide", tour:"guide", tours:"guide", operator:"guide",
+  shop:"shop", shops:"shop", market:"shop", markets:"shop", shopping:"shop"
+};
+const WORD_QUIET = ["empty","hidden","quiet","remote","alone","secret","deserted","secluded",
+                    "unspoilt","wild","undiscovered","peaceful","nobody"];
+const WORD_BUSY  = ["busy","popular","famous","lively","crowded","buzzing","known"];
+const STOP = ["a","an","the","in","on","at","with","somewhere","some","place","places","me",
+              "i","want","find","show","to","for","of","and","that","where","can","is","it","my","we"];
+
+function parseQuery(term) {
+  const words = term.toLowerCase().split(/[^a-z0-9']+/).filter(Boolean);
+  const cats = new Set(); let minD = null, maxD = null; const rest = [];
+  words.forEach(w => {
+    if (STOP.includes(w)) return;
+    if (WORD_CAT[w]) { cats.add(WORD_CAT[w]); return; }
+    if (WORD_QUIET.includes(w)) { minD = 7.5; return; }
+    if (WORD_BUSY.includes(w)) { maxD = 5; return; }
+    rest.push(w);
+  });
+  return {cats, minD, maxD, words: rest, raw: term.trim()};
+}
+function rowMatches(r, p) {
+  if (p.cats.size && !p.cats.has(r[1])) return false;
+  if (p.minD !== null && r[11] < p.minD) return false;
+  if (p.maxD !== null && r[11] > p.maxD) return false;
+  if (!p.words.length) return true;
+  const hay = (r[0] + " " + (r[6] || "") + " " + (r[5] || "") + " " + (CATLAB[r[1]] || "")).toLowerCase();
+  return p.words.every(w => hay.includes(w));
+}
+function scoredMatches(x, p) {
+  if (p.cats.size && !p.cats.has(x.c)) return false;
+  if (p.minD !== null && x.D < p.minD) return false;
+  if (p.maxD !== null && x.D > p.maxD) return false;
+  if (!p.words.length) return true;
+  const hay = (x.n + " " + x.t + " " + (CATLAB[x.c] || "")).toLowerCase();
+  return p.words.every(w => hay.includes(w));
+}
+function describeQuery(p) {
+  const bits = [];
+  if (p.cats.size) bits.push([...p.cats].map(c => CATLAB[c] || c).join(", "));
+  if (p.minD !== null) bits.push("Discovery " + p.minD + "+");
+  if (p.maxD !== null) bits.push("Discovery " + p.maxD + " or under");
+  if (p.words.length) bits.push('matching "' + p.words.join(" ") + '"');
+  return bits.length ? "reading that as: " + bits.join(" \u00b7 ") : "";
 }
 
 /* ---------- cards ---------- */
@@ -201,13 +266,16 @@ function render() {
   DATA.forEach(r => { if (r[7] === dest && r[1] !== "guide") { counts.all++; counts[r[1]] = (counts[r[1]] || 0) + 1; } });
   chips($("dests"), DESTS, dest, v => { dest = v; shown = 48; render(); });
   chips($("cats"), CATS, cat, v => { cat = v; shown = 48; render(); }, counts);
-  const term = q.trim().toLowerCase();
-  const sc = SCORED.filter(p => p.d === dest).filter(p => cat === "all" || p.c === cat)
-    .filter(p => !term || (p.n + " " + p.t).toLowerCase().includes(term)).sort((a, b) => tot(b) - tot(a));
+  const term = q.trim();
+  const P = term ? parseQuery(term) : null;
+  const catFilter = c => cat === "all" || c === cat;
+  const sc = SCORED.filter(p => p.d === dest).filter(p => catFilter(p.c))
+    .filter(p => !P || scoredMatches(p, P)).sort((a, b) => tot(b) - tot(a));
   const pl = DATA.filter(r => r[7] === dest && r[1] !== "guide")
-    .filter(r => cat === "all" || r[1] === cat)
-    .filter(r => !term || (r[0] + " " + r[6] + " " + r[5]).toLowerCase().includes(term))
-    .filter(r => !sc.some(p => p.n.toLowerCase() === r[0].toLowerCase()));
+    .filter(r => catFilter(r[1]))
+    .filter(r => !P || rowMatches(r, P))
+    .filter(r => !sc.some(p => p.n.toLowerCase() === r[0].toLowerCase()))
+    .sort((a, b) => (P && P.minD !== null ? b[11] - a[11] : 0));
   const g = $("grid"); g.innerHTML = "";
   sc.forEach(p => g.appendChild(scoredCard(p, imgFor(p.n, p.d))));
   pl.slice(0, Math.max(0, shown - sc.length)).forEach(r => g.appendChild(plainCard(r)));
