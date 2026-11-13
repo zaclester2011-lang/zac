@@ -5,3 +5,6 @@ expeditions/fl/
 expeditions/sc/
 expeditions/cm/
 cm/
+data/*.db
+data/*.db-wal
+data/*.db-shm
