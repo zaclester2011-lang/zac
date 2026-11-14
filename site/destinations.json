@@ -475,5 +475,55 @@
       "club": 63,
       "guide": 25
     }
+  },
+  {
+    "id": 19,
+    "slug": "phuket",
+    "name": "Phuket",
+    "bbox": [
+      7.2611826,
+      98.0648897,
+      8.2021889,
+      98.4924989
+    ],
+    "places": 22929,
+    "photos": 76,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 5223,
+      "indoor": 1404,
+      "food": 11182,
+      "beach": 483,
+      "todo": 1617,
+      "club": 1811,
+      "guide": 1005,
+      "adventure": 204
+    }
+  },
+  {
+    "id": 20,
+    "slug": "palawan",
+    "name": "Palawan",
+    "bbox": [
+      7.4179572,
+      114.1440482,
+      12.6055408,
+      121.4716667
+    ],
+    "places": 6898,
+    "photos": 45,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 1322,
+      "hotel": 2237,
+      "guide": 574,
+      "beach": 459,
+      "food": 1568,
+      "club": 426,
+      "indoor": 221,
+      "adventure": 91
+    }
   }
 ]
