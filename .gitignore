@@ -1,0 +1,12 @@
+
+# sampler photo downloads
+expeditions/pics/
+expeditions/fl/
+expeditions/sc/
+expeditions/cm/
+cm/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+__pycache__/
+*.pyc

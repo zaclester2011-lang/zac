@@ -1,0 +1,104 @@
+[
+  {
+    "id": 0,
+    "slug": "crete",
+    "name": "Crete",
+    "bbox": [
+      34.78,
+      23.4,
+      35.75,
+      26.4
+    ],
+    "places": 24702,
+    "photos": 104,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-13",
+    "counts": {
+      "food": 6083,
+      "hotel": 6542,
+      "club": 1403,
+      "todo": 3038,
+      "shop": 5453,
+      "guide": 536,
+      "indoor": 636,
+      "adventure": 196,
+      "beach": 815
+    }
+  },
+  {
+    "id": 1,
+    "slug": "zanzibar",
+    "name": "Zanzibar",
+    "bbox": [
+      -6.6,
+      38.95,
+      -4.78,
+      40.0
+    ],
+    "places": 2214,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-13",
+    "counts": {
+      "hotel": 922,
+      "food": 277,
+      "club": 101,
+      "indoor": 63,
+      "adventure": 50,
+      "shop": 187,
+      "todo": 245,
+      "guide": 300,
+      "beach": 69
+    }
+  },
+  {
+    "id": 2,
+    "slug": "sulawesi",
+    "name": "Sulawesi",
+    "bbox": [
+      -6.1,
+      118.4,
+      2.1,
+      125.6
+    ],
+    "places": 54621,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-13",
+    "counts": {
+      "indoor": 1807,
+      "beach": 961,
+      "todo": 18594,
+      "hotel": 7181,
+      "food": 22035,
+      "club": 2493,
+      "guide": 1420,
+      "adventure": 130
+    }
+  },
+  {
+    "id": 3,
+    "slug": "cook-islands",
+    "name": "Cook Islands",
+    "bbox": [
+      -22.1599634,
+      -166.1318843,
+      -8.7150148,
+      -157.1089326
+    ],
+    "places": 442,
+    "photos": 2,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-13",
+    "counts": {
+      "todo": 111,
+      "hotel": 170,
+      "club": 29,
+      "food": 77,
+      "beach": 17,
+      "adventure": 11,
+      "guide": 12,
+      "indoor": 15
+    }
+  }
+]
