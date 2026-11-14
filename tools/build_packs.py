@@ -102,12 +102,12 @@ def main():
                     seen.add(r[0])
             if len(picked) >= 10:
                 break
-        hero = ""
+        hero = hero_title = ""
         for r in withpic:
             if r[1] in ("beach", "todo"):
-                hero = r[9]; break
+                hero, hero_title = r[9], r[12]; break
         if not hero and withpic:
-            hero = withpic[0][9]
+            hero, hero_title = withpic[0][9], withpic[0][12]
 
         packs.append({
             "id": did, "slug": slug, "name": name,
@@ -116,7 +116,7 @@ def main():
             "places": con.execute("SELECT count(*) FROM place WHERE dest=?", (did,)).fetchone()[0],
             "shown": len(out),
             "photos": len(withpic),
-            "hero": hero,
+            "hero": hero, "hero_title": hero_title,
             "counts": {c: counts.get(c, 0) for c in CATS},
             "hidden": {c: hidden.get(c, 0) for c in CATS},
             "top": picked,

@@ -73,11 +73,12 @@ def main():
     if args.packs:
         packs = json.load(open(os.path.join(SITE, "packs.json")))
         for p in packs:
-            if p.get("hero"):
-                titles.append(p["hero"])
+            # the pack stores the LOCAL filename; the Commons title is kept alongside it
+            if p.get("hero_title"):
+                titles.append(p["hero_title"])
             for t in p.get("top", []):
-                if t.get("img"):
-                    titles.append(t["img"])
+                if t.get("credit"):
+                    titles.append(t["credit"])
     if args.all:
         for (t,) in con.execute(
                 """SELECT photo_title FROM place WHERE photo_title IS NOT NULL

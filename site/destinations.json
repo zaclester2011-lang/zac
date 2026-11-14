@@ -4,25 +4,24 @@
     "slug": "crete",
     "name": "Crete",
     "bbox": [
-      34.78,
-      23.4,
-      35.75,
-      26.4
+      34.9212109,
+      23.5144812,
+      35.6957793,
+      26.3189698
     ],
-    "places": 24702,
-    "photos": 11805,
+    "places": 17797,
+    "photos": 2,
     "source": "overture 2026-10-21.0 + wikidata",
-    "indexed": "2026-11-13",
+    "indexed": "2026-11-14",
     "counts": {
-      "food": 6083,
-      "hotel": 6542,
-      "club": 1403,
-      "todo": 3038,
-      "shop": 5453,
-      "guide": 536,
+      "beach": 785,
+      "guide": 535,
+      "todo": 1632,
+      "food": 6075,
+      "hotel": 6535,
       "indoor": 636,
-      "adventure": 196,
-      "beach": 815
+      "club": 1403,
+      "adventure": 196
     }
   },
   {
@@ -30,25 +29,24 @@
     "slug": "zanzibar",
     "name": "Zanzibar",
     "bbox": [
-      -6.6,
-      38.95,
-      -4.78,
-      40.0
+      -6.4780572,
+      39.1816556,
+      -4.8643588,
+      39.8761587
     ],
-    "places": 2214,
-    "photos": 985,
+    "places": 1877,
+    "photos": 24,
     "source": "overture 2026-10-21.0 + wikidata",
-    "indexed": "2026-11-13",
+    "indexed": "2026-11-14",
     "counts": {
-      "hotel": 922,
-      "food": 277,
-      "club": 101,
-      "indoor": 63,
       "adventure": 50,
-      "shop": 187,
-      "todo": 245,
-      "guide": 300,
-      "beach": 69
+      "hotel": 870,
+      "food": 264,
+      "guide": 293,
+      "todo": 188,
+      "club": 90,
+      "beach": 67,
+      "indoor": 55
     }
   },
   {
@@ -56,24 +54,24 @@
     "slug": "sulawesi",
     "name": "Sulawesi",
     "bbox": [
-      -6.1,
-      118.4,
-      2.1,
-      125.6
+      -5.7028822,
+      118.757143,
+      1.7513116,
+      125.2478129
     ],
-    "places": 54621,
-    "photos": 5611,
+    "places": 55198,
+    "photos": 18,
     "source": "overture 2026-10-21.0 + wikidata",
-    "indexed": "2026-11-13",
+    "indexed": "2026-11-14",
     "counts": {
-      "indoor": 1807,
-      "beach": 961,
-      "todo": 18594,
-      "hotel": 7181,
-      "food": 22035,
-      "club": 2493,
-      "guide": 1420,
-      "adventure": 130
+      "indoor": 1805,
+      "beach": 943,
+      "todo": 19233,
+      "hotel": 7165,
+      "food": 22021,
+      "club": 2488,
+      "guide": 1416,
+      "adventure": 127
     }
   },
   {
@@ -86,12 +84,12 @@
       -8.7150148,
       -157.1089326
     ],
-    "places": 442,
-    "photos": 233,
+    "places": 415,
+    "photos": 2,
     "source": "overture 2026-10-21.0 + wikidata",
-    "indexed": "2026-11-13",
+    "indexed": "2026-11-14",
     "counts": {
-      "todo": 111,
+      "todo": 84,
       "hotel": 170,
       "club": 29,
       "food": 77,
