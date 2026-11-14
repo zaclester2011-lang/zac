@@ -10,7 +10,7 @@ question ("hidden water body") rank destinations against each other.
 Writes site/packs.json and one site/d/<id>.json per destination.
 """
 
-import json, os, sqlite3, collections
+import json, os, sqlite3, collections, hashlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data", "index.db")
@@ -36,6 +36,17 @@ CATS = ["beach", "adventure", "food", "club", "todo", "hotel", "indoor", "shop",
 TOP_SPREAD = ["beach", "todo", "food", "adventure", "club", "indoor", "hotel", "shop"]
 
 
+def local_name(title):
+    return hashlib.sha1(title.encode("utf-8")).hexdigest()[:16] + ".jpg"
+
+
+COLOURS = {}
+try:
+    COLOURS = json.load(open(os.path.join(SITE, "colours.json")))
+except Exception:
+    pass
+
+
 def strip(url):
     if not url:
         return ""
@@ -53,17 +64,23 @@ def main():
     for did, slug, name, s, w, n, e in dests:
         rows = con.execute(
             """SELECT name, category, lat, lon, confidence, locality, kind, website,
-                      discovery_auto, photo, stars
+                      discovery_auto, photo, stars, photo_title
                FROM place WHERE dest=?
                ORDER BY (photo IS NULL OR photo NOT LIKE 'http%'), confidence DESC
                LIMIT ?""", (did, MAX_PER_DEST)).fetchall()
         if not rows:
             continue
-        out = [[r[0], r[1], round(r[2], 4), round(r[3], 4), round(r[4] or 0, 2),
-                r[5] or "", r[6] or "", r[7] or "", r[8], strip(r[9]), r[10] or ""]
-               for r in rows]
+        out = []
+        for r in rows:
+            title = r[11] or ""
+            col = COLOURS.get(title)
+            out.append([r[0], r[1], round(r[2], 4), round(r[3], 4), round(r[4] or 0, 2),
+                        r[5] or "", r[6] or "", r[7] or "", r[8],
+                        local_name(title) if title else "", r[10] or "",
+                        [col["hue"], col["sat"]] if col else None, title])
         with open(os.path.join(SITE, "d", "%d.json" % did), "w") as fh:
-            json.dump({"f": ["n", "c", "lat", "lon", "q", "loc", "k", "w", "ad", "img", "stars"],
+            json.dump({"f": ["n", "c", "lat", "lon", "q", "loc", "k", "w", "ad",
+                             "img", "stars", "col", "credit"],
                        "r": out}, fh, ensure_ascii=False, separators=(",", ":"))
 
         counts = collections.Counter(r[1] for r in out)
@@ -80,7 +97,8 @@ def main():
                 if len(pool) > rounds:
                     r = pool[rounds]
                     picked.append({"n": r[0], "c": r[1], "img": r[9], "ad": r[8],
-                                   "k": r[6], "loc": r[5]})
+                                   "k": r[6], "loc": r[5], "col": r[11],
+                                   "credit": r[12], "w": r[7]})
                     seen.add(r[0])
             if len(picked) >= 10:
                 break

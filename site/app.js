@@ -2,7 +2,7 @@
    packs.json holds one row per destination; d/<id>.json is fetched when a pack opens. */
 
 const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
-const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10};
+const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10, COL:11, CREDIT:12};
 const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"],["food","Restaurants"],
   ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops"]];
 const CATLAB = {beach:"Beach", food:"Restaurant", club:"Bar or club", todo:"Thing to do",
@@ -81,9 +81,34 @@ let packQ = "", packCat = "all", shown = 60;
 const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const fmt = n => (n || 0).toLocaleString("en-GB");
+/* the page serves its own pictures: artifacts refuse images from other hosts */
 const img = (file, alt, cls) => file
-  ? '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="' + esc(COMMONS + encodeURIComponent(file) + "?width=480") + '">'
+  ? '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="img/' + esc(file)
+    + '" onerror="this.outerHTML=\'<div class=&quot;' + cls + ' noimg&quot;><span>Photograph not cached</span></div>\'">'
   : '<div class="' + cls + ' noimg"><span>No photograph yet</span></div>';
+
+/* a plain factual sentence for every place, built from what is actually known */
+function paragraph(r) {
+  const kind = (r[F.KIND] || CATLAB[r[F.C]] || "place").toLowerCase();
+  const art = /^[aeiou]/.test(kind) ? "An" : "A";
+  const where = r[F.LOC] ? " in " + r[F.LOC] : "";
+  let s = art + " " + kind + where + ".";
+  if (r[F.C] === "beach") {
+    s += " At " + r[F.LAT].toFixed(3) + ", " + r[F.LON].toFixed(3) + ".";
+  }
+  if (r[F.COL]) {
+    s += " The water in its photograph measures hue " + r[F.COL][0] + "\u00b0 at saturation "
+       + r[F.COL][1].toFixed(2) + ".";
+  } else if (r[F.IMG]) {
+    s += " Photographed, but no water is visible in frame to measure.";
+  } else {
+    s += " No photograph of it has been found.";
+  }
+  if (r[F.STARS]) s += " Rated " + r[F.STARS] + " stars in OpenStreetMap.";
+  const sc = scoredFor(r[F.N]);
+  if (!sc) s += " Nobody has been and scored it.";
+  return s;
+}
 const scoredFor = name => {
   const n = (name || "").toLowerCase();
   for (const k in SCORED) if (n.includes(k)) return SCORED[k];
@@ -173,10 +198,12 @@ function openPack(id) {
       + '<div class="topbody"><div class="topnum">' + (i + 1) + "</div>"
       + "<h4>" + esc(t.n) + "</h4>"
       + '<div class="meta">' + esc(t.k || CATLAB[t.c] || "") + (t.loc ? " · " + esc(t.loc) : "") + "</div>"
-      + (sc ? '<p class="desc">' + esc(sc.t) + "</p>"
-            + '<div class="scores"><span class="sc">D ' + sc.D + '</span><span class="sc">C ' + sc.C
+      + '<p class="desc">' + esc(sc ? sc.t : paragraph(
+          [t.n, t.c, 0, 0, 0, t.loc, t.k, t.w || "", t.ad, t.img, "", t.col, t.credit])) + "</p>"
+      + (sc ? '<div class="scores"><span class="sc">D ' + sc.D + '</span><span class="sc">C ' + sc.C
             + '</span><span class="sc">W ' + sc.W + "</span></div>"
-          : '<div class="scores"><span class="sc">D ' + t.ad + " auto</span></div>")
+          : '<div class="scores"><span class="sc draft">D ' + t.ad + " drafted</span>"
+            + (t.col ? '<span class="sc meas">hue ' + t.col[0] + "\u00b0 sat " + t.col[1].toFixed(2) + "</span>" : "") + "</div>")
       + "</div></article>";
   }).join("");
   $("packlist").innerHTML = "";

@@ -183,3 +183,5 @@ h3.section{font-family:var(--display);font-weight:400;font-size:24px;margin:28px
 .cardbody{padding:10px 12px 12px;display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
 .cardbody h4{margin:0;font-family:var(--display);font-weight:400;font-size:18px;line-height:1.15;overflow-wrap:anywhere}
 .sc.star{background:var(--ok-soft);color:var(--ok);font-weight:500}
+.sc.draft{background:transparent;border:1px dashed var(--line);color:var(--ink-faint)}
+.sc.meas{background:var(--accent);color:var(--paper);font-weight:500}

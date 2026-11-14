@@ -275,5 +275,130 @@
       "adventure": 451,
       "indoor": 1194
     }
+  },
+  {
+    "id": 11,
+    "slug": "sardinia",
+    "name": "Sardinia",
+    "bbox": [
+      38.8590846,
+      8.1308446,
+      41.3131122,
+      9.8293196
+    ],
+    "places": 34857,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 3875,
+      "beach": 1425,
+      "hotel": 11200,
+      "club": 4147,
+      "adventure": 607,
+      "food": 10068,
+      "guide": 1095,
+      "indoor": 2440
+    }
+  },
+  {
+    "id": 12,
+    "slug": "corsica",
+    "name": "Corsica",
+    "bbox": [
+      41.333191,
+      8.534717,
+      43.0277079,
+      9.5600125
+    ],
+    "places": 10774,
+    "photos": 295,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 1536,
+      "beach": 570,
+      "food": 3327,
+      "hotel": 3570,
+      "adventure": 330,
+      "club": 751,
+      "indoor": 481,
+      "guide": 209
+    }
+  },
+  {
+    "id": 13,
+    "slug": "algarve",
+    "name": "Algarve",
+    "bbox": [
+      36.2449218,
+      -9.1959563,
+      38.2449218,
+      -7.1959563
+    ],
+    "places": 19727,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 1651,
+      "club": 2778,
+      "beach": 952,
+      "food": 7105,
+      "guide": 537,
+      "indoor": 1518,
+      "hotel": 4981,
+      "adventure": 205
+    }
+  },
+  {
+    "id": 14,
+    "slug": "madeira",
+    "name": "Madeira",
+    "bbox": [
+      30.0287783,
+      -17.2659253,
+      33.1281603,
+      -15.8536715
+    ],
+    "places": 4674,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "guide": 235,
+      "todo": 605,
+      "food": 1494,
+      "hotel": 945,
+      "indoor": 375,
+      "beach": 87,
+      "club": 846,
+      "adventure": 87
+    }
+  },
+  {
+    "id": 15,
+    "slug": "dubrovnik",
+    "name": "Dubrovnik",
+    "bbox": [
+      42.6208867,
+      17.7655924,
+      42.7803608,
+      18.1581147
+    ],
+    "places": 2267,
+    "photos": 1,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "beach": 59,
+      "hotel": 1136,
+      "todo": 179,
+      "food": 433,
+      "indoor": 105,
+      "club": 143,
+      "guide": 158,
+      "adventure": 54
+    }
   }
 ]
