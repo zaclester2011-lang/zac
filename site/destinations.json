@@ -425,5 +425,55 @@
       "club": 322,
       "beach": 110
     }
+  },
+  {
+    "id": 17,
+    "slug": "azores",
+    "name": "Azores",
+    "bbox": [
+      36.9276305,
+      -31.2688154,
+      39.7261841,
+      -25.0131792
+    ],
+    "places": 4515,
+    "photos": 36,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "guide": 214,
+      "club": 510,
+      "food": 1050,
+      "todo": 964,
+      "indoor": 364,
+      "hotel": 1212,
+      "adventure": 73,
+      "beach": 128
+    }
+  },
+  {
+    "id": 18,
+    "slug": "seychelles",
+    "name": "Seychelles",
+    "bbox": [
+      -10.4649258,
+      45.9988759,
+      -3.512,
+      56.4979396
+    ],
+    "places": 980,
+    "photos": 13,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 135,
+      "hotel": 372,
+      "beach": 111,
+      "adventure": 34,
+      "food": 177,
+      "indoor": 63,
+      "club": 63,
+      "guide": 25
+    }
   }
 ]
