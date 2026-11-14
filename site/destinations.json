@@ -400,5 +400,30 @@
       "guide": 158,
       "adventure": 54
     }
+  },
+  {
+    "id": 16,
+    "slug": "zakynthos",
+    "name": "Zakynthos",
+    "bbox": [
+      37.6442841,
+      20.6184257,
+      37.9338691,
+      20.9941778
+    ],
+    "places": 2986,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1318,
+      "food": 828,
+      "todo": 206,
+      "indoor": 43,
+      "adventure": 50,
+      "guide": 109,
+      "club": 322,
+      "beach": 110
+    }
   }
 ]
