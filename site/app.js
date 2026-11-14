@@ -40,7 +40,7 @@ const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"
   ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops & markets"]];
 const CATLAB = {beach:"Beach",food:"Restaurant",club:"Bar or club",todo:"Thing to do",
   indoor:"Indoor",hotel:"Hotel",shop:"Shop",guide:"Guide",adventure:"Adventure"};
-const MIDLAT = [35.24,-5.80,-2.00];
+const MIDLAT = [];
 
 let DATA = [], dest = 0, cat = "all", q = "", shown = 48, gshown = 36, gdest = 0, REV = {};
 const $ = id => document.getElementById(id);
@@ -168,10 +168,10 @@ function parseQuery(term) {
 }
 function rowMatches(r, p) {
   if (p.cats.size && !p.cats.has(r[1])) return false;
-  if (p.has.has("photo") && !r[12]) return false;
-  if (p.has.has("stars") && !r[13]) return false;
-  if (p.minD !== null && r[11] < p.minD) return false;
-  if (p.maxD !== null && r[11] > p.maxD) return false;
+  if (p.has.has("photo") && !r[IMG]) return false;
+  if (p.has.has("stars") && !r[STARS]) return false;
+  if (p.minD !== null && r[AD] < p.minD) return false;
+  if (p.maxD !== null && r[AD] > p.maxD) return false;
   if (!p.words.length) return true;
   const hay = (r[0] + " " + (r[6] || "") + " " + (r[5] || "") + " " + (CATLAB[r[1]] || "")).toLowerCase();
   return p.words.every(w => hay.includes(w));
@@ -210,8 +210,11 @@ function chips(host, items, cur, on, counts) {
 }
 const tot = p => p.D + p.C + p.W;
 const weak = p => Math.min(p.D, p.C, p.W) < 7;
-function photoEl(url, name) {
-  if (!url) return '<div class="nophoto"><span>No photograph yet</span></div>';
+const WEB = 7, AD = 8, IMG = 9, STARS = 10;
+const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
+function photoEl(file, name) {
+  if (!file) return '<div class="nophoto"><span>No photograph yet</span></div>';
+  const url = COMMONS + encodeURIComponent(file) + "?width=480";
   return '<img class="photo" loading="lazy" alt="' + esc(name) + '" src="' + esc(url) + '">'
     + '<div class="credit">Photograph taken nearby \u00b7 Wikimedia Commons</div>';
 }
@@ -224,9 +227,7 @@ function sentence(r) {
     s = art + " " + kind + " on the " + side + " coast" + (r[5] ? " near " + r[5] : "")
       + ", at " + r[2].toFixed(3) + ", " + r[3].toFixed(3) + ".";
   }
-  if (r[9]) s += " " + r[9] + ".";
-  const have = []; if (r[10]) have.push("a phone number"); if (r[8]) have.push("a website");
-  if (have.length) s += " The listing carries " + have.join(" and ") + ".";
+  if (r[WEB]) s += " The listing carries a website.";
   s += r[1] === "beach" ? " No colour measurement has been taken here."
                         : " Indexed from open map data and not yet scored.";
   return s;
@@ -251,22 +252,22 @@ function scoredCard(p, img) {
 }
 function plainCard(r) {
   const a = document.createElement("article");
-  a.innerHTML = photoEl(r[12], r[0])
+  a.innerHTML = photoEl(r[IMG], r[0])
     + '<div class="bd"><div class="ttl"><h3>' + esc(r[0]) + '</h3><span class="total"><i>unscored</i></span></div>'
     + '<div class="meta">' + esc(r[6] || CATLAB[r[1]] || "Place") + (r[5] ? " &middot; " + esc(r[5]) : "") + "</div>"
     + '<p class="desc">' + esc(sentence(r)) + "</p>"
-    + (r[8] ? '<a class="site" href="' + esc(r[8]) + '" target="_blank" rel="noopener">'
-        + esc(r[8].replace(/^https?:\/\//, "").replace(/\/$/, "")).slice(0, 46) + "</a>" : "")
+    + (r[WEB] ? '<a class="site" href="' + esc(r[WEB]) + '" target="_blank" rel="noopener">'
+        + esc(r[WEB].replace(/^https?:\/\//, "").replace(/\/$/, "")).slice(0, 46) + "</a>" : "")
     + '<div class="scores">'
-    + (r[13] ? '<span class="sc" style="background:var(--ok-soft);color:var(--ok)" title="Star rating from OpenStreetMap">'
-        + esc(r[13]) + "\u2605</span>" : "")
-    + '<span class="sc" title="Drafted from place density, not measured">D ' + r[11] + " auto</span>"
+    + (r[STARS] ? '<span class="sc" style="background:var(--ok-soft);color:var(--ok)" title="Star rating from OpenStreetMap">'
+        + esc(r[STARS]) + "\u2605</span>" : "")
+    + '<span class="sc" title="Drafted from place density, not measured">D ' + r[AD] + " auto</span>"
     + '<span class="tag">' + (r[1] === "beach" ? "No colour measured" : "Colour unmeasured") + "</span></div></div>";
-  a.querySelector(".bd").appendChild(revBlock(r[0], r[7], r[11]));
+  a.querySelector(".bd").appendChild(revBlock(r[0], r[7], r[AD]));
   return a;
 }
 const imgFor = (name, d) => {
-  const hit = DATA.find(r => r[7] === d && r[12] && r[0].toLowerCase().includes(name.toLowerCase().split(" ")[0]));
+  const hit = DATA.find(r => r[7] === d && r[IMG] && r[0].toLowerCase().includes(name.toLowerCase().split(" ")[0]));
   return hit ? hit[12] : "";
 };
 
@@ -274,7 +275,7 @@ const imgFor = (name, d) => {
 function render() {
   const counts = {all:0};
   DATA.forEach(r => { if (r[7] === dest && r[1] !== "guide") { counts.all++; counts[r[1]] = (counts[r[1]] || 0) + 1; } });
-  chips($("dests"), DESTS, dest, v => { dest = v; shown = 48; render(); });
+  chips($("dests"), DESTS, dest, v => { dest = v; shown = 48; loadDest(v); });
   chips($("cats"), CATS, cat, v => { cat = v; shown = 48; render(); }, counts);
   chips($("sorts"), SORTS, sortBy, v => { sortBy = v; shown = 48; render(); });
   const term = q.trim();
@@ -286,8 +287,8 @@ function render() {
     .filter(r => catFilter(r[1]))
     .filter(r => !P || rowMatches(r, P))
     .filter(r => !sc.some(p => p.n.toLowerCase() === r[0].toLowerCase()))
-    .filter(r => sortBy !== "photo" || r[12])
-    .filter(r => sortBy !== "starred" || r[13]);
+    .filter(r => sortBy !== "photo" || r[IMG])
+    .filter(r => sortBy !== "starred" || r[STARS]);
   if (sortBy === "hidden" || (P && P.minD !== null)) pl.sort((a, b) => b[11] - a[11]);
   else if (sortBy === "starred") pl.sort((a, b) => parseFloat(b[13]) - parseFloat(a[13]));
   else {
@@ -322,7 +323,7 @@ function render() {
 }
 function renderGuides() {
   const counts = {}; DESTS.forEach(([v]) => counts[v] = DATA.filter(r => r[7] === v && r[1] === "guide").length);
-  chips($("gdests"), DESTS, gdest, v => { gdest = v; gshown = 36; renderGuides(); }, counts);
+  chips($("gdests"), DESTS, gdest, v => { gdest = v; gshown = 36; loadDest(v); }, counts);
   const list = DATA.filter(r => r[7] === gdest && r[1] === "guide");
   const g = $("ggrid"); g.innerHTML = "";
   list.slice(0, gshown).forEach(r => {
@@ -330,8 +331,8 @@ function renderGuides() {
     a.innerHTML = '<div class="bd"><div class="ttl"><h3>' + esc(r[0]) + '</h3><span class="total"><i>prospect</i></span></div>'
       + '<div class="meta">' + esc(r[6] || "Operator") + (r[5] ? " &middot; " + esc(r[5]) : "") + "</div>"
       + '<p class="desc">' + esc(sentence(r)) + "</p>"
-      + (r[8] ? '<a class="site" href="' + esc(r[8]) + '" target="_blank" rel="noopener">'
-          + esc(r[8].replace(/^https?:\/\//, "").replace(/\/$/, "")).slice(0, 46) + "</a>"
+      + (r[WEB] ? '<a class="site" href="' + esc(r[WEB]) + '" target="_blank" rel="noopener">'
+          + esc(r[WEB].replace(/^https?:\/\//, "").replace(/\/$/, "")).slice(0, 46) + "</a>"
         : '<div class="meta">No website in the data</div>')
       + '<div class="scores"><span class="tag">Not a customer</span></div></div>';
     g.appendChild(a);
@@ -353,11 +354,30 @@ function renderStatic() {
     const a = DATA.filter(r => r[7] === 0 && r[1] === k).length;
     const b = DATA.filter(r => r[7] === 1 && r[1] === k).length;
     const s = SCORED.filter(p => p.c === k).length;
-    const ph = DATA.filter(r => r[1] === k && r[12]).length;
+    const ph = DATA.filter(r => r[1] === k && r[IMG]).length;
     return "<tr><td>" + esc(l) + '</td><td class="num">' + fmt(a) + '</td><td class="num">' + fmt(b)
       + '</td><td class="num" style="color:' + (s ? "var(--accent)" : "var(--ink-faint)") + '">' + (s || "—")
       + '</td><td class="num">' + (ph || "—") + "</td></tr>";
   }).join("");
+}
+
+
+/* ---------- one destination at a time: the whole index is too big for a single fetch ---------- */
+let REGISTRY = [], LOADED = {};
+function loadDest(id) {
+  if (LOADED[id]) { DATA = LOADED[id]; render(); renderGuides(); renderStatic(); return Promise.resolve(); }
+  const d = REGISTRY.find(x => x.id === id);
+  $("count").textContent = "Loading " + (d ? d.name : "destination") + "\u2026";
+  $("grid").innerHTML = '<div class="empty"><strong>Loading ' + esc(d ? d.name : "") + "</strong>"
+    + (d ? fmt(d.places) + " places, " + fmt(d.photos || 0) + " photographs" : "") + "</div>";
+  return fetch("d/" + id + ".json")
+    .then(r => { if (!r.ok) throw new Error("d/" + id + ".json returned " + r.status); return r.json(); })
+    .then(j => { LOADED[id] = j.r; DATA = j.r; render(); renderGuides(); renderStatic(); })
+    .catch(err => {
+      $("count").textContent = "Could not load that destination.";
+      $("grid").innerHTML = '<div class="empty"><strong>Could not load</strong>'
+        + esc(String(err.message || err)) + "</div>";
+    });
 }
 
 const TABS = [["t-dest","p-dest"],["t-guides","p-guides"],["t-acc","p-acc"],["t-cov","p-cov"]];
@@ -370,20 +390,18 @@ loadReviews()
   .then(() => fetch("destinations.json").then(r => r.json()).catch(() => []))
   .then(reg => {
     reg.sort((a, b) => a.id - b.id);
+    REGISTRY = reg;
     DESTS = reg.map(d => [d.id, d.name]);
     MIDLAT = []; reg.forEach(d => { MIDLAT[d.id] = (d.bbox[0] + d.bbox[2]) / 2; });
-    if (DESTS.length) dest = gdest = DESTS[0][0];
-    const el = document.getElementById("s-dest");
-    if (el) el.textContent = DESTS.length;
-    return fetch("data.json");
+    $("s-total").textContent = fmt(reg.reduce((a, d) => a + d.places, 0));
+    $("s-scored").textContent = SCORED.length;
+    $("s-pic").textContent = fmt(reg.reduce((a, d) => a + (d.photos || 0), 0));
+    const el = document.getElementById("s-dest"); if (el) el.textContent = DESTS.length;
+    if (DESTS.length) { dest = gdest = DESTS[0][0]; }
+    return loadDest(dest);
   })
-  .then(r => r.json()).then(j => {
-  DATA = j.r;
-  $("s-total").textContent = fmt(DATA.length);
-  $("s-scored").textContent = SCORED.length;
-  $("s-pic").textContent = fmt(DATA.filter(r => r[12]).length);
-  render(); renderGuides(); renderStatic();
-}).catch(() => {
-  $("count").textContent = "Index did not load.";
-  $("grid").innerHTML = '<div class="empty"><strong>Index did not load</strong>data.json could not be fetched. Serve this folder over HTTP rather than opening the file directly.</div>';
-});
+  .catch(err => {
+    $("count").textContent = "Index did not load.";
+    $("grid").innerHTML = '<div class="empty"><strong>Index did not load</strong>'
+      + esc(String(err && err.message || err)) + "</div>";
+  });
