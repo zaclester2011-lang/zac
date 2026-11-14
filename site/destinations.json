@@ -525,5 +525,55 @@
       "indoor": 221,
       "adventure": 91
     }
+  },
+  {
+    "id": 21,
+    "slug": "maui",
+    "name": "Maui",
+    "bbox": [
+      20.5744337,
+      -156.6972445,
+      21.031561,
+      -155.9790919
+    ],
+    "places": 3991,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 841,
+      "beach": 367,
+      "adventure": 199,
+      "food": 1026,
+      "guide": 205,
+      "indoor": 359,
+      "hotel": 750,
+      "club": 244
+    }
+  },
+  {
+    "id": 22,
+    "slug": "cape-town",
+    "name": "Cape Town",
+    "bbox": [
+      -34.0888301,
+      18.2572197,
+      -33.7688301,
+      18.5772197
+    ],
+    "places": 12349,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 2594,
+      "adventure": 105,
+      "beach": 146,
+      "indoor": 1208,
+      "hotel": 2529,
+      "food": 3770,
+      "guide": 855,
+      "club": 1142
+    }
   }
 ]
