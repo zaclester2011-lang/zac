@@ -575,5 +575,30 @@
       "guide": 855,
       "club": 1142
     }
+  },
+  {
+    "id": 23,
+    "slug": "tulum",
+    "name": "Tulum",
+    "bbox": [
+      19.7772997,
+      -87.9950654,
+      20.5160898,
+      -87.3026413
+    ],
+    "places": 3355,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1168,
+      "todo": 376,
+      "indoor": 171,
+      "food": 1013,
+      "club": 251,
+      "guide": 152,
+      "adventure": 86,
+      "beach": 138
+    }
   }
 ]
