@@ -291,7 +291,8 @@ function render() {
   if (sortBy === "hidden" || (P && P.minD !== null)) pl.sort((a, b) => b[11] - a[11]);
   else if (sortBy === "starred") pl.sort((a, b) => parseFloat(b[13]) - parseFloat(a[13]));
   else {
-    pl.sort((a, b) => (b[4] - a[4]) || ((b[12] ? 1 : 0) - (a[12] ? 1 : 0)));
+    // photographs first: clicking a destination should fill with pictures, not blank panels
+    pl.sort((a, b) => ((b[12] ? 1 : 0) - (a[12] ? 1 : 0)) || (b[4] - a[4]));
     if (cat === "all") {                       // interleave so one category cannot fill the page
       const buckets = {};
       pl.forEach(r => (buckets[r[1]] = buckets[r[1]] || []).push(r));
