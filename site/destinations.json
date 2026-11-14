@@ -175,5 +175,30 @@
       "todo": 235,
       "beach": 91
     }
+  },
+  {
+    "id": 7,
+    "slug": "bali",
+    "name": "Bali",
+    "bbox": [
+      -9.0502287,
+      114.4126778,
+      -7.4627963,
+      115.8324222
+    ],
+    "places": 57250,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "food": 19393,
+      "todo": 8476,
+      "adventure": 631,
+      "hotel": 17507,
+      "club": 2881,
+      "indoor": 3124,
+      "beach": 908,
+      "guide": 4330
+    }
   }
 ]

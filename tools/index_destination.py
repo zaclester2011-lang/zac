@@ -276,16 +276,17 @@ def load(path, default):
 
 
 def save_all(rows, registry):
+    """Keep the working store and the registry. The site's own files are built
+    separately by tools/build_packs.py, which reads the database."""
     os.makedirs(SITE, exist_ok=True)
     with open(DATA, "w") as fh:
         json.dump({"f": FIELDS, "r": rows}, fh, ensure_ascii=False, separators=(",", ":"))
     with open(REG, "w") as fh:
         json.dump(registry, fh, ensure_ascii=False, indent=2)
-    mb = os.path.getsize(DATA) / 1e6
-    print("\n   site/data.json  %d places, %.1f MB" % (len(rows), mb))
-    if mb > 15:
-        print("   WARNING: over 15 MB. Re-run large destinations without --include-shops,")
-        print("            or split data.json per destination.")
+    print("\n   %d places held, %.1f MB working store"
+          % (len(rows), os.path.getsize(DATA) / 1e6))
+    print("   run: python3 tools/build_db.py import-places site/data.json")
+    print("        python3 tools/build_packs.py")
 
 
 # ---------------------------------------------------------------- commands

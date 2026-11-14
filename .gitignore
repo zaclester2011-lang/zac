@@ -10,3 +10,4 @@ data/*.db-wal
 data/*.db-shm
 __pycache__/
 *.pyc
+site/data.json
