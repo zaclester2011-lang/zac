@@ -100,5 +100,80 @@
       "guide": 12,
       "indoor": 15
     }
+  },
+  {
+    "id": 4,
+    "slug": "new-york",
+    "name": "New York",
+    "bbox": [
+      40.476578,
+      -74.258843,
+      40.91763,
+      -73.700233
+    ],
+    "places": 119932,
+    "photos": 660,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "indoor": 13480,
+      "club": 18756,
+      "hotel": 5202,
+      "todo": 26737,
+      "beach": 328,
+      "food": 52770,
+      "adventure": 279,
+      "guide": 2380
+    }
+  },
+  {
+    "id": 5,
+    "slug": "capri",
+    "name": "Capri",
+    "bbox": [
+      40.5358786,
+      14.1957565,
+      40.5618457,
+      14.2663785
+    ],
+    "places": 906,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "food": 195,
+      "hotel": 432,
+      "indoor": 38,
+      "club": 76,
+      "todo": 79,
+      "beach": 18,
+      "adventure": 29,
+      "guide": 39
+    }
+  },
+  {
+    "id": 6,
+    "slug": "santorini",
+    "name": "Santorini",
+    "bbox": [
+      36.3321735,
+      25.3538553,
+      36.482206,
+      25.4878919
+    ],
+    "places": 3203,
+    "photos": 56,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1709,
+      "food": 716,
+      "adventure": 41,
+      "club": 153,
+      "indoor": 104,
+      "guide": 154,
+      "todo": 235,
+      "beach": 91
+    }
   }
 ]

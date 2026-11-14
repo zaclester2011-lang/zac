@@ -1,204 +1,96 @@
-/* Hidden Water Index — client. Data: data.json (Overture Maps + Wikidata).
-   Reviews: posted to REVIEW_ENDPOINT if set, otherwise kept in this browser only. */
+/* Hidden Water Index — destination packs.
+   packs.json holds one row per destination; d/<id>.json is fetched when a pack opens. */
 
-const REVIEW_ENDPOINT = ""; // set to a URL (POST/GET JSON) once a backend exists
-
-const SCORED = [
-  {d:0,n:"Seitan Limania",c:"beach",D:8,C:8.5,W:10,hex:"#729E96",hue:169,sat:.28,ok:1,
-   t:"A cleft in the limestone at the end of a dirt track on Akrotiri. Deep off the shingle, with rock high enough to jump from."},
-  {d:0,n:"Katholiko Bay",c:"beach",D:8.5,C:7.5,W:10,ok:1,
-   t:"Two kilometres down the Avlaki ravine past an 11th-century monastery cut into the cliff. No beach — entry is off stone."},
-  {d:0,n:"Agiofarango",c:"beach",D:8,C:8,W:10,
-   t:"A 2.5 km gorge from Odigitria monastery to a cove with no road. Boats reach it in summer; from October the walk is the only way in."},
-  {d:0,n:"Marmara",c:"beach",D:8,C:8,W:10,
-   t:"At the foot of the Aradena gorge, under a 138-metre iron bridge and ladders bolted into rock. Twenty minutes on foot from Lykos."},
-  {d:0,n:"Lissos",c:"beach",D:8,C:8,W:10,
-   t:"An ancient healing sanctuary above a pebble bay, reached on foot over a ridge from Sougia or by boat in season. Unverified."},
-  {d:0,n:"Glyka Nera",c:"beach",D:7.5,C:8,W:10,ok:1,
-   t:"Thirty minutes along the coast path from Chora Sfakion. Freshwater springs rise through the shingle and cool the whole bay."},
-  {d:0,n:"Preveli",c:"beach",D:7,C:8,W:10,hex:"#508FA9",hue:197.5,sat:.53,ok:1,
-   t:"Where the Kourtaliotiko river meets the Libyan Sea under a palm grove. The grove burned in July 2026 and is early in a recovery measured in years."},
-  {d:0,n:"Balos",c:"beach",D:6,C:9.5,W:10,hex:"#49929E",hue:188,sat:.54,
-   t:"A sandbar between a lagoon and the open sea. The highest colour measured in Crete, and cut: a car park above, umbrella rows below."},
-  {d:0,n:"Elafonissi",c:"beach",D:6,C:9,W:10,ok:1,
-   t:"Pink shell sand on the south-west tip, shallow enough to stand a hundred metres out. Famous, and cut on Discovery once walked."},
-  {d:0,n:"Kourtaliotiko",c:"todo",D:8,C:7,W:4,ok:1,
-   t:"A gorge above Preveli with pools under a waterfall. Cut on Water: Cretan gorge freshwater measures about 14°C."}
-];
-const ACC = [
-  ["Seitan Limania","Colour","8","8.5","+0.5"],["Elafonissi","Colour","9","9","0"],
-  ["Glyka Nera","Colour","8","8","0"],["Katholiko","Colour, no photograph existed","7.5","7.5","0"],
-  ["Elafonissi","Discovery","8","6","−2.0"],["Preveli","Discovery","5","7","+2.0"],
-  ["Glyka Nera","Discovery","8","7.5","−0.5"],["Katholiko","Discovery","6.5","8.5","+2.0"]
-];
-const AUTO = [
-  ["Seitan Limania","8","8.0","0"],["Katholiko","8.5","8.0","−0.5"],["Glyka Nera","7.5","7.5","0"],
-  ["Preveli","7","7.0","0"],["Elafonissi","6","6.0","0"],["Balos","6","8.0","+2.0"]
-];
-const SORTS = [["known","Best known"],["hidden","Most hidden"],["photo","With a photograph"],["starred","Star rated"]];
-let sortBy = "known";
-let DESTS = [];   // built from the embedded registry at startup
+const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
+const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10};
 const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"],["food","Restaurants"],
-  ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops & markets"]];
-const CATLAB = {beach:"Beach",food:"Restaurant",club:"Bar or club",todo:"Thing to do",
-  indoor:"Indoor",hotel:"Hotel",shop:"Shop",guide:"Guide",adventure:"Adventure"};
-let MIDLAT = [];
+  ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops"]];
+const CATLAB = {beach:"Beach", food:"Restaurant", club:"Bar or club", todo:"Thing to do",
+  indoor:"Indoor", hotel:"Hotel", shop:"Shop", guide:"Guide", adventure:"Adventure"};
 
-let DATA = [], dest = 0, cat = "all", q = "", shown = 48, gshown = 36, gdest = 0, REV = {};
-const $ = id => document.getElementById(id);
-const esc = s => String(s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
-const fmt = n => n.toLocaleString("en-GB");
-const keyOf = (name, d) => (d + "|" + name).toLowerCase().replace(/[^a-z0-9|]+/g, "-").slice(0, 120);
+/* verified by standing in it */
+const SCORED = {
+  "seitan limania": {D:8, C:8.5, W:10, t:"A cleft in the limestone at the end of a dirt track. Deep off the shingle, with rock high enough to jump from."},
+  "katholiko": {D:8.5, C:7.5, W:10, t:"Two kilometres down the Avlaki ravine past an 11th-century monastery cut into the cliff. No beach — entry is off stone."},
+  "glyka nera": {D:7.5, C:8, W:10, t:"Thirty minutes along the coast path from Chora Sfakion. Freshwater springs rise through the shingle and cool the whole bay."},
+  "preveli": {D:7, C:8, W:10, t:"Where the Kourtaliotiko river meets the Libyan Sea under a palm grove. The grove burned in July 2026."},
+  "elafonissi": {D:6, C:9, W:10, t:"Pink shell sand on the south-west tip, shallow enough to stand a hundred metres out. Famous, and cut on Discovery once walked."},
+  "balos": {D:6, C:9.5, W:10, t:"A sandbar between a lagoon and the open sea. The highest colour measured in Crete, and cut: a car park above, umbrella rows below."}
+};
 
-/* ---------- reviews ---------- */
-function loadReviews() {
-  if (REVIEW_ENDPOINT) {
-    return fetch(REVIEW_ENDPOINT).then(r => r.json()).then(list => { index(list); }).catch(() => {});
-  }
-  try { index(JSON.parse(localStorage.getItem("hwi-reviews") || "[]")); } catch (e) {}
-  return Promise.resolve();
-}
-function index(list) {
-  REV = {};
-  (list || []).forEach(v => { const k = keyOf(v.place, v.dest); (REV[k] = REV[k] || []).push(v); });
-  const n = Object.values(REV).reduce((s, a) => s + a.length, 0);
-  if ($("s-rev")) $("s-rev").textContent = fmt(n);
-}
-async function saveReview(rec) {
-  if (REVIEW_ENDPOINT) {
-    const r = await fetch(REVIEW_ENDPOINT, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(rec)});
-    if (!r.ok) throw new Error("server " + r.status);
-  } else {
-    let all = [];
-    try { all = JSON.parse(localStorage.getItem("hwi-reviews") || "[]"); } catch (e) {}
-    all.push(rec);
-    localStorage.setItem("hwi-reviews", JSON.stringify(all));
-  }
-  const k = keyOf(rec.place, rec.dest);
-  (REV[k] = REV[k] || []).push(rec);
-  const n = Object.values(REV).reduce((s, a) => s + a.length, 0);
-  $("s-rev").textContent = fmt(n);
-}
-function revBlock(name, d, autoD) {
-  const k = keyOf(name, d), list = REV[k] || [];
-  const avg = f => list.length ? list.reduce((s, x) => s + (+x[f] || 0), 0) / list.length : null;
-  const w = document.createElement("div"); w.className = "rev";
-  const head = document.createElement("div"); head.className = "revline";
-  const mean = list.length ? ["D","C"].map(f => f + " " + avg(f).toFixed(1).replace(/\.0$/, "")).join("  ") : "";
-  head.innerHTML = "<span>" + (list.length
-    ? list.length + (list.length === 1 ? " review · " : " reviews · ") + mean
-    : "No reviews yet") + "</span>";
-  const btn = document.createElement("button");
-  btn.className = "revbtn"; btn.type = "button"; btn.textContent = "Review";
-  head.appendChild(btn); w.appendChild(head);
-  if (list.length) {
-    const ul = document.createElement("div"); ul.className = "revlist";
-    list.slice(-3).forEach(x => {
-      const li = document.createElement("div"); li.className = "revitem";
-      li.innerHTML = "<b>D " + esc(x.D) + " · C " + esc(x.C) + " · W " + esc(x.W) + "</b>";
-      if (x.note) { const p = document.createElement("div"); p.textContent = x.note; li.appendChild(p); }
-      ul.appendChild(li);
-    });
-    w.appendChild(ul);
-  }
-  btn.onclick = () => {
-    if (w.querySelector("form")) return;
-    btn.hidden = true;
-    const f = document.createElement("form"); f.className = "revform";
-    f.innerHTML = '<div class="revrow">'
-      + '<label>Discovery<input type="number" min="1" max="10" step="0.5" value="' + autoD + '" required></label>'
-      + '<label>Colour<input type="number" min="1" max="10" step="0.5" required></label></div>'
-      + '<textarea placeholder="What was it actually like? Walk time, access, whether anyone was there."></textarea>'
-      + '<div class="act"><button type="submit">Post review</button><span class="msg"></span></div>';
-    const msg = f.querySelector(".msg");
-    if (!REVIEW_ENDPOINT) msg.textContent = "Saved in this browser only — no server yet.";
-    f.onsubmit = async ev => {
-      ev.preventDefault();
-      const [D, C] = [...f.querySelectorAll("input")].map(i => parseFloat(i.value));
-      const note = f.querySelector("textarea").value.trim().slice(0, 600);
-      msg.textContent = "Saving…";
-      try { await saveReview({place:name, dest:d, D, C, note, at:new Date().toISOString()}); render(); }
-      catch (e) { msg.textContent = "Could not save (" + e.message + ")."; }
-    };
-    w.insertBefore(f, w.children[1] || null);
-  };
-  return w;
-}
-
-
-/* ---------- query parsing: turn plain words into filters ---------- */
+/* plain words → filters */
 const WORD_CAT = {
   beach:"beach", beaches:"beach", sand:"beach", sea:"beach", swim:"beach", swimming:"beach",
   cove:"beach", lagoon:"beach", shore:"beach", coast:"beach", water:"beach", turquoise:"beach",
+  bay:"beach", snorkel:"beach",
   bar:"club", bars:"club", club:"club", clubs:"club", nightclub:"club", nightlife:"club",
   pub:"club", drink:"club", drinks:"club", cocktail:"club", cocktails:"club", rooftop:"club",
   eat:"food", food:"food", restaurant:"food", restaurants:"food", dinner:"food", lunch:"food",
   breakfast:"food", taverna:"food", cafe:"food", coffee:"food", pizza:"food", seafood:"food",
   hotel:"hotel", hotels:"hotel", stay:"hotel", sleep:"hotel", room:"hotel", rooms:"hotel",
-  resort:"hotel", villa:"hotel", hostel:"hotel", apartment:"hotel",
-  dive:"adventure", diving:"adventure", snorkel:"adventure", snorkelling:"adventure",
-  hike:"adventure", hiking:"adventure", trek:"adventure", kayak:"adventure", boat:"adventure",
-  sail:"adventure", sailing:"adventure", surf:"adventure", surfing:"adventure",
-  climb:"adventure", climbing:"adventure", adventure:"adventure", trail:"adventure",
+  resort:"hotel", villa:"hotel", hostel:"hotel",
+  dive:"adventure", diving:"adventure", snorkelling:"adventure", hike:"adventure",
+  hiking:"adventure", trek:"adventure", kayak:"adventure", boat:"adventure", sail:"adventure",
+  sailing:"adventure", surf:"adventure", surfing:"adventure", climb:"adventure",
+  climbing:"adventure", adventure:"adventure", trail:"adventure",
   museum:"indoor", gallery:"indoor", indoor:"indoor", inside:"indoor", rain:"indoor",
   rainy:"indoor", cinema:"indoor", theatre:"indoor", spa:"indoor",
   ancient:"todo", ruins:"todo", ruin:"todo", historic:"todo", history:"todo", temple:"todo",
   castle:"todo", monastery:"todo", gorge:"todo", canyon:"todo", waterfall:"todo", cave:"todo",
   viewpoint:"todo", view:"todo", mountain:"todo", archaeological:"todo", church:"todo",
-  guide:"guide", guides:"guide", tour:"guide", tours:"guide", operator:"guide",
   shop:"shop", shops:"shop", market:"shop", markets:"shop", shopping:"shop"
 };
-const WORD_HAS = {photo:"photo", photos:"photo", picture:"photo", pictures:"photo", starred:"stars", stars:"stars", star:"stars"};
-const WORD_QUIET = ["empty","hidden","quiet","remote","alone","secret","deserted","secluded",
-                    "unspoilt","wild","undiscovered","peaceful","nobody"];
-const WORD_BUSY  = ["busy","popular","famous","lively","crowded","buzzing","known"];
-const STOP = ["a","an","the","in","on","at","with","somewhere","some","place","places","me",
-              "i","want","find","show","to","for","of","and","that","where","can","is","it","my","we"];
+const QUIET = ["empty","hidden","quiet","remote","alone","secret","deserted","secluded",
+               "unspoilt","wild","undiscovered","peaceful","nobody","untouched"];
+const BUSY = ["busy","popular","famous","lively","crowded","buzzing","known"];
+const STOP = ["a","an","the","in","on","at","with","somewhere","some","place","places","me","body",
+              "i","want","find","show","to","for","of","and","that","where","can","is","it","my","we","best"];
 
 function parseQuery(term) {
-  const words = term.toLowerCase().split(/[^a-z0-9']+/).filter(Boolean);
-  const cats = new Set(), has = new Set(); let minD = null, maxD = null; const rest = [];
+  const words = (term || "").toLowerCase().split(/[^a-z0-9']+/).filter(Boolean);
+  const cats = new Set(); let minD = null, maxD = null; const rest = [];
   words.forEach(w => {
     if (STOP.includes(w)) return;
     if (WORD_CAT[w]) { cats.add(WORD_CAT[w]); return; }
-    if (WORD_HAS[w]) { has.add(WORD_HAS[w]); return; }
-    if (WORD_QUIET.includes(w)) { minD = 7.5; return; }
-    if (WORD_BUSY.includes(w)) { maxD = 5; return; }
+    if (QUIET.includes(w)) { minD = 7.0; return; }
+    if (BUSY.includes(w)) { maxD = 5; return; }
     rest.push(w);
   });
-  return {cats, has, minD, maxD, words: rest, raw: term.trim()};
+  return {cats, minD, maxD, words: rest, raw: (term || "").trim()};
 }
-function rowMatches(r, p) {
-  if (p.cats.size && !p.cats.has(r[1])) return false;
-  if (p.has.has("photo") && !r[IMG]) return false;
-  if (p.has.has("stars") && !r[STARS]) return false;
-  if (p.minD !== null && r[AD] < p.minD) return false;
-  if (p.maxD !== null && r[AD] > p.maxD) return false;
-  if (!p.words.length) return true;
-  const hay = (r[0] + " " + (r[6] || "") + " " + (r[5] || "") + " " + (CATLAB[r[1]] || "")).toLowerCase();
-  return p.words.every(w => hay.includes(w));
-}
-function scoredMatches(x, p) {
-  if (p.has.size) return false;
-  if (p.cats.size && !p.cats.has(x.c)) return false;
-  if (p.minD !== null && x.D < p.minD) return false;
-  if (p.maxD !== null && x.D > p.maxD) return false;
-  if (!p.words.length) return true;
-  const hay = (x.n + " " + x.t + " " + (CATLAB[x.c] || "")).toLowerCase();
-  return p.words.every(w => hay.includes(w));
-}
-function describeQuery(p) {
+function describe(p) {
   const bits = [];
   if (p.cats.size) bits.push([...p.cats].map(c => CATLAB[c] || c).join(", "));
   if (p.minD !== null) bits.push("Discovery " + p.minD + "+");
   if (p.maxD !== null) bits.push("Discovery " + p.maxD + " or under");
-  if (p.has.has("photo")) bits.push("with a photograph");
-  if (p.has.has("stars")) bits.push("with a star rating");
-  if (p.words.length) bits.push('matching "' + p.words.join(" ") + '"');
-  return bits.length ? "reading that as: " + bits.join(" \u00b7 ") : "";
+  if (p.words.length) bits.push('"' + p.words.join(" ") + '"');
+  return bits.join(" · ");
+}
+function rowMatches(r, p) {
+  if (p.cats.size && !p.cats.has(r[F.C])) return false;
+  if (p.minD !== null && r[F.AD] < p.minD) return false;
+  if (p.maxD !== null && r[F.AD] > p.maxD) return false;
+  if (!p.words.length) return true;
+  const hay = (r[F.N] + " " + (r[F.KIND]||"") + " " + (r[F.LOC]||"") + " " + (CATLAB[r[F.C]]||"")).toLowerCase();
+  return p.words.every(w => hay.includes(w));
 }
 
-/* ---------- cards ---------- */
+/* ---------------------------------------------------------------- state */
+let PACKS = [], LOADED = {}, open_id = null, continent = "all";
+let packQ = "", packCat = "all", shown = 60;
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const fmt = n => (n || 0).toLocaleString("en-GB");
+const img = (file, alt, cls) => file
+  ? '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="' + esc(COMMONS + encodeURIComponent(file) + "?width=480") + '">'
+  : '<div class="' + cls + ' noimg"><span>No photograph yet</span></div>';
+const scoredFor = name => {
+  const n = (name || "").toLowerCase();
+  for (const k in SCORED) if (n.includes(k)) return SCORED[k];
+  return null;
+};
+
+/* ---------------------------------------------------------------- home */
 function chips(host, items, cur, on, counts) {
   host.innerHTML = "";
   items.forEach(([v, l]) => {
@@ -210,205 +102,150 @@ function chips(host, items, cur, on, counts) {
     host.appendChild(b);
   });
 }
-const tot = p => p.D + p.C + p.W;
-const weak = p => Math.min(p.D, p.C, p.W) < 7;
-const WEB = 7, AD = 8, IMG = 9, STARS = 10;
-const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
-function photoEl(file, name) {
-  if (!file) return '<div class="nophoto"><span>No photograph yet</span></div>';
-  const url = COMMONS + encodeURIComponent(file) + "?width=480";
-  return '<img class="photo" loading="lazy" alt="' + esc(name) + '" src="' + esc(url) + '">'
-    + '<div class="credit">Photograph taken nearby \u00b7 Wikimedia Commons</div>';
-}
-function sentence(r) {
-  const kind = (r[6] || CATLAB[r[1]] || "place").toLowerCase();
-  const art = /^[aeiou]/.test(kind) ? "An" : "A";
-  const dname = (DESTS.find(x => x[0] === dest) || [0, "the index"])[1];
-  let s = art + " " + kind + (r[5] ? " in " + r[5] : " in " + dname) + ".";
-  if (r[1] === "beach") {
-    const side = r[2] >= (MIDLAT[dest] || 0) ? "north" : "south";
-    s = art + " " + kind + " on the " + side + " coast" + (r[5] ? " near " + r[5] : "")
-      + ", at " + r[2].toFixed(3) + ", " + r[3].toFixed(3) + ".";
-  }
-  if (r[WEB]) s += " The listing carries a website.";
-  s += r[1] === "beach" ? " No colour measurement has been taken here."
-                        : " Indexed from open map data and not yet scored.";
-  return s;
-}
-function scoredCard(p, img) {
-  const a = document.createElement("article"); a.className = "scored";
-  a.innerHTML = photoEl(img, p.n)
-    + '<div class="bd"><div class="ttl"><h3>' + esc(p.n) + "</h3>"
-    + '<span class="total">' + String(tot(p)).replace(/\.0$/, "") + "<i>/30</i></span></div>"
-    + '<p class="desc">' + esc(p.t) + "</p>"
-    + '<div class="row" style="gap:5px">'
-    + (p.ok ? '<span class="tag ok">Measured on site</span>' : '<span class="tag">Scored from evidence</span>')
-    + (weak(p) ? '<span class="tag c">Cut — weak link</span>' : "")
-    + '<span class="tag">' + CATLAB[p.c] + "</span></div>"
-    + '<div class="scores"><span class="sc' + (p.D < 7 ? " weak" : "") + '">D ' + p.D + "</span>"
-    + '<span class="sc' + (p.C < 7 ? " weak" : "") + '">C ' + p.C + "</span>"
-    + '<span class="sc' + (p.W < 7 ? " weak" : "") + '">W ' + p.W + "</span>"
-    + (p.hex ? '<span class="sc" title="Measured from photographs">hue ' + p.hue + "° sat " + p.sat + "</span>" : "")
-    + "</div></div>";
-  a.querySelector(".bd").appendChild(revBlock(p.n, p.d, p.D));
-  return a;
-}
-function plainCard(r) {
-  const a = document.createElement("article");
-  a.innerHTML = photoEl(r[IMG], r[0])
-    + '<div class="bd"><div class="ttl"><h3>' + esc(r[0]) + '</h3><span class="total"><i>unscored</i></span></div>'
-    + '<div class="meta">' + esc(r[6] || CATLAB[r[1]] || "Place") + (r[5] ? " &middot; " + esc(r[5]) : "") + "</div>"
-    + '<p class="desc">' + esc(sentence(r)) + "</p>"
-    + (r[WEB] ? '<a class="site" href="' + esc(r[WEB]) + '" target="_blank" rel="noopener">'
-        + esc(r[WEB].replace(/^https?:\/\//, "").replace(/\/$/, "")).slice(0, 46) + "</a>" : "")
-    + '<div class="scores">'
-    + (r[STARS] ? '<span class="sc" style="background:var(--ok-soft);color:var(--ok)" title="Star rating from OpenStreetMap">'
-        + esc(r[STARS]) + "\u2605</span>" : "")
-    + '<span class="sc" title="Drafted from place density, not measured">D ' + r[AD] + " auto</span>"
-    + '<span class="tag">' + (r[1] === "beach" ? "No colour measured" : "Colour unmeasured") + "</span></div></div>";
-  a.querySelector(".bd").appendChild(revBlock(r[0], dest, r[AD]));
-  return a;
-}
-const imgFor = (name, d) => {
-  const n = name.toLowerCase();
-  const key = n.split(" ")[0];
-  const hit = DATA.find(r => r[IMG] && r[0].toLowerCase() === n)
-           || DATA.find(r => r[IMG] && (r[0].toLowerCase().includes(key) || n.includes(r[0].toLowerCase())));
-  return hit ? hit[12] : "";
-};
 
-/* ---------- render ---------- */
-function render() {
-  const counts = {all:0};
-  DATA.forEach(r => { if (r[1] !== "guide") { counts.all++; counts[r[1]] = (counts[r[1]] || 0) + 1; } });
-  chips($("dests"), DESTS, dest, v => { dest = v; shown = 48; loadDest(v); });
-  chips($("cats"), CATS, cat, v => { cat = v; shown = 48; render(); }, counts);
-  chips($("sorts"), SORTS, sortBy, v => { sortBy = v; shown = 48; render(); });
-  const term = q.trim();
-  const P = term ? parseQuery(term) : null;
-  const catFilter = c => cat === "all" || c === cat;
-  const sc = SCORED.filter(p => p.d === dest).filter(p => catFilter(p.c))
-    .filter(p => !P || scoredMatches(p, P)).sort((a, b) => tot(b) - tot(a));
-  let pl = DATA.filter(r => r[1] !== "guide")
-    .filter(r => catFilter(r[1]))
-    .filter(r => !P || rowMatches(r, P))
-    .filter(r => !sc.some(p => p.n.toLowerCase() === r[0].toLowerCase()))
-    .filter(r => sortBy !== "photo" || r[IMG])
-    .filter(r => sortBy !== "starred" || r[STARS]);
-  if (sortBy === "hidden" || (P && P.minD !== null)) pl.sort((a, b) => b[AD] - a[AD]);
-  else if (sortBy === "starred") pl.sort((a, b) => parseFloat(b[STARS]) - parseFloat(a[STARS]));
-  else {
-    // photographs first: clicking a destination should fill with pictures, not blank panels
-    pl.sort((a, b) => ((b[IMG] ? 1 : 0) - (a[IMG] ? 1 : 0)) || (b[4] - a[4]));
-    if (cat === "all") {                       // interleave so one category cannot fill the page
-      const buckets = {};
-      pl.forEach(r => (buckets[r[1]] = buckets[r[1]] || []).push(r));
-      const order = CATS.map(c => c[0]).filter(c => c !== "all" && buckets[c]);
-      const mixed = [];
-      for (let i = 0; mixed.length < pl.length; i++) {
-        let moved = false;
-        order.forEach(c => { if (buckets[c][i]) { mixed.push(buckets[c][i]); moved = true; } });
-        if (!moved) break;
-      }
-      pl = mixed;
+function rankPacks(query) {
+  const p = parseQuery(query);
+  const useHidden = p.minD !== null;
+  return PACKS.map(k => {
+    let score;
+    if (!p.cats.size && !useHidden) score = k.photos;
+    else {
+      const src = useHidden ? k.hidden : k.counts;
+      const cats = p.cats.size ? [...p.cats] : Object.keys(src);
+      score = cats.reduce((a, c) => a + (src[c] || 0), 0);
     }
-  }
-  const g = $("grid"); g.innerHTML = "";
-  sc.forEach(p => g.appendChild(scoredCard(p, imgFor(p.n, p.d))));
-  pl.slice(0, Math.max(0, shown - sc.length)).forEach(r => g.appendChild(plainCard(r)));
-  if (!sc.length && !pl.length) {
-    g.innerHTML = '<div class="empty"><strong>Nothing indexed here yet</strong>This filter is live and empty for '
-      + DESTS[dest][1] + ". Entries appear when the data covers them, or when somebody goes and measures.</div>";
-  }
-  $("count").textContent = fmt(sc.length + pl.length) + " places · " + sc.length
-    + " verified · " + fmt(pl.length) + " awaiting measurement";
-  const left = pl.length - Math.max(0, shown - sc.length);
-  $("more").innerHTML = left > 0
-    ? '<button class="more-btn" type="button">Show ' + fmt(Math.min(left, 96)) + " more of " + fmt(left) + "</button>" : "";
-  const mb = $("more").querySelector("button"); if (mb) mb.onclick = () => { shown += 96; render(); };
+    return {pack: k, score, parsed: p};
+  }).filter(x => x.score > 0 || !query.trim())
+    .sort((a, b) => b.score - a.score);
 }
-function renderGuides() {
-  const counts = {}; REGISTRY.forEach(d => counts[d.id] = (d.counts || {}).guide || 0);
-  chips($("gdests"), DESTS, gdest, v => { gdest = v; gshown = 36; loadDest(v); }, counts);
-  const list = (gdest === dest) ? DATA.filter(r => r[1] === "guide") : [];
-  const g = $("ggrid"); g.innerHTML = "";
-  list.slice(0, gshown).forEach(r => {
-    const a = document.createElement("article");
-    a.innerHTML = '<div class="bd"><div class="ttl"><h3>' + esc(r[0]) + '</h3><span class="total"><i>prospect</i></span></div>'
-      + '<div class="meta">' + esc(r[6] || "Operator") + (r[5] ? " &middot; " + esc(r[5]) : "") + "</div>"
-      + '<p class="desc">' + esc(sentence(r)) + "</p>"
-      + (r[WEB] ? '<a class="site" href="' + esc(r[WEB]) + '" target="_blank" rel="noopener">'
-          + esc(r[WEB].replace(/^https?:\/\//, "").replace(/\/$/, "")).slice(0, 46) + "</a>"
-        : '<div class="meta">No website in the data</div>')
-      + '<div class="scores"><span class="tag">Not a customer</span></div></div>';
+
+function renderHome() {
+  const where = $("where").value.trim().toLowerCase();
+  const want = $("want").value;
+  const conts = ["all", ...Array.from(new Set(PACKS.map(p => p.continent))).sort()];
+  chips($("conts"), conts.map(c => [c, c === "all" ? "Everywhere" : c]), continent,
+        v => { continent = v; renderHome(); });
+
+  let ranked = rankPacks(want);
+  if (continent !== "all") ranked = ranked.filter(x => x.pack.continent === continent);
+  if (where) ranked = ranked.filter(x => x.pack.name.toLowerCase().includes(where)
+                                      || x.pack.continent.toLowerCase().includes(where));
+  const p = parseQuery(want);
+  const hint = want.trim() ? describe(p) : "";
+  $("homecount").textContent = ranked.length + (ranked.length === 1 ? " destination" : " destinations")
+    + (hint ? " · ranked by " + hint : "") ;
+
+  const g = $("packs"); g.innerHTML = "";
+  if (!ranked.length) {
+    g.innerHTML = '<div class="empty"><strong>Nothing matches</strong>Try a place name, or a plain description like "hidden water body".</div>';
+    return;
+  }
+  ranked.forEach(({pack, score, parsed}) => {
+    const a = document.createElement("article"); a.className = "pack";
+    const note = want.trim()
+      ? '<div class="packscore">' + fmt(score) + " matching</div>" : "";
+    a.innerHTML = img(pack.hero, pack.name, "packimg")
+      + '<div class="packbody">'
+      + '<div class="packtop"><h3>' + esc(pack.name) + "</h3>" + note + "</div>"
+      + '<div class="meta">' + esc(pack.continent) + " · " + fmt(pack.places) + " places · "
+      + fmt(pack.photos) + " photographs</div>"
+      + '<div class="strip">' + pack.top.slice(0, 5).map(t =>
+          '<span class="pill">' + esc(t.n.length > 22 ? t.n.slice(0, 21) + "…" : t.n) + "</span>").join("")
+      + "</div></div>";
+    a.onclick = () => openPack(pack.id);
     g.appendChild(a);
   });
-  $("gcount").textContent = fmt(list.length) + " operators already working in " + DESTS[gdest][1] + " · 0 signed";
-  const left = list.length - gshown;
-  $("gmore").innerHTML = left > 0
-    ? '<button class="more-btn" type="button">Show ' + fmt(Math.min(left, 96)) + " more of " + fmt(left) + "</button>" : "";
-  const mb = $("gmore").querySelector("button"); if (mb) mb.onclick = () => { gshown += 96; renderGuides(); };
 }
-function renderStatic() {
-  $("acc").innerHTML = ACC.map(r => "<tr><td>" + esc(r[0]) + '</td><td style="color:var(--ink-soft)">' + esc(r[1])
-    + '</td><td class="num">' + r[2] + '</td><td class="num">' + r[3] + '</td><td class="num" style="color:'
-    + (r[4] === "0" ? "var(--ok)" : (Math.abs(parseFloat(r[4])) >= 2 ? "var(--cut)" : "var(--ink-soft)")) + '">' + r[4] + "</td></tr>").join("");
-  $("auto").innerHTML = AUTO.map(r => "<tr><td>" + esc(r[0]) + '</td><td class="num">' + r[1] + '</td><td class="num">' + r[2]
-    + '</td><td class="num" style="color:' + (r[3] === "0" ? "var(--ok)" : (Math.abs(parseFloat(r[3])) >= 2 ? "var(--cut)" : "var(--ink-soft)")) + '">' + r[3] + "</td></tr>").join("");
-  const cats = CATS.filter(c => c[0] !== "all").concat([["guide","Guides & operators"]]);
-  $("cov").innerHTML = cats.map(([k, l]) => {
 
-    const per = REGISTRY.map(d => (d.counts || {})[k] || 0);
-    const s = SCORED.filter(p => p.c === k).length;
-    const ph = DATA.filter(r => r[1] === k && r[IMG]).length;
-    return "<tr><td>" + esc(l) + "</td>"
-      + per.map(n => '<td class="num">' + fmt(n) + "</td>").join("")
-      + '<td class="num" style="color:' + (s ? "var(--accent)" : "var(--ink-faint)") + '">' + (s || "\u2014")
-      + '</td><td class="num">' + (ph || "\u2014") + "</td></tr>";
+/* ---------------------------------------------------------------- pack */
+function openPack(id) {
+  open_id = id; packQ = ""; packCat = "all"; shown = 60;
+  $("home").hidden = true; $("pack").hidden = false;
+  window.scrollTo(0, 0);
+  const pk = PACKS.find(p => p.id === id);
+  $("packname").textContent = pk.name;
+  $("packmeta").textContent = pk.continent + " · " + fmt(pk.places) + " places · "
+    + fmt(pk.photos) + " photographs";
+  $("packhero").innerHTML = img(pk.hero, pk.name, "heroimg");
+  $("topten").innerHTML = pk.top.map((t, i) => {
+    const sc = scoredFor(t.n);
+    return '<article class="top">' + img(t.img, t.n, "topimg")
+      + '<div class="topbody"><div class="topnum">' + (i + 1) + "</div>"
+      + "<h4>" + esc(t.n) + "</h4>"
+      + '<div class="meta">' + esc(t.k || CATLAB[t.c] || "") + (t.loc ? " · " + esc(t.loc) : "") + "</div>"
+      + (sc ? '<p class="desc">' + esc(sc.t) + "</p>"
+            + '<div class="scores"><span class="sc">D ' + sc.D + '</span><span class="sc">C ' + sc.C
+            + '</span><span class="sc">W ' + sc.W + "</span></div>"
+          : '<div class="scores"><span class="sc">D ' + t.ad + " auto</span></div>")
+      + "</div></article>";
   }).join("");
+  $("packlist").innerHTML = "";
+  $("packcount").textContent = "Loading " + pk.name + "…";
+  loadPack(id).then(renderPack);
 }
-
-
-/* ---------- one destination at a time: the whole index is too big for a single fetch ---------- */
-const REG_EMBED = [{"id":0,"slug":"crete","name":"Crete","bbox":[34.78,23.4,35.75,26.4],"places":24702,"photos":11805,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"food":6083,"hotel":6542,"club":1403,"todo":3038,"shop":5453,"guide":536,"indoor":636,"adventure":196,"beach":815}},{"id":1,"slug":"zanzibar","name":"Zanzibar","bbox":[-6.6,38.95,-4.78,40.0],"places":2214,"photos":985,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"hotel":922,"food":277,"club":101,"indoor":63,"adventure":50,"shop":187,"todo":245,"guide":300,"beach":69}},{"id":2,"slug":"sulawesi","name":"Sulawesi","bbox":[-6.1,118.4,2.1,125.6],"places":54621,"photos":5611,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"indoor":1807,"beach":961,"todo":18594,"hotel":7181,"food":22035,"club":2493,"guide":1420,"adventure":130}},{"id":3,"slug":"cook-islands","name":"Cook Islands","bbox":[-22.1599634,-166.1318843,-8.7150148,-157.1089326],"places":442,"photos":233,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"todo":111,"hotel":170,"club":29,"food":77,"beach":17,"adventure":11,"guide":12,"indoor":15}}];
-let REGISTRY = [], LOADED = {};
-function loadDest(id) {
-  if (LOADED[id]) { DATA = LOADED[id]; render(); renderGuides(); renderStatic(); return Promise.resolve(); }
-  const d = REGISTRY.find(x => x.id === id);
-  $("count").textContent = "Loading " + (d ? d.name : "destination") + "\u2026";
-  $("grid").innerHTML = '<div class="empty"><strong>Loading ' + esc(d ? d.name : "") + "</strong>"
-    + (d ? fmt(d.places) + " places, " + fmt(d.photos || 0) + " photographs" : "") + "</div>";
+function loadPack(id) {
+  if (LOADED[id]) return Promise.resolve(LOADED[id]);
   return fetch("d/" + id + ".json")
     .then(r => { if (!r.ok) throw new Error("d/" + id + ".json returned " + r.status); return r.json(); })
-    .then(j => { LOADED[id] = j.r; DATA = j.r; render(); renderGuides(); renderStatic(); })
+    .then(j => { LOADED[id] = j.r; return j.r; })
     .catch(err => {
-      $("count").textContent = "Could not load that destination.";
-      $("grid").innerHTML = '<div class="empty"><strong>Could not load</strong>'
-        + esc(String(err.message || err)) + "</div>";
+      $("packcount").textContent = "Could not load: " + err.message;
+      return [];
     });
 }
-
-const TABS = [["t-dest","p-dest"],["t-guides","p-guides"],["t-acc","p-acc"],["t-cov","p-cov"]];
-TABS.forEach(([tb, pn]) => $(tb).addEventListener("click", () => {
-  TABS.forEach(([t2, p2]) => { $(t2).setAttribute("aria-selected", String(t2 === tb)); $(p2).hidden = (p2 !== pn); });
-}));
-$("q").addEventListener("input", e => { q = e.target.value; shown = 48; render(); });
-
-function boot() {
-  const reg = REG_EMBED.slice().sort((a, b) => a.id - b.id);
-  REGISTRY = reg;
-  DESTS = reg.map(d => [d.id, d.name]);
-  MIDLAT = []; reg.forEach(d => { MIDLAT[d.id] = (d.bbox[0] + d.bbox[2]) / 2; });
-  try {
-    $("s-total").textContent = fmt(reg.reduce((a, d) => a + d.places, 0));
-    $("s-scored").textContent = SCORED.length;
-    $("s-pic").textContent = fmt(reg.reduce((a, d) => a + (d.photos || 0), 0));
-    const el = document.getElementById("s-dest"); if (el) el.textContent = DESTS.length;
-  } catch (e) {}
-  dest = gdest = DESTS[0][0];
-  renderStatic();
-  render();                 // draws the chips and the loading state immediately
-  loadDest(dest);
+function renderPack() {
+  const rows = LOADED[open_id] || [];
+  const counts = {all: 0};
+  rows.forEach(r => { if (r[F.C] !== "guide") { counts.all++; counts[r[F.C]] = (counts[r[F.C]] || 0) + 1; } });
+  chips($("packcats"), CATS, packCat, v => { packCat = v; shown = 60; renderPack(); }, counts);
+  const p = packQ.trim() ? parseQuery(packQ) : null;
+  let list = rows.filter(r => r[F.C] !== "guide")
+    .filter(r => packCat === "all" || r[F.C] === packCat)
+    .filter(r => !p || rowMatches(r, p));
+  if (p && p.minD !== null) list.sort((a, b) => b[F.AD] - a[F.AD]);
+  else list.sort((a, b) => ((b[F.IMG] ? 1 : 0) - (a[F.IMG] ? 1 : 0)) || (b[F.Q] - a[F.Q]));
+  $("packcount").textContent = fmt(list.length) + " places"
+    + (p && describe(p) ? " · " + describe(p) : "");
+  const g = $("packlist"); g.innerHTML = "";
+  if (!list.length) {
+    g.innerHTML = '<div class="empty"><strong>Nothing here</strong>Try another word, or a category above.</div>';
+  }
+  list.slice(0, shown).forEach(r => {
+    const sc = scoredFor(r[F.N]);
+    const a = document.createElement("article");
+    a.innerHTML = img(r[F.IMG], r[F.N], "cardimg")
+      + '<div class="cardbody"><h4>' + esc(r[F.N]) + "</h4>"
+      + '<div class="meta">' + esc(r[F.KIND] || CATLAB[r[F.C]] || "") + (r[F.LOC] ? " · " + esc(r[F.LOC]) : "") + "</div>"
+      + (sc ? '<p class="desc">' + esc(sc.t) + "</p>" : "")
+      + '<div class="scores">'
+      + (r[F.STARS] ? '<span class="sc star">' + esc(r[F.STARS]) + "★</span>" : "")
+      + (sc ? '<span class="sc">D ' + sc.D + '</span><span class="sc">C ' + sc.C + "</span>"
+            : '<span class="sc">D ' + r[F.AD] + " auto</span>")
+      + "</div>"
+      + (r[F.WEB] ? '<a class="site" href="' + esc(r[F.WEB]) + '" target="_blank" rel="noopener">'
+          + esc(r[F.WEB].replace(/^https?:\/\//, "").replace(/\/$/, "").slice(0, 40)) + "</a>" : "")
+      + "</div>";
+    g.appendChild(a);
+  });
+  const left = list.length - shown;
+  $("packmore").innerHTML = left > 0
+    ? '<button class="more-btn" type="button">Show ' + fmt(Math.min(left, 120)) + " more of " + fmt(left) + "</button>" : "";
+  const mb = $("packmore").querySelector("button");
+  if (mb) mb.onclick = () => { shown += 120; renderPack(); };
 }
-try { loadReviews(); } catch (e) {}
-boot();
+
+/* ---------------------------------------------------------------- wiring */
+$("back").onclick = () => { $("pack").hidden = true; $("home").hidden = false; open_id = null; window.scrollTo(0, 0); };
+$("where").addEventListener("input", renderHome);
+$("want").addEventListener("input", renderHome);
+$("packq").addEventListener("input", e => { packQ = e.target.value; shown = 60; renderPack(); });
+
+fetch("packs.json").then(r => r.json()).then(j => {
+  PACKS = j;
+  $("s-dest").textContent = PACKS.length;
+  $("s-places").textContent = fmt(PACKS.reduce((a, p) => a + p.places, 0));
+  $("s-photos").textContent = fmt(PACKS.reduce((a, p) => a + p.photos, 0));
+  renderHome();
+}).catch(err => {
+  $("homecount").textContent = "Could not load the destinations: " + err.message;
+});
