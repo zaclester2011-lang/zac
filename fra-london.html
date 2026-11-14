@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FRA London — professional fire risk assessments and fire safety services across London and the UK. Residential from £79, commercial from £159." />
+  <meta property="og:title" content="FRA London | Fire Risk Assessments" />
+  <meta property="og:description" content="Professional fire safety services across London. Legally compliant assessments from £79." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://fralondon.co.uk/" />
+  <link rel="icon" href="https://fralondon.co.uk/wp-content/uploads/2025/09/FRA-London-Logo-Desktop.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="https://fralondon.co.uk/wp-content/uploads/2025/03/White-Transparent-Logo-e1741373731745.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <title>FRA London | Fire Risk Assessments & Fire Safety Services</title>
+  <style>
+    :root {
+      --red:      hsl(5,85%,52%);
+      --red-h:    hsl(5,85%,44%);
+      --red-dim:  hsl(5,85%,52%/.12);
+      --red-dim2: hsl(5,85%,52%/.06);
+      --dark:     hsl(220,25%,7%);
+      --dark-2:   hsl(220,22%,10%);
+      --dark-3:   hsl(220,20%,13%);
+      --dark-4:   hsl(220,18%,16%);
+      --border:   hsl(220,18%,18%);
+      --text:     hsl(220,20%,94%);
+      --text-2:   hsl(220,12%,62%);
+      --text-3:   hsl(220,10%,42%);
+      --font-h: 'Cabinet Grotesk',sans-serif;
+      --font-b: 'DM Sans',system-ui,sans-serif;
+      --ease:   cubic-bezier(.4,0,.2,1);
+      --spring: cubic-bezier(.34,1.56,.64,1);
+      --rad:    8px;
+      --rad-lg: 14px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{font-family:var(--font-b);background:var(--dark);color:var(--text);-webkit-font-smoothing:antialiased;overflow-x:hidden;cursor:none;}
+
+    /* ── CUSTOM CURSOR ─────────────────────────────── */
+    #cur-dot,#cur-ring{position:fixed;border-radius:50%;pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:width 300ms var(--ease),height 300ms var(--ease),background 300ms var(--ease),border-color 300ms var(--ease);}
+    #cur-dot{width:8px;height:8px;background:var(--red);}
+    #cur-ring{width:36px;height:36px;border:1.5px solid hsl(5,85%,52%/.4);background:transparent;}
+
+    /* ── SCROLL ANIMATION ──────────────────────────── */
+    [data-a]{opacity:0;transform:translateY(22px);transition:opacity 500ms var(--ease),transform 500ms var(--ease);}
+    [data-a="r"]{transform:translateX(22px);}
+    [data-a="l"]{transform:translateX(-22px);}
+    [data-a].vis{opacity:1;transform:none;}
+    @media(prefers-reduced-motion:reduce){[data-a]{opacity:1;transform:none;}}
+
+    /* ── SCROLL PROGRESS ───────────────────────────── */
+    .scroll-bar{position:fixed;top:0;left:0;width:100%;height:3px;background:var(--red);transform-origin:left;z-index:9999;transform:scaleX(0);}
+
+    /* ── NAV ────────────────────────────────────────── */
+    header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all 300ms var(--ease);padding:0 clamp(1.5rem,4vw,3rem);}
+    header.scrolled{background:hsl(220,25%,7%/.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border);box-shadow:0 4px 24px hsl(0,0%,0%/.3);}
+    header.hidden{transform:translateY(-100%);}
+    nav{display:flex;align-items:center;justify-content:space-between;height:72px;max-width:1200px;margin:0 auto;}
+    .nav-logo{font-family:var(--font-h);font-size:1.35rem;font-weight:900;color:var(--text);letter-spacing:-.02em;display:flex;align-items:center;gap:.5rem;cursor:none;}
+    .nav-logo-icon{width:32px;height:32px;background:var(--red);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:900;color:#fff;letter-spacing:.04em;flex-shrink:0;}
+    .nav-links{display:flex;align-items:center;gap:2rem;}
+    .nav-links a{font-size:.82rem;font-weight:500;color:var(--text-2);text-decoration:none;letter-spacing:.03em;transition:color 200ms;cursor:none;}
+    .nav-links a:hover{color:var(--text);}
+    .nav-cta{background:var(--red);color:#fff;font-family:var(--font-h);font-size:.78rem;font-weight:700;padding:.6rem 1.4rem;border-radius:var(--rad);border:none;cursor:none;transition:background 200ms,transform 300ms var(--spring);letter-spacing:.03em;}
+    .nav-cta:hover{background:var(--red-h);transform:translateY(-2px);}
+
+    /* ── HERO ───────────────────────────────────────── */
+    #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:clamp(6rem,10vw,9rem) clamp(1.5rem,4vw,3rem) clamp(3rem,5vw,5rem);position:relative;overflow:hidden;}
+    .hero-mesh{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 10% 50%,hsl(5,85%,52%/.12) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 90% 20%,hsl(220,70%,55%/.06) 0%,transparent 60%);pointer-events:none;}
+    .hero-grid{position:absolute;inset:0;background-image:linear-gradient(hsl(220,18%,18%/.3) 1px,transparent 1px),linear-gradient(90deg,hsl(220,18%,18%/.3) 1px,transparent 1px);background-size:60px 60px;pointer-events:none;}
+    .hero-inner{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:2;}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--red-dim);border:1px solid hsl(5,85%,52%/.25);color:var(--red);font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.4rem .9rem;border-radius:999px;margin-bottom:2rem;}
+    .hero-badge::before{content:'';width:6px;height:6px;background:var(--red);border-radius:50%;animation:pulse 2s ease infinite;}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+    h1{font-family:var(--font-h);font-size:clamp(3rem,6vw,5.5rem);font-weight:900;line-height:1.0;letter-spacing:-.03em;margin-bottom:1.5rem;max-width:800px;}
+    h1 em{font-style:normal;color:var(--red);}
+    .hero-sub{font-size:clamp(1rem,1.5vw,1.15rem);color:#fff;line-height:1.7;max-width:540px;margin-bottom:2.5rem;}
+    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3.5rem;}
+    .btn-primary{background:var(--red);color:#fff;font-family:var(--font-h);font-size:.85rem;font-weight:700;padding:.85rem 2rem;border-radius:var(--rad);border:none;cursor:none;transition:background 200ms,transform 300ms var(--spring);letter-spacing:.02em;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
+    .btn-primary:hover{background:var(--red-h);transform:translateY(-3px);}
+    .btn-outline{background:transparent;color:var(--text);font-family:var(--font-h);font-size:.85rem;font-weight:700;padding:.85rem 2rem;border-radius:var(--rad);border:1.5px solid var(--border);cursor:none;transition:border-color 200ms,color 200ms,transform 300ms var(--spring);letter-spacing:.02em;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;}
+    .btn-outline:hover{border-color:var(--text-2);transform:translateY(-3px);}
+    .hero-trust{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;}
+    .hero-trust-label{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);}
+    .accred-strip{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;}
+    .accred{font-size:.7rem;font-weight:700;color:var(--text-3);letter-spacing:.08em;background:var(--dark-3);border:1px solid var(--border);padding:.3rem .7rem;border-radius:4px;transition:color 200ms,border-color 200ms;}
+    .accred:hover{color:var(--red);border-color:hsl(5,85%,52%/.4);}
+
+    /* ── STATS ──────────────────────────────────────── */
+    #stats{padding:clamp(3rem,5vw,5rem) clamp(1.5rem,4vw,3rem);background:var(--dark-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+    .stats-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}
+    .stat-item{text-align:center;padding:1.5rem;border-radius:var(--rad-lg);border:1px solid var(--border);background:var(--dark-3);transition:border-color 300ms,background 300ms,transform 300ms var(--spring);}
+    .stat-item:hover{border-color:var(--red);background:var(--red-dim2);transform:translateY(-4px);}
+    .stat-n{font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:900;color:var(--red);line-height:1;margin-bottom:.35rem;}
+    .stat-l{font-size:.78rem;color:var(--text-2);font-weight:500;}
+
+    /* ── SERVICES ───────────────────────────────────── */
+    #services{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);}
+    .section-wrap{max-width:1200px;margin:0 auto;}
+    .sec-label{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem;}
+    .sec-title{font-family:var(--font-h);font-size:clamp(2rem,4vw,3rem);font-weight:900;line-height:1.1;letter-spacing:-.02em;margin-bottom:1rem;}
+    .sec-sub{font-size:.95rem;color:var(--text-2);line-height:1.7;max-width:500px;margin-bottom:3rem;}
+    #services .sec-sub{color:#fff;}
+    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
+    .svc-card{background:var(--dark-2);border:1.5px solid var(--border);border-radius:var(--rad-lg);padding:1.75rem;cursor:none;transition:border-color 300ms,background 300ms,transform 300ms var(--spring),box-shadow 300ms;}
+    .svc-card:hover{border-color:var(--red);background:var(--red-dim2);transform:translateY(-5px);box-shadow:0 16px 40px hsl(5,85%,52%/.15);}
+    .svc-icon{width:44px;height:44px;background:var(--red-dim);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;transition:background 300ms;color:var(--red);}
+    .svc-card:hover .svc-icon{background:var(--red);color:#fff;}
+    .svc-name{font-family:var(--font-h);font-size:1.05rem;font-weight:700;margin-bottom:.6rem;transition:color 300ms;}
+    .svc-card:hover .svc-name{color:var(--red);}
+    .svc-desc{font-size:.83rem;color:var(--text-2);line-height:1.65;transition:color 300ms;}
+    .svc-card:hover .svc-desc{color:#fff;}
+    .svc-arrow{display:inline-flex;align-items:center;gap:.4rem;font-size:.75rem;font-weight:600;color:var(--text-3);margin-top:1rem;letter-spacing:.04em;transition:color 300ms,gap 300ms;text-decoration:none;cursor:pointer;}
+    .svc-card:hover .svc-arrow{color:#fff;gap:.7rem;}
+
+    /* ── PROCESS ────────────────────────────────────── */
+    #process{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);background:var(--dark-2);}
+    .proc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;counter-reset:proc;}
+    .proc-step{background:var(--dark-3);border:1.5px solid var(--border);border-radius:var(--rad-lg);padding:1.5rem;position:relative;cursor:none;transition:border-color 300ms,background 300ms,transform 300ms var(--spring),box-shadow 300ms;counter-increment:proc;}
+    .proc-step:hover{border-color:var(--red);background:var(--red);transform:translateY(-5px);box-shadow:0 16px 40px hsl(5,85%,52%/.25);}
+    .proc-num{font-family:var(--font-h);font-size:.65rem;font-weight:700;letter-spacing:.14em;color:var(--red);margin-bottom:.9rem;transition:color 300ms;}
+    .proc-step:hover .proc-num{color:#fff;}
+    .proc-name{font-family:var(--font-h);font-size:.95rem;font-weight:700;line-height:1.3;margin-bottom:.5rem;transition:color 300ms;}
+    .proc-step:hover .proc-name{color:#fff;}
+    .proc-desc{font-size:.75rem;color:var(--text-2);line-height:1.6;transition:color 300ms;}
+    .proc-step:hover .proc-desc{color:#fff;}
+
+    /* ── PRICING ────────────────────────────────────── */
+    #pricing{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);}
+    .pricing-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem;}
+    .price-col{background:var(--dark-2);border:1.5px solid var(--border);border-radius:var(--rad-lg);overflow:hidden;transition:border-color 300ms,box-shadow 300ms;}
+    .price-col:hover{border-color:var(--red);box-shadow:0 20px 50px hsl(5,85%,52%/.12);}
+    .price-col-head{padding:1.75rem;border-bottom:1px solid var(--border);background:var(--dark-3);}
+    .price-type{font-size:.65rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem;}
+    .price-col-name{font-family:var(--font-h);font-size:1.3rem;font-weight:800;margin-bottom:.3rem;}
+    .price-col-sub{font-size:.78rem;color:var(--text-2);}
+    .price-rows{padding:1.5rem 1.75rem;}
+    .price-row{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;border-bottom:1px solid var(--border);cursor:none;transition:background 200ms;margin:0 -1.75rem;padding-left:1.75rem;padding-right:1.75rem;}
+    .price-row:last-child{border-bottom:none;}
+    .price-row:hover{background:var(--red-dim2);}
+    .price-row:hover .price-row-name{color:var(--text);}
+    .price-row-name{font-size:.85rem;color:var(--text-2);font-weight:500;transition:color 200ms;}
+    .price-row-amt{font-family:var(--font-h);font-size:.95rem;font-weight:700;color:var(--red);}
+    .price-cta{margin:1.5rem 1.75rem 1.75rem;}
+
+    /* ── TESTIMONIALS ───────────────────────────────── */
+    #testimonials{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);background:var(--dark-2);}
+    .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem;}
+    .testi-card{background:var(--dark-3);border:1.5px solid var(--border);border-radius:var(--rad-lg);padding:1.75rem;cursor:none;transition:border-color 300ms,transform 300ms var(--spring),box-shadow 300ms;}
+    .testi-card:hover{border-color:var(--red);transform:translateY(-4px);box-shadow:0 16px 40px hsl(5,85%,52%/.25);}
+    .testi-stars{color:var(--red);font-size:.9rem;margin-bottom:1rem;letter-spacing:.1em;}
+    .testi-text{font-size:.88rem;color:var(--text-2);line-height:1.75;margin-bottom:1.25rem;font-style:italic;transition:color 300ms;}
+    .testi-card:hover .testi-text{color:#fff;}
+    .testi-author{font-size:.78rem;font-weight:700;color:var(--text);letter-spacing:.03em;transition:color 300ms;}
+    .testi-card:hover .testi-author{color:#fff;}
+    .testi-role{font-size:.72rem;color:var(--text-3);margin-top:.2rem;transition:color 300ms;}
+    .testi-card:hover .testi-role{color:#fff;}
+
+    /* ── FAQ ─────────────────────────────────────────── */
+    #faq{padding:clamp(4rem,8vw,7rem) clamp(1.5rem,4vw,3rem);}
+    .faq-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:4rem;align-items:start;margin-top:3rem;}
+    .faq-sticky{position:sticky;top:100px;}
+    .faq-side-label{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem;}
+    .faq-side-title{font-family:var(--font-h);font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;line-height:1.15;letter-spacing:-.02em;margin-bottom:1rem;}
+    .faq-side-sub{font-size:.85rem;color:var(--text-2);line-height:1.7;margin-bottom:1.75rem;}
+    .faq-contact-pill{display:inline-flex;align-items:center;gap:.6rem;background:var(--red-dim);border:1px solid hsl(5,85%,52%/.25);color:var(--red);font-size:.78rem;font-weight:700;padding:.6rem 1.1rem;border-radius:999px;text-decoration:none;cursor:none;transition:background 200ms,border-color 200ms;}
+    .faq-contact-pill:hover{background:var(--red);color:#fff;}
+    .faq-list{display:flex;flex-direction:column;gap:.6rem;}
+    .faq-item{background:var(--dark-2);border:1.5px solid var(--border);border-radius:var(--rad-lg);overflow:hidden;transition:border-color 300ms,box-shadow 300ms;}
+    .faq-item.open{border-color:var(--red);box-shadow:0 8px 32px hsl(5,85%,52%/.1);}
+    .faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.4rem;cursor:none;gap:1.25rem;background:transparent;border:none;width:100%;text-align:left;}
+    .faq-q-inner{display:flex;align-items:center;gap:1rem;flex:1;}
+    .faq-num{font-family:var(--font-h);font-size:.65rem;font-weight:700;letter-spacing:.12em;color:var(--text-3);flex-shrink:0;width:1.8rem;transition:color 300ms;}
+    .faq-item.open .faq-num{color:var(--red);}
+    .faq-q-text{font-family:var(--font-h);font-size:.92rem;font-weight:700;color:var(--text);transition:color 300ms;line-height:1.35;}
+    .faq-item.open .faq-q-text{color:var(--red);}
+    .faq-icon{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:border-color 300ms,background 300ms;}
+    .faq-icon svg{width:16px;height:16px;stroke:var(--text-3);transition:stroke 300ms,transform 400ms var(--spring);transform:rotate(0deg);}
+    .faq-item.open .faq-icon{border-color:var(--red);}
+    .faq-item.open .faq-icon svg{stroke:var(--red);transform:rotate(180deg);}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 400ms var(--ease);}
+    .faq-item.open .faq-a{max-height:300px;}
+    .faq-a-inner{padding:.1rem 1.4rem 1.4rem calc(1.4rem + 1rem + 1.8rem);}
+    .faq-a-inner p{font-size:.84rem;color:var(--text-2);line-height:1.8;}
+    @media(max-width:900px){.faq-wrap{grid-template-columns:1fr;gap:2.5rem;}.faq-sticky{position:static;}}
+
+    /* ── CTA BAND ───────────────────────────────────── */
+    #cta{padding:clamp(4rem,8vw,6rem) clamp(1.5rem,4vw,3rem);background:var(--red);position:relative;overflow:hidden;}
+    .cta-mesh{position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 80% 50%,hsl(5,85%,65%/.25) 0%,transparent 60%);pointer-events:none;}
+    .cta-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:3rem;flex-wrap:wrap;position:relative;z-index:2;}
+    .cta-text h2{font-family:var(--font-h);font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:900;color:#fff;letter-spacing:-.02em;margin-bottom:.6rem;}
+    .cta-text p{font-size:.92rem;color:hsl(5,40%,90%);line-height:1.65;}
+    .btn-white{background:#fff;color:var(--red);font-family:var(--font-h);font-size:.85rem;font-weight:800;padding:.9rem 2.2rem;border-radius:var(--rad);border:none;cursor:none;transition:background 200ms,transform 300ms var(--spring);letter-spacing:.02em;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;white-space:nowrap;}
+    .btn-white:hover{background:hsl(0,0%,94%);transform:translateY(-3px);}
+
+    /* ── FOOTER ─────────────────────────────────────── */
+    footer{padding:clamp(2rem,4vw,3.5rem) clamp(1.5rem,4vw,3rem);border-top:1px solid var(--border);background:var(--dark);}
+    .footer-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;}
+    .footer-logo{font-family:var(--font-h);font-size:1.1rem;font-weight:900;color:var(--text);display:flex;align-items:center;gap:.5rem;}
+    .footer-links{display:flex;gap:2rem;}
+    .footer-links a{font-size:.78rem;color:var(--text-3);text-decoration:none;transition:color 200ms;cursor:none;}
+    .footer-links a:hover{color:var(--red);}
+    .footer-copy{font-size:.72rem;color:var(--text-3);}
+    .site-by{font-size:.95rem;color:var(--text-3);font-weight:500;}
+    .site-by a{color:var(--text-2);text-decoration:none;transition:color 200ms;cursor:none;}
+    .site-by a:hover{color:var(--red);}
+
+    /* ── RESPONSIVE ─────────────────────────────────── */
+    @media(max-width:1024px){
+      .svc-grid{grid-template-columns:repeat(2,1fr);}
+      .proc-grid{grid-template-columns:repeat(2,1fr);}
+      .stats-grid{grid-template-columns:repeat(2,1fr);}
+    }
+    @media(max-width:768px){
+      .nav-links{display:none;}
+      .svc-grid{grid-template-columns:1fr;}
+      .pricing-grid{grid-template-columns:1fr;}
+      .testi-grid{grid-template-columns:1fr;}
+      .proc-grid{grid-template-columns:1fr;}
+      .stats-grid{grid-template-columns:repeat(2,1fr);}
+      .cta-inner{flex-direction:column;text-align:center;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="scroll-bar" id="scroll-bar"></div>
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<a href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:9999;">Skip to content</a>
+
+<!-- NAV -->
+<header id="header">
+  <nav>
+    <a class="nav-logo" href="#">
+      <span class="nav-logo-icon">FRA</span>
+      FRA London
+    </a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta">Contact</a>
+    </div>
+    <a href="#cta" class="nav-cta" data-magnetic>Book Assessment →</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<main id="main">
+<section id="hero">
+  <div class="hero-mesh" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-badge" data-a>
+      <span></span> London's trusted fire safety specialists
+    </div>
+    <h1 data-a>Your building.<br>Your responsibility.<br><em>We make it simple.</em></h1>
+    <p class="hero-sub" data-a>Legally compliant fire risk assessments for residential and commercial properties across London — completed within 48 hours, certified by accredited professionals.</p>
+    <div class="hero-btns" data-a>
+      <a href="#pricing" class="btn-primary" data-magnetic>Residential from £79 →</a>
+      <a href="#pricing" class="btn-outline" data-magnetic>Commercial from £159 →</a>
+    </div>
+    <div class="hero-trust" data-a>
+      <span class="hero-trust-label">Accredited by</span>
+      <div class="accred-strip">
+        <span class="accred">IFSM</span>
+        <span class="accred">NAPIT</span>
+        <span class="accred">NEBOSH</span>
+        <span class="accred">City & Guilds</span>
+        <span class="accred">EAL</span>
+        <span class="accred">UKFDT</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats" aria-label="Key statistics">
+  <div class="stats-grid">
+    <div class="stat-item" data-a>
+      <div class="stat-n" data-target="4800" data-suffix="+">0</div>
+      <div class="stat-l">Assessments completed</div>
+    </div>
+    <div class="stat-item" data-a>
+      <div class="stat-n" data-target="48">0</div>
+      <div class="stat-l">Hour turnaround</div>
+    </div>
+    <div class="stat-item" data-a>
+      <div class="stat-n" data-target="100" data-suffix="%">0</div>
+      <div class="stat-l">Legally compliant reports</div>
+    </div>
+    <div class="stat-item" data-a>
+      <div class="stat-n" data-target="12" data-suffix="+">0</div>
+      <div class="stat-l">Years of experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" aria-labelledby="svc-title">
+  <div class="section-wrap">
+    <p class="sec-label" data-a>What we do</p>
+    <h2 id="svc-title" class="sec-title" data-a>Complete fire safety,<br>under one roof.</h2>
+    <p class="sec-sub" data-a>Every service you need to stay compliant, protect your people, and avoid costly penalties.</p>
+    <div class="svc-grid">
+      <div class="svc-card" data-a>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c0 4-4 6-4 10a4 4 0 0 0 8 0c0-4-4-6-4-10z"/><path d="M12 12c0 2-2 3-2 5a2 2 0 0 0 4 0c0-2-2-3-2-5z" fill="currentColor" opacity=".3"/></svg></div>
+        <h3 class="svc-name">Fire Risk Assessment</h3>
+        <p class="svc-desc">Comprehensive assessment of your premises identifying hazards, risks, and recommended remedial actions to ensure full legal compliance.</p>
+        <a class="svc-arrow" href="#pricing">Learn more →</a>
+      </div>
+      <div class="svc-card" data-a>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2" width="18" height="20" rx="1"/><line x1="9" y1="2" x2="9" y2="22"/><circle cx="7" cy="12" r="1" fill="currentColor"/></svg></div>
+        <h3 class="svc-name">Fire Door Inspection</h3>
+        <p class="svc-desc">Full inspection and certification of fire doors to ensure they meet BS 9999 standards and provide the protection your building requires.</p>
+        <a class="svc-arrow" href="#pricing">Learn more →</a>
+      </div>
+      <div class="svc-card" data-a>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+        <h3 class="svc-name">Fire Alarm Systems</h3>
+        <p class="svc-desc">Installation, testing, and maintenance of fire detection and alarm systems to BS 5839 standard across all property types.</p>
+        <a class="svc-arrow" href="#pricing">Learn more →</a>
+      </div>
+      <div class="svc-card" data-a>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3h4v3h-4z"/><path d="M12 6v2"/><rect x="7" y="8" width="10" height="13" rx="2"/><path d="M7 12h10"/><circle cx="12" cy="16" r="1" fill="currentColor"/></svg></div>
+        <h3 class="svc-name">Fire Extinguishers</h3>
+        <p class="svc-desc">Supply, installation, and annual servicing of all extinguisher types — powder, CO₂, foam, and water — for any environment.</p>
+        <a class="svc-arrow" href="#pricing">Learn more →</a>
+      </div>
+      <div class="svc-card" data-a>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 1 4 12.7V17H8v-2.3A7 7 0 0 1 12 2z"/></svg></div>
+        <h3 class="svc-name">Emergency Lighting</h3>
+        <p class="svc-desc">Design, installation and testing of emergency escape lighting to BS 5266 — ensuring safe evacuation in every scenario.</p>
+        <a class="svc-arrow" href="#pricing">Learn more →</a>
+      </div>
+      <div class="svc-card" data-a>
+        <div class="svc-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+        <h3 class="svc-name">Health & Safety</h3>
+        <p class="svc-desc">Broader health and safety assessments and documentation to keep your business fully compliant with UK regulations.</p>
+        <a class="svc-arrow" href="#pricing">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" aria-labelledby="proc-title">
+  <div class="section-wrap">
+    <p class="sec-label" data-a>How it works</p>
+    <h2 id="proc-title" class="sec-title" data-a>Done in five steps.<br>Stress-free.</h2>
+    <p class="sec-sub" data-a>From booking to certified report in as little as 48 hours.</p>
+    <div class="proc-grid">
+      <div class="proc-step" data-a>
+        <p class="proc-num">01</p>
+        <h3 class="proc-name">Book online</h3>
+        <p class="proc-desc">Choose residential or commercial, select your property type, pick a date. Done in under 2 minutes.</p>
+      </div>
+      <div class="proc-step" data-a>
+        <p class="proc-num">02</p>
+        <h3 class="proc-name">We visit</h3>
+        <p class="proc-desc">An accredited assessor visits your property at the agreed time. Most assessments take 1–2 hours.</p>
+      </div>
+      <div class="proc-step" data-a>
+        <p class="proc-num">03</p>
+        <h3 class="proc-name">Full assessment</h3>
+        <p class="proc-desc">We identify all fire hazards, assess risks, review escape routes, and check existing measures.</p>
+      </div>
+      <div class="proc-step" data-a>
+        <p class="proc-num">04</p>
+        <h3 class="proc-name">Report delivered</h3>
+        <p class="proc-desc">Your certified report lands in your inbox within 48 hours. Clear, actionable, legally compliant.</p>
+      </div>
+      <div class="proc-step" data-a>
+        <p class="proc-num">05</p>
+        <h3 class="proc-name">Stay compliant</h3>
+        <p class="proc-desc">We remind you when your next assessment is due and can handle any remedial work identified.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" aria-labelledby="price-title">
+  <div class="section-wrap">
+    <p class="sec-label" data-a>Transparent pricing</p>
+    <h2 id="price-title" class="sec-title" data-a>No hidden fees.<br>No surprises.</h2>
+    <p class="sec-sub" data-a>Fixed prices based on property type. What you see is what you pay.</p>
+    <div class="pricing-grid">
+      <div class="price-col" data-a>
+        <div class="price-col-head">
+          <p class="price-type">Residential</p>
+          <h3 class="price-col-name">Houses, Flats & HMOs</h3>
+          <p class="price-col-sub">For landlords, letting agents, and homeowners</p>
+        </div>
+        <div class="price-rows">
+          <div class="price-row">
+            <span class="price-row-name">1–2 bedroom flat</span>
+            <span class="price-row-amt">£79</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">3–4 bedroom flat</span>
+            <span class="price-row-amt">£99</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">HMO (up to 6 rooms)</span>
+            <span class="price-row-amt">£149</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">HMO (7–12 rooms)</span>
+            <span class="price-row-amt">£199</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">Large HMO (13+ rooms)</span>
+            <span class="price-row-amt">£249</span>
+          </div>
+        </div>
+        <div class="price-cta">
+          <a href="#cta" class="btn-primary" style="width:100%;justify-content:center;" data-magnetic>Book residential →</a>
+        </div>
+      </div>
+      <div class="price-col" data-a>
+        <div class="price-col-head">
+          <p class="price-type">Commercial</p>
+          <h3 class="price-col-name">Offices, Retail & Industrial</h3>
+          <p class="price-col-sub">For businesses, landlords, and property managers</p>
+        </div>
+        <div class="price-rows">
+          <div class="price-row">
+            <span class="price-row-name">Up to 500 sq ft</span>
+            <span class="price-row-amt">£159</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">500–1,000 sq ft</span>
+            <span class="price-row-amt">£199</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">1,000–3,000 sq ft</span>
+            <span class="price-row-amt">£279</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">3,000–5,000 sq ft</span>
+            <span class="price-row-amt">£349</span>
+          </div>
+          <div class="price-row">
+            <span class="price-row-name">5,000+ sq ft</span>
+            <span class="price-row-amt">POA</span>
+          </div>
+        </div>
+        <div class="price-cta">
+          <a href="#cta" class="btn-primary" style="width:100%;justify-content:center;" data-magnetic>Book commercial →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" aria-labelledby="testi-title">
+  <div class="section-wrap">
+    <p class="sec-label" data-a>What clients say</p>
+    <h2 id="testi-title" class="sec-title" data-a>Trusted by London<br>property owners.</h2>
+    <div class="testi-grid">
+      <div class="testi-card" data-a>
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testi-text">"Booked on a Monday, assessor arrived Wednesday, report in my inbox by Thursday. Exactly what I needed — fast, clear, and fully compliant."</p>
+        <p class="testi-author">Sarah M.</p>
+        <p class="testi-role">HMO Landlord, Hackney</p>
+      </div>
+      <div class="testi-card" data-a>
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testi-text">"Used them for our entire portfolio of 12 commercial units. Consistent, professional, and their pricing is genuinely the best in London."</p>
+        <p class="testi-author">James T.</p>
+        <p class="testi-role">Property Manager, City of London</p>
+      </div>
+      <div class="testi-card" data-a>
+        <div class="testi-stars" aria-label="5 stars">★★★★★</div>
+        <p class="testi-text">"Our council required an urgent assessment. FRA London turned it around in 24 hours. Saved us from a significant compliance issue."</p>
+        <p class="testi-author">David K.</p>
+        <p class="testi-role">Office Manager, Canary Wharf</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="section-wrap">
+    <div class="faq-wrap">
+
+      <div class="faq-sticky" data-a>
+        <p class="faq-side-label">Common questions</p>
+        <h2 id="faq-title" class="faq-side-title">Everything you<br>need to know.</h2>
+        <p class="faq-side-sub">Can't find your answer? Get in touch and we'll respond within a few hours.</p>
+        <a href="#cta" class="faq-contact-pill">Ask us directly →</a>
+      </div>
+
+      <div class="faq-list" data-a>
+
+        <div class="faq-item" data-accordion>
+          <button class="faq-q" data-accordion-trigger aria-expanded="false">
+            <span class="faq-q-inner">
+              <span class="faq-num">01</span>
+              <span class="faq-q-text">Is a fire risk assessment a legal requirement?</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-a" data-accordion-panel>
+            <div class="faq-a-inner"><p>Yes. Under the Regulatory Reform (Fire Safety) Order 2005, all non-domestic premises in England and Wales must have a suitable and sufficient fire risk assessment carried out by a competent person. Failure to comply can result in significant fines or prosecution.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-accordion>
+          <button class="faq-q" data-accordion-trigger aria-expanded="false">
+            <span class="faq-q-inner">
+              <span class="faq-num">02</span>
+              <span class="faq-q-text">How often do I need a fire risk assessment?</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-a" data-accordion-panel>
+            <div class="faq-a-inner"><p>There is no fixed legal timeframe, but your assessment must be reviewed whenever there are significant changes to your premises, occupancy, or processes. As a general guide, annual reviews are recommended for most properties.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-accordion>
+          <button class="faq-q" data-accordion-trigger aria-expanded="false">
+            <span class="faq-q-inner">
+              <span class="faq-num">03</span>
+              <span class="faq-q-text">How long does an assessment take?</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-a" data-accordion-panel>
+            <div class="faq-a-inner"><p>Most residential assessments take between 45 minutes and 2 hours. Commercial assessments vary depending on the size and complexity of the premises — typically 1 to 4 hours. We'll give you an accurate estimate when you book.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-accordion>
+          <button class="faq-q" data-accordion-trigger aria-expanded="false">
+            <span class="faq-q-inner">
+              <span class="faq-num">04</span>
+              <span class="faq-q-text">Do you cover areas outside London?</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-a" data-accordion-panel>
+            <div class="faq-a-inner"><p>Yes — while we are based in London and cover all 32 boroughs, we also serve the surrounding Home Counties including Essex, Kent, Surrey, and Hertfordshire. Contact us to confirm coverage for your specific location.</p></div>
+          </div>
+        </div>
+
+        <div class="faq-item" data-accordion>
+          <button class="faq-q" data-accordion-trigger aria-expanded="false">
+            <span class="faq-q-inner">
+              <span class="faq-num">05</span>
+              <span class="faq-q-text">What happens after the assessment?</span>
+            </span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5l5 5 5-5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <div class="faq-a" data-accordion-panel>
+            <div class="faq-a-inner"><p>You'll receive a detailed certified report within 48 hours outlining all hazards identified, their risk level, and specific recommendations for remedial action — clearly prioritised so you know exactly what to address first. We can also carry out any remedial work required.</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" aria-labelledby="cta-title">
+  <div class="cta-mesh" aria-hidden="true"></div>
+  <div class="cta-inner">
+    <div class="cta-text">
+      <h2 id="cta-title">Ready to get compliant?</h2>
+      <p>Book your assessment today. Most slots available within 48 hours.</p>
+    </div>
+    <a href="tel:+44000000000" class="btn-white" data-magnetic>Call us now →</a>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">
+      <span class="nav-logo-icon" style="width:26px;height:26px;font-size:.55rem;">FRA</span>
+      FRA London
+    </span>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Privacy</a>
+    </div>
+    <p class="site-by">Site by <a href="https://formandforge.co.uk" target="_blank" rel="noopener noreferrer">Form & Forge</a></p>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Organization","name":"FRA London","url":"https://fralondon.co.uk","description":"Fire risk assessments and fire safety services across London"},
+    {"@type":"LocalBusiness","name":"FRA London","description":"Professional fire risk assessments for residential and commercial properties","areaServed":"London","priceRange":"££"}
+  ]
+}
+</script>
+
+<script>
+// Custom cursor
+const dot = document.getElementById('cur-dot');
+const ring = document.getElementById('cur-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',(e)=>{
+  mx=e.clientX;my=e.clientY;
+  dot.style.left=mx+'px';dot.style.top=my+'px';
+});
+(function animRing(){
+  rx+=(mx-rx)*.12;ry+=(my-ry)*.12;
+  ring.style.left=rx+'px';ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+})();
+document.querySelectorAll('a,button,[data-magnetic]').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{
+    dot.style.width='12px';dot.style.height='12px';
+    ring.style.width='56px';ring.style.height='56px';
+  });
+  el.addEventListener('mouseleave',()=>{
+    dot.style.width='8px';dot.style.height='8px';
+    ring.style.width='36px';ring.style.height='36px';
+  });
+});
+
+// Scroll progress bar
+const bar = document.getElementById('scroll-bar');
+window.addEventListener('scroll',()=>{
+  const pct = window.scrollY/(document.body.scrollHeight-window.innerHeight);
+  bar.style.transform=`scaleX(${pct})`;
+},{passive:true});
+
+// Sticky header
+const header=document.getElementById('header');
+let last=0;
+window.addEventListener('scroll',()=>{
+  const y=window.scrollY;
+  header.classList.toggle('scrolled',y>60);
+  header.classList.toggle('hidden',y>last&&y>300);
+  last=Math.max(y,0);
+},{passive:true});
+
+// Scroll animations
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach((e,i)=>{
+    if(e.isIntersecting) setTimeout(()=>e.target.classList.add('vis'),i*80);
+  });
+},{threshold:.12});
+document.querySelectorAll('[data-a]').forEach(el=>obs.observe(el));
+
+// Counter animation
+const countUp=(el)=>{
+  const target=+el.dataset.target,suffix=el.dataset.suffix||'',dur=2000,start=performance.now();
+  const tick=(now)=>{
+    const p=Math.min((now-start)/dur,1),ease=1-Math.pow(1-p,3);
+    el.textContent=Math.floor(ease*target).toLocaleString()+suffix;
+    if(p<1)requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(tick);
+};
+const cObs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){countUp(e.target);cObs.unobserve(e.target);}});
+},{threshold:.5});
+document.querySelectorAll('[data-target]').forEach(el=>cObs.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('[data-accordion]').forEach(item=>{
+  const btn=item.querySelector('[data-accordion-trigger]');
+  const panel=item.querySelector('[data-accordion-panel]');
+  btn.addEventListener('click',()=>{
+    const open=btn.getAttribute('aria-expanded')==='true';
+    document.querySelectorAll('[data-accordion]').forEach(i=>{
+      i.classList.remove('open');
+      i.querySelector('[data-accordion-trigger]').setAttribute('aria-expanded','false');
+      i.querySelector('[data-accordion-panel]').style.maxHeight='0';
+    });
+    if(!open){
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+      panel.style.maxHeight=panel.scrollHeight+'px';
+    }
+  });
+});
+
+// Smooth anchor scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',(e)=>{
+    const href=a.getAttribute('href');
+    if(href==='#')return;
+    e.preventDefault();
+    const target=document.querySelector(href);
+    if(target){
+      const top=target.getBoundingClientRect().top+window.scrollY-80;
+      window.scrollTo({top,behavior:'smooth'});
+    }
+  });
+});
+</script>
+</body>
+</html>
