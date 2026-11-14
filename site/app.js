@@ -35,12 +35,14 @@ const AUTO = [
   ["Seitan Limania","8","8.0","0"],["Katholiko","8.5","8.0","−0.5"],["Glyka Nera","7.5","7.5","0"],
   ["Preveli","7","7.0","0"],["Elafonissi","6","6.0","0"],["Balos","6","8.0","+2.0"]
 ];
-const DESTS = [[0,"Crete"],[1,"Zanzibar"],[2,"Sulawesi"]];
+const SORTS = [["known","Best known"],["hidden","Most hidden"],["photo","With a photograph"],["starred","Star rated"]];
+let sortBy = "known";
+let DESTS = [];   // built from the embedded registry at startup
 const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"],["food","Restaurants"],
   ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops & markets"]];
 const CATLAB = {beach:"Beach",food:"Restaurant",club:"Bar or club",todo:"Thing to do",
   indoor:"Indoor",hotel:"Hotel",shop:"Shop",guide:"Guide",adventure:"Adventure"};
-const MIDLAT = [];
+let MIDLAT = [];
 
 let DATA = [], dest = 0, cat = "all", q = "", shown = 48, gshown = 36, gdest = 0, REV = {};
 const $ = id => document.getElementById(id);
@@ -221,9 +223,10 @@ function photoEl(file, name) {
 function sentence(r) {
   const kind = (r[6] || CATLAB[r[1]] || "place").toLowerCase();
   const art = /^[aeiou]/.test(kind) ? "An" : "A";
-  let s = art + " " + kind + (r[5] ? " in " + r[5] : (" in " + (DESTS[r[7]] ? DESTS[r[7]][1] : "the index"))) + ".";
+  const dname = (DESTS.find(x => x[0] === dest) || [0, "the index"])[1];
+  let s = art + " " + kind + (r[5] ? " in " + r[5] : " in " + dname) + ".";
   if (r[1] === "beach") {
-    const side = r[2] >= MIDLAT[r[7]] ? "north" : "south";
+    const side = r[2] >= (MIDLAT[dest] || 0) ? "north" : "south";
     s = art + " " + kind + " on the " + side + " coast" + (r[5] ? " near " + r[5] : "")
       + ", at " + r[2].toFixed(3) + ", " + r[3].toFixed(3) + ".";
   }
@@ -263,18 +266,21 @@ function plainCard(r) {
         + esc(r[STARS]) + "\u2605</span>" : "")
     + '<span class="sc" title="Drafted from place density, not measured">D ' + r[AD] + " auto</span>"
     + '<span class="tag">' + (r[1] === "beach" ? "No colour measured" : "Colour unmeasured") + "</span></div></div>";
-  a.querySelector(".bd").appendChild(revBlock(r[0], r[7], r[AD]));
+  a.querySelector(".bd").appendChild(revBlock(r[0], dest, r[AD]));
   return a;
 }
 const imgFor = (name, d) => {
-  const hit = DATA.find(r => r[7] === d && r[IMG] && r[0].toLowerCase().includes(name.toLowerCase().split(" ")[0]));
+  const n = name.toLowerCase();
+  const key = n.split(" ")[0];
+  const hit = DATA.find(r => r[IMG] && r[0].toLowerCase() === n)
+           || DATA.find(r => r[IMG] && (r[0].toLowerCase().includes(key) || n.includes(r[0].toLowerCase())));
   return hit ? hit[12] : "";
 };
 
 /* ---------- render ---------- */
 function render() {
   const counts = {all:0};
-  DATA.forEach(r => { if (r[7] === dest && r[1] !== "guide") { counts.all++; counts[r[1]] = (counts[r[1]] || 0) + 1; } });
+  DATA.forEach(r => { if (r[1] !== "guide") { counts.all++; counts[r[1]] = (counts[r[1]] || 0) + 1; } });
   chips($("dests"), DESTS, dest, v => { dest = v; shown = 48; loadDest(v); });
   chips($("cats"), CATS, cat, v => { cat = v; shown = 48; render(); }, counts);
   chips($("sorts"), SORTS, sortBy, v => { sortBy = v; shown = 48; render(); });
@@ -283,17 +289,17 @@ function render() {
   const catFilter = c => cat === "all" || c === cat;
   const sc = SCORED.filter(p => p.d === dest).filter(p => catFilter(p.c))
     .filter(p => !P || scoredMatches(p, P)).sort((a, b) => tot(b) - tot(a));
-  let pl = DATA.filter(r => r[7] === dest && r[1] !== "guide")
+  let pl = DATA.filter(r => r[1] !== "guide")
     .filter(r => catFilter(r[1]))
     .filter(r => !P || rowMatches(r, P))
     .filter(r => !sc.some(p => p.n.toLowerCase() === r[0].toLowerCase()))
     .filter(r => sortBy !== "photo" || r[IMG])
     .filter(r => sortBy !== "starred" || r[STARS]);
-  if (sortBy === "hidden" || (P && P.minD !== null)) pl.sort((a, b) => b[11] - a[11]);
-  else if (sortBy === "starred") pl.sort((a, b) => parseFloat(b[13]) - parseFloat(a[13]));
+  if (sortBy === "hidden" || (P && P.minD !== null)) pl.sort((a, b) => b[AD] - a[AD]);
+  else if (sortBy === "starred") pl.sort((a, b) => parseFloat(b[STARS]) - parseFloat(a[STARS]));
   else {
     // photographs first: clicking a destination should fill with pictures, not blank panels
-    pl.sort((a, b) => ((b[12] ? 1 : 0) - (a[12] ? 1 : 0)) || (b[4] - a[4]));
+    pl.sort((a, b) => ((b[IMG] ? 1 : 0) - (a[IMG] ? 1 : 0)) || (b[4] - a[4]));
     if (cat === "all") {                       // interleave so one category cannot fill the page
       const buckets = {};
       pl.forEach(r => (buckets[r[1]] = buckets[r[1]] || []).push(r));
@@ -322,9 +328,9 @@ function render() {
   const mb = $("more").querySelector("button"); if (mb) mb.onclick = () => { shown += 96; render(); };
 }
 function renderGuides() {
-  const counts = {}; DESTS.forEach(([v]) => counts[v] = DATA.filter(r => r[7] === v && r[1] === "guide").length);
+  const counts = {}; REGISTRY.forEach(d => counts[d.id] = (d.counts || {}).guide || 0);
   chips($("gdests"), DESTS, gdest, v => { gdest = v; gshown = 36; loadDest(v); }, counts);
-  const list = DATA.filter(r => r[7] === gdest && r[1] === "guide");
+  const list = (gdest === dest) ? DATA.filter(r => r[1] === "guide") : [];
   const g = $("ggrid"); g.innerHTML = "";
   list.slice(0, gshown).forEach(r => {
     const a = document.createElement("article");
@@ -351,18 +357,20 @@ function renderStatic() {
     + '</td><td class="num" style="color:' + (r[3] === "0" ? "var(--ok)" : (Math.abs(parseFloat(r[3])) >= 2 ? "var(--cut)" : "var(--ink-soft)")) + '">' + r[3] + "</td></tr>").join("");
   const cats = CATS.filter(c => c[0] !== "all").concat([["guide","Guides & operators"]]);
   $("cov").innerHTML = cats.map(([k, l]) => {
-    const a = DATA.filter(r => r[7] === 0 && r[1] === k).length;
-    const b = DATA.filter(r => r[7] === 1 && r[1] === k).length;
+
+    const per = REGISTRY.map(d => (d.counts || {})[k] || 0);
     const s = SCORED.filter(p => p.c === k).length;
     const ph = DATA.filter(r => r[1] === k && r[IMG]).length;
-    return "<tr><td>" + esc(l) + '</td><td class="num">' + fmt(a) + '</td><td class="num">' + fmt(b)
-      + '</td><td class="num" style="color:' + (s ? "var(--accent)" : "var(--ink-faint)") + '">' + (s || "—")
-      + '</td><td class="num">' + (ph || "—") + "</td></tr>";
+    return "<tr><td>" + esc(l) + "</td>"
+      + per.map(n => '<td class="num">' + fmt(n) + "</td>").join("")
+      + '<td class="num" style="color:' + (s ? "var(--accent)" : "var(--ink-faint)") + '">' + (s || "\u2014")
+      + '</td><td class="num">' + (ph || "\u2014") + "</td></tr>";
   }).join("");
 }
 
 
 /* ---------- one destination at a time: the whole index is too big for a single fetch ---------- */
+const REG_EMBED = [{"id":0,"slug":"crete","name":"Crete","bbox":[34.78,23.4,35.75,26.4],"places":24702,"photos":11805,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"food":6083,"hotel":6542,"club":1403,"todo":3038,"shop":5453,"guide":536,"indoor":636,"adventure":196,"beach":815}},{"id":1,"slug":"zanzibar","name":"Zanzibar","bbox":[-6.6,38.95,-4.78,40.0],"places":2214,"photos":985,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"hotel":922,"food":277,"club":101,"indoor":63,"adventure":50,"shop":187,"todo":245,"guide":300,"beach":69}},{"id":2,"slug":"sulawesi","name":"Sulawesi","bbox":[-6.1,118.4,2.1,125.6],"places":54621,"photos":5611,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"indoor":1807,"beach":961,"todo":18594,"hotel":7181,"food":22035,"club":2493,"guide":1420,"adventure":130}},{"id":3,"slug":"cook-islands","name":"Cook Islands","bbox":[-22.1599634,-166.1318843,-8.7150148,-157.1089326],"places":442,"photos":233,"source":"overture 2026-10-21.0 + wikidata","indexed":"2026-11-13","counts":{"todo":111,"hotel":170,"club":29,"food":77,"beach":17,"adventure":11,"guide":12,"indoor":15}}];
 let REGISTRY = [], LOADED = {};
 function loadDest(id) {
   if (LOADED[id]) { DATA = LOADED[id]; render(); renderGuides(); renderStatic(); return Promise.resolve(); }
@@ -386,22 +394,21 @@ TABS.forEach(([tb, pn]) => $(tb).addEventListener("click", () => {
 }));
 $("q").addEventListener("input", e => { q = e.target.value; shown = 48; render(); });
 
-loadReviews()
-  .then(() => fetch("destinations.json").then(r => r.json()).catch(() => []))
-  .then(reg => {
-    reg.sort((a, b) => a.id - b.id);
-    REGISTRY = reg;
-    DESTS = reg.map(d => [d.id, d.name]);
-    MIDLAT = []; reg.forEach(d => { MIDLAT[d.id] = (d.bbox[0] + d.bbox[2]) / 2; });
+function boot() {
+  const reg = REG_EMBED.slice().sort((a, b) => a.id - b.id);
+  REGISTRY = reg;
+  DESTS = reg.map(d => [d.id, d.name]);
+  MIDLAT = []; reg.forEach(d => { MIDLAT[d.id] = (d.bbox[0] + d.bbox[2]) / 2; });
+  try {
     $("s-total").textContent = fmt(reg.reduce((a, d) => a + d.places, 0));
     $("s-scored").textContent = SCORED.length;
     $("s-pic").textContent = fmt(reg.reduce((a, d) => a + (d.photos || 0), 0));
     const el = document.getElementById("s-dest"); if (el) el.textContent = DESTS.length;
-    if (DESTS.length) { dest = gdest = DESTS[0][0]; }
-    return loadDest(dest);
-  })
-  .catch(err => {
-    $("count").textContent = "Index did not load.";
-    $("grid").innerHTML = '<div class="empty"><strong>Index did not load</strong>'
-      + esc(String(err && err.message || err)) + "</div>";
-  });
+  } catch (e) {}
+  dest = gdest = DESTS[0][0];
+  renderStatic();
+  render();                 // draws the chips and the loading state immediately
+  loadDest(dest);
+}
+try { loadReviews(); } catch (e) {}
+boot();
