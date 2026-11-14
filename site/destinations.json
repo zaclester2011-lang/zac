@@ -200,5 +200,80 @@
       "beach": 908,
       "guide": 4330
     }
+  },
+  {
+    "id": 8,
+    "slug": "maldives",
+    "name": "Maldives",
+    "bbox": [
+      -0.9074935,
+      72.3554187,
+      7.3106246,
+      73.9700962
+    ],
+    "places": 3907,
+    "photos": 13,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1078,
+      "food": 1254,
+      "club": 220,
+      "beach": 244,
+      "guide": 240,
+      "adventure": 130,
+      "todo": 512,
+      "indoor": 229
+    }
+  },
+  {
+    "id": 9,
+    "slug": "iceland",
+    "name": "Iceland",
+    "bbox": [
+      63.0859177,
+      -25.0135069,
+      67.353,
+      -12.8046162
+    ],
+    "places": 7548,
+    "photos": 296,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 2206,
+      "indoor": 877,
+      "hotel": 1692,
+      "guide": 636,
+      "beach": 94,
+      "food": 1368,
+      "club": 521,
+      "adventure": 154
+    }
+  },
+  {
+    "id": 10,
+    "slug": "mallorca",
+    "name": "Mallorca",
+    "bbox": [
+      39.2643359,
+      2.3447252,
+      39.9625085,
+      3.4787522
+    ],
+    "places": 21460,
+    "photos": 251,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "food": 7673,
+      "todo": 1891,
+      "beach": 880,
+      "hotel": 4899,
+      "club": 3834,
+      "guide": 638,
+      "adventure": 451,
+      "indoor": 1194
+    }
   }
 ]
