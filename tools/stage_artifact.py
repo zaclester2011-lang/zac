@@ -14,7 +14,9 @@ packs.json is rewritten to point at them.
 Prints the batches to publish.
 """
 
-import json, os, shutil
+import hashlib, json, os, shutil, sys
+
+HI_HERO_W, HI_TOP_W = 1800, 900
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
@@ -22,6 +24,20 @@ IMG = os.path.join(SITE, "img")
 PK = os.path.join(SITE, "pk")
 BATCH = 250                    # under the 255-file limit, leaving room for the page files
 BATCH_BYTES = 58_000_000       # under the 64 MB a single publish accepts
+
+
+def hi_path(title, width):
+    """The big copy tools/hires.py fetched, if it got one.
+
+    site/img holds 360-pixel thumbnails, downloaded to be measured rather than
+    looked at. A pack hero is drawn 1,248 pixels wide, so those were being
+    stretched almost three times, which is what made the page look blurry.
+    """
+    if not title:
+        return None
+    n = hashlib.sha1(("%s@%d" % (title, width)).encode("utf-8")).hexdigest()[:16] + ".jpg"
+    p = os.path.join(SITE, "hi", n)
+    return p if os.path.exists(p) else None
 
 
 def main():
@@ -37,9 +53,13 @@ def main():
     if any((p.get("hero") or "").startswith("pk/") for p in packs):
         sys.exit("packs.json is already staged — run build_packs.py and sprites.py first")
 
-    staged, missing = [], []
+    staged, missing, bigs = [], [], 0
     for p in packs:
-        src = os.path.join(IMG, p.get("hero") or "")
+        src = hi_path(p.get("hero_title"), HI_HERO_W)
+        if src:
+            bigs += 1
+        else:
+            src = os.path.join(IMG, p.get("hero") or "")
         if p.get("hero") and os.path.exists(src):
             name = "h%d.jpg" % p["id"]
             # Cropping a tall hero at its water was tried and reverted: on the
@@ -52,7 +72,11 @@ def main():
             missing.append("%s hero" % p["name"])
             p["hero"] = ""
         for i, t in enumerate(p.get("top", [])):
-            s = os.path.join(IMG, t.get("img") or "")
+            s = hi_path(t.get("credit"), HI_TOP_W)
+            if s:
+                bigs += 1
+            else:
+                s = os.path.join(IMG, t.get("img") or "")
             if t.get("img") and os.path.exists(s):
                 name = "t%d_%d.jpg" % (p["id"], i)
                 shutil.copyfile(s, os.path.join(PK, name))
@@ -69,6 +93,7 @@ def main():
     total = sum(os.path.getsize(os.path.join(PK, f)) for f in os.listdir(PK))
     print("%d pictures staged into site/pk (%.1f MB), %d missing"
           % (len(staged), total / 1e6, len(missing)))
+    print("%d of them are the big copies from site/hi" % bigs)
     if missing:
         print("   missing: " + ", ".join(missing[:8]) + (" …" if len(missing) > 8 else ""))
 

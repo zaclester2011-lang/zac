@@ -93,6 +93,10 @@ PINNED = {
     "Dubrovnik": "Casco viejo de Dubrovnik, Croacia, 2014-04-14, DD 04.JPG",
     # Zac asked for the penguins on white sand; this is the one that shows them
     "Cape Town": "Penguins at Boulders Beach 04.jpg",
+    # Zac asked for under the sea at Zanzibar, turquoise, with the yellow and
+    # silver fish. Half over and half under at Mnemba: water fills the frame at
+    # hue 184 and saturation 0.94, with sergeant majors and one yellow damselfish.
+    "Zanzibar": "Mnemba Island - Zanzibar - Flickr - Jorge Lascar.jpg",
     # and a deep blue cenote. Every cenote photograph is dark, because a cenote
     # is a hole in the ground, so the brightness floor threw them all out and
     # left the Maya ruins standing. Measured hue 189, saturation 0.56, and
