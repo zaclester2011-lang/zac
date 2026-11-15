@@ -4,14 +4,17 @@
 const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
 const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10, COL:11,
            CREDIT:12, N5:13, N2:14, NC:15, D:16};
-/* The five Zac asked for, and nothing else. "Hidden" is not a category in the
-   data — it is beaches with almost nothing mapped around them. */
-const CATS = [["all","Everything"],["beach","Beaches"],["hidden","Hidden beaches"],
-  ["food","Restaurants"],["club","Bars & clubs"],["hotel","Hotels"]];
-const CATLAB = {beach:"Beach", food:"Restaurant", club:"Bar or club", hotel:"Hotel"};
+/* Five kinds of adventure. "Hidden" is not a category in the data — it is any
+   adventure with almost nothing else mapped around it, which is the whole
+   point of the index. */
+const CATS = [["all","Everything"],["hidden","Hidden"],["beach","Beaches"],
+  ["water","Waterfalls & lakes"],["rock","Gorges & caves"],["trail","Trails & peaks"],
+  ["sea","Diving & surfing"]];
+const CATLAB = {beach:"Beach", water:"Waterfall or lake", rock:"Gorge or cave",
+  trail:"Trail or peak", sea:"Diving and surfing"};
 const HIDDEN_N2 = 25;        // places mapped within two kilometres
 
-const isHidden = r => r[F.C] === "beach" && (r[F.N2] || 0) <= HIDDEN_N2;
+const isHidden = r => (r[F.N2] || 0) <= HIDDEN_N2;
 
 /* verified by standing in it */
 const SCORED = {
@@ -25,16 +28,20 @@ const SCORED = {
 
 /* plain words → filters */
 const WORD_CAT = {
-  beach:"beach", beaches:"beach", sand:"beach", sea:"beach", swim:"beach", swimming:"beach",
-  cove:"beach", lagoon:"beach", shore:"beach", coast:"beach", water:"beach", turquoise:"beach",
-  bay:"beach", snorkel:"beach", snorkelling:"beach",
-  bar:"club", bars:"club", club:"club", clubs:"club", nightclub:"club", nightlife:"club",
-  pub:"club", drink:"club", drinks:"club", cocktail:"club", cocktails:"club", rooftop:"club",
-  beer:"club", wine:"club", brewery:"club",
-  eat:"food", food:"food", restaurant:"food", restaurants:"food", dinner:"food", lunch:"food",
-  breakfast:"food", taverna:"food", cafe:"food", coffee:"food", pizza:"food", seafood:"food",
-  hotel:"hotel", hotels:"hotel", stay:"hotel", sleep:"hotel", room:"hotel", rooms:"hotel",
-  resort:"hotel", villa:"hotel", hostel:"hotel", lodge:"hotel", apartment:"hotel"
+  beach:"beach", beaches:"beach", sand:"beach", shore:"beach", coast:"beach",
+  cove:"beach", strand:"beach",
+  waterfall:"water", waterfalls:"water", falls:"water", lake:"water", lakes:"water",
+  lagoon:"water", cenote:"water", spring:"water", springs:"water", river:"water",
+  pool:"water", pools:"water", turquoise:"water", water:"water",
+  gorge:"rock", gorges:"rock", canyon:"rock", canyons:"rock", cave:"rock", caves:"rock",
+  cliff:"rock", cliffs:"rock", volcano:"rock", crater:"rock", glacier:"rock",
+  mountain:"rock", peak:"rock", summit:"rock", rock:"rock",
+  hike:"trail", hikes:"trail", hiking:"trail", trail:"trail", trails:"trail", trek:"trail",
+  trekking:"trail", walk:"trail", walking:"trail", climb:"trail", climbing:"trail",
+  viewpoint:"trail", lookout:"trail", island:"trail", islands:"trail", reef:"trail",
+  dive:"sea", diving:"sea", scuba:"sea", snorkel:"sea", snorkelling:"sea", surf:"sea",
+  surfing:"sea", kayak:"sea", kayaking:"sea", canoe:"sea", sail:"sea", sailing:"sea",
+  swim:"sea", swimming:"sea", boat:"sea"
 };
 const QUIET = ["empty","hidden","quiet","remote","alone","secret","deserted","secluded",
                "unspoilt","wild","undiscovered","peaceful","nobody","untouched"];
@@ -78,7 +85,8 @@ function rowMatches(r, p) {
 
 /* ---------------------------------------------------------------- state */
 let PACKS = [], LOADED = {}, open_id = null, continent = "all";
-let packQ = "", packCat = "all", shown = 60;
+/* the app is called Hidden Adventures, so it opens on the hidden ones */
+let packQ = "", packCat = "hidden", shown = 60;
 const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const fmt = n => (n || 0).toLocaleString("en-GB");
@@ -120,10 +128,10 @@ document.addEventListener("error", function (e) {
 }, true);
 
 /* a name for a measured hue \u2014 never written without the numbers beside it */
-/* Colour rates water, and with the index cut to five categories the only one
-   made of water is the beach. */
+/* Colour rates water. Three of the five adventures are made of it; a gorge or
+   a ridge may be dry, so they are not rated on it. */
 function isWatery(cat) {
-  return cat === "beach";
+  return cat === "beach" || cat === "water" || cat === "sea";
 }
 
 function shade(h, s) {
@@ -177,18 +185,13 @@ function paragraph(r) {
 
   // 3 \u2014 how crowded a spot it stands in, which is the other half of the reason
   if (isHidden(r)) {
-    out.push("Only " + fmt(n2) + " other place" + (n2 === 1 ? "" : "s")
-             + " are mapped within two kilometres of it, which is what puts it among the"
-             + " hidden beaches.");
-    if (r[F.STARS]) out.push("Visitors rate it " + r[F.STARS] + " out of five.");
-    return out.join(" ");
-  }
-  const peers = CATLAB[r[F.C]] ? CATLAB[r[F.C]].toLowerCase() + "s" : "places of its kind";
-  if (nc > 4 && (r[F.C] === "food" || r[F.C] === "hotel" || r[F.C] === "club")) {
-    out.push("It is one of " + fmt(nc + 1) + " " + peers + " within two kilometres"
-             + (n5 <= 3 ? ", but barely anything stands within five hundred metres of it." : "."));
+    out.push(n2 === 0
+      ? "Nothing else at all is mapped within two kilometres of it, which is what makes it hidden."
+      : "Only " + fmt(n2) + " other place" + (n2 === 1 ? " is" : "s are")
+        + " mapped within two kilometres of it, which is what makes it hidden.");
   } else {
-    out.push(cap(company(n5, n2)) + ".");
+    out.push(cap(company(n5, n2)) + ", and " + fmt(n2) + " place"
+             + (n2 === 1 ? "" : "s") + " in all within two kilometres.");
   }
 
   // 4 \u2014 what people who went think of it
@@ -226,17 +229,21 @@ const scoredFor = name => {
 function destParagraph(k) {
   const out = [];
   out.push(k.name + " sits in " + k.continent + ", and the index holds " + fmt(k.places)
-           + " places in it" + (k.photos
+           + " adventure" + (k.places === 1 ? "" : "s") + " in it" + (k.photos
               ? ", " + fmt(k.photos) + " of them with a photograph of their own." : "."));
-  const b = (k.counts && k.counts.beach) || 0;
-  const hb = k.hidden_beaches || 0;
-  if (b) {
-    out.push(fmt(b) + " are beaches" + (hb
-      ? ", and " + fmt(hb) + " of those are hidden ones, with almost nothing else mapped around them."
-      : ", though every one of them sits in a crowd of other places: this is a busy coast."));
-  } else {
-    out.push("No beaches are mapped here yet.");
+  const c = k.counts || {};
+  const parts = [["beach", "beaches"], ["water", "waterfalls and lakes"],
+                 ["rock", "gorges and caves"], ["trail", "trails and peaks"],
+                 ["sea", "places to dive or surf"]]
+    .filter(([key]) => c[key]).map(([key, label]) => fmt(c[key]) + " " + label);
+  if (parts.length) {
+    const last = parts.pop();
+    out.push(cap((parts.length ? parts.join(", ") + " and " + last : last)) + ".");
   }
+  const hid = k.hidden || 0;
+  out.push(hid
+    ? fmt(hid) + " of them are hidden — almost nothing else is mapped within two kilometres."
+    : "None of them are hidden: everything here has company.");
   if (k.bestcol) {
     out.push("The best water I have rated in it is " + k.bestcol[0] + ", at Colour "
              + Number(k.bestcol[1]).toFixed(1) + " out of ten"
@@ -326,7 +333,7 @@ function renderHome() {
 
 /* ---------------------------------------------------------------- pack */
 function openPack(id) {
-  open_id = id; packQ = ""; packCat = "all"; shown = 60;
+  open_id = id; packQ = ""; packCat = "hidden"; shown = 60;
   $("home").hidden = true; $("pack").hidden = false;
   window.scrollTo(0, 0);
   const pk = PACKS.find(p => p.id === id);

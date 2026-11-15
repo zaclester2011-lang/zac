@@ -31,7 +31,7 @@ import argparse, collections, os, re, sqlite3, unicodedata
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data", "index.db")
 
-KEEP_CATS = ("beach", "food", "club", "hotel")
+KEEP_CATS = ("beach", "water", "rock", "trail", "sea")
 LOCAL_NAME_AT = 3          # a word on more than this many places here is a place name
 
 GENERIC = set("""

@@ -88,7 +88,7 @@ def search(query, limit=8):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--category", default="beach")
+    ap.add_argument("--category", default="beach,water,rock,trail,sea")
     ap.add_argument("--per", type=int, default=20, help="places per destination")
     ap.add_argument("--delay", type=float, default=1.0)
     ap.add_argument("--width", type=int, default=900)

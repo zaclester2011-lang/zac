@@ -100,31 +100,6 @@
     }
   },
   {
-    "id": 4,
-    "slug": "new-york",
-    "name": "New York",
-    "bbox": [
-      40.476578,
-      -74.258843,
-      40.91763,
-      -73.700233
-    ],
-    "places": 119932,
-    "photos": 660,
-    "source": "overture 2026-10-21.0 + wikidata",
-    "indexed": "2026-11-14",
-    "counts": {
-      "indoor": 13480,
-      "club": 18756,
-      "hotel": 5202,
-      "todo": 26737,
-      "beach": 328,
-      "food": 52770,
-      "adventure": 279,
-      "guide": 2380
-    }
-  },
-  {
     "id": 5,
     "slug": "capri",
     "name": "Capri",
@@ -597,6 +572,106 @@
       "guide": 152,
       "adventure": 86,
       "beach": 138
+    }
+  },
+  {
+    "id": 24,
+    "slug": "lofoten",
+    "name": "Lofoten",
+    "bbox": [
+      67.7,
+      12.0,
+      68.6,
+      16.3
+    ],
+    "places": 2333,
+    "photos": 32,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 1268,
+      "beach": 37,
+      "hotel": 504,
+      "food": 170,
+      "indoor": 128,
+      "adventure": 99,
+      "club": 54,
+      "guide": 73
+    }
+  },
+  {
+    "id": 25,
+    "slug": "dolomites",
+    "name": "Dolomites",
+    "bbox": [
+      46.2,
+      11.0,
+      46.9,
+      12.4
+    ],
+    "places": 22044,
+    "photos": 884,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 10393,
+      "food": 4290,
+      "todo": 3946,
+      "club": 1552,
+      "indoor": 1143,
+      "guide": 357,
+      "adventure": 356,
+      "beach": 7
+    }
+  },
+  {
+    "id": 26,
+    "slug": "isle-of-skye",
+    "name": "Isle of Skye",
+    "bbox": [
+      57.05,
+      -6.9,
+      57.75,
+      -5.75
+    ],
+    "places": 1199,
+    "photos": 68,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 594,
+      "adventure": 31,
+      "indoor": 44,
+      "guide": 24,
+      "todo": 328,
+      "food": 115,
+      "beach": 35,
+      "club": 28
+    }
+  },
+  {
+    "id": 27,
+    "slug": "bernese-oberland",
+    "name": "Bernese Oberland",
+    "bbox": [
+      46.4,
+      7.55,
+      46.8,
+      8.35
+    ],
+    "places": 5134,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 1866,
+      "todo": 748,
+      "club": 859,
+      "food": 1048,
+      "adventure": 103,
+      "guide": 163,
+      "indoor": 333,
+      "beach": 14
     }
   }
 ]

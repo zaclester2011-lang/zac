@@ -66,10 +66,10 @@ WATERY_NAME = re.compile(r"""(?ix) \b(
 
 
 def is_watery(cat, kind=None, name=None):
-    """With the index cut to five categories, the only one made of water is the
-    beach. The kind-based test this replaced is gone with the categories it
-    judged — there are no gorges or dive centres left to judge."""
-    return cat == "beach"
+    """Colour rates water. Of the five kinds of adventure, three are made of it:
+    a beach, a waterfall or lake, and somewhere you dive or surf. A gorge or a
+    ridge may be bone dry, so neither is rated on the colour of its water."""
+    return cat in ("beach", "water", "sea")
 
 
 # fitted on the eight measured places — see the docstring

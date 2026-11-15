@@ -40,12 +40,12 @@ LANDMARK = {
     "Capri": ["Faraglioni", "Blue Grotto"],
 }
 
-CATS = ["beach", "food", "club", "hotel"]
+CATS = ["beach", "water", "rock", "trail", "sea"]
 # The ten best things are things you travel for. "shop" and "indoor" are out:
 # once the barbers were moved out of the bar category into shops, they started
 # turning up in Santorini's and Mallorca's top ten, and indoor now also holds
 # the notaries and publishers that the same clean-up swept out.
-TOP_SPREAD = ["beach", "food", "club", "hotel"]
+TOP_SPREAD = ["beach", "rock", "water", "trail", "sea"]
 
 
 def local_name(title):
@@ -110,7 +110,9 @@ def main():
         quiet = collections.Counter(r[1] for r in out if (r[14] or 0) <= QUIET_N2)
         # "Hidden beaches" is a category on the page but not in the data: it is
         # the beaches with almost nothing mapped around them.
-        hidden_beaches = sum(1 for r in out if r[1] == "beach" and (r[14] or 0) <= QUIET_N2)
+        # "Hidden" is the whole point now: any adventure with almost nothing
+        # else mapped around it, not just a beach.
+        hidden = sum(1 for r in out if (r[14] or 0) <= QUIET_N2)
         withpic = [r for r in out if r[9]]
 
         # ten best things: a spread across categories, best known first, always with a picture
@@ -198,7 +200,7 @@ def main():
             "hero": hero, "hero_title": hero_title,
             "counts": {c: counts.get(c, 0) for c in CATS},
             "quiet": {c: quiet.get(c, 0) for c in CATS},
-            "hidden_beaches": hidden_beaches,
+            "hidden": hidden,
             "blob": blob,
             "top": picked,
         })
