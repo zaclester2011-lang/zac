@@ -673,5 +673,53 @@
       "indoor": 333,
       "beach": 14
     }
+  },
+  {
+    "id": 28,
+    "slug": "soca-valley",
+    "name": "Soca Valley",
+    "bbox": [
+      46.08,
+      13.35,
+      46.48,
+      13.95
+    ],
+    "places": 1804,
+    "photos": 211,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 243,
+      "todo": 715,
+      "guide": 48,
+      "indoor": 98,
+      "hotel": 500,
+      "club": 128,
+      "adventure": 68,
+      "beach": 4
+    }
+  },
+  {
+    "id": 29,
+    "slug": "wadi-rum",
+    "name": "Wadi Rum",
+    "bbox": [
+      29.35,
+      35.25,
+      29.85,
+      35.65
+    ],
+    "places": 186,
+    "photos": 8,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "indoor": 6,
+      "hotel": 93,
+      "guide": 36,
+      "todo": 48,
+      "adventure": 1,
+      "food": 2
+    }
   }
 ]
