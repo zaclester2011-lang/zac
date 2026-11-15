@@ -29,6 +29,20 @@ def main():
             pass                        # already there
     con.commit()
 
+    # What counts as company is everything that was ever mapped here, not just
+    # the adventures left in the table. Counting only adventures made 71% of
+    # them look hidden, because a gorge beside a resort town has no other gorge
+    # near it — and that is not what hidden means.
+    cloud = collections.defaultdict(list)
+    import json
+    src = os.path.join(ROOT, "site", "data.json")
+    if os.path.exists(src):
+        blob = json.load(open(src))
+        for r in blob["r"]:
+            cloud[r[7]].append((r[2], r[3], r[1]))
+        print("neighbours counted against %s mapped places in all"
+              % format(sum(len(v) for v in cloud.values()), ","))
+
     dests = con.execute("SELECT id, name FROM destination ORDER BY id").fetchall()
     t0 = time.time()
     total = 0
@@ -37,10 +51,12 @@ def main():
                            (did,)).fetchall()
         if not rows:
             continue
+        around = [(la, lo, c) for la, lo, c in cloud.get(did, [])] or \
+                 [(la, lo, c) for _, la, lo, c in rows]
         near = collections.Counter()
         wide = collections.Counter()
         catw = collections.Counter()
-        for _, lat, lon, cat in rows:
+        for lat, lon, cat in around:
             near[(int(lat / NEAR), int(lon / NEAR))] += 1
             wide[(int(lat / WIDE), int(lon / WIDE))] += 1
             catw[(cat, int(lat / WIDE), int(lon / WIDE))] += 1

@@ -920,5 +920,177 @@
       "beach": 9,
       "indoor": 18
     }
+  },
+  {
+    "id": 38,
+    "slug": "sacred-valley",
+    "name": "Sacred Valley",
+    "bbox": [
+      -13.65,
+      -72.65,
+      -12.95,
+      -71.55
+    ],
+    "places": 8373,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 2488,
+      "todo": 795,
+      "indoor": 375,
+      "club": 508,
+      "hotel": 2276,
+      "guide": 1899,
+      "adventure": 31,
+      "beach": 1
+    }
+  },
+  {
+    "id": 39,
+    "slug": "el-chalten",
+    "name": "El Chalten",
+    "bbox": [
+      -49.6,
+      -73.35,
+      -48.95,
+      -72.55
+    ],
+    "places": 187,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 58,
+      "hotel": 76,
+      "food": 30,
+      "adventure": 5,
+      "guide": 8,
+      "club": 8,
+      "indoor": 2
+    }
+  },
+  {
+    "id": 40,
+    "slug": "torres-del-paine",
+    "name": "Torres del Paine",
+    "bbox": [
+      -51.6,
+      -73.55,
+      -50.6,
+      -72.35
+    ],
+    "places": 186,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 120,
+      "hotel": 45,
+      "indoor": 6,
+      "guide": 4,
+      "adventure": 8,
+      "food": 3
+    }
+  },
+  {
+    "id": 41,
+    "slug": "komodo-and-flores",
+    "name": "Komodo and Flores",
+    "bbox": [
+      -8.95,
+      119.25,
+      -8.15,
+      120.3
+    ],
+    "places": 716,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "beach": 15,
+      "todo": 94,
+      "guide": 197,
+      "adventure": 60,
+      "hotel": 153,
+      "food": 144,
+      "club": 37,
+      "indoor": 16
+    }
+  },
+  {
+    "id": 42,
+    "slug": "raja-ampat",
+    "name": "Raja Ampat",
+    "bbox": [
+      -1.25,
+      129.65,
+      -0.15,
+      131.25
+    ],
+    "places": 363,
+    "photos": 2,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 88,
+      "beach": 23,
+      "todo": 132,
+      "guide": 35,
+      "club": 12,
+      "food": 60,
+      "adventure": 11,
+      "indoor": 2
+    }
+  },
+  {
+    "id": 43,
+    "slug": "reunion",
+    "name": "Reunion",
+    "bbox": [
+      -21.42,
+      55.18,
+      -20.82,
+      55.9
+    ],
+    "places": 6115,
+    "photos": 86,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 2646,
+      "indoor": 633,
+      "todo": 802,
+      "adventure": 88,
+      "club": 483,
+      "guide": 87,
+      "hotel": 1266,
+      "beach": 110
+    }
+  },
+  {
+    "id": 44,
+    "slug": "ningaloo",
+    "name": "Ningaloo",
+    "bbox": [
+      -23.65,
+      113.35,
+      -21.75,
+      114.35
+    ],
+    "places": 329,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 110,
+      "beach": 44,
+      "adventure": 22,
+      "hotel": 60,
+      "club": 10,
+      "food": 28,
+      "guide": 42,
+      "indoor": 13
+    }
   }
 ]

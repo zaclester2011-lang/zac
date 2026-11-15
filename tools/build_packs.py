@@ -17,7 +17,7 @@ DB = os.path.join(ROOT, "data", "index.db")
 SITE = os.path.join(ROOT, "site")
 PFX = "https://commons.wikimedia.org/wiki/Special:FilePath/"
 MAX_PER_DEST = 14000          # what the browser gets; the database keeps everything
-QUIET_N2 = 25                 # a hidden beach: at most this many places within 2 km
+QUIET_N2 = 10                 # hidden: at most this many other places within 2 km
 
 # continents by bounding box — crude but it only has to sort twenty-odd places
 def continent(lat, lon):

@@ -12,7 +12,7 @@ const CATS = [["all","Everything"],["hidden","Hidden"],["beach","Beaches"],
   ["sea","Diving & surfing"]];
 const CATLAB = {beach:"Beach", water:"Waterfall or lake", rock:"Gorge or cave",
   trail:"Trail or peak", sea:"Diving and surfing"};
-const HIDDEN_N2 = 25;        // places mapped within two kilometres
+const HIDDEN_N2 = 10;        // other places mapped within two kilometres
 
 const isHidden = r => (r[F.N2] || 0) <= HIDDEN_N2;
 

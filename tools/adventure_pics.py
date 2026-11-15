@@ -1,17 +1,18 @@
 #!/usr/bin/env python3
 """Find each adventure its own photograph, by name.
 
-Two sources, cheapest and most certain first:
+Commons geosearch, one request per place: every geotagged file within three
+kilometres, each with its distance. Then the filename has to carry a word from
+the place's own name.
 
-  Wikipedia's lead image — a gorge, a waterfall, a peak or a national park
-    usually has an article, and the picture editors chose to lead it with is a
-    picture of that thing. One request, and the answer is definitive.
+Both halves are needed. Proximity alone gave a dive resort a number plate.
+The name alone gave "Cavo Bianco" in Capri a poplar tree on the river Po, 700
+kilometres away, because bianco is just Italian for white, and gave Imbros
+Gorge in Crete a First World War prisoner camp on Imbros in Turkey. Together
+they are strict: the file was taken here AND it is named after this.
 
-  Commons search — for everything without an article. A result is accepted only
-    when the filename carries a word from the place's own name that is not a
-    trade word, not the destination, and not a local place name, because
-    matching the town name is how "Soul Kitchen Dubrovnik" got a photograph of
-    Dubrovnik.
+Searching by name alone also cost four requests a place and would have taken
+three hours; this takes one.
 
 Natural features are far better served by this than restaurants were: people
 photograph a named gorge on purpose, and nobody photographs a named bar.
@@ -21,7 +22,7 @@ photograph a named gorge on purpose, and nobody photographs a named bar.
 Writes place.photo_title, caches into site/img/, one file to one place.
 """
 
-import argparse, collections, hashlib, io, json, os, queue, re, sqlite3
+import argparse, collections, hashlib, io, json, math, os, queue, re, sqlite3
 import threading, time, unicodedata
 import urllib.error, urllib.parse, urllib.request
 
@@ -86,36 +87,23 @@ def get(url, tries=5):
     raise RuntimeError("unreachable")
 
 
-def wiki_lead(title):
-    """The photograph Wikipedia leads its own article with."""
-    url = (WIKI + "?action=query&format=json&prop=pageimages&piprop=original"
-           "&redirects=1&titles=" + urllib.parse.quote(title))
-    try:
-        data = json.loads(get(url))
-    except Exception:
-        return None
-    for p in ((data.get("query") or {}).get("pages") or {}).values():
-        src = (p.get("original") or {}).get("source")
-        if not src:
-            continue
-        name = urllib.parse.unquote(src.rsplit("/", 1)[-1].split("?")[0])
-        if name.lower().endswith((".jpg", ".jpeg", ".png")):
-            return name
-    return None
+def km(a, b, c, d):
+    return math.hypot((c - a) * 111.0, (d - b) * 111.0 * math.cos(math.radians(a)))
 
 
-def commons_search(query, limit=8):
-    url = (COMMONS + "?action=query&format=json&gsrnamespace=6&generator=search&gsrsearch="
-           + urllib.parse.quote(query) + "&gsrlimit=%d" % limit)
+def geosearch(lat, lon, radius=3000, limit=80):
+    """Every geotagged file within radius metres, nearest first."""
+    url = (COMMONS + "?action=query&format=json&list=geosearch&gsnamespace=6"
+           "&gsradius=%d&gscoord=%s|%s&gslimit=%d" % (radius, lat, lon, limit))
     try:
         data = json.loads(get(url))
     except Exception:
         return []
     out = []
-    for p in ((data.get("query") or {}).get("pages") or {}).values():
-        t = p.get("title", "")
+    for f in data.get("query", {}).get("geosearch", []):
+        t = f.get("title", "")
         if t.lower().startswith("file:") and t.lower().endswith((".jpg", ".jpeg", ".png")):
-            out.append(t[5:])
+            out.append((t[5:], f.get("dist", 0) / 1000.0))
     return out
 
 
@@ -123,31 +111,18 @@ def worker(q, taken, width, delay, results):
     from PIL import Image
     while True:
         try:
-            pid, dname, nm, ident = q.get_nowait()
+            pid, dname, nm, ident, lat, lon = q.get_nowait()
         except queue.Empty:
             return
         try:
-            hit = source = None
-            # 1 — the article's own lead picture
-            for article in ("%s" % nm, "%s (%s)" % (nm, dname)):
-                cand = wiki_lead(article)
-                if cand and not JUNK.search(cand.replace("_", " ")) \
-                        and ident & set(words(cand)):
-                    hit, source = cand, "wiki"
-                    break
-                time.sleep(delay)
-            # 2 — Commons, by name
-            if not hit:
-                for q2 in ("%s %s" % (nm, dname), nm):
-                    for cand in commons_search(q2):
-                        if JUNK.search(cand.replace("_", " ")):
-                            continue
-                        if ident & set(words(cand)):
-                            hit, source = cand, "commons"
-                            break
-                    time.sleep(delay)
-                    if hit:
-                        break
+            hit = None
+            for title, dist in geosearch(lat, lon):
+                if JUNK.search(title.replace("_", " ")):
+                    continue
+                if ident & set(words(title)):
+                    hit = title
+                    break                      # nearest first, so the first is the best
+            time.sleep(delay)
             if not hit:
                 with lock:
                     tally["none"] += 1
@@ -163,8 +138,8 @@ def worker(q, taken, width, delay, results):
             im.save(os.path.join(IMG, local_name(hit)), "JPEG", quality=82, optimize=True)
             with lock:
                 results.append((hit, pid))
-                tally[source] += 1
-                print("   %-7s %-34s <- %s" % (source, nm[:34], hit[:48]), flush=True)
+                tally["commons"] += 1
+                print("   %-34s <- %s" % (nm[:34], hit[:52]), flush=True)
         except Exception:
             with lock:
                 tally["fail"] += 1
@@ -187,22 +162,26 @@ def main():
     taken = set(r[0] for r in con.execute(
         "SELECT photo_title FROM place WHERE photo_title IS NOT NULL"))
 
+    # a word common across the whole index is an ordinary word of some language,
+    # not the name of anything: bianco, grande, playa, piccola
     df = collections.defaultdict(collections.Counter)
+    GLOBAL = collections.Counter()
     for d, n in con.execute("SELECT dest, name FROM place"):
         for w in set(words(n)):
             df[d][w] += 1
+            GLOBAL[w] += 1
 
     where = "AND n2km <= 25" if args.hidden_only else ""
     jobs = []
     for did, dname in con.execute("SELECT id, name FROM destination ORDER BY id"):
-        rows = con.execute("""SELECT id, name FROM place
+        rows = con.execute("""SELECT id, name, lat, lon FROM place
                               WHERE dest=? AND photo_title IS NULL %s
                               ORDER BY confidence DESC LIMIT ?""" % where,
                            (did, args.per)).fetchall()
-        for pid, nm in rows:
-            ident = {w for w in set(words(nm)) if df[did][w] <= 3}
+        for pid, nm, lat, lon in rows:
+            ident = {w for w in set(words(nm)) if df[did][w] <= 3 and GLOBAL[w] <= 60}
             if ident:
-                jobs.append((pid, dname, nm, ident))
+                jobs.append((pid, dname, nm, ident, lat, lon))
     print("%s adventures to look up across %s destinations"
           % (format(len(jobs), ","),
              format(con.execute("SELECT count(*) FROM destination").fetchone()[0], ",")), flush=True)
