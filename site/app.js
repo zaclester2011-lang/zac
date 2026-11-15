@@ -2,7 +2,8 @@
    packs.json holds one row per destination; d/<id>.json is fetched when a pack opens. */
 
 const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
-const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10, COL:11, CREDIT:12};
+const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10, COL:11,
+           CREDIT:12, N5:13, N2:14, NC:15, D:16};
 const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"],["food","Restaurants"],
   ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops"]];
 const CATLAB = {beach:"Beach", food:"Restaurant", club:"Bar or club", todo:"Thing to do",
@@ -68,8 +69,9 @@ function describe(p) {
 }
 function rowMatches(r, p) {
   if (p.cats.size && !p.cats.has(r[F.C])) return false;
-  if (p.minD !== null && r[F.AD] < p.minD) return false;
-  if (p.maxD !== null && r[F.AD] > p.maxD) return false;
+  const d = r[F.D] != null ? r[F.D] : r[F.AD];
+  if (p.minD !== null && d < p.minD) return false;
+  if (p.maxD !== null && d > p.maxD) return false;
   if (!p.words.length) return true;
   const hay = (r[F.N] + " " + (r[F.KIND]||"") + " " + (r[F.LOC]||"") + " " + (CATLAB[r[F.C]]||"")).toLowerCase();
   return p.words.every(w => hay.includes(w));
@@ -82,38 +84,155 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const fmt = n => (n || 0).toLocaleString("en-GB");
 /* the page serves its own pictures: artifacts refuse images from other hosts */
-const img = (file, alt, cls) => file
-  ? '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="' + (file.indexOf("/") >= 0 ? esc(file) : "img/" + esc(file))
-    + '" onerror="this.outerHTML=\'<div class=&quot;' + cls + ' noimg&quot;><span>Photograph not cached</span></div>\'">'
-  : '<div class="' + cls + ' noimg"><span>No photograph yet</span></div>';
+const img = (file, alt, cls, credit) => {
+  if (!file) return '<div class="' + cls + ' noimg"><span>No photograph yet</span></div>';
+  const src = file.indexOf("/") >= 0 ? file : "img/" + file;
+  const back = credit ? COMMONS + encodeURIComponent(String(credit).replace(/ /g, "_")) + "?width=480" : "";
+  return '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="' + esc(src)
+       + '" data-back="' + esc(back) + '" data-cls="' + cls + '">';
+};
+/* one handler for every picture: try the cached copy, then Commons, then a plain panel */
+document.addEventListener("error", function (e) {
+  const el = e.target;
+  if (!el || el.tagName !== "IMG" || !el.dataset) return;
+  if (el.dataset.back && !el.dataset.tried) { el.dataset.tried = "1"; el.src = el.dataset.back; return; }
+  const d = document.createElement("div");
+  d.className = (el.dataset.cls || "") + " noimg";
+  d.innerHTML = "<span>Photograph unavailable</span>";
+  if (el.parentNode) el.parentNode.replaceChild(d, el);
+}, true);
 
-/* a plain factual sentence for every place, built from what is actually known */
+/* a name for a measured hue \u2014 never written without the numbers beside it */
+function shade(h, s) {
+  if (s < 0.22) return "washed-out and grey-leaning";
+  if (h < 160) return "green";
+  if (h < 168) return "green-leaning turquoise";
+  if (h <= 195) return "turquoise";
+  if (h <= 205) return "clear blue";
+  if (h <= 215) return "deep blue";
+  return "flat navy";
+}
+
+/* How busy it looks from the map, in words. The counts are the evidence. */
+function company(n5, n2) {
+  if (n5 === 0 && n2 <= 2) return "nothing else is mapped within two kilometres of it";
+  if (n5 === 0) return "nothing else is mapped within five hundred metres";
+  if (n5 <= 3) return "barely anything stands within five hundred metres";
+  if (n5 <= 15) return "a handful of other places stand within five hundred metres";
+  if (n5 <= 60) return "it sits among dozens of others";
+  return "it stands in the middle of a crowd";
+}
+
+/* A paragraph for every place, each clause a fact the index actually holds. */
 function paragraph(r) {
-  const kind = (r[F.KIND] || CATLAB[r[F.C]] || "place").toLowerCase();
-  const art = /^[aeiou]/.test(kind) ? "An" : "A";
+  const kind = (r[F.KIND] || CATLAB[r[F.C]] || "place").toLowerCase().replace(/_/g, " ");
+  const art = /^[aeiou]/.test(kind) ? "an" : "a";
   const where = r[F.LOC] ? " in " + r[F.LOC] : "";
-  let s = art + " " + kind + where + ".";
-  if (r[F.C] === "beach") {
-    s += " At " + r[F.LAT].toFixed(3) + ", " + r[F.LON].toFixed(3) + ".";
+  const n5 = r[F.N5] || 0, n2 = r[F.N2] || 0, nc = r[F.NC] || 0;
+  const out = [];
+
+  // 1 \u2014 what it is, and where
+  let one = r[F.N] + " is " + art + " " + kind + where;
+  if (r[F.LAT] || r[F.LON]) {
+    one += ", at " + Math.abs(r[F.LAT]).toFixed(3) + "\u00b0" + (r[F.LAT] < 0 ? "S" : "N")
+         + " " + Math.abs(r[F.LON]).toFixed(3) + "\u00b0" + (r[F.LON] < 0 ? "W" : "E");
   }
-  if (r[F.COL]) {
-    s += " The water in its photograph measures hue " + r[F.COL][0] + "\u00b0 at saturation "
-       + r[F.COL][1].toFixed(2) + ".";
-  } else if (r[F.IMG]) {
-    s += " Photographed, but no water is visible in frame to measure.";
+  out.push(one + ".");
+
+  // 2 \u2014 what stands around it
+  const peers = CATLAB[r[F.C]] ? CATLAB[r[F.C]].toLowerCase() + "s" : "places of its kind";
+  if (nc > 4 && (r[F.C] === "food" || r[F.C] === "hotel" || r[F.C] === "club" || r[F.C] === "shop")) {
+    out.push("It is one of " + fmt(nc + 1) + " " + peers + " within two kilometres, and "
+             + company(n5, n2) + ".");
   } else {
-    s += " No photograph of it has been found.";
+    out.push(cap(company(n5, n2)) + ", and " + fmt(n2) + " place"
+             + (n2 === 1 ? "" : "s") + " in all within two kilometres.");
   }
-  if (r[F.STARS]) s += " Rated " + r[F.STARS] + " stars in OpenStreetMap.";
+
+  // 3 \u2014 the photograph, and what I rate its water
+  if (r[F.COL] && r[F.COL][0] != null) {
+    const h = r[F.COL][0], sa = r[F.COL][1];
+    out.push("Its photograph shows water at hue " + h + "\u00b0 and saturation " + sa.toFixed(2)
+             + " \u2014 " + shade(h, sa) + (r[F.COL][2] != null
+                ? " \u2014 which I rate Colour " + r[F.COL][2].toFixed(1) + " out of ten." : "."));
+  } else if (r[F.IMG] && r[F.COL] && r[F.COL][2] != null) {
+    out.push("I rate its water Colour " + r[F.COL][2].toFixed(1) + " out of ten.");
+  } else if (r[F.IMG]) {
+    out.push("It has been photographed, but too little water sits in the frame to rate its colour, "
+             + "so I have left Colour unrated rather than guess at it.");
+  } else {
+    out.push("No photograph of it has been found, so it has no Colour rating.");
+  }
+
+  // 4 \u2014 Discovery, with the basis stated
+  const d = r[F.D] != null ? r[F.D] : r[F.AD];
+  if (d != null) {
+    out.push("I put Discovery at " + Number(d).toFixed(1) + ", read off how empty its surroundings are"
+             + " \u2014 which measures remoteness, not crowds, and can be generous about a quiet-looking"
+             + " place that fills with people by boat.");
+  }
+
+  // 5 \u2014 the rest of what is known
+  const extra = [];
+  if (r[F.STARS]) extra.push("OpenStreetMap lists it at " + r[F.STARS] + " stars");
+  if (r[F.WEB]) extra.push("it keeps a website");
   const sc = scoredFor(r[F.N]);
-  if (!sc) s += " Nobody has been and scored it.";
-  return s;
+  const last = sc
+    ? "we have stood in it: Discovery " + sc.D + ", Colour " + sc.C + ", Water " + sc.W
+    : "nobody has been and scored it on the ground";
+  out.push(cap(extra.length ? extra.join(", ") + ", and " + last : last) + ".");
+  return out.join(" ");
+}
+const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
+
+/* The score badges. Every number here is a rating, mine or ours — never "auto". */
+function ratings(r, sc) {
+  if (sc) {
+    return '<span class="sc meas" title="Measured standing in it">D ' + sc.D + "</span>"
+         + '<span class="sc meas" title="Measured standing in it">C ' + sc.C + "</span>"
+         + '<span class="sc meas" title="Sea is Water 10 always">W ' + sc.W + "</span>"
+         + '<span class="sc tag">measured</span>';
+  }
+  const d = r[F.D] != null ? r[F.D] : r[F.AD];
+  const c = r[F.COL] && r[F.COL][2] != null ? r[F.COL][2] : null;
+  let out = "";
+  if (d != null) out += '<span class="sc" title="My rating: read off how empty its surroundings are">D '
+                      + Number(d).toFixed(1) + "</span>";
+  out += c != null
+    ? '<span class="sc" title="My rating: measured from the water in its photograph">C ' + c.toFixed(1) + "</span>"
+    : '<span class="sc none" title="Too little water in frame to rate">C —</span>';
+  return out;
 }
 const scoredFor = name => {
   const n = (name || "").toLowerCase();
   for (const k in SCORED) if (n.includes(k)) return SCORED[k];
   return null;
 };
+
+/* A paragraph for every destination, same rule: only facts the index holds. */
+function destParagraph(k) {
+  const out = [];
+  out.push(k.name + " sits in " + k.continent + ", and the index holds " + fmt(k.places)
+           + " places in it, " + fmt(k.photos) + " of them with a photograph.");
+  const b = (k.counts && k.counts.beach) || 0;
+  const hb = (k.hidden && k.hidden.beach) || 0;
+  if (b) {
+    out.push(fmt(b) + " are beaches" + (hb
+      ? ", and " + fmt(hb) + " of those I rate Discovery 7 or better \u2014 empty enough that you "
+        + "would likely have it to yourself."
+      : ", though none of them rate Discovery 7 or better: this is a busy coast."));
+  } else {
+    out.push("No beaches are mapped here yet.");
+  }
+  if (k.bestcol) {
+    out.push("The best water I have rated in it is " + k.bestcol[0] + ", at Colour "
+             + Number(k.bestcol[1]).toFixed(1) + " out of ten"
+             + (k.rated ? ", out of " + fmt(k.rated) + " places whose water I could measure." : "."));
+  } else {
+    out.push("None of its photographs show enough water for me to rate Colour yet.");
+  }
+  return out.join(" ");
+}
 
 /* ---------------------------------------------------------------- home */
 function chips(host, items, cur, on, counts) {
@@ -169,11 +288,12 @@ function renderHome() {
     const a = document.createElement("article"); a.className = "pack";
     const note = want.trim()
       ? '<div class="packscore">' + fmt(score) + " matching</div>" : "";
-    a.innerHTML = img(pack.hero, pack.name, "packimg")
+    a.innerHTML = img(pack.hero, pack.name, "packimg", pack.hero_title)
       + '<div class="packbody">'
       + '<div class="packtop"><h3>' + esc(pack.name) + "</h3>" + note + "</div>"
       + '<div class="meta">' + esc(pack.continent) + " · " + fmt(pack.places) + " places · "
       + fmt(pack.photos) + " photographs</div>"
+      + '<p class="desc">' + esc(destParagraph(pack)) + "</p>"
       + '<div class="strip">' + pack.top.slice(0, 5).map(t =>
           '<span class="pill">' + esc(t.n.length > 22 ? t.n.slice(0, 21) + "…" : t.n) + "</span>").join("")
       + "</div></div>";
@@ -191,19 +311,15 @@ function openPack(id) {
   $("packname").textContent = pk.name;
   $("packmeta").textContent = pk.continent + " · " + fmt(pk.places) + " places · "
     + fmt(pk.photos) + " photographs";
-  $("packhero").innerHTML = img(pk.hero, pk.name, "heroimg");
+  $("packhero").innerHTML = img(pk.hero, pk.name, "heroimg", pk.hero_title);
   $("topten").innerHTML = pk.top.map((t, i) => {
     const sc = scoredFor(t.n);
-    return '<article class="top">' + img(t.img, t.n, "topimg")
+    return '<article class="top">' + img(t.img, t.n, "topimg", t.credit)
       + '<div class="topbody"><div class="topnum">' + (i + 1) + "</div>"
       + "<h4>" + esc(t.n) + "</h4>"
       + '<div class="meta">' + esc(t.k || CATLAB[t.c] || "") + (t.loc ? " · " + esc(t.loc) : "") + "</div>"
-      + '<p class="desc">' + esc(sc ? sc.t : paragraph(
-          [t.n, t.c, 0, 0, 0, t.loc, t.k, t.w || "", t.ad, t.img, "", t.col, t.credit])) + "</p>"
-      + (sc ? '<div class="scores"><span class="sc">D ' + sc.D + '</span><span class="sc">C ' + sc.C
-            + '</span><span class="sc">W ' + sc.W + "</span></div>"
-          : '<div class="scores"><span class="sc draft">D ' + t.ad + " drafted</span>"
-            + (t.col ? '<span class="sc meas">hue ' + t.col[0] + "\u00b0 sat " + t.col[1].toFixed(2) + "</span>" : "") + "</div>")
+      + '<p class="desc">' + esc((sc ? sc.t + " " : "") + paragraph(t.row || [])) + "</p>"
+      + '<div class="scores">' + ratings(t.row || [], sc) + "</div>"
       + "</div></article>";
   }).join("");
   $("packlist").innerHTML = "";
@@ -229,7 +345,7 @@ function renderPack() {
   let list = rows.filter(r => r[F.C] !== "guide")
     .filter(r => packCat === "all" || r[F.C] === packCat)
     .filter(r => !p || rowMatches(r, p));
-  if (p && p.minD !== null) list.sort((a, b) => b[F.AD] - a[F.AD]);
+  if (p && p.minD !== null) list.sort((a, b) => (b[F.D] != null ? b[F.D] : b[F.AD]) - (a[F.D] != null ? a[F.D] : a[F.AD]));
   else list.sort((a, b) => ((b[F.IMG] ? 1 : 0) - (a[F.IMG] ? 1 : 0)) || (b[F.Q] - a[F.Q]));
   $("packcount").textContent = fmt(list.length) + " places"
     + (p && describe(p) ? " · " + describe(p) : "");
@@ -240,14 +356,13 @@ function renderPack() {
   list.slice(0, shown).forEach(r => {
     const sc = scoredFor(r[F.N]);
     const a = document.createElement("article");
-    a.innerHTML = img(r[F.IMG], r[F.N], "cardimg")
+    a.innerHTML = img(r[F.IMG], r[F.N], "cardimg", r[F.CREDIT])
       + '<div class="cardbody"><h4>' + esc(r[F.N]) + "</h4>"
       + '<div class="meta">' + esc(r[F.KIND] || CATLAB[r[F.C]] || "") + (r[F.LOC] ? " · " + esc(r[F.LOC]) : "") + "</div>"
-      + (sc ? '<p class="desc">' + esc(sc.t) + "</p>" : "")
+      + '<p class="desc">' + esc((sc ? sc.t + " " : "") + paragraph(r)) + "</p>"
       + '<div class="scores">'
       + (r[F.STARS] ? '<span class="sc star">' + esc(r[F.STARS]) + "★</span>" : "")
-      + (sc ? '<span class="sc">D ' + sc.D + '</span><span class="sc">C ' + sc.C + "</span>"
-            : '<span class="sc">D ' + r[F.AD] + " auto</span>")
+      + ratings(r, sc)
       + "</div>"
       + (r[F.WEB] ? '<a class="site" href="' + esc(r[F.WEB]) + '" target="_blank" rel="noopener">'
           + esc(r[F.WEB].replace(/^https?:\/\//, "").replace(/\/$/, "").slice(0, 40)) + "</a>" : "")

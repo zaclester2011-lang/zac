@@ -32,6 +32,14 @@ def continent(lat, lon):
     if lat < -50: return "Antarctic"
     return "Asia"
 
+LANDMARK = {
+    "New York": ["Times Square", "Central Park", "Brooklyn Bridge", "Statue of Liberty"],
+    "Cape Town": ["Table Mountain"],
+    "Santorini": ["Oia"],
+    "Dubrovnik": ["Old Town", "Lovrijenac"],
+    "Capri": ["Faraglioni", "Blue Grotto"],
+}
+
 CATS = ["beach", "adventure", "food", "club", "todo", "hotel", "indoor", "shop", "guide"]
 TOP_SPREAD = ["beach", "todo", "food", "adventure", "club", "indoor", "hotel", "shop"]
 
@@ -43,6 +51,13 @@ def local_name(title):
 COLOURS = {}
 try:
     COLOURS = json.load(open(os.path.join(SITE, "colours.json")))
+except Exception:
+    pass
+
+# heroes chosen by name and then rated — see tools/name_photos.py
+HEROES = {}
+try:
+    HEROES = json.load(open(os.path.join(SITE, "heroes.json")))
 except Exception:
     pass
 
@@ -64,7 +79,8 @@ def main():
     for did, slug, name, s, w, n, e in dests:
         rows = con.execute(
             """SELECT name, category, lat, lon, confidence, locality, kind, website,
-                      discovery_auto, photo, stars, photo_title
+                      discovery_auto, photo, stars, photo_title, colour,
+                      n500, n2km, ncat2km, discovery
                FROM place WHERE dest=?
                ORDER BY (photo IS NULL OR photo NOT LIKE 'http%'), confidence DESC
                LIMIT ?""", (did, MAX_PER_DEST)).fetchall()
@@ -77,14 +93,15 @@ def main():
             out.append([r[0], r[1], round(r[2], 4), round(r[3], 4), round(r[4] or 0, 2),
                         r[5] or "", r[6] or "", r[7] or "", r[8],
                         local_name(title) if title else "", r[10] or "",
-                        [col["hue"], col["sat"]] if col else None, title])
+                        [col["hue"], col["sat"], r[12]] if col else ([None, None, r[12]] if r[12] else None),
+                        title, r[13] or 0, r[14] or 0, r[15] or 0, r[16]])
         with open(os.path.join(SITE, "d", "%d.json" % did), "w") as fh:
             json.dump({"f": ["n", "c", "lat", "lon", "q", "loc", "k", "w", "ad",
-                             "img", "stars", "col", "credit"],
+                             "img", "stars", "col", "credit", "n5", "n2", "nc", "d"],
                        "r": out}, fh, ensure_ascii=False, separators=(",", ":"))
 
         counts = collections.Counter(r[1] for r in out)
-        hidden = collections.Counter(r[1] for r in out if (r[8] or 0) >= HIDDEN)
+        hidden = collections.Counter(r[1] for r in out if (r[16] if r[16] is not None else r[8] or 0) >= HIDDEN)
         withpic = [r for r in out if r[9]]
 
         # ten best things: a spread across categories, best known first, always with a picture
@@ -98,19 +115,42 @@ def main():
                     r = pool[rounds]
                     picked.append({"n": r[0], "c": r[1], "img": r[9], "ad": r[8],
                                    "k": r[6], "loc": r[5], "col": r[11],
-                                   "credit": r[12], "w": r[7]})
+                                   "credit": r[12], "w": r[7], "row": r})
                     seen.add(r[0])
             if len(picked) >= 10:
                 break
         hero = hero_title = ""
-        for r in withpic:
-            if r[1] in ("beach", "todo"):
-                hero, hero_title = r[9], r[12]; break
+        if HEROES.get(name):                   # picked by name, measured, best of its candidates
+            hero_title = HEROES[name]
+            hero = local_name(hero_title)
+        wanted = [] if hero else LANDMARK.get(name, [])
+        for want in wanted:                    # a destination's signature sight comes first
+            for r in withpic:
+                if want.lower() in r[0].lower():
+                    hero, hero_title = r[9], r[12]; break
+            if hero: break
+        if not hero:                           # otherwise the brightest water on the books
+            best = None
+            for r in withpic:
+                if r[1] not in ("beach", "todo"): continue
+                sc = r[11][2] if (r[11] and r[11][2] is not None) else -1
+                if best is None or sc > best[0]: best = (sc, r)
+            if best and best[0] > 0: hero, hero_title = best[1][9], best[1][12]
         if not hero and withpic:
             hero, hero_title = withpic[0][9], withpic[0][12]
 
+        # the best-rated water in the destination, so the card can say something real
+        best_col = None
+        for r in out:
+            if r[11] and r[11][2] is not None:
+                if best_col is None or r[11][2] > best_col[1]:
+                    best_col = (r[0], r[11][2])
+        rated = sum(1 for r in out if r[11] and r[11][2] is not None)
+
         packs.append({
             "id": did, "slug": slug, "name": name,
+            "bestcol": list(best_col) if best_col else None,
+            "rated": rated,
             "continent": continent((s + n) / 2, (w + e) / 2),
             "bbox": [s, w, n, e],
             "places": con.execute("SELECT count(*) FROM place WHERE dest=?", (did,)).fetchone()[0],
