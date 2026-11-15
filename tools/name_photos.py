@@ -55,6 +55,41 @@ WATER = re.compile(r"""(?ix) \b(
     turquoise|snorkel|reef|sandbar|peninsula
   )\b""")
 
+# A filename like "1017-navagio-beach-728x474.jpg" is a web thumbnail someone
+# re-uploaded. It is always small and usually somebody else's copyright.
+STOCK = re.compile(r"(?i)\b\d{2,4}x\d{2,4}\b|\b(stock|wallpaper|thumb|download|hd|free)\b")
+
+# An old slide is rarely the most beautiful sunny picture of a place.
+DATED = re.compile(r"\b(18|19)\d{2}\b")
+
+# Places whose name belongs to somewhere else as well. Commons' full-text search
+# cannot tell them apart, so this says which one is not meant: the Madeira in
+# Florida, the Copacabana in Rio. Found by looking at what the search returned.
+# The spot a destination is actually known for, where the database's own beach
+# list gives a beach bar instead. Used only to ask Wikipedia for its lead picture.
+FAMOUS = {
+    "Zakynthos": ["Navagio"],
+    "Capri":     ["Faraglioni", "Blue Grotto (Capri)"],
+    "Madeira":   ["Porto Moniz", "Ponta de São Lourenço"],
+    "Dubrovnik": ["Lokrum", "Banje Beach"],
+}
+
+# Chosen by looking at the candidates rather than by score. Dubrovnik's ranking
+# kept picking hazy distant views: bright, but the old town is a smudge in them.
+# This is the one that actually shows the place, measured at bright 0.45, val 0.72.
+PINNED = {
+    "Dubrovnik": "Casco viejo de Dubrovnik, Croacia, 2014-04-14, DD 04.JPG",
+}
+
+CONFUSABLE = {
+    "Madeira":   r"florida|john'?s\s*pass|intracoastal|ohio|illinois",
+    # Dubrovnik has a Copacabana of its own, so only Rio's is ruled out
+    "Dubrovnik": r"rio\s*de\s*janeiro|brasil|brazil",
+    "Capri":     r"\bford\b|\bmk\s*[iv]+\b|capri\s*(i{1,3}|\d)\b",
+    "Tulum":     r"\bflorida\b",
+    "Maui":      r"\bcalifornia\b",
+}
+
 
 def local_name(title):
     return hashlib.sha1(title.encode("utf-8")).hexdigest()[:16] + ".jpg"
@@ -180,7 +215,7 @@ def colour_score(hue, sat, share):
     return max(1.0, min(10.0, round(s * 2) / 2))
 
 
-def rank(cand, want_water, require=None):
+def rank(cand, want_water, require=None, reject=None, here=None):
     """Score a candidate photograph. Higher is a better lead picture."""
     title, scene, water = cand["title"], cand["scene"], cand["water"]
     plain = title.replace("_", " ")
@@ -189,6 +224,14 @@ def rank(cand, want_water, require=None):
         s += 5.0                                    # Wikipedia leads its article with this
     if require and not require.search(plain):
         s -= 9.0                                    # not a picture of the thing asked for
+    if reject and reject.search(plain):
+        s -= 12.0                                   # a different place with the same name
+    if here and here.search(plain):
+        s += 3.0                                    # names this destination, so it is here
+    if STOCK.search(plain):
+        s -= 10.0                                   # a re-uploaded web thumbnail
+    if DATED.search(plain):
+        s -= 3.0
     if JUNK.search(plain):
         s -= 8.0
     if WATER.search(plain):
@@ -223,7 +266,7 @@ def rank(cand, want_water, require=None):
 
 
 def best_for(queries, want_water, seen, delay=1.0, per=10, keep=3,
-             require=None, leads=()):
+             require=None, leads=(), reject=None, here=None):
     """Search, download and measure; return the best-scoring candidate."""
     cands = []
     pool = []
@@ -244,7 +287,7 @@ def best_for(queries, want_water, seen, delay=1.0, per=10, keep=3,
                 continue
             scene, water = measure(im)
             hit.update({"scene": scene, "water": water, "im": im})
-            hit["score"] = rank(hit, want_water, require)
+            hit["score"] = rank(hit, want_water, require, reject, here)
             cands.append(hit)
             time.sleep(delay)
         pool = []
@@ -268,7 +311,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--heroes", action="store_true")
     ap.add_argument("--topten", action="store_true")
-    ap.add_argument("--only", help="one destination name")
+    ap.add_argument("--only", help="destination name, or several separated by commas")
     ap.add_argument("--delay", type=float, default=1.2)
     args = ap.parse_args()
 
@@ -282,26 +325,63 @@ def main():
             colours = {}
 
     dests = con.execute("SELECT id, name FROM destination ORDER BY id").fetchall()
+    all_names = [d[1] for d in dests]
     if args.only:
-        dests = [d for d in dests if d[1].lower() == args.only.lower()]
+        want = {s.strip().lower() for s in args.only.split(",")}
+        dests = [d for d in dests if d[1].lower() in want]
+        if not dests:
+            raise SystemExit("no destination matches %r" % args.only)
 
-    # a destination whose lead picture is a city, not a sea
+    # A destination known for one particular sight rather than for its coastline.
+    # The third field says whether the water still counts: Times Square has none,
+    # the Faraglioni stand in it.
     CITY = {
-        "New York": ("Times Square", [r"times\s*square"]),
-        "Cape Town": ("Table Mountain", [r"table\s*mountain"]),
+        "New York":  ("Times Square", [r"times\s*square"], False),
+        "Cape Town": ("Table Mountain", [r"table\s*mountain"], False),
+        "Dubrovnik": ("Dubrovnik Old Town", [r"dubrovnik"], True),
+        "Capri":     ("Faraglioni", [r"faraglioni|marina\s*piccola|grotta\s*azzurra|"
+                                     r"blue\s*grotto|via\s*krupp"], True),
     }
 
+    # keep the heroes already chosen, so a run for one destination does not
+    # throw away the other twenty-three
     out = {}
+    hpath = os.path.join(SITE, "heroes.json")
+    if os.path.exists(hpath):
+        try:
+            out = json.load(open(hpath))
+        except Exception:
+            out = {}
+
     for did, name in dests:
         t0 = time.time()
+        if name in PINNED:
+            title = PINNED[name]
+            try:
+                im = read_picture(title)
+            except Exception as e:
+                print("%-14s pinned picture would not load: %s" % (name, e), flush=True)
+                continue
+            scene, water = measure(im)
+            save({"title": title, "im": im, "water": water}, colours)
+            out[name] = title
+            print("%-14s %-52s pinned by hand  bright %.2f  (%.0fs)"
+                  % (name, title[:52], scene["bright"], time.time() - t0), flush=True)
+            continue
         seen = set()
         require = None
+        # a picture that names a different destination is a picture of that one
+        others = [re.escape(n) for n in all_names if n != name]
+        bad = [CONFUSABLE[name]] if name in CONFUSABLE else []
+        bad.append(r"\b(?:%s)\b" % "|".join(others))
+        reject = re.compile("|".join(bad), re.I)
+        here = re.compile(r"\b%s\b" % re.escape(name), re.I)
         if name in CITY:
-            landmark, pats = CITY[name]
-            queries = ["%s %s" % (landmark, name), landmark]
-            leads = [landmark]
+            landmark, pats, want_water = CITY[name]
+            queries = ["%s %s" % (landmark, name), landmark,
+                       "%s %s sea" % (landmark, name)]
+            leads = [landmark] + FAMOUS.get(name, [])
             require = re.compile("|".join(pats), re.I)
-            want_water = False
         else:
             beaches = [r[0] for r in con.execute(
                 """SELECT name FROM place WHERE dest=? AND category='beach'
@@ -313,10 +393,13 @@ def main():
                        "%s beach aerial" % name,
                        "%s lagoon" % name]
             queries += ["%s %s" % (b, name) for b in beaches[:2]]
-            leads = [("%s (%s)" % (b, name)) if len(b) < 14 else b for b in beaches[:2]]
+            # Wikipedia's lead for the place itself, plus its best-known spot:
+            # a database beach name is often a beach bar, which leads nothing
+            leads = [name] + FAMOUS.get(name, [])
+            leads += [("%s (%s)" % (b, name)) if len(b) < 14 else b for b in beaches[:2]]
             want_water = True
         pick = best_for(queries, want_water, seen, delay=args.delay,
-                        require=require, leads=leads)
+                        require=require, leads=leads, reject=reject, here=here)
         if not pick:
             print("%-14s no candidate found" % name, flush=True)
             continue

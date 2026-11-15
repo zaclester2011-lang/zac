@@ -32,19 +32,51 @@ DB = os.path.join(ROOT, "data", "index.db")
 
 # Colour is a rating of water. A monastery has no more water than a taverna, so
 # category alone is too blunt: a gorge or a waterfall counts, a church does not.
-WATERY_WORD = re.compile(r"""(?ix) (
+#
+# Matching the NAME was blunter still, and in two ways. Without word boundaries
+# "river" matched Chabad of Riverdale and "akti" matched Shakti, which is how a
+# synagogue and a Hindu temple came to be New York's best-rated water. With them
+# it still rated Coney Island Amusement Park and Spring Grove Baptist Church,
+# because those names really do contain water words. So the kind decides: for a
+# thing to do or an outing, what OpenStreetMap calls it is what says whether
+# water is the point of it. The name is only consulted when the kind is blank.
+WATERY_KIND = re.compile(r"""(?ix) \b(
+    beach|bay|cove|lagoon|lagoa|lake|pond|reservoir|river|stream|creek|
+    waterfall|falls|cascade|spring|springs|geyser|gorge|canyon|cave|cenote|
+    reef|island|islet|marina|harbour|harbor|pool|sea|ocean|coast|shore|cliff|
+    fjord|strait|waterway|dam|wetland|water\ park|
+    dive|diving|scuba|snorkel|snorkeling|surf|surfing|kayak|canoe|paddle|
+    raft|rafting|fishing|boat|sail|sailing|cruise|swim|swimming
+  )\b""")
+
+# kinds that settle it the other way, whatever the name says
+DRY_KIND = re.compile(r"""(?ix) \b(
+    parking|playground|skate|dog\ park|amusement|historic|monument|memorial|
+    museum|church|temple|mosque|synagogue|worship|religious|school|library|
+    hotel|restaurant|cafe|shop|store|office|hospital|government|cemetery|
+    stadium|golf|zoo|theatre|theater|cinema|hiking|climbing|equestrian|horse
+  )\b""")
+
+WATERY_NAME = re.compile(r"""(?ix) \b(
     beach|bay|cove|lagoon|lake|river|waterfall|cascade|spring|gorge|canyon|
     cave|reef|island|islet|harbour|harbor|marina|pool|sea|coast|shore|strand|
     playa|spiaggia|cala|paralia|limni|akti|falls|creek|delta|estuary|fjord|
     sandbar|peninsula|cape|lido|plage|praia
-  )""")
+  )\b""")
 
 
 def is_watery(cat, kind, name):
-    if cat in ("beach", "adventure"):
+    if cat == "beach":
         return True
-    if cat == "todo":
-        return bool(WATERY_WORD.search((kind or "") + " " + (name or "")))
+    if cat not in ("adventure", "todo"):
+        return False
+    k = kind or ""
+    if DRY_KIND.search(k):
+        return False
+    if WATERY_KIND.search(k):
+        return True
+    if not k.strip():                      # nothing recorded about what it is
+        return bool(WATERY_NAME.search(name or ""))
     return False
 
 
@@ -100,15 +132,17 @@ def main():
             col.append((None, pid))
             skipped += 1
             continue
+        # Every watery place is written on every run, blank included. Skipping the
+        # ones that cannot be rated leaves an earlier run's number sitting there —
+        # which is how a place whose photograph changed kept the old photograph's
+        # rating. A blank is the honest answer; a stale number is not.
         c = colours.get(title or "")
-        if c:
-            v = colour(c["hue"], c["sat"], c.get("share"))
-            if v is None:
+        v = colour(c["hue"], c["sat"], c.get("share")) if c else None
+        col.append((v, pid))
+        if v is None:
+            if title:
                 unrated += 1
-            else:
-                col.append((v, pid))
-        elif title:
-            unrated += 1
+            skipped += 1          # not a rating, so not counted as one below
     con.executemany("UPDATE place SET discovery=? WHERE id=?", dis)
     con.executemany("UPDATE place SET colour=? WHERE id=?", col)
     con.commit()

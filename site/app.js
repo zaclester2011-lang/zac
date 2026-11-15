@@ -103,6 +103,24 @@ document.addEventListener("error", function (e) {
 }, true);
 
 /* a name for a measured hue \u2014 never written without the numbers beside it */
+// Colour is a rating of water, so it only applies where water is the point of
+// the place. Kept in step with tools/rate.py, which decides the same question
+// when the ratings are written: the kind of thing it is settles it, and the
+// name is only consulted when no kind was recorded.
+const WATERY_KIND = /\b(beach|bay|cove|lagoon|lagoa|lake|pond|reservoir|river|stream|creek|waterfall|falls|cascade|spring|springs|geyser|gorge|canyon|cave|cenote|reef|island|islet|marina|harbour|harbor|pool|sea|ocean|coast|shore|cliff|fjord|strait|waterway|dam|wetland|water park|dive|diving|scuba|snorkel|snorkeling|surf|surfing|kayak|canoe|paddle|raft|rafting|fishing|boat|sail|sailing|cruise|swim|swimming)\b/i;
+const DRY_KIND = /\b(parking|playground|skate|dog park|amusement|historic|monument|memorial|museum|church|temple|mosque|synagogue|worship|religious|school|library|hotel|restaurant|cafe|shop|store|office|hospital|government|cemetery|stadium|golf|zoo|theatre|theater|cinema|hiking|climbing|equestrian|horse)\b/i;
+const WATERY_NAME = /\b(beach|bay|cove|lagoon|lake|river|waterfall|cascade|spring|gorge|canyon|cave|reef|island|islet|harbour|harbor|marina|pool|sea|coast|shore|strand|playa|spiaggia|cala|paralia|limni|akti|falls|creek|delta|estuary|fjord|sandbar|peninsula|cape|lido|plage|praia)\b/i;
+
+function isWatery(cat, kind, name) {
+  if (cat === "beach") return true;
+  if (cat !== "adventure" && cat !== "todo") return false;
+  const k = kind || "";
+  if (DRY_KIND.test(k)) return false;
+  if (WATERY_KIND.test(k)) return true;
+  if (!k.trim()) return WATERY_NAME.test(name || "");
+  return false;
+}
+
 function shade(h, s) {
   if (s < 0.22) return "washed-out and grey-leaning";
   if (h < 160) return "green";
@@ -150,13 +168,22 @@ function paragraph(r) {
   }
 
   // 3 \u2014 the photograph, and what I rate its water
-  if (r[F.COL] && r[F.COL][0] != null) {
+  //
+  // Only where water is the point of the place. A blue reading taken off a
+  // restaurant's photograph is the sky, or a painted wall, and saying "its
+  // photograph shows water at hue 208\u00b0" about a cafe is exactly the invented
+  // number this page is meant not to print.
+  const watery = isWatery(r[F.C], r[F.KIND], r[F.N]);
+  if (!watery) {
+    out.push("Colour rates the water at a place, and " + art + " " + kind
+             + " has none, so it carries no Colour rating"
+             + (r[F.IMG] ? "." : ", and no photograph of it has been found either."));
+  } else if (r[F.COL] && r[F.COL][0] != null) {
     const h = r[F.COL][0], sa = r[F.COL][1];
     out.push("Its photograph shows water at hue " + h + "\u00b0 and saturation " + sa.toFixed(2)
              + " \u2014 " + shade(h, sa) + (r[F.COL][2] != null
-                ? " \u2014 which I rate Colour " + r[F.COL][2].toFixed(1) + " out of ten." : "."));
-  } else if (r[F.IMG] && r[F.COL] && r[F.COL][2] != null) {
-    out.push("I rate its water Colour " + r[F.COL][2].toFixed(1) + " out of ten.");
+                ? " \u2014 which I rate Colour " + r[F.COL][2].toFixed(1) + " out of ten."
+                : ", though too little of the frame is water to put a number on it."));
   } else if (r[F.IMG]) {
     out.push("It has been photographed, but too little water sits in the frame to rate its colour, "
              + "so I have left Colour unrated rather than guess at it.");
@@ -198,9 +225,13 @@ function ratings(r, sc) {
   let out = "";
   if (d != null) out += '<span class="sc" title="My rating: read off how empty its surroundings are">D '
                       + Number(d).toFixed(1) + "</span>";
-  out += c != null
-    ? '<span class="sc" title="My rating: measured from the water in its photograph">C ' + c.toFixed(1) + "</span>"
-    : '<span class="sc none" title="Too little water in frame to rate">C —</span>';
+  if (c != null) {
+    out += '<span class="sc" title="My rating: measured from the water in its photograph">C '
+         + c.toFixed(1) + "</span>";
+  } else if (isWatery(r[F.C], r[F.KIND], r[F.N])) {
+    // water is the point of this place, so a missing Colour is worth showing
+    out += '<span class="sc none" title="Too little water in its photograph to rate">C —</span>';
+  }
   return out;
 }
 const scoredFor = name => {

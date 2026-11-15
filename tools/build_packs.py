@@ -139,12 +139,20 @@ def main():
         if not hero and withpic:
             hero, hero_title = withpic[0][9], withpic[0][12]
 
-        # the best-rated water in the destination, so the card can say something real
+        # The best-rated water in the destination, so the card can say something
+        # real. A beach wins over a dive shop or a boat tour even when the boat
+        # tour's photograph scores higher: the claim is about water you can swim
+        # in, and a company's photograph need not have been taken at its own door.
         best_col = None
-        for r in out:
-            if r[11] and r[11][2] is not None:
-                if best_col is None or r[11][2] > best_col[1]:
-                    best_col = (r[0], r[11][2])
+        for prefer_beach in (True, False):
+            for r in out:
+                if r[1] != "beach" and prefer_beach:
+                    continue
+                if r[11] and r[11][2] is not None:
+                    if best_col is None or r[11][2] > best_col[1]:
+                        best_col = (r[0], r[11][2])
+            if best_col:
+                break
         rated = sum(1 for r in out if r[11] and r[11][2] is not None)
 
         packs.append({
