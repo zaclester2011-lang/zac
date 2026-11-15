@@ -83,7 +83,7 @@ const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, m => ({"&":"&amp;
 const fmt = n => (n || 0).toLocaleString("en-GB");
 /* the page serves its own pictures: artifacts refuse images from other hosts */
 const img = (file, alt, cls) => file
-  ? '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="img/' + esc(file)
+  ? '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="' + (file.indexOf("/") >= 0 ? esc(file) : "img/" + esc(file))
     + '" onerror="this.outerHTML=\'<div class=&quot;' + cls + ' noimg&quot;><span>Photograph not cached</span></div>\'">'
   : '<div class="' + cls + ' noimg"><span>No photograph yet</span></div>';
 
