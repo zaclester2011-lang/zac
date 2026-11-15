@@ -41,6 +41,7 @@ DESTS = [
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--run", action="store_true")
+    ap.add_argument("--only", help="comma-separated names, for a re-run")
     args = ap.parse_args()
 
     if not args.run:
@@ -49,10 +50,14 @@ def main():
         print("\n%d destinations — pass --run" % len(DESTS))
         return
 
+    todo = DESTS
+    if args.only:
+        want = {x.strip().lower() for x in args.only.split(",")}
+        todo = [d for d in DESTS if d[0].lower() in want]
     t0 = time.time()
     done = fail = 0
-    for i, (name, s, w, n, e) in enumerate(DESTS, 1):
-        print("\n=== %d/%d  %s ===" % (i, len(DESTS), name), flush=True)
+    for i, (name, s, w, n, e) in enumerate(todo, 1):
+        print("\n=== %d/%d  %s ===" % (i, len(todo), name), flush=True)
         cmd = [sys.executable, "-I", os.path.join(ROOT, "tools", "index_destination.py"),
                "add", name, "--bbox=%s,%s,%s,%s" % (s, w, n, e)]
         try:

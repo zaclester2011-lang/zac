@@ -721,5 +721,204 @@
       "adventure": 1,
       "food": 2
     }
+  },
+  {
+    "id": 30,
+    "slug": "atlas-mountains",
+    "name": "Atlas Mountains",
+    "bbox": [
+      30.85,
+      -8.25,
+      31.45,
+      -7.6
+    ],
+    "places": 502,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 138,
+      "hotel": 235,
+      "food": 59,
+      "guide": 38,
+      "indoor": 17,
+      "club": 3,
+      "adventure": 11,
+      "beach": 1
+    }
+  },
+  {
+    "id": 31,
+    "slug": "arenal-and-monteverde",
+    "name": "Arenal and Monteverde",
+    "bbox": [
+      10.15,
+      -85.15,
+      10.85,
+      -84.35
+    ],
+    "places": 3570,
+    "photos": 6,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "beach": 9,
+      "food": 1109,
+      "club": 369,
+      "indoor": 219,
+      "todo": 579,
+      "hotel": 1006,
+      "guide": 239,
+      "adventure": 40
+    }
+  },
+  {
+    "id": 32,
+    "slug": "tenerife",
+    "name": "Tenerife",
+    "bbox": [
+      27.95,
+      -16.95,
+      28.65,
+      -16.05
+    ],
+    "places": 18590,
+    "photos": 171,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 3621,
+      "beach": 525,
+      "indoor": 1068,
+      "todo": 2049,
+      "club": 3360,
+      "food": 6661,
+      "guide": 741,
+      "adventure": 565
+    }
+  },
+  {
+    "id": 33,
+    "slug": "faroe-islands",
+    "name": "Faroe Islands",
+    "bbox": [
+      61.35,
+      -7.75,
+      62.42,
+      -6.2
+    ],
+    "places": 698,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 103,
+      "guide": 46,
+      "food": 167,
+      "adventure": 13,
+      "todo": 176,
+      "club": 94,
+      "indoor": 94,
+      "beach": 5
+    }
+  },
+  {
+    "id": 34,
+    "slug": "krabi",
+    "name": "Krabi",
+    "bbox": [
+      7.75,
+      98.55,
+      8.45,
+      99.15
+    ],
+    "places": 7942,
+    "photos": 23,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 2176,
+      "guide": 394,
+      "beach": 220,
+      "food": 3600,
+      "todo": 739,
+      "club": 439,
+      "adventure": 62,
+      "indoor": 312
+    }
+  },
+  {
+    "id": 35,
+    "slug": "phong-nha",
+    "name": "Phong Nha",
+    "bbox": [
+      17.35,
+      106.05,
+      17.75,
+      106.45
+    ],
+    "places": 382,
+    "photos": 4,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 108,
+      "todo": 87,
+      "hotel": 129,
+      "guide": 29,
+      "indoor": 17,
+      "club": 11,
+      "adventure": 1
+    }
+  },
+  {
+    "id": 36,
+    "slug": "kauai",
+    "name": "Kauai",
+    "bbox": [
+      21.84,
+      -159.82,
+      22.27,
+      -159.26
+    ],
+    "places": 2183,
+    "photos": 52,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "beach": 243,
+      "todo": 606,
+      "guide": 108,
+      "indoor": 165,
+      "club": 144,
+      "food": 495,
+      "adventure": 107,
+      "hotel": 315
+    }
+  },
+  {
+    "id": 37,
+    "slug": "fiordland",
+    "name": "Fiordland",
+    "bbox": [
+      -45.6,
+      166.8,
+      -44.4,
+      168.6
+    ],
+    "places": 654,
+    "photos": 37,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 377,
+      "guide": 40,
+      "club": 11,
+      "adventure": 37,
+      "hotel": 121,
+      "food": 41,
+      "beach": 9,
+      "indoor": 18
+    }
   }
 ]

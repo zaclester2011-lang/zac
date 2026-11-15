@@ -373,6 +373,9 @@ function renderPack() {
     counts[r[F.C]] = (counts[r[F.C]] || 0) + 1;
     if (isHidden(r)) counts.hidden++;
   });
+  // the app opens on hidden, but a destination with none of them would open
+  // on an empty grid, so fall back to everything
+  if (packCat === "hidden" && !counts.hidden) packCat = "all";
   chips($("packcats"), CATS, packCat, v => { packCat = v; shown = 60; renderPack(); }, counts);
   const p = packQ.trim() ? parseQuery(packQ) : null;
   let list = rows
