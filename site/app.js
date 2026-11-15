@@ -84,8 +84,26 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
 const fmt = n => (n || 0).toLocaleString("en-GB");
 /* the page serves its own pictures: artifacts refuse images from other hosts */
+/* Grid pictures ride in sprite sheets: an artifact may publish 511 files, and
+   there are 9,530 photographs, so one file per place was never possible. A cell
+   reference looks like "pk/s0_1.jpg|37" — sheet, then which of its 256 cells. */
+const SPRITE_COLS = 16, SPRITE_ROWS = 16;
+
 const img = (file, alt, cls, credit) => {
-  if (!file) return '<div class="' + cls + ' noimg"><span>No photograph yet</span></div>';
+  if (!file) {
+    return '<div class="' + cls + ' noimg"><span>'
+         + (credit ? "On Commons, not bundled here" : "No photograph") + "</span></div>";
+  }
+  const bar = file.indexOf("|");
+  if (bar > 0) {
+    const sheet = file.slice(0, bar), cell = +file.slice(bar + 1);
+    const col = cell % SPRITE_COLS, row = Math.floor(cell / SPRITE_COLS);
+    return '<div class="' + cls + ' sprite" role="img" aria-label="' + esc(alt) + '" style="'
+         + "background-image:url(" + esc(sheet) + ");"
+         + "background-size:" + SPRITE_COLS * 100 + "% " + SPRITE_ROWS * 100 + "%;"
+         + "background-position:" + (col * 100) / (SPRITE_COLS - 1) + "% "
+         + (row * 100) / (SPRITE_ROWS - 1) + '%"></div>';
+  }
   const src = file.indexOf("/") >= 0 ? file : "img/" + file;
   const back = credit ? COMMONS + encodeURIComponent(String(credit).replace(/ /g, "_")) + "?width=480" : "";
   return '<img class="' + cls + '" loading="lazy" alt="' + esc(alt) + '" src="' + esc(src)

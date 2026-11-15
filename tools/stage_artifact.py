@@ -24,9 +24,12 @@ BATCH = 250                    # under the 255-file limit, leaving room for the 
 
 
 def main():
-    if os.path.isdir(PK):
-        shutil.rmtree(PK)
-    os.makedirs(PK)
+    # Clear only the pictures this script owns. The sprite sheets live here too
+    # and are written by tools/sprites.py, which runs before this does.
+    os.makedirs(PK, exist_ok=True)
+    for f in os.listdir(PK):
+        if f[0] in "ht" and f.endswith(".jpg"):
+            os.remove(os.path.join(PK, f))
     packs = json.load(open(os.path.join(SITE, "packs.json")))
 
     staged, missing = [], []
@@ -63,7 +66,10 @@ def main():
 
     page = ["index.html", "app.js", "style.css", "packs.json"]
     page += ["d/%s" % f for f in sorted(os.listdir(os.path.join(SITE, "d")))]
-    files = page + staged
+    sheets = sorted("pk/" + f for f in os.listdir(PK) if f.startswith("s") and f.endswith(".jpg"))
+    files = page + staged + sheets
+    sheet_mb = sum(os.path.getsize(os.path.join(SITE, f)) for f in sheets) / 1e6
+    print("%d sprite sheets carrying the grid pictures (%.1f MB)" % (len(sheets), sheet_mb))
     print("\n%d files in all. Publish in %d batch(es) to the same url:"
           % (len(files), (len(files) + BATCH - 1) // BATCH))
     for i in range(0, len(files), BATCH):

@@ -72,6 +72,18 @@ FAMOUS = {
     "Capri":     ["Faraglioni", "Blue Grotto (Capri)"],
     "Madeira":   ["Porto Moniz", "Ponta de São Lourenço"],
     "Dubrovnik": ["Lokrum", "Banje Beach"],
+    "Sardinia":  ["Cala Goloritzé", "Cala Mariolu", "La Pelosa"],
+    "Algarve":   ["Praia da Marinha", "Benagil"],
+    "Mallorca":  ["Es Trenc", "Cala Mondragó", "Sa Calobra"],
+    "Iceland":   ["Jökulsárlón", "Seljalandsfoss", "Reynisfjara"],
+    "Maui":      ["Kaanapali Beach", "Wailea, Hawaii", "Molokini"],
+    "Azores":    ["Sete Cidades (Azores)", "Lagoa do Fogo"],
+    "Corsica":   ["Palombaggia", "Scandola Nature Reserve"],
+    "Seychelles": ["Anse Source d'Argent", "Anse Lazio"],
+    "Palawan":   ["El Nido, Palawan", "Coron, Palawan"],
+    "Phuket":    ["Freedom Beach", "Phang Nga Bay"],
+    "Bali":      ["Nusa Penida", "Padang Padang Beach"],
+    "Tulum":     ["Gran Cenote", "Tulum"],
 }
 
 # Chosen by looking at the candidates rather than by score. Dubrovnik's ranking
@@ -79,6 +91,13 @@ FAMOUS = {
 # This is the one that actually shows the place, measured at bright 0.45, val 0.72.
 PINNED = {
     "Dubrovnik": "Casco viejo de Dubrovnik, Croacia, 2014-04-14, DD 04.JPG",
+    # Zac asked for the penguins on white sand; this is the one that shows them
+    "Cape Town": "Penguins at Boulders Beach 04.jpg",
+    # and a deep blue cenote. Every cenote photograph is dark, because a cenote
+    # is a hole in the ground, so the brightness floor threw them all out and
+    # left the Maya ruins standing. Measured hue 189, saturation 0.56, and
+    # water fills 94% of the frame.
+    "Tulum": "Gran cenote Tulum (21379178572).jpg",
 }
 
 CONFUSABLE = {
@@ -215,7 +234,7 @@ def colour_score(hue, sat, share):
     return max(1.0, min(10.0, round(s * 2) / 2))
 
 
-def rank(cand, want_water, require=None, reject=None, here=None):
+def rank(cand, want_water, require=None, reject=None, here=None, band=(168, 195)):
     """Score a candidate photograph. Higher is a better lead picture."""
     title, scene, water = cand["title"], cand["scene"], cand["water"]
     plain = title.replace("_", " ")
@@ -256,17 +275,19 @@ def rank(cand, want_water, require=None, reject=None, here=None):
         else:
             s += c + 3.0 * water["share"]
             hue = water["hue"]
-            if 168 <= hue <= 195:
-                s += 3.0                            # the turquoise band he asked for
-            elif hue <= 205:
+            # normally the turquoise band Zac asked for, but a destination can
+            # ask for a different water: a cenote is meant to be deep blue
+            if band[0] <= hue <= band[1]:
+                s += 3.0
+            elif abs(hue - band[0]) <= 10 or abs(hue - band[1]) <= 10:
                 s += 0.5
             else:
-                s -= 2.0                            # deep blue or navy, not turquoise
+                s -= 2.0
     return round(s, 2)
 
 
 def best_for(queries, want_water, seen, delay=1.0, per=10, keep=3,
-             require=None, leads=(), reject=None, here=None):
+             require=None, leads=(), reject=None, here=None, band=(168, 195)):
     """Search, download and measure; return the best-scoring candidate."""
     cands = []
     pool = []
@@ -287,7 +308,7 @@ def best_for(queries, want_water, seen, delay=1.0, per=10, keep=3,
                 continue
             scene, water = measure(im)
             hit.update({"scene": scene, "water": water, "im": im})
-            hit["score"] = rank(hit, want_water, require, reject, here)
+            hit["score"] = rank(hit, want_water, require, reject, here, band)
             cands.append(hit)
             time.sleep(delay)
         pool = []
@@ -335,10 +356,19 @@ def main():
     # A destination known for one particular sight rather than for its coastline.
     # The third field says whether the water still counts: Times Square has none,
     # the Faraglioni stand in it.
+    # The fourth field is the hue band the water should fall in, where the
+    # default turquoise is not what was asked for.
     CITY = {
         "New York":  ("Times Square", [r"times\s*square"], False),
-        "Cape Town": ("Table Mountain", [r"table\s*mountain"], False),
+        # Zac asked for the penguins on white sand, not the mountain
+        "Cape Town": ("Boulders Beach", [r"boulders|penguin"], True),
+        # and for Iceland, the black beach rather than the glacier lagoon
+        "Iceland":   ("Reynisfjara", [r"reynisfjara|reynisdrangar|black\s*sand|v[íi]k\b"], True),
+        # a cenote is deep blue, so the turquoise preference is moved
+        "Tulum":     ("Gran Cenote", [r"cenote"], True, (198, 224)),
         "Dubrovnik": ("Dubrovnik Old Town", [r"dubrovnik"], True),
+        # Santorini's beaches are black volcanic sand; the caldera is the picture
+        "Santorini": ("Oia", [r"\boia\b|caldera|ammoudi|thira|fira"], True),
         "Capri":     ("Faraglioni", [r"faraglioni|marina\s*piccola|grotta\s*azzurra|"
                                      r"blue\s*grotto|via\s*krupp"], True),
     }
@@ -376,8 +406,12 @@ def main():
         bad.append(r"\b(?:%s)\b" % "|".join(others))
         reject = re.compile("|".join(bad), re.I)
         here = re.compile(r"\b%s\b" % re.escape(name), re.I)
+        band = (168, 195)
         if name in CITY:
-            landmark, pats, want_water = CITY[name]
+            entry = CITY[name]
+            landmark, pats, want_water = entry[0], entry[1], entry[2]
+            if len(entry) > 3:
+                band = entry[3]
             queries = ["%s %s" % (landmark, name), landmark,
                        "%s %s sea" % (landmark, name)]
             leads = [landmark] + FAMOUS.get(name, [])
@@ -399,7 +433,7 @@ def main():
             leads += [("%s (%s)" % (b, name)) if len(b) < 14 else b for b in beaches[:2]]
             want_water = True
         pick = best_for(queries, want_water, seen, delay=args.delay,
-                        require=require, leads=leads, reject=reject, here=here)
+                        require=require, leads=leads, reject=reject, here=here, band=band)
         if not pick:
             print("%-14s no candidate found" % name, flush=True)
             continue
