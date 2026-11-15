@@ -65,19 +65,11 @@ WATERY_NAME = re.compile(r"""(?ix) \b(
   )\b""")
 
 
-def is_watery(cat, kind, name):
-    if cat == "beach":
-        return True
-    if cat not in ("adventure", "todo"):
-        return False
-    k = kind or ""
-    if DRY_KIND.search(k):
-        return False
-    if WATERY_KIND.search(k):
-        return True
-    if not k.strip():                      # nothing recorded about what it is
-        return bool(WATERY_NAME.search(name or ""))
-    return False
+def is_watery(cat, kind=None, name=None):
+    """With the index cut to five categories, the only one made of water is the
+    beach. The kind-based test this replaced is gone with the categories it
+    judged — there are no gorges or dive centres left to judge."""
+    return cat == "beach"
 
 
 # fitted on the eight measured places — see the docstring

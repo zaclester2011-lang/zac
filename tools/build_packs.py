@@ -17,7 +17,7 @@ DB = os.path.join(ROOT, "data", "index.db")
 SITE = os.path.join(ROOT, "site")
 PFX = "https://commons.wikimedia.org/wiki/Special:FilePath/"
 MAX_PER_DEST = 14000          # what the browser gets; the database keeps everything
-QUIET_N2 = 40                 # places with at most this many others within 2 km
+QUIET_N2 = 25                 # a hidden beach: at most this many places within 2 km
 
 # continents by bounding box — crude but it only has to sort twenty-odd places
 def continent(lat, lon):
@@ -40,12 +40,12 @@ LANDMARK = {
     "Capri": ["Faraglioni", "Blue Grotto"],
 }
 
-CATS = ["beach", "adventure", "food", "club", "todo", "hotel", "indoor", "shop", "guide"]
+CATS = ["beach", "food", "club", "hotel"]
 # The ten best things are things you travel for. "shop" and "indoor" are out:
 # once the barbers were moved out of the bar category into shops, they started
 # turning up in Santorini's and Mallorca's top ten, and indoor now also holds
 # the notaries and publishers that the same clean-up swept out.
-TOP_SPREAD = ["beach", "todo", "adventure", "food", "club", "hotel"]
+TOP_SPREAD = ["beach", "food", "club", "hotel"]
 
 
 def local_name(title):
@@ -108,6 +108,9 @@ def main():
         # Discovery is gone, so "quiet" is counted from what is mapped around a
         # place rather than from a rating of it.
         quiet = collections.Counter(r[1] for r in out if (r[14] or 0) <= QUIET_N2)
+        # "Hidden beaches" is a category on the page but not in the data: it is
+        # the beaches with almost nothing mapped around them.
+        hidden_beaches = sum(1 for r in out if r[1] == "beach" and (r[14] or 0) <= QUIET_N2)
         withpic = [r for r in out if r[9]]
 
         # ten best things: a spread across categories, best known first, always with a picture
@@ -195,6 +198,7 @@ def main():
             "hero": hero, "hero_title": hero_title,
             "counts": {c: counts.get(c, 0) for c in CATS},
             "quiet": {c: quiet.get(c, 0) for c in CATS},
+            "hidden_beaches": hidden_beaches,
             "blob": blob,
             "top": picked,
         })

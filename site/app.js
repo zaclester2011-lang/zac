@@ -4,12 +4,14 @@
 const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
 const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10, COL:11,
            CREDIT:12, N5:13, N2:14, NC:15, D:16};
-/* "Shops" is gone: the clean-up left eleven places in it, and they were markets,
-   which belong with things to do. */
-const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"],["food","Restaurants"],
-  ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"]];
-const CATLAB = {beach:"Beach", food:"Restaurant", club:"Bar or club", todo:"Thing to do",
-  indoor:"Indoor", hotel:"Hotel", shop:"Shop", guide:"Guide", adventure:"Adventure"};
+/* The five Zac asked for, and nothing else. "Hidden" is not a category in the
+   data — it is beaches with almost nothing mapped around them. */
+const CATS = [["all","Everything"],["beach","Beaches"],["hidden","Hidden beaches"],
+  ["food","Restaurants"],["club","Bars & clubs"],["hotel","Hotels"]];
+const CATLAB = {beach:"Beach", food:"Restaurant", club:"Bar or club", hotel:"Hotel"};
+const HIDDEN_N2 = 25;        // places mapped within two kilometres
+
+const isHidden = r => r[F.C] === "beach" && (r[F.N2] || 0) <= HIDDEN_N2;
 
 /* verified by standing in it */
 const SCORED = {
@@ -25,23 +27,14 @@ const SCORED = {
 const WORD_CAT = {
   beach:"beach", beaches:"beach", sand:"beach", sea:"beach", swim:"beach", swimming:"beach",
   cove:"beach", lagoon:"beach", shore:"beach", coast:"beach", water:"beach", turquoise:"beach",
-  bay:"beach", snorkel:"beach",
+  bay:"beach", snorkel:"beach", snorkelling:"beach",
   bar:"club", bars:"club", club:"club", clubs:"club", nightclub:"club", nightlife:"club",
   pub:"club", drink:"club", drinks:"club", cocktail:"club", cocktails:"club", rooftop:"club",
+  beer:"club", wine:"club", brewery:"club",
   eat:"food", food:"food", restaurant:"food", restaurants:"food", dinner:"food", lunch:"food",
   breakfast:"food", taverna:"food", cafe:"food", coffee:"food", pizza:"food", seafood:"food",
   hotel:"hotel", hotels:"hotel", stay:"hotel", sleep:"hotel", room:"hotel", rooms:"hotel",
-  resort:"hotel", villa:"hotel", hostel:"hotel",
-  dive:"adventure", diving:"adventure", snorkelling:"adventure", hike:"adventure",
-  hiking:"adventure", trek:"adventure", kayak:"adventure", boat:"adventure", sail:"adventure",
-  sailing:"adventure", surf:"adventure", surfing:"adventure", climb:"adventure",
-  climbing:"adventure", adventure:"adventure", trail:"adventure",
-  museum:"indoor", gallery:"indoor", indoor:"indoor", inside:"indoor", rain:"indoor",
-  rainy:"indoor", cinema:"indoor", theatre:"indoor", spa:"indoor",
-  ancient:"todo", ruins:"todo", ruin:"todo", historic:"todo", history:"todo", temple:"todo",
-  castle:"todo", monastery:"todo", gorge:"todo", canyon:"todo", waterfall:"todo", cave:"todo",
-  viewpoint:"todo", view:"todo", mountain:"todo", archaeological:"todo", church:"todo",
-  shop:"shop", shops:"shop", market:"shop", markets:"shop", shopping:"shop"
+  resort:"hotel", villa:"hotel", hostel:"hotel", lodge:"hotel", apartment:"hotel"
 };
 const QUIET = ["empty","hidden","quiet","remote","alone","secret","deserted","secluded",
                "unspoilt","wild","undiscovered","peaceful","nobody","untouched"];
@@ -127,22 +120,10 @@ document.addEventListener("error", function (e) {
 }, true);
 
 /* a name for a measured hue \u2014 never written without the numbers beside it */
-// Colour is a rating of water, so it only applies where water is the point of
-// the place. Kept in step with tools/rate.py, which decides the same question
-// when the ratings are written: the kind of thing it is settles it, and the
-// name is only consulted when no kind was recorded.
-const WATERY_KIND = /\b(beach|bay|cove|lagoon|lagoa|lake|pond|reservoir|river|stream|creek|waterfall|falls|cascade|spring|springs|geyser|gorge|canyon|cave|cenote|reef|island|islet|marina|harbour|harbor|pool|sea|ocean|coast|shore|cliff|fjord|strait|waterway|dam|wetland|water park|dive|diving|scuba|snorkel|snorkeling|surf|surfing|kayak|canoe|paddle|raft|rafting|fishing|boat|sail|sailing|cruise|swim|swimming)\b/i;
-const DRY_KIND = /\b(parking|playground|skate|dog park|amusement|historic|monument|memorial|museum|church|temple|mosque|synagogue|worship|religious|school|library|hotel|restaurant|cafe|shop|store|office|hospital|government|cemetery|stadium|golf|zoo|theatre|theater|cinema|hiking|climbing|equestrian|horse)\b/i;
-const WATERY_NAME = /\b(beach|bay|cove|lagoon|lake|river|waterfall|cascade|spring|gorge|canyon|cave|reef|island|islet|harbour|harbor|marina|pool|sea|coast|shore|strand|playa|spiaggia|cala|paralia|limni|akti|falls|creek|delta|estuary|fjord|sandbar|peninsula|cape|lido|plage|praia)\b/i;
-
-function isWatery(cat, kind, name) {
-  if (cat === "beach") return true;
-  if (cat !== "adventure" && cat !== "todo") return false;
-  const k = kind || "";
-  if (DRY_KIND.test(k)) return false;
-  if (WATERY_KIND.test(k)) return true;
-  if (!k.trim()) return WATERY_NAME.test(name || "");
-  return false;
+/* Colour rates water, and with the index cut to five categories the only one
+   made of water is the beach. */
+function isWatery(cat) {
+  return cat === "beach";
 }
 
 function shade(h, s) {
@@ -179,7 +160,7 @@ function paragraph(r) {
 
   // 2 \u2014 the reason to go: the water where water is the point, the rating
   //     where somebody has rated it, and otherwise how quiet it stands
-  const watery = isWatery(r[F.C], r[F.KIND], r[F.N]);
+  const watery = isWatery(r[F.C]);
   const saidWater = watery && r[F.COL] && r[F.COL][0] != null;
   if (saidWater) {
     out.push("The water in its photograph is " + shade(r[F.COL][0], r[F.COL][1])
@@ -187,12 +168,23 @@ function paragraph(r) {
                 ? ", which I rate " + r[F.COL][2].toFixed(1) + " out of ten for colour."
                 : ", though too little of the frame is water to put a number on it."));
   } else if (watery) {
-    out.push("No photograph of it shows enough water to judge its colour.");
+    // a beach with a picture that has not been measured is not the same as a
+    // beach with no picture at all, and saying so was wrong
+    out.push(r[F.IMG]
+      ? "Its photograph has not been measured for colour yet."
+      : "No photograph of it has been found, so it carries no colour.");
   }
 
   // 3 \u2014 how crowded a spot it stands in, which is the other half of the reason
+  if (isHidden(r)) {
+    out.push("Only " + fmt(n2) + " other place" + (n2 === 1 ? "" : "s")
+             + " are mapped within two kilometres of it, which is what puts it among the"
+             + " hidden beaches.");
+    if (r[F.STARS]) out.push("Visitors rate it " + r[F.STARS] + " out of five.");
+    return out.join(" ");
+  }
   const peers = CATLAB[r[F.C]] ? CATLAB[r[F.C]].toLowerCase() + "s" : "places of its kind";
-  if (nc > 4 && (r[F.C] === "food" || r[F.C] === "hotel" || r[F.C] === "club" || r[F.C] === "shop")) {
+  if (nc > 4 && (r[F.C] === "food" || r[F.C] === "hotel" || r[F.C] === "club")) {
     out.push("It is one of " + fmt(nc + 1) + " " + peers + " within two kilometres"
              + (n5 <= 3 ? ", but barely anything stands within five hundred metres of it." : "."));
   } else {
@@ -218,7 +210,7 @@ function ratings(r, sc) {
   if (c != null) {
     out += '<span class="sc" title="My rating: measured from the water in its photograph">C '
          + c.toFixed(1) + "</span>";
-  } else if (isWatery(r[F.C], r[F.KIND], r[F.N])) {
+  } else if (isWatery(r[F.C])) {
     // water is the point of this place, so a missing Colour is worth showing
     out += '<span class="sc none" title="Too little water in its photograph to rate">C —</span>';
   }
@@ -234,12 +226,13 @@ const scoredFor = name => {
 function destParagraph(k) {
   const out = [];
   out.push(k.name + " sits in " + k.continent + ", and the index holds " + fmt(k.places)
-           + " places in it, " + fmt(k.photos) + " of them with a photograph.");
+           + " places in it" + (k.photos
+              ? ", " + fmt(k.photos) + " of them with a photograph of their own." : "."));
   const b = (k.counts && k.counts.beach) || 0;
-  const hb = (k.quiet && k.quiet.beach) || 0;
+  const hb = k.hidden_beaches || 0;
   if (b) {
     out.push(fmt(b) + " are beaches" + (hb
-      ? ", and " + fmt(hb) + " of those stand with almost nothing else mapped around them."
+      ? ", and " + fmt(hb) + " of those are hidden ones, with almost nothing else mapped around them."
       : ", though every one of them sits in a crowd of other places: this is a busy coast."));
   } else {
     out.push("No beaches are mapped here yet.");
@@ -367,12 +360,16 @@ function loadPack(id) {
 }
 function renderPack() {
   const rows = LOADED[open_id] || [];
-  const counts = {all: 0};
-  rows.forEach(r => { if (r[F.C] !== "guide") { counts.all++; counts[r[F.C]] = (counts[r[F.C]] || 0) + 1; } });
+  const counts = {all: 0, hidden: 0};
+  rows.forEach(r => {
+    counts.all++;
+    counts[r[F.C]] = (counts[r[F.C]] || 0) + 1;
+    if (isHidden(r)) counts.hidden++;
+  });
   chips($("packcats"), CATS, packCat, v => { packCat = v; shown = 60; renderPack(); }, counts);
   const p = packQ.trim() ? parseQuery(packQ) : null;
-  let list = rows.filter(r => r[F.C] !== "guide")
-    .filter(r => packCat === "all" || r[F.C] === packCat)
+  let list = rows
+    .filter(r => packCat === "all" || (packCat === "hidden" ? isHidden(r) : r[F.C] === packCat))
     .filter(r => !p || rowMatches(r, p));
   // asked for quiet, so the emptiest surroundings come first
   if (p && p.quiet) list.sort((a, b) => (a[F.N2] || 0) - (b[F.N2] || 0));

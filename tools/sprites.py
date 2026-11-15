@@ -38,6 +38,11 @@ QUALITY = 62
 def main():
     from PIL import Image
     os.makedirs(PK, exist_ok=True)
+    # Sheets from an earlier run are stale the moment the picture set changes,
+    # and staging would publish them alongside the new ones.
+    for f in os.listdir(PK):
+        if f.startswith("s") and f.endswith(".jpg"):
+            os.remove(os.path.join(PK, f))
     have = set(os.listdir(IMG))
 
     total_cells = total_rows = cleared = 0

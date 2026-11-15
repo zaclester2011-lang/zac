@@ -146,7 +146,7 @@ def main():
       )""")
     rows = con.execute("""SELECT DISTINCT photo_title, category, kind, name FROM place
                           WHERE photo_title IS NOT NULL
-                            AND category IN ('beach','adventure','todo')
+                            AND category='beach'
                           ORDER BY (category='beach') DESC""").fetchall()
     titles, seen_t = [], set()
     for t, cat, kind, nm in rows:
