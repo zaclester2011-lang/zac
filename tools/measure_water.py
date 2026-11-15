@@ -136,11 +136,26 @@ def main():
             have = set(json.load(open(OUT)))
         except Exception:
             have = set()
-    titles = [t for (t,) in con.execute(
-        """SELECT DISTINCT photo_title FROM place
-           WHERE photo_title IS NOT NULL
-             AND category IN ('beach','adventure','todo')
-           ORDER BY (category='beach') DESC""") if t not in have][:args.limit]
+    # only places whose Colour rating would mean something — the same test rate.py uses
+    import re as _re
+    WORD = _re.compile(r"""(?ix) (
+        beach|bay|cove|lagoon|lake|river|waterfall|cascade|spring|gorge|canyon|
+        cave|reef|island|islet|harbour|harbor|marina|pool|sea|coast|shore|strand|
+        playa|spiaggia|cala|paralia|limni|akti|falls|creek|delta|estuary|fjord|
+        sandbar|peninsula|cape|lido|plage|praia
+      )""")
+    rows = con.execute("""SELECT DISTINCT photo_title, category, kind, name FROM place
+                          WHERE photo_title IS NOT NULL
+                            AND category IN ('beach','adventure','todo')
+                          ORDER BY (category='beach') DESC""").fetchall()
+    titles, seen_t = [], set()
+    for t, cat, kind, nm in rows:
+        if t in have or t in seen_t:
+            continue
+        if cat in ("beach", "adventure") or WORD.search((kind or "") + " " + (nm or "")):
+            seen_t.add(t)
+            titles.append(t)
+    titles = titles[:args.limit]
     print("%s photographs to measure (%s already read)"
           % (format(len(titles), ","), format(len(have), ",")), flush=True)
 
