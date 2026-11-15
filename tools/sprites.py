@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Pack the grid-card photographs into sprite sheets.
 
+    Cards are drawn between 246 and 386 CSS pixels wide, so 192-pixel cells came
+    out visibly soft. The cached sources are 360 pixels wide, which is the
+    ceiling on real detail, so the cells are 352 and nothing is upscaled.
+
 The index names 121,589 photographs, and 9,530 of them are actually cached on
 disk. An artifact may publish at most 511 files in a version, so the pictures
 can never go up one file per place: past the top ten every card fell back to a
@@ -24,11 +28,11 @@ SITE = os.path.join(ROOT, "site")
 IMG = os.path.join(SITE, "img")
 PK = os.path.join(SITE, "pk")
 
-CELL_W, CELL_H = 192, 120          # 16:10, the shape the grid cards are drawn at
-COLS, ROWS = 16, 16                # 256 pictures a sheet
+CELL_W, CELL_H = 352, 220          # 16:10, and as much detail as the 360px sources hold
+COLS, ROWS = 12, 8                 # 96 a sheet: a 4224x1760 sheet decodes comfortably
 PER_SHEET = COLS * ROWS
-MAX_SHEETS = 3                     # a ceiling on weight: 768 pictures a destination
-QUALITY = 58
+MAX_SHEETS = 8                     # a ceiling on weight: 768 pictures a destination
+QUALITY = 62
 
 
 def main():

@@ -10,14 +10,14 @@ question ("hidden water body") rank destinations against each other.
 Writes site/packs.json and one site/d/<id>.json per destination.
 """
 
-import json, os, sqlite3, collections, hashlib
+import json, os, re, sqlite3, collections, hashlib
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DB = os.path.join(ROOT, "data", "index.db")
 SITE = os.path.join(ROOT, "site")
 PFX = "https://commons.wikimedia.org/wiki/Special:FilePath/"
 MAX_PER_DEST = 14000          # what the browser gets; the database keeps everything
-HIDDEN = 7.0                  # the Discovery floor that counts as "hidden"
+QUIET_N2 = 40                 # places with at most this many others within 2 km
 
 # continents by bounding box — crude but it only has to sort twenty-odd places
 def continent(lat, lon):
@@ -41,7 +41,11 @@ LANDMARK = {
 }
 
 CATS = ["beach", "adventure", "food", "club", "todo", "hotel", "indoor", "shop", "guide"]
-TOP_SPREAD = ["beach", "todo", "food", "adventure", "club", "indoor", "hotel", "shop"]
+# The ten best things are things you travel for. "shop" and "indoor" are out:
+# once the barbers were moved out of the bar category into shops, they started
+# turning up in Santorini's and Mallorca's top ten, and indoor now also holds
+# the notaries and publishers that the same clean-up swept out.
+TOP_SPREAD = ["beach", "todo", "adventure", "food", "club", "hotel"]
 
 
 def local_name(title):
@@ -101,7 +105,9 @@ def main():
                        "r": out}, fh, ensure_ascii=False, separators=(",", ":"))
 
         counts = collections.Counter(r[1] for r in out)
-        hidden = collections.Counter(r[1] for r in out if (r[16] if r[16] is not None else r[8] or 0) >= HIDDEN)
+        # Discovery is gone, so "quiet" is counted from what is mapped around a
+        # place rather than from a rating of it.
+        quiet = collections.Counter(r[1] for r in out if (r[14] or 0) <= QUIET_N2)
         withpic = [r for r in out if r[9]]
 
         # ten best things: a spread across categories, best known first, always with a picture
@@ -155,6 +161,28 @@ def main():
                 break
         rated = sum(1 for r in out if r[11] and r[11][2] is not None)
 
+        # What the "what are you looking for" box searches when a word is not a
+        # category: the destination, and the names and kinds of the places in it.
+        # Without this, typing "navagio" or "cenote" matched nothing and the box
+        # quietly ignored it.
+        # Distinct WORDS, not whole names: deduplicating the vocabulary fits every
+        # place in the destination into the space that 1,200 full names took, which
+        # is why "navagio" found nothing before — it sat past the cut.
+        toks = {}
+        for r in out:
+            for piece in (r[0], r[6], r[5]):
+                for t in re.findall(r"\w+", (piece or "").lower(), re.UNICODE):
+                    if len(t) >= 3:
+                        toks[t] = toks.get(t, 0) + 1
+        # the hero's own subject counts too: "penguin" is in Cape Town's picture,
+        # not in any place name
+        for t in re.findall(r"\w+", (hero_title or "").lower().replace("_", " "), re.UNICODE):
+            if len(t) >= 3:
+                toks[t] = toks.get(t, 0) + 999
+        for t in re.findall(r"\w+", name.lower(), re.UNICODE):
+            toks[t] = toks.get(t, 0) + 9999
+        blob = " ".join(sorted(toks, key=lambda t: -toks[t])[:7000])
+
         packs.append({
             "id": did, "slug": slug, "name": name,
             "bestcol": list(best_col) if best_col else None,
@@ -166,7 +194,8 @@ def main():
             "photos": len(withpic),
             "hero": hero, "hero_title": hero_title,
             "counts": {c: counts.get(c, 0) for c in CATS},
-            "hidden": {c: hidden.get(c, 0) for c in CATS},
+            "quiet": {c: quiet.get(c, 0) for c in CATS},
+            "blob": blob,
             "top": picked,
         })
         print("%-16s %-14s %7s places  %6s photos  top %d"

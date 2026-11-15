@@ -21,6 +21,7 @@ SITE = os.path.join(ROOT, "site")
 IMG = os.path.join(SITE, "img")
 PK = os.path.join(SITE, "pk")
 BATCH = 250                    # under the 255-file limit, leaving room for the page files
+BATCH_BYTES = 58_000_000       # under the 64 MB a single publish accepts
 
 
 def main():
@@ -77,13 +78,28 @@ def main():
     files = page + staged + sheets
     sheet_mb = sum(os.path.getsize(os.path.join(SITE, f)) for f in sheets) / 1e6
     print("%d sprite sheets carrying the grid pictures (%.1f MB)" % (len(sheets), sheet_mb))
+    # A publish takes at most 255 files AND at most 64 MB, so the sprite sheets
+    # need the batches split by weight as well as by count.
+    batches, cur, cur_bytes = [], [], 0
+    for f in files:
+        n = os.path.getsize(os.path.join(SITE, f))
+        if cur and (len(cur) >= BATCH or cur_bytes + n > BATCH_BYTES):
+            batches.append(cur); cur, cur_bytes = [], 0
+        cur.append(f); cur_bytes += n
+    if cur:
+        batches.append(cur)
+
     print("\n%d files in all. Publish in %d batch(es) to the same url:"
-          % (len(files), (len(files) + BATCH - 1) // BATCH))
-    for i in range(0, len(files), BATCH):
-        chunk = files[i:i + BATCH]
-        print("   batch %d: %d files (%s … %s)"
-              % (i // BATCH + 1, len(chunk), chunk[0], chunk[-1]))
-        json.dump(chunk, open(os.path.join(SITE, "batch%d.json" % (i // BATCH + 1)), "w"), indent=0)
+          % (len(files), len(batches)))
+    for i, chunk in enumerate(batches, 1):
+        mb = sum(os.path.getsize(os.path.join(SITE, f)) for f in chunk) / 1e6
+        print("   batch %d: %d files, %.1f MB (%s … %s)"
+              % (i, len(chunk), mb, chunk[0], chunk[-1]))
+        json.dump(chunk, open(os.path.join(SITE, "batch%d.json" % i), "w"), indent=0)
+    for extra in range(len(batches) + 1, 12):      # clear stale lists from a bigger run
+        old = os.path.join(SITE, "batch%d.json" % extra)
+        if os.path.exists(old):
+            os.remove(old)
 
 
 if __name__ == "__main__":

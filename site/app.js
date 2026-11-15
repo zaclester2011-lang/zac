@@ -4,8 +4,10 @@
 const COMMONS = "https://commons.wikimedia.org/wiki/Special:FilePath/";
 const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS:10, COL:11,
            CREDIT:12, N5:13, N2:14, NC:15, D:16};
+/* "Shops" is gone: the clean-up left eleven places in it, and they were markets,
+   which belong with things to do. */
 const CATS = [["all","Everything"],["beach","Beaches"],["adventure","Adventures"],["food","Restaurants"],
-  ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"],["shop","Shops"]];
+  ["club","Bars & clubs"],["todo","Things to do"],["hotel","Hotels"],["indoor","Indoor"]];
 const CATLAB = {beach:"Beach", food:"Restaurant", club:"Bar or club", todo:"Thing to do",
   indoor:"Indoor", hotel:"Hotel", shop:"Shop", guide:"Guide", adventure:"Adventure"};
 
@@ -47,31 +49,35 @@ const BUSY = ["busy","popular","famous","lively","crowded","buzzing","known"];
 const STOP = ["a","an","the","in","on","at","with","somewhere","some","place","places","me","body",
               "i","want","find","show","to","for","of","and","that","where","can","is","it","my","we","best"];
 
+/* "quiet" and "busy" used to move a Discovery floor. Discovery is gone, so they
+   now work off what is mapped around a place, which is what they always meant. */
+const QUIET_N2 = 40, BUSY_N2 = 200;
+
 function parseQuery(term) {
   const words = (term || "").toLowerCase().split(/[^a-z0-9']+/).filter(Boolean);
-  const cats = new Set(); let minD = null, maxD = null; const rest = [];
+  const cats = new Set(); let quiet = false, busy = false; const rest = [];
   words.forEach(w => {
     if (STOP.includes(w)) return;
     if (WORD_CAT[w]) { cats.add(WORD_CAT[w]); return; }
-    if (QUIET.includes(w)) { minD = 7.0; return; }
-    if (BUSY.includes(w)) { maxD = 5; return; }
+    if (QUIET.includes(w)) { quiet = true; return; }
+    if (BUSY.includes(w)) { busy = true; return; }
     rest.push(w);
   });
-  return {cats, minD, maxD, words: rest, raw: (term || "").trim()};
+  return {cats, quiet, busy, words: rest, raw: (term || "").trim()};
 }
 function describe(p) {
   const bits = [];
   if (p.cats.size) bits.push([...p.cats].map(c => CATLAB[c] || c).join(", "));
-  if (p.minD !== null) bits.push("Discovery " + p.minD + "+");
-  if (p.maxD !== null) bits.push("Discovery " + p.maxD + " or under");
+  if (p.quiet) bits.push("with little around them");
+  if (p.busy) bits.push("in the thick of it");
   if (p.words.length) bits.push('"' + p.words.join(" ") + '"');
   return bits.join(" · ");
 }
 function rowMatches(r, p) {
   if (p.cats.size && !p.cats.has(r[F.C])) return false;
-  const d = r[F.D] != null ? r[F.D] : r[F.AD];
-  if (p.minD !== null && d < p.minD) return false;
-  if (p.maxD !== null && d > p.maxD) return false;
+  const n2 = r[F.N2] || 0;
+  if (p.quiet && n2 > QUIET_N2) return false;
+  if (p.busy && n2 < BUSY_N2) return false;
   if (!p.words.length) return true;
   const hay = (r[F.N] + " " + (r[F.KIND]||"") + " " + (r[F.LOC]||"") + " " + (CATLAB[r[F.C]]||"")).toLowerCase();
   return p.words.every(w => hay.includes(w));
@@ -87,7 +93,7 @@ const fmt = n => (n || 0).toLocaleString("en-GB");
 /* Grid pictures ride in sprite sheets: an artifact may publish 511 files, and
    there are 9,530 photographs, so one file per place was never possible. A cell
    reference looks like "pk/s0_1.jpg|37" — sheet, then which of its 256 cells. */
-const SPRITE_COLS = 16, SPRITE_ROWS = 16;
+const SPRITE_COLS = 12, SPRITE_ROWS = 8;
 
 const img = (file, alt, cls, credit) => {
   if (!file) {
@@ -159,7 +165,8 @@ function company(n5, n2) {
   return "it stands in the middle of a crowd";
 }
 
-/* A paragraph for every place, each clause a fact the index actually holds. */
+/* What a place is, and why it is worth going to. Nothing else.
+   No coordinates: nobody reads a card to learn a decimal degree. */
 function paragraph(r) {
   const kind = (r[F.KIND] || CATLAB[r[F.C]] || "place").toLowerCase().replace(/_/g, " ");
   const art = /^[aeiou]/.test(kind) ? "an" : "a";
@@ -168,81 +175,46 @@ function paragraph(r) {
   const out = [];
 
   // 1 \u2014 what it is, and where
-  let one = r[F.N] + " is " + art + " " + kind + where;
-  if (r[F.LAT] || r[F.LON]) {
-    one += ", at " + Math.abs(r[F.LAT]).toFixed(3) + "\u00b0" + (r[F.LAT] < 0 ? "S" : "N")
-         + " " + Math.abs(r[F.LON]).toFixed(3) + "\u00b0" + (r[F.LON] < 0 ? "W" : "E");
-  }
-  out.push(one + ".");
+  out.push(r[F.N] + " is " + art + " " + kind + where + ".");
 
-  // 2 \u2014 what stands around it
+  // 2 \u2014 the reason to go: the water where water is the point, the rating
+  //     where somebody has rated it, and otherwise how quiet it stands
+  const watery = isWatery(r[F.C], r[F.KIND], r[F.N]);
+  const saidWater = watery && r[F.COL] && r[F.COL][0] != null;
+  if (saidWater) {
+    out.push("The water in its photograph is " + shade(r[F.COL][0], r[F.COL][1])
+             + (r[F.COL][2] != null
+                ? ", which I rate " + r[F.COL][2].toFixed(1) + " out of ten for colour."
+                : ", though too little of the frame is water to put a number on it."));
+  } else if (watery) {
+    out.push("No photograph of it shows enough water to judge its colour.");
+  }
+
+  // 3 \u2014 how crowded a spot it stands in, which is the other half of the reason
   const peers = CATLAB[r[F.C]] ? CATLAB[r[F.C]].toLowerCase() + "s" : "places of its kind";
   if (nc > 4 && (r[F.C] === "food" || r[F.C] === "hotel" || r[F.C] === "club" || r[F.C] === "shop")) {
-    out.push("It is one of " + fmt(nc + 1) + " " + peers + " within two kilometres, and "
-             + company(n5, n2) + ".");
+    out.push("It is one of " + fmt(nc + 1) + " " + peers + " within two kilometres"
+             + (n5 <= 3 ? ", but barely anything stands within five hundred metres of it." : "."));
   } else {
-    out.push(cap(company(n5, n2)) + ", and " + fmt(n2) + " place"
-             + (n2 === 1 ? "" : "s") + " in all within two kilometres.");
+    out.push(cap(company(n5, n2)) + ".");
   }
 
-  // 3 \u2014 the photograph, and what I rate its water
-  //
-  // Only where water is the point of the place. A blue reading taken off a
-  // restaurant's photograph is the sky, or a painted wall, and saying "its
-  // photograph shows water at hue 208\u00b0" about a cafe is exactly the invented
-  // number this page is meant not to print.
-  const watery = isWatery(r[F.C], r[F.KIND], r[F.N]);
-  if (!watery) {
-    out.push("Colour rates the water at a place, and " + art + " " + kind
-             + " has none, so it carries no Colour rating"
-             + (r[F.IMG] ? "." : ", and no photograph of it has been found either."));
-  } else if (r[F.COL] && r[F.COL][0] != null) {
-    const h = r[F.COL][0], sa = r[F.COL][1];
-    out.push("Its photograph shows water at hue " + h + "\u00b0 and saturation " + sa.toFixed(2)
-             + " \u2014 " + shade(h, sa) + (r[F.COL][2] != null
-                ? " \u2014 which I rate Colour " + r[F.COL][2].toFixed(1) + " out of ten."
-                : ", though too little of the frame is water to put a number on it."));
-  } else if (r[F.IMG]) {
-    out.push("It has been photographed, but too little water sits in the frame to rate its colour, "
-             + "so I have left Colour unrated rather than guess at it.");
-  } else {
-    out.push("No photograph of it has been found, so it has no Colour rating.");
-  }
-
-  // 4 \u2014 Discovery, with the basis stated
-  const d = r[F.D] != null ? r[F.D] : r[F.AD];
-  if (d != null) {
-    out.push("I put Discovery at " + Number(d).toFixed(1) + ", read off how empty its surroundings are"
-             + " \u2014 which measures remoteness, not crowds, and can be generous about a quiet-looking"
-             + " place that fills with people by boat.");
-  }
-
-  // 5 \u2014 the rest of what is known
-  const extra = [];
-  if (r[F.STARS]) extra.push("OpenStreetMap lists it at " + r[F.STARS] + " stars");
-  if (r[F.WEB]) extra.push("it keeps a website");
-  const sc = scoredFor(r[F.N]);
-  const last = sc
-    ? "we have stood in it: Discovery " + sc.D + ", Colour " + sc.C + ", Water " + sc.W
-    : "nobody has been and scored it on the ground";
-  out.push(cap(extra.length ? extra.join(", ") + ", and " + last : last) + ".");
+  // 4 \u2014 what people who went think of it
+  if (r[F.STARS]) out.push("Visitors rate it " + r[F.STARS] + " out of five.");
   return out.join(" ");
 }
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 
-/* The score badges. Every number here is a rating, mine or ours — never "auto". */
+/* The score badges. Discovery is gone at Zac's word, so Colour and Water carry
+   the rating on their own. */
 function ratings(r, sc) {
   if (sc) {
-    return '<span class="sc meas" title="Measured standing in it">D ' + sc.D + "</span>"
-         + '<span class="sc meas" title="Measured standing in it">C ' + sc.C + "</span>"
+    return '<span class="sc meas" title="Measured standing in it">C ' + sc.C + "</span>"
          + '<span class="sc meas" title="Sea is Water 10 always">W ' + sc.W + "</span>"
          + '<span class="sc tag">measured</span>';
   }
-  const d = r[F.D] != null ? r[F.D] : r[F.AD];
   const c = r[F.COL] && r[F.COL][2] != null ? r[F.COL][2] : null;
   let out = "";
-  if (d != null) out += '<span class="sc" title="My rating: read off how empty its surroundings are">D '
-                      + Number(d).toFixed(1) + "</span>";
   if (c != null) {
     out += '<span class="sc" title="My rating: measured from the water in its photograph">C '
          + c.toFixed(1) + "</span>";
@@ -264,12 +236,11 @@ function destParagraph(k) {
   out.push(k.name + " sits in " + k.continent + ", and the index holds " + fmt(k.places)
            + " places in it, " + fmt(k.photos) + " of them with a photograph.");
   const b = (k.counts && k.counts.beach) || 0;
-  const hb = (k.hidden && k.hidden.beach) || 0;
+  const hb = (k.quiet && k.quiet.beach) || 0;
   if (b) {
     out.push(fmt(b) + " are beaches" + (hb
-      ? ", and " + fmt(hb) + " of those I rate Discovery 7 or better \u2014 empty enough that you "
-        + "would likely have it to yourself."
-      : ", though none of them rate Discovery 7 or better: this is a busy coast."));
+      ? ", and " + fmt(hb) + " of those stand with almost nothing else mapped around them."
+      : ", though every one of them sits in a crowd of other places: this is a busy coast."));
   } else {
     out.push("No beaches are mapped here yet.");
   }
@@ -296,19 +267,28 @@ function chips(host, items, cur, on, counts) {
   });
 }
 
+/* Typing anything must actually filter. Words that are not a category and not
+   "quiet" or "busy" are matched against each destination's own search text —
+   its name, its continent, and the names and kinds of the places in it — so
+   "navagio", "cenote" or "windsurf" narrow the list instead of being ignored. */
 function rankPacks(query) {
   const p = parseQuery(query);
-  const useHidden = p.minD !== null;
   return PACKS.map(k => {
+    const src = p.quiet ? (k.quiet || k.counts) : k.counts;
     let score;
-    if (!p.cats.size && !useHidden) score = k.photos;
-    else {
-      const src = useHidden ? k.hidden : k.counts;
-      const cats = p.cats.size ? [...p.cats] : Object.keys(src);
-      score = cats.reduce((a, c) => a + (src[c] || 0), 0);
+    if (p.cats.size) score = [...p.cats].reduce((a, c) => a + (src[c] || 0), 0);
+    else if (p.quiet || p.busy) score = Object.keys(src).reduce((a, c) => a + (src[c] || 0), 0);
+    else score = k.photos;
+
+    let ok = true;
+    if (p.words.length) {
+      const blob = k.blob || (k.name + " " + k.continent).toLowerCase();
+      ok = p.words.every(w => blob.indexOf(w) >= 0);
+      // a destination that names the thing beats one that is merely large
+      if (ok) score += 100000;
     }
-    return {pack: k, score, parsed: p};
-  }).filter(x => x.score > 0 || !query.trim())
+    return {pack: k, score, parsed: p, ok};
+  }).filter(x => x.ok && (x.score > 0 || !query.trim()))
     .sort((a, b) => b.score - a.score);
 }
 
@@ -394,7 +374,8 @@ function renderPack() {
   let list = rows.filter(r => r[F.C] !== "guide")
     .filter(r => packCat === "all" || r[F.C] === packCat)
     .filter(r => !p || rowMatches(r, p));
-  if (p && p.minD !== null) list.sort((a, b) => (b[F.D] != null ? b[F.D] : b[F.AD]) - (a[F.D] != null ? a[F.D] : a[F.AD]));
+  // asked for quiet, so the emptiest surroundings come first
+  if (p && p.quiet) list.sort((a, b) => (a[F.N2] || 0) - (b[F.N2] || 0));
   else list.sort((a, b) => ((b[F.IMG] ? 1 : 0) - (a[F.IMG] ? 1 : 0)) || (b[F.Q] - a[F.Q]));
   $("packcount").textContent = fmt(list.length) + " places"
     + (p && describe(p) ? " · " + describe(p) : "");
