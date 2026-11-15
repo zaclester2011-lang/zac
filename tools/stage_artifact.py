@@ -31,12 +31,19 @@ def main():
         if f[0] in "ht" and f.endswith(".jpg"):
             os.remove(os.path.join(PK, f))
     packs = json.load(open(os.path.join(SITE, "packs.json")))
+    # This rewrites packs.json to point at what it copies, so a second run would
+    # look for "pk/h0.jpg" inside site/img and find nothing. Rebuild first.
+    if any((p.get("hero") or "").startswith("pk/") for p in packs):
+        sys.exit("packs.json is already staged — run build_packs.py and sprites.py first")
 
     staged, missing = [], []
     for p in packs:
         src = os.path.join(IMG, p.get("hero") or "")
         if p.get("hero") and os.path.exists(src):
             name = "h%d.jpg" % p["id"]
+            # Cropping a tall hero at its water was tried and reverted: on the
+            # Tulum cenote the shallow rocky bottom beat the deep blue pool on
+            # every measure I had, and the browser's own centre crop is better.
             shutil.copyfile(src, os.path.join(PK, name))
             p["hero"] = "pk/" + name
             staged.append("pk/" + name)
