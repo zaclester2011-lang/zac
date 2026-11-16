@@ -31,7 +31,7 @@ PK = os.path.join(SITE, "pk")
 CELL_W, CELL_H = 352, 220          # 16:10, and as much detail as the 360px sources hold
 COLS, ROWS = 12, 8                 # 96 a sheet: a 4224x1760 sheet decodes comfortably
 PER_SHEET = COLS * ROWS
-MAX_SHEETS = 8                     # a ceiling on weight: 768 pictures a destination
+MAX_SHEETS = 6                     # a ceiling on weight: 576 pictures a destination
 QUALITY = 62
 
 
@@ -47,10 +47,15 @@ def main():
 
     total_cells = total_rows = cleared = 0
     sheets_written = []
-    for did in range(24):
+    # Every destination the packs were built for. This used to be range(24), from
+    # when there were twenty-four: the twenty adventure destinations added after
+    # that got no sheets at all, so every card past their top ten showed the grey
+    # "photograph unavailable" panel however many pictures were on disk.
+    dests = sorted(int(f[:-5]) for f in os.listdir(os.path.join(SITE, "d"))
+                   if f.endswith(".json") and f[:-5].isdigit())
+    print("%d destinations to pack" % len(dests), flush=True)
+    for did in dests:
         path = os.path.join(SITE, "d", "%d.json" % did)
-        if not os.path.exists(path):
-            continue
         doc = json.load(open(path))
         rows = doc["r"]
         # Running twice would be destructive: the second pass would not find
@@ -111,7 +116,8 @@ def main():
 
     size = sum(os.path.getsize(os.path.join(SITE, f)) for f in sheets_written)
     print("\n%d sheets, %d pictures, %.1f MB in all (%.2f MB a destination)"
-          % (len(sheets_written), total_cells, size / 1e6, size / 1e6 / 24))
+          % (len(sheets_written), total_cells, size / 1e6,
+             size / 1e6 / max(len(dests), 1)))
     print("%s rows now show a picture, %s cleared because the file was never downloaded"
           % (format(total_rows - cleared, ","), format(cleared, ",")))
     json.dump(sheets_written, open(os.path.join(SITE, "sheets.json"), "w"), indent=0)

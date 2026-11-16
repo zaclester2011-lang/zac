@@ -7,11 +7,15 @@ const F = {N:0, C:1, LAT:2, LON:3, Q:4, LOC:5, KIND:6, WEB:7, AD:8, IMG:9, STARS
 /* Five kinds of adventure. "Hidden" is not a category in the data — it is any
    adventure with almost nothing else mapped around it, which is the whole
    point of the index. */
+/* The labels say where the data actually sits. "Gorges & caves" undersold the
+   biggest category by far: 4,899 of them are peaks and passes and only 190 are
+   caves. "Diving & surfing" is gone because the dive centres and surf schools
+   are gone — what is left is reefs, and only where there are reefs. */
 const CATS = [["all","Everything"],["hidden","Hidden"],["beach","Beaches"],
-  ["water","Waterfalls & lakes"],["rock","Gorges & caves"],["trail","Trails & peaks"],
-  ["sea","Diving & surfing"]];
-const CATLAB = {beach:"Beach", water:"Waterfall or lake", rock:"Gorge or cave",
-  trail:"Trail or peak", sea:"Diving and surfing"};
+  ["rock","Peaks, gorges & caves"],["trail","Trails & wild places"],
+  ["water","Waterfalls & lakes"],["sea","Reefs"]];
+const CATLAB = {beach:"Beach", water:"Waterfall or lake", rock:"Peak, gorge or cave",
+  trail:"Trail or wild place", sea:"Reef"};
 const HIDDEN_N2 = 10;        // other places mapped within two kilometres
 
 const isHidden = r => (r[F.N2] || 0) <= HIDDEN_N2;
@@ -22,8 +26,8 @@ const SCORED = {
   "katholiko": {D:8.5, C:7.5, W:10, t:"Two kilometres down the Avlaki ravine past an 11th-century monastery cut into the cliff. No beach — entry is off stone."},
   "glyka nera": {D:7.5, C:8, W:10, t:"Thirty minutes along the coast path from Chora Sfakion. Freshwater springs rise through the shingle and cool the whole bay."},
   "preveli": {D:7, C:8, W:10, t:"Where the Kourtaliotiko river meets the Libyan Sea under a palm grove. The grove burned in July 2026."},
-  "elafonissi": {D:6, C:9, W:10, t:"Pink shell sand on the south-west tip, shallow enough to stand a hundred metres out. Famous, and cut on Discovery once walked."},
-  "balos": {D:6, C:9.5, W:10, t:"A sandbar between a lagoon and the open sea. The highest colour measured in Crete, and cut: a car park above, umbrella rows below."}
+  "elafonissi": {D:6, C:9, W:10, t:"Pink shell sand on the south-west tip, shallow enough to stand a hundred metres out. Beautiful, and busy: it is on every tour itinerary in western Crete."},
+  "balos": {D:6, C:9.5, W:10, t:"A sandbar between a lagoon and the open sea. The highest colour measured in Crete, and far from empty: a car park above, umbrella rows below."}
 };
 
 /* plain words → filters */
@@ -38,10 +42,13 @@ const WORD_CAT = {
   mountain:"rock", peak:"rock", summit:"rock", rock:"rock",
   hike:"trail", hikes:"trail", hiking:"trail", trail:"trail", trails:"trail", trek:"trail",
   trekking:"trail", walk:"trail", walking:"trail", climb:"trail", climbing:"trail",
-  viewpoint:"trail", lookout:"trail", island:"trail", islands:"trail", reef:"trail",
-  dive:"sea", diving:"sea", scuba:"sea", snorkel:"sea", snorkelling:"sea", surf:"sea",
-  surfing:"sea", kayak:"sea", kayaking:"sea", canoe:"sea", sail:"sea", sailing:"sea",
-  swim:"sea", swimming:"sea", boat:"sea"
+  viewpoint:"trail", lookout:"trail", island:"trail", islands:"trail",
+  /* Reefs are what the sea category holds now. Surfing, kayaking and sailing
+     are not words it can answer with, because the surf schools and boat-tour
+     operators that carried them have gone, so they fall through to a search of
+     the place names instead of quietly returning reefs. */
+  reef:"sea", reefs:"sea", coral:"sea", dive:"sea", diving:"sea", scuba:"sea",
+  snorkel:"sea", snorkelling:"sea", snorkeling:"sea"
 };
 const QUIET = ["empty","hidden","quiet","remote","alone","secret","deserted","secluded",
                "unspoilt","wild","undiscovered","peaceful","nobody","untouched"];
@@ -103,13 +110,20 @@ const img = (file, alt, cls, credit) => {
   }
   const bar = file.indexOf("|");
   if (bar > 0) {
-    const sheet = file.slice(0, bar), cell = +file.slice(bar + 1);
-    const col = cell % SPRITE_COLS, row = Math.floor(cell / SPRITE_COLS);
+    /* "sheet|cell" uses the 12x8 grid; "sheet|cell|cols|rows" carries its own,
+       which is how the ten best ride a sheet of ten big cells rather than ten
+       files. Forty-four destinations times ten was 440 files on its own, and a
+       version holds 511 in all. */
+    const bits = file.split("|");
+    const sheet = bits[0], cell = +bits[1];
+    const cols = bits.length > 3 ? +bits[2] : SPRITE_COLS;
+    const rows = bits.length > 3 ? +bits[3] : SPRITE_ROWS;
+    const col = cell % cols, row = Math.floor(cell / cols);
     return '<div class="' + cls + ' sprite" role="img" aria-label="' + esc(alt) + '" style="'
          + "background-image:url(" + esc(sheet) + ");"
-         + "background-size:" + SPRITE_COLS * 100 + "% " + SPRITE_ROWS * 100 + "%;"
-         + "background-position:" + (col * 100) / (SPRITE_COLS - 1) + "% "
-         + (row * 100) / (SPRITE_ROWS - 1) + '%"></div>';
+         + "background-size:" + cols * 100 + "% " + rows * 100 + "%;"
+         + "background-position:" + (cols > 1 ? (col * 100) / (cols - 1) : 0) + "% "
+         + (rows > 1 ? (row * 100) / (rows - 1) : 0) + '%"></div>';
   }
   const src = file.indexOf("/") >= 0 ? file : "img/" + file;
   const back = credit ? COMMONS + encodeURIComponent(String(credit).replace(/ /g, "_")) + "?width=480" : "";
@@ -232,9 +246,9 @@ function destParagraph(k) {
            + " adventure" + (k.places === 1 ? "" : "s") + " in it" + (k.photos
               ? ", " + fmt(k.photos) + " of them with a photograph of their own." : "."));
   const c = k.counts || {};
-  const parts = [["beach", "beaches"], ["water", "waterfalls and lakes"],
-                 ["rock", "gorges and caves"], ["trail", "trails and peaks"],
-                 ["sea", "places to dive or surf"]]
+  const parts = [["beach", "beaches"], ["rock", "peaks, gorges and caves"],
+                 ["trail", "trails and wild places"],
+                 ["water", "waterfalls and lakes"], ["sea", "reefs"]]
     .filter(([key]) => c[key]).map(([key, label]) => fmt(c[key]) + " " + label);
   if (parts.length) {
     const last = parts.pop();
@@ -258,6 +272,11 @@ function destParagraph(k) {
 function chips(host, items, cur, on, counts) {
   host.innerHTML = "";
   items.forEach(([v, l]) => {
+    /* A chip reading "Reefs 0" is noise: reefs exist in Palawan and Raja Ampat
+       and nowhere near the Dolomites. A category with nothing in it is hidden,
+       unless it is the one currently chosen — then it has to stay, or there is
+       no way back from an empty grid. */
+    if (counts && !counts[v] && v !== cur && v !== "all") return;
     const b = document.createElement("button");
     b.className = "chip"; b.type = "button";
     b.innerHTML = esc(l) + (counts && counts[v] != null ? '<span class="n">' + fmt(counts[v]) + "</span>" : "");
@@ -381,9 +400,16 @@ function renderPack() {
   let list = rows
     .filter(r => packCat === "all" || (packCat === "hidden" ? isHidden(r) : r[F.C] === packCat))
     .filter(r => !p || rowMatches(r, p));
-  // asked for quiet, so the emptiest surroundings come first
-  if (p && p.quiet) list.sort((a, b) => (a[F.N2] || 0) - (b[F.N2] || 0));
-  else list.sort((a, b) => ((b[F.IMG] ? 1 : 0) - (a[F.IMG] ? 1 : 0)) || (b[F.Q] - a[F.Q]));
+  // A picture always comes first. The filter above has already thrown out
+  // everything that does not answer the question, so ordering what is left by
+  // whether it can be seen costs nothing and fills the grid instead of opening
+  // it on grey panels.
+  if (p && p.quiet) {
+    list.sort((a, b) => ((b[F.IMG] ? 1 : 0) - (a[F.IMG] ? 1 : 0))
+                     || ((a[F.N2] || 0) - (b[F.N2] || 0)));
+  } else {
+    list.sort((a, b) => ((b[F.IMG] ? 1 : 0) - (a[F.IMG] ? 1 : 0)) || (b[F.Q] - a[F.Q]));
+  }
   $("packcount").textContent = fmt(list.length) + " places"
     + (p && describe(p) ? " · " + describe(p) : "");
   const g = $("packlist"); g.innerHTML = "";

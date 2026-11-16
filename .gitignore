@@ -11,3 +11,7 @@ data/*.db-shm
 __pycache__/
 *.pyc
 site/data.json
+
+# Wikimedia dumps: streamed once to resolve filenames, then deleted
+data/*.sql.gz
+data/*.sql

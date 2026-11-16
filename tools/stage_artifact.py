@@ -17,6 +17,8 @@ Prints the batches to publish.
 import hashlib, json, os, shutil, sys
 
 HI_HERO_W, HI_TOP_W = 1800, 900
+TOP_W, TOP_H = 720, 540            # 4:3, the aspect the card draws at
+TOP_COLS, TOP_ROWS = 2, 5          # ten best on one sheet
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = os.path.join(ROOT, "site")
@@ -45,7 +47,9 @@ def main():
     # and are written by tools/sprites.py, which runs before this does.
     os.makedirs(PK, exist_ok=True)
     for f in os.listdir(PK):
-        if f[0] in "ht" and f.endswith(".jpg"):
+        # h = destination hero, t = an older per-picture top ten, b = top-ten
+        # sheet. The s* grid sheets belong to tools/sprites.py, which runs first.
+        if f[0] in "htb" and f.endswith(".jpg"):
             os.remove(os.path.join(PK, f))
     packs = json.load(open(os.path.join(SITE, "packs.json")))
     # This rewrites packs.json to point at what it copies, so a second run would
@@ -53,8 +57,10 @@ def main():
     if any((p.get("hero") or "").startswith("pk/") for p in packs):
         sys.exit("packs.json is already staged — run build_packs.py and sprites.py first")
 
+    from PIL import Image
     staged, missing, bigs = [], [], 0
     for p in packs:
+        tops = []
         src = hi_path(p.get("hero_title"), HI_HERO_W)
         if src:
             bigs += 1
@@ -78,14 +84,35 @@ def main():
             else:
                 s = os.path.join(IMG, t.get("img") or "")
             if t.get("img") and os.path.exists(s):
-                name = "t%d_%d.jpg" % (p["id"], i)
-                shutil.copyfile(s, os.path.join(PK, name))
-                t["img"] = "pk/" + name
-                staged.append("pk/" + name)
+                tops.append((i, s))
             else:
                 missing.append("%s / %s" % (p["name"], t.get("n", "?")))
                 t["img"] = ""
             # t["row"] stays: the page builds each paragraph from it
+
+        # The ten best ride one sheet of big cells rather than ten files. Ten
+        # files each for forty-four destinations is 440, and a version holds 511
+        # in all, so individual files only fitted while there were twenty-four
+        # destinations. The cells are 720x540: a card is drawn between 250 and
+        # 400 CSS pixels wide at 4:3, so this is sharp even on a retina screen.
+        if tops:
+            sheet = Image.new("RGB", (TOP_COLS * TOP_W, TOP_ROWS * TOP_H), (238, 236, 231))
+            for i, src in tops:
+                try:
+                    im = Image.open(src).convert("RGB")
+                except Exception:
+                    continue
+                sw, sh = im.size
+                scale = max(TOP_W / sw, TOP_H / sh)
+                im = im.resize((max(1, int(sw * scale + 0.5)), max(1, int(sh * scale + 0.5))))
+                left, top = (im.size[0] - TOP_W) // 2, (im.size[1] - TOP_H) // 2
+                im = im.crop((left, top, left + TOP_W, top + TOP_H))
+                sheet.paste(im, ((i % TOP_COLS) * TOP_W, (i // TOP_COLS) * TOP_H))
+            name = "b%d.jpg" % p["id"]
+            sheet.save(os.path.join(PK, name), "JPEG", quality=76, optimize=True)
+            staged.append("pk/" + name)
+            for i, src in tops:
+                p["top"][i]["img"] = "pk/%s|%d|%d|%d" % (name, i, TOP_COLS, TOP_ROWS)
 
     out = os.path.join(SITE, "packs.json")
     json.dump(packs, open(out, "w"), ensure_ascii=False, separators=(",", ":"))

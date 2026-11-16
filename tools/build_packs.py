@@ -19,13 +19,30 @@ PFX = "https://commons.wikimedia.org/wiki/Special:FilePath/"
 MAX_PER_DEST = 14000          # what the browser gets; the database keeps everything
 QUIET_N2 = 10                 # hidden: at most this many other places within 2 km
 
-# continents by bounding box — crude but it only has to sort twenty-odd places
+# Continents by bounding box — crude, but it only has to sort forty-odd places,
+# and it sorts them the way someone planning a trip would. The order matters:
+# the first rule that matches wins, so the awkward cases come first.
+#
+# Four were wrong before the rules were put in this order. Wadi Rum came out
+# African because Jordan sits inside the old Africa box. Costa Rica came out
+# South American. Réunion came out Asian, having fallen past an Africa box that
+# stopped short of it. Madeira and the Canaries came out African, which is true
+# of the rock and useless to a traveller flying from Lisbon or Madrid.
 def continent(lat, lon):
+    # Macaronesia: Portuguese and Spanish islands off Africa, reached from Europe
+    if 27 < lat < 40 and -32 < lon < -13: return "Europe"
+    # the Middle East, which the old Africa box swallowed
+    if 12 < lat < 42 and 34 < lon < 64: return "Asia"
+    # Central America and the Caribbean belong to the north
+    if 7 < lat < 33 and -118 < lon < -59: return "North America"
     if lat > 12 and -170 < lon < -50: return "North America"
-    if lat <= 12 and -92 < lon < -34: return "South America"
-    if -60 < lat < 12 and -92 < lon < -30: return "South America"
+    if -60 < lat <= 12 and -92 < lon < -30: return "South America"
     if 34 < lat < 72 and -32 < lon < 45: return "Europe"
-    if -36 < lat <= 38 and -20 < lon < 52: return "Africa"
+    # Africa with its Indian Ocean islands: Réunion, Mauritius, the Seychelles
+    if -36 < lat <= 38 and -20 < lon < 58: return "Africa"
+    # The Asian rules stay ahead of Oceania: Bali, Sulawesi, Flores and Raja
+    # Ampat are all south of the equator and all in Asia, and the Oceania box
+    # would otherwise claim them.
     if lat > 0 and 25 < lon < 180: return "Asia"
     if -12 < lat <= 25 and 60 < lon < 150: return "Asia"
     if lat <= 0 and (110 < lon <= 180 or -180 <= lon < -120): return "Oceania"
