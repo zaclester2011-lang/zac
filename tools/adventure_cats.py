@@ -87,7 +87,13 @@ KEEP = {
 NOT_PLACE = re.compile(r"""(?ix) \b(
     hotels?|hostels?|motels?|resorts?|villas?|apartments?|apartamento|
     rooms?|suites?|studios?|guesthouses?|guest\ house|homestays?|bungalows?|
-    camping|campgrounds?|campsites?|caravan|
+    lodges?|lodging|retreat|camping|campgrounds?|campsites?|caravan|
+    # built heritage, which arrives filed as a park: "Russian Fort Elizabeth
+    # State Historical Park" came through as kind "national park"
+    fort|fortress|citadel|castle|historical|heritage\ site|
+    # working water, which arrives filed as a beach: "Kukuiula Small Boat
+    # Harbor" came through as kind "beach"
+    harbour|harbor|boatyard|shipyard|slipway|
     restaurants?|restoran|ristorante|trattoria|pizzeria|taverna|warung|kantin|
     canteens?|cafes?|caffe|bistro|grill|bars?|pubs?|brewery|lounge|clubs?|disco|
     bagni|bagno|chiringuito|

@@ -47,6 +47,13 @@ UA = "hidden-adventures/1.0 (travel index; open data)"
 FILEPATH = "https://commons.wikimedia.org/wiki/Special:FilePath/"
 
 RADIUS_KM = 3.0
+# A hidden place is remote by definition, so the photographer stands further
+# back and there is far less around to be confused with. Widening the circle
+# only for those places buys pictures where they are scarcest without loosening
+# anything: the filename must still name the place, and each file is still used
+# once.
+HIDDEN_RADIUS_KM = 6.0
+HIDDEN_N2 = 10
 LOCAL_NAME_AT = 3        # a word on more places than this, here, is a place name
 GLOBAL_WORD_AT = 60      # a word on more places than this, anywhere, is a common word
 
@@ -72,7 +79,12 @@ JUNK = re.compile(r"""(?ix) \b(
     map|maps|plan|plans|floorplan|blueprint|elevation|cross.section|diagram|chart|
     schematic|graph|profile|logo|crest|coat.of.arms|flag|seal|stamp|coin|banknote|
     ticket|receipt|invoice|menu|poster|billboard|advert|advertisement|leaflet|brochure|
-    sign|signpost|signage|plaque|notice|nameplate|number.plate|licence|license|
+    # "signs" is not "sign": a photograph of the informational signs at Russian
+    # Fort Elizabeth passed a filter that only knew the singular
+    signs?|signpost|signage|plaques?|notices?|nameplate|number.plate|licence|license|
+    # the subject is the business, not the place: a beach was illustrated by
+    # "Techo de hotel Dusit Thani Laguna" — the roof of its hotel
+    hotels?|resorts?|restaurants?|cafes?|taverna|bars?|pubs?|lodges?|
     portrait|selfie|mugshot|headshot|grave|tomb|tombstone|cemetery|memorial|statue|
     screenshot|scan|document|letter|manuscript|drawing|sketch|engraving|painting|
     postcard|newspaper|clipping|certificate|patent|
@@ -208,15 +220,17 @@ def main():
         mine = ident[pid]
         if not mine:
             continue
+        reach = HIDDEN_RADIUS_KM if (n2 or 0) <= HIDDEN_N2 else RADIUS_KM
         i = int(lat / G)
         span = 111.0 * G * max(math.cos(math.radians(lat)), 0.05)
-        jr = int(math.ceil(RADIUS_KM / span))
+        jr = int(math.ceil(reach / span))
+        ir = int(math.ceil(reach / (111.0 * G)))
         best = []
-        for di in (-1, 0, 1):
+        for di in range(-ir, ir + 1):
             for dj in range(-jr, jr + 1):
                 for title, plat, plon in grid.get((i + di, int(lon / G) + dj), ()):
                     d = km(lat, lon, plat, plon)
-                    if d > RADIUS_KM:
+                    if d > reach:
                         continue
                     tw = wcache.get(title)
                     if tw is None:
