@@ -90,9 +90,35 @@ JUNK = re.compile(r"""(?ix) \b(
     postcard|newspaper|clipping|certificate|patent|
     train|railway|locomotive|tram|bus|coach|lorry|truck|aircraft|airplane|airport|
     helicopter|ferry|car|cars|bicycle|motorcycle|scooter|roundabout|car.park|parking|
+    bahnhof|gare|stazione|estacion|station.building|
     road|roads|street|highway|motorway|junction|bridge.over|construction|building.site|
-    church|chapel|mosque|temple.of|museum|supermarket|petrol|gas.station|hospital
-  )\b""")
+    church|chapel|mosque|temple.of|museum|supermarket|petrol|gas.station|hospital|
+    movie.set|film.set|
+    # a wildlife photograph names the animal, not the place it was taken: the
+    # beach at Korakas was illustrated by a female chaffinch
+    male|female|juvenile|subspecies|ssp|nest|nesting|specimen|herbarium|
+    close.?up|macro
+  )\b
+  |
+  # a word ENDING in plan is a drawing, however it is compounded. "Bahnhof
+  # Bruneck, Aufnahmsgebäude, Originalplan" passed a filter that knew \bplan\b.
+  \w*plan\b
+  |
+  # signboards, in the languages the index actually meets them in
+  \b(bordje|schild|hinweisschild|beschilderung|panneau|cartello)\w*
+  """)
+
+# A Latin binomial names a species, not a place. "Fringilla coelebs, female,
+# Korakas, Crete" is a chaffinch and "Histrionicus histrionicus, Lækjavik" is a
+# harlequin duck; both passed the name test because the place name is in the
+# filename too. Genus is capitalised and the species epithet is not, which no
+# place name in the index looks like — "Cala Goloritze" and "Monte Roen"
+# capitalise both words, and "Lago di Landro" has a two-letter middle.
+# The comma matters. Commons writes "Genus species, where, when", so the
+# epithet is followed by a comma or the end of the name. Without that condition
+# "Aerial view of Lagoa do Fogo" reads as a binomial and the Azores lose their
+# hero.
+BINOMIAL = re.compile(r"^[A-Z][a-z]{3,}\s+[a-z]{3,}\s*(?:,|\.(?:jpe?g|png)$)")
 
 lock = threading.Lock()
 got = {"ok": 0, "cached": 0, "fail": 0, "throttled": 0}
@@ -251,7 +277,8 @@ def main():
                     shared = mine & tw
                     if not shared:
                         continue
-                    if JUNK.search(title.replace("_", " ")):
+                    plain = title.replace("_", " ")
+                    if JUNK.search(plain) or BINOMIAL.match(plain):
                         continue
                     best.append((len(shared), max(len(w) for w in shared), -d, title))
         if best:
