@@ -202,13 +202,26 @@ def main():
     G = 0.03
     grid = collections.defaultdict(list)
     nph = 0
+    seen_rows = set()
+    # The photo table has 43.3 million rows and no index on lat or lon, so a
+    # plain BETWEEN scans all of them — once per destination, which is 1.9
+    # billion row reads and several minutes. cell2 buckets a photograph into a
+    # hundredth of a degree and IS indexed, so the box is walked a row of cells
+    # at a time: each strip of latitude is one indexed range rather than a scan.
     for did, (s, w, n, e) in boxes.items():
-        for title, lat, lon in con.execute(
-                """SELECT title, lat, lon FROM photo
-                   WHERE lat BETWEEN ? AND ? AND lon BETWEEN ? AND ? AND title IS NOT NULL""",
-                (s - 0.06, n + 0.06, w - 0.06, e + 0.06)):
-            grid[(int(lat / G), int(lon / G))].append((title, lat, lon))
-            nph += 1
+        lo_la, hi_la = int((s - 0.06 + 90) * 100), int((n + 0.06 + 90) * 100)
+        lo_lo, hi_lo = int((w - 0.06 + 180) * 100), int((e + 0.06 + 180) * 100)
+        for la in range(lo_la, hi_la + 1):
+            base = la * 40000
+            for pid, title, lat, lon in con.execute(
+                    """SELECT page_id, title, lat, lon FROM photo
+                       WHERE cell2 BETWEEN ? AND ? AND title IS NOT NULL""",
+                    (base + lo_lo, base + hi_lo)):
+                if pid in seen_rows:
+                    continue          # destinations can overlap at their edges
+                seen_rows.add(pid)
+                grid[(int(lat / G), int(lon / G))].append((title, lat, lon))
+                nph += 1
     print("   %s titled photographs inside the destinations" % format(nph, ","), flush=True)
 
     print("3. matching")
