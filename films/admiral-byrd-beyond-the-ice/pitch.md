@@ -1,4 +1,4 @@
-# ADMIRAL BYRD AND THE HIDDEN REALM
+# ADMIRAL BYRD: BEYOND THE ICE
 
 **A ZAC Studio project · Family sci-fi adventure · Feature film (~90 min) · PG**
 
