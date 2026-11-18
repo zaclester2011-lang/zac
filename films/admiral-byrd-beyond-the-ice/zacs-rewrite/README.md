@@ -5,4 +5,4 @@ Every scene in this folder is written by Zac. Each commit is a dated record of w
 
 | # | Sequence | Status |
 |---|---|---|
-| 01 | Opening: 1934, alone in Antarctica (wordless) | Draft 1, 18 Nov 2026 |
+| 01 | Opening: 1934, alone in Antarctica (wordless) | Paragraph stage, 18 Nov 2026 |
