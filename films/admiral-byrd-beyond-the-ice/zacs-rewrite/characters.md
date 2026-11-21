@@ -20,3 +20,6 @@
 ## Notes
 - The characters' personalities will drive how each scene is written.
 - Still to decide: names for each character.
+
+## Story ideas
+- **Romance (21 Nov 2026):** the young engineer and the weather and terrain expert have been hiding their feelings for each other. While flying into the hidden realm, thinking they're about to die, they finally kiss.
