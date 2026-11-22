@@ -56,6 +56,12 @@ PLACES = [
     ("Big Bear Lake",              34.2440, -116.9110, True),
     ("Lake Arrowhead",             34.2480, -117.1890, True),
     ("Switzer Falls",              34.2650, -118.1460, True),
+    # the warm ones — the only water within range that reaches 25 degrees
+    ("Castaic Lake",               34.5460, -118.6100, True),
+    ("Lake Piru",                  34.4830, -118.7570, True),
+    ("Lake Elsinore",              33.6570, -117.3570, True),
+    ("Lake Perris",                33.8610, -117.1680, True),
+    ("Silverwood Lake",            34.2860, -117.3370, True),
     ("Joshua Tree Hidden Valley",  34.0120, -116.1680, False),
     ("Palm Springs Mountain Station", 33.8140, -116.6130, False),
     ("Mount Baldy",                34.2620, -117.6240, False),
@@ -69,14 +75,18 @@ PLACES = [
     ("Six Flags Magic Mountain",   34.4250, -118.5970, False),
 ]
 
-# Water is 10 for the sea and nothing else, which is the app's own rule. A lake
-# therefore cannot reach 25 on this scale however warm or clear it is — the
-# scale was built in Crete, for the sea.
-SEA = {"Santa Cruz Island", "Catalina Casino Point", "Catalina Two Harbors",
-       "La Jolla Shores", "Crystal Cove", "Laguna Beach", "Torrey Pines",
-       "El Matador Beach", "Leo Carrillo Beach", "Point Dume", "Santa Monica Beach",
-       "Carpinteria", "Dana Point", "Huntington Beach", "Newport Beach",
-       "San Clemente", "Santa Barbara"}
+# Water asks one question: is there enough of it to swim in. Ten if yes. The
+# app's tooltip says "Sea is Water 10 always" because the sea always is, not
+# because only the sea counts — a lake you can swim in scores the same, and a
+# gorge with a trickle down it scores nothing. That is why Kourtaliotiko and
+# Aradena carry no Water in the Crete table and the six beaches all carry 10.
+SWIMMABLE = {"Santa Cruz Island", "Catalina Casino Point", "Catalina Two Harbors",
+             "La Jolla Shores", "Crystal Cove", "Laguna Beach", "Torrey Pines",
+             "El Matador Beach", "Leo Carrillo Beach", "Point Dume",
+             "Santa Monica Beach", "Carpinteria", "Dana Point", "Huntington Beach",
+             "Newport Beach", "San Clemente", "Santa Barbara",
+             "Big Bear Lake", "Castaic Lake", "Lake Piru", "Lake Elsinore",
+             "Lake Perris", "Silverwood Lake"}
 
 GENERIC = set("""beach beaches state park national monument point cove bay island islands
 lake falls creek canyon rocks mountain peak harbor harbour shores city town the and of
@@ -240,7 +250,7 @@ def main():
     # Glyka Nera 25.5, Preveli and Elafonissi 25 — which is what makes 25 the
     # line worth drawing.
     for r in out:
-        r["water"] = 10 if r["name"] in SEA else None
+        r["water"] = 10 if r["name"] in SWIMMABLE else None
         if r["discovery"] is not None and r["colour"] is not None and r["water"]:
             r["total"] = r["discovery"] + r["colour"] + r["water"]
         else:
