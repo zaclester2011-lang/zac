@@ -63,13 +63,10 @@
   "n500": 13,
   "n2km": 120,
   "discovery": 6.5,
-  "colour": 6.0,
-  "photo": "Crystal Cove beach - Orange County - California - 02.jpg",
-  "hue": 203.2,
-  "sat": 0.2,
-  "share": 0.18,
+  "colour": null,
+  "photo": null,
   "water": 10,
-  "total": 22.5
+  "total": null
  },
  {
   "name": "Laguna Beach",
@@ -108,10 +105,13 @@
   "n500": 7,
   "n2km": 46,
   "discovery": 7.0,
-  "colour": null,
-  "photo": null,
+  "colour": 7.0,
+  "photo": "El Matador State Beach (36964379752).jpg",
+  "hue": 208.7,
+  "sat": 0.37,
+  "share": 0.43,
   "water": 10,
-  "total": null
+  "total": 24.0
  },
  {
   "name": "Leo Carrillo Beach",
@@ -162,13 +162,10 @@
   "n500": 42,
   "n2km": 624,
   "discovery": 5.0,
-  "colour": 10.0,
-  "photo": "Carpinteria - panoramio (7).jpg",
-  "hue": 162.0,
-  "sat": 0.89,
-  "share": 0.18,
+  "colour": null,
+  "photo": null,
   "water": 10,
-  "total": 25.0
+  "total": null
  },
  {
   "name": "Dana Point",
@@ -192,13 +189,10 @@
   "n500": 441,
   "n2km": 1496,
   "discovery": 3.5,
-  "colour": 5.5,
-  "photo": "US Open of Surfing - Huntington Beach (6007250209).jpg",
-  "hue": 216.4,
-  "sat": 0.18,
-  "share": 0.35,
+  "colour": null,
+  "photo": null,
   "water": 10,
-  "total": 19.0
+  "total": null
  },
  {
   "name": "Newport Beach",
@@ -207,10 +201,13 @@
   "n500": 207,
   "n2km": 2244,
   "discovery": 3.5,
-  "colour": null,
-  "photo": null,
+  "colour": 6.5,
+  "photo": "Newport Beach, California 9 2022-10-08.jpeg",
+  "hue": 210.8,
+  "sat": 0.28,
+  "share": 0.95,
   "water": 10,
-  "total": null
+  "total": 20.0
  },
  {
   "name": "San Clemente",
@@ -219,10 +216,13 @@
   "n500": 378,
   "n2km": 1960,
   "discovery": 3.5,
-  "colour": null,
-  "photo": null,
+  "colour": 6.0,
+  "photo": "San Clemente, United States (Unsplash).jpg",
+  "hue": 162.3,
+  "sat": 0.22,
+  "share": 0.95,
   "water": 10,
-  "total": null
+  "total": 19.5
  },
  {
   "name": "Santa Barbara",
@@ -231,10 +231,13 @@
   "n500": 28,
   "n2km": 878,
   "discovery": 5.0,
-  "colour": null,
-  "photo": null,
+  "colour": 6.5,
+  "photo": "Santa Barbara (27813741466).jpg",
+  "hue": 210.0,
+  "sat": 0.28,
+  "share": 0.39,
   "water": 10,
-  "total": null
+  "total": 21.5
  },
  {
   "name": "Big Bear Lake",
@@ -258,11 +261,11 @@
   "n500": 188,
   "n2km": 445,
   "discovery": 4.5,
-  "colour": 8.0,
-  "photo": "Greetings from Lake Arrowhead, California - Large Letter Postcard (8255371419).jpg",
-  "hue": 227.8,
-  "sat": 0.58,
-  "share": 0.52,
+  "colour": 7.0,
+  "photo": "Lake Arrowhead from Flight Between Las Vegas, Nevada and Orange County, California (6575775267).jpg",
+  "hue": 210.0,
+  "sat": 0.36,
+  "share": 0.57,
   "water": null,
   "total": null
  },
@@ -297,10 +300,13 @@
   "n500": 0,
   "n2km": 1,
   "discovery": 9.5,
-  "colour": null,
-  "photo": null,
+  "colour": 7.0,
+  "photo": "Lake Piru - panoramio.jpg",
+  "hue": 202.5,
+  "sat": 0.35,
+  "share": 0.51,
   "water": 10,
-  "total": null
+  "total": 26.5
  },
  {
   "name": "Lake Elsinore",
