@@ -69,6 +69,15 @@ PLACES = [
     ("Six Flags Magic Mountain",   34.4250, -118.5970, False),
 ]
 
+# Water is 10 for the sea and nothing else, which is the app's own rule. A lake
+# therefore cannot reach 25 on this scale however warm or clear it is — the
+# scale was built in Crete, for the sea.
+SEA = {"Santa Cruz Island", "Catalina Casino Point", "Catalina Two Harbors",
+       "La Jolla Shores", "Crystal Cove", "Laguna Beach", "Torrey Pines",
+       "El Matador Beach", "Leo Carrillo Beach", "Point Dume", "Santa Monica Beach",
+       "Carpinteria", "Dana Point", "Huntington Beach", "Newport Beach",
+       "San Clemente", "Santa Barbara"}
+
 GENERIC = set("""beach beaches state park national monument point cove bay island islands
 lake falls creek canyon rocks mountain peak harbor harbour shores city town the and of
 california usa united states america view aerial panorama sunset sunrise""".split())
@@ -224,14 +233,35 @@ def main():
                 print("   %-30s no photograph of it shows enough water" % name[:30], flush=True)
         out.append(rec)
 
+    # Water is not a quality in this scale. The app says so itself: "Sea is
+    # Water 10 always". So the total out of thirty is only ever D + C + 10 for
+    # somewhere in the sea, and the 25 bar is really D + C >= 15. Every place
+    # we stood in in Crete clears it — Seitan 26.5, Katholiko 26, Balos and
+    # Glyka Nera 25.5, Preveli and Elafonissi 25 — which is what makes 25 the
+    # line worth drawing.
+    for r in out:
+        r["water"] = 10 if r["name"] in SEA else None
+        if r["discovery"] is not None and r["colour"] is not None and r["water"]:
+            r["total"] = r["discovery"] + r["colour"] + r["water"]
+        else:
+            r["total"] = None
+
     json.dump(out, open(OUT, "w"), ensure_ascii=False, indent=1)
-    print("\n%-32s %-10s %-8s %s" % ("", "Discovery", "Colour", "mapped within 500m / 2km"))
-    for r in sorted(out, key=lambda r: -(r["discovery"] or 0)):
-        print("%-32s %-10s %-8s %s / %s"
-              % (r["name"][:32],
-                 "%.1f" % r["discovery"] if r["discovery"] is not None else "—",
-                 "%.1f" % r["colour"] if r["colour"] is not None else "—",
+    print("\n%-32s %5s %6s %5s %7s   %s"
+          % ("", "Disc", "Colour", "Water", "TOTAL", "mapped 500m / 2km"))
+    rank = sorted(out, key=lambda r: -(r["total"] if r["total"] is not None
+                                       else (r["discovery"] or 0)))
+    for r in rank:
+        f = lambda v: "%.1f" % v if v is not None else "—"
+        print("%-32s %5s %6s %5s %7s %s  %s / %s"
+              % (r["name"][:32], f(r["discovery"]), f(r["colour"]), f(r["water"]),
+                 f(r["total"]), "<= 25+" if (r["total"] or 0) >= 25 else "      ",
                  r["n500"], r["n2km"]))
+    clears = [r for r in out if (r["total"] or 0) >= 25]
+    print("\n%d of %d clear 25. In Crete all six did."
+          % (len(clears), len(out)))
+    for r in clears:
+        print("   %s  %.1f" % (r["name"], r["total"]))
     print("\nSCORELADONE %d places, %d with a measured colour"
           % (len(out), sum(1 for r in out if r["colour"] is not None)))
 
