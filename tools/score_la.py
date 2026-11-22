@@ -97,8 +97,24 @@ JUNK = re.compile(r"""(?ix)\b(
     portrait|selfie|grave|cemetery|screenshot|scan|document|drawing|sketch|
     train|railway|tram|bus|aircraft|airplane|helicopter|car|cars|bicycle|
     male|female|juvenile|nest|specimen|closeup|close.up|macro|
-    hotel|restaurant|museum|church|parking
+    hotel|restaurant|museum|church|parking|
+    # Lake Arrowhead scored 8.0 off "Greetings from Lake Arrowhead - Large
+    # Letter postcard". That is printing ink, measured as if it were water.
+    postcard|greetings.from|large.letter|lithograph|vintage
   )\b""")
+
+# water_colour accepts any hue from 140 to 250, and the green end of that window
+# is also the hue of sunlit grass. Carpinteria scored a perfect 10 — higher than
+# Balos — off hue 162 at saturation 0.89 filling the minimum 18% of the frame.
+# That is a hedge, not the sea. Water that green is never that saturated.
+def is_foliage(c):
+    return c["hue"] < 178 and c["sat"] > 0.55
+
+
+# A frame has to be more than a fifth water before it is worth believing. 0.18
+# is rate.colour()'s floor for rating a photograph at all; for choosing which
+# photograph represents a place, demand a third of the frame.
+MIN_SHARE = 0.33
 BINOMIAL = re.compile(r"^[A-Z][a-z]{3,}\s+[a-z]{3,}\s*(?:,|\.(?:jpe?g|png)$)")
 
 
@@ -207,7 +223,7 @@ def measure(name, lat, lon, tries=8):
             time.sleep(0.5)
         except Exception:
             continue
-        if c and c["share"] >= 0.18:
+        if c and c["share"] >= MIN_SHARE and not is_foliage(c):
             return title, dist, c
     return None, None, None
 
@@ -221,7 +237,16 @@ def main():
     picked = [p for p in PLACES if not args.only or p[0] == args.only]
 
     print("1. how much is mapped around each one")
-    dens = {} if args.skip_overture else density()
+    if args.skip_overture:
+        # the Overture half is slow and has not changed; reuse the last run's
+        dens = {}
+        if os.path.exists(OUT):
+            for r in json.load(open(OUT)):
+                if r.get("n500") is not None:
+                    dens[r["name"]] = (r["n500"], r["n2km"])
+        print("   reusing %d density readings from the last run" % len(dens))
+    else:
+        dens = density()
 
     print("\n2. the colour of the water, measured")
     out = []
