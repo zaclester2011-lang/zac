@@ -1,0 +1,1096 @@
+[
+  {
+    "id": 0,
+    "slug": "crete",
+    "name": "Crete",
+    "bbox": [
+      34.9212109,
+      23.5144812,
+      35.6957793,
+      26.3189698
+    ],
+    "places": 17797,
+    "photos": 2,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "beach": 785,
+      "guide": 535,
+      "todo": 1632,
+      "food": 6075,
+      "hotel": 6535,
+      "indoor": 636,
+      "club": 1403,
+      "adventure": 196
+    }
+  },
+  {
+    "id": 1,
+    "slug": "zanzibar",
+    "name": "Zanzibar",
+    "bbox": [
+      -6.4780572,
+      39.1816556,
+      -4.8643588,
+      39.8761587
+    ],
+    "places": 1877,
+    "photos": 24,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "adventure": 50,
+      "hotel": 870,
+      "food": 264,
+      "guide": 293,
+      "todo": 188,
+      "club": 90,
+      "beach": 67,
+      "indoor": 55
+    }
+  },
+  {
+    "id": 2,
+    "slug": "sulawesi",
+    "name": "Sulawesi",
+    "bbox": [
+      -5.7028822,
+      118.757143,
+      1.7513116,
+      125.2478129
+    ],
+    "places": 55198,
+    "photos": 18,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "indoor": 1805,
+      "beach": 943,
+      "todo": 19233,
+      "hotel": 7165,
+      "food": 22021,
+      "club": 2488,
+      "guide": 1416,
+      "adventure": 127
+    }
+  },
+  {
+    "id": 3,
+    "slug": "cook-islands",
+    "name": "Cook Islands",
+    "bbox": [
+      -22.1599634,
+      -166.1318843,
+      -8.7150148,
+      -157.1089326
+    ],
+    "places": 415,
+    "photos": 2,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 84,
+      "hotel": 170,
+      "club": 29,
+      "food": 77,
+      "beach": 17,
+      "adventure": 11,
+      "guide": 12,
+      "indoor": 15
+    }
+  },
+  {
+    "id": 5,
+    "slug": "capri",
+    "name": "Capri",
+    "bbox": [
+      40.5358786,
+      14.1957565,
+      40.5618457,
+      14.2663785
+    ],
+    "places": 906,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "food": 195,
+      "hotel": 432,
+      "indoor": 38,
+      "club": 76,
+      "todo": 79,
+      "beach": 18,
+      "adventure": 29,
+      "guide": 39
+    }
+  },
+  {
+    "id": 6,
+    "slug": "santorini",
+    "name": "Santorini",
+    "bbox": [
+      36.3321735,
+      25.3538553,
+      36.482206,
+      25.4878919
+    ],
+    "places": 3203,
+    "photos": 56,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1709,
+      "food": 716,
+      "adventure": 41,
+      "club": 153,
+      "indoor": 104,
+      "guide": 154,
+      "todo": 235,
+      "beach": 91
+    }
+  },
+  {
+    "id": 7,
+    "slug": "bali",
+    "name": "Bali",
+    "bbox": [
+      -9.0502287,
+      114.4126778,
+      -7.4627963,
+      115.8324222
+    ],
+    "places": 57250,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "food": 19393,
+      "todo": 8476,
+      "adventure": 631,
+      "hotel": 17507,
+      "club": 2881,
+      "indoor": 3124,
+      "beach": 908,
+      "guide": 4330
+    }
+  },
+  {
+    "id": 8,
+    "slug": "maldives",
+    "name": "Maldives",
+    "bbox": [
+      -0.9074935,
+      72.3554187,
+      7.3106246,
+      73.9700962
+    ],
+    "places": 3907,
+    "photos": 13,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1078,
+      "food": 1254,
+      "club": 220,
+      "beach": 244,
+      "guide": 240,
+      "adventure": 130,
+      "todo": 512,
+      "indoor": 229
+    }
+  },
+  {
+    "id": 9,
+    "slug": "iceland",
+    "name": "Iceland",
+    "bbox": [
+      63.0859177,
+      -25.0135069,
+      67.353,
+      -12.8046162
+    ],
+    "places": 7548,
+    "photos": 296,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 2206,
+      "indoor": 877,
+      "hotel": 1692,
+      "guide": 636,
+      "beach": 94,
+      "food": 1368,
+      "club": 521,
+      "adventure": 154
+    }
+  },
+  {
+    "id": 10,
+    "slug": "mallorca",
+    "name": "Mallorca",
+    "bbox": [
+      39.2643359,
+      2.3447252,
+      39.9625085,
+      3.4787522
+    ],
+    "places": 21460,
+    "photos": 251,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "food": 7673,
+      "todo": 1891,
+      "beach": 880,
+      "hotel": 4899,
+      "club": 3834,
+      "guide": 638,
+      "adventure": 451,
+      "indoor": 1194
+    }
+  },
+  {
+    "id": 11,
+    "slug": "sardinia",
+    "name": "Sardinia",
+    "bbox": [
+      38.8590846,
+      8.1308446,
+      41.3131122,
+      9.8293196
+    ],
+    "places": 34857,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 3875,
+      "beach": 1425,
+      "hotel": 11200,
+      "club": 4147,
+      "adventure": 607,
+      "food": 10068,
+      "guide": 1095,
+      "indoor": 2440
+    }
+  },
+  {
+    "id": 12,
+    "slug": "corsica",
+    "name": "Corsica",
+    "bbox": [
+      41.333191,
+      8.534717,
+      43.0277079,
+      9.5600125
+    ],
+    "places": 10774,
+    "photos": 295,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 1536,
+      "beach": 570,
+      "food": 3327,
+      "hotel": 3570,
+      "adventure": 330,
+      "club": 751,
+      "indoor": 481,
+      "guide": 209
+    }
+  },
+  {
+    "id": 13,
+    "slug": "algarve",
+    "name": "Algarve",
+    "bbox": [
+      36.2449218,
+      -9.1959563,
+      38.2449218,
+      -7.1959563
+    ],
+    "places": 19727,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 1651,
+      "club": 2778,
+      "beach": 952,
+      "food": 7105,
+      "guide": 537,
+      "indoor": 1518,
+      "hotel": 4981,
+      "adventure": 205
+    }
+  },
+  {
+    "id": 14,
+    "slug": "madeira",
+    "name": "Madeira",
+    "bbox": [
+      30.0287783,
+      -17.2659253,
+      33.1281603,
+      -15.8536715
+    ],
+    "places": 4674,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "guide": 235,
+      "todo": 605,
+      "food": 1494,
+      "hotel": 945,
+      "indoor": 375,
+      "beach": 87,
+      "club": 846,
+      "adventure": 87
+    }
+  },
+  {
+    "id": 15,
+    "slug": "dubrovnik",
+    "name": "Dubrovnik",
+    "bbox": [
+      42.6208867,
+      17.7655924,
+      42.7803608,
+      18.1581147
+    ],
+    "places": 2267,
+    "photos": 1,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "beach": 59,
+      "hotel": 1136,
+      "todo": 179,
+      "food": 433,
+      "indoor": 105,
+      "club": 143,
+      "guide": 158,
+      "adventure": 54
+    }
+  },
+  {
+    "id": 16,
+    "slug": "zakynthos",
+    "name": "Zakynthos",
+    "bbox": [
+      37.6442841,
+      20.6184257,
+      37.9338691,
+      20.9941778
+    ],
+    "places": 2986,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1318,
+      "food": 828,
+      "todo": 206,
+      "indoor": 43,
+      "adventure": 50,
+      "guide": 109,
+      "club": 322,
+      "beach": 110
+    }
+  },
+  {
+    "id": 17,
+    "slug": "azores",
+    "name": "Azores",
+    "bbox": [
+      36.9276305,
+      -31.2688154,
+      39.7261841,
+      -25.0131792
+    ],
+    "places": 4515,
+    "photos": 36,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "guide": 214,
+      "club": 510,
+      "food": 1050,
+      "todo": 964,
+      "indoor": 364,
+      "hotel": 1212,
+      "adventure": 73,
+      "beach": 128
+    }
+  },
+  {
+    "id": 18,
+    "slug": "seychelles",
+    "name": "Seychelles",
+    "bbox": [
+      -10.4649258,
+      45.9988759,
+      -3.512,
+      56.4979396
+    ],
+    "places": 980,
+    "photos": 13,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 135,
+      "hotel": 372,
+      "beach": 111,
+      "adventure": 34,
+      "food": 177,
+      "indoor": 63,
+      "club": 63,
+      "guide": 25
+    }
+  },
+  {
+    "id": 19,
+    "slug": "phuket",
+    "name": "Phuket",
+    "bbox": [
+      7.2611826,
+      98.0648897,
+      8.2021889,
+      98.4924989
+    ],
+    "places": 22929,
+    "photos": 76,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 5223,
+      "indoor": 1404,
+      "food": 11182,
+      "beach": 483,
+      "todo": 1617,
+      "club": 1811,
+      "guide": 1005,
+      "adventure": 204
+    }
+  },
+  {
+    "id": 20,
+    "slug": "palawan",
+    "name": "Palawan",
+    "bbox": [
+      7.4179572,
+      114.1440482,
+      12.6055408,
+      121.4716667
+    ],
+    "places": 6898,
+    "photos": 45,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 1322,
+      "hotel": 2237,
+      "guide": 574,
+      "beach": 459,
+      "food": 1568,
+      "club": 426,
+      "indoor": 221,
+      "adventure": 91
+    }
+  },
+  {
+    "id": 21,
+    "slug": "maui",
+    "name": "Maui",
+    "bbox": [
+      20.5744337,
+      -156.6972445,
+      21.031561,
+      -155.9790919
+    ],
+    "places": 3991,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 841,
+      "beach": 367,
+      "adventure": 199,
+      "food": 1026,
+      "guide": 205,
+      "indoor": 359,
+      "hotel": 750,
+      "club": 244
+    }
+  },
+  {
+    "id": 22,
+    "slug": "cape-town",
+    "name": "Cape Town",
+    "bbox": [
+      -34.0888301,
+      18.2572197,
+      -33.7688301,
+      18.5772197
+    ],
+    "places": 12349,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "todo": 2594,
+      "adventure": 105,
+      "beach": 146,
+      "indoor": 1208,
+      "hotel": 2529,
+      "food": 3770,
+      "guide": 855,
+      "club": 1142
+    }
+  },
+  {
+    "id": 23,
+    "slug": "tulum",
+    "name": "Tulum",
+    "bbox": [
+      19.7772997,
+      -87.9950654,
+      20.5160898,
+      -87.3026413
+    ],
+    "places": 3355,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-14",
+    "counts": {
+      "hotel": 1168,
+      "todo": 376,
+      "indoor": 171,
+      "food": 1013,
+      "club": 251,
+      "guide": 152,
+      "adventure": 86,
+      "beach": 138
+    }
+  },
+  {
+    "id": 24,
+    "slug": "lofoten",
+    "name": "Lofoten",
+    "bbox": [
+      67.7,
+      12.0,
+      68.6,
+      16.3
+    ],
+    "places": 2333,
+    "photos": 32,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 1268,
+      "beach": 37,
+      "hotel": 504,
+      "food": 170,
+      "indoor": 128,
+      "adventure": 99,
+      "club": 54,
+      "guide": 73
+    }
+  },
+  {
+    "id": 25,
+    "slug": "dolomites",
+    "name": "Dolomites",
+    "bbox": [
+      46.2,
+      11.0,
+      46.9,
+      12.4
+    ],
+    "places": 22044,
+    "photos": 884,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 10393,
+      "food": 4290,
+      "todo": 3946,
+      "club": 1552,
+      "indoor": 1143,
+      "guide": 357,
+      "adventure": 356,
+      "beach": 7
+    }
+  },
+  {
+    "id": 26,
+    "slug": "isle-of-skye",
+    "name": "Isle of Skye",
+    "bbox": [
+      57.05,
+      -6.9,
+      57.75,
+      -5.75
+    ],
+    "places": 1199,
+    "photos": 68,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 594,
+      "adventure": 31,
+      "indoor": 44,
+      "guide": 24,
+      "todo": 328,
+      "food": 115,
+      "beach": 35,
+      "club": 28
+    }
+  },
+  {
+    "id": 27,
+    "slug": "bernese-oberland",
+    "name": "Bernese Oberland",
+    "bbox": [
+      46.4,
+      7.55,
+      46.8,
+      8.35
+    ],
+    "places": 5134,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 1866,
+      "todo": 748,
+      "club": 859,
+      "food": 1048,
+      "adventure": 103,
+      "guide": 163,
+      "indoor": 333,
+      "beach": 14
+    }
+  },
+  {
+    "id": 28,
+    "slug": "soca-valley",
+    "name": "Soca Valley",
+    "bbox": [
+      46.08,
+      13.35,
+      46.48,
+      13.95
+    ],
+    "places": 1804,
+    "photos": 211,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 243,
+      "todo": 715,
+      "guide": 48,
+      "indoor": 98,
+      "hotel": 500,
+      "club": 128,
+      "adventure": 68,
+      "beach": 4
+    }
+  },
+  {
+    "id": 29,
+    "slug": "wadi-rum",
+    "name": "Wadi Rum",
+    "bbox": [
+      29.35,
+      35.25,
+      29.85,
+      35.65
+    ],
+    "places": 186,
+    "photos": 8,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "indoor": 6,
+      "hotel": 93,
+      "guide": 36,
+      "todo": 48,
+      "adventure": 1,
+      "food": 2
+    }
+  },
+  {
+    "id": 30,
+    "slug": "atlas-mountains",
+    "name": "Atlas Mountains",
+    "bbox": [
+      30.85,
+      -8.25,
+      31.45,
+      -7.6
+    ],
+    "places": 502,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 138,
+      "hotel": 235,
+      "food": 59,
+      "guide": 38,
+      "indoor": 17,
+      "club": 3,
+      "adventure": 11,
+      "beach": 1
+    }
+  },
+  {
+    "id": 31,
+    "slug": "arenal-and-monteverde",
+    "name": "Arenal and Monteverde",
+    "bbox": [
+      10.15,
+      -85.15,
+      10.85,
+      -84.35
+    ],
+    "places": 3570,
+    "photos": 6,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "beach": 9,
+      "food": 1109,
+      "club": 369,
+      "indoor": 219,
+      "todo": 579,
+      "hotel": 1006,
+      "guide": 239,
+      "adventure": 40
+    }
+  },
+  {
+    "id": 32,
+    "slug": "tenerife",
+    "name": "Tenerife",
+    "bbox": [
+      27.95,
+      -16.95,
+      28.65,
+      -16.05
+    ],
+    "places": 18590,
+    "photos": 171,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 3621,
+      "beach": 525,
+      "indoor": 1068,
+      "todo": 2049,
+      "club": 3360,
+      "food": 6661,
+      "guide": 741,
+      "adventure": 565
+    }
+  },
+  {
+    "id": 33,
+    "slug": "faroe-islands",
+    "name": "Faroe Islands",
+    "bbox": [
+      61.35,
+      -7.75,
+      62.42,
+      -6.2
+    ],
+    "places": 698,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 103,
+      "guide": 46,
+      "food": 167,
+      "adventure": 13,
+      "todo": 176,
+      "club": 94,
+      "indoor": 94,
+      "beach": 5
+    }
+  },
+  {
+    "id": 34,
+    "slug": "krabi",
+    "name": "Krabi",
+    "bbox": [
+      7.75,
+      98.55,
+      8.45,
+      99.15
+    ],
+    "places": 7942,
+    "photos": 23,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 2176,
+      "guide": 394,
+      "beach": 220,
+      "food": 3600,
+      "todo": 739,
+      "club": 439,
+      "adventure": 62,
+      "indoor": 312
+    }
+  },
+  {
+    "id": 35,
+    "slug": "phong-nha",
+    "name": "Phong Nha",
+    "bbox": [
+      17.35,
+      106.05,
+      17.75,
+      106.45
+    ],
+    "places": 382,
+    "photos": 4,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 108,
+      "todo": 87,
+      "hotel": 129,
+      "guide": 29,
+      "indoor": 17,
+      "club": 11,
+      "adventure": 1
+    }
+  },
+  {
+    "id": 36,
+    "slug": "kauai",
+    "name": "Kauai",
+    "bbox": [
+      21.84,
+      -159.82,
+      22.27,
+      -159.26
+    ],
+    "places": 2183,
+    "photos": 52,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "beach": 243,
+      "todo": 606,
+      "guide": 108,
+      "indoor": 165,
+      "club": 144,
+      "food": 495,
+      "adventure": 107,
+      "hotel": 315
+    }
+  },
+  {
+    "id": 37,
+    "slug": "fiordland",
+    "name": "Fiordland",
+    "bbox": [
+      -45.6,
+      166.8,
+      -44.4,
+      168.6
+    ],
+    "places": 654,
+    "photos": 37,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 377,
+      "guide": 40,
+      "club": 11,
+      "adventure": 37,
+      "hotel": 121,
+      "food": 41,
+      "beach": 9,
+      "indoor": 18
+    }
+  },
+  {
+    "id": 38,
+    "slug": "sacred-valley",
+    "name": "Sacred Valley",
+    "bbox": [
+      -13.65,
+      -72.65,
+      -12.95,
+      -71.55
+    ],
+    "places": 8373,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 2488,
+      "todo": 795,
+      "indoor": 375,
+      "club": 508,
+      "hotel": 2276,
+      "guide": 1899,
+      "adventure": 31,
+      "beach": 1
+    }
+  },
+  {
+    "id": 39,
+    "slug": "el-chalten",
+    "name": "El Chalten",
+    "bbox": [
+      -49.6,
+      -73.35,
+      -48.95,
+      -72.55
+    ],
+    "places": 187,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 58,
+      "hotel": 76,
+      "food": 30,
+      "adventure": 5,
+      "guide": 8,
+      "club": 8,
+      "indoor": 2
+    }
+  },
+  {
+    "id": 40,
+    "slug": "torres-del-paine",
+    "name": "Torres del Paine",
+    "bbox": [
+      -51.6,
+      -73.55,
+      -50.6,
+      -72.35
+    ],
+    "places": 186,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 120,
+      "hotel": 45,
+      "indoor": 6,
+      "guide": 4,
+      "adventure": 8,
+      "food": 3
+    }
+  },
+  {
+    "id": 41,
+    "slug": "komodo-and-flores",
+    "name": "Komodo and Flores",
+    "bbox": [
+      -8.95,
+      119.25,
+      -8.15,
+      120.3
+    ],
+    "places": 716,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "beach": 15,
+      "todo": 94,
+      "guide": 197,
+      "adventure": 60,
+      "hotel": 153,
+      "food": 144,
+      "club": 37,
+      "indoor": 16
+    }
+  },
+  {
+    "id": 42,
+    "slug": "raja-ampat",
+    "name": "Raja Ampat",
+    "bbox": [
+      -1.25,
+      129.65,
+      -0.15,
+      131.25
+    ],
+    "places": 363,
+    "photos": 2,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "hotel": 88,
+      "beach": 23,
+      "todo": 132,
+      "guide": 35,
+      "club": 12,
+      "food": 60,
+      "adventure": 11,
+      "indoor": 2
+    }
+  },
+  {
+    "id": 43,
+    "slug": "reunion",
+    "name": "Reunion",
+    "bbox": [
+      -21.42,
+      55.18,
+      -20.82,
+      55.9
+    ],
+    "places": 6115,
+    "photos": 86,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "food": 2646,
+      "indoor": 633,
+      "todo": 802,
+      "adventure": 88,
+      "club": 483,
+      "guide": 87,
+      "hotel": 1266,
+      "beach": 110
+    }
+  },
+  {
+    "id": 44,
+    "slug": "ningaloo",
+    "name": "Ningaloo",
+    "bbox": [
+      -23.65,
+      113.35,
+      -21.75,
+      114.35
+    ],
+    "places": 329,
+    "photos": 0,
+    "source": "overture 2026-10-21.0 + wikidata",
+    "indexed": "2026-11-15",
+    "counts": {
+      "todo": 110,
+      "beach": 44,
+      "adventure": 22,
+      "hotel": 60,
+      "club": 10,
+      "food": 28,
+      "guide": 42,
+      "indoor": 13
+    }
+  }
+]

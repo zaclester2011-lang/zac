@@ -1,0 +1,23 @@
+
+# sampler photo downloads
+expeditions/pics/
+expeditions/fl/
+expeditions/sc/
+expeditions/cm/
+cm/
+data/*.db
+data/*.db-wal
+data/*.db-shm
+__pycache__/
+*.pyc
+site/data.json
+
+# Wikimedia dumps: streamed once to resolve filenames, then deleted
+data/*.sql.gz
+data/*.sql
+
+# Picture caches. Regenerable from Commons by tools/local_pics.py, tools/hires.py
+# and tools/new_heroes.py, and never served: the published page reads the sprite
+# sheets in site/pk. Tracking them had taken .git to 731 MB.
+site/img/
+site/hi/
