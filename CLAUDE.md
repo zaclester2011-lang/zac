@@ -5,6 +5,30 @@
 Three columns, each out of 10, totalling 30. This is Zac's own scale. Do not
 redefine it, rename the columns, or silently change what they measure.
 
+### How to score a place — read this first
+
+**Research it and judge it.** Look the place up against several independent
+sources, check the date on every one of them, then set the three numbers against
+the anchors below. That is how Crete, Zanzibar, Sardinia, Baja and Indonesia
+were all scored, and it is what Zac means when he asks for a place to be scored.
+
+The automated pipeline (`rate.py`, `score_la.py`, `score_place.py`) exists to
+put a number on 20,332 places at once. **It is not the method for a single place
+somebody asked about.** Running it instead of doing the research produces a worse
+answer slowly: it saw nothing at Wayag because Overture maps nothing there and
+Commons has its four geotagged photographs pinned 100 km away.
+
+Use a measurement as evidence inside the judgement, never as a substitute for it,
+and say so when the two disagree.
+
+Two failure modes, both already paid for:
+
+- **Inferring instead of checking.** Vundwe was given 27 because it is a Menai
+  Bay island. Researched, it is 20 — coral rag and mangrove, no swimmable water.
+- **Trusting an undated source.** Bawe sat at 27 on pages describing it as
+  uninhabited. Those pages predate the 70-villa resort that opened there in 2024.
+  It is 22.
+
 ### Discovery /10 — how likely you are to have it to yourself
 
 Read off how much else is mapped around the place (Overture Maps feature counts
